@@ -1,0 +1,4 @@
+{
+  "model": {"codebook_size": 128},
+  "train": {"loss": "time_myopic", "compression_weight": 0.01}
+}

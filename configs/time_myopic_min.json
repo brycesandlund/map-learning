@@ -1,0 +1,8 @@
+{
+  "train": {
+    "loss": "time_myopic",
+    "horizon": 20,
+    "max_pair_steps": 100,
+    "exact_revisit_min": true
+  }
+}

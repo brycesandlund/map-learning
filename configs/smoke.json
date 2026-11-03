@@ -1,0 +1,8 @@
+{
+  "collect_steps": 1200,
+  "warmup_steps": 200,
+  "maze": {"size": 4, "episode_steps": 100, "step_size": 0.5},
+  "model": {"latent_dim": 16, "hidden_dim": 64, "ensemble_size": 3},
+  "train": {"updates": 100, "batch_size": 64, "log_every": 25},
+  "planner": {"horizon": 3, "beam_width": 8}
+}

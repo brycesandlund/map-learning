@@ -1,0 +1,3 @@
+{
+  "train": {"loss": "time_myopic", "horizon": 20, "max_pair_steps": 100}
+}

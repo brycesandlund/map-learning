@@ -1,0 +1,4 @@
+{
+  "model": {"codebook_size": 128},
+  "train": {"loss": "qrl", "compression_weight": 0.01}
+}
