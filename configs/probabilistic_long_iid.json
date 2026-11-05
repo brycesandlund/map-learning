@@ -1,0 +1,27 @@
+{
+  "description": "Additional 100k control: independent uniform random actions instead of 0.8 action persistence; same fitting budget.",
+  "config": "configs/probabilistic_maze.json",
+  "seeds": [
+    3,
+    4,
+    5
+  ],
+  "overrides": [
+    "collect_steps=100000",
+    "warmup_steps=1000",
+    "maze.size=12",
+    "maze.episode_steps=2000",
+    "train_every=10",
+    "updates_per_train=5",
+    "train.log_every=1000"
+  ],
+  "variants": [
+    {
+      "name": "random_iid",
+      "overrides": [
+        "planner.behavior=random",
+        "planner.action_repeat_probability=0"
+      ]
+    }
+  ]
+}

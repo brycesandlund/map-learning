@@ -4,9 +4,11 @@ Learn a navigation representation from observations and actions, then search thr
 learned latent dynamics. No actor, critic, policy gradient, goal-conditioned policy,
 observation reconstruction, or pretrained model is used.
 
-This is a small experimental implementation of **QRL** and **Time-Myopic** distance
-objectives, not a reproduction of either paper's complete agent or benchmark results.
-Compression is an experimental addition, not a proven state-equivalence algorithm.
+Includes **QRL** and **Time-Myopic** distance objectives, plus a **jointly trained
+Gaussian-mixture dynamics ensemble with C-SWM-style repulsion**. These are small
+experimental implementations, not reproductions of complete published agents.
+The probabilistic mode uses continuous latents without a codebook, compression
+penalty, state merging, or distance labels. Older codebook experiments remain available.
 
 ## Setup
 
@@ -20,6 +22,98 @@ pytest -q
 Python 3.11+; CPU is the default and is sufficient for these mazes. PyTorch, NumPy,
 and Matplotlib are the only runtime dependencies. `uv.lock` pins the resolved environment.
 Alternatively: `python -m pip install -e '.[dev]'` in a virtual environment.
+
+## Joint probabilistic dynamics and exploration
+
+```bash
+map-learning online --config configs/probabilistic_maze.json --out runs/gmm-mcts
+map-learning online --config configs/probabilistic_maze.json \
+  --set planner.search=shooting --out runs/gmm-shooting
+map-learning online --config configs/probabilistic_maze.json \
+  --set planner.behavior=random --out runs/gmm-random
+
+python scripts/run_probabilistic_pilot.py --out runs/gmm-comparison --seeds 0 1 2
+```
+
+The configuration uses a 6×6 deterministic maze with normalized coordinate inputs,
+3,000 interactions, 300 random warmup steps, and two gradient updates every five
+interactions starting at step 300 (1,082 updates total). Each method trains on its
+own collected data. The same seed has identical warmup transitions across methods.
+Random exploration repeats the previous action with probability 0.8; it is a strong
+baseline for long corridors. Maze layout seed and model/behavior seed are separate.
+Use `--set maze.seed=...` to test another layout. No parameters are pretrained.
+
+The shared encoder produces `z = latent_bound * tanh(encoder(observation))`.
+Each ensemble member outputs K mixture logits, K residual means, and K diagonal
+variance vectors. Means are `z + delta`; variances are
+`variance_floor + softplus(raw_variance)`. The default is M=3, K=3, D=8, hidden=64.
+The bounded encoder fixes latent units; it is not a quantizer. Gaussian predictions
+remain unbounded: sampled states are **not** clipped or projected back onto the
+encoder manifold. This mismatch is explicitly measured in evaluation.
+
+For each head independently resample a replay minibatch, then minimize
+
+```
+L = mean_heads[-mean_batch log p_m(f(next_observation) | f(observation), action) / D]
+    + repulsion_weight * mean_pairs relu(repulsion_margin**2 - ||f(o_i)-f(o_j)||²)
+```
+
+Both source and target encoder branches receive gradients, in the **same backward
+pass** as dynamics. The repulsion pairs are independent raw replay observations;
+there is no oracle filtering, identity lookup, or shortest-path supervision. Random
+pairs can include revisits, and the loss does not guarantee nuisance invariance.
+The repulsion weight is 10, Euclidean margin 1, variance floor 1e-4, initial variance
+0.01, and Adam learning rate 3e-4. NLL is per dimension and may be negative because
+it is a density. Changing encoder geometry changes NLL; do not rank independently
+learned representations by NLL alone. This mode has no learned navigation distance.
+
+Exploration reward is the generalized Jensen–Shannon divergence
+`U(z,a) = mean_m E_{x~p_m}[log p_m(x|z,a) - log(mean_j p_j(x|z,a))]`.
+It compares complete mixture distributions, including weights and variances,
+without matching component IDs. Identical broad distributions have zero reward.
+The estimator uses eight samples per member, averages **signed** contributions,
+then clamps the result to [0, log M]. Monte Carlo noise and finite ensembles mean
+this is not calibrated epistemic uncertainty. Shared errors can remain invisible.
+
+Search maximizes expected `sum_h discount**h * U(z_h,a_h)` with discount 0.9,
+horizon 4, epsilon-random 0.1. Models stay fixed inside each search; only the first
+action is executed, and the tree is rebuilt at the next observation.
+
+- `mcts`: UCT actions, 24 simulations, chance-node progressive widening
+  `ceil(coefficient * visits**exponent)`, defaults 1 and 0.5. New outcomes are
+  sampled from the uniform ensemble predictive mixture; existing outcomes are
+  reused uniformly. Final choice uses root visit counts. There is no transposition
+  table, node-merging radius, learned value/policy network, or oracle lookahead.
+- `shooting`: 64 random action sequences, four particles per sequence, with
+  stochastic next states and expected discounted disagreement. This has a different
+  compute budget and does not condition later actions on sampled outcomes.
+- `random`: the same model training schedule with persistent-random actions.
+
+Repeated imagined visits receive repeated disagreement reward; models do not learn
+inside imagination. Discounting and real-step replanning are the current controls,
+not a guarantee against loops. Finite-horizon models can exploit invalid imagined
+states. Goal matching and goal-directed control are not yet implemented in this mode.
+
+To vary representation and compute independently, use `model.mixture_components`,
+`model.ensemble_size`, `train.repulsion_weight`, `train.repulsion_margin`,
+`updates_per_train`, `planner.horizon`, `planner.simulations`,
+`planner.disagreement_samples`, `planner.candidates`, and `planner.particles`.
+The existing `maze.observation=pixels` or `features` and `maze.nuisance_dims` options
+also work. The reported pilot uses coordinates, not visual nuisance variation.
+
+Runs save a checkpoint, append-only raw replay, config, source snapshot, training
+and exploration JSONL logs, coverage/latent/uncertainty plots, and `probe.npz`.
+Probabilistic evaluation uses an oracle lattice **only for diagnostics**: coverage,
+seen/unseen state-action error, a persistence baseline, mean-rollout errors,
+disagreement-error correlation, latent variance/effective rank, and sampled states
+outside encoder bounds. It does not export an exact-identity graph. Online runs have
+replay diagnostics; independent held-out episodes are only reported by offline
+`train`. The all-state oracle probe includes both training and unseen transitions.
+
+`scripts/refit_probabilistic.py` continues fitting a fixed replay with an optional
+`--freeze-encoder`, recording disagreement every 500 updates. This is an optimization
+diagnostic, not an independent exploration trial. See `training_runs.md` and
+`docs/probabilistic-pilot.md` for actual results and limitations.
 
 ## First experiments
 
@@ -258,3 +352,66 @@ its supplied data metrics as replay diagnostics.
 * [Time-Myopic Go-Explore](https://arxiv.org/abs/2301.05635), Eq. 2–4 and §5.2.
 * [Cell-Free Latent Go-Explore](https://proceedings.mlr.press/v202/gallouedec23a.html),
   maze inspiration. No upstream implementation code is vendored.
+
+### Longer probabilistic sweeps
+
+The manifest runner executes independent online runs in separate processes and
+keeps raw logs, replay, checkpoints, source snapshots, and evaluator diagnostics:
+
+```bash
+.venv/bin/python scripts/run_probabilistic_sweep.py \
+  --manifest configs/probabilistic_sweep.json \
+  --out runs/new-probabilistic-screen --jobs 3
+```
+
+`configs/probabilistic_sweep.json` screens fifteen model/loss/search configurations
+and a persistent-random reference on a 12×12 maze for 10,000 interactions. Its
+selection metric is exact position-coverage AUC: average coverage after every
+interaction, computed from raw replay. This rewards early discoveries rather
+than only final coverage. The random reference trains the same model but chooses
+actions independently of it. The scripts never provide evaluator geometry to
+the encoder, dynamics, or planner.
+
+A manifest supplies a base config, shared dotted-key overrides, variants, and
+seeds. Reusing a completed output checks its resolved config; incomplete runs
+are preserved and reported as failures. Start them again in a fresh output
+folder after inspection. Each run still uses the source snapshot stored inside
+its own directory. `summary.json` is updated as runs finish; `failures.json`
+records exceptions. Use a separate manifest and fresh behavior/model seeds to
+confirm selected settings at a larger budget.
+
+```bash
+.venv/bin/python scripts/report_probabilistic_sweep.py \
+  --screen runs/new-probabilistic-screen \
+  --long runs/new-long-random runs/new-long-selected \
+  --out runs/new-sweep-report
+```
+
+The reporting script generates per-run tables, mean/range coverage curves, and a
+machine-readable result bundle. It is specific to the documented 12×12,
+10k-screen/100k-confirmation protocol; raw metrics remain available for other
+protocols. Coverage is matched by environment interactions, not wall-clock
+compute. No online training resume is implemented: a final checkpoint can be
+used for offline refitting or frozen-policy rollouts, but does not restore an
+interrupted online environment/planner state.
+
+For a bounded-versus-unbounded representation ablation, use
+`--set model.latent_activation=identity` with the probabilistic model. The default
+is `tanh`, including when loading older checkpoints that omit this field. Identity
+leaves the encoder output unbounded; likelihood and repulsion are unchanged.
+Bound-saturation diagnostics are reported as null in that case. This is an
+architecture option, not a new compression loss.
+
+If an online run finished training and saved its checkpoint/replay but final
+evaluation failed, recover only that evaluation after fixing the cause:
+
+```bash
+.venv/bin/python scripts/recover_evaluation.py \
+  --run runs/your-completed-run --reason 'Describe the corrected evaluation issue'
+```
+
+The recovery command validates the complete interaction/update budget and matching
+config/replay, and records unchanged hashes for the checkpoint, replay, and config.
+It refuses incomplete training runs. Then rerun the same sweep manifest/output to
+rebuild summaries; completed runs are reused and earlier failure records are
+archived as resolved. Older configs are compared after filling default fields.

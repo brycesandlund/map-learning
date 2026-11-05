@@ -12,6 +12,7 @@ from .maze import Maze
 from .replay import Replay
 from .training import Trainer, seed_all
 from .planning import LatentPlanner
+from .uncertainty_planning import make_planner
 from .evaluation import coverage_plot, evaluate, split_replay
 
 
@@ -106,30 +107,43 @@ def online(config, output):
     path = prepare_run(output, config, {"mode": "online"})
     env, replay = Maze(config.maze, config.seed), Replay()
     trainer = Trainer(config, env.observation_shape)
-    planner = LatentPlanner(trainer, config.planner, config.seed+5)
+    planner = make_planner(trainer, config.planner, config.seed+5)
     obs = env.reset()
     origin = obs.copy()
     episode, scale = 0, None
     scale_rng = np.random.default_rng(config.seed+6000)
     started = time.monotonic()
-    with (path/"training.jsonl").open("w") as file:
+    visited_positions, visited_rooms = set(), set()
+    with (path/"training.jsonl").open("w") as file, (path/"exploration.jsonl").open("w") as progress:
         for step in range(config.collect_steps):
             ready = step >= config.warmup_steps and trainer.updates > 0
             action = planner.act(obs, origin, scale) if ready else planner.random_action()
             position = env.position.copy()
             nxt, done = env.step(action)
             replay.add(obs, action, nxt, episode, position, env.position)
+            for p in (position, env.position):
+                visited_positions.add(tuple(np.round(p, 5)))
+                visited_rooms.add(tuple(np.floor(p).astype(int)))
             obs = nxt
             if step+1 >= max(1, config.warmup_steps) and (step+1) % config.train_every == 0:
                 for _ in range(config.updates_per_train):
                     metrics = trainer.update(replay)
-                with torch.no_grad():
-                    sample = replay.sample_states(256, scale_rng)
-                    scale = trainer.model.encode(trainer.tensor(sample)).std(0).clamp_min(1e-3)
+                if config.train.loss != "probabilistic":
+                    with torch.no_grad():
+                        sample = replay.sample_states(256, scale_rng)
+                        scale = trainer.model.encode(trainer.tensor(sample)).std(0).clamp_min(1e-3)
                 if trainer.updates % config.train.log_every < config.updates_per_train:
                     metrics.update(environment_step=step+1, seconds=time.monotonic()-started)
                     log_metrics(file, metrics)
                     print(json.dumps(metrics), flush=True)
+            if (step+1) % 100 == 0 or step+1 == config.collect_steps:
+                row = {"environment_step": step+1, "updates": trainer.updates,
+                       "coverage_rooms": len(visited_rooms)/config.maze.size**2,
+                       "visited_positions": len(visited_positions),
+                       "seconds": time.monotonic()-started,
+                       **getattr(planner, "last_metrics", {})}
+                log_metrics(progress, row)
+                print(json.dumps(row), flush=True)
             if done:
                 obs = env.reset()
                 origin = obs.copy()
@@ -159,16 +173,19 @@ def rollout(checkpoint, output, steps, overrides=(), goal=None, device="cpu"):
         planner_config[key] = getattr(config.planner, key)
     from .config import PlannerConfig
     trainer.config.planner = PlannerConfig(**planner_config)
-    if goal is None and not overrides:
+    if goal is None and not overrides and trainer.config.train.loss != "probabilistic":
         trainer.config.planner.behavior = "distance"
     config = trainer.config
     config.collect_steps = steps
+    config.validate()
+    if config.train.loss == "probabilistic" and goal is not None:
+        raise ValueError("Probabilistic mode currently implements exploration, not goal matching")
     seed_all(config.seed, config.threads)
     env, replay = Maze(config.maze, config.seed), Replay()
     if goal is not None and (np.any(np.asarray(goal) <= 0) or np.any(np.asarray(goal) >= config.maze.size)):
         raise ValueError("Goal must lie inside the maze")
     path = prepare_run(output, config, {"mode": "frozen_rollout", "checkpoint": str(checkpoint), "goal": goal})
-    planner = LatentPlanner(trainer, config.planner, config.seed+5)
+    planner = make_planner(trainer, config.planner, config.seed+5)
     obs = env.reset()
     origin = obs.copy()
     goal_observation = env.observe(goal) if goal is not None else None

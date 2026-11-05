@@ -1,0 +1,27 @@
+{
+  "description": "Compute-adjusted fresh-seed confirmation of horizon-8 / 48-simulation MCTS at 20k steps. Its ~300 nodes/action versus ~60 for default makes 100k substantially more expensive. Compare against exact first-20k slices of all 100k runs. No confirmation outcomes used to select this setting.",
+  "config": "configs/probabilistic_maze.json",
+  "seeds": [
+    3,
+    4,
+    5
+  ],
+  "overrides": [
+    "collect_steps=20000",
+    "warmup_steps=1000",
+    "maze.size=12",
+    "maze.episode_steps=2000",
+    "train_every=10",
+    "updates_per_train=5",
+    "train.log_every=1000"
+  ],
+  "variants": [
+    {
+      "name": "horizon8",
+      "overrides": [
+        "planner.horizon=8",
+        "planner.simulations=48"
+      ]
+    }
+  ]
+}

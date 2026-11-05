@@ -37,14 +37,24 @@ class Replay:
         return self._arrays
 
     def sample_transitions(self, batch, rng):
-        data = self.arrays()
         idx = rng.integers(len(self), size=batch)
-        return data["observations"][idx], data["actions"][idx], data["next_observations"][idx]
+        if self._arrays is not None:
+            data = self._arrays
+            return data["observations"][idx], data["actions"][idx], data["next_observations"][idx]
+        # Online appends invalidate arrays(). Materializing the full replay on
+        # every training event makes a long run quadratic in collected steps.
+        return (np.asarray([self.observations[i] for i in idx]),
+                np.asarray([self.actions[i] for i in idx]),
+                np.asarray([self.next_observations[i] for i in idx]))
 
     def sample_states(self, batch, rng):
         # Include terminal next states as well as transition sources.
-        data = self.arrays()
         idx = rng.integers(2 * len(self), size=batch)
+        if self._arrays is None:
+            n = len(self)
+            return np.asarray([self.observations[i] if i < n else self.next_observations[i-n]
+                               for i in idx])
+        data = self._arrays
         return np.where((idx < len(self)).reshape((-1,) + (1,) * (data["observations"].ndim-1)),
                         data["observations"][idx % len(self)], data["next_observations"][idx % len(self)])
 

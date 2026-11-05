@@ -1,0 +1,44 @@
+{
+  "description": "Adaptive follow-up to the seed-0 screen: intermediate latent width and 64-sample JS reward estimates, motivated by the Monte Carlo noise probe. Same 10k budget. Included in selection before fresh-seed confirmation.",
+  "config": "configs/probabilistic_maze.json",
+  "seeds": [
+    0
+  ],
+  "overrides": [
+    "collect_steps=10000",
+    "warmup_steps=1000",
+    "maze.size=12",
+    "maze.episode_steps=2000",
+    "train_every=10",
+    "updates_per_train=5",
+    "train.log_every=1000"
+  ],
+  "variants": [
+    {
+      "name": "latent4",
+      "overrides": [
+        "model.latent_dim=4"
+      ]
+    },
+    {
+      "name": "mc64",
+      "overrides": [
+        "planner.disagreement_samples=64"
+      ]
+    },
+    {
+      "name": "latent2_mc64",
+      "overrides": [
+        "model.latent_dim=2",
+        "planner.disagreement_samples=64"
+      ]
+    },
+    {
+      "name": "horizon1_mc64",
+      "overrides": [
+        "planner.horizon=1",
+        "planner.disagreement_samples=64"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "description": "Adaptive matched online activation test after the fixed-data 50k-update comparison: default bounded versus identity encoder, 20k steps, fresh seeds 3/4/5. Same model, reward, training, and search settings otherwise. Excluded from original screening ranking; compare at matched 20k budget.",
+  "config": "configs/probabilistic_maze.json",
+  "seeds": [
+    3,
+    4,
+    5
+  ],
+  "overrides": [
+    "collect_steps=20000",
+    "warmup_steps=1000",
+    "maze.size=12",
+    "maze.episode_steps=2000",
+    "train_every=10",
+    "updates_per_train=5",
+    "train.log_every=1000"
+  ],
+  "variants": [
+    {
+      "name": "base",
+      "overrides": []
+    },
+    {
+      "name": "unbounded",
+      "overrides": [
+        "model.latent_activation=identity"
+      ]
+    }
+  ]
+}

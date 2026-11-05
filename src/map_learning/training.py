@@ -5,6 +5,7 @@ import torch
 from torch.nn import functional as F
 from .losses import qrl_loss, time_myopic_loss, dual_ascent
 from .models import MapModel, DynamicsEnsemble
+from .probabilistic import MixtureDynamicsEnsemble, mixture_log_prob, mixture_mean, mixture_variance, repulsion_loss
 
 
 def seed_all(seed, threads=1):
@@ -21,7 +22,8 @@ class Trainer:
         self.observation_shape = observation_shape
         self.rng = np.random.default_rng(config.seed+101)
         self.model = MapModel(observation_shape, config.model, config.train.loss, config.train.horizon).to(self.device)
-        self.dynamics = DynamicsEnsemble(config.model).to(self.device)
+        dynamics_class = MixtureDynamicsEnsemble if config.train.loss == "probabilistic" else DynamicsEnsemble
+        self.dynamics = dynamics_class(config.model).to(self.device)
         self.map_optimizer = torch.optim.Adam(self.model.parameters(), lr=config.train.lr)
         self.dynamics_optimizer = torch.optim.Adam(self.dynamics.parameters(), lr=config.train.lr)
         self.multiplier = torch.tensor(config.train.initial_multiplier, device=self.device)
@@ -38,6 +40,8 @@ class Trainer:
                 bottle.initialize(self.model.encoder(self.tensor(samples)))
 
     def update(self, replay):
+        if self.config.train.loss == "probabilistic":
+            return self.update_probabilistic(replay)
         self.initialize(replay)
         c = self.config.train
         obs, actions, nxt = replay.sample_transitions(c.batch_size, self.rng)
@@ -96,6 +100,40 @@ class Trainer:
         metrics.update(update=self.updates, map_loss=float(map_loss.detach()), dynamics_mse=float(dynamics_loss.detach()),
                        latent_std=float(z0.std(dim=0).mean()))
         return metrics
+
+    def update_probabilistic(self, replay):
+        c = self.config.train
+        head_losses, errors, variances, means = [], [], [], []
+        self.map_optimizer.zero_grad()
+        self.dynamics_optimizer.zero_grad()
+        # Independent replay resamples per head; both ends retain encoder gradients.
+        for m in range(len(self.dynamics.heads)):
+            obs, actions, nxt = replay.sample_transitions(c.batch_size, self.rng)
+            z, target = self.model.encode(self.tensor(np.concatenate([obs, nxt]))).chunk(2)
+            params = self.dynamics.parameters_head(m, z, torch.as_tensor(actions, device=self.device))
+            head_losses.append(-mixture_log_prob(params, target).mean()/z.shape[-1])
+            errors.append((mixture_mean(params)-target).square().mean().detach())
+            variances.append(mixture_variance(params).mean().detach())
+            means.append(z.detach())
+        states = self.tensor(replay.sample_states(2*c.batch_size, self.rng))
+        left, right = self.model.encode(states).chunk(2)
+        repulsion = repulsion_loss(left, right, c.repulsion_margin)
+        nll = torch.stack(head_losses).mean()
+        total = nll + c.repulsion_weight*repulsion
+        if not torch.isfinite(total):
+            raise FloatingPointError("Probabilistic joint loss became nonfinite")
+        total.backward()
+        torch.nn.utils.clip_grad_norm_(self.model.parameters(), 10.)
+        torch.nn.utils.clip_grad_norm_(self.dynamics.parameters(), 10.)
+        self.map_optimizer.step()
+        self.dynamics_optimizer.step()
+        self.updates += 1
+        latent = torch.cat(means)
+        return {"update": self.updates, "joint_loss": float(total.detach()),
+                "nll_per_dim": float(nll.detach()), "repulsion": float(repulsion.detach()),
+                "dynamics_mse": float(torch.stack(errors).mean()),
+                "predictive_variance": float(torch.stack(variances).mean()),
+                "latent_std": float(latent.std(0).mean())}
 
     def save(self, path):
         torch.save({"config": asdict(self.config), "observation_shape": self.observation_shape,

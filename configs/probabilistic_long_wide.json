@@ -1,0 +1,26 @@
+{
+  "description": "Speculative 100k confirmation of the current second-ranked completed screen setting, launched before the full screen completes. Do not use outcomes for selection; report as additional architecture control if outside final top two.",
+  "config": "configs/probabilistic_maze.json",
+  "seeds": [
+    3,
+    4,
+    5
+  ],
+  "overrides": [
+    "collect_steps=100000",
+    "warmup_steps=1000",
+    "maze.size=12",
+    "maze.episode_steps=2000",
+    "train_every=10",
+    "updates_per_train=5",
+    "train.log_every=1000"
+  ],
+  "variants": [
+    {
+      "name": "wide128",
+      "overrides": [
+        "model.hidden_dim=128"
+      ]
+    }
+  ]
+}

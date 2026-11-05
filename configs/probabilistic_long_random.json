@@ -1,0 +1,26 @@
+{
+  "description": "100k-step persistent-random reference on fresh behavior seeds; settings matched to screening base.",
+  "config": "configs/probabilistic_maze.json",
+  "seeds": [
+    3,
+    4,
+    5
+  ],
+  "overrides": [
+    "collect_steps=100000",
+    "warmup_steps=1000",
+    "maze.size=12",
+    "maze.episode_steps=2000",
+    "train_every=10",
+    "updates_per_train=5",
+    "train.log_every=1000"
+  ],
+  "variants": [
+    {
+      "name": "random",
+      "overrides": [
+        "planner.behavior=random"
+      ]
+    }
+  ]
+}

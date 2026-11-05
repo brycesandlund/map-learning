@@ -131,3 +131,180 @@ An earlier evaluation attempt also exposed a NaN correlation for constant predic
 3. At fixed codebook sizes, ablate entropy weight down to zero and monitor code usage together with distance distortion and self-distance.
 4. Add nuisance observations to test merging across different observations of the same physical position.
 5. Compare random, distance, and disagreement planning under matched interaction budgets after validating the maps and dynamics.
+
+
+## 2026-11-04 — Joint mixture dynamics and disagreement search
+
+
+Implemented and executed a continuous-latent, jointly trained Gaussian-mixture ensemble with C-SWM-style repulsion. The agent uses distribution disagreement as intrinsic reward, with either stochastic MCTS or particle random shooting. No actor, codebook, explicit state merging, reconstruction, shortest-path labels, or learned distance objective is used.
+
+## Main result
+
+The implementation learns a noncollapsed representation and useful one-step dynamics, but **the first uncertainty-search policies do not beat persistent random exploration**. This is a pilot on one deterministic coordinate-observation maze, not a conclusion about the research idea.
+
+| Online policy | Updates per run | Mean room coverage | Mean reachable-position coverage |
+|---|---:|---:|---:|
+| Persistent random | 1082 | 88.9% | 74.1% |
+| MCTS | 1082 | 65.7% | 51.0% |
+| Random shooting | 1082 | 57.4% | 46.3% |
+| Persistent random, more fitting | 5410 | 88.9% | 74.1% |
+| MCTS, more fitting | 5410 | 71.3% | 54.0% |
+
+![Online coverage comparison](runs/probabilistic-summary/coverage-comparison.png)
+
+## Exact setup
+
+- Environment: existing continuous point maze, 6×6 rooms, layout seed 7, extra-door probability 0.18, step size 0.25, five actions (right/left/up/down/stay), center reset every 500 steps. There are 441 reachable positions under these controls.
+- Observation: normalized 2D coordinates. No stochastic transitions, nuisance dimensions, or pixels in the pilot. The unit tests cover probabilistic training on pixels and noisy features, but those are not exploration results.
+- Three model/behavior seeds (0, 1, 2), one fixed maze layout. Each run has 3,000 real interactions and 300 persistent-random warmup steps. Matched-seed warmups were checked for exact equality across methods.
+- Representation: bounded continuous 8D tanh encoder, two 64-wide hidden layers. Three ensemble members, each with three diagonal Gaussian components. Independent initialization and independent replay resampling for each member; shared encoder.
+- Mean = current latent + predicted residual. Variance = 1e-4 + softplus(raw); initialized around 0.01. Gaussian densities use stable log-sum-exp. No output clipping or projection during imagination.
+- Training: mean member NLL per latent dimension + 10 × C-SWM hinge repulsion on independently sampled replay pairs, with Euclidean margin 1. Adam 3e-4; both source and target encoder branches receive gradients from likelihood. No detach or target encoder.
+- Initial schedule: two updates every five interactions starting at step 300, for 1,082 total updates. Follow-up schedule: ten updates, for 5,410 total. All real observations are retained and re-encoded when sampled.
+- Intrinsic reward: Monte Carlo generalized Jensen–Shannon divergence between complete member mixture distributions. Eight draws per member in search; 32 in evaluation. Component identities are irrelevant. Clamp only the final estimate to [0, log(3)] nats.
+- Return: sum of per-transition disagreement discounted by 0.9 per step, horizon 4. Execute one real action and replan. Ten percent epsilon-random exploration.
+- MCTS: 24 simulations, UCT coefficient 0.3, chance progressive widening ceil(visits^0.5). Chance samples come from the uniform ensemble predictive mixture; existing samples are reused uniformly. Select the root action by visit count. New tree for every real observation.
+- Shooting: 64 independent random action sequences, four stochastic particles each, expected discounted score. This is an open-loop sequence search with a different compute budget from MCTS.
+- Random baseline: repeat the previous action with probability 0.8, otherwise sample uniformly. It trains the same model on the same update schedule, but never consults it for actions. Its trajectories were verified identical between the two learning budgets.
+
+## Per-seed results
+
+| Updates/5 steps | Policy | Seed | Rooms | Reachable positions | Replay JS (nats) | All-state normalized MSE |
+|---:|---|---:|---:|---:|---:|---:|
+| 2 | random | 0 | 91.7% | 76.0% | 0.535 | 0.00332 |
+| 2 | random | 1 | 75.0% | 66.2% | 0.307 | 0.00590 |
+| 2 | random | 2 | 100.0% | 80.3% | 0.503 | 0.00253 |
+| 2 | mcts | 0 | 61.1% | 50.8% | 0.589 | 0.00365 |
+| 2 | mcts | 1 | 63.9% | 45.8% | 0.456 | 0.00725 |
+| 2 | mcts | 2 | 72.2% | 56.5% | 0.610 | 0.00283 |
+| 2 | shooting | 0 | 61.1% | 51.7% | 0.643 | 0.00306 |
+| 2 | shooting | 1 | 47.2% | 36.3% | 0.546 | 0.01126 |
+| 2 | shooting | 2 | 63.9% | 50.8% | 0.586 | 0.00290 |
+| 10 | random | 0 | 91.7% | 76.0% | 0.195 | 0.00568 |
+| 10 | mcts | 0 | 72.2% | 56.9% | 0.302 | 0.00248 |
+| 10 | random | 1 | 75.0% | 66.2% | 0.242 | 0.00545 |
+| 10 | mcts | 1 | 66.7% | 48.8% | 0.205 | 0.01801 |
+| 10 | random | 2 | 100.0% | 80.3% | 0.212 | 0.00207 |
+| 10 | mcts | 2 | 75.0% | 56.5% | 0.375 | 0.00168 |
+
+Room coverage counts room cells visited; position coverage counts reachable physical lattice locations. These oracle labels are used only by the evaluator and never by learning/search. Different policies collect different data, so coverage is now an actual policy outcome rather than the same offline-data statistic repeated for each loss.
+
+The normalized MSE is ensemble-mixture-mean error divided by each model's own average latent coordinate variance. All-state probes include seen and unseen transitions, not an independent test set. Independent encoders can distort geometry differently, so these errors are diagnostics, not a universal model ranking. NLL can be negative and is not directly comparable across learned latent coordinate systems.
+
+## What the diagnostics say
+
+All nine initial runs retained substantial latent variance and effective rank about 1.93–2.48. Their one-step means beat a current-state persistence predictor on the all-state probe. This establishes basic learning, not a faithful topology or reliable long-horizon planner.
+
+In the initial MCTS runs, seen/unseen state-action disagreement was respectively 0.599/0.645, 0.399/0.388, and 0.604/0.645 nats. The reward does not reliably distinguish a familiar transition from an untried one. Across all nine initial runs, Pearson correlation between disagreement and one-step mean error ranged from about -0.328 to 0.209. Mean error is not a complete measure of distribution calibration, but this is weak evidence for using the current score as exploration value.
+
+Gaussian imagination also extends beyond the bounded encoder's range. A single-sample-per-position probe for action 0 (right) found out-of-bounds rates from roughly 1% to 58% across initial runs. This measures a distribution-support mismatch, not the frequency of invalid states actually visited by search. There is no learned manifold constraint, and no clipping was silently added.
+
+## Fixed-replay fitting diagnostic
+
+Both diagnostics start from the initial random-seed-0 checkpoint and its same 3,000 transitions. They perform 2,000 additional updates with no new interaction, evaluating every 500 updates. One continues joint training; the other freezes the encoder. These are optimization probes, not new coverage trials.
+
+| Model at evaluation | Replay JS | Replay normalized MSE |
+|---|---:|---:|
+| Starting checkpoint | 0.5349 | 0.003075 |
+| Joint, +2,000 updates | 0.2370 | 0.004178 |
+| Frozen encoder, +2,000 updates | 0.2472 | 0.002641 |
+
+Disagreement falls on fixed experience even when the representation is fixed. Joint training reduces disagreement while mean error worsens in this probe, underscoring that agreement alone is not accuracy. The matched online follow-up with more fitting improves MCTS room coverage to 71.3%, still below random's 88.9%. No broad hyperparameter sweep or claim of superiority was made.
+
+![Learning diagnostics](runs/probabilistic-summary/learning-diagnostics.png)
+
+## Artifacts and reproduction
+
+Run from `/Users/brycesandlund/GitHub/map-learning`; use fresh output names (the CLI refuses to overwrite runs):
+
+```bash
+.venv/bin/python scripts/run_probabilistic_pilot.py \
+  --out runs/new-probabilistic-pilot --seeds 0 1 2
+
+.venv/bin/python scripts/run_probabilistic_pilot.py \
+  --out runs/new-probabilistic-more-learning --seeds 0 1 2 \
+  --methods random mcts --set updates_per_train=10
+
+.venv/bin/python scripts/refit_probabilistic.py \
+  --checkpoint runs/probabilistic-pilot-seed0/random-seed0/checkpoint.pt \
+  --data runs/probabilistic-pilot-seed0/random-seed0/replay.npz \
+  --out runs/new-refit --updates 2000
+# Add --freeze-encoder for the second refit diagnostic.
+```
+
+Actual runs are in `runs/probabilistic-pilot-seed{0,1,2}/`, `runs/probabilistic-more-learning-seed{0,1,2}/`, and `runs/probabilistic-refit-{joint,frozen}/`. Combined machine-readable results are in `runs/probabilistic-summary/all-results.json`. Each online run saves config, source hashes and snapshot, checkpoint, raw replay, training/exploration logs, metrics, coverage/diagnostic plots, and the evaluation-only `probe.npz`.
+
+Validation: **25 tests pass**, including mixture likelihood against PyTorch distributions, bimodal fitting, sampling frequencies, permutation-invariant distribution disagreement, zero disagreement for shared aleatoric uncertainty, gradients through both encoder branches, joint noncollapse/learning, exact checkpoint continuation, MCTS chance averaging, shooting selection, and pixel/noisy-feature training. Existing QRL/Time-Myopic and collision tests also pass. Additional CLI smoke checks covered online MCTS, frozen shooting, offline fitting with held-out episodes, and resuming that fit from 20 to 25 updates. `compileall` and `git diff --check` pass.
+
+## Next discriminating experiments
+
+1. Compare distribution JS with a mean-disagreement reward and a one-step horizon, holding representation/data budgets fixed; this separates reward calibration from imagined-path exploitation.
+2. Test longer fitting and confidence calibration on fixed data, with independent evaluation of transition likelihood and error. Independent replay batches do not make the ensemble a Bayesian posterior.
+3. Add nuisance observations and branching transition noise after the clean-maze exploration baseline is understood. A bimodal unit test validates the distribution implementation, not robust aleatoric/epistemic separation in an environment.
+4. Test multiple maze layouts and larger interaction budgets. The current three seeds vary initialization and behavior, not environment layout.
+
+## 2026-11-04 — Longer probabilistic dynamics sweep (complete)
+
+Completed **41 online runs / 1,580,000 interactions**, plus two 50k-update offline fits. Twelve runs reached 100k steps, nine follow-up runs reached 20k, and twenty screening runs reached 10k. No unresolved runs remain. All runs retain checkpoints, raw replay, resolved configs, source snapshots, logs, and metrics.
+
+Full report and figures: [probabilistic-sweep.md](docs/probabilistic-sweep.md). Machine-readable bundle: `runs/probabilistic-sweep-summary-20261104/results.json`.
+
+### Results at 100k steps
+
+| Setting | Seeds | Mean position AUC | Mean final positions | Mean final rooms | Position range |
+|---|---:|---:|---:|---:|---:|
+| random | 3 | 83.8% | 99.4% | 100.0% | 99.0–99.8% |
+| random_iid | 3 | 61.5% | 82.6% | 84.5% | 79.4–86.9% |
+| single_gaussian | 3 | 63.1% | 74.2% | 78.2% | 57.3–90.9% |
+| wide128 | 3 | 50.8% | 56.3% | 63.2% | 42.7–64.9% |
+
+
+### Matched first 20k steps
+
+| Setting | Seeds | Mean position AUC | Mean final positions | Mean final rooms | Position range |
+|---|---:|---:|---:|---:|---:|
+| base | 3 | 32.3% | 45.7% | 52.3% | 38.5–58.9% |
+| horizon8 | 3 | 32.9% | 48.2% | 58.1% | 39.8–55.5% |
+| random | 3 | 48.7% | 72.5% | 81.7% | 69.3–75.8% |
+| random_iid | 3 | 26.3% | 42.2% | 47.2% | 35.4–53.3% |
+| single_gaussian | 3 | 38.8% | 54.7% | 60.2% | 51.0–60.9% |
+| unbounded | 3 | 31.8% | 45.9% | 52.8% | 32.3–60.1% |
+| wide128 | 3 | 35.2% | 49.1% | 56.2% | 37.4–57.2% |
+
+
+Removing the tanh encoder bound improved fixed-data next-position retrieval from **74.3% to 89.3%**. In the online activation follow-up, mean retrieval improved from **52.6% to 64.5%**, but coverage remained **45.7% versus 45.9%**. The paired offline fits used identical data, split, initialization seed, and sampling sequence. The online activation follow-up is exploratory and reuses confirmation seeds.
+
+No learned configuration beat persistent random in the mean matched-budget results. Single-Gaussian MCTS explored faster than iid random early (100k AUC 63.1% versus 61.5%), but stalled and ended with less coverage. Two single-Gaussian seeds found no new positions in the last 20k steps despite moving on 85–87% of those steps. Global latent variance alone also missed a severe loss of vertical sensitivity in one iid-control encoder.
+
+Validation: **30 tests passed**; all 41 interaction/update budgets, replay lengths, checkpoint existence, coverage consistency, and matched warmups were audited. One post-training evaluation error was recovered with checkpoint/replay/config hashes unchanged; the failure archive records its resolution. No training was discarded. `compileall` and `git diff --check` pass.
+
+### Protocol and decisions recorded during the run
+
+
+Requested a hyperparameter/architecture sweep and substantially longer training. Screening manifest: `configs/probabilistic_sweep.json`; runner: `scripts/run_probabilistic_sweep.py`; artifacts: `runs/probabilistic-sweep-20261104/`.
+
+Predeclared setup: 12×12 maze, layout seed 7, coordinate observations, reset every 2,000 steps, 1,000 random warmup steps, 10,000 total interactions per screening run. Base training has five updates every ten steps (4,505 total). Fifteen learned variants plus a persistent-random baseline, screening seed 0. Variants change latent dimension (2/8/16), hidden width (64/128), ensemble members (3/5), Gaussian components (1/3), repulsion weight (1/10/30), variance floor (1e-4/1e-3), learning rate (3e-4/1e-3), updates per training event (5/20), search horizon (1/4/8), random-action probability (.1/.3), and MCTS versus shooting. This is a one-factor screen, not a full factorial search; horizon 8 also doubles simulations to 48.
+
+Selection: rank learned configurations by exact reachable-position coverage AUC, defined as mean coverage after every real interaction. Confirm the top two for 100,000 steps on fresh model/behavior seeds alongside a matched random baseline. AUC rewards early discovery; final coverage and steps to coverage thresholds are also recorded. No oracle state labels enter the learned model or planner. Screening selection uses evaluator labels only, as ordinary hyperparameter tuning.
+
+Infrastructure: isolated worker processes, bounded concurrency, full per-run configs/source snapshots/checkpoints/replays/logs, exact coverage AUC and threshold computation, explicit failure logs. Replay online sampling now gathers only sampled rows instead of rematerializing the entire buffer after every append. Cached/offline and uncached/online samples match exactly under the same RNG. Removed unused latent-scale computation from probabilistic training. Validation before launching: 27 tests passed.
+
+Additional controls during the sweep: a 100k independent-uniform-action random baseline on seeds 3–5 (`configs/probabilistic_long_iid.json`) measures the advantage from action persistence. An evaluation-only MC noise probe (`scripts/probe_disagreement_noise.py`, `runs/probabilistic-disagreement-noise-20261104.json`) compares eight-sample immediate-disagreement action rankings with a 256-sample reference on 64 states, 20 repetitions. Agreement was 62.4% for the 10k base checkpoint, 28.0% for latent-2, and 60.8% for the 100k random-seed-3 checkpoint. The 256-sample reference is still an estimate; this is not a control policy or an oracle-correct-action test.
+
+Based on that diagnostic, added an adaptive four-run screen (`configs/probabilistic_sweep_followup.json`): latent dimension 4, 64 MC samples/member, latent-2 with 64 samples, and horizon-1 with 64 samples. Same 10k seed-0 budget. Selection for fresh-seed confirmation uses AUC across both screening batches. This extension is explicitly adaptive, not part of the original 16-run grid.
+
+While the final two screening runs completed, launched 100k single-Gaussian and width-128 runs on fresh seeds 3–5, the leading completed settings at that point. Their outcomes are excluded from hyperparameter selection; if the completed grid ranks a different setting above them, these remain additional architecture controls. Manifests: `configs/probabilistic_long_gaussian.json` and `configs/probabilistic_long_wide.json`.
+
+Added post-hoc evaluation-only physical next-state retrieval (`scripts/evaluate_next_state_retrieval.py`): predict the ensemble-mixture mean, match its latent to the closest encoded position in the full maze catalogue, and compare with the true next position. Direct-distance computation avoids squared-norm cancellation near saturated coordinates. This is a particular readout, not an optimal decoder or a test of the agent's planning loop. Also measure horizontal/vertical latent displacement on valid physical movements. A uniform-random seed-5 model at 100k has mean horizontal/vertical displacement ratio about 758 despite substantial latent variance and effective rank ~2.04; its nearest-latent next-position accuracy is only 12.8%. This demonstrates that global spread and low latent MSE alone do not establish preservation of navigational information.
+
+Compute-driven confirmation change: horizon-8/48-simulation MCTS overtook the other learned screening settings (its monotone-coverage AUC lower bound at ~7.3k already exceeded single-Gaussian). It expands about 300 search nodes/action rather than 60 and takes much longer per interaction. Confirm horizon-8 on fresh seeds 3–5 for **20,000 steps** using `configs/probabilistic_long_deep.json`, comparing it with the exact first-20k prefixes of all other policies. The single-Gaussian and width-128 architecture tests still run for **100,000 steps**. This explicitly replaces the initial plan to give both eventual screen finalists 100k; do not compare the 20k final coverage directly against 100k finals or label horizon-8 a 100k result. Width-128 remains the additional architecture control if displaced from the top two by horizon-8.
+
+Added an opt-in probabilistic encoder setting, `model.latent_activation=identity`, to remove the tanh output bound while keeping the default unchanged. Old checkpoints/configs default to tanh. Saturation and out-of-encoder-bounds metrics are null for an unbounded encoder rather than falsely reporting a bound violation. All 29 tests pass, including a new quantitative JS comparison with independent density quadrature and default/checkpoint compatibility for the activation setting.
+
+Controlled activation diagnostic: two fresh offline fits on exactly the same `runs/probabilistic-long-iid-20261104/random_iid-seed5/replay.npz`, with seed 5, 50,000 updates, and the same whole-episode 80/20 split. Only tanh versus identity changes. Outputs: `runs/probabilistic-activation-{tanh,identity}-20261104/`. These fits use stored experience and add no interactions. They are excluded from exploration ranking. Unlike the online run, they see the full training buffer from the outset, so only the paired offline comparison isolates activation.
+
+The paired 50k-update offline fits completed. Tanh: 74.3% all-state next-position retrieval, mean physical error 0.1711, horizontal/vertical latent-step ratio 0.98. Identity: 89.3%, error 0.03394, ratio 2.90. Only 0.011% of identity predictions have more than one room of Euclidean error, versus 5.17% for tanh. Both were trained on the same 80k transitions and evaluated on the same 20k held-out transitions plus the full evaluation-only maze catalogue. The fresh offline tanh fit preserves both directions, unlike the original online iid seed-5 run, so the bound alone does not explain that failure; online curriculum/optimization also differs. Effective covariance rank is lower for identity (1.38 versus 2.85), demonstrating why this statistic is not itself a representation-quality score. Full metrics: `runs/probabilistic-sweep-summary-20261104/activation-comparison.json`.
+
+Based on this paired diagnostic, added a matched **20k online** activation comparison on seeds 3–5: default `base` versus `unbounded`, otherwise identical GMM ensemble and horizon-4 MCTS (`configs/probabilistic_online_activation.json`). This is an adaptive follow-up, excluded from the original 20-run screening ranking. Compare these six runs with other policies at the common 20k horizon. No further configurations are planned in this batch. Offline coverage-image captions were clarified as replay coverage; model weights and training metrics were unchanged.
+
+Recovery note: the single-Gaussian seed-5 run completed all 100k steps and saved its checkpoint/replay, then final evaluation failed because the process predated the new `latent_activation` config field and lazily imported the updated evaluator. Added a legacy-field default in evaluation and re-evaluated the saved run with `scripts/recover_evaluation.py`. It validates completed step/update budgets and config/replay consistency, and verifies checkpoint/replay/config SHA-256 hashes are unchanged. `evaluation_recovery.json` records the repair. Rebuilding the sweep summary validates all three completed runs and archives the earlier failure as resolved. No training was discarded or repeated. New completed-run config validation fills newly introduced default fields for older configs.

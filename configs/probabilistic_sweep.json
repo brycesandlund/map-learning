@@ -1,0 +1,24 @@
+{
+  "description": "12x12 coordinate maze; screen on seed 0. Select two models by exact lattice coverage AUC, then validate on fresh seeds for 100k steps. No oracle feedback to learning or planning.",
+  "config": "configs/probabilistic_maze.json",
+  "seeds": [0],
+  "overrides": ["collect_steps=10000", "warmup_steps=1000", "maze.size=12", "maze.episode_steps=2000", "train_every=10", "updates_per_train=5", "train.log_every=1000"],
+  "variants": [
+    {"name": "random", "overrides": ["planner.behavior=random"]},
+    {"name": "base", "overrides": []},
+    {"name": "latent2", "overrides": ["model.latent_dim=2"]},
+    {"name": "latent16", "overrides": ["model.latent_dim=16"]},
+    {"name": "wide128", "overrides": ["model.hidden_dim=128"]},
+    {"name": "ensemble5", "overrides": ["model.ensemble_size=5"]},
+    {"name": "single_gaussian", "overrides": ["model.mixture_components=1"]},
+    {"name": "repulsion1", "overrides": ["train.repulsion_weight=1"]},
+    {"name": "repulsion30", "overrides": ["train.repulsion_weight=30"]},
+    {"name": "variance1e-3", "overrides": ["model.variance_floor=0.001"]},
+    {"name": "lr1e-3", "overrides": ["train.lr=0.001"]},
+    {"name": "fit4x", "overrides": ["updates_per_train=20"]},
+    {"name": "horizon1", "overrides": ["planner.horizon=1"]},
+    {"name": "horizon8", "overrides": ["planner.horizon=8", "planner.simulations=48"]},
+    {"name": "epsilon30", "overrides": ["planner.epsilon_random=0.3"]},
+    {"name": "shooting", "overrides": ["planner.search=shooting"]}
+  ]
+}

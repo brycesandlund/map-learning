@@ -61,6 +61,9 @@ def encode_batch(trainer, observations, batch=512):
 
 @torch.no_grad()
 def evaluate(trainer, replay, output, heldout=None):
+    if trainer.config.train.loss == "probabilistic":
+        from .probabilistic_evaluation import evaluate_probabilistic
+        return evaluate_probabilistic(trainer, replay, output, heldout)
     output = Path(output)
     output.mkdir(parents=True, exist_ok=True)
     env = Maze(trainer.config.maze, seed=trainer.config.seed+8000)

@@ -1,0 +1,17 @@
+{
+  "collect_steps": 3000,
+  "warmup_steps": 300,
+  "train_every": 5,
+  "updates_per_train": 2,
+  "maze": {"size": 6, "seed": 7, "step_size": 0.25, "episode_steps": 500},
+  "model": {"latent_dim": 8, "hidden_dim": 64, "ensemble_size": 3,
+            "mixture_components": 3, "variance_floor": 0.0001,
+            "initial_variance": 0.01, "latent_bound": 1.0},
+  "train": {"loss": "probabilistic", "batch_size": 128, "lr": 0.0003,
+            "repulsion_weight": 10.0, "repulsion_margin": 1.0, "log_every": 100},
+  "planner": {"behavior": "disagreement", "search": "mcts", "horizon": 4,
+              "simulations": 24, "uncertainty_discount": 0.9, "epsilon_random": 0.1,
+              "uct_exploration": 0.3, "widening_coefficient": 1.0,
+              "widening_exponent": 0.5, "disagreement_samples": 8,
+              "candidates": 64, "particles": 4}
+}
