@@ -415,3 +415,11 @@ config/replay, and records unchanged hashes for the checkpoint, replay, and conf
 It refuses incomplete training runs. Then rerun the same sweep manifest/output to
 rebuild summaries; completed runs are reused and earlier failure records are
 archived as resolved. Older configs are compared after filling default fields.
+
+### Animated exploration replays
+
+See [exploration animations](docs/exploration-animations.md) for the full-run and
+late-episode comparisons, plus reproduction commands. The reusable
+`scripts/animate_exploration.py` accepts one or more saved runs, labels, a time
+window, frame stride, trail length, and playback speed. It shows accumulated
+coverage and recent movement while keeping reset jumps out of the path.
