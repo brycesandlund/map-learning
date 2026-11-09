@@ -38,6 +38,10 @@ class Replay:
 
     def sample_transitions(self, batch, rng):
         idx = rng.integers(len(self), size=batch)
+        return self.transitions_at(idx)
+
+    def transitions_at(self, idx):
+        """Read explicit transition indices, including a partial final batch."""
         if self._arrays is not None:
             data = self._arrays
             return data["observations"][idx], data["actions"][idx], data["next_observations"][idx]

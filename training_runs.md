@@ -308,3 +308,41 @@ The paired 50k-update offline fits completed. Tanh: 74.3% all-state next-positio
 Based on this paired diagnostic, added a matched **20k online** activation comparison on seeds 3–5: default `base` versus `unbounded`, otherwise identical GMM ensemble and horizon-4 MCTS (`configs/probabilistic_online_activation.json`). This is an adaptive follow-up, excluded from the original 20-run screening ranking. Compare these six runs with other policies at the common 20k horizon. No further configurations are planned in this batch. Offline coverage-image captions were clarified as replay coverage; model weights and training metrics were unchanged.
 
 Recovery note: the single-Gaussian seed-5 run completed all 100k steps and saved its checkpoint/replay, then final evaluation failed because the process predated the new `latent_activation` config field and lazily imported the updated evaluator. Added a legacy-field default in evaluation and re-evaluated the saved run with `scripts/recover_evaluation.py`. It validates completed step/update budgets and config/replay consistency, and verifies checkpoint/replay/config SHA-256 hashes are unchanged. `evaluation_recovery.json` records the repair. Rebuilding the sweep summary validates all three completed runs and archives the earlier failure as resolved. No training was discarded or repeated. New completed-run config validation fills newly introduced default fields for older configs.
+
+## 2026-11-09 — Training cadence experiment (completed)
+
+Question: does promptly fitting every transition, or repeatedly fitting all experience, reduce dynamics-ensemble disagreement and improve useful prediction/exploration?
+
+Manifest: `configs/probabilistic_cadence.json`. Three matched seeds (0, 1, 2), 10,000 actions each, 12×12 maze seed 7, center reset every 2,000 actions, 1,000 persistent-random warmup actions. All conditions use the same tanh encoder (8 latents, width 64), three single-Gaussian dynamics heads, batch size 128, Adam 3e-4, repulsion weight 10, and MCTS horizon 4 / 24 simulations. No policy network is trained.
+
+- `replay`: existing five independently sampled replay minibatches per head every 10 actions.
+- `epoch`: one full shuffled pass over all collected transitions per head every 10 actions. Independent permutation per member; final partial batch retained. Replaces the five random replay updates.
+- `new_then_replay`: one shuffled pass over transitions collected since the last training event, followed by the original five replay updates. First event includes all 1,000 warmup transitions; subsequent events include 10 new transitions. The new batch has its own optimizer update, not dilution inside a batch of old transitions.
+
+Encoder and dynamics are jointly trained in every update. Repulsion still uses 128 random replay-state pairs per update. Both new schedules flush final partial collection blocks and guarantee every collected transition has reached every head by the end of the run. Uniform random replay baseline has no such explicit guarantee.
+
+`cadence.jsonl` logs before/after diagnostics at each training event: latest 10 transitions, 128 older replay samples, and a fixed 128-transition maze-wide evaluation probe. These track JS disagreement (8 MC draws/member), NLL, latent MSE normalized by probe latent variance, persistence baseline error, predictive variance, and latent variance. Before/after samples are identical and MC seeds shared. Probe transitions never enter replay or optimization; they can overlap experienced state-actions, so this is not a disjoint held-out set. Final evaluation separately reports seen/unseen state-actions over the full maze. Diagnostic RNGs are isolated from learning and planning.
+
+Coverage is measured against both environment actions and wall time; training time is logged separately. These online conditions collect different trajectories, so final prediction errors are not a fixed-data comparison. Three seeds are an exploratory comparison, not a conclusive ranking.
+
+Run command:
+
+```bash
+MPLCONFIGDIR=/tmp/map-cadence-mpl .venv/bin/python scripts/run_probabilistic_sweep.py \
+  --manifest configs/probabilistic_cadence.json \
+  --out runs/probabilistic-cadence-20261109 --jobs 3
+```
+
+All **nine runs completed** (90,000 real actions; 147,228 joint updates total), with all requested transition-coverage guarantees verified. Tests: **36 passed**. Seed-0 replay-baseline actions and positions exactly match the previous single-Gaussian seed-0 screen, validating that diagnostics did not change the trajectory.
+
+| Schedule | Updates/run | Final position coverage, mean (range) | Coverage AUC | Final replay JS | Physical next-position exact retrieval |
+|---|---:|---:|---:|---:|---:|
+| Replay baseline | 4,505 | 37.4% (30.8–42.7%) | 25.3% | 0.1449 | 41.2% |
+| Full epoch | 39,158 | 41.2% (32.1–47.9%) | 26.9% | 0.1220 | 30.1% |
+| New once + replay | 5,413 | 37.1% (29.0–42.7%) | 22.9% | 0.1026 | 34.1% |
+
+Extra fitting reduced final average replay disagreement but did not improve the common physical readout. Full epochs increased mean final coverage by 3.8 percentage points (two seeds better, one worse), using 8.7× the updates and about 1.6× elapsed collection time. New-once training reduced disagreement the most, with essentially unchanged mean final coverage and lower coverage AUC. These results do not establish insufficient replay fitting as the main bottleneck. Every added optimizer update also trains repulsion, so this is not an isolated dynamics-only optimization test.
+
+Mean elapsed minutes: replay 1.61, epoch 2.65, new-once 1.65; corresponding training-only minutes 0.13, 1.13, 0.15. Concurrent workers and diagnostics limit wall-time comparisons. Physical prediction uses nearest-latent retrieval over all reachable state-actions, not an optimal decoder. Persistence achieves 31.9% exact accuracy and 0.1702 mean physical error, compared with model errors 0.5008 / 0.6401 / 0.6978, respectively.
+
+Full results, before/after diagnostics, plots, seed-0 exploration GIF, and reproduction commands: [training cadence report](docs/training-cadence.md). Portable numeric results: `docs/assets/cadence-results.json`. Raw runs: `runs/probabilistic-cadence-20261109/`. Source snapshots match across all nine runs.

@@ -1,0 +1,11 @@
+{
+  "description": "Matched 10k-action cadence test: single-Gaussian MCTS; replay baseline, full epoch every 10 actions, and each new transition once plus baseline replay updates. Diagnostics never influence training/planning.",
+  "config": "configs/probabilistic_maze.json",
+  "seeds": [0, 1, 2],
+  "overrides": ["collect_steps=10000", "warmup_steps=1000", "maze.size=12", "maze.episode_steps=2000", "train_every=10", "updates_per_train=5", "train.log_every=1000", "model.mixture_components=1", "cadence_diagnostics=true"],
+  "variants": [
+    {"name": "replay", "overrides": ["training_schedule=replay"]},
+    {"name": "epoch", "overrides": ["training_schedule=epoch"]},
+    {"name": "new_then_replay", "overrides": ["training_schedule=new_then_replay"]}
+  ]
+}

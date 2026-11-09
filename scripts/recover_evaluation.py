@@ -14,6 +14,22 @@ from map_learning.replay import Replay
 from map_learning.training import Trainer, seed_all
 
 
+def expected_updates(cfg):
+    first = ((max(1, cfg.warmup_steps)+cfg.train_every-1)//cfg.train_every)*cfg.train_every
+    events = list(range(first, cfg.collect_steps+1, cfg.train_every))
+    if cfg.training_schedule != 'replay' and (not events or events[-1] != cfg.collect_steps):
+        events.append(cfg.collect_steps)
+    updates, previous = 0, 0
+    for step in events:
+        if cfg.training_schedule != 'replay':
+            size = step if cfg.training_schedule == 'epoch' else step-previous
+            updates += (size+cfg.train.batch_size-1)//cfg.train.batch_size
+        if cfg.training_schedule != 'epoch':
+            updates += cfg.updates_per_train
+        previous = step
+    return updates
+
+
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--run',required=True)
@@ -28,8 +44,7 @@ def main():
     replay,maze=Replay.load(path/'replay.npz')
     if asdict(trainer.config)!=asdict(cfg) or maze!=asdict(cfg.maze):
         raise ValueError('Config, checkpoint and replay do not match')
-    first=((max(1,cfg.warmup_steps)+cfg.train_every-1)//cfg.train_every)*cfg.train_every
-    updates=max(0,(cfg.collect_steps-first)//cfg.train_every+1)*cfg.updates_per_train
+    updates=expected_updates(cfg)
     progress=json.loads((path/'exploration.jsonl').read_text().splitlines()[-1])
     if len(replay)!=cfg.collect_steps or trainer.updates!=updates or progress['environment_step']!=len(replay):
         raise ValueError('Training/interaction budget was not completed; refusing evaluation recovery')

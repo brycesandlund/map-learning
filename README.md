@@ -423,3 +423,19 @@ late-episode comparisons, plus reproduction commands. The reusable
 `scripts/animate_exploration.py` accepts one or more saved runs, labels, a time
 window, frame stride, trail length, and playback speed. It shows accumulated
 coverage and recent movement while keeping reset jumps out of the path.
+
+### Training cadence experiments
+
+Probabilistic online runs support `--set training_schedule=epoch` (one complete
+shuffled replay pass per ensemble member at each training event), or
+`--set training_schedule=new_then_replay` (each new transition once, then the
+usual replay updates). The default `replay` retains the original sampling.
+`train_every` controls the action interval; `updates_per_train` controls random
+replay updates and is ignored by `epoch`. Both new schedules include all warmup
+transitions and retain partial batches. Enable `cadence_diagnostics=true` to log
+before/after prediction and disagreement measurements without affecting the
+agent's RNGs or training data.
+
+The matched three-seed comparison is configured in
+`configs/probabilistic_cadence.json`; results and reproduction commands are in
+[training cadence](docs/training-cadence.md).

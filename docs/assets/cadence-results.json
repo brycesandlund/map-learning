@@ -1,0 +1,1235 @@
+[
+  {
+    "variant": "epoch",
+    "seed": 0,
+    "coverage": 0.4792600896860987,
+    "coverage_auc": 0.2862080717488789,
+    "updates": 39158,
+    "seconds": 158.87430795794353,
+    "training_seconds": 67.91075294557959,
+    "guaranteed_trained_through": 10000,
+    "late_diagnostics": {
+      "new": {
+        "disagreement": {
+          "pre": 0.2188517801463604,
+          "post": 0.20558305524289608
+        },
+        "normalized_mse": {
+          "pre": 0.03483691820165119,
+          "post": 0.035456111738661214
+        },
+        "nll_per_dim": {
+          "pre": -3.122417471408844,
+          "post": -3.161130264997482
+        },
+        "predictive_variance": {
+          "pre": 0.024801358724071177,
+          "post": 0.024604519126587548
+        }
+      },
+      "old": {
+        "disagreement": {
+          "pre": 0.130623719394207,
+          "post": 0.12921637892723084
+        },
+        "normalized_mse": {
+          "pre": 0.02462856712426564,
+          "post": 0.024867754050476427
+        },
+        "nll_per_dim": {
+          "pre": -3.3829646730422973,
+          "post": -3.38369166135788
+        },
+        "predictive_variance": {
+          "pre": 0.029759737914428114,
+          "post": 0.029963315920904277
+        }
+      },
+      "probe": {
+        "disagreement": {
+          "pre": 0.19303662151098253,
+          "post": 0.19144221752882004
+        },
+        "normalized_mse": {
+          "pre": 0.013644085675381269,
+          "post": 0.013646126779124891
+        },
+        "nll_per_dim": {
+          "pre": -3.1127428436279296,
+          "post": -3.1125383162498474
+        },
+        "predictive_variance": {
+          "pre": 0.009535853010602295,
+          "post": 0.009546784260310233
+        }
+      }
+    },
+    "retrieval": {
+      "variant": "epoch",
+      "seed": 0,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/probabilistic-cadence-20261109/epoch-seed0",
+      "mean_horizontal_latent_step": 0.05330384522676468,
+      "mean_vertical_latent_step": 0.3153337240219116,
+      "horizontal_vertical_step_ratio": 0.16903947293758392,
+      "all": {
+        "count": 8920,
+        "exact_next_position_accuracy": 0.407847533632287,
+        "mean_physical_error": 0.35195446014404297,
+        "physical_error_p95": 1.5,
+        "error_over_one_room_fraction": 0.10145739910313901,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2798,
+        "exact_next_position_accuracy": 0.4735525375268049,
+        "mean_physical_error": 0.2765614092350006,
+        "physical_error_p95": 1.25,
+        "error_over_one_room_fraction": 0.0736240171551108,
+        "persistence_accuracy": 0.2794853466761973,
+        "persistence_mean_physical_error": 0.18012866377830505
+      },
+      "unseen": {
+        "count": 6122,
+        "exact_next_position_accuracy": 0.3778177066318197,
+        "mean_physical_error": 0.3864120841026306,
+        "physical_error_p95": 1.520690679550171,
+        "error_over_one_room_fraction": 0.11417837308069258,
+        "persistence_accuracy": 0.3374714145704018,
+        "persistence_mean_physical_error": 0.16563214361667633
+      }
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.4792600896860987,
+      "coverage_rooms": 0.6319444444444444,
+      "latent_variance": 0.7699545621871948,
+      "latent_effective_rank": 3.1147351264953613,
+      "encoder_saturation_fraction": 0.829946756362915,
+      "updates": 39158,
+      "environment_steps": 10000,
+      "replay_nll_per_dim": -3.3888933658599854,
+      "replay_normalized_mse": 0.02571121875545279,
+      "replay_disagreement": 0.11594033241271973,
+      "replay_predictive_variance": 0.02875078283250332,
+      "oracle_uncertainty_error_correlation": -0.07295653530250684,
+      "oracle_effective_mixture_components": 1.0,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0130618621170136,
+      "oracle_all_disagreement": 0.15354196769256737,
+      "oracle_all_nll_per_dim": -1.7205460690903673,
+      "oracle_seen_state_actions": 2798,
+      "oracle_seen_normalized_mse": 0.01824494450110429,
+      "oracle_seen_disagreement": 0.13357754932565083,
+      "oracle_seen_nll_per_dim": -3.3738188006095666,
+      "oracle_unseen_state_actions": 6122,
+      "oracle_unseen_normalized_mse": 0.010692985195960718,
+      "oracle_unseen_disagreement": 0.16266650911540836,
+      "oracle_unseen_nll_per_dim": -0.9649339974159603,
+      "oracle_persistence_normalized_mse": 0.013650721541321539,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.007429172826821877,
+      "oracle_mean_rollout_3_normalized_mse": 0.020393374777262878,
+      "oracle_mean_rollout_5_normalized_mse": 0.0342086259745741,
+      "oracle_mean_rollout_10_normalized_mse": 0.0632900984494601,
+      "oracle_sample_outside_encoder_bounds_fraction": 0.9899103045463562
+    }
+  },
+  {
+    "variant": "epoch",
+    "seed": 1,
+    "coverage": 0.43553811659192826,
+    "coverage_auc": 0.2772092488789238,
+    "updates": 39158,
+    "seconds": 160.2467757500708,
+    "training_seconds": 68.12063042726368,
+    "guaranteed_trained_through": 10000,
+    "late_diagnostics": {
+      "new": {
+        "disagreement": {
+          "pre": 0.09081244982779026,
+          "post": 0.08905810242518783
+        },
+        "normalized_mse": {
+          "pre": 0.008008939340919341,
+          "post": 0.00822896671503697
+        },
+        "nll_per_dim": {
+          "pre": -3.439386742115021,
+          "post": -3.4386970162391663
+        },
+        "predictive_variance": {
+          "pre": 0.010845129797089612,
+          "post": 0.011219865384118748
+        }
+      },
+      "old": {
+        "disagreement": {
+          "pre": 0.09775945875793696,
+          "post": 0.09635230761021375
+        },
+        "normalized_mse": {
+          "pre": 0.011208060094274639,
+          "post": 0.011098538726614616
+        },
+        "nll_per_dim": {
+          "pre": -3.428754150867462,
+          "post": -3.4289346599578856
+        },
+        "predictive_variance": {
+          "pre": 0.01589891776442528,
+          "post": 0.015918974447995424
+        }
+      },
+      "probe": {
+        "disagreement": {
+          "pre": 0.10801203727722168,
+          "post": 0.10786394819617272
+        },
+        "normalized_mse": {
+          "pre": 0.014181254156505695,
+          "post": 0.01418139883734247
+        },
+        "nll_per_dim": {
+          "pre": -3.1803661239147187,
+          "post": -3.180241607427597
+        },
+        "predictive_variance": {
+          "pre": 0.020427166866138578,
+          "post": 0.020494349328801037
+        }
+      }
+    },
+    "retrieval": {
+      "variant": "epoch",
+      "seed": 1,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/probabilistic-cadence-20261109/epoch-seed1",
+      "mean_horizontal_latent_step": 0.04455671086907387,
+      "mean_vertical_latent_step": 0.3127395510673523,
+      "horizontal_vertical_step_ratio": 0.1424722671508789,
+      "all": {
+        "count": 8920,
+        "exact_next_position_accuracy": 0.24517937219730943,
+        "mean_physical_error": 0.733989953994751,
+        "physical_error_p95": 3.0103986263275146,
+        "error_over_one_room_fraction": 0.24955156950672647,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2747,
+        "exact_next_position_accuracy": 0.27266108481980345,
+        "mean_physical_error": 0.6191483736038208,
+        "physical_error_p95": 2.4575486183166504,
+        "error_over_one_room_fraction": 0.21842009464870768,
+        "persistence_accuracy": 0.302147797597379,
+        "persistence_mean_physical_error": 0.17446304857730865
+      },
+      "unseen": {
+        "count": 6173,
+        "exact_next_position_accuracy": 0.23294994330147417,
+        "mean_physical_error": 0.7850947380065918,
+        "physical_error_p95": 3.2015621662139893,
+        "error_over_one_room_fraction": 0.26340515146606186,
+        "persistence_accuracy": 0.32690750040498945,
+        "persistence_mean_physical_error": 0.16827312111854553
+      }
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.43553811659192826,
+      "coverage_rooms": 0.5833333333333334,
+      "latent_variance": 0.7661019563674927,
+      "latent_effective_rank": 3.5065836906433105,
+      "encoder_saturation_fraction": 0.8611266613006592,
+      "updates": 39158,
+      "environment_steps": 10000,
+      "replay_nll_per_dim": -3.4441773891448975,
+      "replay_normalized_mse": 0.010306730118233342,
+      "replay_disagreement": 0.0765891820192337,
+      "replay_predictive_variance": 0.017377298325300217,
+      "oracle_uncertainty_error_correlation": 0.2784096680922661,
+      "oracle_effective_mixture_components": 1.0,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.01163100845902946,
+      "oracle_all_disagreement": 0.09386470216989788,
+      "oracle_all_nll_per_dim": -2.394182819658431,
+      "oracle_seen_state_actions": 2747,
+      "oracle_seen_normalized_mse": 0.011970266763264152,
+      "oracle_seen_disagreement": 0.07910855971974273,
+      "oracle_seen_nll_per_dim": -3.4041400927172862,
+      "oracle_unseen_state_actions": 6173,
+      "oracle_unseen_normalized_mse": 0.011480037689268778,
+      "oracle_unseen_disagreement": 0.1004312214167108,
+      "oracle_unseen_nll_per_dim": -1.9447493790148742,
+      "oracle_persistence_normalized_mse": 0.012300236741326461,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.008932513132283383,
+      "oracle_mean_rollout_3_normalized_mse": 0.021530357795008784,
+      "oracle_mean_rollout_5_normalized_mse": 0.03541813016404345,
+      "oracle_mean_rollout_10_normalized_mse": 0.04579105805015429,
+      "oracle_sample_outside_encoder_bounds_fraction": 0.9887892603874207
+    }
+  },
+  {
+    "variant": "epoch",
+    "seed": 2,
+    "coverage": 0.32062780269058294,
+    "coverage_auc": 0.24453536995515696,
+    "updates": 39158,
+    "seconds": 157.58570995833725,
+    "training_seconds": 67.73888389253989,
+    "guaranteed_trained_through": 10000,
+    "late_diagnostics": {
+      "new": {
+        "disagreement": {
+          "pre": 0.20506948687136173,
+          "post": 0.19875085070729256
+        },
+        "normalized_mse": {
+          "pre": 0.07992288771769687,
+          "post": 0.07958567125803664
+        },
+        "nll_per_dim": {
+          "pre": -3.1487353920936583,
+          "post": -3.149706826210022
+        },
+        "predictive_variance": {
+          "pre": 0.08042197572998702,
+          "post": 0.0799439419992268
+        }
+      },
+      "old": {
+        "disagreement": {
+          "pre": 0.15101857118308545,
+          "post": 0.15080197490751743
+        },
+        "normalized_mse": {
+          "pre": 0.04383290456750722,
+          "post": 0.04372951124977572
+        },
+        "nll_per_dim": {
+          "pre": -3.282818808555603,
+          "post": -3.2826746201515196
+        },
+        "predictive_variance": {
+          "pre": 0.0543332071788609,
+          "post": 0.05406597137451172
+        }
+      },
+      "probe": {
+        "disagreement": {
+          "pre": 0.19090114027261734,
+          "post": 0.19128332972526552
+        },
+        "normalized_mse": {
+          "pre": 0.009663947444191101,
+          "post": 0.00966491095220113
+        },
+        "nll_per_dim": {
+          "pre": -2.467258517742157,
+          "post": -2.466577968597412
+        },
+        "predictive_variance": {
+          "pre": 0.017741901725530626,
+          "post": 0.017754343766719104
+        }
+      }
+    },
+    "retrieval": {
+      "variant": "epoch",
+      "seed": 2,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/probabilistic-cadence-20261109/epoch-seed2",
+      "mean_horizontal_latent_step": 0.04337892681360245,
+      "mean_vertical_latent_step": 0.32849884033203125,
+      "horizontal_vertical_step_ratio": 0.1320519894361496,
+      "all": {
+        "count": 8920,
+        "exact_next_position_accuracy": 0.251457399103139,
+        "mean_physical_error": 0.8343140482902527,
+        "physical_error_p95": 4.0,
+        "error_over_one_room_fraction": 0.24865470852017937,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 1992,
+        "exact_next_position_accuracy": 0.34789156626506024,
+        "mean_physical_error": 0.47688648104667664,
+        "physical_error_p95": 2.2638463973999023,
+        "error_over_one_room_fraction": 0.13002008032128515,
+        "persistence_accuracy": 0.29267068273092367,
+        "persistence_mean_physical_error": 0.17683233320713043
+      },
+      "unseen": {
+        "count": 6928,
+        "exact_next_position_accuracy": 0.223729792147806,
+        "mean_physical_error": 0.9370847940444946,
+        "physical_error_p95": 4.069705009460449,
+        "error_over_one_room_fraction": 0.28276558891454967,
+        "persistence_accuracy": 0.3269341801385681,
+        "persistence_mean_physical_error": 0.16826646029949188
+      }
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.32062780269058294,
+      "coverage_rooms": 0.4027777777777778,
+      "latent_variance": 0.8258495330810547,
+      "latent_effective_rank": 3.158583164215088,
+      "encoder_saturation_fraction": 0.8513873219490051,
+      "updates": 39158,
+      "environment_steps": 10000,
+      "replay_nll_per_dim": -3.293172836303711,
+      "replay_normalized_mse": 0.044249815740456326,
+      "replay_disagreement": 0.1734352856874466,
+      "replay_predictive_variance": 0.057011205703020096,
+      "oracle_uncertainty_error_correlation": 0.131013293960763,
+      "oracle_effective_mixture_components": 1.0,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.012815442869913193,
+      "oracle_all_disagreement": 0.17411430456240565,
+      "oracle_all_nll_per_dim": -1.7515084000348193,
+      "oracle_seen_state_actions": 1992,
+      "oracle_seen_normalized_mse": 0.022997541242806133,
+      "oracle_seen_disagreement": 0.13701092401221016,
+      "oracle_seen_nll_per_dim": -3.3480265799116897,
+      "oracle_unseen_state_actions": 6928,
+      "oracle_unseen_normalized_mse": 0.009887795647222267,
+      "oracle_unseen_disagreement": 0.18478259758434407,
+      "oracle_unseen_nll_per_dim": -1.2924633344582133,
+      "oracle_persistence_normalized_mse": 0.014035138937325484,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.011516839467427127,
+      "oracle_mean_rollout_3_normalized_mse": 0.04063336132711908,
+      "oracle_mean_rollout_5_normalized_mse": 0.057313085725940745,
+      "oracle_mean_rollout_10_normalized_mse": 0.08061456079107032,
+      "oracle_sample_outside_encoder_bounds_fraction": 0.9899103045463562
+    }
+  },
+  {
+    "variant": "new_then_replay",
+    "seed": 0,
+    "coverage": 0.4265695067264574,
+    "coverage_auc": 0.24353581838565022,
+    "updates": 5413,
+    "seconds": 98.3219597497955,
+    "training_seconds": 9.220856918022037,
+    "guaranteed_trained_through": 10000,
+    "late_diagnostics": {
+      "new": {
+        "disagreement": {
+          "pre": 0.14584985546767712,
+          "post": 0.1309490394592285
+        },
+        "normalized_mse": {
+          "pre": 0.008508627643745336,
+          "post": 0.008362091354921575
+        },
+        "nll_per_dim": {
+          "pre": -3.050021679401398,
+          "post": -3.072658882141113
+        },
+        "predictive_variance": {
+          "pre": 0.0032543076438014394,
+          "post": 0.003274961241404526
+        }
+      },
+      "old": {
+        "disagreement": {
+          "pre": 0.1383496744185686,
+          "post": 0.13800752185285092
+        },
+        "normalized_mse": {
+          "pre": 0.007225959870009239,
+          "post": 0.007240128541121677
+        },
+        "nll_per_dim": {
+          "pre": -3.079249548912048,
+          "post": -3.079296667575836
+        },
+        "predictive_variance": {
+          "pre": 0.0026696203276515007,
+          "post": 0.002682273325044662
+        }
+      },
+      "probe": {
+        "disagreement": {
+          "pre": 0.16440547116100787,
+          "post": 0.16294440671801566
+        },
+        "normalized_mse": {
+          "pre": 0.003777563443276486,
+          "post": 0.0037792178773607354
+        },
+        "nll_per_dim": {
+          "pre": -3.0217185020446777,
+          "post": -3.0235591435432436
+        },
+        "predictive_variance": {
+          "pre": 0.0014134234772063793,
+          "post": 0.0014184517483226955
+        }
+      }
+    },
+    "retrieval": {
+      "variant": "new_then_replay",
+      "seed": 0,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/probabilistic-cadence-20261109/new_then_replay-seed0",
+      "mean_horizontal_latent_step": 0.0573960579931736,
+      "mean_vertical_latent_step": 0.22266942262649536,
+      "horizontal_vertical_step_ratio": 0.257763534784317,
+      "all": {
+        "count": 8920,
+        "exact_next_position_accuracy": 0.40594170403587443,
+        "mean_physical_error": 0.22601056098937988,
+        "physical_error_p95": 0.75,
+        "error_over_one_room_fraction": 0.02623318385650224,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2830,
+        "exact_next_position_accuracy": 0.3950530035335689,
+        "mean_physical_error": 0.18723222613334656,
+        "physical_error_p95": 0.5,
+        "error_over_one_room_fraction": 0.0063604240282685515,
+        "persistence_accuracy": 0.2915194346289753,
+        "persistence_mean_physical_error": 0.1771201342344284
+      },
+      "unseen": {
+        "count": 6090,
+        "exact_next_position_accuracy": 0.41100164203612477,
+        "mean_physical_error": 0.24403069913387299,
+        "physical_error_p95": 1.0,
+        "error_over_one_room_fraction": 0.035467980295566505,
+        "persistence_accuracy": 0.332183908045977,
+        "persistence_mean_physical_error": 0.16695402562618256
+      }
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.4265695067264574,
+      "coverage_rooms": 0.5,
+      "latent_variance": 0.6003978848457336,
+      "latent_effective_rank": 3.322122097015381,
+      "encoder_saturation_fraction": 0.6417461037635803,
+      "updates": 5413,
+      "environment_steps": 10000,
+      "replay_nll_per_dim": -3.127375841140747,
+      "replay_normalized_mse": 0.007426759845994319,
+      "replay_disagreement": 0.11342266947031021,
+      "replay_predictive_variance": 0.003077259287238121,
+      "oracle_uncertainty_error_correlation": 0.07864064690151794,
+      "oracle_effective_mixture_components": 1.0,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.004801956227224651,
+      "oracle_all_disagreement": 0.15419670550855577,
+      "oracle_all_nll_per_dim": -2.8831114652643874,
+      "oracle_seen_state_actions": 2830,
+      "oracle_seen_normalized_mse": 0.0069871518842399465,
+      "oracle_seen_disagreement": 0.1181774041090109,
+      "oracle_seen_nll_per_dim": -3.101342370184698,
+      "oracle_unseen_state_actions": 6090,
+      "oracle_unseen_normalized_mse": 0.0037865040582011223,
+      "oracle_unseen_disagreement": 0.17093473883543786,
+      "oracle_unseen_nll_per_dim": -2.781700387936887,
+      "oracle_persistence_normalized_mse": 0.005696497873524335,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.004076662543848633,
+      "oracle_mean_rollout_3_normalized_mse": 0.015163140554879105,
+      "oracle_mean_rollout_5_normalized_mse": 0.021107033104818273,
+      "oracle_mean_rollout_10_normalized_mse": 0.04417930026839061,
+      "oracle_sample_outside_encoder_bounds_fraction": 0.9646860957145691
+    }
+  },
+  {
+    "variant": "new_then_replay",
+    "seed": 1,
+    "coverage": 0.39742152466367714,
+    "coverage_auc": 0.2191953475336323,
+    "updates": 5413,
+    "seconds": 98.32157499995083,
+    "training_seconds": 9.185301623307168,
+    "guaranteed_trained_through": 10000,
+    "late_diagnostics": {
+      "new": {
+        "disagreement": {
+          "pre": 0.1430244940146804,
+          "post": 0.13167068323120476
+        },
+        "normalized_mse": {
+          "pre": 0.003732056142173823,
+          "post": 0.003626860575576089
+        },
+        "nll_per_dim": {
+          "pre": -3.150991473197937,
+          "post": -3.171290168762207
+        },
+        "predictive_variance": {
+          "pre": 0.0024021873599849642,
+          "post": 0.002380145903589437
+        }
+      },
+      "old": {
+        "disagreement": {
+          "pre": 0.1287296912074089,
+          "post": 0.12794749855995177
+        },
+        "normalized_mse": {
+          "pre": 0.005517326363103198,
+          "post": 0.005511499400534957
+        },
+        "nll_per_dim": {
+          "pre": -3.1413249516487123,
+          "post": -3.1420066213607787
+        },
+        "predictive_variance": {
+          "pre": 0.002721813654061407,
+          "post": 0.002717728934949264
+        }
+      },
+      "probe": {
+        "disagreement": {
+          "pre": 0.1440871698409319,
+          "post": 0.1449528419226408
+        },
+        "normalized_mse": {
+          "pre": 0.00407068933341418,
+          "post": 0.0040728424540258275
+        },
+        "nll_per_dim": {
+          "pre": -3.1324613952636717,
+          "post": -3.1326944756507875
+        },
+        "predictive_variance": {
+          "pre": 0.002138910966459662,
+          "post": 0.0021400836715474727
+        }
+      }
+    },
+    "retrieval": {
+      "variant": "new_then_replay",
+      "seed": 1,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/probabilistic-cadence-20261109/new_then_replay-seed1",
+      "mean_horizontal_latent_step": 0.06282829493284225,
+      "mean_vertical_latent_step": 0.19969575107097626,
+      "horizontal_vertical_step_ratio": 0.31462007761001587,
+      "all": {
+        "count": 8920,
+        "exact_next_position_accuracy": 0.3780269058295964,
+        "mean_physical_error": 0.5375214219093323,
+        "physical_error_p95": 2.2638463973999023,
+        "error_over_one_room_fraction": 0.1889013452914798,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2610,
+        "exact_next_position_accuracy": 0.44559386973180076,
+        "mean_physical_error": 0.3034454882144928,
+        "physical_error_p95": 1.2747548818588257,
+        "error_over_one_room_fraction": 0.0681992337164751,
+        "persistence_accuracy": 0.3053639846743295,
+        "persistence_mean_physical_error": 0.17365899682044983
+      },
+      "unseen": {
+        "count": 6310,
+        "exact_next_position_accuracy": 0.35007923930269413,
+        "mean_physical_error": 0.6343420147895813,
+        "physical_error_p95": 2.462214469909668,
+        "error_over_one_room_fraction": 0.23882725832012677,
+        "persistence_accuracy": 0.3250396196513471,
+        "persistence_mean_physical_error": 0.16874009370803833
+      }
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.39742152466367714,
+      "coverage_rooms": 0.4513888888888889,
+      "latent_variance": 0.6181946992874146,
+      "latent_effective_rank": 2.9246723651885986,
+      "encoder_saturation_fraction": 0.6001261472702026,
+      "updates": 5413,
+      "environment_steps": 10000,
+      "replay_nll_per_dim": -3.137086868286133,
+      "replay_normalized_mse": 0.006728781192432864,
+      "replay_disagreement": 0.10211469233036041,
+      "replay_predictive_variance": 0.0026446727570146322,
+      "oracle_uncertainty_error_correlation": 0.020686940050355714,
+      "oracle_effective_mixture_components": 1.0,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.003966739042190534,
+      "oracle_all_disagreement": 0.12061506078181437,
+      "oracle_all_nll_per_dim": -3.1237426787080254,
+      "oracle_seen_state_actions": 2610,
+      "oracle_seen_normalized_mse": 0.005806667835019729,
+      "oracle_seen_disagreement": 0.104361474050228,
+      "oracle_seen_nll_per_dim": -3.1061439456154103,
+      "oracle_unseen_state_actions": 6310,
+      "oracle_unseen_normalized_mse": 0.003205690841036144,
+      "oracle_unseen_disagreement": 0.12733801820961793,
+      "oracle_unseen_nll_per_dim": -3.131022027895303,
+      "oracle_persistence_normalized_mse": 0.005125099116952797,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.003928167227148288,
+      "oracle_mean_rollout_3_normalized_mse": 0.010629228078039366,
+      "oracle_mean_rollout_5_normalized_mse": 0.015301750559171953,
+      "oracle_mean_rollout_10_normalized_mse": 0.024955751102097596,
+      "oracle_sample_outside_encoder_bounds_fraction": 0.9389013648033142
+    }
+  },
+  {
+    "variant": "new_then_replay",
+    "seed": 2,
+    "coverage": 0.2897982062780269,
+    "coverage_auc": 0.22319103139013452,
+    "updates": 5413,
+    "seconds": 99.46399458311498,
+    "training_seconds": 9.245104560628533,
+    "guaranteed_trained_through": 10000,
+    "late_diagnostics": {
+      "new": {
+        "disagreement": {
+          "pre": 0.1302901827916503,
+          "post": 0.11194191876798869
+        },
+        "normalized_mse": {
+          "pre": 0.0064173801281439515,
+          "post": 0.006129240281561418
+        },
+        "nll_per_dim": {
+          "pre": -2.7451757621765136,
+          "post": -2.769128129482269
+        },
+        "predictive_variance": {
+          "pre": 0.0032439580356003715,
+          "post": 0.0032426634366856887
+        }
+      },
+      "old": {
+        "disagreement": {
+          "pre": 0.12905785657465457,
+          "post": 0.12850374095141887
+        },
+        "normalized_mse": {
+          "pre": 0.00767108101148866,
+          "post": 0.007676751507166486
+        },
+        "nll_per_dim": {
+          "pre": -2.918217165470123,
+          "post": -2.9184751296043396
+        },
+        "predictive_variance": {
+          "pre": 0.003324203952215612,
+          "post": 0.0033282855874858797
+        }
+      },
+      "probe": {
+        "disagreement": {
+          "pre": 0.1572111013531685,
+          "post": 0.1562386939674616
+        },
+        "normalized_mse": {
+          "pre": 0.005176980250991868,
+          "post": 0.0051734944678922265
+        },
+        "nll_per_dim": {
+          "pre": -2.9892670130729675,
+          "post": -2.989561560153961
+        },
+        "predictive_variance": {
+          "pre": 0.0026156353997066617,
+          "post": 0.0026181155210360883
+        }
+      }
+    },
+    "retrieval": {
+      "variant": "new_then_replay",
+      "seed": 2,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/probabilistic-cadence-20261109/new_then_replay-seed2",
+      "mean_horizontal_latent_step": 0.08291684836149216,
+      "mean_vertical_latent_step": 0.18331211805343628,
+      "horizontal_vertical_step_ratio": 0.45232605934143066,
+      "all": {
+        "count": 8920,
+        "exact_next_position_accuracy": 0.23890134529147983,
+        "mean_physical_error": 1.3299580812454224,
+        "physical_error_p95": 4.527692794799805,
+        "error_over_one_room_fraction": 0.4187219730941704,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 1797,
+        "exact_next_position_accuracy": 0.39788536449638284,
+        "mean_physical_error": 0.5411208868026733,
+        "physical_error_p95": 3.0103986263275146,
+        "error_over_one_room_fraction": 0.15080690038953812,
+        "persistence_accuracy": 0.29771841958820255,
+        "persistence_mean_physical_error": 0.17557039856910706
+      },
+      "unseen": {
+        "count": 7123,
+        "exact_next_position_accuracy": 0.1987926435490664,
+        "mean_physical_error": 1.528967022895813,
+        "physical_error_p95": 4.756574630737305,
+        "error_over_one_room_fraction": 0.4863119472132528,
+        "persistence_accuracy": 0.32472272918714024,
+        "persistence_mean_physical_error": 0.16881932318210602
+      }
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.2897982062780269,
+      "coverage_rooms": 0.3611111111111111,
+      "latent_variance": 0.5818238258361816,
+      "latent_effective_rank": 3.1624608039855957,
+      "encoder_saturation_fraction": 0.6909332871437073,
+      "updates": 5413,
+      "environment_steps": 10000,
+      "replay_nll_per_dim": -2.934499502182007,
+      "replay_normalized_mse": 0.007640129143060041,
+      "replay_disagreement": 0.09229224175214767,
+      "replay_predictive_variance": 0.0035018620546907187,
+      "oracle_uncertainty_error_correlation": 0.08059092461540586,
+      "oracle_effective_mixture_components": 1.0,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0052281727186351875,
+      "oracle_all_disagreement": 0.11581362946438137,
+      "oracle_all_nll_per_dim": -2.98169972120613,
+      "oracle_seen_state_actions": 1797,
+      "oracle_seen_normalized_mse": 0.007721868049494073,
+      "oracle_seen_disagreement": 0.09217376950449782,
+      "oracle_seen_nll_per_dim": -2.935581850554456,
+      "oracle_unseen_state_actions": 7123,
+      "oracle_unseen_normalized_mse": 0.004599059913699991,
+      "oracle_unseen_disagreement": 0.12177752506285262,
+      "oracle_unseen_nll_per_dim": -2.993334399510364,
+      "oracle_persistence_normalized_mse": 0.006224347899846989,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.005518617016167994,
+      "oracle_mean_rollout_3_normalized_mse": 0.016371423355540565,
+      "oracle_mean_rollout_5_normalized_mse": 0.02595933918028427,
+      "oracle_mean_rollout_10_normalized_mse": 0.049218248022001795,
+      "oracle_sample_outside_encoder_bounds_fraction": 0.9349775910377502
+    }
+  },
+  {
+    "variant": "replay",
+    "seed": 0,
+    "coverage": 0.42713004484304934,
+    "coverage_auc": 0.2835012331838565,
+    "updates": 4505,
+    "seconds": 97.14623950002715,
+    "training_seconds": 8.082299966365099,
+    "guaranteed_trained_through": 0,
+    "late_diagnostics": {
+      "new": {
+        "disagreement": {
+          "pre": 0.1296480179205537,
+          "post": 0.12199981279671192
+        },
+        "normalized_mse": {
+          "pre": 0.005198502482331532,
+          "post": 0.0052098521623110995
+        },
+        "nll_per_dim": {
+          "pre": -3.0638830280303955,
+          "post": -3.0641094279289245
+        },
+        "predictive_variance": {
+          "pre": 0.0026145248748071026,
+          "post": 0.002629831317026401
+        }
+      },
+      "old": {
+        "disagreement": {
+          "pre": 0.12776799216866494,
+          "post": 0.12679453127086163
+        },
+        "normalized_mse": {
+          "pre": 0.0024647292818309936,
+          "post": 0.0024779592395473855
+        },
+        "nll_per_dim": {
+          "pre": -3.1448448276519776,
+          "post": -3.1456818771362305
+        },
+        "predictive_variance": {
+          "pre": 0.0011016134853707627,
+          "post": 0.0011054425267502666
+        }
+      },
+      "probe": {
+        "disagreement": {
+          "pre": 0.14610780827701092,
+          "post": 0.14480465181171895
+        },
+        "normalized_mse": {
+          "pre": 0.001562754646002629,
+          "post": 0.0015650660596470353
+        },
+        "nll_per_dim": {
+          "pre": -3.1279322504997253,
+          "post": -3.1289273166656493
+        },
+        "predictive_variance": {
+          "pre": 0.0007154937763698399,
+          "post": 0.0007169204362435267
+        }
+      }
+    },
+    "retrieval": {
+      "variant": "replay",
+      "seed": 0,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/probabilistic-cadence-20261109/replay-seed0",
+      "mean_horizontal_latent_step": 0.07533744722604752,
+      "mean_vertical_latent_step": 0.17937323451042175,
+      "horizontal_vertical_step_ratio": 0.42000383138656616,
+      "all": {
+        "count": 8920,
+        "exact_next_position_accuracy": 0.5526905829596412,
+        "mean_physical_error": 0.12595374882221222,
+        "physical_error_p95": 0.3535533845424652,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2606,
+        "exact_next_position_accuracy": 0.5652340752110514,
+        "mean_physical_error": 0.11871514469385147,
+        "physical_error_p95": 0.3276650309562683,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.2881811204911742,
+        "persistence_mean_physical_error": 0.17795471847057343
+      },
+      "unseen": {
+        "count": 6314,
+        "exact_next_position_accuracy": 0.5475134621476085,
+        "mean_physical_error": 0.1289413571357727,
+        "physical_error_p95": 0.3535533845424652,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.33211910041178333,
+        "persistence_mean_physical_error": 0.16697022318840027
+      }
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.42713004484304934,
+      "coverage_rooms": 0.5694444444444444,
+      "latent_variance": 0.5105385780334473,
+      "latent_effective_rank": 3.2327709197998047,
+      "encoder_saturation_fraction": 0.4784192740917206,
+      "updates": 4505,
+      "environment_steps": 10000,
+      "replay_nll_per_dim": -3.1794068813323975,
+      "replay_normalized_mse": 0.0029710463621235674,
+      "replay_disagreement": 0.10071967542171478,
+      "replay_predictive_variance": 0.0013780765002593398,
+      "oracle_uncertainty_error_correlation": 0.2067641849411507,
+      "oracle_effective_mixture_components": 1.0,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.002078267259489634,
+      "oracle_all_disagreement": 0.12981753460791773,
+      "oracle_all_nll_per_dim": -3.134594812788771,
+      "oracle_seen_state_actions": 2606,
+      "oracle_seen_normalized_mse": 0.0030064211286096923,
+      "oracle_seen_disagreement": 0.1060416219319874,
+      "oracle_seen_nll_per_dim": -3.135073762624335,
+      "oracle_unseen_state_actions": 6314,
+      "oracle_unseen_normalized_mse": 0.0016951869644426163,
+      "oracle_unseen_disagreement": 0.13963065282671316,
+      "oracle_unseen_nll_per_dim": -3.1343971340951566,
+      "oracle_persistence_normalized_mse": 0.004287725925979544,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0019133730267741813,
+      "oracle_mean_rollout_3_normalized_mse": 0.006455614922118202,
+      "oracle_mean_rollout_5_normalized_mse": 0.009750449511150422,
+      "oracle_mean_rollout_10_normalized_mse": 0.016948365015195994,
+      "oracle_sample_outside_encoder_bounds_fraction": 0.8873318433761597
+    }
+  },
+  {
+    "variant": "replay",
+    "seed": 1,
+    "coverage": 0.3077354260089686,
+    "coverage_auc": 0.2346734865470852,
+    "updates": 4505,
+    "seconds": 96.66076324973255,
+    "training_seconds": 8.063812226522714,
+    "guaranteed_trained_through": 0,
+    "late_diagnostics": {
+      "new": {
+        "disagreement": {
+          "pre": 0.17330933045595884,
+          "post": 0.16101630382239818
+        },
+        "normalized_mse": {
+          "pre": 0.00259557425221337,
+          "post": 0.002593522666154699
+        },
+        "nll_per_dim": {
+          "pre": -3.2333545422554018,
+          "post": -3.2356629300117494
+        },
+        "predictive_variance": {
+          "pre": 0.0009343981444544624,
+          "post": 0.0009356236673193053
+        }
+      },
+      "old": {
+        "disagreement": {
+          "pre": 0.15788629978895188,
+          "post": 0.15815797165036202
+        },
+        "normalized_mse": {
+          "pre": 0.0035778132061794875,
+          "post": 0.0035822900453695294
+        },
+        "nll_per_dim": {
+          "pre": -3.0837808728218077,
+          "post": -3.0846319651603697
+        },
+        "predictive_variance": {
+          "pre": 0.0019986385165248065,
+          "post": 0.0020044574001803995
+        }
+      },
+      "probe": {
+        "disagreement": {
+          "pre": 0.38554857671260834,
+          "post": 0.3856372001767159
+        },
+        "normalized_mse": {
+          "pre": 0.005176606229863009,
+          "post": 0.0051895858644023804
+        },
+        "nll_per_dim": {
+          "pre": 9.42177224636078,
+          "post": 9.466206932067871
+        },
+        "predictive_variance": {
+          "pre": 0.0012963406380731611,
+          "post": 0.0012978134816512465
+        }
+      }
+    },
+    "retrieval": {
+      "variant": "replay",
+      "seed": 1,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/probabilistic-cadence-20261109/replay-seed1",
+      "mean_horizontal_latent_step": 0.07566482573747635,
+      "mean_vertical_latent_step": 0.17840778827667236,
+      "horizontal_vertical_step_ratio": 0.42411166429519653,
+      "all": {
+        "count": 8920,
+        "exact_next_position_accuracy": 0.34585201793721976,
+        "mean_physical_error": 0.6837364435195923,
+        "physical_error_p95": 2.7613401412963867,
+        "error_over_one_room_fraction": 0.24585201793721972,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 1883,
+        "exact_next_position_accuracy": 0.4641529474243229,
+        "mean_physical_error": 0.30835187435150146,
+        "physical_error_p95": 1.5,
+        "error_over_one_room_fraction": 0.0685077004779607,
+        "persistence_accuracy": 0.28465215082315454,
+        "persistence_mean_physical_error": 0.17883695662021637
+      },
+      "unseen": {
+        "count": 7037,
+        "exact_next_position_accuracy": 0.31419639050731846,
+        "mean_physical_error": 0.7841839790344238,
+        "physical_error_p95": 2.915475845336914,
+        "error_over_one_room_fraction": 0.2933068068779309,
+        "persistence_accuracy": 0.3285490976268296,
+        "persistence_mean_physical_error": 0.16786272823810577
+      }
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.3077354260089686,
+      "coverage_rooms": 0.375,
+      "latent_variance": 0.6917623281478882,
+      "latent_effective_rank": 3.0602126121520996,
+      "encoder_saturation_fraction": 0.6057314872741699,
+      "updates": 4505,
+      "environment_steps": 10000,
+      "replay_nll_per_dim": -3.1190483570098877,
+      "replay_normalized_mse": 0.004011261732880136,
+      "replay_disagreement": 0.15916460752487183,
+      "replay_predictive_variance": 0.0021896744146943092,
+      "oracle_uncertainty_error_correlation": 0.4692431920194642,
+      "oracle_effective_mixture_components": 1.0,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.006277041092719153,
+      "oracle_all_disagreement": 0.38411096171224063,
+      "oracle_all_nll_per_dim": 11.605029441468572,
+      "oracle_seen_state_actions": 1883,
+      "oracle_seen_normalized_mse": 0.0033545506100884684,
+      "oracle_seen_disagreement": 0.18789943273300905,
+      "oracle_seen_nll_per_dim": -3.04801486517227,
+      "oracle_unseen_state_actions": 7037,
+      "oracle_unseen_normalized_mse": 0.007059057517160474,
+      "oracle_unseen_disagreement": 0.4366143451239065,
+      "oracle_unseen_nll_per_dim": 15.525973370615183,
+      "oracle_persistence_normalized_mse": 0.0047501478457494615,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.008984690102513853,
+      "oracle_mean_rollout_3_normalized_mse": 0.02838023397863456,
+      "oracle_mean_rollout_5_normalized_mse": 0.06032630559633481,
+      "oracle_mean_rollout_10_normalized_mse": 0.15137854879342705,
+      "oracle_sample_outside_encoder_bounds_fraction": 0.9215246438980103
+    }
+  },
+  {
+    "variant": "replay",
+    "seed": 2,
+    "coverage": 0.38621076233183854,
+    "coverage_auc": 0.24052752242152467,
+    "updates": 4505,
+    "seconds": 96.20182195771486,
+    "training_seconds": 8.03952862182632,
+    "guaranteed_trained_through": 0,
+    "late_diagnostics": {
+      "new": {
+        "disagreement": {
+          "pre": 0.16415701821446418,
+          "post": 0.1603489960730076
+        },
+        "normalized_mse": {
+          "pre": 0.0013300641004860892,
+          "post": 0.0013372690268962228
+        },
+        "nll_per_dim": {
+          "pre": -3.2381115889549257,
+          "post": -3.238953056335449
+        },
+        "predictive_variance": {
+          "pre": 0.0008166707283817231,
+          "post": 0.000818225615657866
+        }
+      },
+      "old": {
+        "disagreement": {
+          "pre": 0.15217423632740976,
+          "post": 0.1511520480364561
+        },
+        "normalized_mse": {
+          "pre": 0.00688565857436362,
+          "post": 0.006891025738323842
+        },
+        "nll_per_dim": {
+          "pre": -3.1413991141319273,
+          "post": -3.142497034072876
+        },
+        "predictive_variance": {
+          "pre": 0.0030680207756813615,
+          "post": 0.003060676777968183
+        }
+      },
+      "probe": {
+        "disagreement": {
+          "pre": 0.19835908085107803,
+          "post": 0.19808276548981665
+        },
+        "normalized_mse": {
+          "pre": 0.003599398837498639,
+          "post": 0.003595532564041122
+        },
+        "nll_per_dim": {
+          "pre": -3.127536263465881,
+          "post": -3.1282448625564574
+        },
+        "predictive_variance": {
+          "pre": 0.0017512130737304687,
+          "post": 0.0017505629570223392
+        }
+      }
+    },
+    "retrieval": {
+      "variant": "replay",
+      "seed": 2,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/probabilistic-cadence-20261109/replay-seed2",
+      "mean_horizontal_latent_step": 0.07956299930810928,
+      "mean_vertical_latent_step": 0.1771390587091446,
+      "horizontal_vertical_step_ratio": 0.4491555988788605,
+      "all": {
+        "count": 8920,
+        "exact_next_position_accuracy": 0.336322869955157,
+        "mean_physical_error": 0.6927273273468018,
+        "physical_error_p95": 3.0,
+        "error_over_one_room_fraction": 0.22903587443946188,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2504,
+        "exact_next_position_accuracy": 0.402555910543131,
+        "mean_physical_error": 0.3979143500328064,
+        "physical_error_p95": 2.0,
+        "error_over_one_room_fraction": 0.10862619808306709,
+        "persistence_accuracy": 0.2939297124600639,
+        "persistence_mean_physical_error": 0.1765175759792328
+      },
+      "unseen": {
+        "count": 6416,
+        "exact_next_position_accuracy": 0.3104738154613466,
+        "mean_physical_error": 0.8077852129936218,
+        "physical_error_p95": 3.132491111755371,
+        "error_over_one_room_fraction": 0.2760286783042394,
+        "persistence_accuracy": 0.32917705735660846,
+        "persistence_mean_physical_error": 0.1677057296037674
+      }
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.38621076233183854,
+      "coverage_rooms": 0.4513888888888889,
+      "latent_variance": 0.5777298212051392,
+      "latent_effective_rank": 3.1966359615325928,
+      "encoder_saturation_fraction": 0.5959921479225159,
+      "updates": 4505,
+      "environment_steps": 10000,
+      "replay_nll_per_dim": -3.1476542949676514,
+      "replay_normalized_mse": 0.005696580092431436,
+      "replay_disagreement": 0.17496155202388763,
+      "replay_predictive_variance": 0.0029101308900862932,
+      "oracle_uncertainty_error_correlation": 0.009098228369676067,
+      "oracle_effective_mixture_components": 1.0,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0037196188595853695,
+      "oracle_all_disagreement": 0.21632403987716944,
+      "oracle_all_nll_per_dim": -3.121315874800821,
+      "oracle_seen_state_actions": 2504,
+      "oracle_seen_normalized_mse": 0.005561051954392744,
+      "oracle_seen_disagreement": 0.18001469587208424,
+      "oracle_seen_nll_per_dim": -3.156213836809888,
+      "oracle_unseen_state_actions": 6416,
+      "oracle_unseen_normalized_mse": 0.0030009548213376044,
+      "oracle_unseen_disagreement": 0.23049464420833113,
+      "oracle_unseen_nll_per_dim": -3.10769609661025,
+      "oracle_persistence_normalized_mse": 0.0051257255074902775,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.004572363552697092,
+      "oracle_mean_rollout_3_normalized_mse": 0.013260621068819022,
+      "oracle_mean_rollout_5_normalized_mse": 0.01583097657638771,
+      "oracle_mean_rollout_10_normalized_mse": 0.03685975450282264,
+      "oracle_sample_outside_encoder_bounds_fraction": 0.8890134692192078
+    }
+  }
+]

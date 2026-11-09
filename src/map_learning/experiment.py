@@ -11,6 +11,7 @@ from .config import MazeConfig
 from .maze import Maze
 from .replay import Replay
 from .training import Trainer, seed_all
+from .cadence import TrainingSchedule, CadenceDiagnostics
 from .planning import LatentPlanner
 from .uncertainty_planning import make_planner
 from .evaluation import coverage_plot, evaluate, split_replay
@@ -111,10 +112,13 @@ def online(config, output):
     obs = env.reset()
     origin = obs.copy()
     episode, scale = 0, None
+    schedule = TrainingSchedule(trainer)
+    diagnostics = CadenceDiagnostics(trainer) if config.cadence_diagnostics else None
+    training_seconds = 0.0
     scale_rng = np.random.default_rng(config.seed+6000)
     started = time.monotonic()
     visited_positions, visited_rooms = set(), set()
-    with (path/"training.jsonl").open("w") as file, (path/"exploration.jsonl").open("w") as progress:
+    with (path/"training.jsonl").open("w") as file, (path/"exploration.jsonl").open("w") as progress, (path/"cadence.jsonl").open("w") as cadence:
         for step in range(config.collect_steps):
             ready = step >= config.warmup_steps and trainer.updates > 0
             action = planner.act(obs, origin, scale) if ready else planner.random_action()
@@ -125,14 +129,29 @@ def online(config, output):
                 visited_positions.add(tuple(np.round(p, 5)))
                 visited_rooms.add(tuple(np.floor(p).astype(int)))
             obs = nxt
-            if step+1 >= max(1, config.warmup_steps) and (step+1) % config.train_every == 0:
-                for _ in range(config.updates_per_train):
-                    metrics = trainer.update(replay)
+            scheduled = step+1 >= max(1, config.warmup_steps) and (step+1) % config.train_every == 0
+            # Flush a final partial collection block so the coverage guarantee
+            # also holds when collect_steps is not divisible by train_every.
+            flush = config.training_schedule != "replay" and step+1 == config.collect_steps
+            if scheduled or flush:
+                batches = diagnostics.batches(replay) if diagnostics else None
+                pre = diagnostics.measure(batches, step+1) if diagnostics else None
+                training_started = time.monotonic()
+                metrics = schedule.train(replay)
+                block_seconds = time.monotonic()-training_started
+                training_seconds += block_seconds
+                if diagnostics:
+                    log_metrics(cadence, {"environment_step": step+1, "updates": trainer.updates,
+                        "block_updates": metrics["block_updates"],
+                        "explicit_transitions_per_head": metrics["explicit_transitions_per_head"],
+                        "guaranteed_trained_through": metrics["guaranteed_trained_through"],
+                        "training_seconds": training_seconds, "block_training_seconds": block_seconds,
+                        "pre": pre, "post": diagnostics.measure(batches, step+1)})
                 if config.train.loss != "probabilistic":
                     with torch.no_grad():
                         sample = replay.sample_states(256, scale_rng)
                         scale = trainer.model.encode(trainer.tensor(sample)).std(0).clamp_min(1e-3)
-                if trainer.updates % config.train.log_every < config.updates_per_train:
+                if trainer.updates % config.train.log_every < metrics["block_updates"]:
                     metrics.update(environment_step=step+1, seconds=time.monotonic()-started)
                     log_metrics(file, metrics)
                     print(json.dumps(metrics), flush=True)
@@ -140,7 +159,8 @@ def online(config, output):
                 row = {"environment_step": step+1, "updates": trainer.updates,
                        "coverage_rooms": len(visited_rooms)/config.maze.size**2,
                        "visited_positions": len(visited_positions),
-                       "seconds": time.monotonic()-started,
+                       "seconds": time.monotonic()-started, "training_seconds": training_seconds,
+                       "guaranteed_trained_through": schedule.trained_through,
                        **getattr(planner, "last_metrics", {})}
                 log_metrics(progress, row)
                 print(json.dumps(row), flush=True)

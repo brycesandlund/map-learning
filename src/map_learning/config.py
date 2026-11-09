@@ -79,6 +79,8 @@ class ExperimentConfig:
     warmup_steps: int = 1000
     train_every: int = 10
     updates_per_train: int = 5
+    training_schedule: str = "replay"  # replay, epoch, new_then_replay
+    cadence_diagnostics: bool = False
     maze: MazeConfig = field(default_factory=MazeConfig)
     model: ModelConfig = field(default_factory=ModelConfig)
     train: TrainConfig = field(default_factory=TrainConfig)
@@ -113,6 +115,9 @@ class ExperimentConfig:
         assert self.train.compression_weight >= 0 and self.train.commitment_weight >= 0
         assert self.train.log_every > 0 and self.threads > 0
         assert self.collect_steps > 0 and self.warmup_steps >= 0
+        assert self.training_schedule in {"replay", "epoch", "new_then_replay"}
+        assert self.training_schedule == "replay" or self.train.loss == "probabilistic"
+        assert not self.cadence_diagnostics or self.train.loss == "probabilistic"
         assert self.train_every > 0 and self.updates_per_train > 0
         assert self.planner.behavior in {"random", "distance", "disagreement", "hybrid"}
         assert self.planner.distance_reference in {"episode_start", "current"}

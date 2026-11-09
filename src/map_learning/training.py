@@ -101,14 +101,15 @@ class Trainer:
                        latent_std=float(z0.std(dim=0).mean()))
         return metrics
 
-    def update_probabilistic(self, replay):
+    def update_probabilistic(self, replay, head_indices=None):
         c = self.config.train
         head_losses, errors, variances, means = [], [], [], []
         self.map_optimizer.zero_grad()
         self.dynamics_optimizer.zero_grad()
         # Independent replay resamples per head; both ends retain encoder gradients.
         for m in range(len(self.dynamics.heads)):
-            obs, actions, nxt = replay.sample_transitions(c.batch_size, self.rng)
+            obs, actions, nxt = (replay.sample_transitions(c.batch_size, self.rng)
+                                 if head_indices is None else replay.transitions_at(head_indices[m]))
             z, target = self.model.encode(self.tensor(np.concatenate([obs, nxt]))).chunk(2)
             params = self.dynamics.parameters_head(m, z, torch.as_tensor(actions, device=self.device))
             head_losses.append(-mixture_log_prob(params, target).mean()/z.shape[-1])
