@@ -373,3 +373,36 @@ Validation: **38 tests pass**, plus an end-to-end 100-update frozen-encoder smok
 This supports fixed-target fitting as feasible and loss weighting as a major issue in the joint-MSE test; it does not establish that joint representation learning is inherently inferior. Dataset determinism and exact encoder collisions are ruled out for the sampled training data. The last 1–2% of errors in frozen learned latents are still unresolved, and this is one dataset/initialization. No sweeping generalization claims.
 
 Full report, learning curves, unseen-edge scores, parameter counts and reproduction commands: [memorization experiments](docs/memorization.md). Raw runs: `runs/memorization-20261109/` and `runs/memorization-followup-20261109/`. Portable results/audits: `docs/assets/memorization-*.json`. Follow-up manifest: `configs/memorization_followup.json`. Gradient audit: `scripts/audit_memorization_gradients.py`.
+
+## 2026-11-09 — Joint memorization ≥98% target (completed)
+
+Target: at least 98% next-position retrieval for **each** ensemble member over all 2,606 unique training state-actions, with a learned, noncollapsed encoder and no frozen targets. Same seed-0 10k-transition dataset as the preceding diagnostics; no new exploration.
+
+The new models have three SiLU hidden layers of width 256 in both encoder and each dynamics head, eight latent dimensions, and three independent dynamics heads. Both encoder and dynamics are freshly initialized and jointly optimized from the first update. MSE of each head's mean plus hinge repulsion; no reconstruction, codebook, coordinate targets, oracle training signals or actor. The source checkpoint supplies configuration only for fresh encoders. Encoder LR = 0.3× dynamics LR; dynamics LR starts at 3e-4, both cosine-decay to 1/30 of their initial value. Independent shuffled passes over unique observed edges retain partial batches. Repulsion uses independently sampled training endpoints.
+
+Initial seed-7 screen: 50k updates per condition, tanh/repulsion 0.01, tanh/repulsion 0.001, and identity-output/repulsion 0.01. Manifest `configs/joint_memorization.json`. The identity-output model exceeded 98% for each head at the 1k checkpoint; two new initialization seeds (8/9) then test that recipe for 10k updates each, with cosine decay shortened to that budget. Manifest `configs/joint_memorization_confirm.json`. This is adaptive exploration, not a pre-registered comparison.
+
+Accuracy uses nearest-latent retrieval over the full evaluation-only maze catalogue. Every head is reported separately, including the fraction of edges correct for all heads simultaneously. MSE and latent variance/rank/drift are retained; unseen state-actions are evaluated separately. Production MLP depth is now configurable through `model.hidden_layers` (default 2 preserves old checkpoints). Experiment-only knobs choose encoder/dynamics sizes independently, fresh initialization, latent activation and encoder learning rate.
+
+```bash
+MPLCONFIGDIR=/tmp/map-joint-mpl .venv/bin/python scripts/run_memorization.py --manifest configs/joint_memorization.json --out runs/joint-memorization-20261109 --jobs 3
+MPLCONFIGDIR=/tmp/map-joint-mpl .venv/bin/python scripts/run_memorization.py --manifest configs/joint_memorization_confirm.json --out runs/joint-memorization-confirm-20261109 --jobs 2
+```
+
+**Target achieved in both 10k-update confirmation runs**, independently verified by reloading weights. All five runs finished (170,000 updates total); **39 tests pass**.
+
+| Run | Updates | Head 1 | Head 2 | Head 3 | Correct for all heads | Unseen ensemble accuracy |
+|---|---:|---:|---:|---:|---:|---:|
+| Identity, seed 8 | 10,000 | 99.27% | 99.23% | 99.23% | 99.23% | 95.41% |
+| Identity, seed 9 | 10,000 | 99.31% | 99.27% | 99.27% | 99.27% | 96.29% |
+| Identity, seed 7 | 50,000 | 97.93% | 98.04% | 97.93% | 97.39% | See full report |
+| Tanh, repulsion 0.001, seed 7 | 50,000 | 96.70% | 97.35% | 97.20% | 96.28% | See full report |
+| Tanh, repulsion 0.01, seed 7 | 50,000 | 93.98% | 93.71% | 93.25% | 91.63% | See full report |
+
+Both confirmations preserve 762 distinct float32 training-state latents. Their training-state latent variance is about 1.318, minimum distinct-state distances 0.0429/0.0480, mean distances about 4.11, and moving-transition distance about 0.172. Exact expected repulsion is 0.03966/0.03964, of which 0.001572 is the unavoidable identical-state floor. Encoder drift from initialization is nonzero (~1.26 MSE), confirming a learned rather than frozen representation.
+
+Winning configuration: 134,408 encoder parameters and 418,611 dynamics parameters (139,537/member), totaling 553,019. Unbounded learned outputs, MSE + 0.01 hinge repulsion, fresh joint initialization, uniform observed-edge training, encoder LR multiplier 0.3. Gaussian variance outputs are unused in this MSE diagnostic. These results establish the requested fixed-data memorization level, not calibrated stochastic uncertainty or live exploration performance.
+
+Longer training did not guarantee retention: the seed-7 identity model exceeded 99% early but declined to ~98% at 50k. This remains a limitation for ongoing learning. No claim that capacity alone caused the improvement: architecture, initialization, sampling and optimizer schedule differ from the earlier small-model runs. The bounded/unbounded comparisons within the initial screen are matched; confirmation budgets are shorter and chosen adaptively.
+
+Full verified results, learning curves, latent geometry and reproduction commands: [joint memorization](docs/joint-memorization.md). Portable artifact: `docs/assets/joint-memorization-results.json`. Independent verifier: `scripts/verify_joint_memorization.py`. Raw checkpoints: `runs/joint-memorization-confirm-20261109/identity_seed{8,9}/weights.pt`. All experiments use the same dataset hash; no new interactions or privileged transitions enter training.

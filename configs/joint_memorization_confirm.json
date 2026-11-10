@@ -1,0 +1,64 @@
+{
+  "checkpoint": "runs/probabilistic-cadence-20261109/replay-seed0/checkpoint.pt",
+  "data": "runs/probabilistic-cadence-20261109/replay-seed0/replay.npz",
+  "updates": 10000,
+  "seed": 8,
+  "variants": [
+    {
+      "name": "identity_seed8",
+      "args": [
+        "--encoder",
+        "joint",
+        "--objective",
+        "mse",
+        "--fresh-encoder",
+        "--encoder-hidden",
+        "256",
+        "--encoder-depth",
+        "3",
+        "--hidden",
+        "256",
+        "--dynamics-depth",
+        "3",
+        "--uniform-edges",
+        "--encoder-lr-multiplier",
+        "0.3",
+        "--repulsion",
+        "0.01",
+        "--latent-activation",
+        "identity",
+        "--eval-every",
+        "5000"
+      ]
+    },
+    {
+      "name": "identity_seed9",
+      "args": [
+        "--encoder",
+        "joint",
+        "--objective",
+        "mse",
+        "--fresh-encoder",
+        "--encoder-hidden",
+        "256",
+        "--encoder-depth",
+        "3",
+        "--hidden",
+        "256",
+        "--dynamics-depth",
+        "3",
+        "--uniform-edges",
+        "--encoder-lr-multiplier",
+        "0.3",
+        "--repulsion",
+        "0.01",
+        "--latent-activation",
+        "identity",
+        "--eval-every",
+        "5000",
+        "--seed",
+        "9"
+      ]
+    }
+  ]
+}

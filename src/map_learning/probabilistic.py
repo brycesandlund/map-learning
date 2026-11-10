@@ -82,7 +82,7 @@ class MixtureDynamicsEnsemble(nn.Module):
         self.actions, self.components, self.dim = actions, config.mixture_components, config.latent_dim
         self.variance_floor = config.variance_floor
         self.heads = nn.ModuleList([mlp(self.dim+actions, config.hidden_dim,
-                                      self.components*(1+2*self.dim))
+                                      self.components*(1+2*self.dim), config.hidden_layers)
                                     for _ in range(config.ensemble_size)])
         for head in self.heads:
             nn.init.normal_(head[-1].weight, std=.01)

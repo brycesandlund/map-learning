@@ -3,10 +3,13 @@ from torch import nn
 from torch.nn import functional as F
 
 
-def mlp(input_dim, hidden_dim, output_dim):
-    return nn.Sequential(nn.Linear(input_dim, hidden_dim), nn.SiLU(),
-                         nn.Linear(hidden_dim, hidden_dim), nn.SiLU(),
-                         nn.Linear(hidden_dim, output_dim))
+def mlp(input_dim, hidden_dim, output_dim, hidden_layers=2):
+    if hidden_layers < 1:
+        raise ValueError("At least one hidden layer is required")
+    layers = []
+    for index in range(hidden_layers):
+        layers.extend([nn.Linear(input_dim if index == 0 else hidden_dim, hidden_dim), nn.SiLU()])
+    return nn.Sequential(*layers, nn.Linear(hidden_dim, output_dim))
 
 
 class IntervalQuasimetric(nn.Module):
@@ -107,7 +110,7 @@ class MapModel(nn.Module):
                 nn.AdaptiveAvgPool2d((6, 6)), nn.Flatten(),
                 nn.Linear(32*6*6, c.hidden_dim), nn.SiLU(), nn.Linear(c.hidden_dim, c.latent_dim))
         else:
-            self.encoder = mlp(observation_shape[0], c.hidden_dim, c.latent_dim)
+            self.encoder = mlp(observation_shape[0], c.hidden_dim, c.latent_dim, c.hidden_layers)
         self.bottleneck = (PrototypeBottleneck(c.codebook_size, c.latent_dim, c.codebook_temperature)
                            if c.codebook_size else None)
         self.distance_head = (None if loss_kind == "probabilistic" else
@@ -139,7 +142,7 @@ class DynamicsEnsemble(nn.Module):
     def __init__(self, config, actions=5):
         super().__init__()
         self.actions = actions
-        self.heads = nn.ModuleList([mlp(config.latent_dim+actions, config.hidden_dim, config.latent_dim)
+        self.heads = nn.ModuleList([mlp(config.latent_dim+actions, config.hidden_dim, config.latent_dim, config.hidden_layers)
                                     for _ in range(config.ensemble_size)])
         for head in self.heads:
             nn.init.normal_(head[-1].weight, std=.01)

@@ -31,3 +31,20 @@ def test_mse_objective_cannot_hide_residual_in_variance():
     mse.backward()
     assert torch.all(means.grad>0)
     assert memorize.prediction_loss(params,target,'nll')!=memorize.prediction_loss((params[0],means,params[2]*100),target,'nll')
+
+
+def test_deeper_models_train_jointly_and_old_checkpoint_shapes_are_preserved():
+    from map_learning.config import load_config
+    from map_learning.training import Trainer, seed_all
+    from map_learning.models import mlp
+    from test_learning import line_replay
+    seed_all(7)
+    legacy=mlp(2,64,8)
+    assert list(legacy.state_dict())==['0.weight','0.bias','2.weight','2.bias','4.weight','4.bias']
+    cfg=load_config('configs/probabilistic_maze.json',['model.hidden_layers=3','model.hidden_dim=32'])
+    trainer=Trainer(cfg,(2,))
+    assert len([m for m in trainer.model.encoder if isinstance(m,torch.nn.Linear)])==4
+    assert len([m for m in trainer.dynamics.heads[0] if isinstance(m,torch.nn.Linear)])==4
+    before=[p.detach().clone() for p in trainer.model.parameters()]
+    trainer.update(line_replay())
+    assert any(not torch.equal(a,b) for a,b in zip(before,trainer.model.parameters()))

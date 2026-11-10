@@ -19,6 +19,7 @@ class MazeConfig:
 class ModelConfig:
     latent_dim: int = 32
     hidden_dim: int = 128
+    hidden_layers: int = 2  # coordinate encoder and dynamics MLPs
     iqe_component_dim: int = 8
     ensemble_size: int = 5
     codebook_size: int = 0  # 0 disables quantization and compression
@@ -92,6 +93,7 @@ class ExperimentConfig:
         assert self.maze.observation in {"coordinates", "features", "pixels"}
         assert self.maze.nuisance_dims >= 0 and self.maze.image_size >= 16
         assert not (self.maze.observation == "pixels" and self.maze.nuisance_dims)
+        assert self.model.hidden_layers >= 1
         assert self.model.latent_dim >= 2 and self.model.hidden_dim > 0
         assert self.model.iqe_component_dim > 0
         assert self.train.loss != "qrl" or self.model.latent_dim % self.model.iqe_component_dim == 0

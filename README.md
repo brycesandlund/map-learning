@@ -451,3 +451,10 @@ Use `configs/memorization.json` and `configs/memorization_followup.json` with
 `scripts/run_memorization.py`; the report contains full reproduction commands.
 These diagnostic weights are saved as `weights.pt` with experiment/model metadata,
 not as the online runner's resumable `checkpoint.pt` format.
+
+The follow-up [joint memorization experiment](docs/joint-memorization.md) reaches
+above 99.2% in every ensemble member on two fresh initialization seeds. Encoder
+and dynamics are both learned from scratch. Reproduce using
+`configs/joint_memorization_confirm.json`; independently check saved weights with
+`scripts/verify_joint_memorization.py`. `model.hidden_layers` controls coordinate
+encoder and dynamics depth (default 2 maintains checkpoint compatibility).
