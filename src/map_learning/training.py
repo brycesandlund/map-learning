@@ -24,7 +24,7 @@ class Trainer:
         self.model = MapModel(observation_shape, config.model, config.train.loss, config.train.horizon).to(self.device)
         dynamics_class = MixtureDynamicsEnsemble if config.train.loss == "probabilistic" else DynamicsEnsemble
         self.dynamics = dynamics_class(config.model).to(self.device)
-        self.map_optimizer = torch.optim.Adam(self.model.parameters(), lr=config.train.lr)
+        self.map_optimizer = torch.optim.Adam(self.model.parameters(), lr=config.train.lr*config.train.encoder_lr_multiplier)
         self.dynamics_optimizer = torch.optim.Adam(self.dynamics.parameters(), lr=config.train.lr)
         self.multiplier = torch.tensor(config.train.initial_multiplier, device=self.device)
         self.updates = 0
@@ -106,13 +106,20 @@ class Trainer:
         head_losses, errors, variances, means = [], [], [], []
         self.map_optimizer.zero_grad()
         self.dynamics_optimizer.zero_grad()
-        # Independent replay resamples per head; both ends retain encoder gradients.
+        # Draw the same number of indices in both modes, preserving repulsion RNG.
+        replay_sample = head_indices is None
+        if head_indices is None:
+            head_indices = [self.rng.integers(len(replay), size=c.batch_size)
+                            for _ in self.dynamics.heads]
+        if c.ensemble_batches == "shared" or (c.ensemble_batches == "shared_replay" and replay_sample):
+            head_indices = [head_indices[0]] * len(self.dynamics.heads)
+        # Both ends retain encoder gradients.
         for m in range(len(self.dynamics.heads)):
-            obs, actions, nxt = (replay.sample_transitions(c.batch_size, self.rng)
-                                 if head_indices is None else replay.transitions_at(head_indices[m]))
+            obs, actions, nxt = replay.transitions_at(head_indices[m])
             z, target = self.model.encode(self.tensor(np.concatenate([obs, nxt]))).chunk(2)
             params = self.dynamics.parameters_head(m, z, torch.as_tensor(actions, device=self.device))
-            head_losses.append(-mixture_log_prob(params, target).mean()/z.shape[-1])
+            head_losses.append((mixture_mean(params)-target).square().mean() if c.prediction_objective == "mse"
+                               else -mixture_log_prob(params, target).mean()/z.shape[-1])
             errors.append((mixture_mean(params)-target).square().mean().detach())
             variances.append(mixture_variance(params).mean().detach())
             means.append(z.detach())
@@ -131,9 +138,10 @@ class Trainer:
         self.updates += 1
         latent = torch.cat(means)
         return {"update": self.updates, "joint_loss": float(total.detach()),
-                "nll_per_dim": float(nll.detach()), "repulsion": float(repulsion.detach()),
+                "prediction_loss": float(nll.detach()),
+                "nll_per_dim": float(nll.detach()) if c.prediction_objective == "nll" else None, "repulsion": float(repulsion.detach()),
                 "dynamics_mse": float(torch.stack(errors).mean()),
-                "predictive_variance": float(torch.stack(variances).mean()),
+                "predictive_variance": float(torch.stack(variances).mean()) if c.prediction_objective == "nll" else None,
                 "latent_std": float(latent.std(0).mean())}
 
     def save(self, path):

@@ -1,0 +1,18 @@
+{
+  "description": "Adaptive replay-budget test after new-once+5 underfit visited edges; horizon-4 MCTS unchanged.",
+  "config": "configs/joint_exploration_base.json",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "variants": [
+    {
+      "name": "mcts_new20",
+      "overrides": [
+        "training_schedule=new_then_replay",
+        "updates_per_train=20"
+      ]
+    }
+  ]
+}

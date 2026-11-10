@@ -1,0 +1,11 @@
+{
+ "description": "Joint MSE exploration: matched raw-replay cadences and persistent-random controls. Constant LR; mean disagreement and deterministic mean rollouts.",
+ "config": "configs/joint_exploration_base.json",
+ "seeds": [0,1,2],
+ "variants": [
+  {"name": "mcts_epoch", "overrides": ["training_schedule=epoch"]},
+  {"name": "mcts_new", "overrides": ["training_schedule=new_then_replay"]},
+  {"name": "random_epoch", "overrides": ["training_schedule=epoch", "planner.behavior=random"]},
+  {"name": "random_new", "overrides": ["training_schedule=new_then_replay", "planner.behavior=random"]}
+ ]
+}

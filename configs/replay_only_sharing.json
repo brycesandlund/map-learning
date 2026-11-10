@@ -1,0 +1,19 @@
+{
+  "config": "configs/horizon_base.json",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "variants": [
+    {
+      "name": "new20_shared_replay_only",
+      "overrides": [
+        "training_schedule=new_then_replay",
+        "updates_per_train=20",
+        "planner.behavior=random",
+        "train.ensemble_batches=shared_replay"
+      ]
+    }
+  ]
+}

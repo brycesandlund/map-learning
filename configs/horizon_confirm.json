@@ -1,0 +1,65 @@
+{
+  "config": "configs/horizon_base.json",
+  "seeds": [
+    1,
+    2
+  ],
+  "variants": [
+    {
+      "name": "h4_independent",
+      "overrides": [
+        "planner.horizon=4",
+        "train.ensemble_batches=independent"
+      ]
+    },
+    {
+      "name": "h4_shared",
+      "overrides": [
+        "planner.horizon=4",
+        "train.ensemble_batches=shared"
+      ]
+    },
+    {
+      "name": "h8_independent",
+      "overrides": [
+        "planner.horizon=8",
+        "train.ensemble_batches=independent"
+      ]
+    },
+    {
+      "name": "h8_shared",
+      "overrides": [
+        "planner.horizon=8",
+        "train.ensemble_batches=shared"
+      ]
+    },
+    {
+      "name": "h16_independent",
+      "overrides": [
+        "planner.horizon=16",
+        "train.ensemble_batches=independent"
+      ]
+    },
+    {
+      "name": "h16_shared",
+      "overrides": [
+        "planner.horizon=16",
+        "train.ensemble_batches=shared"
+      ]
+    },
+    {
+      "name": "h32_independent",
+      "overrides": [
+        "planner.horizon=32",
+        "train.ensemble_batches=independent"
+      ]
+    },
+    {
+      "name": "h32_shared",
+      "overrides": [
+        "planner.horizon=32",
+        "train.ensemble_batches=shared"
+      ]
+    }
+  ]
+}

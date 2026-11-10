@@ -1,0 +1,46 @@
+{
+  "config": "configs/horizon_base.json",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "variants": [
+    {
+      "name": "epoch_independent",
+      "overrides": [
+        "training_schedule=epoch",
+        "train.ensemble_batches=independent",
+        "updates_per_train=20",
+        "planner.behavior=random"
+      ]
+    },
+    {
+      "name": "epoch_shared",
+      "overrides": [
+        "training_schedule=epoch",
+        "train.ensemble_batches=shared",
+        "updates_per_train=20",
+        "planner.behavior=random"
+      ]
+    },
+    {
+      "name": "new_then_replay_independent",
+      "overrides": [
+        "training_schedule=new_then_replay",
+        "train.ensemble_batches=independent",
+        "updates_per_train=20",
+        "planner.behavior=random"
+      ]
+    },
+    {
+      "name": "new_then_replay_shared",
+      "overrides": [
+        "training_schedule=new_then_replay",
+        "train.ensemble_batches=shared",
+        "updates_per_train=20",
+        "planner.behavior=random"
+      ]
+    }
+  ]
+}

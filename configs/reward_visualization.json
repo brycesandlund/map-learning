@@ -1,0 +1,11 @@
+{
+ "description": "Trajectory-preserving seed-0 reruns with pre-action reward maps and exact learned-model search diagnostics every 200 actions.",
+ "config": "configs/joint_exploration_base.json",
+ "seeds": [0],
+ "overrides": ["reward_snapshot_every=200"],
+ "variants": [
+  {"name": "mcts_epoch", "overrides": ["training_schedule=epoch"]},
+  {"name": "mcts_new", "overrides": ["training_schedule=new_then_replay"]},
+  {"name": "mcts_new20", "overrides": ["training_schedule=new_then_replay","updates_per_train=20"]}
+ ]
+}

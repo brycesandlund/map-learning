@@ -3,7 +3,7 @@ import math
 import numpy as np
 import torch
 from .planning import LatentPlanner
-from .probabilistic import ensemble_js, ensemble_sample
+from .probabilistic import ensemble_js, ensemble_sample, mixture_mean
 
 
 class SearchNode:
@@ -29,10 +29,17 @@ class UncertaintyPlanner(LatentPlanner):
         super().__init__(trainer, config, seed)
         self.generator = torch.Generator(device=trainer.device).manual_seed(seed+9000)
         self.last_metrics = {}
+        self.mean_mode = trainer.config.train.prediction_objective == "mse"
+        self.reward_variance = 1.0
+        self.uct_scale = 1.0
+
+    def successor(self, params):
+        return mixture_mean(params).mean(0) if self.mean_mode else ensemble_sample(params, self.generator)
 
     def distribution_reward(self, state, actions):
         params = self.trainer.dynamics.distribution(state, actions)
-        reward = ensemble_js(params, self.config.disagreement_samples, self.generator)
+        reward = (mixture_mean(params).var(0, unbiased=False).mean(-1)/self.reward_variance
+                  if self.mean_mode else ensemble_js(params, self.config.disagreement_samples, self.generator))
         return params, reward
 
     def prepare(self, node):
@@ -51,7 +58,7 @@ class UncertaintyPlanner(LatentPlanner):
             action = int(self.rng.choice(unused))
         else:
             average = node.returns/node.counts
-            bonus = self.config.uct_exploration*np.sqrt(np.log(node.counts.sum()+1)/node.counts)
+            bonus = self.config.uct_exploration*self.uct_scale*np.sqrt(np.log(node.counts.sum()+1)/node.counts)
             scores = average+bonus
             action = int(self.rng.choice(np.flatnonzero(scores == scores.max())))
         value = float(node.rewards[action])
@@ -59,9 +66,9 @@ class UncertaintyPlanner(LatentPlanner):
             outcomes = node.children[action]
             limit = max(1, int(math.ceil(self.config.widening_coefficient*
                                          (node.counts[action]+1)**self.config.widening_exponent)))
-            if len(outcomes) < limit:
+            if len(outcomes) < (1 if self.mean_mode else limit):
                 params = tuple(p[:, action:action+1] for p in node.parameters)
-                nxt = ensemble_sample(params, self.generator)
+                nxt = self.successor(params)
                 child = SearchNode(nxt, self.trainer.dynamics.actions)
                 outcomes.append(child)
                 self.nodes_created += 1
@@ -75,6 +82,12 @@ class UncertaintyPlanner(LatentPlanner):
     def mcts(self, z):
         root = SearchNode(z, self.trainer.dynamics.actions)
         self.nodes_created = 1
+        self.uct_scale = 1.0
+        if self.mean_mode:
+            self.prepare(root)
+            # Keep UCT exploration commensurate with the small MSE reward.
+            self.uct_scale = max(float(root.rewards.max()), 1e-12)*sum(
+                self.config.uncertainty_discount**i for i in range(self.config.horizon))
         for _ in range(self.config.simulations):
             self.simulate(root, 0)
         choices = np.flatnonzero(root.counts == root.counts.max())
@@ -82,7 +95,9 @@ class UncertaintyPlanner(LatentPlanner):
         self.last_metrics = {"root_disagreement": float(root.rewards[action]),
                              "search_return": float(root.returns[action]/root.counts[action]),
                              "search_nodes": self.nodes_created,
-                             "root_visits": root.counts.tolist()}
+                             "root_visits": root.counts.tolist(),
+                             "root_rewards": root.rewards.tolist(),
+                             "root_q": (root.returns/np.maximum(root.counts, 1)).tolist()}
         return action
 
     def shooting(self, z):
@@ -99,7 +114,7 @@ class UncertaintyPlanner(LatentPlanner):
                 root_rewards = reward.reshape(c.candidates, c.particles).mean(-1)
             returns += c.uncertainty_discount**depth*reward
             if depth+1 < c.horizon:
-                states = ensemble_sample(params, self.generator)
+                states = self.successor(params)
         scores = returns.reshape(c.candidates, c.particles).mean(-1)
         best = int(scores.argmax())
         self.last_metrics = {"root_disagreement": float(root_rewards[best]),
@@ -113,6 +128,8 @@ class UncertaintyPlanner(LatentPlanner):
         self.last_metrics = {}
         if self.config.behavior == "random" or self.rng.random() < self.config.epsilon_random:
             return self.random_action()
+        if self.mean_mode:
+            self.reward_variance = max(float(latent_scale), 1e-8) if latent_scale is not None else 1.0
         z = self.trainer.model.encode(self.trainer.tensor(np.asarray(observation)[None]))
         action = self.mcts(z) if self.config.search == "mcts" else self.shooting(z)
         self.previous_action = action

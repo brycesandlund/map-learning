@@ -1,0 +1,26 @@
+{
+  "config": "configs/horizon_base.json",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "variants": [
+    {
+      "name": "h16_independent_s96",
+      "overrides": [
+        "planner.horizon=16",
+        "planner.simulations=96"
+      ]
+    },
+    {
+      "name": "h32_independent_shoot256",
+      "overrides": [
+        "planner.horizon=32",
+        "planner.search=shooting",
+        "planner.candidates=256",
+        "planner.particles=1"
+      ]
+    }
+  ]
+}

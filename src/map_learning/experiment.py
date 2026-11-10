@@ -12,6 +12,7 @@ from .maze import Maze
 from .replay import Replay
 from .training import Trainer, seed_all
 from .cadence import TrainingSchedule, CadenceDiagnostics
+from .reward_snapshots import RewardSnapshots
 from .planning import LatentPlanner
 from .uncertainty_planning import make_planner
 from .evaluation import coverage_plot, evaluate, split_replay
@@ -113,6 +114,7 @@ def online(config, output):
     origin = obs.copy()
     episode, scale = 0, None
     schedule = TrainingSchedule(trainer)
+    snapshots = RewardSnapshots(trainer) if config.reward_snapshot_every else None
     diagnostics = CadenceDiagnostics(trainer) if config.cadence_diagnostics else None
     training_seconds = 0.0
     scale_rng = np.random.default_rng(config.seed+6000)
@@ -123,6 +125,8 @@ def online(config, output):
             ready = step >= config.warmup_steps and trainer.updates > 0
             action = planner.act(obs, origin, scale) if ready else planner.random_action()
             position = env.position.copy()
+            if snapshots:
+                snapshots.record(step, position, obs, action, scale, planner.last_metrics, ready)
             nxt, done = env.step(action)
             replay.add(obs, action, nxt, episode, position, env.position)
             for p in (position, env.position):
@@ -147,7 +151,11 @@ def online(config, output):
                         "guaranteed_trained_through": metrics["guaranteed_trained_through"],
                         "training_seconds": training_seconds, "block_training_seconds": block_seconds,
                         "pre": pre, "post": diagnostics.measure(batches, step+1)})
-                if config.train.loss != "probabilistic":
+                if config.train.prediction_objective == "mse":
+                    with torch.no_grad():
+                        sample = replay.sample_states(256, scale_rng)
+                        scale = trainer.model.encode(trainer.tensor(sample)).var(0, unbiased=False).mean().clamp_min(1e-8)
+                elif config.train.loss != "probabilistic":
                     with torch.no_grad():
                         sample = replay.sample_states(256, scale_rng)
                         scale = trainer.model.encode(trainer.tensor(sample)).std(0).clamp_min(1e-3)
@@ -155,6 +163,8 @@ def online(config, output):
                     metrics.update(environment_step=step+1, seconds=time.monotonic()-started)
                     log_metrics(file, metrics)
                     print(json.dumps(metrics), flush=True)
+            if config.checkpoint_every and (step+1) % config.checkpoint_every == 0:
+                trainer.save(path/f"checkpoint-{step+1}.pt")
             if (step+1) % 100 == 0 or step+1 == config.collect_steps:
                 row = {"environment_step": step+1, "updates": trainer.updates,
                        "coverage_rooms": len(visited_rooms)/config.maze.size**2,
@@ -169,6 +179,8 @@ def online(config, output):
                 origin = obs.copy()
                 planner.reset()
                 episode += 1
+    if snapshots:
+        snapshots.save(path)
     trainer.initialize(replay)
     trainer.save(path/"checkpoint.pt")
     replay.save(path/"replay.npz", config.maze)

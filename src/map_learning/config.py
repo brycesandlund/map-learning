@@ -37,6 +37,9 @@ class TrainConfig:
     updates: int = 3000
     batch_size: int = 256
     lr: float = 0.001
+    prediction_objective: str = "nll"  # probabilistic dynamics: nll or mse
+    ensemble_batches: str = "independent"  # independent, shared, or shared_replay (only stochastic replay batches)
+    encoder_lr_multiplier: float = 1.0
     dual_lr: float = 0.01
     epsilon: float = 0.1
     initial_multiplier: float = 1.0
@@ -82,6 +85,8 @@ class ExperimentConfig:
     updates_per_train: int = 5
     training_schedule: str = "replay"  # replay, epoch, new_then_replay
     cadence_diagnostics: bool = False
+    checkpoint_every: int = 0  # intermediate checkpoints for offline rollout audits
+    reward_snapshot_every: int = 0  # pre-action, evaluation-only; 0 disables
     maze: MazeConfig = field(default_factory=MazeConfig)
     model: ModelConfig = field(default_factory=ModelConfig)
     train: TrainConfig = field(default_factory=TrainConfig)
@@ -110,6 +115,9 @@ class ExperimentConfig:
             assert self.planner.behavior in {"random", "disagreement"}
             assert self.planner.search in {"mcts", "shooting"}
         assert self.train.updates > 0 and self.train.batch_size > 1
+        assert self.train.prediction_objective in {"nll", "mse"}
+        assert self.train.encoder_lr_multiplier > 0
+        assert self.train.prediction_objective != "mse" or (self.train.loss == "probabilistic" and self.model.mixture_components == 1)
         assert self.train.lr > 0 and self.train.dual_lr > 0
         assert self.train.epsilon >= 0 and self.train.initial_multiplier >= 0
         assert self.train.push_scale >= 0 and self.train.horizon > 0
@@ -117,6 +125,12 @@ class ExperimentConfig:
         assert self.train.compression_weight >= 0 and self.train.commitment_weight >= 0
         assert self.train.log_every > 0 and self.threads > 0
         assert self.collect_steps > 0 and self.warmup_steps >= 0
+        assert self.checkpoint_every >= 0
+        assert self.train.ensemble_batches in {"independent", "shared", "shared_replay"}
+        assert self.reward_snapshot_every >= 0
+        if self.reward_snapshot_every:
+            assert self.train.loss == "probabilistic" and self.train.prediction_objective == "mse"
+            assert self.maze.observation == "coordinates" and self.maze.nuisance_dims == 0
         assert self.training_schedule in {"replay", "epoch", "new_then_replay"}
         assert self.training_schedule == "replay" or self.train.loss == "probabilistic"
         assert not self.cadence_diagnostics or self.train.loss == "probabilistic"

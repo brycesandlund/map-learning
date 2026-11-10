@@ -9,7 +9,7 @@ from matplotlib.animation import FuncAnimation, PillowWriter
 import numpy as np
 
 from map_learning.config import load_config
-from map_learning.maze import Maze
+from map_learning.maze import Maze, reachable_graph
 
 
 def load_run(folder, label):
@@ -20,6 +20,7 @@ def load_run(folder, label):
         raise ValueError(f'Empty replay: {folder}')
     points = np.stack([data['positions'], data['next_positions']], axis=1).reshape(-1, 2)
     data['unique'], data['first'] = np.unique(points, axis=0, return_index=True)
+    data["reachable"] = len(reachable_graph(Maze(cfg.maze))[0])
     starts = np.r_[0, np.flatnonzero(np.diff(data['episodes']))+1]
     data['episode_start'] = np.maximum.accumulate(np.where(np.isin(np.arange(len(data['episodes'])), starts), np.arange(len(data['episodes'])), 0))
     data['reset_positions'] = np.unique(data['positions'][starts], axis=0)
@@ -62,14 +63,17 @@ def main():
         visited = ax.scatter([], [], s=4, color='#abcbd8', alpha=.65)
         trail, = ax.plot([], [], color='#ee672f', lw=1.2)
         agent = ax.scatter([], [], s=35, color='#c92127', zorder=6)
-        artists.append((visited, trail, agent))
+        tally = ax.text(.5, -.12, "", transform=ax.transAxes, ha="center", fontsize=9)
+        artists.append((visited, trail, agent, tally))
     title = fig.suptitle('')
-    fig.tight_layout(rect=[0, .13, 1, .88])
+    fig.tight_layout(rect=[0, .17, 1, .88])
     fig.text(.5, .02, 'Blue: accumulated visits • Orange: recent path • Red: agent • Stars: episode starts', ha='center', fontsize=8)
 
     def update(t):
-        for (_, _, data), (visited, trail, agent) in zip(runs, artists):
-            visited.set_offsets(data['unique'][data['first'] < 2*t])
+        for (_, _, data), (visited, trail, agent, tally) in zip(runs, artists):
+            seen = data['unique'][data['first'] < 2*t]
+            visited.set_offsets(seen)
+            tally.set_text(f"Visited {len(seen):,} / {data['reachable']:,} states ({len(seen)/data['reachable']:.1%})")
             start = max(int(data['episode_start'][t-1]), t-args.trail)
             path = np.concatenate([data['positions'][start:t], data['next_positions'][t-1:t]])
             trail.set_data(path[:, 0], path[:, 1])

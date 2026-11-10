@@ -1,0 +1,69 @@
+{
+  "groups": [
+    {
+      "name": "epoch_independent",
+      "runs": [
+        "runs/ensemble-matched-20261109/epoch_independent-seed0",
+        "runs/ensemble-matched-20261109/epoch_independent-seed1",
+        "runs/ensemble-matched-20261109/epoch_independent-seed2"
+      ],
+      "cutoffs": [
+        2000,
+        6000,
+        10000
+      ]
+    },
+    {
+      "name": "epoch_shared",
+      "runs": [
+        "runs/ensemble-matched-20261109/epoch_shared-seed0",
+        "runs/ensemble-matched-20261109/epoch_shared-seed1",
+        "runs/ensemble-matched-20261109/epoch_shared-seed2"
+      ],
+      "cutoffs": [
+        2000,
+        6000,
+        10000
+      ]
+    },
+    {
+      "name": "new_then_replay_independent",
+      "runs": [
+        "runs/ensemble-matched-20261109/new_then_replay_independent-seed0",
+        "runs/ensemble-matched-20261109/new_then_replay_independent-seed1",
+        "runs/ensemble-matched-20261109/new_then_replay_independent-seed2"
+      ],
+      "cutoffs": [
+        2000,
+        6000,
+        10000
+      ]
+    },
+    {
+      "name": "new_then_replay_shared",
+      "runs": [
+        "runs/ensemble-matched-20261109/new_then_replay_shared-seed0",
+        "runs/ensemble-matched-20261109/new_then_replay_shared-seed1",
+        "runs/ensemble-matched-20261109/new_then_replay_shared-seed2"
+      ],
+      "cutoffs": [
+        2000,
+        6000,
+        10000
+      ]
+    },
+    {
+      "name": "new20_shared_replay_only",
+      "runs": [
+        "runs/replay-only-sharing-20261110/new20_shared_replay_only-seed0",
+        "runs/replay-only-sharing-20261110/new20_shared_replay_only-seed1",
+        "runs/replay-only-sharing-20261110/new20_shared_replay_only-seed2"
+      ],
+      "cutoffs": [
+        2000,
+        6000,
+        10000
+      ]
+    }
+  ]
+}

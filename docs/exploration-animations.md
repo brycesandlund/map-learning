@@ -24,3 +24,5 @@ Install the project dependencies, then run from the repository root:
 For the late episode, use `--start 80000 --end 82000 --stride 10 --out runs/exploration-late.gif`. `--trail` controls recent path length and `--fps` controls playback speed. The default end is the shortest supplied replay. One run or multiple runs are supported; episode boundaries and starting positions come from the actual replay. Outputs refuse overwriting existing files.
 
 Each input folder needs `config.json` and `replay.npz`. Raw runs are gitignored and must be available locally to regenerate; the two GIFs above are included in the repository so they can be viewed without training artifacts. Rendering uses Matplotlib and Pillow, with no FFmpeg dependency. GIF generation retains frames in memory, so increase the stride for very long runs.
+
+The animation generator now includes visited-state counts. See [reward diagnostics](reward-visualization.md) for the joint-MSE runs with contemporaneous reward heatmaps and exhaustive-search comparisons.

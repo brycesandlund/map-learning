@@ -458,3 +458,28 @@ and dynamics are both learned from scratch. Reproduce using
 `configs/joint_memorization_confirm.json`; independently check saved weights with
 `scripts/verify_joint_memorization.py`. `model.hidden_layers` controls coordinate
 encoder and dynamics depth (default 2 maintains checkpoint compatibility).
+
+### Online joint-MSE exploration
+
+Set `train.prediction_objective=mse`, `train.encoder_lr_multiplier=0.3`, and
+`model.mixture_components=1` to train the deterministic mean-prediction objective
+within the existing joint model. MSE planning uses normalized mean disagreement,
+ensemble-mean successors, and reward-scaled UCT; it never samples unused Gaussian
+variance outputs. NLL training and stochastic planning remain the defaults.
+
+The online cadence comparison and adaptive horizon/replay-budget follow-ups are
+configured in `configs/joint_exploration_cadence.json`,
+`configs/joint_exploration_horizon1.json`, and
+`configs/joint_exploration_new20.json`. See the
+[online joint exploration report](docs/joint-exploration.md) for results,
+calibration diagnostics and the exploration animation.
+
+See [reward-map animations and search diagnostics](docs/reward-visualization.md) for contemporaneous action rewards and visited-state tallies.
+
+The [completed overnight study](docs/overnight-findings.md) covers 55 runs: horizon and ensemble-data sweeps, 30k-interaction follow-ups, matched-path rollout audits, and reward-map animations.
+
+See [novelty diagnostics](docs/novelty-diagnostics.md) for 72 checkpoint audits relating prediction errors and disagreement to new-state discovery, directional choices, and imagined-path selection.
+
+See [latent geometry](docs/latent-geometry.md) for PCA views, distance structure, action vectors, and ablations of low-variance latent directions.
+
+See [larger search budgets](docs/search-budget.md) for matched online continuations at 24/96/384 MCTS simulations, a random control, fixed-model path diagnostics, and trajectory animations.

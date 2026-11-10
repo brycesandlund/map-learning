@@ -1,0 +1,3509 @@
+[
+  {
+    "variant": "mcts_epoch",
+    "seed": 0,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/mcts_epoch-seed0",
+    "collection_seconds": 304.08189795864746,
+    "coverage_lattice_stats": {
+      "auc": 0.26500723094170403,
+      "final": 0.4523542600896861,
+      "to_25": 3466,
+      "to_50": null,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.35779791666666666,
+      "final": 0.6180555555555556,
+      "to_25": 2064,
+      "to_50": 8785,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.4523542600896861,
+      "coverage_rooms": 0.6180555555555556,
+      "latent_variance": 2.2593188285827637,
+      "latent_effective_rank": 2.047274589538574,
+      "encoder_saturation_fraction": null,
+      "updates": 39158,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 3.999182781350646e-05,
+      "replay_disagreement": 1.9005554349860176e-05,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": 0.4627484689548795,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0009004322759047458,
+      "oracle_all_disagreement": 0.0002450521889249052,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 2299,
+      "oracle_seen_normalized_mse": 7.242654375708427e-05,
+      "oracle_seen_disagreement": 2.3007356996757322e-05,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 6621,
+      "oracle_unseen_normalized_mse": 0.0011879394769631166,
+      "oracle_unseen_disagreement": 0.0003221524862520177,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.003055497030345273,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0008152953624553753,
+      "oracle_mean_rollout_3_normalized_mse": 0.004947174544282719,
+      "oracle_mean_rollout_5_normalized_mse": 0.009029748618127175,
+      "oracle_mean_rollout_10_normalized_mse": 0.022207592293697835,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "mcts_epoch",
+      "seed": 0,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/mcts_epoch-seed0",
+      "mean_horizontal_latent_step": 0.22139857709407806,
+      "mean_vertical_latent_step": 0.21645326912403107,
+      "horizontal_vertical_step_ratio": 1.022847056388855,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.7497757847533633,
+          0.7289237668161435,
+          0.7365470852017937
+        ],
+        "all_members_correct_fraction": 0.6536995515695068,
+        "exact_next_position_accuracy": 0.7591928251121076,
+        "mean_physical_error": 0.06646447628736496,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2299,
+        "visited_catalogue_exact_accuracy": 0.9486733362331449,
+        "per_member_exact_accuracy": [
+          0.9421487603305785,
+          0.9443236189647672,
+          0.9425837320574163
+        ],
+        "all_members_correct_fraction": 0.9160504567203132,
+        "exact_next_position_accuracy": 0.9486733362331449,
+        "mean_physical_error": 0.012831665575504303,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.21661591996520227,
+        "persistence_mean_physical_error": 0.19584602117538452
+      },
+      "unseen": {
+        "count": 6621,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6829784020540703,
+          0.6541307959522731,
+          0.6650052862105422
+        ],
+        "all_members_correct_fraction": 0.5626038362785077,
+        "exact_next_position_accuracy": 0.6933997885515784,
+        "mean_physical_error": 0.08508731424808502,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.3549312792629512,
+        "persistence_mean_physical_error": 0.16126717627048492
+      }
+    },
+    "calibration": {
+      "variant": "mcts_epoch",
+      "seed": 0,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/mcts_epoch-seed0",
+      "unseen_edge_auc": 0.5691089990795365,
+      "untried_action_at_visited_state_auc": 0.46095652688105226,
+      "seen_disagreement_mean": 2.3007356996757322e-05,
+      "untried_action_at_visited_state_disagreement_mean": 3.272354186074725e-05,
+      "unvisited_state_disagreement_mean": 0.0004250078900315971,
+      "stationary_fraction": 0.4441,
+      "noop_fraction": 0.074,
+      "wall_block_fraction_given_movement_action": 0.39967602591792656,
+      "action_switch_fraction": 0.407703851925963,
+      "late_2000_new_positions": 183,
+      "untried_actions_at_visited_states": 1736
+    },
+    "training_seconds": 232.463037091773,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.00023362622832286028,
+          "post": 0.00016598430131063325
+        },
+        "disagreement": {
+          "pre": 8.239057335914361e-05,
+          "post": 5.499506185047654e-05
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 6.859271256822481e-05,
+          "post": 6.862214578077423e-05
+        },
+        "disagreement": {
+          "pre": 2.9499848309737136e-05,
+          "post": 2.9717939229188534e-05
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.0006882965578856403,
+          "post": 0.0006859509753345657
+        },
+        "disagreement": {
+          "pre": 0.0002684746487071762,
+          "post": 0.00026810451085840643
+        }
+      }
+    }
+  },
+  {
+    "variant": "mcts_epoch",
+    "seed": 1,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/mcts_epoch-seed1",
+    "collection_seconds": 302.43135166727006,
+    "coverage_lattice_stats": {
+      "auc": 0.33345044843049326,
+      "final": 0.5661434977578476,
+      "to_25": 2622,
+      "to_50": 8124,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.436825,
+      "final": 0.7222222222222222,
+      "to_25": 1812,
+      "to_50": 6882,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.5661434977578476,
+      "coverage_rooms": 0.7222222222222222,
+      "latent_variance": 2.220756769180298,
+      "latent_effective_rank": 1.9192512035369873,
+      "encoder_saturation_fraction": null,
+      "updates": 39158,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 5.555351580142968e-05,
+      "replay_disagreement": 1.6218191376538016e-05,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": 0.37671802206431615,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0004697701842095705,
+      "oracle_all_disagreement": 6.160234808109515e-05,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 2593,
+      "oracle_seen_normalized_mse": 9.7897591192074e-05,
+      "oracle_seen_disagreement": 2.056542059925111e-05,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 6327,
+      "oracle_unseen_normalized_mse": 0.0006221750575609801,
+      "oracle_unseen_disagreement": 7.842054832772414e-05,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.001974661415045785,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0004263997819713294,
+      "oracle_mean_rollout_3_normalized_mse": 0.0013142440646354743,
+      "oracle_mean_rollout_5_normalized_mse": 0.0027615229021510372,
+      "oracle_mean_rollout_10_normalized_mse": 0.008270869090643231,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "mcts_epoch",
+      "seed": 1,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/mcts_epoch-seed1",
+      "mean_horizontal_latent_step": 0.23659659922122955,
+      "mean_vertical_latent_step": 0.160923570394516,
+      "horizontal_vertical_step_ratio": 1.4702420234680176,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.7603139013452915,
+          0.7570627802690583,
+          0.7799327354260089
+        ],
+        "all_members_correct_fraction": 0.675,
+        "exact_next_position_accuracy": 0.7784753363228699,
+        "mean_physical_error": 0.07093372941017151,
+        "physical_error_p95": 0.3535533845424652,
+        "error_over_one_room_fraction": 0.00011210762331838565,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2593,
+        "visited_catalogue_exact_accuracy": 0.9139992286926341,
+        "per_member_exact_accuracy": [
+          0.9039722329348245,
+          0.9074431160817585,
+          0.9163131507905901
+        ],
+        "all_members_correct_fraction": 0.8654068646355573,
+        "exact_next_position_accuracy": 0.9139992286926341,
+        "mean_physical_error": 0.021756349131464958,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.20979560354801388,
+        "persistence_mean_physical_error": 0.19755110144615173
+      },
+      "unseen": {
+        "count": 6327,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.7014382803856488,
+          0.6954322743796428,
+          0.7240398293029872
+        ],
+        "all_members_correct_fraction": 0.5969653864390706,
+        "exact_next_position_accuracy": 0.722933459775565,
+        "mean_physical_error": 0.09108815342187881,
+        "physical_error_p95": 0.5,
+        "error_over_one_room_fraction": 0.000158052789631737,
+        "persistence_accuracy": 0.36415362731152207,
+        "persistence_mean_physical_error": 0.15896159410476685
+      }
+    },
+    "calibration": {
+      "variant": "mcts_epoch",
+      "seed": 1,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/mcts_epoch-seed1",
+      "unseen_edge_auc": 0.6261484046817029,
+      "untried_action_at_visited_state_auc": 0.5233489996312981,
+      "seen_disagreement_mean": 2.056542059925111e-05,
+      "untried_action_at_visited_state_disagreement_mean": 3.856598985367313e-05,
+      "unvisited_state_disagreement_mean": 0.00010372355870776118,
+      "stationary_fraction": 0.5132,
+      "noop_fraction": 0.0825,
+      "wall_block_fraction_given_movement_action": 0.46942779291553133,
+      "action_switch_fraction": 0.3297648824412206,
+      "late_2000_new_positions": 143,
+      "untried_actions_at_visited_states": 2457
+    },
+    "training_seconds": 231.5284831947647,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.00013254662747254808,
+          "post": 0.0001236406687141469
+        },
+        "disagreement": {
+          "pre": 1.014970739955115e-05,
+          "post": 6.136597155232565e-06
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 5.9612663393107e-05,
+          "post": 5.947799295132359e-05
+        },
+        "disagreement": {
+          "pre": 1.3236643278556303e-05,
+          "post": 1.3289996930533581e-05
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.00041281824424910214,
+          "post": 0.0004139720713406681
+        },
+        "disagreement": {
+          "pre": 7.390709514517251e-05,
+          "post": 7.407646277442056e-05
+        }
+      }
+    }
+  },
+  {
+    "variant": "mcts_epoch",
+    "seed": 2,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/mcts_epoch-seed2",
+    "collection_seconds": 302.1502922917716,
+    "coverage_lattice_stats": {
+      "auc": 0.299942600896861,
+      "final": 0.5835201793721974,
+      "to_25": 4111,
+      "to_50": 8821,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.3715645833333333,
+      "final": 0.6944444444444444,
+      "to_25": 3091,
+      "to_50": 7562,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.5835201793721974,
+      "coverage_rooms": 0.6944444444444444,
+      "latent_variance": 2.381195068359375,
+      "latent_effective_rank": 1.9566218852996826,
+      "encoder_saturation_fraction": null,
+      "updates": 39158,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 7.808480260372986e-05,
+      "replay_disagreement": 1.4059408385946881e-05,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": 0.42396967079250003,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0007160753368254961,
+      "oracle_all_disagreement": 0.00023022598206748956,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 2883,
+      "oracle_seen_normalized_mse": 0.00010931443554650218,
+      "oracle_seen_disagreement": 1.7252216376112997e-05,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 6037,
+      "oracle_unseen_normalized_mse": 0.0010058370857715518,
+      "oracle_unseen_disagreement": 0.00033193268514654183,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.0020419074624709235,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0005560874486737413,
+      "oracle_mean_rollout_3_normalized_mse": 0.002611063012755701,
+      "oracle_mean_rollout_5_normalized_mse": 0.005818813181755193,
+      "oracle_mean_rollout_10_normalized_mse": 0.014199463369350513,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "mcts_epoch",
+      "seed": 2,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/mcts_epoch-seed2",
+      "mean_horizontal_latent_step": 0.19628199934959412,
+      "mean_vertical_latent_step": 0.2309398353099823,
+      "horizontal_vertical_step_ratio": 0.8499270081520081,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.7521300448430494,
+          0.7488789237668162,
+          0.752017937219731
+        ],
+        "all_members_correct_fraction": 0.6702914798206278,
+        "exact_next_position_accuracy": 0.770067264573991,
+        "mean_physical_error": 0.06977520138025284,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.00033632286995515697,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2883,
+        "visited_catalogue_exact_accuracy": 0.920568851890392,
+        "per_member_exact_accuracy": [
+          0.9171002428026361,
+          0.9157127991675338,
+          0.9143253555324315
+        ],
+        "all_members_correct_fraction": 0.8747832119320152,
+        "exact_next_position_accuracy": 0.9202219909816164,
+        "mean_physical_error": 0.020418783649802208,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.2060353798126951,
+        "persistence_mean_physical_error": 0.1984911561012268
+      },
+      "unseen": {
+        "count": 6037,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6733476892496273,
+          0.6692065595494451,
+          0.6745072055656783
+        ],
+        "all_members_correct_fraction": 0.572635414941196,
+        "exact_next_position_accuracy": 0.6983601126387279,
+        "mean_physical_error": 0.09334558993577957,
+        "physical_error_p95": 0.3535533845424652,
+        "error_over_one_room_fraction": 0.0004969355640218651,
+        "persistence_accuracy": 0.373364253768428,
+        "persistence_mean_physical_error": 0.15665893256664276
+      }
+    },
+    "calibration": {
+      "variant": "mcts_epoch",
+      "seed": 2,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/mcts_epoch-seed2",
+      "unseen_edge_auc": 0.6387046615244839,
+      "untried_action_at_visited_state_auc": 0.4729293135709256,
+      "seen_disagreement_mean": 1.7252216376112997e-05,
+      "untried_action_at_visited_state_disagreement_mean": 2.0494062894726994e-05,
+      "unvisited_state_disagreement_mean": 0.0005265923031461957,
+      "stationary_fraction": 0.4441,
+      "noop_fraction": 0.0777,
+      "wall_block_fraction_given_movement_action": 0.3972677003144313,
+      "action_switch_fraction": 0.3789894947473737,
+      "late_2000_new_positions": 270,
+      "untried_actions_at_visited_states": 2322
+    },
+    "training_seconds": 230.62250829022378,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.00044829602903531077,
+          "post": 0.0002927810620576093
+        },
+        "disagreement": {
+          "pre": 6.680326849884209e-05,
+          "post": 3.096917892418081e-05
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 8.225149196209894e-05,
+          "post": 8.13284021621187e-05
+        },
+        "disagreement": {
+          "pre": 1.7097137232852275e-05,
+          "post": 1.7059451831899695e-05
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.001132978232035878,
+          "post": 0.0011270086889151258
+        },
+        "disagreement": {
+          "pre": 0.00024400518367272055,
+          "post": 0.00024274413902873753
+        }
+      }
+    }
+  },
+  {
+    "variant": "mcts_new",
+    "seed": 0,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/mcts_new-seed0",
+    "collection_seconds": 111.96474641701207,
+    "coverage_lattice_stats": {
+      "auc": 0.2358197869955157,
+      "final": 0.3929372197309417,
+      "to_25": 4916,
+      "to_50": null,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.30402708333333334,
+      "final": 0.5069444444444444,
+      "to_25": 3159,
+      "to_50": 9993,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.3929372197309417,
+      "coverage_rooms": 0.5069444444444444,
+      "latent_variance": 0.8382768034934998,
+      "latent_effective_rank": 1.9986355304718018,
+      "encoder_saturation_fraction": null,
+      "updates": 5413,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 0.0008633105744742356,
+      "replay_disagreement": 2.5416729840799235e-06,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": -0.054066119221063434,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0006024988239456294,
+      "oracle_all_disagreement": 4.954958746327036e-06,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 1971,
+      "oracle_seen_normalized_mse": 0.000847971645080432,
+      "oracle_seen_disagreement": 2.63710994575991e-06,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 6949,
+      "oracle_unseen_normalized_mse": 0.0005328734202247063,
+      "oracle_unseen_disagreement": 5.612388590321539e-06,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.0018169154432936378,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0006118241622899924,
+      "oracle_mean_rollout_3_normalized_mse": 0.0023474402858947676,
+      "oracle_mean_rollout_5_normalized_mse": 0.003864712897001703,
+      "oracle_mean_rollout_10_normalized_mse": 0.008964154503062476,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "mcts_new",
+      "seed": 0,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/mcts_new-seed0",
+      "mean_horizontal_latent_step": 0.13147634267807007,
+      "mean_vertical_latent_step": 0.12680521607398987,
+      "horizontal_vertical_step_ratio": 1.0368369817733765,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6708520179372197,
+          0.6448430493273543,
+          0.648542600896861
+        ],
+        "all_members_correct_fraction": 0.6109865470852018,
+        "exact_next_position_accuracy": 0.6498878923766817,
+        "mean_physical_error": 0.09416794776916504,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0004484304932735426,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 1971,
+        "visited_catalogue_exact_accuracy": 0.617453069507864,
+        "per_member_exact_accuracy": [
+          0.6397767630644343,
+          0.6062912227295789,
+          0.6057838660578386
+        ],
+        "all_members_correct_fraction": 0.58701166920345,
+        "exact_next_position_accuracy": 0.6169457128361238,
+        "mean_physical_error": 0.09589041024446487,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.20801623541349568,
+        "persistence_mean_physical_error": 0.19799594581127167
+      },
+      "unseen": {
+        "count": 6949,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6796661390128076,
+          0.6557778097567996,
+          0.6606706000863434
+        ],
+        "all_members_correct_fraction": 0.617786731903871,
+        "exact_next_position_accuracy": 0.6592315441070657,
+        "mean_physical_error": 0.09367938339710236,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0005756223917110375,
+        "persistence_accuracy": 0.3508418477478774,
+        "persistence_mean_physical_error": 0.1622895449399948
+      }
+    },
+    "calibration": {
+      "variant": "mcts_new",
+      "seed": 0,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/mcts_new-seed0",
+      "unseen_edge_auc": 0.6688185335807838,
+      "untried_action_at_visited_state_auc": 0.4968738362051573,
+      "seen_disagreement_mean": 2.63710994575991e-06,
+      "untried_action_at_visited_state_disagreement_mean": 2.549368333133256e-06,
+      "unvisited_state_disagreement_mean": 6.480102916180603e-06,
+      "stationary_fraction": 0.5234,
+      "noop_fraction": 0.0621,
+      "wall_block_fraction_given_movement_action": 0.4918434801151509,
+      "action_switch_fraction": 0.26353176588294147,
+      "late_2000_new_positions": 50,
+      "untried_actions_at_visited_states": 1534
+    },
+    "training_seconds": 31.986540491692722,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.0006268268274410966,
+          "post": 0.0004162791348668787
+        },
+        "disagreement": {
+          "pre": 3.5918270182806415e-06,
+          "post": 2.9124512944350905e-06
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 0.0009167135130721589,
+          "post": 0.0009166793594069418
+        },
+        "disagreement": {
+          "pre": 3.3498876883576424e-06,
+          "post": 3.373401811029191e-06
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.0006601347257646137,
+          "post": 0.0006585215584415606
+        },
+        "disagreement": {
+          "pre": 4.925953544614182e-06,
+          "post": 4.916140845391791e-06
+        }
+      }
+    }
+  },
+  {
+    "variant": "mcts_new",
+    "seed": 1,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/mcts_new-seed1",
+    "collection_seconds": 111.9903390002437,
+    "coverage_lattice_stats": {
+      "auc": 0.3625934417040359,
+      "final": 0.5442825112107623,
+      "to_25": 2569,
+      "to_50": 7145,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.5127534722222222,
+      "final": 0.6666666666666666,
+      "to_25": 1654,
+      "to_50": 2937,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.5442825112107623,
+      "coverage_rooms": 0.6666666666666666,
+      "latent_variance": 0.7745802402496338,
+      "latent_effective_rank": 2.004243850708008,
+      "encoder_saturation_fraction": null,
+      "updates": 5413,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 0.0006692206148569098,
+      "replay_disagreement": 2.898801540140994e-06,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": -0.031016731367102094,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0005617652982299919,
+      "oracle_all_disagreement": 3.8145320980574846e-06,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 2473,
+      "oracle_seen_normalized_mse": 0.0006977054162066393,
+      "oracle_seen_disagreement": 3.089407605208688e-06,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 6447,
+      "oracle_unseen_normalized_mse": 0.0005096201281111384,
+      "oracle_unseen_disagreement": 4.092682070263948e-06,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.0017336015232430186,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0005369316514913084,
+      "oracle_mean_rollout_3_normalized_mse": 0.0016461853035328157,
+      "oracle_mean_rollout_5_normalized_mse": 0.0030277178335629037,
+      "oracle_mean_rollout_10_normalized_mse": 0.00658073375566551,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "mcts_new",
+      "seed": 1,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/mcts_new-seed1",
+      "mean_horizontal_latent_step": 0.12590458989143372,
+      "mean_vertical_latent_step": 0.12403909116983414,
+      "horizontal_vertical_step_ratio": 1.0150395631790161,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6995515695067265,
+          0.6586322869955157,
+          0.6610986547085201
+        ],
+        "all_members_correct_fraction": 0.6301569506726458,
+        "exact_next_position_accuracy": 0.6783632286995516,
+        "mean_physical_error": 0.08054451644420624,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2473,
+        "visited_catalogue_exact_accuracy": 0.6356651839870603,
+        "per_member_exact_accuracy": [
+          0.653861706429438,
+          0.6122118883946623,
+          0.6190861302062273
+        ],
+        "all_members_correct_fraction": 0.5826930853214719,
+        "exact_next_position_accuracy": 0.6356651839870603,
+        "mean_physical_error": 0.09108370542526245,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.19490497371613424,
+        "persistence_mean_physical_error": 0.20127375423908234
+      },
+      "unseen": {
+        "count": 6447,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.7170777105630526,
+          0.6764386536373507,
+          0.6772142081588336
+        ],
+        "all_members_correct_fraction": 0.6483635799596712,
+        "exact_next_position_accuracy": 0.6947417403443462,
+        "mean_physical_error": 0.07650180160999298,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.36699239956568946,
+        "persistence_mean_physical_error": 0.15825189650058746
+      }
+    },
+    "calibration": {
+      "variant": "mcts_new",
+      "seed": 1,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/mcts_new-seed1",
+      "unseen_edge_auc": 0.6105504517816773,
+      "untried_action_at_visited_state_auc": 0.47127635049635985,
+      "seen_disagreement_mean": 3.089407605208688e-06,
+      "untried_action_at_visited_state_disagreement_mean": 2.963126165076437e-06,
+      "unvisited_state_disagreement_mean": 4.754576822086004e-06,
+      "stationary_fraction": 0.5127,
+      "noop_fraction": 0.0405,
+      "wall_block_fraction_given_movement_action": 0.4921313183949974,
+      "action_switch_fraction": 0.2593296648324162,
+      "late_2000_new_positions": 44,
+      "untried_actions_at_visited_states": 2382
+    },
+    "training_seconds": 32.04572089295834,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.000474120961154308,
+          "post": 0.0003113069250846667
+        },
+        "disagreement": {
+          "pre": 3.0169527810480706e-06,
+          "post": 2.432133311809071e-06
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 0.0005775654354869433,
+          "post": 0.0005775360765403865
+        },
+        "disagreement": {
+          "pre": 2.1224549826159543e-06,
+          "post": 2.1459524183766843e-06
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.0005170415555017672,
+          "post": 0.0005159625544668002
+        },
+        "disagreement": {
+          "pre": 2.813733211880067e-06,
+          "post": 2.8321047299969697e-06
+        }
+      }
+    }
+  },
+  {
+    "variant": "mcts_new",
+    "seed": 2,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/mcts_new-seed2",
+    "collection_seconds": 112.23013808298856,
+    "coverage_lattice_stats": {
+      "auc": 0.26857057174887894,
+      "final": 0.3665919282511211,
+      "to_25": 2893,
+      "to_50": null,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.33219166666666666,
+      "final": 0.4236111111111111,
+      "to_25": 1920,
+      "to_50": null,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.3665919282511211,
+      "coverage_rooms": 0.4236111111111111,
+      "latent_variance": 0.822065532207489,
+      "latent_effective_rank": 1.947961688041687,
+      "encoder_saturation_fraction": null,
+      "updates": 5413,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 0.0008395547132322494,
+      "replay_disagreement": 3.6389722026797244e-06,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": 0.12812983960348165,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0007862689864083229,
+      "oracle_all_disagreement": 1.3375580109992205e-05,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 1933,
+      "oracle_seen_normalized_mse": 0.0009667093056672088,
+      "oracle_seen_disagreement": 3.5622971056653636e-06,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 6987,
+      "oracle_unseen_normalized_mse": 0.0007363489725071596,
+      "oracle_unseen_disagreement": 1.609049009244015e-05,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.0018029110752643693,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0007816141016710012,
+      "oracle_mean_rollout_3_normalized_mse": 0.002408627646929507,
+      "oracle_mean_rollout_5_normalized_mse": 0.004471318913101688,
+      "oracle_mean_rollout_10_normalized_mse": 0.010789464709213789,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "mcts_new",
+      "seed": 2,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/mcts_new-seed2",
+      "mean_horizontal_latent_step": 0.12170719355344772,
+      "mean_vertical_latent_step": 0.13672199845314026,
+      "horizontal_vertical_step_ratio": 0.8901800513267517,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.5539237668161435,
+          0.5068385650224215,
+          0.5151345291479821
+        ],
+        "all_members_correct_fraction": 0.48038116591928254,
+        "exact_next_position_accuracy": 0.5155829596412556,
+        "mean_physical_error": 0.12204816937446594,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 1933,
+        "visited_catalogue_exact_accuracy": 0.48991205380237973,
+        "per_member_exact_accuracy": [
+          0.48784273150543195,
+          0.47594412829798244,
+          0.5038799793067771
+        ],
+        "all_members_correct_fraction": 0.4495602690118986,
+        "exact_next_position_accuracy": 0.48991205380237973,
+        "mean_physical_error": 0.12752199172973633,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.1908949818934299,
+        "persistence_mean_physical_error": 0.20227625966072083
+      },
+      "unseen": {
+        "count": 6987,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.5722055245455847,
+          0.5153857163303277,
+          0.5182481751824818
+        ],
+        "all_members_correct_fraction": 0.48890797194790325,
+        "exact_next_position_accuracy": 0.5226849864033205,
+        "mean_physical_error": 0.12053380161523819,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.3548017747244883,
+        "persistence_mean_physical_error": 0.16129955649375916
+      }
+    },
+    "calibration": {
+      "variant": "mcts_new",
+      "seed": 2,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/mcts_new-seed2",
+      "unseen_edge_auc": 0.7654784352671516,
+      "untried_action_at_visited_state_auc": 0.5409432131993974,
+      "seen_disagreement_mean": 3.5622971056653636e-06,
+      "untried_action_at_visited_state_disagreement_mean": 3.9873776876615685e-06,
+      "unvisited_state_disagreement_mean": 1.8954536337606338e-05,
+      "stationary_fraction": 0.4942,
+      "noop_fraction": 0.0353,
+      "wall_block_fraction_given_movement_action": 0.4756919249507619,
+      "action_switch_fraction": 0.27003501750875436,
+      "late_2000_new_positions": 46,
+      "untried_actions_at_visited_states": 1337
+    },
+    "training_seconds": 32.00452315667644,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.0009397218351844582,
+          "post": 0.0006097983160074782
+        },
+        "disagreement": {
+          "pre": 5.21770406432107e-06,
+          "post": 4.206440645262351e-06
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 0.0009416597640697404,
+          "post": 0.0009421142214064561
+        },
+        "disagreement": {
+          "pre": 4.997771297631468e-06,
+          "post": 4.977772285519946e-06
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.0006258858000625597,
+          "post": 0.0006274095869557118
+        },
+        "disagreement": {
+          "pre": 1.1070674516042146e-05,
+          "post": 1.11205760641854e-05
+        }
+      }
+    }
+  },
+  {
+    "variant": "random_epoch",
+    "seed": 0,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/random_epoch-seed0",
+    "collection_seconds": 270.2749575423077,
+    "coverage_lattice_stats": {
+      "auc": 0.31436995515695065,
+      "final": 0.6065022421524664,
+      "to_25": 4335,
+      "to_50": 8215,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.4197076388888889,
+      "final": 0.75,
+      "to_25": 3660,
+      "to_50": 5105,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.6065022421524664,
+      "coverage_rooms": 0.75,
+      "latent_variance": 2.353994369506836,
+      "latent_effective_rank": 1.8905142545700073,
+      "encoder_saturation_fraction": null,
+      "updates": 39158,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 5.6446754550030443e-05,
+      "replay_disagreement": 1.1318668839521706e-05,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": 0.3386056401479739,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.00036556484358659275,
+      "oracle_all_disagreement": 5.4805468881832884e-05,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 2756,
+      "oracle_seen_normalized_mse": 0.00010361753690354608,
+      "oracle_seen_disagreement": 1.7006967470664728e-05,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 6164,
+      "oracle_unseen_normalized_mse": 0.0004826846971262547,
+      "oracle_unseen_disagreement": 7.170564245243306e-05,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.0020445034324280227,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.00027134436432146305,
+      "oracle_mean_rollout_3_normalized_mse": 0.0015289509626109853,
+      "oracle_mean_rollout_5_normalized_mse": 0.0028553193946204577,
+      "oracle_mean_rollout_10_normalized_mse": 0.005690638648458156,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "random_epoch",
+      "seed": 0,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/random_epoch-seed0",
+      "mean_horizontal_latent_step": 0.18022914230823517,
+      "mean_vertical_latent_step": 0.24189521372318268,
+      "horizontal_vertical_step_ratio": 0.7450711131095886,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.7678251121076233,
+          0.7716367713004484,
+          0.7610986547085202
+        ],
+        "all_members_correct_fraction": 0.6847533632286995,
+        "exact_next_position_accuracy": 0.7752242152466368,
+        "mean_physical_error": 0.06172199919819832,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.00033632286995515697,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2756,
+        "visited_catalogue_exact_accuracy": 0.9002177068214804,
+        "per_member_exact_accuracy": [
+          0.9016690856313497,
+          0.8933236574746009,
+          0.8962264150943396
+        ],
+        "all_members_correct_fraction": 0.8606676342525399,
+        "exact_next_position_accuracy": 0.8991291727140783,
+        "mean_physical_error": 0.025714686140418053,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.204644412191582,
+        "persistence_mean_physical_error": 0.19883888959884644
+      },
+      "unseen": {
+        "count": 6164,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.7079818299805322,
+          0.7172290720311486,
+          0.7006813757300454
+        ],
+        "all_members_correct_fraction": 0.6060999351070734,
+        "exact_next_position_accuracy": 0.7198247890979883,
+        "mean_physical_error": 0.07782132178544998,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0004866969500324465,
+        "persistence_accuracy": 0.3705386112913692,
+        "persistence_mean_physical_error": 0.1573653519153595
+      }
+    },
+    "calibration": {
+      "variant": "random_epoch",
+      "seed": 0,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/random_epoch-seed0",
+      "unseen_edge_auc": 0.6259547336517388,
+      "untried_action_at_visited_state_auc": 0.5144524025405145,
+      "seen_disagreement_mean": 1.7006967470664728e-05,
+      "untried_action_at_visited_state_disagreement_mean": 3.69814672090585e-05,
+      "unvisited_state_disagreement_mean": 9.796147182448891e-05,
+      "stationary_fraction": 0.5888,
+      "noop_fraction": 0.208,
+      "wall_block_fraction_given_movement_action": 0.4808080808080808,
+      "action_switch_fraction": 0.15697848924462232,
+      "late_2000_new_positions": 213,
+      "untried_actions_at_visited_states": 2654
+    },
+    "training_seconds": 264.47872145753354,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.0003206681688502383,
+          "post": 0.00024773331503476887
+        },
+        "disagreement": {
+          "pre": 2.2622471413309797e-05,
+          "post": 2.4369157017134466e-05
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 6.0783762409638396e-05,
+          "post": 6.0479253104410696e-05
+        },
+        "disagreement": {
+          "pre": 1.2783523663206196e-05,
+          "post": 1.2302345044596556e-05
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.000305473566653212,
+          "post": 0.0003050735503668053
+        },
+        "disagreement": {
+          "pre": 4.171097027256714e-05,
+          "post": 4.1727368158349e-05
+        }
+      }
+    }
+  },
+  {
+    "variant": "random_epoch",
+    "seed": 1,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/random_epoch-seed1",
+    "collection_seconds": 270.3447289997712,
+    "coverage_lattice_stats": {
+      "auc": 0.33615756726457396,
+      "final": 0.5829596412556054,
+      "to_25": 4133,
+      "to_50": 7142,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.4998576388888889,
+      "final": 0.7916666666666666,
+      "to_25": 1747,
+      "to_50": 4582,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.5829596412556054,
+      "coverage_rooms": 0.7916666666666666,
+      "latent_variance": 2.2880353927612305,
+      "latent_effective_rank": 1.9472253322601318,
+      "encoder_saturation_fraction": null,
+      "updates": 39158,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 6.948750673415585e-05,
+      "replay_disagreement": 1.5799590983078815e-05,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": 0.5804019448118382,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0006334954957154835,
+      "oracle_all_disagreement": 0.00010347061943517776,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 2579,
+      "oracle_seen_normalized_mse": 0.00012415826419069544,
+      "oracle_seen_disagreement": 2.3931340974115515e-05,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 6341,
+      "oracle_unseen_normalized_mse": 0.0008406522091837737,
+      "oracle_unseen_disagreement": 0.00013582069026802426,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.0019113166713748745,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0006153787135196821,
+      "oracle_mean_rollout_3_normalized_mse": 0.0020717666595531222,
+      "oracle_mean_rollout_5_normalized_mse": 0.003940900118201893,
+      "oracle_mean_rollout_10_normalized_mse": 0.009899447633961451,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "random_epoch",
+      "seed": 1,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/random_epoch-seed1",
+      "mean_horizontal_latent_step": 0.2005375623703003,
+      "mean_vertical_latent_step": 0.21748168766498566,
+      "horizontal_vertical_step_ratio": 0.9220893979072571,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.7548206278026905,
+          0.7663677130044843,
+          0.7676008968609865
+        ],
+        "all_members_correct_fraction": 0.6701793721973094,
+        "exact_next_position_accuracy": 0.7727578475336323,
+        "mean_physical_error": 0.06401565670967102,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.001233183856502242,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2579,
+        "visited_catalogue_exact_accuracy": 0.902287708414114,
+        "per_member_exact_accuracy": [
+          0.8871655680496316,
+          0.9092671578131059,
+          0.8960837533927879
+        ],
+        "all_members_correct_fraction": 0.8441256300891818,
+        "exact_next_position_accuracy": 0.9018999612252812,
+        "mean_physical_error": 0.024525009095668793,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.21868941450174487,
+        "persistence_mean_physical_error": 0.19532763957977295
+      },
+      "unseen": {
+        "count": 6341,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.7009935341428797,
+          0.7082479104242233,
+          0.7153445828733638
+        ],
+        "all_members_correct_fraction": 0.5994322662040688,
+        "exact_next_position_accuracy": 0.7202334016716606,
+        "mean_physical_error": 0.08007722347974777,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0017347421542343478,
+        "persistence_accuracy": 0.3601955527519319,
+        "persistence_mean_physical_error": 0.1599511057138443
+      }
+    },
+    "calibration": {
+      "variant": "random_epoch",
+      "seed": 1,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/random_epoch-seed1",
+      "unseen_edge_auc": 0.6153635941651172,
+      "untried_action_at_visited_state_auc": 0.5107956007189226,
+      "seen_disagreement_mean": 2.3931340974115515e-05,
+      "untried_action_at_visited_state_disagreement_mean": 8.344876513132992e-05,
+      "unvisited_state_disagreement_mean": 0.00017272037193019518,
+      "stationary_fraction": 0.603,
+      "noop_fraction": 0.1896,
+      "wall_block_fraction_given_movement_action": 0.5101184600197434,
+      "action_switch_fraction": 0.15877938969484742,
+      "late_2000_new_positions": 94,
+      "untried_actions_at_visited_states": 2621
+    },
+    "training_seconds": 264.5516735641286,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.00019493927832904846,
+          "post": 0.00016185241676784534
+        },
+        "disagreement": {
+          "pre": 1.9698833582599045e-05,
+          "post": 2.013044709560477e-05
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 6.948691647545239e-05,
+          "post": 6.914366182758475e-05
+        },
+        "disagreement": {
+          "pre": 1.4764523389986763e-05,
+          "post": 1.4733860532961064e-05
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.0008570473170175648,
+          "post": 0.0008558922074725133
+        },
+        "disagreement": {
+          "pre": 0.0001238174870618251,
+          "post": 0.00012377928311240577
+        }
+      }
+    }
+  },
+  {
+    "variant": "random_epoch",
+    "seed": 2,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/random_epoch-seed2",
+    "collection_seconds": 270.7701766672544,
+    "coverage_lattice_stats": {
+      "auc": 0.3522814461883408,
+      "final": 0.6031390134529148,
+      "to_25": 3170,
+      "to_50": 7242,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.4930125,
+      "final": 0.8055555555555556,
+      "to_25": 1830,
+      "to_50": 4626,
+      "to_80": 9311,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.6031390134529148,
+      "coverage_rooms": 0.8055555555555556,
+      "latent_variance": 2.5316548347473145,
+      "latent_effective_rank": 1.9942935705184937,
+      "encoder_saturation_fraction": null,
+      "updates": 39158,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 5.007727145634506e-05,
+      "replay_disagreement": 1.3456883607432246e-05,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": 0.44911007681939935,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.00034432253295084073,
+      "oracle_all_disagreement": 4.447792762471433e-05,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 2681,
+      "oracle_seen_normalized_mse": 9.170714758374822e-05,
+      "oracle_seen_disagreement": 1.753507230645362e-05,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 6239,
+      "oracle_unseen_normalized_mse": 0.00045287548184796766,
+      "oracle_unseen_disagreement": 5.605571174208201e-05,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.0017226537742276943,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0006019589289018819,
+      "oracle_mean_rollout_3_normalized_mse": 0.001481071738508061,
+      "oracle_mean_rollout_5_normalized_mse": 0.003179331982039887,
+      "oracle_mean_rollout_10_normalized_mse": 0.006659614136796713,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "random_epoch",
+      "seed": 2,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/random_epoch-seed2",
+      "mean_horizontal_latent_step": 0.20059435069561005,
+      "mean_vertical_latent_step": 0.20733147859573364,
+      "horizontal_vertical_step_ratio": 0.9675055146217346,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.7934977578475336,
+          0.8047085201793722,
+          0.7927130044843049
+        ],
+        "all_members_correct_fraction": 0.7208520179372198,
+        "exact_next_position_accuracy": 0.802914798206278,
+        "mean_physical_error": 0.05409485101699829,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2681,
+        "visited_catalogue_exact_accuracy": 0.9201790376725103,
+        "per_member_exact_accuracy": [
+          0.9194330473703842,
+          0.9116001491980604,
+          0.9186870570682582
+        ],
+        "all_members_correct_fraction": 0.8772845953002611,
+        "exact_next_position_accuracy": 0.9194330473703842,
+        "mean_physical_error": 0.020334864035248756,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.206266318537859,
+        "persistence_mean_physical_error": 0.19843341410160065
+      },
+      "unseen": {
+        "count": 6239,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.7393813111075492,
+          0.7587754447828178,
+          0.7385799006251001
+        ],
+        "all_members_correct_fraction": 0.6536303894854945,
+        "exact_next_position_accuracy": 0.7528450072126943,
+        "mean_physical_error": 0.0686020627617836,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.3678474114441417,
+        "persistence_mean_physical_error": 0.1580381542444229
+      }
+    },
+    "calibration": {
+      "variant": "random_epoch",
+      "seed": 2,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/random_epoch-seed2",
+      "unseen_edge_auc": 0.5391395308559177,
+      "untried_action_at_visited_state_auc": 0.47084094168354174,
+      "seen_disagreement_mean": 1.753507230645362e-05,
+      "untried_action_at_visited_state_disagreement_mean": 3.084998805428844e-05,
+      "unvisited_state_disagreement_mean": 7.527329598879242e-05,
+      "stationary_fraction": 0.5837,
+      "noop_fraction": 0.1772,
+      "wall_block_fraction_given_movement_action": 0.4940447253281478,
+      "action_switch_fraction": 0.16598299149574788,
+      "late_2000_new_positions": 163,
+      "untried_actions_at_visited_states": 2699
+    },
+    "training_seconds": 264.98304869187996,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.00017043188060008387,
+          "post": 0.0001306292648652742
+        },
+        "disagreement": {
+          "pre": 2.258125156557127e-05,
+          "post": 2.067485473442454e-05
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 6.396014825041547e-05,
+          "post": 6.355500759488559e-05
+        },
+        "disagreement": {
+          "pre": 1.453036700094847e-05,
+          "post": 1.4546537514776108e-05
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.0003443465843111461,
+          "post": 0.0003440644415406679
+        },
+        "disagreement": {
+          "pre": 4.760353162766768e-05,
+          "post": 4.743568070047644e-05
+        }
+      }
+    }
+  },
+  {
+    "variant": "random_new",
+    "seed": 0,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/random_new-seed0",
+    "collection_seconds": 38.063100582920015,
+    "coverage_lattice_stats": {
+      "auc": 0.31436995515695065,
+      "final": 0.6065022421524664,
+      "to_25": 4335,
+      "to_50": 8215,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.4197076388888889,
+      "final": 0.75,
+      "to_25": 3660,
+      "to_50": 5105,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.6065022421524664,
+      "coverage_rooms": 0.75,
+      "latent_variance": 0.850418746471405,
+      "latent_effective_rank": 1.9845942258834839,
+      "encoder_saturation_fraction": null,
+      "updates": 5413,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 0.0005090554306684089,
+      "replay_disagreement": 3.0797914405411575e-06,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": -0.0037105504132028144,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0005890032545006467,
+      "oracle_all_disagreement": 5.018365704453299e-06,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 2756,
+      "oracle_seen_normalized_mse": 0.0006721580437852047,
+      "oracle_seen_disagreement": 3.6644446502929417e-06,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 6164,
+      "oracle_unseen_normalized_mse": 0.0005518237283377261,
+      "oracle_unseen_disagreement": 5.623720413289435e-06,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.0017311574697099924,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0005992798336783911,
+      "oracle_mean_rollout_3_normalized_mse": 0.002484777701618745,
+      "oracle_mean_rollout_5_normalized_mse": 0.003913387810326838,
+      "oracle_mean_rollout_10_normalized_mse": 0.008978406053684069,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "random_new",
+      "seed": 0,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/random_new-seed0",
+      "mean_horizontal_latent_step": 0.12232805788516998,
+      "mean_vertical_latent_step": 0.13673558831214905,
+      "horizontal_vertical_step_ratio": 0.8946321606636047,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6030269058295964,
+          0.6022421524663677,
+          0.5751121076233184
+        ],
+        "all_members_correct_fraction": 0.5380044843049328,
+        "exact_next_position_accuracy": 0.5933856502242153,
+        "mean_physical_error": 0.10223483294248581,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2756,
+        "visited_catalogue_exact_accuracy": 0.559143686502177,
+        "per_member_exact_accuracy": [
+          0.5547895500725689,
+          0.5714804063860668,
+          0.5609579100145138
+        ],
+        "all_members_correct_fraction": 0.5043541364296081,
+        "exact_next_position_accuracy": 0.559143686502177,
+        "mean_physical_error": 0.11021407693624496,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.204644412191582,
+        "persistence_mean_physical_error": 0.19883888959884644
+      },
+      "unseen": {
+        "count": 6164,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6245944192083063,
+          0.6159961064243997,
+          0.5814406229720961
+        ],
+        "all_members_correct_fraction": 0.5530499675535366,
+        "exact_next_position_accuracy": 0.6086956521739131,
+        "mean_physical_error": 0.098667211830616,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.3705386112913692,
+        "persistence_mean_physical_error": 0.1573653519153595
+      }
+    },
+    "calibration": {
+      "variant": "random_new",
+      "seed": 0,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/random_new-seed0",
+      "unseen_edge_auc": 0.5803345764865331,
+      "untried_action_at_visited_state_auc": 0.4378926488264831,
+      "seen_disagreement_mean": 3.6644446502929417e-06,
+      "untried_action_at_visited_state_disagreement_mean": 3.326781887616751e-06,
+      "unvisited_state_disagreement_mean": 7.360493874011744e-06,
+      "stationary_fraction": 0.5888,
+      "noop_fraction": 0.208,
+      "wall_block_fraction_given_movement_action": 0.4808080808080808,
+      "action_switch_fraction": 0.15697848924462232,
+      "late_2000_new_positions": 213,
+      "untried_actions_at_visited_states": 2654
+    },
+    "training_seconds": 32.48250978440046,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.000347790705479888,
+          "post": 0.00018949371263155785
+        },
+        "disagreement": {
+          "pre": 3.559911624609625e-06,
+          "post": 3.7224339704431692e-06
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 0.000542281976223569,
+          "post": 0.0005408415151604554
+        },
+        "disagreement": {
+          "pre": 3.4812248360907262e-06,
+          "post": 3.4671283019426315e-06
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.0005252761963137457,
+          "post": 0.0005260718289726203
+        },
+        "disagreement": {
+          "pre": 4.2058034780187446e-06,
+          "post": 4.201983456269293e-06
+        }
+      }
+    }
+  },
+  {
+    "variant": "random_new",
+    "seed": 1,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/random_new-seed1",
+    "collection_seconds": 38.02661308273673,
+    "coverage_lattice_stats": {
+      "auc": 0.33615756726457396,
+      "final": 0.5829596412556054,
+      "to_25": 4133,
+      "to_50": 7142,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.4998576388888889,
+      "final": 0.7916666666666666,
+      "to_25": 1747,
+      "to_50": 4582,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.5829596412556054,
+      "coverage_rooms": 0.7916666666666666,
+      "latent_variance": 0.8241456151008606,
+      "latent_effective_rank": 1.9999127388000488,
+      "encoder_saturation_fraction": null,
+      "updates": 5413,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 0.0005203133261202337,
+      "replay_disagreement": 2.4048651994235115e-06,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": 0.10090678995052413,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0005753696236890728,
+      "oracle_all_disagreement": 2.855541381497642e-06,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 2579,
+      "oracle_seen_normalized_mse": 0.0006479425861672343,
+      "oracle_seen_disagreement": 2.762689395238043e-06,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 6341,
+      "oracle_unseen_normalized_mse": 0.0005458528802367501,
+      "oracle_unseen_disagreement": 2.893305972660472e-06,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.0017533981018678197,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0005680627196651498,
+      "oracle_mean_rollout_3_normalized_mse": 0.0017756310534763871,
+      "oracle_mean_rollout_5_normalized_mse": 0.0029611997548938955,
+      "oracle_mean_rollout_10_normalized_mse": 0.005981388483538826,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "random_new",
+      "seed": 1,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/random_new-seed1",
+      "mean_horizontal_latent_step": 0.12757016718387604,
+      "mean_vertical_latent_step": 0.13185249269008636,
+      "horizontal_vertical_step_ratio": 0.9675218462944031,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6218609865470852,
+          0.6011210762331839,
+          0.6044843049327354
+        ],
+        "all_members_correct_fraction": 0.5746636771300448,
+        "exact_next_position_accuracy": 0.6067264573991031,
+        "mean_physical_error": 0.09831838309764862,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2579,
+        "visited_catalogue_exact_accuracy": 0.5641721597518418,
+        "per_member_exact_accuracy": [
+          0.5808452888716557,
+          0.5618456766188445,
+          0.563396665374176
+        ],
+        "all_members_correct_fraction": 0.5354788677782086,
+        "exact_next_position_accuracy": 0.5641721597518418,
+        "mean_physical_error": 0.1089569628238678,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.21868941450174487,
+        "persistence_mean_physical_error": 0.19532763957977295
+      },
+      "unseen": {
+        "count": 6341,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6385428165904431,
+          0.6170950954108185,
+          0.6211953950480996
+        ],
+        "all_members_correct_fraction": 0.5906008516006939,
+        "exact_next_position_accuracy": 0.6240340640277559,
+        "mean_physical_error": 0.0939914807677269,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.3601955527519319,
+        "persistence_mean_physical_error": 0.1599511057138443
+      }
+    },
+    "calibration": {
+      "variant": "random_new",
+      "seed": 1,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/random_new-seed1",
+      "unseen_edge_auc": 0.4950747668426195,
+      "untried_action_at_visited_state_auc": 0.44177231088596164,
+      "seen_disagreement_mean": 2.762689395238043e-06,
+      "untried_action_at_visited_state_disagreement_mean": 2.5527958638583674e-06,
+      "unvisited_state_disagreement_mean": 3.1332191434051808e-06,
+      "stationary_fraction": 0.603,
+      "noop_fraction": 0.1896,
+      "wall_block_fraction_given_movement_action": 0.5101184600197434,
+      "action_switch_fraction": 0.15877938969484742,
+      "late_2000_new_positions": 94,
+      "untried_actions_at_visited_states": 2621
+    },
+    "training_seconds": 32.443544116802514,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.0003698343333780283,
+          "post": 0.00021989175596635839
+        },
+        "disagreement": {
+          "pre": 2.2461260395468585e-06,
+          "post": 2.103966489030541e-06
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 0.00046461885285924235,
+          "post": 0.0004659609573740561
+        },
+        "disagreement": {
+          "pre": 2.504949050542298e-06,
+          "post": 2.5047875265444702e-06
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.0004940230299882141,
+          "post": 0.000494121629164504
+        },
+        "disagreement": {
+          "pre": 3.0858184332035327e-06,
+          "post": 3.0779618454370834e-06
+        }
+      }
+    }
+  },
+  {
+    "variant": "random_new",
+    "seed": 2,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/random_new-seed2",
+    "collection_seconds": 37.764969791751355,
+    "coverage_lattice_stats": {
+      "auc": 0.3522814461883408,
+      "final": 0.6031390134529148,
+      "to_25": 3170,
+      "to_50": 7242,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.4930125,
+      "final": 0.8055555555555556,
+      "to_25": 1830,
+      "to_50": 4626,
+      "to_80": 9311,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.6031390134529148,
+      "coverage_rooms": 0.8055555555555556,
+      "latent_variance": 0.8011674880981445,
+      "latent_effective_rank": 1.9968047142028809,
+      "encoder_saturation_fraction": null,
+      "updates": 5413,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 0.0005591642678014911,
+      "replay_disagreement": 4.216638899379177e-06,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": -0.1724354432251305,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0005257979332970739,
+      "oracle_all_disagreement": 5.1108427203282975e-06,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 2681,
+      "oracle_seen_normalized_mse": 0.0006471911752842462,
+      "oracle_seen_disagreement": 4.973801755147578e-06,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 6239,
+      "oracle_unseen_normalized_mse": 0.00047363327842167574,
+      "oracle_unseen_disagreement": 5.169731456928635e-06,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.0017077533332750556,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0005747910289235055,
+      "oracle_mean_rollout_3_normalized_mse": 0.0017219116208757894,
+      "oracle_mean_rollout_5_normalized_mse": 0.0030007996307665295,
+      "oracle_mean_rollout_10_normalized_mse": 0.007218094002392615,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "random_new",
+      "seed": 2,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/random_new-seed2",
+      "mean_horizontal_latent_step": 0.12458524107933044,
+      "mean_vertical_latent_step": 0.12441103905439377,
+      "horizontal_vertical_step_ratio": 1.0014002323150635,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6550448430493273,
+          0.6251121076233184,
+          0.6228699551569506
+        ],
+        "all_members_correct_fraction": 0.5719730941704035,
+        "exact_next_position_accuracy": 0.6321748878923766,
+        "mean_physical_error": 0.09282881766557693,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2681,
+        "visited_catalogue_exact_accuracy": 0.5703095859753823,
+        "per_member_exact_accuracy": [
+          0.5848563968668408,
+          0.567698619917941,
+          0.5594927265945543
+        ],
+        "all_members_correct_fraction": 0.4856396866840731,
+        "exact_next_position_accuracy": 0.5699365908243192,
+        "mean_physical_error": 0.10763172805309296,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.206266318537859,
+        "persistence_mean_physical_error": 0.19843341410160065
+      },
+      "unseen": {
+        "count": 6239,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6852059624939895,
+          0.6497836191697387,
+          0.6501041833627184
+        ],
+        "all_members_correct_fraction": 0.6090719666613239,
+        "exact_next_position_accuracy": 0.6589196986696586,
+        "mean_physical_error": 0.08646777272224426,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.3678474114441417,
+        "persistence_mean_physical_error": 0.1580381542444229
+      }
+    },
+    "calibration": {
+      "variant": "random_new",
+      "seed": 2,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-cadence-20261109/random_new-seed2",
+      "unseen_edge_auc": 0.5329494494420587,
+      "untried_action_at_visited_state_auc": 0.4950309002781778,
+      "seen_disagreement_mean": 4.973801755147578e-06,
+      "untried_action_at_visited_state_disagreement_mean": 4.533479182668156e-06,
+      "unvisited_state_disagreement_mean": 5.654828882982034e-06,
+      "stationary_fraction": 0.5837,
+      "noop_fraction": 0.1772,
+      "wall_block_fraction_given_movement_action": 0.4940447253281478,
+      "action_switch_fraction": 0.16598299149574788,
+      "late_2000_new_positions": 163,
+      "untried_actions_at_visited_states": 2699
+    },
+    "training_seconds": 32.21308495523408,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.000299029170060937,
+          "post": 0.0001938527389874212
+        },
+        "disagreement": {
+          "pre": 2.1296824944207157e-06,
+          "post": 1.9908606978273664e-06
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 0.0005823267892185048,
+          "post": 0.0005835421119417717
+        },
+        "disagreement": {
+          "pre": 2.499456974034614e-06,
+          "post": 2.537581304213804e-06
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.00045837504879831485,
+          "post": 0.000459222038824596
+        },
+        "disagreement": {
+          "pre": 3.0752261351369545e-06,
+          "post": 3.1010551897575823e-06
+        }
+      }
+    }
+  },
+  {
+    "variant": "h1_epoch",
+    "seed": 0,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-horizon1-20261109/h1_epoch-seed0",
+    "collection_seconds": 259.7623391668312,
+    "coverage_lattice_stats": {
+      "auc": 0.20282937219730943,
+      "final": 0.3604260089686099,
+      "to_25": 6874,
+      "to_50": null,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.29809166666666664,
+      "final": 0.5,
+      "to_25": 3414,
+      "to_50": 9674,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.3604260089686099,
+      "coverage_rooms": 0.5,
+      "latent_variance": 4.701135158538818,
+      "latent_effective_rank": 1.9043371677398682,
+      "encoder_saturation_fraction": null,
+      "updates": 39158,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 1.864876315934237e-05,
+      "replay_disagreement": 8.367275768250693e-06,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": 0.3857298130097783,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0007007738629986553,
+      "oracle_all_disagreement": 0.00011755305281839967,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 1725,
+      "oracle_seen_normalized_mse": 5.145982874884682e-05,
+      "oracle_seen_disagreement": 1.1952181419109946e-05,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 7195,
+      "oracle_unseen_normalized_mse": 0.0008564467899035783,
+      "oracle_unseen_disagreement": 0.0001428708433901543,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.0021346735978793985,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0006776662236015182,
+      "oracle_mean_rollout_3_normalized_mse": 0.002936056109167314,
+      "oracle_mean_rollout_5_normalized_mse": 0.005651504666550698,
+      "oracle_mean_rollout_10_normalized_mse": 0.012350777132963349,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "h1_epoch",
+      "seed": 0,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-horizon1-20261109/h1_epoch-seed0",
+      "mean_horizontal_latent_step": 0.22976265847682953,
+      "mean_vertical_latent_step": 0.333880752325058,
+      "horizontal_vertical_step_ratio": 0.688157856464386,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.611322869955157,
+          0.6239910313901346,
+          0.5931614349775785
+        ],
+        "all_members_correct_fraction": 0.4989910313901345,
+        "exact_next_position_accuracy": 0.626457399103139,
+        "mean_physical_error": 0.16254732012748718,
+        "physical_error_p95": 0.75,
+        "error_over_one_room_fraction": 0.021860986547085202,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 1725,
+        "visited_catalogue_exact_accuracy": 0.9501449275362319,
+        "per_member_exact_accuracy": [
+          0.9373913043478261,
+          0.9501449275362319,
+          0.936231884057971
+        ],
+        "all_members_correct_fraction": 0.912463768115942,
+        "exact_next_position_accuracy": 0.9484057971014492,
+        "mean_physical_error": 0.013103509321808815,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.20579710144927535,
+        "persistence_mean_physical_error": 0.1985507309436798
+      },
+      "unseen": {
+        "count": 7195,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.5331480194579569,
+          0.5457956914523975,
+          0.5109103544127866
+        ],
+        "all_members_correct_fraction": 0.3998610145934677,
+        "exact_next_position_accuracy": 0.5492703266157053,
+        "mean_physical_error": 0.19837646186351776,
+        "physical_error_p95": 0.7905694246292114,
+        "error_over_one_room_fraction": 0.027102154273801252,
+        "persistence_accuracy": 0.3464906184850591,
+        "persistence_mean_physical_error": 0.16337734460830688
+      }
+    },
+    "calibration": {
+      "variant": "h1_epoch",
+      "seed": 0,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-horizon1-20261109/h1_epoch-seed0",
+      "unseen_edge_auc": 0.7855721868044435,
+      "untried_action_at_visited_state_auc": 0.5979017605291314,
+      "seen_disagreement_mean": 1.1952181419109946e-05,
+      "untried_action_at_visited_state_disagreement_mean": 2.2550611738035176e-05,
+      "unvisited_state_disagreement_mean": 0.00017429540871209253,
+      "stationary_fraction": 0.5297,
+      "noop_fraction": 0.0971,
+      "wall_block_fraction_given_movement_action": 0.47912282644811166,
+      "action_switch_fraction": 0.34787393696848423,
+      "late_2000_new_positions": 107,
+      "untried_actions_at_visited_states": 1490
+    },
+    "training_seconds": 250.82623707363382,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.0005505158633330536,
+          "post": 0.00032898906737207126
+        },
+        "disagreement": {
+          "pre": 7.035979114187899e-05,
+          "post": 3.2977751192934855e-05
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 2.3974539131278847e-05,
+          "post": 2.345262147081216e-05
+        },
+        "disagreement": {
+          "pre": 9.113719549551155e-06,
+          "post": 8.705871736675926e-06
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.0006933006498108478,
+          "post": 0.00069199086866197
+        },
+        "disagreement": {
+          "pre": 7.763747427905936e-05,
+          "post": 7.720482457919766e-05
+        }
+      }
+    }
+  },
+  {
+    "variant": "h1_epoch",
+    "seed": 1,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-horizon1-20261109/h1_epoch-seed1",
+    "collection_seconds": 259.60056591639295,
+    "coverage_lattice_stats": {
+      "auc": 0.22463772421524664,
+      "final": 0.4131165919282511,
+      "to_25": 5169,
+      "to_50": null,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.3005923611111111,
+      "final": 0.5138888888888888,
+      "to_25": 3319,
+      "to_50": 9871,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.4131165919282511,
+      "coverage_rooms": 0.5138888888888888,
+      "latent_variance": 5.796412944793701,
+      "latent_effective_rank": 2.0291571617126465,
+      "encoder_saturation_fraction": null,
+      "updates": 39158,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 2.1198297758962034e-05,
+      "replay_disagreement": 7.087262019922491e-06,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": 0.33409151616311034,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0005056038386491883,
+      "oracle_all_disagreement": 6.070783305834568e-05,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 1864,
+      "oracle_seen_normalized_mse": 3.683574437478391e-05,
+      "oracle_seen_disagreement": 9.465630513538007e-06,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 7056,
+      "oracle_unseen_normalized_mse": 0.0006294394009688437,
+      "oracle_unseen_disagreement": 7.424460538594227e-05,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.0021102936081081715,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0003128826907162364,
+      "oracle_mean_rollout_3_normalized_mse": 0.0013918548160721008,
+      "oracle_mean_rollout_5_normalized_mse": 0.0031870271274977153,
+      "oracle_mean_rollout_10_normalized_mse": 0.009096867506504423,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "h1_epoch",
+      "seed": 1,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-horizon1-20261109/h1_epoch-seed1",
+      "mean_horizontal_latent_step": 0.30198705196380615,
+      "mean_vertical_latent_step": 0.28465813398361206,
+      "horizontal_vertical_step_ratio": 1.0608762502670288,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6751121076233184,
+          0.6635650224215247,
+          0.6619955156950673
+        ],
+        "all_members_correct_fraction": 0.5637892376681615,
+        "exact_next_position_accuracy": 0.6917040358744395,
+        "mean_physical_error": 0.09428750723600388,
+        "physical_error_p95": 0.3535533845424652,
+        "error_over_one_room_fraction": 0.0008968609865470852,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 1864,
+        "visited_catalogue_exact_accuracy": 0.9259656652360515,
+        "per_member_exact_accuracy": [
+          0.9152360515021459,
+          0.924892703862661,
+          0.9050429184549357
+        ],
+        "all_members_correct_fraction": 0.8744635193133047,
+        "exact_next_position_accuracy": 0.9254291845493562,
+        "mean_physical_error": 0.018776824697852135,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.17060085836909872,
+        "persistence_mean_physical_error": 0.20734979212284088
+      },
+      "unseen": {
+        "count": 7056,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6116780045351474,
+          0.5945294784580499,
+          0.5977891156462585
+        ],
+        "all_members_correct_fraction": 0.4817176870748299,
+        "exact_next_position_accuracy": 0.6299603174603174,
+        "mean_physical_error": 0.11423531919717789,
+        "physical_error_p95": 0.5,
+        "error_over_one_room_fraction": 0.0011337868480725624,
+        "persistence_accuracy": 0.35856009070294786,
+        "persistence_mean_physical_error": 0.16035997867584229
+      }
+    },
+    "calibration": {
+      "variant": "h1_epoch",
+      "seed": 1,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-horizon1-20261109/h1_epoch-seed1",
+      "unseen_edge_auc": 0.7339162618731326,
+      "untried_action_at_visited_state_auc": 0.5123573214736044,
+      "seen_disagreement_mean": 9.465630513538007e-06,
+      "untried_action_at_visited_state_disagreement_mean": 1.899681718018257e-05,
+      "unvisited_state_disagreement_mean": 9.34626039194071e-05,
+      "stationary_fraction": 0.5075,
+      "noop_fraction": 0.0786,
+      "wall_block_fraction_given_movement_action": 0.46548730193184285,
+      "action_switch_fraction": 0.3297648824412206,
+      "late_2000_new_positions": 234,
+      "untried_actions_at_visited_states": 1821
+    },
+    "training_seconds": 250.6179812559858,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.00021363871922545438,
+          "post": 0.00013130072262127143
+        },
+        "disagreement": {
+          "pre": 2.0729821171317906e-05,
+          "post": 1.1938942250732791e-05
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 1.9172806106969585e-05,
+          "post": 1.916697980662508e-05
+        },
+        "disagreement": {
+          "pre": 5.807170630458203e-06,
+          "post": 5.694016896543317e-06
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.0005100313818114856,
+          "post": 0.0005094732311442953
+        },
+        "disagreement": {
+          "pre": 5.028622466486819e-05,
+          "post": 5.034872880792447e-05
+        }
+      }
+    }
+  },
+  {
+    "variant": "h1_epoch",
+    "seed": 2,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-horizon1-20261109/h1_epoch-seed2",
+    "collection_seconds": 273.2506557907909,
+    "coverage_lattice_stats": {
+      "auc": 0.23386911434977578,
+      "final": 0.3486547085201794,
+      "to_25": 5034,
+      "to_50": null,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.29822291666666667,
+      "final": 0.4236111111111111,
+      "to_25": 2154,
+      "to_50": null,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.3486547085201794,
+      "coverage_rooms": 0.4236111111111111,
+      "latent_variance": 9.660039901733398,
+      "latent_effective_rank": 1.897679090499878,
+      "encoder_saturation_fraction": null,
+      "updates": 39158,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 1.256964690916162e-05,
+      "replay_disagreement": 3.5176828987459885e-06,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": 0.5399184536987125,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0031815323350079918,
+      "oracle_all_disagreement": 0.0005501323825833858,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 1725,
+      "oracle_seen_normalized_mse": 2.579009702022493e-05,
+      "oracle_seen_disagreement": 6.017945879341451e-06,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 7195,
+      "oracle_unseen_normalized_mse": 0.003938120988312912,
+      "oracle_unseen_disagreement": 0.0006805837242532227,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.002790437610804947,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0018930852147426777,
+      "oracle_mean_rollout_3_normalized_mse": 0.010567505078837738,
+      "oracle_mean_rollout_5_normalized_mse": 0.022926538825145226,
+      "oracle_mean_rollout_10_normalized_mse": 0.06956731698561971,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "h1_epoch",
+      "seed": 2,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-horizon1-20261109/h1_epoch-seed2",
+      "mean_horizontal_latent_step": 0.41337358951568604,
+      "mean_vertical_latent_step": 0.4747660160064697,
+      "horizontal_vertical_step_ratio": 0.8706890940666199,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.5743273542600897,
+          0.580829596412556,
+          0.5745515695067265
+        ],
+        "all_members_correct_fraction": 0.47085201793721976,
+        "exact_next_position_accuracy": 0.590695067264574,
+        "mean_physical_error": 0.17493224143981934,
+        "physical_error_p95": 0.75,
+        "error_over_one_room_fraction": 0.023654708520179372,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 1725,
+        "visited_catalogue_exact_accuracy": 0.9617391304347827,
+        "per_member_exact_accuracy": [
+          0.951304347826087,
+          0.9553623188405798,
+          0.9565217391304348
+        ],
+        "all_members_correct_fraction": 0.9310144927536231,
+        "exact_next_position_accuracy": 0.9611594202898551,
+        "mean_physical_error": 0.009710145182907581,
+        "physical_error_p95": 0.0,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.18956521739130436,
+        "persistence_mean_physical_error": 0.20260868966579437
+      },
+      "unseen": {
+        "count": 7195,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.48394718554551774,
+          0.4910354412786657,
+          0.4829742876997915
+        ],
+        "all_members_correct_fraction": 0.3605281445448228,
+        "exact_next_position_accuracy": 0.5018763029881862,
+        "mean_physical_error": 0.21454423666000366,
+        "physical_error_p95": 0.75,
+        "error_over_one_room_fraction": 0.029325920778318276,
+        "persistence_accuracy": 0.35038220986796387,
+        "persistence_mean_physical_error": 0.16240444779396057
+      }
+    },
+    "calibration": {
+      "variant": "h1_epoch",
+      "seed": 2,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-horizon1-20261109/h1_epoch-seed2",
+      "unseen_edge_auc": 0.8847030647289281,
+      "untried_action_at_visited_state_auc": 0.6511199707005703,
+      "seen_disagreement_mean": 6.017945879341451e-06,
+      "untried_action_at_visited_state_disagreement_mean": 2.420986272314217e-05,
+      "unvisited_state_disagreement_mean": 0.0008370515036368993,
+      "stationary_fraction": 0.5114,
+      "noop_fraction": 0.0732,
+      "wall_block_fraction_given_movement_action": 0.472809667673716,
+      "action_switch_fraction": 0.31385692846423213,
+      "late_2000_new_positions": 71,
+      "untried_actions_at_visited_states": 1385
+    },
+    "training_seconds": 264.0251087974757,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 2.7450703130142868e-05,
+          "post": 1.9129062090026892e-05
+        },
+        "disagreement": {
+          "pre": 9.949252121288096e-06,
+          "post": 6.195620366553969e-06
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 1.528480073503583e-05,
+          "post": 1.535376548207162e-05
+        },
+        "disagreement": {
+          "pre": 4.872991286596341e-06,
+          "post": 4.9094664154875395e-06
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.004963638730871747,
+          "post": 0.004922339113609076
+        },
+        "disagreement": {
+          "pre": 0.0005969981604323683,
+          "post": 0.0005937206130152244
+        }
+      }
+    }
+  },
+  {
+    "variant": "h1_new",
+    "seed": 0,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-horizon1-20261109/h1_new-seed0",
+    "collection_seconds": 41.247361625079066,
+    "coverage_lattice_stats": {
+      "auc": 0.2915807174887892,
+      "final": 0.5252242152466368,
+      "to_25": 3793,
+      "to_50": 9698,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.4081361111111111,
+      "final": 0.6875,
+      "to_25": 2490,
+      "to_50": 5904,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.5252242152466368,
+      "coverage_rooms": 0.6875,
+      "latent_variance": 0.8210555911064148,
+      "latent_effective_rank": 1.9689512252807617,
+      "encoder_saturation_fraction": null,
+      "updates": 5413,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 0.0006025480192797444,
+      "replay_disagreement": 3.186928097420605e-06,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": -0.12145781162789021,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0005730412037001263,
+      "oracle_all_disagreement": 3.952057034551761e-06,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 2201,
+      "oracle_seen_normalized_mse": 0.0007307106512994927,
+      "oracle_seen_disagreement": 3.712460601403934e-06,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 6719,
+      "oracle_unseen_normalized_mse": 0.0005213920811869241,
+      "oracle_unseen_disagreement": 4.03054367681376e-06,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.0017073015537465007,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0006477849995774963,
+      "oracle_mean_rollout_3_normalized_mse": 0.002377979827417035,
+      "oracle_mean_rollout_5_normalized_mse": 0.003597717823438749,
+      "oracle_mean_rollout_10_normalized_mse": 0.007641971182706212,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "h1_new",
+      "seed": 0,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-horizon1-20261109/h1_new-seed0",
+      "mean_horizontal_latent_step": 0.11918993294239044,
+      "mean_vertical_latent_step": 0.13445492088794708,
+      "horizontal_vertical_step_ratio": 0.8864676356315613,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6189461883408072,
+          0.5821748878923767,
+          0.6038116591928251
+        ],
+        "all_members_correct_fraction": 0.5524663677130045,
+        "exact_next_position_accuracy": 0.5993273542600897,
+        "mean_physical_error": 0.10255786776542664,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2201,
+        "visited_catalogue_exact_accuracy": 0.4675147660154475,
+        "per_member_exact_accuracy": [
+          0.4906860517946388,
+          0.45524761472058156,
+          0.4829622898682417
+        ],
+        "all_members_correct_fraction": 0.4198091776465243,
+        "exact_next_position_accuracy": 0.4675147660154475,
+        "mean_physical_error": 0.1332348883152008,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.16492503407542025,
+        "persistence_mean_physical_error": 0.20876874029636383
+      },
+      "unseen": {
+        "count": 6719,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6609614525971127,
+          0.6237535347521953,
+          0.6433993153743116
+        ],
+        "all_members_correct_fraction": 0.595922012204197,
+        "exact_next_position_accuracy": 0.6425063253460337,
+        "mean_physical_error": 0.09250873327255249,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.3698467033784789,
+        "persistence_mean_physical_error": 0.15753832459449768
+      }
+    },
+    "calibration": {
+      "variant": "h1_new",
+      "seed": 0,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-horizon1-20261109/h1_new-seed0",
+      "unseen_edge_auc": 0.49250628139301844,
+      "untried_action_at_visited_state_auc": 0.4783953970563812,
+      "seen_disagreement_mean": 3.712460601403934e-06,
+      "untried_action_at_visited_state_disagreement_mean": 3.4915588344028363e-06,
+      "unvisited_state_disagreement_mean": 4.346680240815823e-06,
+      "stationary_fraction": 0.5551,
+      "noop_fraction": 0.0572,
+      "wall_block_fraction_given_movement_action": 0.5281077641069156,
+      "action_switch_fraction": 0.18469234617308655,
+      "late_2000_new_positions": 93,
+      "untried_actions_at_visited_states": 2484
+    },
+    "training_seconds": 32.373919893521816,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.0005755760965832458,
+          "post": 0.0003629661663443775
+        },
+        "disagreement": {
+          "pre": 2.9849084386857192e-06,
+          "post": 2.5232846749104166e-06
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 0.000648608255966877,
+          "post": 0.0006486764672934479
+        },
+        "disagreement": {
+          "pre": 2.0480090966500665e-06,
+          "post": 2.0515760871258997e-06
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.0005650447720204736,
+          "post": 0.0005648213727783272
+        },
+        "disagreement": {
+          "pre": 2.770689716538392e-06,
+          "post": 2.790618757634914e-06
+        }
+      }
+    }
+  },
+  {
+    "variant": "h1_new",
+    "seed": 1,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-horizon1-20261109/h1_new-seed1",
+    "collection_seconds": 41.78313770890236,
+    "coverage_lattice_stats": {
+      "auc": 0.34078060538116595,
+      "final": 0.5325112107623319,
+      "to_25": 2607,
+      "to_50": 8650,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.4914472222222222,
+      "final": 0.7083333333333334,
+      "to_25": 1571,
+      "to_50": 4635,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.5325112107623319,
+      "coverage_rooms": 0.7083333333333334,
+      "latent_variance": 0.8541931509971619,
+      "latent_effective_rank": 1.9890788793563843,
+      "encoder_saturation_fraction": null,
+      "updates": 5413,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 0.0005648080723291975,
+      "replay_disagreement": 3.836120413325261e-06,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": -0.08939110598570443,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0005486013836004792,
+      "oracle_all_disagreement": 7.556729189164101e-06,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 2156,
+      "oracle_seen_normalized_mse": 0.0006298958122764084,
+      "oracle_seen_disagreement": 4.743243448509654e-06,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 6764,
+      "oracle_unseen_normalized_mse": 0.0005226890849273118,
+      "oracle_unseen_disagreement": 8.453517370247925e-06,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.0016833269894151713,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.00042423326351723396,
+      "oracle_mean_rollout_3_normalized_mse": 0.0016167996378894595,
+      "oracle_mean_rollout_5_normalized_mse": 0.0031514474508657223,
+      "oracle_mean_rollout_10_normalized_mse": 0.008216857729682605,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "h1_new",
+      "seed": 1,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-horizon1-20261109/h1_new-seed1",
+      "mean_horizontal_latent_step": 0.13321658968925476,
+      "mean_vertical_latent_step": 0.12309426814317703,
+      "horizontal_vertical_step_ratio": 1.0822322368621826,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6334080717488789,
+          0.6452914798206278,
+          0.6366591928251121
+        ],
+        "all_members_correct_fraction": 0.6033632286995516,
+        "exact_next_position_accuracy": 0.638677130044843,
+        "mean_physical_error": 0.09286310523748398,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2156,
+        "visited_catalogue_exact_accuracy": 0.5807050092764379,
+        "per_member_exact_accuracy": [
+          0.575139146567718,
+          0.5932282003710575,
+          0.5705009276437848
+        ],
+        "all_members_correct_fraction": 0.5398886827458256,
+        "exact_next_position_accuracy": 0.5802411873840445,
+        "mean_physical_error": 0.10510368645191193,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.15955473098330242,
+        "persistence_mean_physical_error": 0.2101113200187683
+      },
+      "unseen": {
+        "count": 6764,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6519810762862212,
+          0.661886457717327,
+          0.6577468953282082
+        ],
+        "all_members_correct_fraction": 0.6235955056179775,
+        "exact_next_position_accuracy": 0.6573033707865169,
+        "mean_physical_error": 0.08896146714687347,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.3701951507983442,
+        "persistence_mean_physical_error": 0.15745121240615845
+      }
+    },
+    "calibration": {
+      "variant": "h1_new",
+      "seed": 1,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-horizon1-20261109/h1_new-seed1",
+      "unseen_edge_auc": 0.6614963165794246,
+      "untried_action_at_visited_state_auc": 0.503783796058551,
+      "seen_disagreement_mean": 4.743243448509654e-06,
+      "untried_action_at_visited_state_disagreement_mean": 4.868674557395236e-06,
+      "unvisited_state_disagreement_mean": 1.0683513115221515e-05,
+      "stationary_fraction": 0.5719,
+      "noop_fraction": 0.0621,
+      "wall_block_fraction_given_movement_action": 0.5435547499733447,
+      "action_switch_fraction": 0.17178589294647323,
+      "late_2000_new_positions": 71,
+      "untried_actions_at_visited_states": 2594
+    },
+    "training_seconds": 32.76639820355922,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.0004005696285893702,
+          "post": 0.0002253585253330275
+        },
+        "disagreement": {
+          "pre": 2.6589230014009638e-06,
+          "post": 2.107964566651342e-06
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 0.00048656551325513176,
+          "post": 0.0004867038831801927
+        },
+        "disagreement": {
+          "pre": 2.5899975681777997e-06,
+          "post": 2.5962321915669338e-06
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.0005722074804905477,
+          "post": 0.0005712985083541046
+        },
+        "disagreement": {
+          "pre": 4.822573538466107e-06,
+          "post": 4.848655016001501e-06
+        }
+      }
+    }
+  },
+  {
+    "variant": "h1_new",
+    "seed": 2,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-horizon1-20261109/h1_new-seed2",
+    "collection_seconds": 42.739638375118375,
+    "coverage_lattice_stats": {
+      "auc": 0.29048161434977576,
+      "final": 0.43609865470852016,
+      "to_25": 3230,
+      "to_50": null,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.37173125,
+      "final": 0.5277777777777778,
+      "to_25": 1876,
+      "to_50": 7133,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.43609865470852016,
+      "coverage_rooms": 0.5277777777777778,
+      "latent_variance": 0.896916389465332,
+      "latent_effective_rank": 1.9728517532348633,
+      "encoder_saturation_fraction": null,
+      "updates": 5413,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 0.0006377453952241065,
+      "replay_disagreement": 1.8176592675445136e-06,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": 0.13123276257238792,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0006946120411455339,
+      "oracle_all_disagreement": 2.363377273439937e-06,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 1986,
+      "oracle_seen_normalized_mse": 0.0007791408586219822,
+      "oracle_seen_disagreement": 1.9164734800839246e-06,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 6934,
+      "oracle_unseen_normalized_mse": 0.0006704017395146964,
+      "oracle_unseen_disagreement": 2.4913771196477596e-06,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.0017527159669445819,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0007661974715215088,
+      "oracle_mean_rollout_3_normalized_mse": 0.0022277225563804843,
+      "oracle_mean_rollout_5_normalized_mse": 0.004166500269392255,
+      "oracle_mean_rollout_10_normalized_mse": 0.010373353534014364,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "h1_new",
+      "seed": 2,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-horizon1-20261109/h1_new-seed2",
+      "mean_horizontal_latent_step": 0.14807409048080444,
+      "mean_vertical_latent_step": 0.12084727734327316,
+      "horizontal_vertical_step_ratio": 1.22529935836792,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.5899103139013453,
+          0.5995515695067265,
+          0.5913677130044843
+        ],
+        "all_members_correct_fraction": 0.5614349775784754,
+        "exact_next_position_accuracy": 0.5946188340807175,
+        "mean_physical_error": 0.10308094322681427,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 1986,
+        "visited_catalogue_exact_accuracy": 0.6047331319234642,
+        "per_member_exact_accuracy": [
+          0.5936555891238671,
+          0.6117824773413897,
+          0.622356495468278
+        ],
+        "all_members_correct_fraction": 0.5750251762336355,
+        "exact_next_position_accuracy": 0.6047331319234642,
+        "mean_physical_error": 0.09881671518087387,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.162134944612286,
+        "persistence_mean_physical_error": 0.20946626365184784
+      },
+      "unseen": {
+        "count": 6934,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.5888376117680992,
+          0.5960484568791462,
+          0.5824920680703779
+        ],
+        "all_members_correct_fraction": 0.5575425439861552,
+        "exact_next_position_accuracy": 0.591721949812518,
+        "mean_physical_error": 0.10430227965116501,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.3642918950100952,
+        "persistence_mean_physical_error": 0.15892702341079712
+      }
+    },
+    "calibration": {
+      "variant": "h1_new",
+      "seed": 2,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-horizon1-20261109/h1_new-seed2",
+      "unseen_edge_auc": 0.5976732570741078,
+      "untried_action_at_visited_state_auc": 0.43366088882682985,
+      "seen_disagreement_mean": 1.9164734800839246e-06,
+      "untried_action_at_visited_state_disagreement_mean": 1.7786570273320656e-06,
+      "unvisited_state_disagreement_mean": 2.7611622201982727e-06,
+      "stationary_fraction": 0.5297,
+      "noop_fraction": 0.0409,
+      "wall_block_fraction_given_movement_action": 0.5096444583463664,
+      "action_switch_fraction": 0.1793896948474237,
+      "late_2000_new_positions": 44,
+      "untried_actions_at_visited_states": 1904
+    },
+    "training_seconds": 33.53388725919649,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.0006319811051862198,
+          "post": 0.00037298609477895894
+        },
+        "disagreement": {
+          "pre": 2.869757361796075e-06,
+          "post": 2.4437157840434342e-06
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 0.0006833215260028892,
+          "post": 0.000686063379183288
+        },
+        "disagreement": {
+          "pre": 2.3540019568946135e-06,
+          "post": 2.3447374429601456e-06
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.0007011843704461117,
+          "post": 0.0007025339363629888
+        },
+        "disagreement": {
+          "pre": 3.4549336266986653e-06,
+          "post": 3.4335214236291394e-06
+        }
+      }
+    }
+  },
+  {
+    "variant": "mcts_new20",
+    "seed": 0,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-new20-20261109/mcts_new20-seed0",
+    "collection_seconds": 202.9673806251958,
+    "coverage_lattice_stats": {
+      "auc": 0.3165767937219731,
+      "final": 0.5072869955156951,
+      "to_25": 3817,
+      "to_50": 9765,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.4539458333333333,
+      "final": 0.6805555555555556,
+      "to_25": 2022,
+      "to_50": 4579,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.5072869955156951,
+      "coverage_rooms": 0.6805555555555556,
+      "latent_variance": 1.1182068586349487,
+      "latent_effective_rank": 1.9998433589935303,
+      "encoder_saturation_fraction": null,
+      "updates": 18928,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 0.0002668961827612213,
+      "replay_disagreement": 1.5944771803333424e-05,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": 0.3920118572074172,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0006291035624386188,
+      "oracle_all_disagreement": 4.1832077305961276e-05,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 2438,
+      "oracle_seen_normalized_mse": 0.0003576005969576021,
+      "oracle_seen_disagreement": 1.6585767674190653e-05,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 6482,
+      "oracle_unseen_normalized_mse": 0.0007312208456602662,
+      "oracle_unseen_disagreement": 5.1327680959502895e-05,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.0018339517137376297,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0006601994527081728,
+      "oracle_mean_rollout_3_normalized_mse": 0.003088171382011725,
+      "oracle_mean_rollout_5_normalized_mse": 0.005240278534469258,
+      "oracle_mean_rollout_10_normalized_mse": 0.01211632077315204,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "mcts_new20",
+      "seed": 0,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-new20-20261109/mcts_new20-seed0",
+      "mean_horizontal_latent_step": 0.1481911540031433,
+      "mean_vertical_latent_step": 0.14527283608913422,
+      "horizontal_vertical_step_ratio": 1.02008855342865,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.7103139013452915,
+          0.7004484304932735,
+          0.6766816143497758
+        ],
+        "all_members_correct_fraction": 0.6081838565022422,
+        "exact_next_position_accuracy": 0.707847533632287,
+        "mean_physical_error": 0.08077873289585114,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2438,
+        "visited_catalogue_exact_accuracy": 0.7994257588187038,
+        "per_member_exact_accuracy": [
+          0.7739950779327317,
+          0.8117309269893355,
+          0.7850697292863003
+        ],
+        "all_members_correct_fraction": 0.7243642329778507,
+        "exact_next_position_accuracy": 0.7986054142739951,
+        "mean_physical_error": 0.05088624358177185,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.21616078753076293,
+        "persistence_mean_physical_error": 0.19595980644226074
+      },
+      "unseen": {
+        "count": 6482,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6863622338784325,
+          0.6585930268435668,
+          0.6359148410984264
+        ],
+        "all_members_correct_fraction": 0.5644862696698549,
+        "exact_next_position_accuracy": 0.673711817340327,
+        "mean_physical_error": 0.09202184528112411,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.3580684973773527,
+        "persistence_mean_physical_error": 0.16048286855220795
+      }
+    },
+    "calibration": {
+      "variant": "mcts_new20",
+      "seed": 0,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-new20-20261109/mcts_new20-seed0",
+      "unseen_edge_auc": 0.5711724826926537,
+      "untried_action_at_visited_state_auc": 0.42590681090370364,
+      "seen_disagreement_mean": 1.6585767674190653e-05,
+      "untried_action_at_visited_state_disagreement_mean": 1.4649888151808578e-05,
+      "unvisited_state_disagreement_mean": 6.874441670231473e-05,
+      "stationary_fraction": 0.4783,
+      "noop_fraction": 0.0994,
+      "wall_block_fraction_given_movement_action": 0.4207195203197868,
+      "action_switch_fraction": 0.33466733366683343,
+      "late_2000_new_positions": 61,
+      "untried_actions_at_visited_states": 2087
+    },
+    "training_seconds": 121.3095651557669,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.000705076320700933,
+          "post": 0.0003511148956284664
+        },
+        "disagreement": {
+          "pre": 5.203504242986883e-05,
+          "post": 3.308124808767727e-05
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 0.0002833595272367753,
+          "post": 0.0002825526450793524
+        },
+        "disagreement": {
+          "pre": 1.7010245550372785e-05,
+          "post": 1.673237493462405e-05
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.000804190427542815,
+          "post": 0.0008034677932417774
+        },
+        "disagreement": {
+          "pre": 2.88498691403427e-05,
+          "post": 2.8854988739887987e-05
+        }
+      }
+    }
+  },
+  {
+    "variant": "mcts_new20",
+    "seed": 1,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-new20-20261109/mcts_new20-seed1",
+    "collection_seconds": 202.2915026252158,
+    "coverage_lattice_stats": {
+      "auc": 0.31388402466367715,
+      "final": 0.461322869955157,
+      "to_25": 2689,
+      "to_50": null,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.3855138888888889,
+      "final": 0.5347222222222222,
+      "to_25": 1899,
+      "to_50": 8278,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.461322869955157,
+      "coverage_rooms": 0.5347222222222222,
+      "latent_variance": 1.2388368844985962,
+      "latent_effective_rank": 1.979329228401184,
+      "encoder_saturation_fraction": null,
+      "updates": 18928,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 0.00032192076286495573,
+      "replay_disagreement": 2.056508128589485e-05,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": 0.17139223043635418,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0006114612480075532,
+      "oracle_all_disagreement": 3.845193386933471e-05,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 2463,
+      "oracle_seen_normalized_mse": 0.00032861416813136096,
+      "oracle_seen_disagreement": 2.2265535152672997e-05,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 6457,
+      "oracle_unseen_normalized_mse": 0.0007193522744494088,
+      "oracle_unseen_disagreement": 4.4626178880816487e-05,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.0020303631574177814,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0006316115149318228,
+      "oracle_mean_rollout_3_normalized_mse": 0.0023184231103970444,
+      "oracle_mean_rollout_5_normalized_mse": 0.005046821186674476,
+      "oracle_mean_rollout_10_normalized_mse": 0.011446091782838858,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "mcts_new20",
+      "seed": 1,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-new20-20261109/mcts_new20-seed1",
+      "mean_horizontal_latent_step": 0.14318546652793884,
+      "mean_vertical_latent_step": 0.16336633265018463,
+      "horizontal_vertical_step_ratio": 0.8764686584472656,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6489910313901345,
+          0.6418161434977578,
+          0.6663677130044843
+        ],
+        "all_members_correct_fraction": 0.5524663677130045,
+        "exact_next_position_accuracy": 0.6764573991031391,
+        "mean_physical_error": 0.10023802518844604,
+        "physical_error_p95": 0.3535533845424652,
+        "error_over_one_room_fraction": 0.0030269058295964127,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2463,
+        "visited_catalogue_exact_accuracy": 0.8461226146975234,
+        "per_member_exact_accuracy": [
+          0.8351603735282176,
+          0.8116118554608202,
+          0.8469346325619164
+        ],
+        "all_members_correct_fraction": 0.7669508729192043,
+        "exact_next_position_accuracy": 0.8449045879009338,
+        "mean_physical_error": 0.0388999842107296,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.18635809987819732,
+        "persistence_mean_physical_error": 0.20341047644615173
+      },
+      "unseen": {
+        "count": 6457,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.5779773888802849,
+          0.5770481647824067,
+          0.5974910949357287
+        ],
+        "all_members_correct_fraction": 0.4706520055753446,
+        "exact_next_position_accuracy": 0.6122038098188013,
+        "mean_physical_error": 0.1236352026462555,
+        "physical_error_p95": 0.5,
+        "error_over_one_room_fraction": 0.004181508440452222,
+        "persistence_accuracy": 0.3699860616385318,
+        "persistence_mean_physical_error": 0.15750348567962646
+      }
+    },
+    "calibration": {
+      "variant": "mcts_new20",
+      "seed": 1,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-new20-20261109/mcts_new20-seed1",
+      "unseen_edge_auc": 0.6616520130579314,
+      "untried_action_at_visited_state_auc": 0.44617530738218614,
+      "seen_disagreement_mean": 2.2265535152672997e-05,
+      "untried_action_at_visited_state_disagreement_mean": 1.5628718663834094e-05,
+      "unvisited_state_disagreement_mean": 5.4595753132315946e-05,
+      "stationary_fraction": 0.4266,
+      "noop_fraction": 0.065,
+      "wall_block_fraction_given_movement_action": 0.3867379679144385,
+      "action_switch_fraction": 0.3245622811405703,
+      "late_2000_new_positions": 76,
+      "untried_actions_at_visited_states": 1652
+    },
+    "training_seconds": 121.61566050816327,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.0003226214136636495,
+          "post": 0.00020430331514588448
+        },
+        "disagreement": {
+          "pre": 2.83471873035972e-05,
+          "post": 1.4993734151058714e-05
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 0.00029994508347006287,
+          "post": 0.0003012287139334264
+        },
+        "disagreement": {
+          "pre": 1.9173016793930295e-05,
+          "post": 1.912532220736584e-05
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.0005252268813331024,
+          "post": 0.0005245630037595795
+        },
+        "disagreement": {
+          "pre": 4.3816370356055315e-05,
+          "post": 4.3829762513460464e-05
+        }
+      }
+    }
+  },
+  {
+    "variant": "mcts_new20",
+    "seed": 2,
+    "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-new20-20261109/mcts_new20-seed2",
+    "collection_seconds": 151.50434341700748,
+    "coverage_lattice_stats": {
+      "auc": 0.29303195067264576,
+      "final": 0.5106502242152466,
+      "to_25": 3560,
+      "to_50": 9631,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "coverage_room_stats": {
+      "auc": 0.37085833333333335,
+      "final": 0.6041666666666666,
+      "to_25": 2327,
+      "to_50": 7035,
+      "to_80": null,
+      "to_95": null,
+      "to_100": null
+    },
+    "metrics": {
+      "oracle_nodes": 1784,
+      "coverage_lattice": 0.5106502242152466,
+      "coverage_rooms": 0.6041666666666666,
+      "latent_variance": 0.8661902546882629,
+      "latent_effective_rank": 2.117013931274414,
+      "encoder_saturation_fraction": null,
+      "updates": 18928,
+      "environment_steps": 10000,
+      "disagreement_kind": "mean_variance_normalized",
+      "replay_nll_per_dim": null,
+      "replay_normalized_mse": 0.00043113855227001495,
+      "replay_disagreement": 2.402060454187449e-05,
+      "replay_predictive_variance": null,
+      "oracle_uncertainty_error_correlation": 0.22245709005727088,
+      "oracle_effective_mixture_components": null,
+      "oracle_all_state_actions": 8920,
+      "oracle_all_normalized_mse": 0.0006313605411581008,
+      "oracle_all_disagreement": 4.3361449236788984e-05,
+      "oracle_all_nll_per_dim": null,
+      "oracle_seen_state_actions": 2542,
+      "oracle_seen_normalized_mse": 0.0004887115634312987,
+      "oracle_seen_disagreement": 2.623144578084505e-05,
+      "oracle_seen_nll_per_dim": null,
+      "oracle_unseen_state_actions": 6378,
+      "oracle_unseen_normalized_mse": 0.0006882143670253839,
+      "oracle_unseen_disagreement": 5.018874130091715e-05,
+      "oracle_unseen_nll_per_dim": null,
+      "oracle_persistence_normalized_mse": 0.001910181751182765,
+      "same_position_latent_mse": 0.0,
+      "oracle_mean_rollout_1_normalized_mse": 0.0007404604454272463,
+      "oracle_mean_rollout_3_normalized_mse": 0.002206388427788353,
+      "oracle_mean_rollout_5_normalized_mse": 0.003971826889153725,
+      "oracle_mean_rollout_10_normalized_mse": 0.011189089270072977,
+      "oracle_sample_outside_encoder_bounds_fraction": null
+    },
+    "retrieval": {
+      "variant": "mcts_new20",
+      "seed": 2,
+      "environment_steps": 10000,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-new20-20261109/mcts_new20-seed2",
+      "mean_horizontal_latent_step": 0.1439044177532196,
+      "mean_vertical_latent_step": 0.12924060225486755,
+      "horizontal_vertical_step_ratio": 1.1134613752365112,
+      "all": {
+        "count": 8920,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6949551569506727,
+          0.6837443946188341,
+          0.7304932735426009
+        ],
+        "all_members_correct_fraction": 0.6103139013452915,
+        "exact_next_position_accuracy": 0.702914798206278,
+        "mean_physical_error": 0.07786302268505096,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.31928251121076234,
+        "persistence_mean_physical_error": 0.1701793670654297
+      },
+      "seen": {
+        "count": 2542,
+        "visited_catalogue_exact_accuracy": 0.7800944138473643,
+        "per_member_exact_accuracy": [
+          0.7608182533438238,
+          0.7639653815892997,
+          0.8273013375295043
+        ],
+        "all_members_correct_fraction": 0.6998426435877262,
+        "exact_next_position_accuracy": 0.7800944138473643,
+        "mean_physical_error": 0.05497639626264572,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.2073170731707317,
+        "persistence_mean_physical_error": 0.1981707364320755
+      },
+      "unseen": {
+        "count": 6378,
+        "visited_catalogue_exact_accuracy": null,
+        "per_member_exact_accuracy": [
+          0.6687049231734086,
+          0.6517717152712449,
+          0.6919096895578551
+        ],
+        "all_members_correct_fraction": 0.5746315459391659,
+        "exact_next_position_accuracy": 0.6721542803386642,
+        "mean_physical_error": 0.08698465675115585,
+        "physical_error_p95": 0.25,
+        "error_over_one_room_fraction": 0.0,
+        "persistence_accuracy": 0.3639071809344622,
+        "persistence_mean_physical_error": 0.1590232104063034
+      }
+    },
+    "calibration": {
+      "variant": "mcts_new20",
+      "seed": 2,
+      "run": "/Users/brycesandlund/GitHub/map-learning/runs/joint-exploration-new20-20261109/mcts_new20-seed2",
+      "unseen_edge_auc": 0.6160932520547249,
+      "untried_action_at_visited_state_auc": 0.48627420976868296,
+      "seen_disagreement_mean": 2.623144578084505e-05,
+      "untried_action_at_visited_state_disagreement_mean": 2.6887030008038503e-05,
+      "unvisited_state_disagreement_mean": 6.093475386278765e-05,
+      "stationary_fraction": 0.4819,
+      "noop_fraction": 0.056,
+      "wall_block_fraction_given_movement_action": 0.45116525423728815,
+      "action_switch_fraction": 0.30425212606303154,
+      "late_2000_new_positions": 115,
+      "untried_actions_at_visited_states": 2013
+    },
+    "training_seconds": 87.74031756445765,
+    "guaranteed_trained_through": 10000,
+    "late": {
+      "new": {
+        "normalized_mse": {
+          "pre": 0.0003827348393511998,
+          "post": 0.0002551870202078098
+        },
+        "disagreement": {
+          "pre": 1.9054561955150274e-05,
+          "post": 1.196224109404245e-05
+        }
+      },
+      "old": {
+        "normalized_mse": {
+          "pre": 0.0005234362578411969,
+          "post": 0.0005221473293582497
+        },
+        "disagreement": {
+          "pre": 2.053670111574861e-05,
+          "post": 2.0599509584968674e-05
+        }
+      },
+      "probe": {
+        "normalized_mse": {
+          "pre": 0.0006773331827288535,
+          "post": 0.0006772201253863963
+        },
+        "disagreement": {
+          "pre": 4.269934208407213e-05,
+          "post": 4.289345568373068e-05
+        }
+      }
+    }
+  }
+]

@@ -13,6 +13,7 @@ def evaluate_probabilistic(trainer, replay, output, heldout=None):
     output = Path(output)
     output.mkdir(parents=True, exist_ok=True)
     cfg = trainer.config
+    mse_mode = cfg.train.prediction_objective == "mse"
     env = Maze(cfg.maze, cfg.seed+8000)
     points, adjacency, lookup = reachable_graph(env)
     data = replay.arrays()
@@ -30,12 +31,14 @@ def evaluate_probabilistic(trainer, replay, output, heldout=None):
               "encoder_saturation_fraction": (float((z.abs()>.99*cfg.model.latent_bound).float().mean())
                                                if getattr(cfg.model, "latent_activation", "tanh") == "tanh" else None),
               "updates": trainer.updates, "environment_steps": len(replay)}
+    metric["disagreement_kind"] = "mean_variance_normalized" if mse_mode else "js_nats"
     generator = torch.Generator(device=trainer.device).manual_seed(cfg.seed+51000)
     rng = np.random.default_rng(cfg.seed+52000)
 
     def diagnostics(z0, actions, z1):
         params = trainer.dynamics.distribution(z0, actions)
-        uncertainty = ensemble_js(params, max(32, cfg.planner.disagreement_samples), generator)
+        uncertainty = (mixture_mean(params).var(0, unbiased=False).mean(-1)/max(latent_variance, 1e-8)
+                       if mse_mode else ensemble_js(params, max(32, cfg.planner.disagreement_samples), generator))
         means = mixture_mean(params)
         error = (means.mean(0)-z1).square().mean(-1)
         nll = -mixture_log_prob(params, z1)/z0.shape[-1]
@@ -100,17 +103,25 @@ def evaluate_probabilistic(trainer, replay, output, heldout=None):
         if h in {1, 3, 5, 10, horizon}:
             metric[f'oracle_mean_rollout_{h}_normalized_mse'] = float((state-truth).square().mean())/max(latent_variance, 1e-8)
     params = trainer.dynamics.distribution(z, torch.zeros(len(z), dtype=torch.long, device=trainer.device))
-    draws = ensemble_sample(params, generator)
+    draws = mixture_mean(params).mean(0) if mse_mode else ensemble_sample(params, generator)
     metric['oracle_sample_outside_encoder_bounds_fraction'] = (float((draws.abs()>cfg.model.latent_bound).any(-1).float().mean())
                                                               if getattr(cfg.model, "latent_activation", "tanh") == "tanh" else None)
-    np.savez_compressed(output/'probe.npz', points=points, source=source, actions=actions,
+    if mse_mode:
+        for key in list(metric):
+            if key.endswith('nll_per_dim') or key.endswith('predictive_variance'):
+                metric[key] = None
+        metric['oracle_effective_mixture_components'] = None
+        metric['oracle_sample_outside_encoder_bounds_fraction'] = None
+        nlls = np.full_like(nlls, np.nan)
+        within = np.full(len(within), np.nan)
+    np.savez_compressed(output/'probe.npz' , points=points, source=source, actions=actions,
                         seen=seen, mse=errors, disagreement=disagreements, nll_per_dim=nlls,
                         within_variance=within, between_mean_variance=between, latents=z.cpu().numpy())
     (output/'metrics.json').write_text(json.dumps(metric, indent=2, allow_nan=False)+'\n')
     coverage_plot(env, replay, output/'coverage.png', f"Replay coverage: {len(rooms)}/{cfg.maze.size**2} rooms")
     plt = plotting()
     fig, axes = plt.subplots(2, 2, figsize=(11, 9))
-    for ax, values, title in [(axes[0, 0], disagreements.reshape(-1, 5).mean(-1), 'Distribution disagreement (nats)'),
+    for ax, values, title in [(axes[0, 0], disagreements.reshape(-1, 5).mean(-1), ('Normalized mean disagreement' if mse_mode else 'Distribution disagreement (nats)')),
                               (axes[0, 1], errors.reshape(-1, 5).mean(-1)/max(latent_variance, 1e-8), 'One-step normalized latent MSE')]:
         env.draw(ax)
         color = ax.scatter(points[:, 0], points[:, 1], c=values, s=14, cmap='viridis')
@@ -123,7 +134,7 @@ def evaluate_probabilistic(trainer, replay, output, heldout=None):
     fig.colorbar(color, ax=axes[1, 0], shrink=.8)
     for name, mask in [('seen state-actions', seen), ('unseen state-actions', ~seen)]:
         axes[1, 1].scatter(disagreements[mask], errors[mask]/max(latent_variance, 1e-8), s=6, alpha=.3, label=name)
-    axes[1, 1].set(xlabel='Disagreement (nats)', ylabel='Normalized latent MSE', title='Does uncertainty track error?')
+    axes[1, 1].set(xlabel=('Normalized mean disagreement' if mse_mode else 'Disagreement (nats)'), ylabel='Normalized latent MSE', title='Does uncertainty track error?')
     axes[1, 1].legend()
     fig.tight_layout()
     fig.savefig(output/'diagnostics.png', dpi=150)

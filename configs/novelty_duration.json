@@ -1,0 +1,43 @@
+{
+  "groups": [
+    {
+      "name": "h8_independent_30k",
+      "runs": [
+        "runs/horizon-duration-20261110/h8_independent_30k-seed0",
+        "runs/horizon-duration-20261110/h8_independent_30k-seed1",
+        "runs/horizon-duration-20261110/h8_independent_30k-seed2"
+      ],
+      "cutoffs": [
+        6000,
+        18000,
+        30000
+      ]
+    },
+    {
+      "name": "h16_shared_30k",
+      "runs": [
+        "runs/horizon-duration-20261110/h16_shared_30k-seed0",
+        "runs/horizon-duration-20261110/h16_shared_30k-seed1",
+        "runs/horizon-duration-20261110/h16_shared_30k-seed2"
+      ],
+      "cutoffs": [
+        6000,
+        18000,
+        30000
+      ]
+    },
+    {
+      "name": "random_epoch_30k",
+      "runs": [
+        "runs/horizon-duration-20261110/random_epoch_30k-seed0",
+        "runs/horizon-duration-20261110/random_epoch_30k-seed1",
+        "runs/horizon-duration-20261110/random_epoch_30k-seed2"
+      ],
+      "cutoffs": [
+        6000,
+        18000,
+        30000
+      ]
+    }
+  ]
+}

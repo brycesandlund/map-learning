@@ -1,0 +1,59 @@
+[
+  {
+    "seed": 0,
+    "independent": {
+      "frames": 25,
+      "normalized_scale_log_change": 0.10407974841140266,
+      "raw_scale_log_change": 0.08024938324976134,
+      "spatial_relative_l1_change": 0.49059046120133964,
+      "spatial_rank_correlation": 0.7463718580971467,
+      "top_decile_jaccard": 0.5406633016051191
+    },
+    "shared_epoch": {
+      "frames": 25,
+      "normalized_scale_log_change": 0.08751043763055073,
+      "raw_scale_log_change": 0.08089092490316063,
+      "spatial_relative_l1_change": 0.407040449842704,
+      "spatial_rank_correlation": 0.8162063121941495,
+      "top_decile_jaccard": 0.6501295316921568
+    }
+  },
+  {
+    "seed": 1,
+    "independent": {
+      "frames": 25,
+      "normalized_scale_log_change": 0.12184021778462917,
+      "raw_scale_log_change": 0.10653332057911576,
+      "spatial_relative_l1_change": 0.3711029735435107,
+      "spatial_rank_correlation": 0.7759775581518888,
+      "top_decile_jaccard": 0.6922270407687434
+    },
+    "shared_epoch": {
+      "frames": 25,
+      "normalized_scale_log_change": 0.11217780650294122,
+      "raw_scale_log_change": 0.11449465312884992,
+      "spatial_relative_l1_change": 0.2907190759649717,
+      "spatial_rank_correlation": 0.8532297056734985,
+      "top_decile_jaccard": 0.7802398826361395
+    }
+  },
+  {
+    "seed": 2,
+    "independent": {
+      "frames": 25,
+      "normalized_scale_log_change": 0.11214597231811922,
+      "raw_scale_log_change": 0.07058929508895669,
+      "spatial_relative_l1_change": 0.4792095540662973,
+      "spatial_rank_correlation": 0.751485500236242,
+      "top_decile_jaccard": 0.5822188182419221
+    },
+    "shared_epoch": {
+      "frames": 25,
+      "normalized_scale_log_change": 0.1163932257077555,
+      "raw_scale_log_change": 0.09745474457071575,
+      "spatial_relative_l1_change": 0.4234223905763854,
+      "spatial_rank_correlation": 0.8369322417315428,
+      "top_decile_jaccard": 0.6309613151274668
+    }
+  }
+]

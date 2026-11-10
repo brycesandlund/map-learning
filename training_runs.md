@@ -406,3 +406,136 @@ Winning configuration: 134,408 encoder parameters and 418,611 dynamics parameter
 Longer training did not guarantee retention: the seed-7 identity model exceeded 99% early but declined to ~98% at 50k. This remains a limitation for ongoing learning. No claim that capacity alone caused the improvement: architecture, initialization, sampling and optimizer schedule differ from the earlier small-model runs. The bounded/unbounded comparisons within the initial screen are matched; confirmation budgets are shorter and chosen adaptively.
 
 Full verified results, learning curves, latent geometry and reproduction commands: [joint memorization](docs/joint-memorization.md). Portable artifact: `docs/assets/joint-memorization-results.json`. Independent verifier: `scripts/verify_joint_memorization.py`. Raw checkpoints: `runs/joint-memorization-confirm-20261109/identity_seed{8,9}/weights.pt`. All experiments use the same dataset hash; no new interactions or privileged transitions enter training.
+
+## 2026-11-09 — Joint MSE online exploration (completed)
+
+Authorized experiment: compare a full raw-replay epoch every 10 real actions against every new transition once followed by five random replay updates, with matched exploration policy/model. Three seeds (0–2), 10k interactions each, fixed-center reset every 2,000 actions, 1,000 persistent-random warmup actions. Both schedules explicitly fit all warmup transitions and retain final partial batches. Twelve initial runs include a persistent-random behavior control for each cadence and seed; paired random controls should collect identical trajectories.
+
+Model: fresh encoder and three fresh dynamics heads, each three width-256 SiLU layers; eight unbounded latents. Joint per-head mean MSE + 0.01 hinge repulsion. Constant dynamics LR 3e-4, encoder LR 9e-5. No pretrained encoder/weights, reconstruction, actor, codebook or oracle-guided training. Raw replay retains visitation frequencies: this differs from uniform unique-edge fitting in the memorization diagnostic and is deliberately held fixed across both cadences. Constant LR replaces finite-budget cosine decay to keep adapting to new data.
+
+Planner: MCTS horizon 4, 24 simulations, discount 0.9, 10% random-action exploration. Imagined successors are deterministic ensemble means, never untrained Gaussian draws. Intrinsic reward is ensemble variance of predicted means averaged over latent dimensions, divided by a replay-state latent-variance scalar fixed within each search. For this MSE mode only, UCT's exploration coefficient is multiplied by the root maximum reward times the discounted horizon sum; otherwise the old absolute 0.3 bonus would overwhelm tiny MSE-scale rewards. No chance-outcome widening in deterministic mode. Legacy NLL/distributional search is unchanged.
+
+Training and final diagnostics label disagreement as normalized mean variance, not JS nats; MSE likelihood/variance fields are null. Before/after cadence probes use isolated RNGs and never feed training/planning. Evaluation on the full maze is privileged, post hoc only. The planner's variance normalization uses replay states, not the evaluation probe.
+
+Validation: **41 tests pass**, including tiny-reward action selection, invariance to unused predictive variances, joint encoder updates, optimizer LR ratio and exact MSE checkpoint continuation. A 103-step end-to-end smoke test verified the final partial training block and MSE-aware evaluation.
+
+```bash
+MPLCONFIGDIR=/tmp/map-live-mpl .venv/bin/python scripts/run_probabilistic_sweep.py \
+  --manifest configs/joint_exploration_cadence.json --out runs/joint-exploration-cadence-20261109 --jobs 3
+```
+
+**All 21 runs completed**, including both adaptive follow-ups: 210,000 real interactions and 457,923 joint updates. Every raw transition was explicitly trained in every head by the end of each run. Source snapshots match across all runs. **42 tests pass**.
+
+| Policy / cadence | Final coverage | Coverage AUC | Seen-edge retrieval | Updates/run |
+|---|---:|---:|---:|---:|
+| MCTS H4, full epoch | 53.4% | 29.9% | 92.8% | 39,158 |
+| MCTS H4, new + 5 | 43.5% | 28.9% | 58.1% | 5,413 |
+| MCTS H4, new + 20 | 49.3% | 30.8% | 80.8% | 18,928 |
+| Persistent random, full epoch | 59.8% | 33.4% | 90.7% | 39,158 |
+| Persistent random, new + 5 | 59.8% | 33.4% | 56.4% | 5,413 |
+| MCTS H1, full epoch | 37.4% | 22.0% | 94.5% | 39,158 |
+| MCTS H1, new + 5 | 49.8% | 30.8% | 55.1% | 5,413 |
+
+Means over three seeds; all runs use 10k actions. More replay strongly improves retained fitting and the H4 exploration condition, but no learned condition beats persistent random on mean coverage. One-step search hurts the full-epoch condition while helping new+5, so reducing imagined-rollout depth is not a consistent fix. This is an exploratory one-layout comparison, not a statistical generalization claim.
+
+**Matched-data finding:** random-epoch and random-new actions/observations/positions were verified identical for all three seeds. Full epochs achieve 90.7% seen-edge retrieval vs 56.4% for new+5. Yet the worse-fitting new+5 model has ~4.2× **less** replay disagreement (3.23e-6 vs 1.35e-5), with ~9× larger normalized replay MSE (5.30e-4 vs 5.87e-5). Agreement is not a reliable convergence/fitting criterion. Restricting nearest-latent retrieval to visited-state catalogues barely changes the accuracy gap (90.8% vs 56.5%).
+
+**Exploration signal finding:** final H4/full-epoch untried-action AUROC within visited states is 0.461/0.523/0.473, roughly chance; whole-maze unseen-edge AUROC is 0.611 on average. Being untried need not imply uncertainty when the model generalizes correctly, and these final diagnostics are not a causal explanation of every online action. They nevertheless show the reward is not a dependable local visited/unvisited discriminator in these runs.
+
+The ≥98% fixed-dataset fitting level is not maintained online. Raw visit-frequency weighting, continually moving targets and constant learning rates differ from the successful offline fit; this experiment does not isolate those factors. The next bottlenecks are stable online fitting and a reliable uncertainty reward, not merely extra MCTS search.
+
+Full report, before/after diagnostics, per-member retrieval, calibration tables and seed-0 animation: [joint online exploration](docs/joint-exploration.md). Portable results: `docs/assets/joint-exploration-results.json`. Raw data: `runs/joint-exploration-{cadence,horizon1,new20}-20261109/`.
+
+Adaptive follow-up: `configs/joint_exploration_horizon1.json` compares horizon 1 with both cadences, seeds 0–2 (six more 10k-action runs), after the horizon-4 full-epoch curves showed slow exploration around one-third coverage midway through collection. This removes multi-step imagined-state reward while retaining the same model, optimizer, replay schedule and root disagreement objective. Runs are under `runs/joint-exploration-horizon1-20261109/`, two concurrent workers alongside the primary comparison. It tests a planning hypothesis rather than changing training capacity.
+
+Second adaptive follow-up: `configs/joint_exploration_new20.json` increases new-once's replay updates from 5 to 20, retaining horizon 4 and all other settings (three seeds). This was selected after the first three new-once runs achieved only ~58% seen-edge retrieval versus ~93% under full epochs. It tests an intermediate compute budget (18,928 updates/run versus 5,413 and 39,158). It is an adaptive comparison, not a new untouched validation set. The first full-epoch checkpoints also showed local untried-action AUROC near chance (0.46–0.52); calibration is measured only after fitting and never fed to training or planning.
+
+## 2026-11-09 — Visualization-only matched reruns
+
+Added visited-state tallies and contemporaneous reward snapshots every 200 actions. Reran the three seed-0 MCTS cadences under `configs/reward_visualization.json`, saved to `runs/joint-reward-visualization-20261109`. All replay arrays and model/dynamics weights exactly match the original runs. No policy or training change. Added exhaustive horizon-4 search diagnostics; sampled MCTS choices are within 1% of optimum in 71.4%, 90.0%, and 84.4% of decisions for full epoch, new+5, and new+20 respectively. See [visualization and limitations](docs/reward-visualization.md). Full test suite: 44 passed, including recorder noninterference and exhaustive-return checks.
+
+## 2026-11-09–10 — Overnight horizon / ensemble-data study (completed)
+
+**All 55 runs completed and audited: 730,000 interactions, 4,854,377 joint gradient updates.** Same 12×12 maze and coordinate observations; three seeds except the H64 extension (two). Full epochs every ten actions, joint MSE + 0.01 repulsion, three dynamics heads and encoder each width 256 / three layers, eight unbounded latents. No architecture change, graph merging, reconstruction, actor or oracle-guided learning.
+
+| Stage | Runs | Interactions/run | Manifest |
+|---|---:|---:|---|
+| H4/8/16/32 × shared/independent | 24 | 10k | `horizon_pilot.json`, `horizon_confirm.json` |
+| Matched random controls: epoch/new+20 × shared/independent | 12 | 10k | `ensemble_matched.json` |
+| H64 × shared/independent | 4 | 10k | `horizon_long.json` |
+| H16 MCTS96 and H32 shooting256 | 6 | 10k | `horizon_search_followup.json` |
+| H8 independent / H16 shared / random duration follow-up | 9 | 30k | `horizon_duration.json` |
+
+Manifests are under `configs/`, using `horizon_base.json`. The main horizon sweep uses discount 0.99 and 24 MCTS simulations. Prior H4 experiments used discount 0.9, so pure-horizon comparisons use this sweep. Duration conditions were selected from the 10k sweep; this adaptive selection is disclosed.
+
+**Horizon result:** mean 10k coverage independent/shared: H4 53.1/52.0%, H8 57.0/53.9%, H16 45.8/58.2%, H32 48.6/51.8%, H64 47.7/54.5%; random 59.8%. H16 MCTS96 yields 46.6% versus 45.8% at24 simulations (one seed improves, two decline). H32 shooting256 yields 42.8%. Longer or more expensive search is not an automatic improvement.
+
+**Duration result:** at30k, H8 independent / H16 shared / random achieve 85.9/85.6/81.4% final coverage and 98.9/99.6/99.3% seen-edge retrieval accuracy. Learned agents win final coverage in two of three seeds each; coverage AUC is 59.7/60.6/60.5%, so the late gain is not a consistent overall exploration advantage. Every 30k run reproduces its corresponding 10k replay prefix exactly. Full-epoch training grows from39,158 to352,721 updates per run; increased data and increased optimization are coupled.
+
+**Same-path rollout result:** using identical first10k replay sequences, H8 exact32-step retrieval improves44.1→89.9% and H16shared improves41.0→93.4%. Random control also improves37.2→92.0%. These are known paths, not proof of reliable predictions beyond the frontier. Audits retain normalized MSE, teacher-forced error, physical retrieval/error, manifold distance, known-edge prefix fractions, candidate reward ranking, and robust optimism/radius metrics through128 steps. A shooting checkpoint has an actual latent runaway at128; online sweeps therefore stopped at64.
+
+**Shared-batch result:** all12 matched controls have identical replay arrays within each seed. Shared batches reduce mean-normalized reward-map shape changes in all six paired comparisons:16% for full epochs,21% for new+20. Accuracy is about one percentage point lower. Shared encoder gradient diversity changes too; this is not a head-only optimization-noise ablation.
+
+Artifacts: [readable findings](docs/overnight-findings.md), [all results](docs/horizon-experiments.md), [batch comparison](docs/ensemble-batch-findings.md), [rollout methodology/failure case](docs/latent-rollout-audits.md). Repo assets include `horizon-rewards.gif`, `ensemble-batches.gif`, `duration-rewards.gif`, coverage/rollout plots, and portable `horizon-results.json`. Raw runs under `runs/horizon-{pilot,confirm,long}-20261109/`, `runs/ensemble-matched-20261109/`, `runs/horizon-{search,duration}-20261110/` retain configs, source snapshots/hashes, replay, intermediate checkpoints and per-run audits.
+
+Validation: 48 tests passed before the sweeps and again at final verification, including shared-batch sampling/RNG alignment, recording noninterference, exhaustive-return checks and perfect-dynamics rollout checks. Legacy random-epoch replay AND final model weights reproduced exactly for all three seeds. Final report generation asserts all matched-control streams and duration prefixes. No partial runs or failures remain; changes are uncommitted.
+
+## 2026-11-10 — Isolate replay sharing within new-once + 20
+
+Three fresh `shared_replay` runs in `runs/replay-only-sharing-20261110` compared with the existing three `new_then_replay_independent` matched random controls. The explicit new-transition pass (including initial warmup batches) keeps independent per-head orders in both conditions; only the 20 replay updates broadcast the first head's sampled indices in the treatment. Sampling consumes equal RNG draws, preserving the repulsion sampling stream. Exact equality of all replay arrays verified for every seed. Config: `configs/replay_only_sharing.json`.
+
+Mean normalized spatial L1 change:0.5834 independent vs0.4775 shared-replay-only (18.1% reduction). Adjacent-map rank correlation:0.5816→0.7354. Top-decile overlap:0.4538→0.5708. These are temporal reward stability metrics over snapshots at5k–9.8k actions, not prediction accuracy or active-exploration gains. The shared encoder's gradient diversity also changes when replay indices are shared.
+
+Examples generated by `scripts/compare_replay_sharing.py`: `docs/assets/replay-sharing.gif` and `.png`, seed0. Top row uses a common fixed numerical reward scale (pooled99th percentile after2k actions); bottom shows per-frame percentiles of max-action reward. Thus magnitude and spatial ordering are separated. Numeric rewards remain dependent on each learned representation. Full48-test suite passed before the added targeted test; the four ensemble-batch tests then passed, including explicit-new-pass preservation in shared-replay-only mode.
+
+
+## 2026-11-10 — Prediction error, disagreement, and actual novelty
+
+Completed **72 saved-checkpoint audits across 24 existing runs**, three seeds per condition. No retraining, added agent interactions, or changes to prior run artifacts. Five matched-random conditions (epoch independent/shared; new+20 independent/shared-all/shared-replay-only) at 2k/6k/10k; H8 independent, H16 shared, and random full-epoch duration runs at 6k/18k/30k. Novelty is defined from each checkpoint's replay prefix, including both transition endpoints. Oracle maze adjacency and the full latent catalogue are evaluation-only.
+
+The main distinction is **new successor state versus untried action**. Among actions at visited states, final H8/H16 disagreement identifies a new successor with AUROC 0.820/0.838, despite untried-action AUROC only 0.469/0.557. Latent-error novelty AUROC is 0.803/0.830. Restricting to untried actions retains disagreement novelty AUROC 0.792/0.754. Physical successor mistakes occur on 11.9% of novel transitions in both conditions, versus 2.2%/1.1% for transitions to familiar states. Thus most novel transitions are still predicted correctly. Max-disagreement action selection at a frontier enters a new state in 40.7%/43.9% of cases, versus random 23.7%/23.0%.
+
+Matched-data comparison: independent full epochs give disagreement novelty AUROC 0.673 versus 0.562 for new+20. Sharing only replay batches gives 0.582; among untried actions, independent/shared-replay are essentially equal at 0.606/0.607. Shared batches' previously measured reward stability does not establish better novelty discrimination; path-selection comparisons are mixed.
+
+Final checkpoints also tested **64 visited starts × 128 candidate paths × two action samplers**, with checkpoints at path lengths 4/8/16/32/64. Reward scores use discount 0.99. Outcomes count distinct previously unvisited physical states, never repeated visits. Identical candidate banks compare real-state disagreement, real-state latent error, and recursive imagined disagreement. Real-state scoring is privileged diagnostic information. On independent epoch 10k controls, horizon-32 persistent paths yield 1.85 new states under random selection, 4.95 under real-state disagreement, and 2.88 under imagined disagreement. Within-start score–novelty Spearman is 0.320/0.197 for real/imagined disagreement; imaginary reward selects zero novelty despite a novel candidate in 46.3% of eligible starts (real-state reward: 26.2%). The rollout gap varies by model and is negligible for H8 30k mean selected yield.
+
+Candidate generation also misses reachable novelty. For H8/H16 30k, 184/190 of 192 sampled starts have a novel state reachable within 32 actions. IID candidate banks find one from only 103/99 starts; persistent banks find one from 127/136. These are frozen-model candidate-bank diagnostics, not the actual MCTS tree or a causal account of online behavior. One maze with deterministic coordinate observations and exact discrete novelty; no continuous-state equivalence claim.
+
+The initial 24-start/64-candidate pilot was expanded to improve path-sampling coverage. Reported results use only `runs/novelty-audit-v2-20261110`; the pilot remains separately preserved. All matched conditions' candidate novelty outcomes were verified identical per seed. Scores use a full-catalogue variance scalar instead of replay variance, which leaves within-checkpoint ranks and maximizing choices unchanged.
+
+```bash
+.venv/bin/python scripts/analyze_novelty.py --manifest configs/novelty_matched.json --out runs/novelty-audit-v2-20261110
+.venv/bin/python scripts/analyze_novelty.py --manifest configs/novelty_duration.json --out runs/novelty-audit-v2-20261110
+MPLCONFIGDIR=/tmp/map-novelty-mpl .venv/bin/python scripts/report_novelty.py
+.venv/bin/python -m pytest -q
+```
+
+**52 tests pass**, including directed frontier distances, absence of frontiers, uniform tie handling, and unique-state counting with exact dynamics. [Full findings and methods](docs/novelty-diagnostics.md), [figure](docs/assets/novelty-diagnostics.png), and portable per-checkpoint `docs/assets/novelty-results.json`. Raw outputs retain per-seed metrics, intermediate checkpoints, distance bands, path correlations, opportunity counts, and horizon-dependent selection outcomes.
+
+
+## 2026-11-10 — Search budget and latent geometry (completed)
+
+Authorized follow-up: increase MCTS simulations while preserving training and inspect latent geometry. Twelve online branches start from the H16/shared 30k checkpoints (seeds 0–2): simulations 24/96/384 and persistent random, each 1,200 additional interactions, full replay epoch every ten actions. Model/optimizer/trainer RNG and full replay restored; planner/shuffle/scale RNGs restart identically within each seed, with fixed-center reset and no warmup. This is a controlled branch, not an exact old-process continuation. Root: `runs/search-budget-20261110`; launcher: `scripts/run_search_branches.py`. No loop penalty or learning-objective change.
+
+Geometry audit covers H8 independent and H16 shared, three seeds, initialization plus 6k/18k/30k checkpoints. All graph distances and visual adjacency overlays are evaluation only. Learned PCA2 explains 98–100% of variance at 30k, but input ablations show crucial low-variance information: in one H16 model, successor retrieval falls 92.0%→18.3% after projecting to two components, recovering to 92.1% with three. Three components recover nearly all accuracy for five of six models; the sixth needs four. This does not establish a sufficient encoder architecture without retraining.
+
+The encoder resembles a nonlinear coordinate surface and does not consistently expand pairs separated by walls. The dynamics nevertheless predict near-zero movement for blocked actions. Random-initialization visual controls show spatial structure before learning, since inputs are already coordinates. Additional loop-detectability probes distinguish moving returns from fresh positions through recursive latent predictions; no diagnostic threshold enters the agent. Details and figures: [latent geometry](docs/latent-geometry.md). A separate fixed-model MCTS audit inspects visit-selected 16-step paths at 24/96/384 simulations.
+
+Validation: 52 tests pass; a ten-action continuation smoke test preserves every original replay array exactly and explicitly trains all appended transitions. Existing completed runs and uncommitted work preserved.
+
+All twelve branches and fitting audits completed: **14,400 additional interactions and 345,012 joint updates** (28,751 per branch). Every original replay array is unchanged; all branches explicitly train through transition 31,200. Initial reward-map arrays and positions match exactly across conditions per seed. Worker hash and protocol retained in `runs/search-budget-20261110/protocol.json`.
+
+| Behavior | New states by seed 0 / 1 / 2 | Mean new states | Seen-edge accuracy | Moving actions revisiting last 16 states |
+|---|---|---:|---:|---:|
+| MCTS 24 | 72 / 3 / 2 | 25.7 | 99.42% | 52.3% |
+| MCTS 96 | 71 / 3 / 4 | 26.0 | 99.54% | 53.9% |
+| MCTS 384 | 0 / 3 / 2 | 1.7 | 99.34% | 61.0% |
+| Persistent random | 24 / 0 / 10 | 11.3 | 99.51% | 24.3% |
+
+At 96, mean cumulative discoveries are slightly lower than at 24 despite similar final counts. The 384 decline is entirely driven by seed 0; the other two seeds are unchanged. All conditions retain novel-successor disagreement AUROC around 0.80–0.82. No universal search-budget conclusion from three short branches on one maze.
+
+Fixed-model MCTS audit: same 24 visited starts per original checkpoint, three seeds, H16 and budgets 24/96/384. Preferred visit-selected paths repeat 8.40/9.25/9.57 successors out of 16, with 8.60/7.75/7.43 distinct path states including the start. Both imagined and real-state disagreement returns rise, while new-state counts are non-monotonic (0.35/0.65/0.57). The diagnostic wrapper verifies root choices, counts and Q values against production MCTS. These open-loop preferred paths are distinct from online executed trajectories.
+
+[Search report](docs/search-budget.md), [geometry report](docs/latent-geometry.md), [trajectory animation](docs/assets/search-budget-paths.gif), [reward animation](docs/assets/search-budget-rewards.gif). Geometry includes per-state latent arrays, random-initialization controls, shortest-path comparisons, action-vector views, PCA-input ablations, and moving-loop detection. At H16, loop AUROC is 0.987 for H16/shared models and 0.973 for H8/independent models; thresholds were selected diagnostically and never fed to the agent. Local latent step spacing varies by 3.5–8.9× (95th/5th percentile), with positive visitation correlation 0.31–0.64.
+
+Reproduction: `scripts/run_search_branches.py`, then `scripts/audit_search_branches.py` and `scripts/report_search_budget.py`; geometry: `scripts/analyze_latent_geometry.py`, `scripts/audit_geometry_dynamics.py`, `scripts/report_latent_geometry.py`; fixed-model search: `scripts/audit_mcts_budget.py`. Experiment launchers refuse existing output directories. All jobs completed; no automation or background experiment remains active. Figures and animations inspected; git diff --check clean. No production algorithm change or loop penalty added.

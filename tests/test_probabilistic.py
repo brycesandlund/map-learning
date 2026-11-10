@@ -129,7 +129,7 @@ def test_mixture_learns_two_outcomes_without_averaging_them():
 def test_mcts_averages_chance_outcomes_instead_of_choosing_lucky_branch():
     class Identity:
         def encode(self, x): return x
-    trainer = SimpleNamespace(device='cpu', model=Identity(), dynamics=SimpleNamespace(actions=2),
+    trainer = SimpleNamespace(config=SimpleNamespace(train=SimpleNamespace(prediction_objective='nll')), device='cpu', model=Identity(), dynamics=SimpleNamespace(actions=2),
                               tensor=lambda x:torch.as_tensor(x, dtype=torch.float32))
     cfg = PlannerConfig(behavior='disagreement', search='mcts', horizon=2, simulations=1200,
                         epsilon_random=0, uct_exploration=.3, widening_coefficient=2.)
@@ -158,7 +158,7 @@ def test_shooting_selects_distribution_disagreement():
             mu = state[None, :, None, :].repeat(2, 1, 1, 1)
             mu[1, actions==2] += 2
             return torch.zeros(2, len(state), 1), mu, torch.ones_like(mu)*.001
-    trainer = SimpleNamespace(device='cpu', model=Identity(), dynamics=Dynamics(),
+    trainer = SimpleNamespace(config=SimpleNamespace(train=SimpleNamespace(prediction_objective='nll')), device='cpu', model=Identity(), dynamics=Dynamics(),
                               tensor=lambda x:torch.as_tensor(x, dtype=torch.float32))
     cfg = PlannerConfig(behavior='disagreement', search='shooting', horizon=1, epsilon_random=0)
     planner = UncertaintyPlanner(trainer, cfg, seed=3)

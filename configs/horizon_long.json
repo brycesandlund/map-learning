@@ -1,0 +1,23 @@
+{
+  "config": "configs/horizon_base.json",
+  "seeds": [
+    0,
+    1
+  ],
+  "variants": [
+    {
+      "name": "h64_independent",
+      "overrides": [
+        "planner.horizon=64",
+        "train.ensemble_batches=independent"
+      ]
+    },
+    {
+      "name": "h64_shared",
+      "overrides": [
+        "planner.horizon=64",
+        "train.ensemble_batches=shared"
+      ]
+    }
+  ]
+}

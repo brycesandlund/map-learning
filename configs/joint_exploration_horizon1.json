@@ -1,0 +1,25 @@
+{
+  "description": "Adaptive horizon-1 ablation after observing slow coverage in horizon-4 epoch runs; otherwise matched.",
+  "config": "configs/joint_exploration_base.json",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "variants": [
+    {
+      "name": "h1_epoch",
+      "overrides": [
+        "training_schedule=epoch",
+        "planner.horizon=1"
+      ]
+    },
+    {
+      "name": "h1_new",
+      "overrides": [
+        "training_schedule=new_then_replay",
+        "planner.horizon=1"
+      ]
+    }
+  ]
+}

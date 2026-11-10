@@ -20,6 +20,8 @@ class TrainingSchedule:
         if cfg.training_schedule != 'replay':
             orders = [self.rng.permutation(np.arange(start, len(replay)))
                       for _ in self.trainer.dynamics.heads]
+            if cfg.train.ensemble_batches == "shared":
+                orders = [orders[0]] * len(orders)
             for offset in range(0, len(replay)-start, cfg.train.batch_size):
                 batches = [order[offset:offset+cfg.train.batch_size] for order in orders]
                 metrics = self.trainer.update_probabilistic(replay, head_indices=batches)
@@ -64,6 +66,7 @@ class CadenceDiagnostics:
         trainer = self.trainer
         reference = trainer.model.encode(trainer.tensor(np.concatenate([self.probe[0], self.probe[2]])))
         variance = float(reference.var(0, unbiased=False).mean())
+        mse_mode = trainer.config.train.prediction_objective == "mse"
         result = {'probe_latent_variance': variance}
         for label, (obs, actions, nxt) in batches.items():
             z, target = trainer.model.encode(trainer.tensor(np.concatenate([obs, nxt]))).chunk(2)
@@ -72,10 +75,11 @@ class CadenceDiagnostics:
             error = float((mixture_mean(params).mean(0)-target).square().mean())
             result[label] = {
                 'n': len(actions),
-                'disagreement': float(ensemble_js(params, 8, generator).mean()),
-                'nll_per_dim': float(-mixture_log_prob(params, target).mean()/z.shape[-1]),
+                'disagreement': (float(mixture_mean(params).var(0, unbiased=False).mean())/max(variance, 1e-8)
+                                 if mse_mode else float(ensemble_js(params, 8, generator).mean())),
+                'nll_per_dim': None if mse_mode else float(-mixture_log_prob(params, target).mean()/z.shape[-1]),
                 'mse': error, 'normalized_mse': error/max(variance, 1e-8),
                 'persistence_normalized_mse': float((z-target).square().mean())/max(variance, 1e-8),
-                'predictive_variance': float(mixture_variance(params).mean()),
+                'predictive_variance': None if mse_mode else float(mixture_variance(params).mean()),
             }
         return result
