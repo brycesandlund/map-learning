@@ -1,0 +1,16 @@
+{
+  "checkpoint": "runs/probabilistic-cadence-20261109/replay-seed0/checkpoint.pt",
+  "data": "runs/probabilistic-cadence-20261109/replay-seed0/replay.npz",
+  "updates": 20000,
+  "seed": 7,
+  "variants": [
+    {"name": "frozen_nll", "args": ["--encoder", "frozen", "--objective", "nll"]},
+    {"name": "frozen_mse", "args": ["--encoder", "frozen", "--objective", "mse"]},
+    {"name": "joint_nll", "args": ["--encoder", "joint", "--objective", "nll"]},
+    {"name": "joint_mse", "args": ["--encoder", "joint", "--objective", "mse"]},
+    {"name": "tiny128_frozen_mse", "args": ["--encoder", "frozen", "--objective", "mse", "--subset", "128"]},
+    {"name": "coordinates_mse", "args": ["--encoder", "coordinates", "--objective", "mse"]},
+    {"name": "wide256_frozen_mse", "args": ["--encoder", "frozen", "--objective", "mse", "--hidden", "256"]},
+    {"name": "uniform_edges_frozen_mse", "args": ["--encoder", "frozen", "--objective", "mse", "--uniform-edges"]}
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "transitions": 10000,
+  "unique_state_actions": 2606,
+  "unique_observed_states": 762,
+  "unique_float32_latents": 762,
+  "minimum_latent_separation": 0.009569612331688404,
+  "median_nearest_latent_separation": 0.061940521001815796,
+  "max_edge_repeat_count": 53,
+  "median_edge_repeat_count": 2.0,
+  "stationary_transition_fraction": 0.4218
+}

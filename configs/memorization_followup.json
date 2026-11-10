@@ -1,0 +1,12 @@
+{
+  "checkpoint": "runs/probabilistic-cadence-20261109/replay-seed0/checkpoint.pt",
+  "data": "runs/probabilistic-cadence-20261109/replay-seed0/replay.npz",
+  "updates": 100000,
+  "seed": 7,
+  "variants": [
+    {"name": "frozen64_uniform_100k", "args": ["--encoder", "frozen", "--objective", "mse", "--uniform-edges", "--lr", "0.001"]},
+    {"name": "frozen256_uniform_100k", "args": ["--encoder", "frozen", "--objective", "mse", "--uniform-edges", "--hidden", "256", "--lr", "0.001"]},
+    {"name": "coordinates256_uniform_100k", "args": ["--encoder", "coordinates", "--objective", "mse", "--uniform-edges", "--hidden", "256", "--lr", "0.001"]},
+    {"name": "joint_mse_repulsion001", "args": ["--encoder", "joint", "--objective", "mse", "--repulsion", "0.01", "--updates", "20000"]}
+  ]
+}

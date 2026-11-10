@@ -439,3 +439,15 @@ agent's RNGs or training data.
 The matched three-seed comparison is configured in
 `configs/probabilistic_cadence.json`; results and reproduction commands are in
 [training cadence](docs/training-cadence.md).
+
+### Fixed-data memorization diagnostics
+
+[Memorization experiments](docs/memorization.md) separate fixed-encoder dynamics
+fitting from joint representation training, comparing Gaussian NLL and mean MSE.
+The experiment scripts retain partial batches, check for conflicting targets,
+report training accuracy separately from unseen state-actions, and include
+small-subset, fixed-coordinate, model-width, and repulsion-weight controls.
+Use `configs/memorization.json` and `configs/memorization_followup.json` with
+`scripts/run_memorization.py`; the report contains full reproduction commands.
+These diagnostic weights are saved as `weights.pt` with experiment/model metadata,
+not as the online runner's resumable `checkpoint.pt` format.

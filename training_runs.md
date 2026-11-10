@@ -346,3 +346,30 @@ Extra fitting reduced final average replay disagreement but did not improve the 
 Mean elapsed minutes: replay 1.61, epoch 2.65, new-once 1.65; corresponding training-only minutes 0.13, 1.13, 0.15. Concurrent workers and diagnostics limit wall-time comparisons. Physical prediction uses nearest-latent retrieval over all reachable state-actions, not an optimal decoder. Persistence achieves 31.9% exact accuracy and 0.1702 mean physical error, compared with model errors 0.5008 / 0.6401 / 0.6978, respectively.
 
 Full results, before/after diagnostics, plots, seed-0 exploration GIF, and reproduction commands: [training cadence report](docs/training-cadence.md). Portable numeric results: `docs/assets/cadence-results.json`. Raw runs: `runs/probabilistic-cadence-20261109/`. Source snapshots match across all nine runs.
+
+## 2026-11-09 — Fixed-data memorization diagnostics (completed)
+
+All conditions use `runs/probabilistic-cadence-20261109/replay-seed0/replay.npz` (10,000 transitions) and its encoder checkpoint. No exploration or new training observations. Dataset audit: 2,606 unique state-action inputs, 762 distinct observed states, no contradictory next-state targets. All 762 states have distinct float32 encoder outputs; minimum latent separation 0.00957. Stationary transitions are 42.18% of replay; repeated edges occur up to 53 times.
+
+Manifest: `configs/memorization.json`; runner: `scripts/run_memorization.py`; experiment: `scripts/memorize_dynamics.py`. Eight initial conditions, each 20,000 updates: frozen versus jointly trained encoder × NLL versus mean MSE, plus frozen-MSE controls on 128 unique transitions, fixed normalized coordinates (repeated to eight dimensions), dynamics width 256, and uniform unique-edge sampling. All dynamics are freshly initialized with seed 7, all optimizers reset. The pretrained encoder is identical initially in the learned-encoder conditions. Full replay training uses independent shuffled passes per head, including final partial batches. Adam starts at 3e-4 and cosine-decays to 1e-5. The joint conditions retain repulsion weight 10; changing NLL to raw MSE changes its relative strength, so this is not a scale-matched loss comparison.
+
+Frozen encoded inputs and targets are precomputed once. Frozen/coordinate conditions omit repulsion because it cannot affect their parameters. MSE trains Gaussian means only; variance and likelihood diagnostics are not interpreted or reported for MSE runs. Each experiment saves arguments, source/data hashes, source snapshot, selected transition indices, weights and a learning curve.
+
+Training metrics evaluate every fitted transition (both visitation-weighted and unique-edge accuracy). Generalization is measured separately on a fixed sample of up to 1,024 state-actions absent from that condition's training set, never used for gradients. Physical accuracy is nearest-latent retrieval against the full-maze catalogue, only available to evaluation; it does not imply every continuous latent residual is zero. No exact-state graph merging or codebook enters learning. A tiny 128-edge subset is chosen once with a fixed seed shared by any matching controls.
+
+```bash
+MPLCONFIGDIR=/tmp/map-memorize-mpl .venv/bin/python scripts/run_memorization.py \
+  --manifest configs/memorization.json --out runs/memorization-20261109 --jobs 3
+```
+
+Validation: **38 tests pass**, plus an end-to-end 100-update frozen-encoder smoke run with exactly zero encoder drift. All 12 substantive experiments completed (480,000 updates total); no new environment interactions.
+
+**Matched 20k-update results, accuracy across distinct training state-actions:** frozen NLL 72.10%, frozen MSE 86.19%, joint NLL + repulsion 10: 57.21%, joint MSE + repulsion 10: 56.75%. The 128-edge frozen-MSE control reaches 100% for each ensemble member (latent MSE 1.75e-6).
+
+**Adaptive follow-ups:** at 100k updates, uniform-edge frozen MSE achieves 98.00% with width 64 and 98.31% with width 256 (52 and 44 remaining incorrect edges, respectively). Width-256 fixed-coordinate dynamics achieves 99.65% (9 incorrect edges). Initial LR is 1e-3 with cosine decay, versus 3e-4 in the original 20k runs, so the longer-vs-shorter difference includes sampling and optimization changes. Full exact memorization has not been achieved; 100% refers only to the 128-edge subset and discrete next-position retrieval, not zero continuous regression residual.
+
+**Loss-balance ablation:** changing only joint-MSE repulsion weight from 10 to 0.01 at the original 20k budget raises unique-edge accuracy from 56.75% to 90.94% (visitation-weighted: 69.08% to 94.44%), surpassing frozen MSE at that budget. At common initialization over 32 minibatches, median encoder repulsion/prediction gradient norm ratios are 188.4 for MSE at weight 10, 0.188 for MSE at weight 0.01, and 3.77 for NLL at weight 10. Thus the extreme 188× imbalance is specific to the MSE comparison, not the original NLL online objective.
+
+This supports fixed-target fitting as feasible and loss weighting as a major issue in the joint-MSE test; it does not establish that joint representation learning is inherently inferior. Dataset determinism and exact encoder collisions are ruled out for the sampled training data. The last 1–2% of errors in frozen learned latents are still unresolved, and this is one dataset/initialization. No sweeping generalization claims.
+
+Full report, learning curves, unseen-edge scores, parameter counts and reproduction commands: [memorization experiments](docs/memorization.md). Raw runs: `runs/memorization-20261109/` and `runs/memorization-followup-20261109/`. Portable results/audits: `docs/assets/memorization-*.json`. Follow-up manifest: `configs/memorization_followup.json`. Gradient audit: `scripts/audit_memorization_gradients.py`.
