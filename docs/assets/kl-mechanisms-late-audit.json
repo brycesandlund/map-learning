@@ -1,0 +1,12 @@
+{
+  "checkpoints": 54,
+  "frozen_continuations": 162,
+  "actions": 103680,
+  "checks_passed": true,
+  "checks": [
+    "identical archive/physical memberships and seen sets across arms",
+    "three noise replicates per checkpoint",
+    "128 expansions /640 actions per continuation",
+    "nondecreasing discovery counts bounded by remaining positions"
+  ]
+}

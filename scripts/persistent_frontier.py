@@ -24,23 +24,33 @@ def main():
     p.add_argument('--block-expansions',type=int,default=1000)
     p.add_argument('--out',type=Path,required=True)
     p.add_argument('--bottleneck-beta',type=float,default=None)
+    p.add_argument('--repulsion-weight',type=float,default=None)
     p.add_argument('--prior-components',type=int,default=1)
+    p.add_argument('--prior-mode',choices=['learned','replay_moments','batch_moments'],default='learned')
     p.add_argument('--kl-warmup-updates',type=int,default=0)
     p.add_argument('--prior-lr-multiplier',type=float,default=1.)
     p.add_argument('--initial-std',type=float,default=.01)
+    p.add_argument('--dynamics-input',choices=['posterior','mean','scheduled'],default='posterior')
+    p.add_argument('--noise-schedule',type=Path)
+    p.add_argument('--prior-steps',type=int,default=1)
     p.add_argument('--extra-updates',type=int,default=0)
     p.add_argument('--extra-placement',choices=['early','distributed'],default='early')
     a=p.parse_args()
     if a.extra_updates<0: p.error('Extra updates must be nonnegative')
     if a.block_expansions%10 or a.block_expansions<500 or a.blocks<1: p.error('Block expansions must be >=500 and divisible by 10')
     cfg=load_config('configs/noisy_frontier.json',[f'seed={a.seed}',f'collect_steps={a.blocks*a.block_expansions*5}'])
+    if a.repulsion_weight is not None:
+        if not np.isfinite(a.repulsion_weight) or a.repulsion_weight<0:p.error('Repulsion weight must be finite and nonnegative')
+        cfg.train.repulsion_weight=a.repulsion_weight
     seed_all(cfg.seed,cfg.threads)
     env=Maze(cfg.maze,cfg.seed+71000); t=Trainer(cfg,env.observation_shape)
     if a.bottleneck_beta is not None:
         # Recreate baseline initialization exactly before adding stochastic modules.
         from map_learning.information_bottleneck import BottleneckTrainer
         seed_all(cfg.seed,cfg.threads)
-        t=BottleneckTrainer(cfg,env.observation_shape,a.bottleneck_beta,a.prior_components,a.initial_std,a.prior_lr_multiplier,a.kl_warmup_updates)
+        noise_schedule=json.loads(a.noise_schedule.read_text()) if a.noise_schedule else None
+        t=BottleneckTrainer(cfg,env.observation_shape,a.bottleneck_beta,a.prior_components,a.initial_std,a.prior_lr_multiplier,a.kl_warmup_updates,a.prior_mode,
+                            dynamics_input=a.dynamics_input,noise_schedule=noise_schedule,prior_steps=a.prior_steps)
     replay=Replay(); schedule=TrainingSchedule(t)
     out=prepare_run(a.out,cfg,{'arm':a.arm,'blocks':a.blocks,'block_expansions':a.block_expansions,'extra_updates':a.extra_updates,'extra_placement':a.extra_placement,'bottleneck_spec':getattr(t,'spec',None),
         'protocol':'Persistent visited raw observations and frontier; no identity checks or merging. Re-encode both and recompute exact priorities after training. Same full-epoch sample exposure and gradient-step counts at block boundaries; frequent arm causally partitions epoch into 10 intervals (variable minibatch sizes). No search restart after initialization.'})
@@ -87,6 +97,7 @@ def main():
                 n_expansions=block*a.block_expansions+offset+1
                 if (offset+1)%interval==0:
                     replay.arrays(); tic=time.monotonic(); before=t.updates
+                    if hasattr(t,'fit_prior'):t.fit_prior(replay)
                     if a.arm=='epoch1000':
                         metrics=schedule.train(replay)
                         samples_per_head+=len(replay)
@@ -118,6 +129,10 @@ def main():
                         'selected_priority':score,'seconds':time.monotonic()-start}
                     log_metrics(progress,row)
                     frames.append((len(replay),position.copy(),np.array(sorted(visited))))
+            # Also refit after each block, so saved checkpoints/diagnostics use
+            # exact current full-replay moments. No gradient or search action.
+            if hasattr(t,'fit_prior'):
+                tic=time.monotonic();t.fit_prior(replay);training_seconds+=time.monotonic()-tic
             row.update(samples_per_head=samples_per_head,first_full=first_full,milestones=dict(milestones),
                 training_seconds=training_seconds,refresh_seconds=refresh_seconds,search_seconds=search_seconds,
                 **diagnostics(t,replay,points))

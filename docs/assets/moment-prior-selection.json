@@ -1,0 +1,708 @@
+{
+  "selected": [
+    "replay_moments",
+    0.01,
+    1e-07,
+    0
+  ],
+  "chosen_before_confirmation_utc": "2026-11-11T04:18:06.872172+00:00",
+  "criterion": "Maximum mean coverage AUC among positive-beta moment variants on seeds 0/1/2 only",
+  "candidates": [
+    {
+      "key": [
+        "replay_moments",
+        0.01,
+        1e-06,
+        0
+      ],
+      "mean_auc": 0.44786434977578476,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.5070452634529148,
+          "first_full": 89864,
+          "visited": 1784
+        },
+        {
+          "seed": 1,
+          "auc": 0.3710650224215246,
+          "first_full": null,
+          "visited": 1397
+        },
+        {
+          "seed": 2,
+          "auc": 0.4654827634529148,
+          "first_full": 92922,
+          "visited": 1784
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.01,
+        1e-05,
+        0
+      ],
+      "mean_auc": 0.20607693385650225,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.21902326233183855,
+          "first_full": null,
+          "visited": 503
+        },
+        {
+          "seed": 1,
+          "auc": 0.176737668161435,
+          "first_full": null,
+          "visited": 469
+        },
+        {
+          "seed": 2,
+          "auc": 0.22246987107623317,
+          "first_full": null,
+          "visited": 642
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.01,
+        0.0001,
+        0
+      ],
+      "mean_auc": 0.16685561472346785,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.18362808295964125,
+          "first_full": null,
+          "visited": 465
+        },
+        {
+          "seed": 1,
+          "auc": 0.13337303811659193,
+          "first_full": null,
+          "visited": 355
+        },
+        {
+          "seed": 2,
+          "auc": 0.18356572309417038,
+          "first_full": null,
+          "visited": 494
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.01,
+        0.001,
+        0
+      ],
+      "mean_auc": 0.16986617152466366,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.12444646860986548,
+          "first_full": null,
+          "visited": 313
+        },
+        {
+          "seed": 1,
+          "auc": 0.17046804932735427,
+          "first_full": null,
+          "visited": 423
+        },
+        {
+          "seed": 2,
+          "auc": 0.2146839966367713,
+          "first_full": null,
+          "visited": 532
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.01,
+        0.01,
+        0
+      ],
+      "mean_auc": 0.15907347720478326,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.14062710201793724,
+          "first_full": null,
+          "visited": 426
+        },
+        {
+          "seed": 1,
+          "auc": 0.15287836322869955,
+          "first_full": null,
+          "visited": 375
+        },
+        {
+          "seed": 2,
+          "auc": 0.18371496636771298,
+          "first_full": null,
+          "visited": 525
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.03,
+        1e-06,
+        0
+      ],
+      "mean_auc": 0.2888962070254111,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.35602368273542606,
+          "first_full": null,
+          "visited": 1486
+        },
+        {
+          "seed": 1,
+          "auc": 0.23431193946188342,
+          "first_full": null,
+          "visited": 757
+        },
+        {
+          "seed": 2,
+          "auc": 0.2763529988789238,
+          "first_full": null,
+          "visited": 1180
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.03,
+        1e-05,
+        0
+      ],
+      "mean_auc": 0.16896790919282512,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.16891956278026904,
+          "first_full": null,
+          "visited": 387
+        },
+        {
+          "seed": 1,
+          "auc": 0.17810117713004486,
+          "first_full": null,
+          "visited": 411
+        },
+        {
+          "seed": 2,
+          "auc": 0.15988298766816145,
+          "first_full": null,
+          "visited": 396
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.03,
+        0.0001,
+        0
+      ],
+      "mean_auc": 0.1779584734678625,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.15912556053811658,
+          "first_full": null,
+          "visited": 465
+        },
+        {
+          "seed": 1,
+          "auc": 0.14406320067264572,
+          "first_full": null,
+          "visited": 434
+        },
+        {
+          "seed": 2,
+          "auc": 0.23068665919282513,
+          "first_full": null,
+          "visited": 589
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.03,
+        0.001,
+        0
+      ],
+      "mean_auc": 0.17466671337817638,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.18412906390134529,
+          "first_full": null,
+          "visited": 508
+        },
+        {
+          "seed": 1,
+          "auc": 0.17329946748878924,
+          "first_full": null,
+          "visited": 448
+        },
+        {
+          "seed": 2,
+          "auc": 0.1665716087443946,
+          "first_full": null,
+          "visited": 532
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.03,
+        0.01,
+        0
+      ],
+      "mean_auc": 0.14757684043348282,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.15297435538116594,
+          "first_full": null,
+          "visited": 424
+        },
+        {
+          "seed": 1,
+          "auc": 0.16030969730941705,
+          "first_full": null,
+          "visited": 379
+        },
+        {
+          "seed": 2,
+          "auc": 0.12944646860986547,
+          "first_full": null,
+          "visited": 325
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.1,
+        1e-06,
+        0
+      ],
+      "mean_auc": 0.2387359865470852,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.26047645739910313,
+          "first_full": null,
+          "visited": 1027
+        },
+        {
+          "seed": 1,
+          "auc": 0.2538558015695067,
+          "first_full": null,
+          "visited": 920
+        },
+        {
+          "seed": 2,
+          "auc": 0.20187570067264574,
+          "first_full": null,
+          "visited": 832
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.1,
+        1e-05,
+        0
+      ],
+      "mean_auc": 0.29457749439461883,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.3252459360986547,
+          "first_full": null,
+          "visited": 1300
+        },
+        {
+          "seed": 1,
+          "auc": 0.26935818385650223,
+          "first_full": null,
+          "visited": 1281
+        },
+        {
+          "seed": 2,
+          "auc": 0.2891283632286995,
+          "first_full": null,
+          "visited": 1109
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.1,
+        0.0001,
+        0
+      ],
+      "mean_auc": 0.16780012144992526,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.1844765975336323,
+          "first_full": null,
+          "visited": 432
+        },
+        {
+          "seed": 1,
+          "auc": 0.14029918721973095,
+          "first_full": null,
+          "visited": 320
+        },
+        {
+          "seed": 2,
+          "auc": 0.17862457959641256,
+          "first_full": null,
+          "visited": 488
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.1,
+        0.001,
+        0
+      ],
+      "mean_auc": 0.17679769245142005,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.12370936098654707,
+          "first_full": null,
+          "visited": 337
+        },
+        {
+          "seed": 1,
+          "auc": 0.20340877242152466,
+          "first_full": null,
+          "visited": 634
+        },
+        {
+          "seed": 2,
+          "auc": 0.20327494394618836,
+          "first_full": null,
+          "visited": 493
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.1,
+        0.01,
+        0
+      ],
+      "mean_auc": 0.18593890134529148,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.18963845291479822,
+          "first_full": null,
+          "visited": 515
+        },
+        {
+          "seed": 1,
+          "auc": 0.2090723094170404,
+          "first_full": null,
+          "visited": 553
+        },
+        {
+          "seed": 2,
+          "auc": 0.15910594170403586,
+          "first_full": null,
+          "visited": 391
+        }
+      ]
+    },
+    {
+      "key": [
+        "batch_moments",
+        0.01,
+        1e-06,
+        0
+      ],
+      "mean_auc": 0.519104773916293,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.59730591367713,
+          "first_full": 72758,
+          "visited": 1784
+        },
+        {
+          "seed": 1,
+          "auc": 0.4938235706278027,
+          "first_full": 91851,
+          "visited": 1784
+        },
+        {
+          "seed": 2,
+          "auc": 0.4661848374439462,
+          "first_full": 87137,
+          "visited": 1784
+        }
+      ]
+    },
+    {
+      "key": [
+        "batch_moments",
+        0.03,
+        1e-05,
+        0
+      ],
+      "mean_auc": 0.17101153774289987,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.16092068385650227,
+          "first_full": null,
+          "visited": 387
+        },
+        {
+          "seed": 1,
+          "auc": 0.16539237668161433,
+          "first_full": null,
+          "visited": 385
+        },
+        {
+          "seed": 2,
+          "auc": 0.18672155269058296,
+          "first_full": null,
+          "visited": 526
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.01,
+        1e-07,
+        0
+      ],
+      "mean_auc": 0.5312703195067264,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.6010320908071749,
+          "first_full": 70188,
+          "visited": 1784
+        },
+        {
+          "seed": 1,
+          "auc": 0.6191248598654708,
+          "first_full": 65137,
+          "visited": 1784
+        },
+        {
+          "seed": 2,
+          "auc": 0.37365400784753366,
+          "first_full": 97758,
+          "visited": 1784
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.01,
+        3e-06,
+        0
+      ],
+      "mean_auc": 0.29316470478325857,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.5162198710762331,
+          "first_full": null,
+          "visited": 1646
+        },
+        {
+          "seed": 1,
+          "auc": 0.17184697309417038,
+          "first_full": null,
+          "visited": 419
+        },
+        {
+          "seed": 2,
+          "auc": 0.1914272701793722,
+          "first_full": null,
+          "visited": 494
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.03,
+        1e-07,
+        0
+      ],
+      "mean_auc": 0.43099659005979074,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.3122757847533632,
+          "first_full": null,
+          "visited": 1301
+        },
+        {
+          "seed": 1,
+          "auc": 0.6726170123318385,
+          "first_full": 55702,
+          "visited": 1784
+        },
+        {
+          "seed": 2,
+          "auc": 0.3080969730941704,
+          "first_full": null,
+          "visited": 1237
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.03,
+        3e-06,
+        0
+      ],
+      "mean_auc": 0.4117983931240658,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.4591683015695067,
+          "first_full": 96976,
+          "visited": 1784
+        },
+        {
+          "seed": 1,
+          "auc": 0.35364559977578475,
+          "first_full": null,
+          "visited": 1314
+        },
+        {
+          "seed": 2,
+          "auc": 0.42258127802690587,
+          "first_full": null,
+          "visited": 1755
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.03,
+        1e-05,
+        651
+      ],
+      "mean_auc": 0.3903412275784753,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.33927620515695067,
+          "first_full": null,
+          "visited": 1354
+        },
+        {
+          "seed": 1,
+          "auc": 0.48589475896860984,
+          "first_full": 94157,
+          "visited": 1784
+        },
+        {
+          "seed": 2,
+          "auc": 0.3458527186098655,
+          "first_full": null,
+          "visited": 1438
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.03,
+        0.0001,
+        651
+      ],
+      "mean_auc": 0.329507894245142,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.28332188901345295,
+          "first_full": null,
+          "visited": 798
+        },
+        {
+          "seed": 1,
+          "auc": 0.3985769338565022,
+          "first_full": null,
+          "visited": 1026
+        },
+        {
+          "seed": 2,
+          "auc": 0.3066248598654709,
+          "first_full": null,
+          "visited": 1084
+        }
+      ]
+    },
+    {
+      "key": [
+        "replay_moments",
+        0.03,
+        0.001,
+        651
+      ],
+      "mean_auc": 0.29251611547085193,
+      "seeds": [
+        {
+          "seed": 0,
+          "auc": 0.27983534192825105,
+          "first_full": null,
+          "visited": 746
+        },
+        {
+          "seed": 1,
+          "auc": 0.3513536995515694,
+          "first_full": null,
+          "visited": 867
+        },
+        {
+          "seed": 2,
+          "auc": 0.24635930493273542,
+          "first_full": null,
+          "visited": 831
+        }
+      ]
+    }
+  ]
+}

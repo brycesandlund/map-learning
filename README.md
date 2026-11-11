@@ -495,3 +495,9 @@ See [frontier sample-efficiency diagnostics](docs/frontier-efficiency.md) for re
 See [queue density and top-k expansion](docs/queue-density.md) for rank-band novelty densities, within-batch duplication, and equal-action comparisons of fixed top-k, latent-diverse batches, and sequential queue updates.
 
 See [learned-prior KL compression](docs/kl-bottleneck.md) for the β sweep, Gaussian versus mixture priors, delayed compression controls, nuisance-sensitivity diagnostics, and a three-seed exploration animation. The stochastic β=0 control is retained alongside the original deterministic baseline.
+
+See the [joint KL × repulsion sweep](docs/kl-repulsion.md) for the full grid, intermediate-coefficient follow-up, fresh-seed confirmation, collapse versus nuisance-separation diagnostics, and exploration animation.
+
+See [moment-fitted prior experiments](docs/moment-prior.md) for the analytical replay/batch Gaussian fits, a fresh β × repulsion sweep, delayed-compression tests, new-seed confirmation, and the full 100k-action animation. The fitted prior removed avoidable mismatch but did not improve exploration; the previous learned-prior setting remains preferred.
+
+See [KL mechanism ablations](docs/kl-mechanisms.md) for controlled noise × KL comparisons, shared-data queue tests, faster prior optimization, and fresh-seed confirmation. KL without sampled dynamics inputs retained the exploration gain; fixing prior lag alone did not improve it at the current coefficients. Includes all results and a full 100k-action animation.
