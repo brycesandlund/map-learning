@@ -1,0 +1,449 @@
+{
+  "note": "Only saved checkpoints and last batch of each 500-action training event are logged. First logged inactive hinge pair does not identify the very first such minibatch. As long as all sampled squared distances remain below both cutoffs, changing m only adds a constant to the repulsion loss, leaving its gradients identical.",
+  "runs": [
+    {
+      "method": "dynamics",
+      "seed": 60,
+      "checkpoints_exact": [
+        {
+          "actions": 0,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 5000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 25000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 50000,
+          "model": false,
+          "dynamics": false
+        },
+        {
+          "actions": 100000,
+          "model": false,
+          "dynamics": false
+        }
+      ],
+      "first_logged_norm_difference": 27000,
+      "first_logged_inactive_hinge_pair_base_changed": [
+        27500,
+        27000
+      ],
+      "first_different_transition": 27001
+    },
+    {
+      "method": "dynamics",
+      "seed": 61,
+      "checkpoints_exact": [
+        {
+          "actions": 0,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 5000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 25000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 50000,
+          "model": false,
+          "dynamics": false
+        },
+        {
+          "actions": 100000,
+          "model": false,
+          "dynamics": false
+        }
+      ],
+      "first_logged_norm_difference": 33000,
+      "first_logged_inactive_hinge_pair_base_changed": [
+        34000,
+        33000
+      ],
+      "first_different_transition": 33006
+    },
+    {
+      "method": "dynamics",
+      "seed": 62,
+      "checkpoints_exact": [
+        {
+          "actions": 0,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 5000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 25000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 50000,
+          "model": false,
+          "dynamics": false
+        },
+        {
+          "actions": 100000,
+          "model": false,
+          "dynamics": false
+        }
+      ],
+      "first_logged_norm_difference": 32000,
+      "first_logged_inactive_hinge_pair_base_changed": [
+        32500,
+        32000
+      ],
+      "first_different_transition": 32001
+    },
+    {
+      "method": "dynamics",
+      "seed": 63,
+      "checkpoints_exact": [
+        {
+          "actions": 0,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 5000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 25000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 50000,
+          "model": false,
+          "dynamics": false
+        },
+        {
+          "actions": 100000,
+          "model": false,
+          "dynamics": false
+        }
+      ],
+      "first_logged_norm_difference": 34000,
+      "first_logged_inactive_hinge_pair_base_changed": [
+        35000,
+        34000
+      ],
+      "first_different_transition": 34011
+    },
+    {
+      "method": "dynamics",
+      "seed": 64,
+      "checkpoints_exact": [
+        {
+          "actions": 0,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 5000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 25000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 50000,
+          "model": false,
+          "dynamics": false
+        },
+        {
+          "actions": 100000,
+          "model": false,
+          "dynamics": false
+        }
+      ],
+      "first_logged_norm_difference": 27500,
+      "first_logged_inactive_hinge_pair_base_changed": [
+        28500,
+        27500
+      ],
+      "first_different_transition": 27511
+    },
+    {
+      "method": "dynamics",
+      "seed": 65,
+      "checkpoints_exact": [
+        {
+          "actions": 0,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 5000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 25000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 50000,
+          "model": false,
+          "dynamics": false
+        },
+        {
+          "actions": 100000,
+          "model": false,
+          "dynamics": false
+        }
+      ],
+      "first_logged_norm_difference": 29000,
+      "first_logged_inactive_hinge_pair_base_changed": [
+        30000,
+        29000
+      ],
+      "first_different_transition": 29001
+    },
+    {
+      "method": "adjacency",
+      "seed": 60,
+      "checkpoints_exact": [
+        {
+          "actions": 0,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 5000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 25000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 50000,
+          "model": false,
+          "dynamics": false
+        },
+        {
+          "actions": 100000,
+          "model": false,
+          "dynamics": false
+        }
+      ],
+      "first_logged_norm_difference": 32000,
+      "first_logged_inactive_hinge_pair_base_changed": [
+        33000,
+        32000
+      ],
+      "first_different_transition": 32001
+    },
+    {
+      "method": "adjacency",
+      "seed": 61,
+      "checkpoints_exact": [
+        {
+          "actions": 0,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 5000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 25000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 50000,
+          "model": false,
+          "dynamics": false
+        },
+        {
+          "actions": 100000,
+          "model": false,
+          "dynamics": false
+        }
+      ],
+      "first_logged_norm_difference": 34000,
+      "first_logged_inactive_hinge_pair_base_changed": [
+        35000,
+        34000
+      ],
+      "first_different_transition": 34001
+    },
+    {
+      "method": "adjacency",
+      "seed": 62,
+      "checkpoints_exact": [
+        {
+          "actions": 0,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 5000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 25000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 50000,
+          "model": false,
+          "dynamics": false
+        },
+        {
+          "actions": 100000,
+          "model": false,
+          "dynamics": false
+        }
+      ],
+      "first_logged_norm_difference": 35000,
+      "first_logged_inactive_hinge_pair_base_changed": [
+        35500,
+        35000
+      ],
+      "first_different_transition": 35001
+    },
+    {
+      "method": "adjacency",
+      "seed": 63,
+      "checkpoints_exact": [
+        {
+          "actions": 0,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 5000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 25000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 50000,
+          "model": false,
+          "dynamics": false
+        },
+        {
+          "actions": 100000,
+          "model": false,
+          "dynamics": false
+        }
+      ],
+      "first_logged_norm_difference": 35500,
+      "first_logged_inactive_hinge_pair_base_changed": [
+        36500,
+        35500
+      ],
+      "first_different_transition": 35506
+    },
+    {
+      "method": "adjacency",
+      "seed": 64,
+      "checkpoints_exact": [
+        {
+          "actions": 0,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 5000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 25000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 50000,
+          "model": false,
+          "dynamics": false
+        },
+        {
+          "actions": 100000,
+          "model": false,
+          "dynamics": false
+        }
+      ],
+      "first_logged_norm_difference": 34000,
+      "first_logged_inactive_hinge_pair_base_changed": [
+        34500,
+        34000
+      ],
+      "first_different_transition": 34001
+    },
+    {
+      "method": "adjacency",
+      "seed": 65,
+      "checkpoints_exact": [
+        {
+          "actions": 0,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 5000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 25000,
+          "model": true,
+          "dynamics": true
+        },
+        {
+          "actions": 50000,
+          "model": false,
+          "dynamics": false
+        },
+        {
+          "actions": 100000,
+          "model": false,
+          "dynamics": false
+        }
+      ],
+      "first_logged_norm_difference": 34000,
+      "first_logged_inactive_hinge_pair_base_changed": [
+        35000,
+        34000
+      ],
+      "first_different_transition": 34011
+    }
+  ]
+}

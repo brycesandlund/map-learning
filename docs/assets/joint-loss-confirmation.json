@@ -1,0 +1,710 @@
+{
+  "groups": [
+    {
+      "split": 0.25,
+      "method": "dynamics",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "mean_final": 1.0,
+      "final": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean_fine": 0.9877025462962963,
+      "success95": 6,
+      "times95": [
+        51543,
+        47447,
+        75141,
+        58153,
+        70601,
+        53236
+      ],
+      "mean_restricted95": 59353.5,
+      "mean_auc": 0.5876526331018518
+    },
+    {
+      "split": 0.25,
+      "method": "adjacency",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "mean_final": 0.9999276620370371,
+      "final": [
+        1.0,
+        1.0,
+        0.9995659722222222,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean_fine": 0.9867802372685185,
+      "success95": 6,
+      "times95": [
+        62047,
+        56647,
+        82566,
+        60389,
+        81849,
+        59033
+      ],
+      "mean_restricted95": 67088.5,
+      "mean_auc": 0.5460483579282407
+    },
+    {
+      "split": 0.25,
+      "method": "mix",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "mean_final": 0.9999276620370371,
+      "final": [
+        1.0,
+        1.0,
+        0.9995659722222222,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean_fine": 0.9875578703703703,
+      "success95": 6,
+      "times95": [
+        60143,
+        64393,
+        74913,
+        59852,
+        79653,
+        60132
+      ],
+      "mean_restricted95": 66514.33333333333,
+      "mean_auc": 0.5477253327546296
+    },
+    {
+      "split": 0.25,
+      "method": "tuned-hybrid",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "mean_final": 1.0,
+      "final": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean_fine": 0.9929289641203703,
+      "success95": 6,
+      "times95": [
+        66504,
+        57909,
+        61008,
+        46167,
+        59531,
+        57872
+      ],
+      "mean_restricted95": 58165.166666666664,
+      "mean_auc": 0.5845851417824075
+    },
+    {
+      "split": 0.25,
+      "method": "tuned-adjacency",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "mean_final": 1.0,
+      "final": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean_fine": 0.9948820891203706,
+      "success95": 6,
+      "times95": [
+        51186,
+        48054,
+        59528,
+        49138,
+        57357,
+        51163
+      ],
+      "mean_restricted95": 52737.666666666664,
+      "mean_auc": 0.6284092881944444
+    },
+    {
+      "split": 0.25,
+      "method": "matched-adjacency",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "mean_final": 1.0,
+      "final": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean_fine": 0.9942129629629631,
+      "success95": 6,
+      "times95": [
+        53554,
+        54127,
+        55991,
+        47014,
+        59078,
+        48146
+      ],
+      "mean_restricted95": 52985.0,
+      "mean_auc": 0.6226763237847223
+    },
+    {
+      "split": 0.25,
+      "method": "matched-dynamics",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "mean_final": 1.0,
+      "final": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean_fine": 0.9915545428240741,
+      "success95": 6,
+      "times95": [
+        48112,
+        43188,
+        60742,
+        51261,
+        56892,
+        48102
+      ],
+      "mean_restricted95": 51382.833333333336,
+      "mean_auc": 0.6392654079861112
+    },
+    {
+      "split": 0.125,
+      "method": "dynamics",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "mean_final": 0.5021701388888888,
+      "final": [
+        0.33984375,
+        0.2404513888888889,
+        0.5863715277777778,
+        0.6779513888888888,
+        0.5412326388888888,
+        0.6271701388888888
+      ],
+      "mean_fine": 0.4742838541666667,
+      "success95": 0,
+      "times95": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "mean_restricted95": 100000.0,
+      "mean_auc": 0.14963957609953707
+    },
+    {
+      "split": 0.125,
+      "method": "adjacency",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "mean_final": 0.4790219907407407,
+      "final": [
+        0.5186631944444444,
+        0.7391493055555556,
+        0.47265625,
+        0.640625,
+        0.3641493055555556,
+        0.1388888888888889
+      ],
+      "mean_fine": 0.45576533564814814,
+      "success95": 0,
+      "times95": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "mean_restricted95": 100000.0,
+      "mean_auc": 0.14627748842592594
+    },
+    {
+      "split": 0.125,
+      "method": "mix",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "mean_final": 0.6770833333333334,
+      "final": [
+        0.6206597222222222,
+        0.7903645833333334,
+        0.5125868055555556,
+        0.6484375,
+        0.7738715277777778,
+        0.7165798611111112
+      ],
+      "mean_fine": 0.6498842592592592,
+      "success95": 0,
+      "times95": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "mean_restricted95": 100000.0,
+      "mean_auc": 0.20195529513888888
+    },
+    {
+      "split": 0.125,
+      "method": "tuned-hybrid",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "mean_final": 0.6280381944444444,
+      "final": [
+        0.6740451388888888,
+        0.7530381944444444,
+        0.4730902777777778,
+        0.7465277777777778,
+        0.6236979166666666,
+        0.4978298611111111
+      ],
+      "mean_fine": 0.6055953414351852,
+      "success95": 0,
+      "times95": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "mean_restricted95": 100000.0,
+      "mean_auc": 0.1831376591435185
+    },
+    {
+      "split": 0.125,
+      "method": "tuned-adjacency",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "mean_final": 0.7267071759259259,
+      "final": [
+        0.7821180555555556,
+        0.8450520833333334,
+        0.796875,
+        0.7699652777777778,
+        0.5985243055555556,
+        0.5677083333333334
+      ],
+      "mean_fine": 0.6967411747685185,
+      "success95": 0,
+      "times95": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "mean_restricted95": 100000.0,
+      "mean_auc": 0.2254320384837963
+    },
+    {
+      "split": 0.125,
+      "method": "matched-adjacency",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "mean_final": 0.7404513888888888,
+      "final": [
+        0.7486979166666666,
+        0.8888888888888888,
+        0.7174479166666666,
+        0.8598090277777778,
+        0.6727430555555556,
+        0.5551215277777778
+      ],
+      "mean_fine": 0.7161096643518517,
+      "success95": 0,
+      "times95": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "mean_restricted95": 100000.0,
+      "mean_auc": 0.2332749204282407
+    },
+    {
+      "split": 0.125,
+      "method": "matched-dynamics",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "mean_final": 0.6702112268518517,
+      "final": [
+        0.6297743055555556,
+        0.63671875,
+        0.6540798611111112,
+        0.7365451388888888,
+        0.6436631944444444,
+        0.7204861111111112
+      ],
+      "mean_fine": 0.6405888310185186,
+      "success95": 0,
+      "times95": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "mean_restricted95": 100000.0,
+      "mean_auc": 0.20950068721064816
+    }
+  ],
+  "paired": [
+    {
+      "split": 0.25,
+      "method": "dynamics",
+      "differences": [
+        -10504,
+        -9200,
+        -7425,
+        -2236,
+        -11248,
+        -5797
+      ],
+      "mean": -7735.0,
+      "exploratory_paired_bootstrap_95": [
+        -9998.166666666666,
+        -5152.666666666667
+      ],
+      "units": "actions",
+      "note": "No multiple-comparison correction; seeds within one layout, not independent environments."
+    },
+    {
+      "split": 0.25,
+      "method": "mix",
+      "differences": [
+        -1904,
+        7746,
+        -7653,
+        -537,
+        -2196,
+        1099
+      ],
+      "mean": -574.1666666666666,
+      "exploratory_paired_bootstrap_95": [
+        -4050.1666666666665,
+        3372.8333333333335
+      ],
+      "units": "actions",
+      "note": "No multiple-comparison correction; seeds within one layout, not independent environments."
+    },
+    {
+      "split": 0.25,
+      "method": "tuned-hybrid",
+      "differences": [
+        4457,
+        1262,
+        -21558,
+        -14222,
+        -22318,
+        -1161
+      ],
+      "mean": -8923.333333333334,
+      "exploratory_paired_bootstrap_95": [
+        -17475.5,
+        -657.5
+      ],
+      "units": "actions",
+      "note": "No multiple-comparison correction; seeds within one layout, not independent environments."
+    },
+    {
+      "split": 0.25,
+      "method": "tuned-adjacency",
+      "differences": [
+        -10861,
+        -8593,
+        -23038,
+        -11251,
+        -24492,
+        -7870
+      ],
+      "mean": -14350.833333333334,
+      "exploratory_paired_bootstrap_95": [
+        -19593.666666666668,
+        -9238.0
+      ],
+      "units": "actions",
+      "note": "No multiple-comparison correction; seeds within one layout, not independent environments."
+    },
+    {
+      "split": 0.25,
+      "method": "matched-adjacency",
+      "differences": [
+        -8493,
+        -2520,
+        -26575,
+        -13375,
+        -22771,
+        -10887
+      ],
+      "mean": -14103.5,
+      "exploratory_paired_bootstrap_95": [
+        -20728.90833333333,
+        -7714.666666666667
+      ],
+      "units": "actions",
+      "note": "No multiple-comparison correction; seeds within one layout, not independent environments."
+    },
+    {
+      "split": 0.25,
+      "method": "matched-dynamics",
+      "differences": [
+        -13935,
+        -13459,
+        -21824,
+        -9128,
+        -24957,
+        -10931
+      ],
+      "mean": -15705.666666666666,
+      "exploratory_paired_bootstrap_95": [
+        -20260.166666666668,
+        -11372.833333333334
+      ],
+      "units": "actions",
+      "note": "No multiple-comparison correction; seeds within one layout, not independent environments."
+    },
+    {
+      "split": 0.125,
+      "method": "dynamics",
+      "differences": [
+        -17.881944444444443,
+        -49.86979166666667,
+        11.371527777777779,
+        3.732638888888884,
+        17.708333333333325,
+        48.82812499999999
+      ],
+      "mean": 2.314814814814811,
+      "exploratory_paired_bootstrap_95": [
+        -23.068576388888896,
+        26.28038194444444
+      ],
+      "units": "percentage points",
+      "note": "No multiple-comparison correction; seeds within one layout, not independent environments."
+    },
+    {
+      "split": 0.125,
+      "method": "mix",
+      "differences": [
+        10.199652777777779,
+        5.121527777777779,
+        3.993055555555558,
+        0.78125,
+        40.97222222222222,
+        57.76909722222223
+      ],
+      "mean": 19.806134259259263,
+      "exploratory_paired_bootstrap_95": [
+        4.144965277777779,
+        38.07870370370371
+      ],
+      "units": "percentage points",
+      "note": "No multiple-comparison correction; seeds within one layout, not independent environments."
+    },
+    {
+      "split": 0.125,
+      "method": "tuned-hybrid",
+      "differences": [
+        15.538194444444443,
+        1.388888888888884,
+        0.04340277777777901,
+        10.590277777777779,
+        25.954861111111104,
+        35.89409722222222
+      ],
+      "mean": 14.901620370370367,
+      "exploratory_paired_bootstrap_95": [
+        5.056423611111108,
+        25.09403935185185
+      ],
+      "units": "percentage points",
+      "note": "No multiple-comparison correction; seeds within one layout, not independent environments."
+    },
+    {
+      "split": 0.125,
+      "method": "tuned-adjacency",
+      "differences": [
+        26.345486111111114,
+        10.590277777777779,
+        32.421875,
+        12.934027777777779,
+        23.4375,
+        42.88194444444445
+      ],
+      "mean": 24.76851851851852,
+      "exploratory_paired_bootstrap_95": [
+        16.138599537037038,
+        33.64438657407408
+      ],
+      "units": "percentage points",
+      "note": "No multiple-comparison correction; seeds within one layout, not independent environments."
+    },
+    {
+      "split": 0.125,
+      "method": "matched-adjacency",
+      "differences": [
+        23.00347222222222,
+        14.973958333333325,
+        24.479166666666664,
+        21.91840277777778,
+        30.859375,
+        41.62326388888889
+      ],
+      "mean": 26.142939814814813,
+      "exploratory_paired_bootstrap_95": [
+        20.1171875,
+        33.260995370370374
+      ],
+      "units": "percentage points",
+      "note": "No multiple-comparison correction; seeds within one layout, not independent environments."
+    },
+    {
+      "split": 0.125,
+      "method": "matched-dynamics",
+      "differences": [
+        11.111111111111116,
+        -10.243055555555557,
+        18.142361111111114,
+        9.592013888888884,
+        27.951388888888886,
+        58.15972222222223
+      ],
+      "mean": 19.11892361111111,
+      "exploratory_paired_bootstrap_95": [
+        3.4866898148148144,
+        37.18894675925926
+      ],
+      "units": "percentage points",
+      "note": "No multiple-comparison correction; seeds within one layout, not independent environments."
+    }
+  ]
+}

@@ -37,7 +37,7 @@ def analyze(root):
                 occupied=len(np.unique(np.floor(endpoints*k).astype(int),axis=0))
                 assert np.isclose(occupied/(env.config.size*k)**2,r[f'coverage_k{k}']),name
             r['action_stream_sha256']=hashlib.sha256(replay['actions'].tobytes()).hexdigest()
-            if arm['objective'] in {'dynamics','adjacency'}:
+            if arm['objective'] in {'dynamics','hybrid','adjacency'}:
                 updates=sum((i*5000+255)//256 for i in range(1,manifest['blocks']+1))
                 samples=sum(i*5000 for i in range(1,manifest['blocks']+1))
                 updates+=r.get('extra_updates',0)

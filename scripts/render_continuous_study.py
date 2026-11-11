@@ -16,8 +16,9 @@ def main():
     p.add_argument('--animate-root',type=Path);p.add_argument('--seed',type=int,default=30)
     p.add_argument('--animation-runs',type=Path,nargs='+')
     p.add_argument('--animation-labels',nargs='+')
+    p.add_argument('--animation-only',action='store_true')
     a=p.parse_args();reports=json.loads(a.results.read_text());a.out.parent.mkdir(parents=True,exist_ok=True)
-    colors={'dynamics':'#386cb0','adjacency':'#ef8a25','oracle-xy':'#269378','random-queue':'#949494'}
+    colors={'dynamics':'#386cb0','adjacency':'#ef8a25','hybrid':'#9063ac','oracle-xy':'#269378','random-queue':'#949494'}
     fig,axes=plt.subplots(2,2,figsize=(11,8))
     base=reports[0]
     for name in [arm['name'] for arm in base['manifest']['arms']]:
@@ -29,7 +30,9 @@ def main():
             ax.fill_between(x,curves.min(0),curves.max(0),alpha=.14,color=colors.get(name))
             ax.set(title=label,xlabel='Executed actions (thousands)',ylabel='Endpoint occupancy (%)',ylim=(0,102));ax.grid(alpha=.2)
     axes[0,0].legend(fontsize=9);fig.suptitle('Continuous noisy maze: mean and seed range (initial 3 seeds)')
-    fig.tight_layout();fig.savefig(str(a.out)+'.png',dpi=160);plt.close(fig)
+    fig.tight_layout()
+    if not a.animation_only: fig.savefig(str(a.out)+'.png',dpi=160)
+    plt.close(fig)
     if not a.animate_root and not a.animation_runs:return
     names=a.animation_labels or ['dynamics','adjacency','oracle-xy','random-queue']
     paths=a.animation_runs or [a.animate_root/f'{n}-seed{a.seed}' for n in names]
@@ -39,20 +42,21 @@ def main():
         cfg=load_config(path/'config.json');env=Maze(cfg.maze);env.draw(ax)
         replay=np.load(path/'replay.npz');frames=np.load(path/'frames.npz')
         data.append((replay['next_positions'],frames))
-        scatter=ax.scatter([],[],s=1.1,c=colors.get(name,'#386cb0'),alpha=.45,zorder=2)
+        scatter=ax.scatter([],[],s=1.1,c=colors.get(name,colors.get(name.split()[0].lower(),'#386cb0')),alpha=.45,zorder=2)
         current=ax.scatter([],[],s=30,c='#cc2525',zorder=5)
         tally=ax.text(.5,-.1,'',transform=ax.transAxes,ha='center',fontsize=9)
         ax.set_title(name);artists.append((scatter,current,tally))
     title=fig.suptitle('');fig.text(.5,.02,'Sample of actual continuous endpoints • Red: latest expansion • Restores are not drawn as travel',ha='center',fontsize=9)
     fig.tight_layout(rect=[0,.09,1,.92])
     def update(step):
-        title.set_text(f'Continuous coordinates + observation noise • Seed {a.seed} • {step:,} actions')
+        title.set_text(f'Continuous maze • Max move {cfg.maze.step_size:g} • Seed {a.seed} • {step:,} actions')
         for (points,frames),(scatter,current,tally) in zip(data,artists):
             # Deterministic index subsampling affects display only, never metrics.
-            take=np.linspace(0,step-1,min(step,12000),dtype=int)
+            display_indices=np.linspace(0,len(points)-1,min(len(points),12000),dtype=int)
+            take=display_indices[display_indices<step]
             scatter.set_offsets(points[take]);i=np.searchsorted(frames['interactions'],step,side='right')-1
             current.set_offsets(frames['position'][i:i+1])
-            covered=frames['occupied_k4'][i].mean();tally.set_text(f'0.25-bin occupancy: {covered:.1%}')
+            mask=frames['occupied_k4'][i];tally.set_text(f'0.25 bins: {mask.sum():,}/{mask.size:,} ({mask.mean():.2%})')
     limit=min(len(d[0]) for d in data);stride=max(1000,limit//100)
     steps=list(range(stride,limit+1,stride))
     animation=FuncAnimation(fig,update,frames=steps,interval=100)

@@ -18,7 +18,6 @@ class MazeConfig:
 
 @dataclass
 class ModelConfig:
-    continuous_action_dim: int = 0  # 0: discrete one-hot controls; 2: actual 2D controls
     latent_dim: int = 32
     hidden_dim: int = 128
     hidden_layers: int = 2  # coordinate encoder and dynamics MLPs
@@ -31,6 +30,7 @@ class ModelConfig:
     initial_variance: float = 0.01
     latent_bound: float = 1.0
     latent_activation: str = "tanh"  # probabilistic encoder: tanh or identity
+    continuous_action_dim: int = 0  # 0: discrete one-hot controls; 2: actual 2D controls
 
 
 @dataclass
@@ -55,6 +55,8 @@ class TrainConfig:
     repulsion_weight: float = 10.0
     repulsion_margin: float = 1.0  # Euclidean margin, squared in the hinge
     latent_l2: float = 0.0  # deterministic dynamics: E ||f(o)||², summed over coordinates
+    dynamics_weight: float = 1.0
+    adjacency_weight: float = 0.0  # optional joint adjacent squared distance, summed over coordinates
 
 
 @dataclass
@@ -116,6 +118,9 @@ class ExperimentConfig:
         assert self.model.latent_activation in {"tanh", "identity"}
         assert self.train.repulsion_weight >= 0 and self.train.repulsion_margin > 0
         assert math.isfinite(self.train.latent_l2) and self.train.latent_l2 >= 0
+        assert math.isfinite(self.train.dynamics_weight) and self.train.dynamics_weight > 0
+        assert math.isfinite(self.train.adjacency_weight) and self.train.adjacency_weight >= 0
+        assert (self.train.dynamics_weight == 1 and self.train.adjacency_weight == 0) or self.train.loss == 'dynamics'
         assert self.train.latent_l2 == 0 or self.train.loss == "dynamics"
         if self.train.loss in {"probabilistic", "dynamics"}:
             assert self.model.codebook_size == 0, "Joint dynamics training uses continuous latents"

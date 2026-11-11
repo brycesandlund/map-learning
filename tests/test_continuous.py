@@ -1,7 +1,7 @@
 import numpy as np
 import pytest
 import torch
-from map_learning.config import load_config, MazeConfig
+from map_learning.config import load_config, MazeConfig, ModelConfig
 from map_learning.continuous import sample_controls, SpatialCoverage, within_cell_fill
 from map_learning.distance_learning import DistanceTrainer
 from map_learning.maze import Maze
@@ -18,6 +18,15 @@ def test_controls_are_bounded_continuous_and_reproducible():
         assert not np.allclose(controls*4,np.rint(controls*4))
         assert np.array_equal(controls[:5],sample_controls(np.random.default_rng(9),mode))
         assert np.array_equal(controls[4::5],np.zeros((100,2)))
+
+
+def test_legacy_model_arguments_and_rejected_actions_do_not_corrupt_replay():
+    cfg=ModelConfig(8,16)
+    assert cfg.latent_dim==8 and cfg.hidden_dim==16 and cfg.continuous_action_dim==0
+    replay=Replay()
+    for bad in ([1,2,3],[float('nan'),0]):
+        with pytest.raises(ValueError):replay.add([0],bad,[1],0,[0,0],[0,0])
+    assert len(replay)==0 and len(replay.observations)==0
 
 
 def test_continuous_swept_collision_and_free_motion():

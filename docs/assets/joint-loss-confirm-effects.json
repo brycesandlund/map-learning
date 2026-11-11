@@ -1,0 +1,605 @@
+{
+  "caveat": "Exploratory seed bootstrap, conditional on each layout; no multiple-comparison correction. Positive coverage differences and negative action differences favor candidate. Repeated seeds across layouts are not independent environments.",
+  "comparisons": [
+    {
+      "layout": 7,
+      "step": 0.125,
+      "candidate": "mix",
+      "reference": "adjacency",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        10.199652777777779,
+        5.121527777777779,
+        3.993055555555558,
+        0.78125,
+        40.97222222222222,
+        57.76909722222223
+      ],
+      "mean_difference": 19.806134259259263,
+      "wins": 6,
+      "bootstrap_95": [
+        4.2100694444444455,
+        38.26678240740741
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 7,
+      "step": 0.125,
+      "candidate": "mix",
+      "reference": "dynamics",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        28.08159722222222,
+        54.99131944444444,
+        -7.378472222222221,
+        -2.951388888888884,
+        23.263888888888896,
+        8.940972222222232
+      ],
+      "mean_difference": 17.491319444444446,
+      "wins": 4,
+      "bootstrap_95": [
+        1.9241898148148195,
+        35.445601851851855
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 7,
+      "step": 0.125,
+      "candidate": "tuned-hybrid",
+      "reference": "adjacency",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        15.538194444444443,
+        1.388888888888884,
+        0.04340277777777901,
+        10.590277777777779,
+        25.954861111111104,
+        35.89409722222222
+      ],
+      "mean_difference": 14.901620370370367,
+      "wins": 6,
+      "bootstrap_95": [
+        5.034722222222219,
+        25.09403935185185
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 7,
+      "step": 0.125,
+      "candidate": "tuned-hybrid",
+      "reference": "dynamics",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        33.420138888888886,
+        51.25868055555556,
+        -11.328125,
+        6.857638888888895,
+        8.246527777777779,
+        -12.934027777777773
+      ],
+      "mean_difference": 12.586805555555557,
+      "wins": 4,
+      "bootstrap_95": [
+        -5.302372685185183,
+        31.908275462962962
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 7,
+      "step": 0.125,
+      "candidate": "tuned-hybrid",
+      "reference": "matched-adjacency",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        -7.465277777777779,
+        -13.585069444444443,
+        -24.435763888888886,
+        -11.328125,
+        -4.904513888888895,
+        -5.729166666666669
+      ],
+      "mean_difference": -11.241319444444445,
+      "wins": 0,
+      "bootstrap_95": [
+        -17.1875,
+        -6.6767939814814845
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 7,
+      "step": 0.125,
+      "candidate": "tuned-hybrid",
+      "reference": "matched-dynamics",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        4.427083333333326,
+        11.631944444444443,
+        -18.098958333333336,
+        0.9982638888888951,
+        -1.996527777777779,
+        -22.265625000000007
+      ],
+      "mean_difference": -4.217303240740743,
+      "wins": 3,
+      "bootstrap_95": [
+        -13.838252314814818,
+        5.056423611111106
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 7,
+      "step": 0.125,
+      "candidate": "tuned-hybrid",
+      "reference": "tuned-adjacency",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        -10.807291666666675,
+        -9.201388888888895,
+        -32.37847222222222,
+        -2.34375,
+        2.517361111111105,
+        -6.987847222222227
+      ],
+      "mean_difference": -9.866898148148152,
+      "wins": 1,
+      "bootstrap_95": [
+        -19.646990740740744,
+        -2.604166666666672
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 7,
+      "step": 0.125,
+      "candidate": "tuned-adjacency",
+      "reference": "adjacency",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        26.345486111111114,
+        10.590277777777779,
+        32.421875,
+        12.934027777777779,
+        23.4375,
+        42.88194444444445
+      ],
+      "mean_difference": 24.76851851851852,
+      "wins": 6,
+      "bootstrap_95": [
+        16.23263888888889,
+        33.64438657407408
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 7,
+      "step": 0.125,
+      "candidate": "matched-adjacency",
+      "reference": "adjacency",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        23.00347222222222,
+        14.973958333333325,
+        24.479166666666664,
+        21.91840277777778,
+        30.859375,
+        41.62326388888889
+      ],
+      "mean_difference": 26.142939814814813,
+      "wins": 6,
+      "bootstrap_95": [
+        20.030381944444446,
+        33.26406973379603
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 7,
+      "step": 0.125,
+      "candidate": "matched-dynamics",
+      "reference": "dynamics",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        28.993055555555557,
+        39.62673611111111,
+        6.7708333333333375,
+        5.859375,
+        10.243055555555557,
+        9.331597222222232
+      ],
+      "mean_difference": 16.804108796296298,
+      "wins": 6,
+      "bootstrap_95": [
+        7.6244212962963,
+        27.75607638888889
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 7,
+      "step": 0.25,
+      "candidate": "mix",
+      "reference": "adjacency",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        -1904,
+        7746,
+        -7653,
+        -537,
+        -2196,
+        1099
+      ],
+      "mean_difference": -574.1666666666666,
+      "wins": 4,
+      "bootstrap_95": [
+        -4050.1666666666665,
+        3372.8333333333335
+      ],
+      "units": "actions to95 (capped100k)"
+    },
+    {
+      "layout": 7,
+      "step": 0.25,
+      "candidate": "mix",
+      "reference": "dynamics",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        8600,
+        16946,
+        -228,
+        1699,
+        9052,
+        6896
+      ],
+      "mean_difference": 7160.833333333333,
+      "wins": 1,
+      "bootstrap_95": [
+        2849.1666666666665,
+        11608.0
+      ],
+      "units": "actions to95 (capped100k)"
+    },
+    {
+      "layout": 7,
+      "step": 0.25,
+      "candidate": "tuned-hybrid",
+      "reference": "adjacency",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        4457,
+        1262,
+        -21558,
+        -14222,
+        -22318,
+        -1161
+      ],
+      "mean_difference": -8923.333333333334,
+      "wins": 4,
+      "bootstrap_95": [
+        -17475.5,
+        -528.8333333333334
+      ],
+      "units": "actions to95 (capped100k)"
+    },
+    {
+      "layout": 7,
+      "step": 0.25,
+      "candidate": "tuned-hybrid",
+      "reference": "dynamics",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        14961,
+        10462,
+        -14133,
+        -11986,
+        -11070,
+        4636
+      ],
+      "mean_difference": -1188.3333333333333,
+      "wins": 3,
+      "bootstrap_95": [
+        -9778.666666666666,
+        8151.833333333333
+      ],
+      "units": "actions to95 (capped100k)"
+    },
+    {
+      "layout": 7,
+      "step": 0.25,
+      "candidate": "tuned-hybrid",
+      "reference": "matched-adjacency",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        12950,
+        3782,
+        5017,
+        -847,
+        453,
+        9726
+      ],
+      "mean_difference": 5180.166666666667,
+      "wins": 1,
+      "bootstrap_95": [
+        1449.9000000000024,
+        9231.0
+      ],
+      "units": "actions to95 (capped100k)"
+    },
+    {
+      "layout": 7,
+      "step": 0.25,
+      "candidate": "tuned-hybrid",
+      "reference": "matched-dynamics",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        18392,
+        14721,
+        266,
+        -5094,
+        2639,
+        9770
+      ],
+      "mean_difference": 6782.333333333333,
+      "wins": 1,
+      "bootstrap_95": [
+        163.66666666666666,
+        13322.166666666666
+      ],
+      "units": "actions to95 (capped100k)"
+    },
+    {
+      "layout": 7,
+      "step": 0.25,
+      "candidate": "tuned-hybrid",
+      "reference": "tuned-adjacency",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        15318,
+        9855,
+        1480,
+        -2971,
+        2174,
+        6709
+      ],
+      "mean_difference": 5427.5,
+      "wins": 1,
+      "bootstrap_95": [
+        881.6666666666666,
+        10257.666666666666
+      ],
+      "units": "actions to95 (capped100k)"
+    },
+    {
+      "layout": 7,
+      "step": 0.25,
+      "candidate": "tuned-adjacency",
+      "reference": "adjacency",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        -10861,
+        -8593,
+        -23038,
+        -11251,
+        -24492,
+        -7870
+      ],
+      "mean_difference": -14350.833333333334,
+      "wins": 6,
+      "bootstrap_95": [
+        -19635.333333333332,
+        -9238.0
+      ],
+      "units": "actions to95 (capped100k)"
+    },
+    {
+      "layout": 7,
+      "step": 0.25,
+      "candidate": "matched-adjacency",
+      "reference": "adjacency",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        -8493,
+        -2520,
+        -26575,
+        -13375,
+        -22771,
+        -10887
+      ],
+      "mean_difference": -14103.5,
+      "wins": 6,
+      "bootstrap_95": [
+        -20727.333333333332,
+        -7714.666666666667
+      ],
+      "units": "actions to95 (capped100k)"
+    },
+    {
+      "layout": 7,
+      "step": 0.25,
+      "candidate": "matched-dynamics",
+      "reference": "dynamics",
+      "n": 6,
+      "seeds": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ],
+      "differences": [
+        -3431,
+        -4259,
+        -14399,
+        -6892,
+        -13709,
+        -5134
+      ],
+      "mean_difference": -7970.666666666667,
+      "wins": 6,
+      "bootstrap_95": [
+        -11488.666666666666,
+        -4575.5
+      ],
+      "units": "actions to95 (capped100k)"
+    }
+  ]
+}

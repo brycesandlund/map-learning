@@ -1,0 +1,389 @@
+{
+  "caveat": "Exploratory seed bootstrap, conditional on each layout; no multiple-comparison correction. Positive coverage differences and negative action differences favor candidate. Repeated seeds across layouts are not independent environments.",
+  "comparisons": [
+    {
+      "layout": 13,
+      "step": 0.125,
+      "candidate": "tuned-hybrid",
+      "reference": "adjacency",
+      "n": 3,
+      "seeds": [
+        66,
+        67,
+        68
+      ],
+      "differences": [
+        -4.513888888888895,
+        9.244791666666668,
+        5.078125
+      ],
+      "mean_difference": 3.2696759259259243,
+      "wins": 2,
+      "bootstrap_95": [
+        -4.513888888888895,
+        9.244791666666668
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 13,
+      "step": 0.125,
+      "candidate": "tuned-hybrid",
+      "reference": "dynamics",
+      "n": 3,
+      "seeds": [
+        66,
+        67,
+        68
+      ],
+      "differences": [
+        11.545138888888884,
+        5.946180555555558,
+        26.085069444444443
+      ],
+      "mean_difference": 14.525462962962962,
+      "wins": 3,
+      "bootstrap_95": [
+        5.946180555555558,
+        26.085069444444443
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 13,
+      "step": 0.125,
+      "candidate": "tuned-hybrid",
+      "reference": "matched-adjacency",
+      "n": 3,
+      "seeds": [
+        66,
+        67,
+        68
+      ],
+      "differences": [
+        -10.15625,
+        -4.7743055555555465,
+        -6.553819444444442
+      ],
+      "mean_difference": -7.1614583333333295,
+      "wins": 0,
+      "bootstrap_95": [
+        -10.15625,
+        -4.7743055555555465
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 13,
+      "step": 0.125,
+      "candidate": "tuned-hybrid",
+      "reference": "matched-dynamics",
+      "n": 3,
+      "seeds": [
+        66,
+        67,
+        68
+      ],
+      "differences": [
+        1.736111111111105,
+        -4.340277777777779,
+        2.821180555555558
+      ],
+      "mean_difference": 0.07233796296296147,
+      "wins": 2,
+      "bootstrap_95": [
+        -4.340277777777779,
+        2.8211805555555585
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 13,
+      "step": 0.125,
+      "candidate": "tuned-hybrid",
+      "reference": "tuned-adjacency",
+      "n": 3,
+      "seeds": [
+        66,
+        67,
+        68
+      ],
+      "differences": [
+        1.475694444444442,
+        -4.296875,
+        8.550347222222221
+      ],
+      "mean_difference": 1.9097222222222212,
+      "wins": 2,
+      "bootstrap_95": [
+        -4.296875,
+        8.550347222222221
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 13,
+      "step": 0.125,
+      "candidate": "tuned-adjacency",
+      "reference": "adjacency",
+      "n": 3,
+      "seeds": [
+        66,
+        67,
+        68
+      ],
+      "differences": [
+        -5.9895833333333375,
+        13.541666666666668,
+        -3.472222222222221
+      ],
+      "mean_difference": 1.359953703703703,
+      "wins": 1,
+      "bootstrap_95": [
+        -5.989583333333338,
+        13.541666666666666
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 13,
+      "step": 0.125,
+      "candidate": "matched-adjacency",
+      "reference": "adjacency",
+      "n": 3,
+      "seeds": [
+        66,
+        67,
+        68
+      ],
+      "differences": [
+        5.642361111111105,
+        14.019097222222216,
+        11.631944444444443
+      ],
+      "mean_difference": 10.431134259259254,
+      "wins": 3,
+      "bootstrap_95": [
+        5.6423611111111045,
+        14.019097222222216
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 13,
+      "step": 0.125,
+      "candidate": "matched-dynamics",
+      "reference": "dynamics",
+      "n": 3,
+      "seeds": [
+        66,
+        67,
+        68
+      ],
+      "differences": [
+        9.809027777777779,
+        10.286458333333337,
+        23.263888888888886
+      ],
+      "mean_difference": 14.453125,
+      "wins": 3,
+      "bootstrap_95": [
+        9.809027777777779,
+        23.263888888888886
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 23,
+      "step": 0.125,
+      "candidate": "tuned-hybrid",
+      "reference": "adjacency",
+      "n": 3,
+      "seeds": [
+        66,
+        67,
+        68
+      ],
+      "differences": [
+        -4.123263888888884,
+        15.407986111111105,
+        11.328125
+      ],
+      "mean_difference": 7.5376157407407405,
+      "wins": 2,
+      "bootstrap_95": [
+        -4.123263888888884,
+        15.407986111111105
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 23,
+      "step": 0.125,
+      "candidate": "tuned-hybrid",
+      "reference": "dynamics",
+      "n": 3,
+      "seeds": [
+        66,
+        67,
+        68
+      ],
+      "differences": [
+        10.243055555555557,
+        22.916666666666664,
+        12.152777777777779
+      ],
+      "mean_difference": 15.104166666666666,
+      "wins": 3,
+      "bootstrap_95": [
+        10.243055555555557,
+        22.916666666666668
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 23,
+      "step": 0.125,
+      "candidate": "tuned-hybrid",
+      "reference": "matched-adjacency",
+      "n": 3,
+      "seeds": [
+        66,
+        67,
+        68
+      ],
+      "differences": [
+        -11.545138888888884,
+        6.5104166666666625,
+        -2.517361111111116
+      ],
+      "mean_difference": -2.5173611111111125,
+      "wins": 1,
+      "bootstrap_95": [
+        -11.545138888888884,
+        6.510416666666662
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 23,
+      "step": 0.125,
+      "candidate": "tuned-hybrid",
+      "reference": "matched-dynamics",
+      "n": 3,
+      "seeds": [
+        66,
+        67,
+        68
+      ],
+      "differences": [
+        -5.815972222222221,
+        1.649305555555547,
+        -5.555555555555558
+      ],
+      "mean_difference": -3.240740740740744,
+      "wins": 1,
+      "bootstrap_95": [
+        -5.815972222222221,
+        1.6493055555555471
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 23,
+      "step": 0.125,
+      "candidate": "tuned-hybrid",
+      "reference": "tuned-adjacency",
+      "n": 3,
+      "seeds": [
+        66,
+        67,
+        68
+      ],
+      "differences": [
+        -0.9114583333333259,
+        7.725694444444442,
+        -15.885416666666675
+      ],
+      "mean_difference": -3.023726851851853,
+      "wins": 1,
+      "bootstrap_95": [
+        -15.885416666666677,
+        7.725694444444442
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 23,
+      "step": 0.125,
+      "candidate": "tuned-adjacency",
+      "reference": "adjacency",
+      "n": 3,
+      "seeds": [
+        66,
+        67,
+        68
+      ],
+      "differences": [
+        -3.211805555555558,
+        7.6822916666666625,
+        27.213541666666675
+      ],
+      "mean_difference": 10.561342592592593,
+      "wins": 2,
+      "bootstrap_95": [
+        -3.2118055555555585,
+        27.213541666666675
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 23,
+      "step": 0.125,
+      "candidate": "matched-adjacency",
+      "reference": "adjacency",
+      "n": 3,
+      "seeds": [
+        66,
+        67,
+        68
+      ],
+      "differences": [
+        7.421875,
+        8.897569444444443,
+        13.845486111111116
+      ],
+      "mean_difference": 10.054976851851853,
+      "wins": 3,
+      "bootstrap_95": [
+        7.421875,
+        13.845486111111116
+      ],
+      "units": "coverage percentage points"
+    },
+    {
+      "layout": 23,
+      "step": 0.125,
+      "candidate": "matched-dynamics",
+      "reference": "dynamics",
+      "n": 3,
+      "seeds": [
+        66,
+        67,
+        68
+      ],
+      "differences": [
+        16.05902777777778,
+        21.267361111111114,
+        17.708333333333336
+      ],
+      "mean_difference": 18.34490740740741,
+      "wins": 3,
+      "bootstrap_95": [
+        16.05902777777778,
+        21.267361111111114
+      ],
+      "units": "coverage percentage points"
+    }
+  ]
+}

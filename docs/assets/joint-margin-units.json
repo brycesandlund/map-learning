@@ -1,0 +1,76 @@
+{
+  "run": "runs/joint-loss-mix-20261111/hybrid-a0.3-small-seed42",
+  "base_components": [
+    1.2657997103815433e-05,
+    0.0002603489556349814,
+    0.5138224363327026,
+    0.30205047130584717
+  ],
+  "rows": [
+    {
+      "margin": 0.25,
+      "components": [
+        7.911248189884645e-07,
+        1.6271809727186337e-05,
+        0.032113902270793915,
+        0.018878154456615448
+      ],
+      "expected_components": [
+        7.911248189884645e-07,
+        1.6271809727186337e-05,
+        0.032113902270793915,
+        0.018878154456615448
+      ],
+      "max_prediction_rescaling_error": 0.0
+    },
+    {
+      "margin": 0.5,
+      "components": [
+        3.164499275953858e-06,
+        6.508723890874535e-05,
+        0.12845560908317566,
+        0.07551261782646179
+      ],
+      "expected_components": [
+        3.164499275953858e-06,
+        6.508723890874535e-05,
+        0.12845560908317566,
+        0.07551261782646179
+      ],
+      "max_prediction_rescaling_error": 0.0
+    },
+    {
+      "margin": 2.0,
+      "components": [
+        5.063198841526173e-05,
+        0.0010413958225399256,
+        2.0552897453308105,
+        1.2082018852233887
+      ],
+      "expected_components": [
+        5.063198841526173e-05,
+        0.0010413958225399256,
+        2.0552897453308105,
+        1.2082018852233887
+      ],
+      "max_prediction_rescaling_error": 0.0
+    },
+    {
+      "margin": 4.0,
+      "components": [
+        0.00020252795366104692,
+        0.004165583290159702,
+        8.221158981323242,
+        4.832807540893555
+      ],
+      "expected_components": [
+        0.00020252795366104692,
+        0.004165583290159702,
+        8.221158981323242,
+        4.832807540893555
+      ],
+      "max_prediction_rescaling_error": 0.0
+    }
+  ],
+  "meaning": "All four loss terms scale by m\u00b2 under a realizable change of units; Euclidean queue order is unchanged. This does not make finite Adam training with fixed initialization/LR scale-invariant."
+}

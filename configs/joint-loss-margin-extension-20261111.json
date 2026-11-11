@@ -1,0 +1,32 @@
+[
+  {
+    "name": "adj-m0.25",
+    "objective": "adjacency",
+    "repulsion_margin": 0.25,
+    "step_size": 0.125
+  },
+  {
+    "name": "hybrid-m0.125",
+    "objective": "hybrid",
+    "repulsion_margin": 0.125,
+    "step_size": 0.125
+  },
+  {
+    "name": "adjacency-m0.125",
+    "objective": "adjacency",
+    "repulsion_margin": 0.125,
+    "step_size": 0.125
+  },
+  {
+    "name": "hybrid-m0.0625",
+    "objective": "hybrid",
+    "repulsion_margin": 0.0625,
+    "step_size": 0.125
+  },
+  {
+    "name": "adjacency-m0.0625",
+    "objective": "adjacency",
+    "repulsion_margin": 0.0625,
+    "step_size": 0.125
+  }
+]

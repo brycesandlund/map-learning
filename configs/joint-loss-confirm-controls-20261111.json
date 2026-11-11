@@ -1,0 +1,22 @@
+[
+  {
+    "name": "dynamics-normal",
+    "objective": "dynamics",
+    "step_size": 0.25
+  },
+  {
+    "name": "adjacency-normal",
+    "objective": "adjacency",
+    "step_size": 0.25
+  },
+  {
+    "name": "dynamics-small",
+    "objective": "dynamics",
+    "step_size": 0.125
+  },
+  {
+    "name": "adjacency-small",
+    "objective": "adjacency",
+    "step_size": 0.125
+  }
+]

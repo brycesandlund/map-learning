@@ -112,6 +112,7 @@ class Trainer:
     def update_dynamics(self, replay, head_indices=None):
         """Deterministic z=f(o): joint transition MSE + repulsion + optional L2."""
         c = self.config.train
+        adjacency_terms = []
         replay_sample = head_indices is None
         if head_indices is None:
             head_indices = [self.rng.integers(len(replay), size=c.batch_size)
@@ -122,6 +123,8 @@ class Trainer:
             z = self.model.encode(self.tensor(obs))
             target = self.model.encode(self.tensor(nxt))
             prediction = (self.dynamics(z, torch.as_tensor(actions, device=self.device))-target).square().mean()
+            if c.adjacency_weight:
+                adjacency_terms.append((z-target).square().sum(-1).mean())
         else:
             losses = []
             for m, indices in enumerate(head_indices):
@@ -130,11 +133,16 @@ class Trainer:
                 target = self.model.encode(self.tensor(nxt))
                 pred = self.dynamics.predict_head(m, z, torch.as_tensor(actions, device=self.device))
                 losses.append((pred-target).square().mean())
+                if c.adjacency_weight:
+                    adjacency_terms.append((z-target).square().sum(-1).mean())
             prediction = torch.stack(losses).mean()
         states = self.model.encode(self.tensor(replay.sample_states(2*c.batch_size, self.rng)))
         repulsion = repulsion_loss(*states.chunk(2), c.repulsion_margin)
         latent_squared_norm = states.square().sum(-1).mean()
-        total = prediction + c.repulsion_weight*repulsion
+        adjacency = torch.stack(adjacency_terms).mean() if adjacency_terms else prediction.new_zeros(())
+        total = c.dynamics_weight*prediction + c.repulsion_weight*repulsion
+        if c.adjacency_weight:
+            total = total + c.adjacency_weight*adjacency
         if c.latent_l2:
             total = total + c.latent_l2*latent_squared_norm
         if not torch.isfinite(total):
@@ -149,6 +157,11 @@ class Trainer:
         self.updates += 1
         return {'update': self.updates, 'joint_loss': float(total.detach()),
                 'prediction_loss': float(prediction.detach()), 'repulsion': float(repulsion.detach()),
+                'adjacency_loss': float(adjacency.detach()),
+                'weighted_dynamics': float((c.dynamics_weight*prediction).detach()),
+                'weighted_adjacency': float((c.adjacency_weight*adjacency).detach()),
+                'repulsion_active_fraction': float(((states[:c.batch_size]-states[c.batch_size:]).square().sum(-1)<c.repulsion_margin**2).float().mean().detach()),
+                'random_pair_distance_mean': float((states[:c.batch_size]-states[c.batch_size:]).norm(dim=-1).mean().detach()),
                 'latent_squared_norm': float(latent_squared_norm.detach()),
                 'weighted_latent_l2': float((c.latent_l2*latent_squared_norm).detach())}
 

@@ -1,0 +1,38 @@
+[
+  {
+    "objective": "dynamics",
+    "seed": 30,
+    "prefix_replay_exact": true,
+    "checkpoint100k_model_and_dynamics_exact": true
+  },
+  {
+    "objective": "dynamics",
+    "seed": 31,
+    "prefix_replay_exact": true,
+    "checkpoint100k_model_and_dynamics_exact": true
+  },
+  {
+    "objective": "dynamics",
+    "seed": 32,
+    "prefix_replay_exact": true,
+    "checkpoint100k_model_and_dynamics_exact": true
+  },
+  {
+    "objective": "adjacency",
+    "seed": 30,
+    "prefix_replay_exact": true,
+    "checkpoint100k_model_and_dynamics_exact": true
+  },
+  {
+    "objective": "adjacency",
+    "seed": 31,
+    "prefix_replay_exact": true,
+    "checkpoint100k_model_and_dynamics_exact": true
+  },
+  {
+    "objective": "adjacency",
+    "seed": 32,
+    "prefix_replay_exact": true,
+    "checkpoint100k_model_and_dynamics_exact": true
+  }
+]

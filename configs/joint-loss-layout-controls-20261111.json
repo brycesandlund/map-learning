@@ -1,0 +1,26 @@
+[
+  {
+    "name": "dynamics-layout13",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "layout": 13
+  },
+  {
+    "name": "adjacency-layout13",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "layout": 13
+  },
+  {
+    "name": "dynamics-layout23",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "layout": 23
+  },
+  {
+    "name": "adjacency-layout23",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "layout": 23
+  }
+]

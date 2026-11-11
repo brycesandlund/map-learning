@@ -1,0 +1,982 @@
+[
+  {
+    "root": "runs/joint-loss-margin-extension-20261111",
+    "manifest": {
+      "arms": [
+        {
+          "name": "adj-m0.25",
+          "objective": "adjacency",
+          "repulsion_margin": 0.25,
+          "step_size": 0.125
+        },
+        {
+          "name": "hybrid-m0.125",
+          "objective": "hybrid",
+          "repulsion_margin": 0.125,
+          "step_size": 0.125
+        },
+        {
+          "name": "adjacency-m0.125",
+          "objective": "adjacency",
+          "repulsion_margin": 0.125,
+          "step_size": 0.125
+        },
+        {
+          "name": "hybrid-m0.0625",
+          "objective": "hybrid",
+          "repulsion_margin": 0.0625,
+          "step_size": 0.125
+        },
+        {
+          "name": "adjacency-m0.0625",
+          "objective": "adjacency",
+          "repulsion_margin": 0.0625,
+          "step_size": 0.125
+        }
+      ],
+      "seeds": [
+        42,
+        43
+      ],
+      "blocks": 20,
+      "created_unix": 1794422241.322436,
+      "workers": 4
+    },
+    "summary": [
+      {
+        "name": "adj-m0.25",
+        "coverage_k1": {
+          "mean": 0.8159722222222222,
+          "values": [
+            0.9305555555555556,
+            0.7013888888888888
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7803819444444444,
+          "values": [
+            0.8993055555555556,
+            0.6614583333333334
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.74609375,
+          "values": [
+            0.8745659722222222,
+            0.6176215277777778
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.7157118055555556,
+          "values": [
+            0.8501519097222222,
+            0.5812717013888888
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.23198676215277778,
+          "values": [
+            0.2970068359375,
+            0.16696668836805556
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.7301432291666667,
+          "values": [
+            0.8620876736111112,
+            0.5981987847222222
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07506874999999999,
+          "values": [
+            0.0748625,
+            0.075275
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "hybrid-m0.125",
+        "coverage_k1": {
+          "mean": 0.7534722222222222,
+          "values": [
+            0.8055555555555556,
+            0.7013888888888888
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7135416666666667,
+          "values": [
+            0.7743055555555556,
+            0.6527777777777778
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.6944444444444444,
+          "values": [
+            0.7573784722222222,
+            0.6315104166666666
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.6701388888888888,
+          "values": [
+            0.7409939236111112,
+            0.5992838541666666
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.2146316189236111,
+          "values": [
+            0.26172797309027773,
+            0.16753526475694444
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.6822374131944444,
+          "values": [
+            0.7493489583333334,
+            0.6151258680555556
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07418125,
+          "values": [
+            0.0803125,
+            0.06805
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-m0.125",
+        "coverage_k1": {
+          "mean": 0.8541666666666666,
+          "values": [
+            0.9166666666666666,
+            0.7916666666666666
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.8307291666666667,
+          "values": [
+            0.8940972222222222,
+            0.7673611111111112
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.814453125,
+          "values": [
+            0.8723958333333334,
+            0.7565104166666666
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.7902560763888888,
+          "values": [
+            0.8427734375,
+            0.7377387152777778
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.28055908203125,
+          "values": [
+            0.29630642361111115,
+            0.2648117404513889
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.8028428819444444,
+          "values": [
+            0.8589409722222222,
+            0.7467447916666666
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.06906875,
+          "values": [
+            0.074975,
+            0.0631625
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "hybrid-m0.0625",
+        "coverage_k1": {
+          "mean": 0.7465277777777778,
+          "values": [
+            0.7430555555555556,
+            0.75
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7065972222222222,
+          "values": [
+            0.7100694444444444,
+            0.703125
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.67578125,
+          "values": [
+            0.6783854166666666,
+            0.6731770833333334
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.6366644965277778,
+          "values": [
+            0.6357421875,
+            0.6375868055555556
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.22680013020833334,
+          "values": [
+            0.22089246961805556,
+            0.2327077907986111
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.6552734375,
+          "values": [
+            0.6559244791666666,
+            0.6546223958333334
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.06947500000000001,
+          "values": [
+            0.0746875,
+            0.0642625
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-m0.0625",
+        "coverage_k1": {
+          "mean": 0.7708333333333333,
+          "values": [
+            0.7847222222222222,
+            0.7569444444444444
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7361111111111112,
+          "values": [
+            0.7447916666666666,
+            0.7274305555555556
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.69921875,
+          "values": [
+            0.7035590277777778,
+            0.6948784722222222
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.6585828993055556,
+          "values": [
+            0.6640625,
+            0.6531032986111112
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.24415852864583337,
+          "values": [
+            0.23521213107638891,
+            0.2531049262152778
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.6778971354166667,
+          "values": [
+            0.6829427083333334,
+            0.6728515625
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07039375,
+          "values": [
+            0.0755625,
+            0.065225
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      }
+    ],
+    "runs": [
+      {
+        "name": "adj-m0.25",
+        "run": "runs/joint-loss-margin-extension-20261111/adj-m0.25-seed42",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004071011893198551,
+        "blocked_fraction": 0.0748625,
+        "coverage_k1": 0.9305555555555556,
+        "coverage_k2": 0.8993055555555556,
+        "coverage_k4": 0.8745659722222222,
+        "coverage_k8": 0.8501519097222222,
+        "seconds": 92.13336020801216,
+        "objective": "adjacency",
+        "seed": 42,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "1daae7ab3086b5b32adc14c68db06859cccd51fcf0e8731faaf493438778755f",
+        "samples_per_head": 1050000,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 67256,
+          "k2_50": 70922,
+          "k4_50": 72199,
+          "k8_50": 73714,
+          "k1_90": 98718
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74011,
+        "unique_endpoints": 74012,
+        "fill_radius_0.05": 0.8171657986111112,
+        "fill_radius_0.1": 0.8620876736111112,
+        "fill_radius_0.2": 0.8823784722222222,
+        "training_seconds": 39.07756373938173,
+        "refresh_seconds": 21.324727338273078,
+        "search_seconds": 30.481898962985724,
+        "action_stream_sha256": "d136c4158349c04c2415d1c08f438134b2e1fbffc270b739e375d56aa914548d",
+        "auc_k1": 0.34322916666666664,
+        "auc_k2": 0.31448350694444444,
+        "auc_k4": 0.2970068359375,
+        "auc_k8": 0.28242255316840276
+      },
+      {
+        "name": "hybrid-m0.125",
+        "run": "runs/joint-loss-margin-extension-20261111/hybrid-m0.125-seed42",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.001970143794020187,
+        "blocked_fraction": 0.0803125,
+        "coverage_k1": 0.8055555555555556,
+        "coverage_k2": 0.7743055555555556,
+        "coverage_k4": 0.7573784722222222,
+        "coverage_k8": 0.7409939236111112,
+        "seconds": 94.32251808326691,
+        "objective": "hybrid",
+        "seed": 42,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.125,
+        "initial_parameters_sha256": "1daae7ab3086b5b32adc14c68db06859cccd51fcf0e8731faaf493438778755f",
+        "samples_per_head": 1050000,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 70851,
+          "k2_50": 73394,
+          "k4_50": 75091,
+          "k8_50": 76907
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73575,
+        "unique_endpoints": 73576,
+        "fill_radius_0.05": 0.7158203125,
+        "fill_radius_0.1": 0.7493489583333334,
+        "fill_radius_0.2": 0.7626953125,
+        "training_seconds": 40.25635032216087,
+        "refresh_seconds": 22.98653233749792,
+        "search_seconds": 30.123212576843798,
+        "action_stream_sha256": "d136c4158349c04c2415d1c08f438134b2e1fbffc270b739e375d56aa914548d",
+        "auc_k1": 0.3012326388888889,
+        "auc_k2": 0.27715277777777775,
+        "auc_k4": 0.26172797309027773,
+        "auc_k8": 0.2489902072482639
+      },
+      {
+        "name": "adjacency-m0.125",
+        "run": "runs/joint-loss-margin-extension-20261111/adjacency-m0.125-seed42",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0023431328930971257,
+        "blocked_fraction": 0.074975,
+        "coverage_k1": 0.9166666666666666,
+        "coverage_k2": 0.8940972222222222,
+        "coverage_k4": 0.8723958333333334,
+        "coverage_k8": 0.8427734375,
+        "seconds": 93.0217090412043,
+        "objective": "adjacency",
+        "seed": 42,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.125,
+        "initial_parameters_sha256": "1daae7ab3086b5b32adc14c68db06859cccd51fcf0e8731faaf493438778755f",
+        "samples_per_head": 1050000,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 67086,
+          "k2_50": 70697,
+          "k4_50": 72647,
+          "k8_50": 74121,
+          "k1_90": 97276
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74002,
+        "unique_endpoints": 74003,
+        "fill_radius_0.05": 0.8062065972222222,
+        "fill_radius_0.1": 0.8589409722222222,
+        "fill_radius_0.2": 0.8794487847222222,
+        "training_seconds": 39.55392487766221,
+        "refresh_seconds": 21.934832291211933,
+        "search_seconds": 30.40918157901615,
+        "action_stream_sha256": "d136c4158349c04c2415d1c08f438134b2e1fbffc270b739e375d56aa914548d",
+        "auc_k1": 0.3473090277777777,
+        "auc_k2": 0.31552300347222223,
+        "auc_k4": 0.29630642361111115,
+        "auc_k8": 0.2801167805989583
+      },
+      {
+        "name": "hybrid-m0.0625",
+        "run": "runs/joint-loss-margin-extension-20261111/hybrid-m0.0625-seed42",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0012795971800215048,
+        "blocked_fraction": 0.0746875,
+        "coverage_k1": 0.7430555555555556,
+        "coverage_k2": 0.7100694444444444,
+        "coverage_k4": 0.6783854166666666,
+        "coverage_k8": 0.6357421875,
+        "seconds": 95.05009145801887,
+        "objective": "hybrid",
+        "seed": 42,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.0625,
+        "initial_parameters_sha256": "1daae7ab3086b5b32adc14c68db06859cccd51fcf0e8731faaf493438778755f",
+        "samples_per_head": 1050000,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 76393,
+          "k2_50": 80349,
+          "k4_50": 83151,
+          "k8_50": 86254
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74025,
+        "unique_endpoints": 74026,
+        "fill_radius_0.05": 0.5970052083333334,
+        "fill_radius_0.1": 0.6559244791666666,
+        "fill_radius_0.2": 0.6879340277777778,
+        "training_seconds": 39.58593263057992,
+        "refresh_seconds": 24.382083792239428,
+        "search_seconds": 29.948826083913445,
+        "action_stream_sha256": "d136c4158349c04c2415d1c08f438134b2e1fbffc270b739e375d56aa914548d",
+        "auc_k1": 0.26816840277777776,
+        "auc_k2": 0.2396940104166667,
+        "auc_k4": 0.22089246961805556,
+        "auc_k8": 0.20360609266493054
+      },
+      {
+        "name": "adjacency-m0.0625",
+        "run": "runs/joint-loss-margin-extension-20261111/adjacency-m0.0625-seed42",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00128526594620314,
+        "blocked_fraction": 0.0755625,
+        "coverage_k1": 0.7847222222222222,
+        "coverage_k2": 0.7447916666666666,
+        "coverage_k4": 0.7035590277777778,
+        "coverage_k8": 0.6640625,
+        "seconds": 93.69913379102945,
+        "objective": "adjacency",
+        "seed": 42,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.0625,
+        "initial_parameters_sha256": "1daae7ab3086b5b32adc14c68db06859cccd51fcf0e8731faaf493438778755f",
+        "samples_per_head": 1050000,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 75998,
+          "k2_50": 80979,
+          "k4_50": 83944,
+          "k8_50": 86274
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73955,
+        "unique_endpoints": 73956,
+        "fill_radius_0.05": 0.6286892361111112,
+        "fill_radius_0.1": 0.6829427083333334,
+        "fill_radius_0.2": 0.7183159722222222,
+        "training_seconds": 38.48884892091155,
+        "refresh_seconds": 24.413284157868475,
+        "search_seconds": 29.637944269459695,
+        "action_stream_sha256": "d136c4158349c04c2415d1c08f438134b2e1fbffc270b739e375d56aa914548d",
+        "auc_k1": 0.28073784722222217,
+        "auc_k2": 0.25413411458333335,
+        "auc_k4": 0.23521213107638891,
+        "auc_k8": 0.2189930555555556
+      },
+      {
+        "name": "adj-m0.25",
+        "run": "runs/joint-loss-margin-extension-20261111/adj-m0.25-seed43",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.005496379091858257,
+        "blocked_fraction": 0.075275,
+        "coverage_k1": 0.7013888888888888,
+        "coverage_k2": 0.6614583333333334,
+        "coverage_k4": 0.6176215277777778,
+        "coverage_k8": 0.5812717013888888,
+        "seconds": 93.90055212471634,
+        "objective": "adjacency",
+        "seed": 43,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "ecd57233c01ff7c20261bdb58a8263b429e11abe605492310cc99623d7b26562",
+        "samples_per_head": 1050000,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 84119,
+          "k2_50": 87076,
+          "k4_50": 90197,
+          "k8_50": 93446
+        },
+        "quarter_lattice_fraction": 3.999960000399996e-05,
+        "moving_transitions": 73978,
+        "unique_endpoints": 73979,
+        "fill_radius_0.05": 0.548828125,
+        "fill_radius_0.1": 0.5981987847222222,
+        "fill_radius_0.2": 0.6322699652777778,
+        "training_seconds": 38.62865716824308,
+        "refresh_seconds": 24.518177087418735,
+        "search_seconds": 29.598499157000333,
+        "action_stream_sha256": "0cc5ce210d866c22db828377ac294efab7f0618da568864f45f67c3feb39e5c3",
+        "auc_k1": 0.21561631944444443,
+        "auc_k2": 0.18564019097222223,
+        "auc_k4": 0.16696668836805556,
+        "auc_k8": 0.15095282660590278
+      },
+      {
+        "name": "hybrid-m0.125",
+        "run": "runs/joint-loss-margin-extension-20261111/hybrid-m0.125-seed43",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0037092731174135918,
+        "blocked_fraction": 0.06805,
+        "coverage_k1": 0.7013888888888888,
+        "coverage_k2": 0.6527777777777778,
+        "coverage_k4": 0.6315104166666666,
+        "coverage_k8": 0.5992838541666666,
+        "seconds": 93.10477154096588,
+        "objective": "hybrid",
+        "seed": 43,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.125,
+        "initial_parameters_sha256": "ecd57233c01ff7c20261bdb58a8263b429e11abe605492310cc99623d7b26562",
+        "samples_per_head": 1050000,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 84041,
+          "k2_50": 88571,
+          "k4_50": 90056,
+          "k8_50": 92254
+        },
+        "quarter_lattice_fraction": 3.999960000399996e-05,
+        "moving_transitions": 74556,
+        "unique_endpoints": 74557,
+        "fill_radius_0.05": 0.5651041666666666,
+        "fill_radius_0.1": 0.6151258680555556,
+        "fill_radius_0.2": 0.6417100694444444,
+        "training_seconds": 39.78508588112891,
+        "refresh_seconds": 22.94383083237335,
+        "search_seconds": 29.34166003903374,
+        "action_stream_sha256": "0cc5ce210d866c22db828377ac294efab7f0618da568864f45f67c3feb39e5c3",
+        "auc_k1": 0.213671875,
+        "auc_k2": 0.18524305555555554,
+        "auc_k4": 0.16753526475694444,
+        "auc_k8": 0.1537051052517361
+      },
+      {
+        "name": "adjacency-m0.125",
+        "run": "runs/joint-loss-margin-extension-20261111/adjacency-m0.125-seed43",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0022268023414096032,
+        "blocked_fraction": 0.0631625,
+        "coverage_k1": 0.7916666666666666,
+        "coverage_k2": 0.7673611111111112,
+        "coverage_k4": 0.7565104166666666,
+        "coverage_k8": 0.7377387152777778,
+        "seconds": 91.33812675019726,
+        "objective": "adjacency",
+        "seed": 43,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.125,
+        "initial_parameters_sha256": "ecd57233c01ff7c20261bdb58a8263b429e11abe605492310cc99623d7b26562",
+        "samples_per_head": 1050000,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 71518,
+          "k2_50": 75133,
+          "k4_50": 76723,
+          "k8_50": 78113
+        },
+        "quarter_lattice_fraction": 4.999950000499995e-05,
+        "moving_transitions": 74947,
+        "unique_endpoints": 74948,
+        "fill_radius_0.05": 0.7088758680555556,
+        "fill_radius_0.1": 0.7467447916666666,
+        "fill_radius_0.2": 0.76171875,
+        "training_seconds": 38.82718812394887,
+        "refresh_seconds": 21.689145539421588,
+        "search_seconds": 29.661870293319225,
+        "action_stream_sha256": "0cc5ce210d866c22db828377ac294efab7f0618da568864f45f67c3feb39e5c3",
+        "auc_k1": 0.30868055555555557,
+        "auc_k2": 0.2809765625,
+        "auc_k4": 0.2648117404513889,
+        "auc_k8": 0.2502261013454861
+      },
+      {
+        "name": "hybrid-m0.0625",
+        "run": "runs/joint-loss-margin-extension-20261111/hybrid-m0.0625-seed43",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.001329126125834535,
+        "blocked_fraction": 0.0642625,
+        "coverage_k1": 0.75,
+        "coverage_k2": 0.703125,
+        "coverage_k4": 0.6731770833333334,
+        "coverage_k8": 0.6375868055555556,
+        "seconds": 85.10432783327997,
+        "objective": "hybrid",
+        "seed": 43,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.0625,
+        "initial_parameters_sha256": "ecd57233c01ff7c20261bdb58a8263b429e11abe605492310cc99623d7b26562",
+        "samples_per_head": 1050000,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 76198,
+          "k2_50": 79754,
+          "k4_50": 83048,
+          "k8_50": 86528
+        },
+        "quarter_lattice_fraction": 2.999970000299997e-05,
+        "moving_transitions": 74859,
+        "unique_endpoints": 74860,
+        "fill_radius_0.05": 0.6063368055555556,
+        "fill_radius_0.1": 0.6546223958333334,
+        "fill_radius_0.2": 0.6838107638888888,
+        "training_seconds": 34.893492873292416,
+        "refresh_seconds": 22.59048403194174,
+        "search_seconds": 26.711523012258112,
+        "action_stream_sha256": "0cc5ce210d866c22db828377ac294efab7f0618da568864f45f67c3feb39e5c3",
+        "auc_k1": 0.2812673611111111,
+        "auc_k2": 0.25208550347222225,
+        "auc_k4": 0.2327077907986111,
+        "auc_k8": 0.2161184353298611
+      },
+      {
+        "name": "adjacency-m0.0625",
+        "run": "runs/joint-loss-margin-extension-20261111/adjacency-m0.0625-seed43",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0013679021163718972,
+        "blocked_fraction": 0.065225,
+        "coverage_k1": 0.7569444444444444,
+        "coverage_k2": 0.7274305555555556,
+        "coverage_k4": 0.6948784722222222,
+        "coverage_k8": 0.6531032986111112,
+        "seconds": 83.81926829135045,
+        "objective": "adjacency",
+        "seed": 43,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.0625,
+        "initial_parameters_sha256": "ecd57233c01ff7c20261bdb58a8263b429e11abe605492310cc99623d7b26562",
+        "samples_per_head": 1050000,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 70601,
+          "k2_50": 75688,
+          "k4_50": 79236,
+          "k8_50": 83021
+        },
+        "quarter_lattice_fraction": 3.999960000399996e-05,
+        "moving_transitions": 74782,
+        "unique_endpoints": 74783,
+        "fill_radius_0.05": 0.6208767361111112,
+        "fill_radius_0.1": 0.6728515625,
+        "fill_radius_0.2": 0.7057291666666666,
+        "training_seconds": 34.42980304080993,
+        "refresh_seconds": 21.403088544495404,
+        "search_seconds": 26.867143041454256,
+        "action_stream_sha256": "0cc5ce210d866c22db828377ac294efab7f0618da568864f45f67c3feb39e5c3",
+        "auc_k1": 0.3043489583333333,
+        "auc_k2": 0.2733875868055555,
+        "auc_k4": 0.2531049262152778,
+        "auc_k8": 0.23307630750868055
+      }
+    ]
+  }
+]

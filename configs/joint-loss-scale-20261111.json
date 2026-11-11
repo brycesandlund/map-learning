@@ -1,0 +1,276 @@
+[
+  {
+    "name": "dynamics_weight-0.1",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "dynamics_weight": 0.1
+  },
+  {
+    "name": "dynamics_weight-0.3",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "dynamics_weight": 0.3
+  },
+  {
+    "name": "dynamics_weight-3",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "dynamics_weight": 3.0
+  },
+  {
+    "name": "dynamics_weight-10",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "dynamics_weight": 10.0
+  },
+  {
+    "name": "adjacency_weight-3",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "adjacency_weight": 3.0
+  },
+  {
+    "name": "repulsion_weight-0",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "repulsion_weight": 0.0
+  },
+  {
+    "name": "repulsion_weight-0.003",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "repulsion_weight": 0.003
+  },
+  {
+    "name": "repulsion_weight-0.01",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "repulsion_weight": 0.01
+  },
+  {
+    "name": "repulsion_weight-0.1",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "repulsion_weight": 0.1
+  },
+  {
+    "name": "repulsion_weight-0.3",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "repulsion_weight": 0.3
+  },
+  {
+    "name": "latent_l2-0",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "latent_l2": 0.0
+  },
+  {
+    "name": "latent_l2-0.003",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "latent_l2": 0.003
+  },
+  {
+    "name": "latent_l2-0.01",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "latent_l2": 0.01
+  },
+  {
+    "name": "latent_l2-0.1",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "latent_l2": 0.1
+  },
+  {
+    "name": "latent_l2-0.3",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "latent_l2": 0.3
+  },
+  {
+    "name": "repulsion_margin-0.25",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25
+  },
+  {
+    "name": "repulsion_margin-0.5",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "repulsion_margin": 0.5
+  },
+  {
+    "name": "repulsion_margin-2",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "repulsion_margin": 2.0
+  },
+  {
+    "name": "repulsion_margin-4",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "repulsion_margin": 4.0
+  },
+  {
+    "name": "joint-00",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "dynamics_weight": 0.1,
+    "adjacency_weight": 0.3,
+    "repulsion_weight": 0.003,
+    "latent_l2": 0.003,
+    "repulsion_margin": 2.0
+  },
+  {
+    "name": "joint-01",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "dynamics_weight": 10.0,
+    "adjacency_weight": 0.03,
+    "repulsion_weight": 0.3,
+    "latent_l2": 0.3,
+    "repulsion_margin": 0.5
+  },
+  {
+    "name": "joint-02",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "dynamics_weight": 10.0,
+    "adjacency_weight": 3.0,
+    "repulsion_weight": 0.03,
+    "latent_l2": 0.3,
+    "repulsion_margin": 1.0
+  },
+  {
+    "name": "joint-03",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "dynamics_weight": 1.0,
+    "adjacency_weight": 0.03,
+    "repulsion_weight": 0.3,
+    "latent_l2": 0.003,
+    "repulsion_margin": 0.5
+  },
+  {
+    "name": "joint-04",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "dynamics_weight": 0.1,
+    "adjacency_weight": 3.0,
+    "repulsion_weight": 0.3,
+    "latent_l2": 0.003,
+    "repulsion_margin": 2.0
+  },
+  {
+    "name": "joint-05",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "dynamics_weight": 1.0,
+    "adjacency_weight": 3.0,
+    "repulsion_weight": 0.03,
+    "latent_l2": 0.3,
+    "repulsion_margin": 2.0
+  },
+  {
+    "name": "joint-06",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "dynamics_weight": 0.1,
+    "adjacency_weight": 3.0,
+    "repulsion_weight": 0.003,
+    "latent_l2": 0.3,
+    "repulsion_margin": 0.5
+  },
+  {
+    "name": "joint-07",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "dynamics_weight": 10.0,
+    "adjacency_weight": 0.3,
+    "repulsion_weight": 0.03,
+    "latent_l2": 0.03,
+    "repulsion_margin": 1.0
+  },
+  {
+    "name": "joint-08",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "dynamics_weight": 0.1,
+    "adjacency_weight": 0.03,
+    "repulsion_weight": 0.03,
+    "latent_l2": 0.003,
+    "repulsion_margin": 2.0
+  },
+  {
+    "name": "joint-09",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "dynamics_weight": 1.0,
+    "adjacency_weight": 0.3,
+    "repulsion_weight": 0.3,
+    "latent_l2": 0.03,
+    "repulsion_margin": 1.0
+  },
+  {
+    "name": "joint-10",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "dynamics_weight": 10.0,
+    "adjacency_weight": 0.3,
+    "repulsion_weight": 0.003,
+    "latent_l2": 0.03,
+    "repulsion_margin": 0.5
+  },
+  {
+    "name": "joint-11",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "dynamics_weight": 1.0,
+    "adjacency_weight": 0.03,
+    "repulsion_weight": 0.003,
+    "latent_l2": 0.03,
+    "repulsion_margin": 1.0
+  },
+  {
+    "name": "adj-margin-0.5",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.5
+  },
+  {
+    "name": "normalized-margin-0.5",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "repulsion_margin": 0.5,
+    "repulsion_weight": 0.12
+  },
+  {
+    "name": "adj-margin-2",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 2.0
+  },
+  {
+    "name": "normalized-margin-2",
+    "objective": "hybrid",
+    "step_size": 0.125,
+    "repulsion_margin": 2.0,
+    "repulsion_weight": 0.0075
+  },
+  {
+    "name": "adj-r0.1-l0.01",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_weight": 0.1,
+    "latent_l2": 0.01
+  },
+  {
+    "name": "adj-r0.01-l0.01",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_weight": 0.01,
+    "latent_l2": 0.01
+  }
+]

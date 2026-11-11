@@ -1,0 +1,23 @@
+{
+  "runs": 87,
+  "interactions": 9300000,
+  "updates": 379608,
+  "presentations_per_head": 96972000,
+  "fresh_seed_paired_adj_minus_dynamics_95": {
+    "differences": [
+      -16265,
+      -17161,
+      -1997,
+      -11807,
+      -2691,
+      5549
+    ],
+    "mean": -7395.333333333333,
+    "bootstrap_interval_95": [
+      -13707.666666666666,
+      -717.6666666666666
+    ],
+    "adjacency_wins": 5,
+    "note": "Exploratory paired bootstrap over six seeds on one layout; not independent layout evidence."
+  }
+}

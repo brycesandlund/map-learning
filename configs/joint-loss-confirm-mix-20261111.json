@@ -1,0 +1,14 @@
+[
+  {
+    "name": "mix-normal",
+    "objective": "hybrid",
+    "adjacency_weight": 0.03,
+    "step_size": 0.25
+  },
+  {
+    "name": "mix-small",
+    "objective": "hybrid",
+    "adjacency_weight": 0.03,
+    "step_size": 0.125
+  }
+]

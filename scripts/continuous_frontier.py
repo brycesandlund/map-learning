@@ -19,7 +19,7 @@ from map_learning.training import Trainer, seed_all
 def main():
     p = argparse.ArgumentParser()
     p.add_argument('--config', default='configs/continuous_frontier.json')
-    p.add_argument('--objective', choices=['dynamics','adjacency','oracle_xy','random_queue','frozen'], default='dynamics')
+    p.add_argument('--objective', choices=['dynamics','hybrid','adjacency','oracle_xy','random_queue','frozen'], default='dynamics')
     p.add_argument('--seed', type=int, default=30)
     p.add_argument('--layout', type=int, default=7)
     p.add_argument('--blocks', type=int, default=20)
@@ -27,6 +27,10 @@ def main():
     p.add_argument('--proposal', choices=['stratified','iid'], default='stratified')
     p.add_argument('--step-size', type=float, default=.25)
     p.add_argument('--adjacency-weight', type=float, default=.3)
+    p.add_argument('--dynamics-weight',type=float,default=1.)
+    p.add_argument('--repulsion-weight',type=float)
+    p.add_argument('--latent-l2',type=float)
+    p.add_argument('--repulsion-margin',type=float,default=1.)
     p.add_argument('--regularizer', type=float, default=.03)
     p.add_argument('--extra-updates', type=int, default=0)
     p.add_argument('--extra-placement', choices=['early','distributed'], default='early')
@@ -37,13 +41,19 @@ def main():
     cfg = load_config(a.config, [f'seed={a.seed}', f'collect_steps={a.blocks*5000}',
         f'maze.seed={a.layout}', f'maze.nuisance_dims={a.nuisance_dims}', f'maze.step_size={a.step_size}',
         f'train.repulsion_weight={a.regularizer}', f'train.latent_l2={a.regularizer}'])
+    cfg.train.dynamics_weight=a.dynamics_weight
+    cfg.train.adjacency_weight=a.adjacency_weight if a.objective=='hybrid' else 0.
+    if a.repulsion_weight is not None:cfg.train.repulsion_weight=a.repulsion_weight
+    if a.latent_l2 is not None:cfg.train.latent_l2=a.latent_l2
+    cfg.train.repulsion_margin=a.repulsion_margin
+    cfg.validate()
     if cfg.model.continuous_action_dim != 2 or cfg.maze.observation != 'coordinates':
         p.error('Use continuous-action coordinate config')
     seed_all(cfg.seed, cfg.threads)
     env = Maze(cfg.maze, cfg.seed+71000)
     t = (DistanceTrainer(cfg, env.observation_shape, {'kind':'adjacency','weight':a.adjacency_weight})
          if a.objective == 'adjacency' else Trainer(cfg, env.observation_shape))
-    trainable = a.objective in {'dynamics','adjacency'}
+    trainable = a.objective in {'dynamics','hybrid','adjacency'}
     if a.extra_updates and not trainable: p.error('Extra updates require a learned objective')
     oracle = a.objective in {'oracle_xy','random_queue'}
     out = prepare_run(a.out, cfg, {'objective':a.objective,'proposal':a.proposal,
@@ -136,7 +146,9 @@ def main():
     lattice = np.all(np.abs(all_positions*4-np.rint(all_positions*4))<1e-5,axis=1)
     result = {**row,'objective':a.objective,'seed':a.seed,'layout':a.layout,'proposal':a.proposal,
               'extra_updates':a.extra_updates,'extra_placement':a.extra_placement,
-              'nuisance_dims':a.nuisance_dims,'step_size':a.step_size,'adjacency_weight':a.adjacency_weight,
+              'nuisance_dims':a.nuisance_dims,'step_size':a.step_size,'adjacency_weight':a.adjacency_weight if a.objective in {'adjacency','hybrid'} else 0.,
+              'dynamics_weight':cfg.train.dynamics_weight if a.objective!='adjacency' else 0.,
+              'repulsion_weight':cfg.train.repulsion_weight,'latent_l2':cfg.train.latent_l2,'repulsion_margin':cfg.train.repulsion_margin,
               'initial_parameters_sha256':initial_hash,'samples_per_head':sample_count,
               'trained_through':len(replay) if trainable else 0,'milestones':coverage.milestones,
               'quarter_lattice_fraction':float(lattice.mean()),'moving_transitions':int(moving.sum()),

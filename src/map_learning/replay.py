@@ -20,14 +20,14 @@ class Replay:
         return len(self.actions)
 
     def add(self, obs, action, next_obs, episode, position, next_position):
-        self.observations.append(np.array(obs, copy=True))
-        self.next_observations.append(np.array(next_obs, copy=True))
         if np.isscalar(action):
             stored_action = int(action)
         else:
             stored_action = np.array(action, dtype=np.float32, copy=True)
             if stored_action.shape != (2,) or not np.isfinite(stored_action).all():
                 raise ValueError("Continuous replay actions must be finite 2D vectors")
+        self.observations.append(np.array(obs, copy=True))
+        self.next_observations.append(np.array(next_obs, copy=True))
         self.actions.append(stored_action)
         self.episodes.append(int(episode))
         self.positions.append(np.array(position, copy=True))

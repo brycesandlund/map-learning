@@ -166,6 +166,8 @@ class DistanceTrainer(Trainer):
         self.updates += 1
         return {'update': self.updates, 'joint_loss': float(total.detach()), 'distance_loss': float(task.detach()),
                 'auxiliary_dynamics_mse': float(auxiliary.detach()), 'repulsion': float(repulsion.detach()),
+                'repulsion_active_fraction': float(((left-right).square().sum(-1)<c.repulsion_margin**2).float().mean().detach()),
+                'random_pair_distance_mean': float((left-right).norm(dim=-1).mean().detach()),
                 'edge_distance': float(edge.mean().detach()), 'latent_squared_norm': float(norm.detach()),
                 'weighted_latent_l2': float((c.latent_l2*norm).detach()), 'multiplier': float(self.multiplier), **extra}
 

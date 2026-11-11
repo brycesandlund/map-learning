@@ -1,0 +1,76 @@
+[
+  {
+    "name": "tuned-hybrid-normal",
+    "step_size": 0.25,
+    "objective": "hybrid",
+    "adjacency_weight": 0.3,
+    "repulsion_weight": 0.03,
+    "latent_l2": 0.03,
+    "repulsion_margin": 0.25,
+    "dynamics_weight": 1.0
+  },
+  {
+    "name": "tuned-hybrid-small",
+    "step_size": 0.125,
+    "objective": "hybrid",
+    "adjacency_weight": 0.3,
+    "repulsion_weight": 0.03,
+    "latent_l2": 0.03,
+    "repulsion_margin": 0.25,
+    "dynamics_weight": 1.0
+  },
+  {
+    "name": "tuned-adjacency-normal",
+    "step_size": 0.25,
+    "objective": "adjacency",
+    "adjacency_weight": 0.3,
+    "repulsion_weight": 0.03,
+    "latent_l2": 0.03,
+    "repulsion_margin": 0.125
+  },
+  {
+    "name": "tuned-adjacency-small",
+    "step_size": 0.125,
+    "objective": "adjacency",
+    "adjacency_weight": 0.3,
+    "repulsion_weight": 0.03,
+    "latent_l2": 0.03,
+    "repulsion_margin": 0.125
+  },
+  {
+    "name": "matched-adjacency-normal",
+    "step_size": 0.25,
+    "objective": "adjacency",
+    "adjacency_weight": 0.3,
+    "repulsion_weight": 0.03,
+    "latent_l2": 0.03,
+    "repulsion_margin": 0.25
+  },
+  {
+    "name": "matched-adjacency-small",
+    "step_size": 0.125,
+    "objective": "adjacency",
+    "adjacency_weight": 0.3,
+    "repulsion_weight": 0.03,
+    "latent_l2": 0.03,
+    "repulsion_margin": 0.25
+  },
+  {
+    "name": "matched-dynamics-normal",
+    "step_size": 0.25,
+    "objective": "dynamics",
+    "repulsion_weight": 0.03,
+    "latent_l2": 0.03,
+    "repulsion_margin": 0.25,
+    "dynamics_weight": 1.0
+  },
+  {
+    "name": "matched-dynamics-small",
+    "step_size": 0.125,
+    "objective": "dynamics",
+    "repulsion_weight": 0.03,
+    "latent_l2": 0.03,
+    "repulsion_margin": 0.25,
+    "dynamics_weight": 1.0
+  }
+]

@@ -1,0 +1,1516 @@
+{
+  "jobs": 246,
+  "collection_actions": 24600000,
+  "updates": 1011552,
+  "samples_per_head": 258300000,
+  "matched_seed_layout_scale_groups": 24,
+  "paired_initialization_controls_successor_noise": true,
+  "accidental_duplicates": [
+    {
+      "runs": [
+        "runs/joint-loss-scale-20261111/joint-07-seed42",
+        "runs/joint-loss-scale-20261111/dynamics_weight-10-seed42"
+      ],
+      "replay_and_weights_exact": true
+    },
+    {
+      "runs": [
+        "runs/joint-loss-scale-20261111/joint-07-seed43",
+        "runs/joint-loss-scale-20261111/dynamics_weight-10-seed43"
+      ],
+      "replay_and_weights_exact": true
+    },
+    {
+      "runs": [
+        "runs/joint-loss-scale-20261111/joint-09-seed42",
+        "runs/joint-loss-scale-20261111/repulsion_weight-0.3-seed42"
+      ],
+      "replay_and_weights_exact": true
+    },
+    {
+      "runs": [
+        "runs/joint-loss-scale-20261111/joint-09-seed43",
+        "runs/joint-loss-scale-20261111/repulsion_weight-0.3-seed43"
+      ],
+      "replay_and_weights_exact": true
+    }
+  ],
+  "runs": [
+    {
+      "run": "runs/joint-loss-mix-20261111/dynamics-normal-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/adjacency-normal-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.01-normal-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.03-normal-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.1-normal-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.3-normal-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a1-normal-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/dynamics-small-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/adjacency-small-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.01-small-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.03-small-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.1-small-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.3-small-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a1-small-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/dynamics-normal-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/adjacency-normal-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.01-normal-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.03-normal-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.1-normal-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.3-normal-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a1-normal-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/dynamics-small-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/adjacency-small-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.01-small-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.03-small-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.1-small-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.3-small-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a1-small-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/dynamics-normal-seed44",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/adjacency-normal-seed44",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.01-normal-seed44",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.03-normal-seed44",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.1-normal-seed44",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.3-normal-seed44",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a1-normal-seed44",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/dynamics-small-seed44",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/adjacency-small-seed44",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.01-small-seed44",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.03-small-seed44",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.1-small-seed44",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a0.3-small-seed44",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-mix-20261111/hybrid-a1-small-seed44",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/dynamics_weight-0.1-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/dynamics_weight-0.3-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/dynamics_weight-3-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/dynamics_weight-10-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/adjacency_weight-3-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/repulsion_weight-0-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/repulsion_weight-0.003-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/repulsion_weight-0.01-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/repulsion_weight-0.1-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/repulsion_weight-0.3-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/latent_l2-0-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/latent_l2-0.003-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/latent_l2-0.01-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/latent_l2-0.1-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/latent_l2-0.3-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/repulsion_margin-0.25-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/repulsion_margin-0.5-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/repulsion_margin-2-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/repulsion_margin-4-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-00-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-01-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-02-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-03-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-04-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-05-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-06-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-07-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-08-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-09-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-10-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-11-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/adj-margin-0.5-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/normalized-margin-0.5-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/adj-margin-2-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/normalized-margin-2-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/adj-r0.1-l0.01-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/adj-r0.01-l0.01-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/dynamics_weight-0.1-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/dynamics_weight-0.3-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/dynamics_weight-3-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/dynamics_weight-10-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/adjacency_weight-3-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/repulsion_weight-0-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/repulsion_weight-0.003-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/repulsion_weight-0.01-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/repulsion_weight-0.1-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/repulsion_weight-0.3-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/latent_l2-0-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/latent_l2-0.003-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/latent_l2-0.01-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/latent_l2-0.1-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/latent_l2-0.3-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/repulsion_margin-0.25-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/repulsion_margin-0.5-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/repulsion_margin-2-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/repulsion_margin-4-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-00-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-01-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-02-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-03-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-04-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-05-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-06-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-07-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-08-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-09-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-10-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/joint-11-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/adj-margin-0.5-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/normalized-margin-0.5-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/adj-margin-2-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/normalized-margin-2-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/adj-r0.1-l0.01-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-scale-20261111/adj-r0.01-l0.01-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-margin-extension-20261111/adj-m0.25-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-margin-extension-20261111/hybrid-m0.125-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-margin-extension-20261111/adjacency-m0.125-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-margin-extension-20261111/hybrid-m0.0625-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-margin-extension-20261111/adjacency-m0.0625-seed42",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-margin-extension-20261111/adj-m0.25-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-margin-extension-20261111/hybrid-m0.125-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-margin-extension-20261111/adjacency-m0.125-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-margin-extension-20261111/hybrid-m0.0625-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-margin-extension-20261111/adjacency-m0.0625-seed43",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/dynamics-normal-seed60",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/adjacency-normal-seed60",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/dynamics-small-seed60",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/adjacency-small-seed60",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/dynamics-normal-seed61",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/adjacency-normal-seed61",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/dynamics-small-seed61",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/adjacency-small-seed61",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/dynamics-normal-seed62",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/adjacency-normal-seed62",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/dynamics-small-seed62",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/adjacency-small-seed62",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/dynamics-normal-seed63",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/adjacency-normal-seed63",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/dynamics-small-seed63",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/adjacency-small-seed63",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/dynamics-normal-seed64",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/adjacency-normal-seed64",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/dynamics-small-seed64",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/adjacency-small-seed64",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/dynamics-normal-seed65",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/adjacency-normal-seed65",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/dynamics-small-seed65",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-controls-20261111/adjacency-small-seed65",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-mix-20261111/mix-normal-seed60",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-mix-20261111/mix-small-seed60",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-mix-20261111/mix-normal-seed61",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-mix-20261111/mix-small-seed61",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-mix-20261111/mix-normal-seed62",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-mix-20261111/mix-small-seed62",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-mix-20261111/mix-normal-seed63",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-mix-20261111/mix-small-seed63",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-mix-20261111/mix-normal-seed64",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-mix-20261111/mix-small-seed64",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-mix-20261111/mix-normal-seed65",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-mix-20261111/mix-small-seed65",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-controls-20261111/dynamics-layout13-seed66",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-controls-20261111/adjacency-layout13-seed66",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-controls-20261111/dynamics-layout23-seed66",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-controls-20261111/adjacency-layout23-seed66",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-controls-20261111/dynamics-layout13-seed67",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-controls-20261111/adjacency-layout13-seed67",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-controls-20261111/dynamics-layout23-seed67",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-controls-20261111/adjacency-layout23-seed67",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-controls-20261111/dynamics-layout13-seed68",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-controls-20261111/adjacency-layout13-seed68",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-controls-20261111/dynamics-layout23-seed68",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-controls-20261111/adjacency-layout23-seed68",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-hybrid-normal-seed60",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-hybrid-small-seed60",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-adjacency-normal-seed60",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-adjacency-small-seed60",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-adjacency-normal-seed60",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-adjacency-small-seed60",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-dynamics-normal-seed60",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-dynamics-small-seed60",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-hybrid-normal-seed61",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-hybrid-small-seed61",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-adjacency-normal-seed61",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-adjacency-small-seed61",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-adjacency-normal-seed61",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-adjacency-small-seed61",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-dynamics-normal-seed61",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-dynamics-small-seed61",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-hybrid-normal-seed62",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-hybrid-small-seed62",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-adjacency-normal-seed62",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-adjacency-small-seed62",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-adjacency-normal-seed62",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-adjacency-small-seed62",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-dynamics-normal-seed62",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-dynamics-small-seed62",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-hybrid-normal-seed63",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-hybrid-small-seed63",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-adjacency-normal-seed63",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-adjacency-small-seed63",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-adjacency-normal-seed63",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-adjacency-small-seed63",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-dynamics-normal-seed63",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-dynamics-small-seed63",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-hybrid-normal-seed64",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-hybrid-small-seed64",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-adjacency-normal-seed64",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-adjacency-small-seed64",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-adjacency-normal-seed64",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-adjacency-small-seed64",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-dynamics-normal-seed64",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-dynamics-small-seed64",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-hybrid-normal-seed65",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-hybrid-small-seed65",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-adjacency-normal-seed65",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/tuned-adjacency-small-seed65",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-adjacency-normal-seed65",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-adjacency-small-seed65",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-dynamics-normal-seed65",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-confirm-selected-20261111/matched-dynamics-small-seed65",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/tuned-hybrid-layout13-seed66",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/tuned-hybrid-layout23-seed66",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/tuned-adjacency-layout13-seed66",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/tuned-adjacency-layout23-seed66",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/matched-adjacency-layout13-seed66",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/matched-adjacency-layout23-seed66",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/matched-dynamics-layout13-seed66",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/matched-dynamics-layout23-seed66",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/tuned-hybrid-layout13-seed67",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/tuned-hybrid-layout23-seed67",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/tuned-adjacency-layout13-seed67",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/tuned-adjacency-layout23-seed67",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/matched-adjacency-layout13-seed67",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/matched-adjacency-layout23-seed67",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/matched-dynamics-layout13-seed67",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/matched-dynamics-layout23-seed67",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/tuned-hybrid-layout13-seed68",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/tuned-hybrid-layout23-seed68",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/tuned-adjacency-layout13-seed68",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/tuned-adjacency-layout23-seed68",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/matched-adjacency-layout13-seed68",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/matched-adjacency-layout23-seed68",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/matched-dynamics-layout13-seed68",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    },
+    {
+      "run": "runs/joint-loss-layout-selected-20261111/matched-dynamics-layout23-seed68",
+      "actions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000
+    }
+  ]
+}

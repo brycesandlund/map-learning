@@ -1,0 +1,82 @@
+[
+  {
+    "name": "dynamics-normal",
+    "objective": "dynamics",
+    "step_size": 0.25
+  },
+  {
+    "name": "adjacency-normal",
+    "objective": "adjacency",
+    "step_size": 0.25
+  },
+  {
+    "name": "hybrid-a0.01-normal",
+    "objective": "hybrid",
+    "adjacency_weight": 0.01,
+    "step_size": 0.25
+  },
+  {
+    "name": "hybrid-a0.03-normal",
+    "objective": "hybrid",
+    "adjacency_weight": 0.03,
+    "step_size": 0.25
+  },
+  {
+    "name": "hybrid-a0.1-normal",
+    "objective": "hybrid",
+    "adjacency_weight": 0.1,
+    "step_size": 0.25
+  },
+  {
+    "name": "hybrid-a0.3-normal",
+    "objective": "hybrid",
+    "adjacency_weight": 0.3,
+    "step_size": 0.25
+  },
+  {
+    "name": "hybrid-a1-normal",
+    "objective": "hybrid",
+    "adjacency_weight": 1.0,
+    "step_size": 0.25
+  },
+  {
+    "name": "dynamics-small",
+    "objective": "dynamics",
+    "step_size": 0.125
+  },
+  {
+    "name": "adjacency-small",
+    "objective": "adjacency",
+    "step_size": 0.125
+  },
+  {
+    "name": "hybrid-a0.01-small",
+    "objective": "hybrid",
+    "adjacency_weight": 0.01,
+    "step_size": 0.125
+  },
+  {
+    "name": "hybrid-a0.03-small",
+    "objective": "hybrid",
+    "adjacency_weight": 0.03,
+    "step_size": 0.125
+  },
+  {
+    "name": "hybrid-a0.1-small",
+    "objective": "hybrid",
+    "adjacency_weight": 0.1,
+    "step_size": 0.125
+  },
+  {
+    "name": "hybrid-a0.3-small",
+    "objective": "hybrid",
+    "adjacency_weight": 0.3,
+    "step_size": 0.125
+  },
+  {
+    "name": "hybrid-a1-small",
+    "objective": "hybrid",
+    "adjacency_weight": 1.0,
+    "step_size": 0.125
+  }
+]
