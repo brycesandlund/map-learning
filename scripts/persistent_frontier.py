@@ -23,6 +23,11 @@ def main():
     p.add_argument('--blocks',type=int,default=20)
     p.add_argument('--block-expansions',type=int,default=1000)
     p.add_argument('--out',type=Path,required=True)
+    p.add_argument('--bottleneck-beta',type=float,default=None)
+    p.add_argument('--prior-components',type=int,default=1)
+    p.add_argument('--kl-warmup-updates',type=int,default=0)
+    p.add_argument('--prior-lr-multiplier',type=float,default=1.)
+    p.add_argument('--initial-std',type=float,default=.01)
     p.add_argument('--extra-updates',type=int,default=0)
     p.add_argument('--extra-placement',choices=['early','distributed'],default='early')
     a=p.parse_args()
@@ -31,8 +36,13 @@ def main():
     cfg=load_config('configs/noisy_frontier.json',[f'seed={a.seed}',f'collect_steps={a.blocks*a.block_expansions*5}'])
     seed_all(cfg.seed,cfg.threads)
     env=Maze(cfg.maze,cfg.seed+71000); t=Trainer(cfg,env.observation_shape)
+    if a.bottleneck_beta is not None:
+        # Recreate baseline initialization exactly before adding stochastic modules.
+        from map_learning.information_bottleneck import BottleneckTrainer
+        seed_all(cfg.seed,cfg.threads)
+        t=BottleneckTrainer(cfg,env.observation_shape,a.bottleneck_beta,a.prior_components,a.initial_std,a.prior_lr_multiplier,a.kl_warmup_updates)
     replay=Replay(); schedule=TrainingSchedule(t)
-    out=prepare_run(a.out,cfg,{'arm':a.arm,'blocks':a.blocks,'block_expansions':a.block_expansions,'extra_updates':a.extra_updates,'extra_placement':a.extra_placement,
+    out=prepare_run(a.out,cfg,{'arm':a.arm,'blocks':a.blocks,'block_expansions':a.block_expansions,'extra_updates':a.extra_updates,'extra_placement':a.extra_placement,'bottleneck_spec':getattr(t,'spec',None),
         'protocol':'Persistent visited raw observations and frontier; no identity checks or merging. Re-encode both and recompute exact priorities after training. Same full-epoch sample exposure and gradient-step counts at block boundaries; frequent arm causally partitions epoch into 10 intervals (variable minibatch sizes). No search restart after initialization.'})
     (out/'runner.py').write_text(Path(__file__).read_text())
     (out/'diagnostics_source.py').write_text(Path(__file__).with_name('noisy_frontier.py').read_text())
@@ -98,7 +108,7 @@ def main():
                     training_seconds+=time.monotonic()-tic
                     tic=time.monotonic();queue.refresh(encode);refresh_seconds+=time.monotonic()-tic
                     log_metrics(training_file,{'interactions':len(replay),'updates':t.updates,'block_updates':t.updates-before,
-                        'samples_per_head':samples_per_head,'frontier_entries':int(queue.active.sum()),
+                        'samples_per_head':samples_per_head,'loss_metrics':metrics,'frontier_entries':int(queue.active.sum()),
                         'visited_entries':queue.n_visited,'training_seconds':training_seconds,'refresh_seconds':refresh_seconds})
                 if n_expansions%50==0:
                     row={'block':block+1,'expansions':n_expansions,'interactions':len(replay),'visited':len(visited),
@@ -111,6 +121,7 @@ def main():
             row.update(samples_per_head=samples_per_head,first_full=first_full,milestones=dict(milestones),
                 training_seconds=training_seconds,refresh_seconds=refresh_seconds,search_seconds=search_seconds,
                 **diagnostics(t,replay,points))
+            if hasattr(t,'bottleneck_diagnostics'):row['bottleneck']=t.bottleneck_diagnostics(replay)
             rows.append(dict(row)); log_metrics(blocks,row);print(json.dumps(row),flush=True)
             if block+1 in {1,5,10,a.blocks}:t.save(out/f'checkpoint-{block+1}.pt')
     t.save(out/'checkpoint.pt');replay.save(out/'replay.npz',cfg.maze)
@@ -120,7 +131,7 @@ def main():
     ids=np.flatnonzero(queue.active)
     np.savez_compressed(out/'frontier.npz',observations=queue.observations[ids],positions=np.array(queue.entries)[ids],
         priorities=queue.priority[ids],latents=queue.latents[ids],visited_observations=queue.visited_observations[:queue.n_visited])
-    result={'arm':a.arm,'seed':a.seed,'extra_updates':a.extra_updates,'extra_placement':a.extra_placement,'initial_parameters_sha256':initial_hash,'reachable_states':len(points),
+    result={'arm':a.arm,'seed':a.seed,'extra_updates':a.extra_updates,'extra_placement':a.extra_placement,'bottleneck_spec':getattr(t,'spec',None),'initial_parameters_sha256':initial_hash,'reachable_states':len(points),
         'interactions':len(replay),'updates':t.updates,'samples_per_head':samples_per_head,'batch_size_range':[min_batch,max_batch],
         'visited':len(visited),'coverage':len(visited)/len(points),'first_full':first_full,'milestones':milestones,
         'trained_through':schedule.trained_through,'frontier_entries':int(queue.active.sum()),'visited_entries':queue.n_visited,

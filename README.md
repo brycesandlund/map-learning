@@ -491,3 +491,7 @@ See [noisy-observation frontier search](docs/noisy-frontier.md) for the two-arm 
 The [persistent-frontier follow-up](docs/persistent-frontier.md) keeps all visited observations and queued states across training, and compares full-epoch training every 1,000 expansions against a matched-budget epoch interleaved every 100. Includes exact priority-refresh audits and a six-run exploration animation.
 
 See [frontier sample-efficiency diagnostics](docs/frontier-efficiency.md) for repeat-expansion accounting, audits of overlooked frontier entries, fixed-data fitting interventions, privileged noise-removal controls, and paired online experiments on when to spend extra optimization.
+
+See [queue density and top-k expansion](docs/queue-density.md) for rank-band novelty densities, within-batch duplication, and equal-action comparisons of fixed top-k, latent-diverse batches, and sequential queue updates.
+
+See [learned-prior KL compression](docs/kl-bottleneck.md) for the β sweep, Gaussian versus mixture priors, delayed compression controls, nuisance-sensitivity diagnostics, and a three-seed exploration animation. The stochastic β=0 control is retained alongside the original deterministic baseline.

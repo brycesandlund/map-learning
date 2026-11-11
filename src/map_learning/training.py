@@ -156,6 +156,9 @@ class Trainer:
     def load(cls, path, device="cpu"):
         from .config import config_from_dict
         data = torch.load(path, map_location=device, weights_only=True)
+        if "bottleneck_spec" in data:
+            from .information_bottleneck import BottleneckTrainer
+            return BottleneckTrainer.from_checkpoint(data, device)
         cfg = config_from_dict(data["config"])
         cfg.device = device
         trainer = cls(cfg, tuple(data["observation_shape"]))

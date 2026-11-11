@@ -667,3 +667,58 @@ Early extra training completes all three seeds, but is slower than baseline in s
 Artifacts: [full report](docs/frontier-efficiency.md), `docs/assets/frontier-efficiency-online.png`, `frontier-efficiency-diagnostics.png`, `frontier-efficiency.gif`, `frontier-efficiency-final.png`, and combined `frontier-efficiency-results.json`. Reports include all failures as well as gains. Roots: `runs/frontier-efficiency-audit-20261110`, `frontier-optimization-20261110`, `frontier-fitting-branches-20261110`, `frontier-zero-noise-oracle-20261110`. Scripts: `audit_frontier_efficiency.py`, `run_frontier_optimization.py`, `branch_frontier_fitting.py`, `report_frontier_efficiency.py`. Persistent runner gained optional extra-update placement arguments with zero default; original behavior unchanged by default. Audit JSON's original `wasted_actions` field denotes repeat actions without physical discovery, not absence of learning; updated code uses `repeat_actions` wording.
 
 Validation: **64 tests pass**. Paired input/initialization/noise/budget checks passed; fixed-archive membership reconstructed and checked against final saved archives. All 18 scientific runs completed without failures. A plotting font-size API error was fixed and rendering rerun; it did not affect experiment data. Figures and animation inspected, git diff --check clean. No background runs remain; prior uncommitted work preserved.
+
+## 2026-11-10 — Queue density and top-k batching diagnostics (completed)
+
+User asked whether densities of useful versus repeated/noisy states down the queue suggest batching top-k expansion. Audited 28 model/archive snapshots: original 1,000/100-expansion cadences × three seeds × 5k/25k/50k/100k checkpoints, plus four fixed-archive +2,000-update models. Distinguish previously expanded positions, not-yet-expanded positions with no immediate new neighbors, and productive queued positions that would reveal an unobserved neighbor. All queued entries are already observed; truly unobserved physical positions are not directly in the queue. Oracle physical labels/adjacency used only for evaluation.
+
+Original frequent-training 50k queues: productive fractions across whole queue 0.66/0.64/0.42%, versus top-100 3/6/1%; repeat fractions at head 96/92/96%. Thus head is enriched ~4.5×/9.3×/2.4× despite noise/repeat dominance. Useful entries do not form a universally clean dense band just below the top: ranks 101–1,000 have productive densities 2.44/4.11/1.33%, ranks 1,001–10,000 2.43/1.73/0.74%, ranks 10,001+ 0.07/0.19/0.29%. At seed 2's 100k checkpoint, top100 productive density10% versus0.109% overall; those10 productive entries cover only4 distinct productive positions and yield5 distinct new neighbors. Entry counts overstate unique information.
+
+Counterfactuals on eight original/fitted snapshots (three seeds at50k, seed2 at100k): fixed top-k list versus greedy latent-diverse batch (update keys using selected latents, no children until batch ends) versus existing sequential expansion (immediate key updates and child insertion). Fixed and diverse batch yields computed exactly from deterministic adjacency, counting successor overlap once. Sequential runs use actual noisy observations, frozen models, three noise RNG replicates per snapshot,128 expansions each. Total24 short diagnostic rollouts/15,360 action executions; no training. RNG replicates are not additional trained seeds.
+
+At128 expansions/640 actions from original50k snapshots, new physical states:
+
+| Seed | Fixed top128 | Diverse batch128 | Sequential128, noise-replicate range |
+|---|---:|---:|---:|
+| 0 | 5 | 2 | 7–13 |
+| 1 | 6 | 9 | 8–10 |
+| 2 | 3 | 4 | 43–48 |
+
+Sequential child insertion lets search follow newly exposed branches immediately; preselected batches cannot. In fitted50k models, fixed top128 yields51/66/12, diverse batches70/79/11, sequential152–164/175–184/68–115. No evidence here for raw top-k batching improving interaction efficiency. Parallel simulator throughput was not measured; diversity-aware batching remains a possible wall-clock compromise. Existing frequent training already does100 sequential expansions between neural updates; preselecting the batch is the distinct intervention. Not a full online batched-policy study.
+
+Root `runs/queue-density-20261110`; scripts `audit_queue_density.py`, `report_queue_density.py`; [report](docs/queue-density.md), `docs/assets/queue-density-bands.png`, `queue-batching.png`, and `queue-density-results.json`. Audits and figures completed; images inspected; no changes to training or deployed planner. Previous runs preserved, no background work remains.
+
+
+## 2026-11-10 — Learned-prior KL compression sweep (completed)
+
+Authorized exploration of β and justified prior/training variants. **40 new full runs** plus two reused deterministic reference seeds: 14 conditions × three seeds. Every new run completed 100,000 real actions, 20,000 expansions, 4,112 joint gradient updates, and 1,050,000 transition presentations per dynamics head. Total new scientific budget: **4,000,000 actions and 164,480 updates**. A separate 5k-action/30-update smoke test is excluded. Same maze seed 7, 1,784 reachable positions, clean normalized coordinates plus eight fresh Gaussian nuisance inputs, persistent distance frontier, exact simulator restoration, and no physical-state deduplication. No preexisting run overwritten.
+
+Added a stochastic encoder head q(z|o)=Normal(μ(o),diag σ²(o)), initialized σ=0.01. Joint dynamics training receives reparameterized sampled inputs, with the same input sample/batch across three heads; prediction targets and repulsion use deterministic means. Loss is coordinate-mean prediction MSE + 0.01 hinge repulsion + β E KL(q||p). KL sums over eight latent dimensions and averages observations; its scale is nats/observation. Both prediction endpoints and both repulsion endpoints retain encoder gradients. All queue priorities and agent inference still use μ(o), without sampling. Width/depth, encoder/dynamics learning rates, and replay exposure are unchanged. Training every 100 expansions means every **500 actions**; each event trains a portion of the accumulated replay epoch, completing one pass per 1,000 expansions/5,000 actions. No extra replay updates in this study.
+
+Single diagonal Gaussian prior uses analytic KL. Four-component learned Gaussian mixture uses exact posterior entropy and four samples for expected log prior; diagnostics use 32 samples. Means, scales, and mixture logits are learned. β=0 leaves the prior inactive; its logged KL to the initial reference is not a fitted information estimate. Separate sampling generators preserve mean/dynamics initialization and environment-noise controls. Checkpoints save variance/prior parameters, optimizers, and sampling RNG states.
+
+| Condition | Full coverage, seeds 0 / 1 / 2 (actions) | Mean final coverage | Mean coverage over 100k actions |
+|---|---|---:|---:|
+| Original deterministic | 68,628 / 77,266 / >100k | 99.2% | 55.8% |
+| Gaussian β=0 | 42,498 / 86,192 / 91,846 | 100% | 54.6% |
+| Gaussian β=1e-6 | 52,472 / 69,202 / 74,798 | 100% | 60.3% |
+| Gaussian β=1e-5 | >100k / 55,286 / 56,314 | 91.6% | 57.7% |
+| Gaussian β=1e-4 / 1e-3 / 1e-2 | None in all nine runs | 24.6% / 26.0% / 22.9% | 16.8% / 17.5% / 15.0% |
+| Mixture-4 β=1e-6 | 85,623 / 72,702 / 93,147 | 100% | 52.8% |
+| Mixture-4 β=1e-5 | 54,427 / >100k / >100k | 68.4% | 44.8% |
+| Mixture-4 β=1e-4 | None | 25.3% | 18.6% |
+| Gaussian, 10× prior LR, β=1e-5 / 1e-4 | None in all six runs | 34.2% / 23.9% | 25.3% / 17.0% |
+| Gaussian β=1e-4, delayed to 25k | None | 27.2% | 20.4% |
+| Gaussian β=1e-4, delayed to 35k | 42,504 / >100k / >100k | 69.4% | 46.8% |
+
+Best positive setting by post-sweep mean coverage AUC: Gaussian β=1e-6. Mean completion cost 65,491 actions versus stochastic β=0's 73,512: **10.9% fewer**, improving seeds 1/2 and slowing seed 0. Three seeds on one maze, selected after the sweep: exploratory, not held-out validation or optimal-β evidence. β=0 is the matched stochastic baseline; its mean AUC is slightly below the original deterministic agent despite completing all three seeds. AUC integrates the common 250-action logging grid, without assigning completion times to censored runs.
+
+Mechanism: β=0 posterior std shrinks from 0.01 to 0.000629–0.000703, supporting suppression of sampling noise but not equivalence to deterministic training. β=1e-6 does **not** consistently reduce observation-noise sensitivity of means: final same-position-noise / adjacent-position distance ratios 0.111/0.145/0.142 versus β=0's 0.115/0.138/0.143. Thus exploration improves on average without evidence that nuisance information was wiped from mean latents. Strong from-scratch β≥1e-4 gives mean variance around 1e-7, near-maximal repulsion, near-zero KL, and poor coverage: a collapse failure. Mean-only queue inference can exploit distinctions inaccessible to sampled-input dynamics; an information penalty on sampled z need not erase them from μ.
+
+Adaptive decisions preserved: faster prior LR tested a lagging-prior hypothesis and failed; 25k delayed KL was too early for strong invariance. At 35k all β=0 control probes showed noise/movement ratios 0.20–0.30, so delayed KL was repeated there. Both delayed arms initialize the Gaussian prior to current replay posterior moments at activation (a combined delay/initialization intervention). No extra updates; exact β=0 data prefix through the switch, at 296/651 updates, with KL first affecting the next event at 25.5k/35.5k actions. Later activation preserves variation but two seeds still stall. Mixture flexibility, faster fitting, and delayed compression do not beat the small Gaussian setting in this sweep.
+
+Run roots: `runs/kl-gaussian-20261110` (19), `kl-mixture-20261110` (9), `kl-fast-prior-20261110` (6), `kl-warm-start-20261110` (3), `kl-late-start-20261110` (3). Reused original deterministic seeds 1/2; fresh deterministic seed 0 exactly reproduces its previous replay. Runner `scripts/run_kl_bottleneck.py`; implementation `src/map_learning/information_bottleneck.py`; optional persistent-runner flags preserve deterministic defaults. Audit/report: `scripts/audit_kl_bottleneck.py`, `scripts/report_kl_bottleneck.py`. Full specifications, source snapshots, replay, initial/intermediate/final checkpoints, frontiers, and animation frames retained per run.
+
+Validation: **70 tests pass**. Independent audits passed all 40 runs: initialization, pre-training prefixes, complete matched successor-noise streams, update/action/exposure budgets, delayed-control prefixes, deterministic inference RNG, and every final frontier priority recomputed from raw observations. Checkpoints at 25k/50k/100k include queue-rank diagnostics; these compare different online archives and are not identical-data causal comparisons. Checkpoint loading reproduces the next stochastic update exactly and remains compatible with old deterministic models.
+
+Artifacts: [complete report and reproduction commands](docs/kl-bottleneck.md), `docs/assets/kl-bottleneck-sweep.png`, `kl-bottleneck-comparison.png`, `kl-bottleneck.gif`, `kl-bottleneck-final.png`, `kl-bottleneck-audit.json`, `kl-bottleneck-summary.json`. Animation compares deterministic / stochastic β=0 / Gaussian β=1e-6 across all three seeds, through the full 100k actions; red markers show restoration expansions, not a continuous navigation trajectory. Plots and animation inspected. All experiments and audits finished; no background jobs remain. Prior uncommitted work preserved.
