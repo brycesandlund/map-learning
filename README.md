@@ -483,3 +483,11 @@ See [novelty diagnostics](docs/novelty-diagnostics.md) for 72 checkpoint audits 
 See [latent geometry](docs/latent-geometry.md) for PCA views, distance structure, action vectors, and ablations of low-variance latent directions.
 
 See [larger search budgets](docs/search-budget.md) for matched online continuations at 24/96/384 MCTS simulations, a random control, fixed-model path diagnostics, and trajectory animations.
+
+See [archive and path novelty experiments](docs/novelty-rewards.md) for controlled reward comparisons, real-history loop suppression, imagined-reward errors, and perfect-dynamics frontier-search diagnostics.
+
+See [noisy-observation frontier search](docs/noisy-frontier.md) for the two-arm simulator-restoration experiment: nearest-visited latent distance versus ensemble disagreement, three matched seeds, nuisance-invariance diagnostics, and an exploration animation. Reproduce with `scripts/run_noisy_frontier.py` and `scripts/report_noisy_frontier.py`; configuration: `configs/noisy_frontier.json`.
+
+The [persistent-frontier follow-up](docs/persistent-frontier.md) keeps all visited observations and queued states across training, and compares full-epoch training every 1,000 expansions against a matched-budget epoch interleaved every 100. Includes exact priority-refresh audits and a six-run exploration animation.
+
+See [frontier sample-efficiency diagnostics](docs/frontier-efficiency.md) for repeat-expansion accounting, audits of overlooked frontier entries, fixed-data fitting interventions, privileged noise-removal controls, and paired online experiments on when to spend extra optimization.

@@ -1,0 +1,482 @@
+[
+  {
+    "seed": 0,
+    "persistence": 0.0,
+    "horizon": 32,
+    "trial": 0,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 0,
+    "persistence": 0.0,
+    "horizon": 32,
+    "trial": 1,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 0,
+    "persistence": 0.0,
+    "horizon": 32,
+    "trial": 2,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 0,
+    "persistence": 0.0,
+    "horizon": 32,
+    "trial": 3,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 0,
+    "persistence": 0.0,
+    "horizon": 32,
+    "trial": 4,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 0,
+    "persistence": 0.0,
+    "horizon": 64,
+    "trial": 0,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 0,
+    "persistence": 0.0,
+    "horizon": 64,
+    "trial": 1,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 0,
+    "persistence": 0.0,
+    "horizon": 64,
+    "trial": 2,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 0,
+    "persistence": 0.0,
+    "horizon": 64,
+    "trial": 3,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 0,
+    "persistence": 0.0,
+    "horizon": 64,
+    "trial": 4,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 0,
+    "persistence": 0.8,
+    "horizon": 32,
+    "trial": 0,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 0,
+    "persistence": 0.8,
+    "horizon": 32,
+    "trial": 1,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 0,
+    "persistence": 0.8,
+    "horizon": 32,
+    "trial": 2,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 0,
+    "persistence": 0.8,
+    "horizon": 32,
+    "trial": 3,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 0,
+    "persistence": 0.8,
+    "horizon": 32,
+    "trial": 4,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 0,
+    "persistence": 0.8,
+    "horizon": 64,
+    "trial": 0,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 0,
+    "persistence": 0.8,
+    "horizon": 64,
+    "trial": 1,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 0,
+    "persistence": 0.8,
+    "horizon": 64,
+    "trial": 2,
+    "candidates": 128,
+    "novel_candidates": 1
+  },
+  {
+    "seed": 0,
+    "persistence": 0.8,
+    "horizon": 64,
+    "trial": 3,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 0,
+    "persistence": 0.8,
+    "horizon": 64,
+    "trial": 4,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 1,
+    "persistence": 0.0,
+    "horizon": 32,
+    "trial": 0,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 1,
+    "persistence": 0.0,
+    "horizon": 32,
+    "trial": 1,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 1,
+    "persistence": 0.0,
+    "horizon": 32,
+    "trial": 2,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 1,
+    "persistence": 0.0,
+    "horizon": 32,
+    "trial": 3,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 1,
+    "persistence": 0.0,
+    "horizon": 32,
+    "trial": 4,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 1,
+    "persistence": 0.0,
+    "horizon": 64,
+    "trial": 0,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 1,
+    "persistence": 0.0,
+    "horizon": 64,
+    "trial": 1,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 1,
+    "persistence": 0.0,
+    "horizon": 64,
+    "trial": 2,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 1,
+    "persistence": 0.0,
+    "horizon": 64,
+    "trial": 3,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 1,
+    "persistence": 0.0,
+    "horizon": 64,
+    "trial": 4,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 1,
+    "persistence": 0.8,
+    "horizon": 32,
+    "trial": 0,
+    "candidates": 128,
+    "novel_candidates": 1
+  },
+  {
+    "seed": 1,
+    "persistence": 0.8,
+    "horizon": 32,
+    "trial": 1,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 1,
+    "persistence": 0.8,
+    "horizon": 32,
+    "trial": 2,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 1,
+    "persistence": 0.8,
+    "horizon": 32,
+    "trial": 3,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 1,
+    "persistence": 0.8,
+    "horizon": 32,
+    "trial": 4,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 1,
+    "persistence": 0.8,
+    "horizon": 64,
+    "trial": 0,
+    "candidates": 128,
+    "novel_candidates": 1
+  },
+  {
+    "seed": 1,
+    "persistence": 0.8,
+    "horizon": 64,
+    "trial": 1,
+    "candidates": 128,
+    "novel_candidates": 1
+  },
+  {
+    "seed": 1,
+    "persistence": 0.8,
+    "horizon": 64,
+    "trial": 2,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 1,
+    "persistence": 0.8,
+    "horizon": 64,
+    "trial": 3,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 1,
+    "persistence": 0.8,
+    "horizon": 64,
+    "trial": 4,
+    "candidates": 128,
+    "novel_candidates": 1
+  },
+  {
+    "seed": 2,
+    "persistence": 0.0,
+    "horizon": 32,
+    "trial": 0,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 2,
+    "persistence": 0.0,
+    "horizon": 32,
+    "trial": 1,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 2,
+    "persistence": 0.0,
+    "horizon": 32,
+    "trial": 2,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 2,
+    "persistence": 0.0,
+    "horizon": 32,
+    "trial": 3,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 2,
+    "persistence": 0.0,
+    "horizon": 32,
+    "trial": 4,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 2,
+    "persistence": 0.0,
+    "horizon": 64,
+    "trial": 0,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 2,
+    "persistence": 0.0,
+    "horizon": 64,
+    "trial": 1,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 2,
+    "persistence": 0.0,
+    "horizon": 64,
+    "trial": 2,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 2,
+    "persistence": 0.0,
+    "horizon": 64,
+    "trial": 3,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 2,
+    "persistence": 0.0,
+    "horizon": 64,
+    "trial": 4,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 2,
+    "persistence": 0.8,
+    "horizon": 32,
+    "trial": 0,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 2,
+    "persistence": 0.8,
+    "horizon": 32,
+    "trial": 1,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 2,
+    "persistence": 0.8,
+    "horizon": 32,
+    "trial": 2,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 2,
+    "persistence": 0.8,
+    "horizon": 32,
+    "trial": 3,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 2,
+    "persistence": 0.8,
+    "horizon": 32,
+    "trial": 4,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 2,
+    "persistence": 0.8,
+    "horizon": 64,
+    "trial": 0,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 2,
+    "persistence": 0.8,
+    "horizon": 64,
+    "trial": 1,
+    "candidates": 128,
+    "novel_candidates": 2
+  },
+  {
+    "seed": 2,
+    "persistence": 0.8,
+    "horizon": 64,
+    "trial": 2,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 2,
+    "persistence": 0.8,
+    "horizon": 64,
+    "trial": 3,
+    "candidates": 128,
+    "novel_candidates": 0
+  },
+  {
+    "seed": 2,
+    "persistence": 0.8,
+    "horizon": 64,
+    "trial": 4,
+    "candidates": 128,
+    "novel_candidates": 0
+  }
+]

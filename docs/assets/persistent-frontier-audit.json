@@ -1,0 +1,60 @@
+{
+  "scipy": "1.18.1",
+  "paired_noise_and_budgets_match": true,
+  "rows": [
+    {
+      "arm": "epoch1000",
+      "seed": 0,
+      "frontier_entries": 80001,
+      "visited_entries": 20000,
+      "fresh_encodings_match": true,
+      "exact_priorities_match": true,
+      "brute_force_queries_checked": 32
+    },
+    {
+      "arm": "epoch1000",
+      "seed": 1,
+      "frontier_entries": 80001,
+      "visited_entries": 20000,
+      "fresh_encodings_match": true,
+      "exact_priorities_match": true,
+      "brute_force_queries_checked": 32
+    },
+    {
+      "arm": "epoch1000",
+      "seed": 2,
+      "frontier_entries": 80001,
+      "visited_entries": 20000,
+      "fresh_encodings_match": true,
+      "exact_priorities_match": true,
+      "brute_force_queries_checked": 32
+    },
+    {
+      "arm": "interleaved100",
+      "seed": 0,
+      "frontier_entries": 80001,
+      "visited_entries": 20000,
+      "fresh_encodings_match": true,
+      "exact_priorities_match": true,
+      "brute_force_queries_checked": 32
+    },
+    {
+      "arm": "interleaved100",
+      "seed": 1,
+      "frontier_entries": 80001,
+      "visited_entries": 20000,
+      "fresh_encodings_match": true,
+      "exact_priorities_match": true,
+      "brute_force_queries_checked": 32
+    },
+    {
+      "arm": "interleaved100",
+      "seed": 2,
+      "frontier_entries": 80001,
+      "visited_entries": 20000,
+      "fresh_encodings_match": true,
+      "exact_priorities_match": true,
+      "brute_force_queries_checked": 32
+    }
+  ]
+}

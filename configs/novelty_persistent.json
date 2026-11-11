@@ -1,0 +1,1 @@
+{"source_template":"runs/horizon-duration-20261110/h16_shared_30k-seed{seed}","steps":1200,"simulations":24,"horizon":64,"search":"shooting","candidates":128,"seeds":[0,1,2],"rewards":["archive_path"]}

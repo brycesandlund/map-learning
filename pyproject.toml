@@ -7,7 +7,7 @@ name = "map-learning"
 version = "0.1.0"
 description = "Distance representation learning and latent planning in continuous mazes"
 requires-python = ">=3.11"
-dependencies = ["numpy>=1.26", "torch>=2.2", "matplotlib>=3.8"]
+dependencies = ["numpy>=1.26", "torch>=2.2", "matplotlib>=3.8", "scipy>=1.11"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]

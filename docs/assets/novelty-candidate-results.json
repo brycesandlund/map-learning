@@ -1,0 +1,1460 @@
+[
+  {
+    "seed": 0,
+    "source": "runs/horizon-duration-20261110/h16_shared_30k-seed0",
+    "rows": [
+      {
+        "horizon": 8,
+        "starts": 32,
+        "candidates": 64,
+        "random_new_states": 0.19677734375,
+        "best_new_states": 1.25,
+        "starts_with_novel_candidate": 15,
+        "scores": {
+          "imagined_disagreement": {
+            "new_states": 0.4375,
+            "repeat_fraction": 0.49609375,
+            "within_start_correlation": 0.2170856580570472,
+            "zero_novelty_given_opportunity": 0.6,
+            "selected_real_reward": 0.0011438585170395754,
+            "selected_imagined_reward": 0.0012993894924147043,
+            "imagined_archive_mass_on_non_new_steps": 0.7933312792755531,
+            "endpoint_retrieval_accuracy": 0.59375,
+            "endpoint_catalogue_distance_edge_units": 0.18615454168655793
+          },
+          "imagined_root_distance": {
+            "new_states": 0.34375,
+            "repeat_fraction": 0.15625,
+            "within_start_correlation": 0.29098752485163026,
+            "zero_novelty_given_opportunity": 0.6,
+            "selected_real_reward": 17.36283337790519,
+            "selected_imagined_reward": 17.81404619384557,
+            "imagined_archive_mass_on_non_new_steps": 0.7977086235645602,
+            "endpoint_retrieval_accuracy": 0.875,
+            "endpoint_catalogue_distance_edge_units": 0.08427752568580521
+          },
+          "imagined_path_distance": {
+            "new_states": 0.34375,
+            "repeat_fraction": 0.0859375,
+            "within_start_correlation": 0.3010465940221189,
+            "zero_novelty_given_opportunity": 0.6,
+            "selected_real_reward": 3.990932694170624,
+            "selected_imagined_reward": 4.193421089803451,
+            "imagined_archive_mass_on_non_new_steps": 0.8159598470549171,
+            "endpoint_retrieval_accuracy": 0.84375,
+            "endpoint_catalogue_distance_edge_units": 0.0945465631938229
+          },
+          "imagined_archive_path": {
+            "new_states": 0.59375,
+            "repeat_fraction": 0.24609375,
+            "within_start_correlation": 0.486604738155415,
+            "zero_novelty_given_opportunity": 0.4666666666666667,
+            "selected_real_reward": 0.13489967957139015,
+            "selected_imagined_reward": 0.749421128004542,
+            "imagined_archive_mass_on_non_new_steps": 0.848467465121551,
+            "endpoint_retrieval_accuracy": 0.53125,
+            "endpoint_catalogue_distance_edge_units": 0.18249817902687937
+          },
+          "imagined_disagreement_path": {
+            "new_states": 0.46875,
+            "repeat_fraction": 0.32421875,
+            "within_start_correlation": 0.3254653393051906,
+            "zero_novelty_given_opportunity": 0.4,
+            "selected_real_reward": 0.00010155111526177762,
+            "selected_imagined_reward": 0.00027660932418193144,
+            "imagined_archive_mass_on_non_new_steps": 0.8274201694693897,
+            "endpoint_retrieval_accuracy": 0.59375,
+            "endpoint_catalogue_distance_edge_units": 0.1595428777942693
+          },
+          "real_disagreement": {
+            "new_states": 0.46875,
+            "repeat_fraction": 0.390625,
+            "within_start_correlation": 0.24482488152921836,
+            "zero_novelty_given_opportunity": 0.6,
+            "selected_real_reward": 0.0012703077089724069,
+            "selected_imagined_reward": 0.0010910684013212268,
+            "imagined_archive_mass_on_non_new_steps": 0.7717825207680308,
+            "endpoint_retrieval_accuracy": 0.71875,
+            "endpoint_catalogue_distance_edge_units": 0.12554273009946984
+          },
+          "real_root_distance": {
+            "new_states": 0.40625,
+            "repeat_fraction": 0.10546875,
+            "within_start_correlation": 0.30474334769424394,
+            "zero_novelty_given_opportunity": 0.6666666666666666,
+            "selected_real_reward": 17.522447468712926,
+            "selected_imagined_reward": 17.562128233638454,
+            "imagined_archive_mass_on_non_new_steps": 0.7731377803986667,
+            "endpoint_retrieval_accuracy": 0.90625,
+            "endpoint_catalogue_distance_edge_units": 0.08644846458087808
+          },
+          "real_path_distance": {
+            "new_states": 0.5,
+            "repeat_fraction": 0.02734375,
+            "within_start_correlation": 0.3073529834728967,
+            "zero_novelty_given_opportunity": 0.6666666666666666,
+            "selected_real_reward": 4.11256965296343,
+            "selected_imagined_reward": 4.056436171849782,
+            "imagined_archive_mass_on_non_new_steps": 0.6986688064034315,
+            "endpoint_retrieval_accuracy": 0.9375,
+            "endpoint_catalogue_distance_edge_units": 0.09881185725486527
+          },
+          "real_archive_path": {
+            "new_states": 1.15625,
+            "repeat_fraction": 0.35827113560267854,
+            "within_start_correlation": 0.9943232507678075,
+            "zero_novelty_given_opportunity": 0.0,
+            "selected_real_reward": 0.28469402668997645,
+            "selected_imagined_reward": 0.3965381157466211,
+            "imagined_archive_mass_on_non_new_steps": 0.46212426570995174,
+            "endpoint_retrieval_accuracy": 0.81923828125,
+            "endpoint_catalogue_distance_edge_units": 0.08763808882795274
+          },
+          "real_disagreement_path": {
+            "new_states": 0.65625,
+            "repeat_fraction": 0.171875,
+            "within_start_correlation": 0.3761107083499312,
+            "zero_novelty_given_opportunity": 0.4666666666666667,
+            "selected_real_reward": 0.00017039636573112915,
+            "selected_imagined_reward": 0.00015270249513767327,
+            "imagined_archive_mass_on_non_new_steps": 0.675131884663434,
+            "endpoint_retrieval_accuracy": 0.75,
+            "endpoint_catalogue_distance_edge_units": 0.11336009977579428
+          }
+        }
+      },
+      {
+        "horizon": 16,
+        "starts": 32,
+        "candidates": 64,
+        "random_new_states": 0.35595703125,
+        "best_new_states": 2.15625,
+        "starts_with_novel_candidate": 19,
+        "scores": {
+          "imagined_disagreement": {
+            "new_states": 0.78125,
+            "repeat_fraction": 0.607421875,
+            "within_start_correlation": 0.20785941082638126,
+            "zero_novelty_given_opportunity": 0.5263157894736842,
+            "selected_real_reward": 0.0032833381883681234,
+            "selected_imagined_reward": 0.0026996416337672358,
+            "imagined_archive_mass_on_non_new_steps": 0.8291398301296339,
+            "endpoint_retrieval_accuracy": 0.34375,
+            "endpoint_catalogue_distance_edge_units": 0.2461444434011355
+          },
+          "imagined_root_distance": {
+            "new_states": 0.53125,
+            "repeat_fraction": 0.337890625,
+            "within_start_correlation": 0.22377864141615114,
+            "zero_novelty_given_opportunity": 0.6842105263157895,
+            "selected_real_reward": 49.43015846610069,
+            "selected_imagined_reward": 53.52143517648801,
+            "imagined_archive_mass_on_non_new_steps": 0.8628079072841239,
+            "endpoint_retrieval_accuracy": 0.78125,
+            "endpoint_catalogue_distance_edge_units": 0.08816068229498342
+          },
+          "imagined_path_distance": {
+            "new_states": 0.375,
+            "repeat_fraction": 0.248046875,
+            "within_start_correlation": 0.241750540200337,
+            "zero_novelty_given_opportunity": 0.6842105263157895,
+            "selected_real_reward": 6.21170966536738,
+            "selected_imagined_reward": 7.025893299172822,
+            "imagined_archive_mass_on_non_new_steps": 0.9103749924610036,
+            "endpoint_retrieval_accuracy": 0.8125,
+            "endpoint_catalogue_distance_edge_units": 0.10942760267062113
+          },
+          "imagined_archive_path": {
+            "new_states": 1.3125,
+            "repeat_fraction": 0.435546875,
+            "within_start_correlation": 0.404985606444227,
+            "zero_novelty_given_opportunity": 0.2631578947368421,
+            "selected_real_reward": 0.40075915155466646,
+            "selected_imagined_reward": 1.666102871813564,
+            "imagined_archive_mass_on_non_new_steps": 0.7961426494517211,
+            "endpoint_retrieval_accuracy": 0.375,
+            "endpoint_catalogue_distance_edge_units": 0.30706864793319255
+          },
+          "imagined_disagreement_path": {
+            "new_states": 0.90625,
+            "repeat_fraction": 0.48046875,
+            "within_start_correlation": 0.29749715395693427,
+            "zero_novelty_given_opportunity": 0.42105263157894735,
+            "selected_real_reward": 0.00020883057593579224,
+            "selected_imagined_reward": 0.0005986936331636014,
+            "imagined_archive_mass_on_non_new_steps": 0.8370715193800363,
+            "endpoint_retrieval_accuracy": 0.375,
+            "endpoint_catalogue_distance_edge_units": 0.22791000979486853
+          },
+          "real_disagreement": {
+            "new_states": 0.71875,
+            "repeat_fraction": 0.5703125,
+            "within_start_correlation": 0.2635499074365667,
+            "zero_novelty_given_opportunity": 0.5789473684210527,
+            "selected_real_reward": 0.0037342193036296045,
+            "selected_imagined_reward": 0.001893177453853312,
+            "imagined_archive_mass_on_non_new_steps": 0.863045153691285,
+            "endpoint_retrieval_accuracy": 0.46875,
+            "endpoint_catalogue_distance_edge_units": 0.2096610857406631
+          },
+          "real_root_distance": {
+            "new_states": 0.8125,
+            "repeat_fraction": 0.263671875,
+            "within_start_correlation": 0.25342497824865245,
+            "zero_novelty_given_opportunity": 0.6842105263157895,
+            "selected_real_reward": 51.48982302471995,
+            "selected_imagined_reward": 51.24839404930874,
+            "imagined_archive_mass_on_non_new_steps": 0.7257201797738732,
+            "endpoint_retrieval_accuracy": 0.875,
+            "endpoint_catalogue_distance_edge_units": 0.12143829393122965
+          },
+          "real_path_distance": {
+            "new_states": 0.75,
+            "repeat_fraction": 0.1640625,
+            "within_start_correlation": 0.2585914287720753,
+            "zero_novelty_given_opportunity": 0.631578947368421,
+            "selected_real_reward": 6.711758931865916,
+            "selected_imagined_reward": 6.7523588647254655,
+            "imagined_archive_mass_on_non_new_steps": 0.7399856949723589,
+            "endpoint_retrieval_accuracy": 0.9375,
+            "endpoint_catalogue_distance_edge_units": 0.12260198401054367
+          },
+          "real_archive_path": {
+            "new_states": 1.875,
+            "repeat_fraction": 0.46778738839285716,
+            "within_start_correlation": 0.9897245750779562,
+            "zero_novelty_given_opportunity": 0.0,
+            "selected_real_reward": 0.5417223866097629,
+            "selected_imagined_reward": 1.0034549817213634,
+            "imagined_archive_mass_on_non_new_steps": 0.5839162624736426,
+            "endpoint_retrieval_accuracy": 0.65029296875,
+            "endpoint_catalogue_distance_edge_units": 0.17736287942555334
+          },
+          "real_disagreement_path": {
+            "new_states": 1.28125,
+            "repeat_fraction": 0.27734375,
+            "within_start_correlation": 0.3413591219780004,
+            "zero_novelty_given_opportunity": 0.42105263157894735,
+            "selected_real_reward": 0.0003762504886193341,
+            "selected_imagined_reward": 0.00032258492308995636,
+            "imagined_archive_mass_on_non_new_steps": 0.6667910246820978,
+            "endpoint_retrieval_accuracy": 0.6875,
+            "endpoint_catalogue_distance_edge_units": 0.16756023990456015
+          }
+        }
+      },
+      {
+        "horizon": 32,
+        "starts": 32,
+        "candidates": 64,
+        "random_new_states": 0.75146484375,
+        "best_new_states": 4.84375,
+        "starts_with_novel_candidate": 23,
+        "scores": {
+          "imagined_disagreement": {
+            "new_states": 0.625,
+            "repeat_fraction": 0.6689453125,
+            "within_start_correlation": 0.17736484927711624,
+            "zero_novelty_given_opportunity": 0.5217391304347826,
+            "selected_real_reward": 0.004582775398451755,
+            "selected_imagined_reward": 0.005636548879804026,
+            "imagined_archive_mass_on_non_new_steps": 0.9557087699402369,
+            "endpoint_retrieval_accuracy": 0.1875,
+            "endpoint_catalogue_distance_edge_units": 0.3373308894224465
+          },
+          "imagined_root_distance": {
+            "new_states": 1.375,
+            "repeat_fraction": 0.43359375,
+            "within_start_correlation": 0.20556618785902972,
+            "zero_novelty_given_opportunity": 0.6521739130434783,
+            "selected_real_reward": 126.01883228495717,
+            "selected_imagined_reward": 140.54130137466018,
+            "imagined_archive_mass_on_non_new_steps": 0.8610259747184947,
+            "endpoint_retrieval_accuracy": 0.5625,
+            "endpoint_catalogue_distance_edge_units": 0.1857819000724703
+          },
+          "imagined_path_distance": {
+            "new_states": 1.09375,
+            "repeat_fraction": 0.400390625,
+            "within_start_correlation": 0.2164516627615067,
+            "zero_novelty_given_opportunity": 0.7391304347826086,
+            "selected_real_reward": 9.332550006103702,
+            "selected_imagined_reward": 11.401324365656365,
+            "imagined_archive_mass_on_non_new_steps": 0.8955546600707267,
+            "endpoint_retrieval_accuracy": 0.53125,
+            "endpoint_catalogue_distance_edge_units": 0.23388580314349383
+          },
+          "imagined_archive_path": {
+            "new_states": 1.6875,
+            "repeat_fraction": 0.5888671875,
+            "within_start_correlation": 0.34794383430654025,
+            "zero_novelty_given_opportunity": 0.30434782608695654,
+            "selected_real_reward": 0.4641230476554483,
+            "selected_imagined_reward": 3.7231981400245786,
+            "imagined_archive_mass_on_non_new_steps": 0.898470632575898,
+            "endpoint_retrieval_accuracy": 0.25,
+            "endpoint_catalogue_distance_edge_units": 0.4150086776353419
+          },
+          "imagined_disagreement_path": {
+            "new_states": 1.03125,
+            "repeat_fraction": 0.6181640625,
+            "within_start_correlation": 0.2711074744838462,
+            "zero_novelty_given_opportunity": 0.5652173913043478,
+            "selected_real_reward": 0.0003395041832852108,
+            "selected_imagined_reward": 0.0013881576468133476,
+            "imagined_archive_mass_on_non_new_steps": 0.9456564015985879,
+            "endpoint_retrieval_accuracy": 0.125,
+            "endpoint_catalogue_distance_edge_units": 0.37679594615474343
+          },
+          "real_disagreement": {
+            "new_states": 0.9375,
+            "repeat_fraction": 0.658203125,
+            "within_start_correlation": 0.28443494266793823,
+            "zero_novelty_given_opportunity": 0.5652173913043478,
+            "selected_real_reward": 0.008753422715187309,
+            "selected_imagined_reward": 0.0031884388660181617,
+            "imagined_archive_mass_on_non_new_steps": 0.9228549504861446,
+            "endpoint_retrieval_accuracy": 0.28125,
+            "endpoint_catalogue_distance_edge_units": 0.24338956840801984
+          },
+          "real_root_distance": {
+            "new_states": 2.0,
+            "repeat_fraction": 0.3994140625,
+            "within_start_correlation": 0.22335417798685722,
+            "zero_novelty_given_opportunity": 0.6086956521739131,
+            "selected_real_reward": 131.8208407969214,
+            "selected_imagined_reward": 133.72906901844544,
+            "imagined_archive_mass_on_non_new_steps": 0.7653810431002664,
+            "endpoint_retrieval_accuracy": 0.6875,
+            "endpoint_catalogue_distance_edge_units": 0.19415743660647422
+          },
+          "real_path_distance": {
+            "new_states": 1.84375,
+            "repeat_fraction": 0.3154296875,
+            "within_start_correlation": 0.2330121594935941,
+            "zero_novelty_given_opportunity": 0.6521739130434783,
+            "selected_real_reward": 10.236165803740732,
+            "selected_imagined_reward": 10.587515278535648,
+            "imagined_archive_mass_on_non_new_steps": 0.808365046648155,
+            "endpoint_retrieval_accuracy": 0.71875,
+            "endpoint_catalogue_distance_edge_units": 0.22264672012533993
+          },
+          "real_archive_path": {
+            "new_states": 4.6875,
+            "repeat_fraction": 0.4889984130859375,
+            "within_start_correlation": 0.9829514307530431,
+            "zero_novelty_given_opportunity": 0.0,
+            "selected_real_reward": 1.080249817459844,
+            "selected_imagined_reward": 2.076999090034519,
+            "imagined_archive_mass_on_non_new_steps": 0.6643843692749901,
+            "endpoint_retrieval_accuracy": 0.40771484375,
+            "endpoint_catalogue_distance_edge_units": 0.20045946422033012
+          },
+          "real_disagreement_path": {
+            "new_states": 2.53125,
+            "repeat_fraction": 0.4501953125,
+            "within_start_correlation": 0.3702656096879167,
+            "zero_novelty_given_opportunity": 0.2608695652173913,
+            "selected_real_reward": 0.000525819832209784,
+            "selected_imagined_reward": 0.0005142659921450327,
+            "imagined_archive_mass_on_non_new_steps": 0.8610231341811225,
+            "endpoint_retrieval_accuracy": 0.28125,
+            "endpoint_catalogue_distance_edge_units": 0.18497278005816042
+          }
+        }
+      },
+      {
+        "horizon": 64,
+        "starts": 32,
+        "candidates": 64,
+        "random_new_states": 1.59814453125,
+        "best_new_states": 10.03125,
+        "starts_with_novel_candidate": 26,
+        "scores": {
+          "imagined_disagreement": {
+            "new_states": 1.5625,
+            "repeat_fraction": 0.69677734375,
+            "within_start_correlation": 0.20407176184558568,
+            "zero_novelty_given_opportunity": 0.46153846153846156,
+            "selected_real_reward": 0.004934175380434558,
+            "selected_imagined_reward": 0.009515820973409084,
+            "imagined_archive_mass_on_non_new_steps": 0.941278013844692,
+            "endpoint_retrieval_accuracy": 0.0,
+            "endpoint_catalogue_distance_edge_units": 0.34123544907197356
+          },
+          "imagined_root_distance": {
+            "new_states": 2.75,
+            "repeat_fraction": 0.5869140625,
+            "within_start_correlation": 0.14338948377398913,
+            "zero_novelty_given_opportunity": 0.5769230769230769,
+            "selected_real_reward": 280.483434103895,
+            "selected_imagined_reward": 327.3106817649459,
+            "imagined_archive_mass_on_non_new_steps": 0.892791449457133,
+            "endpoint_retrieval_accuracy": 0.4375,
+            "endpoint_catalogue_distance_edge_units": 0.2585086366161704
+          },
+          "imagined_path_distance": {
+            "new_states": 1.53125,
+            "repeat_fraction": 0.54541015625,
+            "within_start_correlation": 0.10969236470091884,
+            "zero_novelty_given_opportunity": 0.5769230769230769,
+            "selected_real_reward": 12.548438018624438,
+            "selected_imagined_reward": 16.816972541035966,
+            "imagined_archive_mass_on_non_new_steps": 0.936948260001719,
+            "endpoint_retrieval_accuracy": 0.5,
+            "endpoint_catalogue_distance_edge_units": 0.28032657341100276
+          },
+          "imagined_archive_path": {
+            "new_states": 2.4375,
+            "repeat_fraction": 0.64697265625,
+            "within_start_correlation": 0.27144231386752693,
+            "zero_novelty_given_opportunity": 0.4230769230769231,
+            "selected_real_reward": 0.5411481782793999,
+            "selected_imagined_reward": 6.593725452994477,
+            "imagined_archive_mass_on_non_new_steps": 0.9388504470876208,
+            "endpoint_retrieval_accuracy": 0.0625,
+            "endpoint_catalogue_distance_edge_units": 0.42569044418632984
+          },
+          "imagined_disagreement_path": {
+            "new_states": 1.96875,
+            "repeat_fraction": 0.6728515625,
+            "within_start_correlation": 0.22686330992136894,
+            "zero_novelty_given_opportunity": 0.5384615384615384,
+            "selected_real_reward": 0.000393246774582412,
+            "selected_imagined_reward": 0.0022247786264220307,
+            "imagined_archive_mass_on_non_new_steps": 0.9467133010478548,
+            "endpoint_retrieval_accuracy": 0.0,
+            "endpoint_catalogue_distance_edge_units": 0.4136000629514456
+          },
+          "real_disagreement": {
+            "new_states": 3.625,
+            "repeat_fraction": 0.6953125,
+            "within_start_correlation": 0.3223409000351568,
+            "zero_novelty_given_opportunity": 0.4230769230769231,
+            "selected_real_reward": 0.013030720975914067,
+            "selected_imagined_reward": 0.0038397398203522393,
+            "imagined_archive_mass_on_non_new_steps": 0.8671834978379795,
+            "endpoint_retrieval_accuracy": 0.21875,
+            "endpoint_catalogue_distance_edge_units": 0.3125038258731365
+          },
+          "real_root_distance": {
+            "new_states": 2.78125,
+            "repeat_fraction": 0.544921875,
+            "within_start_correlation": 0.1625762080496272,
+            "zero_novelty_given_opportunity": 0.6153846153846154,
+            "selected_real_reward": 300.50754843186587,
+            "selected_imagined_reward": 301.9893310663356,
+            "imagined_archive_mass_on_non_new_steps": 0.8616647827642795,
+            "endpoint_retrieval_accuracy": 0.5625,
+            "endpoint_catalogue_distance_edge_units": 0.23519125627353787
+          },
+          "real_path_distance": {
+            "new_states": 1.6875,
+            "repeat_fraction": 0.44775390625,
+            "within_start_correlation": 0.14893680567552786,
+            "zero_novelty_given_opportunity": 0.5384615384615384,
+            "selected_real_reward": 14.829801584419329,
+            "selected_imagined_reward": 14.737973146429795,
+            "imagined_archive_mass_on_non_new_steps": 0.9266745664543056,
+            "endpoint_retrieval_accuracy": 0.71875,
+            "endpoint_catalogue_distance_edge_units": 0.2006895892554894
+          },
+          "real_archive_path": {
+            "new_states": 9.84375,
+            "repeat_fraction": 0.5754776000976562,
+            "within_start_correlation": 0.9817072805915075,
+            "zero_novelty_given_opportunity": 0.0,
+            "selected_real_reward": 1.7476173455361277,
+            "selected_imagined_reward": 3.5501621065441746,
+            "imagined_archive_mass_on_non_new_steps": 0.6888638827476009,
+            "endpoint_retrieval_accuracy": 0.2177734375,
+            "endpoint_catalogue_distance_edge_units": 0.2806446114555001
+          },
+          "real_disagreement_path": {
+            "new_states": 4.625,
+            "repeat_fraction": 0.55322265625,
+            "within_start_correlation": 0.36485278117755077,
+            "zero_novelty_given_opportunity": 0.2692307692307692,
+            "selected_real_reward": 0.0008003091994740474,
+            "selected_imagined_reward": 0.0008998338385469123,
+            "imagined_archive_mass_on_non_new_steps": 0.8145084058502063,
+            "endpoint_retrieval_accuracy": 0.3125,
+            "endpoint_catalogue_distance_edge_units": 0.2718141240766272
+          }
+        }
+      }
+    ]
+  },
+  {
+    "seed": 1,
+    "source": "runs/horizon-duration-20261110/h16_shared_30k-seed1",
+    "rows": [
+      {
+        "horizon": 8,
+        "starts": 32,
+        "candidates": 64,
+        "random_new_states": 0.1328125,
+        "best_new_states": 0.9375,
+        "starts_with_novel_candidate": 13,
+        "scores": {
+          "imagined_disagreement": {
+            "new_states": 0.40625,
+            "repeat_fraction": 0.4453125,
+            "within_start_correlation": 0.2973141813932548,
+            "zero_novelty_given_opportunity": 0.38461538461538464,
+            "selected_real_reward": 0.0010108167231415166,
+            "selected_imagined_reward": 0.001427023661606297,
+            "imagined_archive_mass_on_non_new_steps": 0.8736336529914497,
+            "endpoint_retrieval_accuracy": 0.5625,
+            "endpoint_catalogue_distance_edge_units": 0.1727817252253382
+          },
+          "imagined_root_distance": {
+            "new_states": 0.28125,
+            "repeat_fraction": 0.203125,
+            "within_start_correlation": 0.30821304430917806,
+            "zero_novelty_given_opportunity": 0.6153846153846154,
+            "selected_real_reward": 13.97264564782381,
+            "selected_imagined_reward": 15.429982832167298,
+            "imagined_archive_mass_on_non_new_steps": 0.8330604901692806,
+            "endpoint_retrieval_accuracy": 0.75,
+            "endpoint_catalogue_distance_edge_units": 0.12701997181496744
+          },
+          "imagined_path_distance": {
+            "new_states": 0.3125,
+            "repeat_fraction": 0.09375,
+            "within_start_correlation": 0.3253905635182138,
+            "zero_novelty_given_opportunity": 0.6153846153846154,
+            "selected_real_reward": 3.4096396297682077,
+            "selected_imagined_reward": 3.644724148856767,
+            "imagined_archive_mass_on_non_new_steps": 0.7963452424544933,
+            "endpoint_retrieval_accuracy": 0.84375,
+            "endpoint_catalogue_distance_edge_units": 0.11512422983586373
+          },
+          "imagined_archive_path": {
+            "new_states": 0.53125,
+            "repeat_fraction": 0.27734375,
+            "within_start_correlation": 0.4548414365427874,
+            "zero_novelty_given_opportunity": 0.38461538461538464,
+            "selected_real_reward": 0.13286197232082486,
+            "selected_imagined_reward": 0.7436661796036788,
+            "imagined_archive_mass_on_non_new_steps": 0.8300857123083221,
+            "endpoint_retrieval_accuracy": 0.59375,
+            "endpoint_catalogue_distance_edge_units": 0.2210096369187037
+          },
+          "imagined_disagreement_path": {
+            "new_states": 0.3125,
+            "repeat_fraction": 0.296875,
+            "within_start_correlation": 0.33548749319000354,
+            "zero_novelty_given_opportunity": 0.5384615384615384,
+            "selected_real_reward": 0.000153733335383599,
+            "selected_imagined_reward": 0.00039203101604403973,
+            "imagined_archive_mass_on_non_new_steps": 0.8896699294099464,
+            "endpoint_retrieval_accuracy": 0.5625,
+            "endpoint_catalogue_distance_edge_units": 0.17911508108677698
+          },
+          "real_disagreement": {
+            "new_states": 0.40625,
+            "repeat_fraction": 0.43359375,
+            "within_start_correlation": 0.34246045611640186,
+            "zero_novelty_given_opportunity": 0.5384615384615384,
+            "selected_real_reward": 0.001274096692743587,
+            "selected_imagined_reward": 0.0011591829213319915,
+            "imagined_archive_mass_on_non_new_steps": 0.8701536088926495,
+            "endpoint_retrieval_accuracy": 0.59375,
+            "endpoint_catalogue_distance_edge_units": 0.18295093674983254
+          },
+          "real_root_distance": {
+            "new_states": 0.5,
+            "repeat_fraction": 0.06640625,
+            "within_start_correlation": 0.33877941410196605,
+            "zero_novelty_given_opportunity": 0.46153846153846156,
+            "selected_real_reward": 14.75652723107487,
+            "selected_imagined_reward": 14.756507922584811,
+            "imagined_archive_mass_on_non_new_steps": 0.7059132583349191,
+            "endpoint_retrieval_accuracy": 0.9114583333333334,
+            "endpoint_catalogue_distance_edge_units": 0.11443751670904309
+          },
+          "real_path_distance": {
+            "new_states": 0.21875,
+            "repeat_fraction": 0.04296875,
+            "within_start_correlation": 0.32842667887198296,
+            "zero_novelty_given_opportunity": 0.6923076923076923,
+            "selected_real_reward": 3.5678023027721792,
+            "selected_imagined_reward": 3.5701846154915984,
+            "imagined_archive_mass_on_non_new_steps": 0.8019496643082314,
+            "endpoint_retrieval_accuracy": 1.0,
+            "endpoint_catalogue_distance_edge_units": 0.11842966399207297
+          },
+          "real_archive_path": {
+            "new_states": 0.90625,
+            "repeat_fraction": 0.4195120675223214,
+            "within_start_correlation": 0.991582284035062,
+            "zero_novelty_given_opportunity": 0.0,
+            "selected_real_reward": 0.19962339848279953,
+            "selected_imagined_reward": 0.38537720013796267,
+            "imagined_archive_mass_on_non_new_steps": 0.5819205223389261,
+            "endpoint_retrieval_accuracy": 0.7860630580357143,
+            "endpoint_catalogue_distance_edge_units": 0.12142778430799289
+          },
+          "real_disagreement_path": {
+            "new_states": 0.6875,
+            "repeat_fraction": 0.16015625,
+            "within_start_correlation": 0.439832854256811,
+            "zero_novelty_given_opportunity": 0.15384615384615385,
+            "selected_real_reward": 0.00023207392891633205,
+            "selected_imagined_reward": 0.0002506532569504311,
+            "imagined_archive_mass_on_non_new_steps": 0.700907059436018,
+            "endpoint_retrieval_accuracy": 0.828125,
+            "endpoint_catalogue_distance_edge_units": 0.1465303894783747
+          }
+        }
+      },
+      {
+        "horizon": 16,
+        "starts": 32,
+        "candidates": 64,
+        "random_new_states": 0.2529296875,
+        "best_new_states": 1.71875,
+        "starts_with_novel_candidate": 15,
+        "scores": {
+          "imagined_disagreement": {
+            "new_states": 0.90625,
+            "repeat_fraction": 0.62890625,
+            "within_start_correlation": 0.359214360999756,
+            "zero_novelty_given_opportunity": 0.4666666666666667,
+            "selected_real_reward": 0.00152406042859754,
+            "selected_imagined_reward": 0.0030196938214006597,
+            "imagined_archive_mass_on_non_new_steps": 0.8539017006726671,
+            "endpoint_retrieval_accuracy": 0.34375,
+            "endpoint_catalogue_distance_edge_units": 0.3100947201019153
+          },
+          "imagined_root_distance": {
+            "new_states": 0.5,
+            "repeat_fraction": 0.365234375,
+            "within_start_correlation": 0.32062016325169584,
+            "zero_novelty_given_opportunity": 0.6,
+            "selected_real_reward": 41.15163725684397,
+            "selected_imagined_reward": 47.77994460599439,
+            "imagined_archive_mass_on_non_new_steps": 0.8732574228072546,
+            "endpoint_retrieval_accuracy": 0.59375,
+            "endpoint_catalogue_distance_edge_units": 0.14197578246239573
+          },
+          "imagined_path_distance": {
+            "new_states": 0.75,
+            "repeat_fraction": 0.216796875,
+            "within_start_correlation": 0.35685155954992026,
+            "zero_novelty_given_opportunity": 0.4666666666666667,
+            "selected_real_reward": 5.729540411382914,
+            "selected_imagined_reward": 6.508701402708539,
+            "imagined_archive_mass_on_non_new_steps": 0.8246183660450903,
+            "endpoint_retrieval_accuracy": 0.65625,
+            "endpoint_catalogue_distance_edge_units": 0.18311756884213537
+          },
+          "imagined_archive_path": {
+            "new_states": 1.0625,
+            "repeat_fraction": 0.505859375,
+            "within_start_correlation": 0.4977235117314823,
+            "zero_novelty_given_opportunity": 0.26666666666666666,
+            "selected_real_reward": 0.2243809422943741,
+            "selected_imagined_reward": 1.5994694098535547,
+            "imagined_archive_mass_on_non_new_steps": 0.8454872573288141,
+            "endpoint_retrieval_accuracy": 0.34375,
+            "endpoint_catalogue_distance_edge_units": 0.3935643429867923
+          },
+          "imagined_disagreement_path": {
+            "new_states": 1.0,
+            "repeat_fraction": 0.5390625,
+            "within_start_correlation": 0.40679405326989143,
+            "zero_novelty_given_opportunity": 0.26666666666666666,
+            "selected_real_reward": 0.0002922458073073564,
+            "selected_imagined_reward": 0.0007685954550845637,
+            "imagined_archive_mass_on_non_new_steps": 0.8278683616851299,
+            "endpoint_retrieval_accuracy": 0.25,
+            "endpoint_catalogue_distance_edge_units": 0.3187709497869946
+          },
+          "real_disagreement": {
+            "new_states": 0.5625,
+            "repeat_fraction": 0.556640625,
+            "within_start_correlation": 0.39953943973873257,
+            "zero_novelty_given_opportunity": 0.5333333333333333,
+            "selected_real_reward": 0.0024294376164186726,
+            "selected_imagined_reward": 0.0018217174643198053,
+            "imagined_archive_mass_on_non_new_steps": 0.9011057411313401,
+            "endpoint_retrieval_accuracy": 0.5625,
+            "endpoint_catalogue_distance_edge_units": 0.19070637348340824
+          },
+          "real_root_distance": {
+            "new_states": 0.8125,
+            "repeat_fraction": 0.251953125,
+            "within_start_correlation": 0.313073625722278,
+            "zero_novelty_given_opportunity": 0.5333333333333333,
+            "selected_real_reward": 45.27954701799899,
+            "selected_imagined_reward": 45.641190873793676,
+            "imagined_archive_mass_on_non_new_steps": 0.7898570129802918,
+            "endpoint_retrieval_accuracy": 0.75,
+            "endpoint_catalogue_distance_edge_units": 0.18543806480010971
+          },
+          "real_path_distance": {
+            "new_states": 0.4375,
+            "repeat_fraction": 0.14453125,
+            "within_start_correlation": 0.31778156330400026,
+            "zero_novelty_given_opportunity": 0.6666666666666666,
+            "selected_real_reward": 6.251596980495378,
+            "selected_imagined_reward": 6.165752572051133,
+            "imagined_archive_mass_on_non_new_steps": 0.8927408722609378,
+            "endpoint_retrieval_accuracy": 0.84375,
+            "endpoint_catalogue_distance_edge_units": 0.14606620406266302
+          },
+          "real_archive_path": {
+            "new_states": 1.6875,
+            "repeat_fraction": 0.479522705078125,
+            "within_start_correlation": 0.9889441350880498,
+            "zero_novelty_given_opportunity": 0.0,
+            "selected_real_reward": 0.3267682665027678,
+            "selected_imagined_reward": 0.8895439588911103,
+            "imagined_archive_mass_on_non_new_steps": 0.6567853163199594,
+            "endpoint_retrieval_accuracy": 0.69775390625,
+            "endpoint_catalogue_distance_edge_units": 0.18173787067644298
+          },
+          "real_disagreement_path": {
+            "new_states": 1.125,
+            "repeat_fraction": 0.28515625,
+            "within_start_correlation": 0.49794490329672164,
+            "zero_novelty_given_opportunity": 0.3333333333333333,
+            "selected_real_reward": 0.00040189203646834315,
+            "selected_imagined_reward": 0.0004403806127673089,
+            "imagined_archive_mass_on_non_new_steps": 0.7644023092056654,
+            "endpoint_retrieval_accuracy": 0.59375,
+            "endpoint_catalogue_distance_edge_units": 0.18604562216205522
+          }
+        }
+      },
+      {
+        "horizon": 32,
+        "starts": 32,
+        "candidates": 64,
+        "random_new_states": 0.52197265625,
+        "best_new_states": 3.1875,
+        "starts_with_novel_candidate": 22,
+        "scores": {
+          "imagined_disagreement": {
+            "new_states": 1.4375,
+            "repeat_fraction": 0.681640625,
+            "within_start_correlation": 0.29228525392614135,
+            "zero_novelty_given_opportunity": 0.5454545454545454,
+            "selected_real_reward": 0.0023079881025295235,
+            "selected_imagined_reward": 0.005701806716257973,
+            "imagined_archive_mass_on_non_new_steps": 0.8739759829805669,
+            "endpoint_retrieval_accuracy": 0.09375,
+            "endpoint_catalogue_distance_edge_units": 0.4142825035378337
+          },
+          "imagined_root_distance": {
+            "new_states": 1.21875,
+            "repeat_fraction": 0.5361328125,
+            "within_start_correlation": 0.27008990198851907,
+            "zero_novelty_given_opportunity": 0.5,
+            "selected_real_reward": 110.9782974277623,
+            "selected_imagined_reward": 136.29895193036646,
+            "imagined_archive_mass_on_non_new_steps": 0.8845256612362066,
+            "endpoint_retrieval_accuracy": 0.46875,
+            "endpoint_catalogue_distance_edge_units": 0.19701467209961265
+          },
+          "imagined_path_distance": {
+            "new_states": 0.84375,
+            "repeat_fraction": 0.41015625,
+            "within_start_correlation": 0.30457562081625356,
+            "zero_novelty_given_opportunity": 0.4090909090909091,
+            "selected_real_reward": 8.101088871713728,
+            "selected_imagined_reward": 10.536077264646337,
+            "imagined_archive_mass_on_non_new_steps": 0.9426173305262069,
+            "endpoint_retrieval_accuracy": 0.4375,
+            "endpoint_catalogue_distance_edge_units": 0.25868630048353225
+          },
+          "imagined_archive_path": {
+            "new_states": 1.90625,
+            "repeat_fraction": 0.5771484375,
+            "within_start_correlation": 0.4018540435275231,
+            "zero_novelty_given_opportunity": 0.3181818181818182,
+            "selected_real_reward": 0.40934948343783617,
+            "selected_imagined_reward": 3.4554920307946304,
+            "imagined_archive_mass_on_non_new_steps": 0.8918679887462659,
+            "endpoint_retrieval_accuracy": 0.125,
+            "endpoint_catalogue_distance_edge_units": 0.40456528472714126
+          },
+          "imagined_disagreement_path": {
+            "new_states": 1.40625,
+            "repeat_fraction": 0.693359375,
+            "within_start_correlation": 0.32757965862638067,
+            "zero_novelty_given_opportunity": 0.5909090909090909,
+            "selected_real_reward": 0.0005330509142544848,
+            "selected_imagined_reward": 0.0017207041888635097,
+            "imagined_archive_mass_on_non_new_steps": 0.8859109834701965,
+            "endpoint_retrieval_accuracy": 0.03125,
+            "endpoint_catalogue_distance_edge_units": 0.3937632367014885
+          },
+          "real_disagreement": {
+            "new_states": 1.71875,
+            "repeat_fraction": 0.626953125,
+            "within_start_correlation": 0.390553724030185,
+            "zero_novelty_given_opportunity": 0.3181818181818182,
+            "selected_real_reward": 0.004602655595318028,
+            "selected_imagined_reward": 0.002848472288759396,
+            "imagined_archive_mass_on_non_new_steps": 0.8217810527538437,
+            "endpoint_retrieval_accuracy": 0.34375,
+            "endpoint_catalogue_distance_edge_units": 0.26143888430669904
+          },
+          "real_root_distance": {
+            "new_states": 0.96875,
+            "repeat_fraction": 0.44921875,
+            "within_start_correlation": 0.2656601401854356,
+            "zero_novelty_given_opportunity": 0.5909090909090909,
+            "selected_real_reward": 122.49320379155688,
+            "selected_imagined_reward": 124.46121659198616,
+            "imagined_archive_mass_on_non_new_steps": 0.8808762166109342,
+            "endpoint_retrieval_accuracy": 0.59375,
+            "endpoint_catalogue_distance_edge_units": 0.17335316364187747
+          },
+          "real_path_distance": {
+            "new_states": 0.5625,
+            "repeat_fraction": 0.3251953125,
+            "within_start_correlation": 0.2540707110179948,
+            "zero_novelty_given_opportunity": 0.5454545454545454,
+            "selected_real_reward": 9.103950254851952,
+            "selected_imagined_reward": 9.289890970030683,
+            "imagined_archive_mass_on_non_new_steps": 0.9568343333644485,
+            "endpoint_retrieval_accuracy": 0.65625,
+            "endpoint_catalogue_distance_edge_units": 0.20392042363528162
+          },
+          "real_archive_path": {
+            "new_states": 3.0625,
+            "repeat_fraction": 0.5233612060546875,
+            "within_start_correlation": 0.9871362155716351,
+            "zero_novelty_given_opportunity": 0.0,
+            "selected_real_reward": 0.6283317739143968,
+            "selected_imagined_reward": 1.680965468567301,
+            "imagined_archive_mass_on_non_new_steps": 0.7036624852051799,
+            "endpoint_retrieval_accuracy": 0.380859375,
+            "endpoint_catalogue_distance_edge_units": 0.21441304520703852
+          },
+          "real_disagreement_path": {
+            "new_states": 1.8125,
+            "repeat_fraction": 0.423828125,
+            "within_start_correlation": 0.4427410479112689,
+            "zero_novelty_given_opportunity": 0.22727272727272727,
+            "selected_real_reward": 0.0007487514006552232,
+            "selected_imagined_reward": 0.0005910522912414202,
+            "imagined_archive_mass_on_non_new_steps": 0.8313148731095086,
+            "endpoint_retrieval_accuracy": 0.375,
+            "endpoint_catalogue_distance_edge_units": 0.2582263300428167
+          }
+        }
+      },
+      {
+        "horizon": 64,
+        "starts": 32,
+        "candidates": 64,
+        "random_new_states": 0.9892578125,
+        "best_new_states": 5.53125,
+        "starts_with_novel_candidate": 27,
+        "scores": {
+          "imagined_disagreement": {
+            "new_states": 2.3125,
+            "repeat_fraction": 0.69384765625,
+            "within_start_correlation": 0.2485136033085724,
+            "zero_novelty_given_opportunity": 0.5555555555555556,
+            "selected_real_reward": 0.0029700679608429814,
+            "selected_imagined_reward": 0.008086928010973549,
+            "imagined_archive_mass_on_non_new_steps": 0.9046998684089665,
+            "endpoint_retrieval_accuracy": 0.0625,
+            "endpoint_catalogue_distance_edge_units": 0.2881890351418406
+          },
+          "imagined_root_distance": {
+            "new_states": 1.9375,
+            "repeat_fraction": 0.59765625,
+            "within_start_correlation": 0.22713914635134078,
+            "zero_novelty_given_opportunity": 0.5185185185185185,
+            "selected_real_reward": 239.87153894943185,
+            "selected_imagined_reward": 324.7182128928107,
+            "imagined_archive_mass_on_non_new_steps": 0.9130021655459496,
+            "endpoint_retrieval_accuracy": 0.3125,
+            "endpoint_catalogue_distance_edge_units": 0.24859091849066317
+          },
+          "imagined_path_distance": {
+            "new_states": 1.40625,
+            "repeat_fraction": 0.53955078125,
+            "within_start_correlation": 0.23645686748243774,
+            "zero_novelty_given_opportunity": 0.5925925925925926,
+            "selected_real_reward": 11.36593136045849,
+            "selected_imagined_reward": 15.164357575571103,
+            "imagined_archive_mass_on_non_new_steps": 0.9333263610712561,
+            "endpoint_retrieval_accuracy": 0.34375,
+            "endpoint_catalogue_distance_edge_units": 0.2752362829633057
+          },
+          "imagined_archive_path": {
+            "new_states": 1.9375,
+            "repeat_fraction": 0.66845703125,
+            "within_start_correlation": 0.3140838668033744,
+            "zero_novelty_given_opportunity": 0.4074074074074074,
+            "selected_real_reward": 0.36435454816091806,
+            "selected_imagined_reward": 5.7492219018745345,
+            "imagined_archive_mass_on_non_new_steps": 0.9332004061449144,
+            "endpoint_retrieval_accuracy": 0.15625,
+            "endpoint_catalogue_distance_edge_units": 0.40347055066376925
+          },
+          "imagined_disagreement_path": {
+            "new_states": 2.15625,
+            "repeat_fraction": 0.70703125,
+            "within_start_correlation": 0.2839545569554088,
+            "zero_novelty_given_opportunity": 0.5555555555555556,
+            "selected_real_reward": 0.0006540840496509492,
+            "selected_imagined_reward": 0.002649998452115843,
+            "imagined_archive_mass_on_non_new_steps": 0.9154172253249521,
+            "endpoint_retrieval_accuracy": 0.09375,
+            "endpoint_catalogue_distance_edge_units": 0.28994200634770095
+          },
+          "real_disagreement": {
+            "new_states": 3.125,
+            "repeat_fraction": 0.66162109375,
+            "within_start_correlation": 0.38708913380090815,
+            "zero_novelty_given_opportunity": 0.25925925925925924,
+            "selected_real_reward": 0.007606971754693714,
+            "selected_imagined_reward": 0.003818516118821391,
+            "imagined_archive_mass_on_non_new_steps": 0.8314735750903132,
+            "endpoint_retrieval_accuracy": 0.1875,
+            "endpoint_catalogue_distance_edge_units": 0.25602809456177056
+          },
+          "real_root_distance": {
+            "new_states": 2.84375,
+            "repeat_fraction": 0.52294921875,
+            "within_start_correlation": 0.21003385888153012,
+            "zero_novelty_given_opportunity": 0.5185185185185185,
+            "selected_real_reward": 266.3386182594113,
+            "selected_imagined_reward": 275.3778305607739,
+            "imagined_archive_mass_on_non_new_steps": 0.8766239271412388,
+            "endpoint_retrieval_accuracy": 0.46875,
+            "endpoint_catalogue_distance_edge_units": 0.2348704633768648
+          },
+          "real_path_distance": {
+            "new_states": 1.75,
+            "repeat_fraction": 0.44287109375,
+            "within_start_correlation": 0.19766664843345036,
+            "zero_novelty_given_opportunity": 0.6666666666666666,
+            "selected_real_reward": 13.20841794309672,
+            "selected_imagined_reward": 13.320459597304762,
+            "imagined_archive_mass_on_non_new_steps": 0.9185898571629719,
+            "endpoint_retrieval_accuracy": 0.59375,
+            "endpoint_catalogue_distance_edge_units": 0.25902945874258876
+          },
+          "real_archive_path": {
+            "new_states": 5.25,
+            "repeat_fraction": 0.5622711181640625,
+            "within_start_correlation": 0.9781744798747006,
+            "zero_novelty_given_opportunity": 0.0,
+            "selected_real_reward": 0.8965908894897439,
+            "selected_imagined_reward": 3.1527880489164843,
+            "imagined_archive_mass_on_non_new_steps": 0.7839244078028456,
+            "endpoint_retrieval_accuracy": 0.26025390625,
+            "endpoint_catalogue_distance_edge_units": 0.23528305999934673
+          },
+          "real_disagreement_path": {
+            "new_states": 3.6875,
+            "repeat_fraction": 0.53173828125,
+            "within_start_correlation": 0.42125337112203026,
+            "zero_novelty_given_opportunity": 0.3333333333333333,
+            "selected_real_reward": 0.00099524018698538,
+            "selected_imagined_reward": 0.0008971669469510724,
+            "imagined_archive_mass_on_non_new_steps": 0.8286345443077415,
+            "endpoint_retrieval_accuracy": 0.28125,
+            "endpoint_catalogue_distance_edge_units": 0.23435956751927733
+          }
+        }
+      }
+    ]
+  },
+  {
+    "seed": 2,
+    "source": "runs/horizon-duration-20261110/h16_shared_30k-seed2",
+    "rows": [
+      {
+        "horizon": 8,
+        "starts": 32,
+        "candidates": 64,
+        "random_new_states": 0.05078125,
+        "best_new_states": 0.4375,
+        "starts_with_novel_candidate": 8,
+        "scores": {
+          "imagined_disagreement": {
+            "new_states": 0.15625,
+            "repeat_fraction": 0.50390625,
+            "within_start_correlation": 0.2286369926594465,
+            "zero_novelty_given_opportunity": 0.5,
+            "selected_real_reward": 0.0010809120631978253,
+            "selected_imagined_reward": 0.001250992984648036,
+            "imagined_archive_mass_on_non_new_steps": 0.9073855381467643,
+            "endpoint_retrieval_accuracy": 0.78125,
+            "endpoint_catalogue_distance_edge_units": 0.21114497264544108
+          },
+          "imagined_root_distance": {
+            "new_states": 0.0625,
+            "repeat_fraction": 0.10546875,
+            "within_start_correlation": 0.19778019658955862,
+            "zero_novelty_given_opportunity": 0.75,
+            "selected_real_reward": 17.142355929128826,
+            "selected_imagined_reward": 17.290262633003294,
+            "imagined_archive_mass_on_non_new_steps": 0.9472672106590228,
+            "endpoint_retrieval_accuracy": 0.90625,
+            "endpoint_catalogue_distance_edge_units": 0.09370589881048848
+          },
+          "imagined_path_distance": {
+            "new_states": 0.0625,
+            "repeat_fraction": 0.04296875,
+            "within_start_correlation": 0.20870812501655697,
+            "zero_novelty_given_opportunity": 0.75,
+            "selected_real_reward": 3.9742705980315804,
+            "selected_imagined_reward": 4.029429392368911,
+            "imagined_archive_mass_on_non_new_steps": 0.9526116074053209,
+            "endpoint_retrieval_accuracy": 0.90625,
+            "endpoint_catalogue_distance_edge_units": 0.10793353038995215
+          },
+          "imagined_archive_path": {
+            "new_states": 0.1875,
+            "repeat_fraction": 0.2890625,
+            "within_start_correlation": 0.4188557032228184,
+            "zero_novelty_given_opportunity": 0.375,
+            "selected_real_reward": 0.051476205699145794,
+            "selected_imagined_reward": 0.6056527136570367,
+            "imagined_archive_mass_on_non_new_steps": 0.9231084713522165,
+            "endpoint_retrieval_accuracy": 0.78125,
+            "endpoint_catalogue_distance_edge_units": 0.284440879127942
+          },
+          "imagined_disagreement_path": {
+            "new_states": 0.15625,
+            "repeat_fraction": 0.20703125,
+            "within_start_correlation": 0.2916706163947945,
+            "zero_novelty_given_opportunity": 0.5,
+            "selected_real_reward": 0.0002566260303016321,
+            "selected_imagined_reward": 0.00037343107329865233,
+            "imagined_archive_mass_on_non_new_steps": 0.9154434308094006,
+            "endpoint_retrieval_accuracy": 0.8125,
+            "endpoint_catalogue_distance_edge_units": 0.18159837586184344
+          },
+          "real_disagreement": {
+            "new_states": 0.1875,
+            "repeat_fraction": 0.49609375,
+            "within_start_correlation": 0.23780946528600413,
+            "zero_novelty_given_opportunity": 0.375,
+            "selected_real_reward": 0.001122386214420068,
+            "selected_imagined_reward": 0.0011335366169169525,
+            "imagined_archive_mass_on_non_new_steps": 0.8794933621109283,
+            "endpoint_retrieval_accuracy": 0.8125,
+            "endpoint_catalogue_distance_edge_units": 0.19211903287260423
+          },
+          "real_root_distance": {
+            "new_states": 0.09375,
+            "repeat_fraction": 0.08984375,
+            "within_start_correlation": 0.20843807997697608,
+            "zero_novelty_given_opportunity": 0.625,
+            "selected_real_reward": 17.28848519641906,
+            "selected_imagined_reward": 17.27379543054849,
+            "imagined_archive_mass_on_non_new_steps": 0.9179640420828706,
+            "endpoint_retrieval_accuracy": 0.9375,
+            "endpoint_catalogue_distance_edge_units": 0.09935947457173219
+          },
+          "real_path_distance": {
+            "new_states": 0.125,
+            "repeat_fraction": 0.0234375,
+            "within_start_correlation": 0.21321186275703474,
+            "zero_novelty_given_opportunity": 0.625,
+            "selected_real_reward": 4.023655455093831,
+            "selected_imagined_reward": 4.014810508993833,
+            "imagined_archive_mass_on_non_new_steps": 0.9079161369416306,
+            "endpoint_retrieval_accuracy": 0.9375,
+            "endpoint_catalogue_distance_edge_units": 0.10703959669141719
+          },
+          "real_archive_path": {
+            "new_states": 0.4375,
+            "repeat_fraction": 0.46114095052083337,
+            "within_start_correlation": 0.9942122420762952,
+            "zero_novelty_given_opportunity": 0.0,
+            "selected_real_reward": 0.10388391185551882,
+            "selected_imagined_reward": 0.24463392426503106,
+            "imagined_archive_mass_on_non_new_steps": 0.6332803121059377,
+            "endpoint_retrieval_accuracy": 0.97265625,
+            "endpoint_catalogue_distance_edge_units": 0.09726399012530842
+          },
+          "real_disagreement_path": {
+            "new_states": 0.1875,
+            "repeat_fraction": 0.1171875,
+            "within_start_correlation": 0.2797073408612817,
+            "zero_novelty_given_opportunity": 0.5,
+            "selected_real_reward": 0.00028647955570626493,
+            "selected_imagined_reward": 0.0003204366824270388,
+            "imagined_archive_mass_on_non_new_steps": 0.8881304242106318,
+            "endpoint_retrieval_accuracy": 0.90625,
+            "endpoint_catalogue_distance_edge_units": 0.12889152714827407
+          }
+        }
+      },
+      {
+        "horizon": 16,
+        "starts": 32,
+        "candidates": 64,
+        "random_new_states": 0.087890625,
+        "best_new_states": 0.8125,
+        "starts_with_novel_candidate": 12,
+        "scores": {
+          "imagined_disagreement": {
+            "new_states": 0.25,
+            "repeat_fraction": 0.6328125,
+            "within_start_correlation": 0.21541202976791796,
+            "zero_novelty_given_opportunity": 0.6666666666666666,
+            "selected_real_reward": 0.001670570251798953,
+            "selected_imagined_reward": 0.00347227360408775,
+            "imagined_archive_mass_on_non_new_steps": 0.9608144583962757,
+            "endpoint_retrieval_accuracy": 0.46875,
+            "endpoint_catalogue_distance_edge_units": 0.30301504210801794
+          },
+          "imagined_root_distance": {
+            "new_states": 0.15625,
+            "repeat_fraction": 0.28125,
+            "within_start_correlation": 0.1358437399302034,
+            "zero_novelty_given_opportunity": 0.8333333333333334,
+            "selected_real_reward": 49.496094373986125,
+            "selected_imagined_reward": 50.233552034187596,
+            "imagined_archive_mass_on_non_new_steps": 0.9478237382700418,
+            "endpoint_retrieval_accuracy": 0.875,
+            "endpoint_catalogue_distance_edge_units": 0.15385503869038075
+          },
+          "imagined_path_distance": {
+            "new_states": 0.15625,
+            "repeat_fraction": 0.171875,
+            "within_start_correlation": 0.15697273224511218,
+            "zero_novelty_given_opportunity": 0.75,
+            "selected_real_reward": 6.436164831975475,
+            "selected_imagined_reward": 6.700872156401601,
+            "imagined_archive_mass_on_non_new_steps": 0.952056541977902,
+            "endpoint_retrieval_accuracy": 0.8125,
+            "endpoint_catalogue_distance_edge_units": 0.1713018091977574
+          },
+          "imagined_archive_path": {
+            "new_states": 0.34375,
+            "repeat_fraction": 0.474609375,
+            "within_start_correlation": 0.3176251379507712,
+            "zero_novelty_given_opportunity": 0.75,
+            "selected_real_reward": 0.09699347103014588,
+            "selected_imagined_reward": 1.3885682060099498,
+            "imagined_archive_mass_on_non_new_steps": 0.9436706329820678,
+            "endpoint_retrieval_accuracy": 0.34375,
+            "endpoint_catalogue_distance_edge_units": 0.3621767850709148
+          },
+          "imagined_disagreement_path": {
+            "new_states": 0.3125,
+            "repeat_fraction": 0.478515625,
+            "within_start_correlation": 0.22977605194496242,
+            "zero_novelty_given_opportunity": 0.6666666666666666,
+            "selected_real_reward": 0.00040726640370181144,
+            "selected_imagined_reward": 0.0009474700843894726,
+            "imagined_archive_mass_on_non_new_steps": 0.9479696953932399,
+            "endpoint_retrieval_accuracy": 0.40625,
+            "endpoint_catalogue_distance_edge_units": 0.31757286365609616
+          },
+          "real_disagreement": {
+            "new_states": 0.3125,
+            "repeat_fraction": 0.6015625,
+            "within_start_correlation": 0.2534585733929809,
+            "zero_novelty_given_opportunity": 0.5,
+            "selected_real_reward": 0.002546694156281948,
+            "selected_imagined_reward": 0.002406132344650924,
+            "imagined_archive_mass_on_non_new_steps": 0.9084539393862789,
+            "endpoint_retrieval_accuracy": 0.65625,
+            "endpoint_catalogue_distance_edge_units": 0.22495905719309423
+          },
+          "real_root_distance": {
+            "new_states": 0.28125,
+            "repeat_fraction": 0.25,
+            "within_start_correlation": 0.15999232644798628,
+            "zero_novelty_given_opportunity": 0.75,
+            "selected_real_reward": 49.99216359760612,
+            "selected_imagined_reward": 49.86386736189403,
+            "imagined_archive_mass_on_non_new_steps": 0.9061332575025842,
+            "endpoint_retrieval_accuracy": 0.90625,
+            "endpoint_catalogue_distance_edge_units": 0.12230375801057866
+          },
+          "real_path_distance": {
+            "new_states": 0.15625,
+            "repeat_fraction": 0.146484375,
+            "within_start_correlation": 0.19867965641822824,
+            "zero_novelty_given_opportunity": 0.75,
+            "selected_real_reward": 6.608591825934127,
+            "selected_imagined_reward": 6.641744437922171,
+            "imagined_archive_mass_on_non_new_steps": 0.9486469251690401,
+            "endpoint_retrieval_accuracy": 0.875,
+            "endpoint_catalogue_distance_edge_units": 0.15852193982573226
+          },
+          "real_archive_path": {
+            "new_states": 0.8125,
+            "repeat_fraction": 0.50372314453125,
+            "within_start_correlation": 0.99362090270274,
+            "zero_novelty_given_opportunity": 0.0,
+            "selected_real_reward": 0.1916753191035241,
+            "selected_imagined_reward": 0.6091279068235735,
+            "imagined_archive_mass_on_non_new_steps": 0.7416078938466263,
+            "endpoint_retrieval_accuracy": 0.7568359375,
+            "endpoint_catalogue_distance_edge_units": 0.15778720879461616
+          },
+          "real_disagreement_path": {
+            "new_states": 0.375,
+            "repeat_fraction": 0.232421875,
+            "within_start_correlation": 0.23887717220014623,
+            "zero_novelty_given_opportunity": 0.6666666666666666,
+            "selected_real_reward": 0.0005409271614187361,
+            "selected_imagined_reward": 0.0005524811964278085,
+            "imagined_archive_mass_on_non_new_steps": 0.877591547449898,
+            "endpoint_retrieval_accuracy": 0.875,
+            "endpoint_catalogue_distance_edge_units": 0.14055781374918297
+          }
+        }
+      },
+      {
+        "horizon": 32,
+        "starts": 32,
+        "candidates": 64,
+        "random_new_states": 0.15576171875,
+        "best_new_states": 1.375,
+        "starts_with_novel_candidate": 20,
+        "scores": {
+          "imagined_disagreement": {
+            "new_states": 0.53125,
+            "repeat_fraction": 0.67578125,
+            "within_start_correlation": 0.2204404682144058,
+            "zero_novelty_given_opportunity": 0.5,
+            "selected_real_reward": 0.0024750249573313177,
+            "selected_imagined_reward": 0.006579035338482697,
+            "imagined_archive_mass_on_non_new_steps": 0.9462136219236458,
+            "endpoint_retrieval_accuracy": 0.3125,
+            "endpoint_catalogue_distance_edge_units": 0.32724772254005075
+          },
+          "imagined_root_distance": {
+            "new_states": 0.15625,
+            "repeat_fraction": 0.4990234375,
+            "within_start_correlation": 0.129512940769322,
+            "zero_novelty_given_opportunity": 0.9,
+            "selected_real_reward": 120.25659278500825,
+            "selected_imagined_reward": 130.13390245395112,
+            "imagined_archive_mass_on_non_new_steps": 0.9589229399951978,
+            "endpoint_retrieval_accuracy": 0.75,
+            "endpoint_catalogue_distance_edge_units": 0.1954606572398916
+          },
+          "imagined_path_distance": {
+            "new_states": 0.3125,
+            "repeat_fraction": 0.37109375,
+            "within_start_correlation": 0.1536289817464216,
+            "zero_novelty_given_opportunity": 0.65,
+            "selected_real_reward": 8.754273990052752,
+            "selected_imagined_reward": 9.9715147316183,
+            "imagined_archive_mass_on_non_new_steps": 0.9667722147070887,
+            "endpoint_retrieval_accuracy": 0.65625,
+            "endpoint_catalogue_distance_edge_units": 0.18459161615464836
+          },
+          "imagined_archive_path": {
+            "new_states": 0.28125,
+            "repeat_fraction": 0.634765625,
+            "within_start_correlation": 0.24356515468979834,
+            "zero_novelty_given_opportunity": 0.6,
+            "selected_real_reward": 0.07099208328872919,
+            "selected_imagined_reward": 2.832573842304555,
+            "imagined_archive_mass_on_non_new_steps": 0.9766454398093951,
+            "endpoint_retrieval_accuracy": 0.25,
+            "endpoint_catalogue_distance_edge_units": 0.4491681237705052
+          },
+          "imagined_disagreement_path": {
+            "new_states": 0.4375,
+            "repeat_fraction": 0.626953125,
+            "within_start_correlation": 0.21787335423310408,
+            "zero_novelty_given_opportunity": 0.65,
+            "selected_real_reward": 0.0005570464702122635,
+            "selected_imagined_reward": 0.0018501189969550623,
+            "imagined_archive_mass_on_non_new_steps": 0.9594837421127831,
+            "endpoint_retrieval_accuracy": 0.3125,
+            "endpoint_catalogue_distance_edge_units": 0.3543487206916325
+          },
+          "real_disagreement": {
+            "new_states": 0.5625,
+            "repeat_fraction": 0.666015625,
+            "within_start_correlation": 0.28540619156318237,
+            "zero_novelty_given_opportunity": 0.5,
+            "selected_real_reward": 0.004459521885839535,
+            "selected_imagined_reward": 0.00414510280403424,
+            "imagined_archive_mass_on_non_new_steps": 0.9249495890624444,
+            "endpoint_retrieval_accuracy": 0.5625,
+            "endpoint_catalogue_distance_edge_units": 0.2596416821470484
+          },
+          "real_root_distance": {
+            "new_states": 0.4375,
+            "repeat_fraction": 0.42578125,
+            "within_start_correlation": 0.16725727461328246,
+            "zero_novelty_given_opportunity": 0.7,
+            "selected_real_reward": 125.3740683188662,
+            "selected_imagined_reward": 124.53200406298674,
+            "imagined_archive_mass_on_non_new_steps": 0.9152940289212943,
+            "endpoint_retrieval_accuracy": 0.8125,
+            "endpoint_catalogue_distance_edge_units": 0.16631685523316264
+          },
+          "real_path_distance": {
+            "new_states": 0.375,
+            "repeat_fraction": 0.3076171875,
+            "within_start_correlation": 0.19700680907123366,
+            "zero_novelty_given_opportunity": 0.5,
+            "selected_real_reward": 9.505164629314095,
+            "selected_imagined_reward": 9.520658047960751,
+            "imagined_archive_mass_on_non_new_steps": 0.9511219179315112,
+            "endpoint_retrieval_accuracy": 0.8125,
+            "endpoint_catalogue_distance_edge_units": 0.1817229070002213
+          },
+          "real_archive_path": {
+            "new_states": 1.34375,
+            "repeat_fraction": 0.533050537109375,
+            "within_start_correlation": 0.9921547978526609,
+            "zero_novelty_given_opportunity": 0.0,
+            "selected_real_reward": 0.30520752584561706,
+            "selected_imagined_reward": 1.233021536982804,
+            "imagined_archive_mass_on_non_new_steps": 0.8107704617687314,
+            "endpoint_retrieval_accuracy": 0.68505859375,
+            "endpoint_catalogue_distance_edge_units": 0.1829997836612165
+          },
+          "real_disagreement_path": {
+            "new_states": 0.53125,
+            "repeat_fraction": 0.3896484375,
+            "within_start_correlation": 0.2712879105628703,
+            "zero_novelty_given_opportunity": 0.55,
+            "selected_real_reward": 0.0007873946595866599,
+            "selected_imagined_reward": 0.0008246556825580228,
+            "imagined_archive_mass_on_non_new_steps": 0.9181084510893847,
+            "endpoint_retrieval_accuracy": 0.8125,
+            "endpoint_catalogue_distance_edge_units": 0.16210412426153198
+          }
+        }
+      },
+      {
+        "horizon": 64,
+        "starts": 32,
+        "candidates": 64,
+        "random_new_states": 0.28662109375,
+        "best_new_states": 2.34375,
+        "starts_with_novel_candidate": 24,
+        "scores": {
+          "imagined_disagreement": {
+            "new_states": 0.71875,
+            "repeat_fraction": 0.7080078125,
+            "within_start_correlation": 0.17882369272769413,
+            "zero_novelty_given_opportunity": 0.5,
+            "selected_real_reward": 0.003927983736249141,
+            "selected_imagined_reward": 0.010807585350389837,
+            "imagined_archive_mass_on_non_new_steps": 0.9784794665251554,
+            "endpoint_retrieval_accuracy": 0.125,
+            "endpoint_catalogue_distance_edge_units": 0.3119487260701135
+          },
+          "imagined_root_distance": {
+            "new_states": 0.5625,
+            "repeat_fraction": 0.60546875,
+            "within_start_correlation": 0.13793657270905757,
+            "zero_novelty_given_opportunity": 0.5833333333333334,
+            "selected_real_reward": 243.03282324923202,
+            "selected_imagined_reward": 294.36436759555636,
+            "imagined_archive_mass_on_non_new_steps": 0.9840916192482919,
+            "endpoint_retrieval_accuracy": 0.46875,
+            "endpoint_catalogue_distance_edge_units": 0.20211840327829123
+          },
+          "imagined_path_distance": {
+            "new_states": 0.40625,
+            "repeat_fraction": 0.53515625,
+            "within_start_correlation": 0.16899023461874493,
+            "zero_novelty_given_opportunity": 0.625,
+            "selected_real_reward": 11.514891260303557,
+            "selected_imagined_reward": 14.675576109744725,
+            "imagined_archive_mass_on_non_new_steps": 0.9810176471671731,
+            "endpoint_retrieval_accuracy": 0.46875,
+            "endpoint_catalogue_distance_edge_units": 0.24656235612928867
+          },
+          "imagined_archive_path": {
+            "new_states": 0.5625,
+            "repeat_fraction": 0.6611328125,
+            "within_start_correlation": 0.2233480858000035,
+            "zero_novelty_given_opportunity": 0.625,
+            "selected_real_reward": 0.09655222203582525,
+            "selected_imagined_reward": 5.104993264345467,
+            "imagined_archive_mass_on_non_new_steps": 0.9876640395508485,
+            "endpoint_retrieval_accuracy": 0.125,
+            "endpoint_catalogue_distance_edge_units": 0.30972650460898876
+          },
+          "imagined_disagreement_path": {
+            "new_states": 0.59375,
+            "repeat_fraction": 0.716796875,
+            "within_start_correlation": 0.19620579850454847,
+            "zero_novelty_given_opportunity": 0.7083333333333334,
+            "selected_real_reward": 0.0004470098605144912,
+            "selected_imagined_reward": 0.003012522200011775,
+            "imagined_archive_mass_on_non_new_steps": 0.9862523754752712,
+            "endpoint_retrieval_accuracy": 0.125,
+            "endpoint_catalogue_distance_edge_units": 0.34114091482479125
+          },
+          "real_disagreement": {
+            "new_states": 0.9375,
+            "repeat_fraction": 0.6923828125,
+            "within_start_correlation": 0.32669433840728007,
+            "zero_novelty_given_opportunity": 0.375,
+            "selected_real_reward": 0.007081681261940531,
+            "selected_imagined_reward": 0.0061974559333465296,
+            "imagined_archive_mass_on_non_new_steps": 0.9566587842446678,
+            "endpoint_retrieval_accuracy": 0.21875,
+            "endpoint_catalogue_distance_edge_units": 0.3647193049546331
+          },
+          "real_root_distance": {
+            "new_states": 0.71875,
+            "repeat_fraction": 0.53759765625,
+            "within_start_correlation": 0.19735782533715707,
+            "zero_novelty_given_opportunity": 0.5833333333333334,
+            "selected_real_reward": 269.1980045642704,
+            "selected_imagined_reward": 269.10828057519575,
+            "imagined_archive_mass_on_non_new_steps": 0.9686089910304911,
+            "endpoint_retrieval_accuracy": 0.53125,
+            "endpoint_catalogue_distance_edge_units": 0.23240330815315247
+          },
+          "real_path_distance": {
+            "new_states": 0.71875,
+            "repeat_fraction": 0.4365234375,
+            "within_start_correlation": 0.22646373341988016,
+            "zero_novelty_given_opportunity": 0.5833333333333334,
+            "selected_real_reward": 13.64728123950772,
+            "selected_imagined_reward": 13.774578344659858,
+            "imagined_archive_mass_on_non_new_steps": 0.9706079942536899,
+            "endpoint_retrieval_accuracy": 0.75,
+            "endpoint_catalogue_distance_edge_units": 0.19924918888136744
+          },
+          "real_archive_path": {
+            "new_states": 2.15625,
+            "repeat_fraction": 0.5872573852539062,
+            "within_start_correlation": 0.986544595121039,
+            "zero_novelty_given_opportunity": 0.0,
+            "selected_real_reward": 0.3978766701184213,
+            "selected_imagined_reward": 2.2254768078402805,
+            "imagined_archive_mass_on_non_new_steps": 0.8734325837393577,
+            "endpoint_retrieval_accuracy": 0.45751953125,
+            "endpoint_catalogue_distance_edge_units": 0.28589397948235273
+          },
+          "real_disagreement_path": {
+            "new_states": 1.15625,
+            "repeat_fraction": 0.53369140625,
+            "within_start_correlation": 0.3200946187515736,
+            "zero_novelty_given_opportunity": 0.3333333333333333,
+            "selected_real_reward": 0.0010513640878189179,
+            "selected_imagined_reward": 0.0012680078801641462,
+            "imagined_archive_mass_on_non_new_steps": 0.9469879788481813,
+            "endpoint_retrieval_accuracy": 0.375,
+            "endpoint_catalogue_distance_edge_units": 0.33009637624491006
+          }
+        }
+      }
+    ]
+  }
+]

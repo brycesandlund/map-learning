@@ -539,3 +539,131 @@ Fixed-model MCTS audit: same 24 visited starts per original checkpoint, three se
 [Search report](docs/search-budget.md), [geometry report](docs/latent-geometry.md), [trajectory animation](docs/assets/search-budget-paths.gif), [reward animation](docs/assets/search-budget-rewards.gif). Geometry includes per-state latent arrays, random-initialization controls, shortest-path comparisons, action-vector views, PCA-input ablations, and moving-loop detection. At H16, loop AUROC is 0.987 for H16/shared models and 0.973 for H8/independent models; thresholds were selected diagnostically and never fed to the agent. Local latent step spacing varies by 3.5–8.9× (95th/5th percentile), with positive visitation correlation 0.31–0.64.
 
 Reproduction: `scripts/run_search_branches.py`, then `scripts/audit_search_branches.py` and `scripts/report_search_budget.py`; geometry: `scripts/analyze_latent_geometry.py`, `scripts/audit_geometry_dynamics.py`, `scripts/report_latent_geometry.py`; fixed-model search: `scripts/audit_mcts_budget.py`. Experiment launchers refuse existing output directories. All jobs completed; no automation or background experiment remains active. Figures and animations inspected; git diff --check clean. No production algorithm change or loop penalty added.
+
+
+## 2026-11-10 — Archive and path novelty rewards (completed)
+
+Four experimental MCTS rewards from the same H16/shared 30k checkpoints, seeds 0–2, 1,200 additional actions, 24 simulations, unchanged full-replay epoch every ten actions: root distance, minimum distance to imagined history, minimum distance to archive plus imagined history, and disagreement multiplied by d/(d+observed-step-scale). Raw observations are retained; exact duplicate observation bytes are removed only from the nearest-neighbor cache, which does not change a minimum. The entire archive is re-encoded after each training block; new observations enter it immediately. No representation loss or state-merging threshold added.
+
+Distance rewards normalize by the same global latent-variance scalar; UCT uses a floor based on median observed moving-transition length because archive reward at a known root can vanish. Disagreement gating uses that length as a smooth scale, not a binary loop threshold. This scaling choice is part of the objective comparison, and a global scale still has the previously measured spatial nonuniformity limitation. Reward modes live in metadata/result and the experiment runner, not the legacy planner config factory.
+
+Primary manifest: `configs/novelty_rewards.json`, root `runs/novelty-rewards-20261110`; launcher `scripts/run_novelty_rewards.py`. A seed-0 disagreement control reproduced all previous replay arrays and final model/dynamics weights bit-for-bit. All 55 tests pass, including new archive re-encoding and repeat-reward tests. Experiment-only planner: `src/map_learning/novelty_planning.py`; runner snapshots are copied into each run.
+
+Adaptive decision: oracle shortest distance from the fixed reset to unvisited territory is 20/24/23 actions for seeds 0/1/2. Perfect H16 archive reward is therefore initially zero for every plan. Added H32 archive/path reward at the same 24 simulations, three seeds, no other change (`configs/novelty_horizon.json`, `runs/novelty-horizon-20261110`). This was chosen after diagnostic evidence, not prespecified.
+
+Fixed-path diagnostics score identical persistent-random candidate banks (32 starts × 64 paths, horizons 8/16/32/64) with imagined and true-state rewards. The raw outputs are under `runs/novelty-candidate-audit-v2-20261110` with portable `docs/assets/novelty-candidate-results.json`; the first audit is retained separately. The expanded audit measures imagined archive reward assigned to actually non-new steps. A separate perfect-dynamics UCT diagnostic (`scripts/audit_oracle_novelty_search.py`) uses privileged geometry only for evaluation, never for online action selection or training.
+
+
+Adaptive follow-ups within the novelty study: perfect-dynamics UCT at H16/H32/H64 and budgets 24/96/384 never reached a novel state from reset in 15 searches per setting. Persistent action candidate banks reached novelty in 5/15 H64 trials versus 0/15 IID banks (128 candidates), motivating `configs/novelty_persistent.json`: archive/path H64, 128 persistent shooting candidates, three seeds, 1,200 actions. This changes search, horizon and candidate budget together and is explicitly exploratory.
+
+Path-only planning produced zero new states in all three seeds while real short revisits remained frequent, motivating `configs/novelty_recent.json`: archive/path novelty plus equal-weight novelty relative to the last 16 real observations and the imagined path, H16/24 simulations. This real history survives replanning, is re-encoded after training, and clears on reset. No spatial cutoff or learned state merging; the temporal window is a new hyperparameter. All source/runner snapshots preserved per run. New shooting and recent-memory tests cover deterministic progress, re-encoding and reset behavior.
+
+
+Completed all **22 new runs**, including one exact reproduction control: **26,400 added interactions and 632,522 joint updates**. Every condition preserves the 30k replay prefix and performs 28,751 updates. Disagreement and persistent-random comparison rows reuse the previous matched branch study. No jobs or monitors remain running.
+
+| Reward / search | New states, seeds 0 / 1 / 2 | Mean | Moving recent-revisit rate |
+|---|---|---:|---:|
+| Disagreement H16 (prior control) | 72 / 3 / 2 | 25.7 | 52.3% |
+| Root distance H16 | 0 / 0 / 0 | 0.0 | 53.5% |
+| Path distance H16 | 0 / 0 / 0 | 0.0 | 55.2% |
+| Archive + path H16 | 65 / 7 / 0 | 24.0 | 52.1% |
+| Disagreement × path gate H16 | 6 / 9 / 2 | 5.7 | 50.9% |
+| Archive + path H32 | 6 / 22 / 18 | 15.3 | 50.1% |
+| Archive, persistent shooting H64 | 16 / 0 / 13 | 9.7 | 47.6% |
+| Archive + recent real history + path H16 | 1 / 7 / 5 | 4.3 | 10.4% |
+| Persistent random (prior control) | 24 / 0 / 10 | 11.3 | 24.3% |
+
+No objective consistently improves discovery. The real-history reward materially reduces short loops in all three seeds, but does not improve global exploration. Final seen-edge retrieval remains about 99.4–99.6% in every condition. Root/path agents move more often but remain in familiar territory. Equal weighting of archive and recent novelty is only one tested mixture, not an optimization over shaping coefficients.
+
+Fixed-candidate evidence: at H16, random selection discovers 0.232 new states/path, actual-trajectory archive scoring 1.458, imagined archive scoring 0.906, and the maximum available novelty is 1.562. At H32 the true/imagined archive values are 3.031/1.292; at H64, 5.750/1.646. Selected imagined archive reward assigns 86% of its mass at H16 (95% at H64) to steps that physically enter archived or within-path repeated states. This is erroneous state-novelty reward, not proof that the prediction is outside the continuous encoder manifold.
+
+Perfect-dynamics UCT cannot reach novelty from reset in any of 15 trials per H16/H32/H64 × 24/96/384 setting; nearest frontiers are 20/24/23 steps away. This isolates the difficulty of generating directed routes through familiar regions from model prediction error. Persistent candidate sampling helps reachability slightly but is not sufficient in the online follow-up. Privileged diagnostics never enter training or online decisions.
+
+Artifacts: [full report](docs/novelty-rewards.md), `docs/assets/novelty-reward-results.png`, `archive-reward-diagnostic.png`, `novelty-rewards-paths.gif`, `novelty-followups-paths.gif`, and portable per-seed JSONs. Run manifests and reproduction commands are in the report. Snapshot files from the experiment runner contain disagreement probes; they are not mislabeled as new-objective heatmaps. The archive heatmap is explicitly a final-checkpoint diagnostic. All plots and animation endpoint frames inspected.
+
+**57 tests pass**, including archive/recent re-encoding, lossless duplicate caching, history reset, exact reward examples and persistent shooting on exact dynamics. Original source/replay artifacts preserved; git diff --check clean. All changes remain uncommitted.
+
+## 2026-11-10 — Noisy-observation priority queues (completed)
+
+User-authorized two-arm study: nearest-visited latent distance versus incoming-edge ensemble disagreement, with simulator restoration. Reused `MazeConfig.nuisance_dims=8`: normalized coordinates plus eight fresh independent N(0,1) nuisance values. Deterministic maze transitions unchanged. Added an experiment-only vector-backed maximum-priority queue (`src/map_learning/frontier.py`) and runner (`scripts/noisy_frontier.py`). No physical-ID, observation-byte, or latent deduplication; no threshold. Distance keys decrease eagerly when expanded latents enter the phase-local visited set. Disagreement keys are the incoming parent/action's mean-prediction variance, frozen within a phase. Simulator positions are opaque restoration payloads and evaluation labels; never ranking inputs.
+
+Protocol: three matched seeds, fresh initial weights, 20 phases × 1,000 expansions × five executed actions = 100k action executions per run. No warmup. Center restart and empty queue/visited each phase; retain all raw replay and trained parameters. One shared full-replay epoch after each phase, batch 256, yielding 4,112 updates per run. Width 256 × three hidden layers, latent eight, three heads, existing joint mean-MSE + 0.01 hinge repulsion; both encoder endpoints receive gradients. Encoder/dynamics LR 9e-5/3e-4. Cached source observation retained with each snapshot; successor noise is fresh and its RNG is not rewound by restoration. All five actions including stay are executed. Each branching transition gets a separate replay episode ID. No imagined dynamics rollouts.
+
+Config `configs/noisy_frontier.json`; launch `scripts/run_noisy_frontier.py --out runs/noisy-frontier-NEW --jobs 3`. Completed root `runs/noisy-frontier-20261110`; six runs, 600,000 actions, 120,000 expansions, 24,672 gradient updates. Separate two-phase/50-expansion smoke test excluded. All six exit successfully. Matched parameter hashes, budgets, and successor noise arrays verified identical between arms within seed. Full replay and initial/intermediate/final checkpoints retained; source snapshots and runner copies included. No preexisting run overwritten.
+
+| Priority | Observed states, seeds 0 / 1 / 2 (of 1,784) | Mean coverage | Final-phase unique expanded positions (of 1,000 pops) |
+|---|---|---|---|
+| Nearest-visited latent distance | 1,730 / 1,081 / 1,139 | 73.8% | 1,000 / 367 / 393 |
+| Incoming-edge ensemble disagreement | 118 / 127 / 103 | 6.5% | 4 / 12 / 5 |
+
+Positive finding: existing joint training suppresses nuisance variation without adding a loss. Initial same-position independent-noise distance / adjacent-position centroid distance is 92–142; final ratio is 0.13–0.14 (distance) and 0.10–0.15 (disagreement). Common noise draws across neighboring evaluation positions prevent centroid sampling variance from masquerading as spatial structure. Evaluation probes use isolated RNGs and never enter training. Per-phase diagnostics are after training; that phase's coverage was collected before training.
+
+Disagreement repeatedly selects familiar positions while its scores are frozen: final-phase repeated-expansion fractions 99.6/98.8/99.5%; one seed expands one position 966 times. Unlike distance, it has no within-phase score reduction as experience accumulates. This identifies a weakness of the tested incoming-disagreement-only queue/cadence, not uncertainty-based exploration in general. Both arms learn nuisance invariance and low normalized replay MSE. Distance remains seed-sensitive and repeats substantially in two seeds. Clean coordinate features remain present; no pixels, continuous-position change, or stochastic physical dynamics tested. Only two arms were run; no claim that learning causally beats a frozen random encoder based on coverage alone.
+
+Artifacts: [report](docs/noisy-frontier.md), `docs/assets/noisy-frontier-results.png`, `noisy-frontier.gif`, `noisy-frontier-final.png`, portable per-seed `noisy-frontier-results.json` and duplicate/noise-stream audit `noisy-frontier-audit.json`. Reproduce reporting with `scripts/report_noisy_frontier.py --root runs/noisy-frontier-20261110`. Animation shows simulator restoration jumps and cumulative observed states, not an executable path.
+
+Validation: **61 tests pass**, including eager key updates, exact brute-force distance priority agreement, retained duplicate entries, empty frontier handling, and observation-noise/physical-transition isolation. Figures and animation inspected. Changes remain uncommitted; all prior work preserved.
+
+## 2026-11-10 — Persistent noisy-maze distance frontier (completed)
+
+User-authorized comparison of **two distance-only arms**: retain the full visited observations/frontier at the existing 1,000-expansion training cadence, versus retain them and interleave training every 100 expansions. No new disagreement runs and no loss change. Same eight Gaussian nuisance dimensions, clean normalized coordinate features, maze seed 7, width-256/three-layer models, latent eight, three jointly trained dynamics heads, mean-MSE + 0.01 hinge repulsion, and prior learning rates. No duplicate removal or merging threshold; physical positions only restore/evaluate. All five real actions executed per expansion, including stay; 100,000 actions/20,000 expansions per run.
+
+Persistent queue stores raw observations and opaque restoration payloads. After every training event, re-encode all visited observations and all active frontier observations and recompute all minimum latent distances. Added `src/map_learning/persistent_frontier.py`; exact SciPy cKDTree indexing (eps=0) accelerates nearest-distance lookup without changing the objective. Newly visited points immediately reduce active priorities. All 20,000 visited entries and 80,001 unexpanded frontier entries survive through the end. Fresh observation noise on successor generation; cached source observation on restoration; no search/origin restart after initialization.
+
+Budget matching: every 1,000-expansion block, both arms train on every accumulated transition **exactly once per head** and take ceil(5,000 × block_number / 256) updates. Frequent arm causally partitions the old replay into ten disjoint shuffled slices and adds each interval's 500 new transitions; each new transition is trained at the next update. It uses minibatches of 250–300 to match both sample count and gradient count, whereas epoch arm uses 256 and tails (minimum eight). Temporal ordering and minibatch sizes differ; not a pure timing-only comparison. Repulsion sampling and shared-ensemble batching unchanged. Each run: 4,112 updates, 1,050,000 transition presentations per head. All six runs total 600,000 new real actions and 24,672 joint updates.
+
+| Condition | Observed states, seeds 0 / 1 / 2 (of 1,784) | Mean coverage | Actions to first complete coverage |
+|---|---|---|---|
+| Earlier restarted-search distance (reference only) | 1,730 / 1,081 / 1,139 | 73.8% | Not reached in these runs |
+| Persistent, epoch every 1,000 expansions | 1,782 / 1,784 / 1,632 | 97.1% | Not reached / 82,733 / not reached |
+| Persistent, interleaved every 100 expansions | 1,784 / 1,784 / 1,741 | 99.2% | 68,628 / 77,266 / not reached |
+
+Frequent training reaches 90% coverage in 61,778 / 64,002 / 94,263 actions, versus 88,868 / 76,549 / 96,814 at the old cadence. Mean 73,348 versus 87,410: 16.1% fewer actions, direction consistent across three seeds. It does not dominate every earlier milestone (seed 1 reaches 50% later). Persistent old-cadence search improves final coverage in every seed over the prior restarted comparison, though seed 0's intermediate coverage is slower. These are three seeds on one maze, not a general guarantee or significance claim. One frequent-training seed remains 43 states short; no claim of solving every seed within budget.
+
+Mean elapsed time: old cadence ~60.0 seconds/run; frequent ~75.6 seconds/run, with three concurrent workers. Exact re-encoding/priority-refresh costs ~1.4 vs 13.5 seconds; training ~34 seconds in both. Wall times are hardware/concurrency specific. Training after the final expansion contributes to diagnostics and cost but cannot affect coverage.
+
+Root: `runs/persistent-frontier-20261110`, all six subprocesses exited successfully. Runners: `scripts/persistent_frontier.py`, `scripts/run_persistent_frontier.py`; reporting/audit: `scripts/report_persistent_frontier.py`. Manifest, source snapshots, raw replay, initial/intermediate/final checkpoints, final frontier archive, and frame data preserved. Existing runs not overwritten. SciPy added to project dependencies, version 1.18.1 installed in the virtual environment. A too-small 100-expansion smoke configuration failed because it could not allocate one gradient step to each interval; CLI validation was tightened to >=500 and a separate valid smoke run passed. Both smoke paths retained/excluded from results.
+
+Audit: matched initial parameter hashes, every successor-noise draw, sample and update counts at all block boundaries. Independently re-encoded all saved active frontier/visited observations, verified every final priority, and compared 32 queries per run against brute-force nearest distances. **64 tests pass**, including persistence across encoder changes, incremental updates after index refresh, and causal exact-once epoch exposure across all 20 blocks. No oracle labels influence ranking or learning.
+
+Artifacts: [report](docs/persistent-frontier.md), `docs/assets/persistent-frontier-results.png`, `persistent-frontier.gif`, `persistent-frontier-final.png`, `persistent-frontier-results.json`, and `persistent-frontier-audit.json`. Animation shows restoration jumps; no executable navigation path is implied. Reproduce with `scripts/run_persistent_frontier.py --out runs/persistent-frontier-NEW --jobs 3`, then `scripts/report_persistent_frontier.py --root runs/persistent-frontier-NEW`. All jobs finished; prior work preserved; changes uncommitted.
+
+## 2026-11-10 — Noisy-frontier sample-efficiency investigation (completed)
+
+Authorized thorough investigation with adaptive follow-ups. Audited six original persistent runs at 5k/25k/50k/100k checkpoints; ran **18 new experiments**: six online extra-optimization runs, eight fixed-archive fitting/frozen-exploration branches, and four privileged nuisance-removal controls. Total new interaction 720,000 real actions; 44,672 new joint updates. No representation loss or state-merging changes. Every previous run preserved.
+
+Repeat accounting excludes actions after completion (except the containing five-action expansion). Original frequent-training seeds repeat previously expanded physical positions in **87.1 / 88.6 / 91.7%** of expansions before completion or budget. Direct replay checks confirm repeated expansions never reveal new physical positions: all five deterministic actions were already executed. Repeated noisy observations can still aid learning; these counts measure zero physical-coverage yield, not zero information value.
+
+A descriptive isolated probe first has same-position noise distance below adjacent-position distance at 30k / 30k / 25k actions. Repeat actions before that checkpoint: 27,170 / 27,455 / 23,135; after it, before completion/budget: 32,575 / 41,010 / 68,570. Probe crossing is sampled every 5k and is not a causal sufficient-training criterion or a policy threshold. Both early representation acquisition and later priority inefficiency contribute.
+
+Seed 2 final archive has 43 unobserved states, 34 queued physical positions that can immediately reveal an unobserved neighbor, and best productive entry at rank 7. But 88 of its top 100 priorities repeat expanded positions. Ranking is a static post-training snapshot; entry ordering changes after each expansion. Exact reconstruction from raw observation entry identity matches all final saved archives. No oracle identity enters actual search.
+
+### Fixed archive fitting interventions
+
+Starting from identical original frequent-training 50k checkpoints/frontiers, compare no extra fitting against 2,000 updates on existing replay; then freeze both models for 10k additional real actions. Paired successor-noise draws; no new data used for training during these branches. New states found:
+
+| Seed | Initially observed | Frozen original | Extra fitting then frozen | Known nuisance removed (privileged control) |
+|---|---:|---:|---:|---:|
+| 0 | 1,340 | 231 | 444 | 444 |
+| 1 | 1,393 | 264 | 391 | 391 |
+| 2 | 718 | 147 | 374 | 1,066 |
+
+After extra fitting, seeds 0/1 finish in 2,958/2,987 additional actions; originals do not finish in 10k. Seed 2 improves but remains incomplete. Original top-100 repeat fractions 96/92/96% become 0/2/93%. Aggregate prediction MSE and whole-maze average noise ratio do not consistently improve alongside ranking: seed 0's normalized replay MSE slightly increases despite strong search improvement. Extra fitting changes geometry, not just noise sensitivity.
+
+At the final 100k seed-2 archive, frozen original completes in 3,846 additional actions; fitting the same replay first completes in **489**. A known-noise-removal control completes in 584. Thus the missing states were not irretrievable. Zero-noise branches are explicitly privileged: set eight known nuisance input dimensions to zero for encoder evaluation only; preserve actual noisy replay/physics and freeze weights. They supply exact nuisance invariance and are not learned-agent improvements. At the 50k archives, those controls finish in 3,016 / 2,917 / 5,772 additional actions.
+
+### Online extra-compute timing
+
+Adaptive tests selected after initial repeat/frontier audit. Both add exactly 2,000 shared replay updates to the existing frequent-training persistent algorithm, with unchanged loss. Early arm spends all extra updates after 5k actions. Distributed arm adds 100 after each 5k actions. At 100k each has 6,112 updates and 1,562,000 transition presentations per head. Initial parameters, first 5k experience, and all successor-noise draws match the original baseline. Extra replay sampling uses replacement; original causal full epochs remain unchanged.
+
+| Schedule | Actions to complete, seeds 0 / 1 / 2 | Final observed states |
+|---|---|---|
+| Original frequent baseline (reused) | 68,628 / 77,266 / >100k | 1,784 / 1,784 / 1,741 |
+| +2,000 updates at 5k actions | 75,613 / 77,931 / 51,844 | 1,784 / 1,784 / 1,784 |
+| +100 updates each 5k actions | 25,438 / >100k / 95,213 | 1,784 / 1,521 / 1,784 |
+
+Early extra training completes all three seeds, but is slower than baseline in seeds 0/1; benefit concentrated in seed 2. Distributed extra training has a dramatic seed-0 gain and a seed-1 regression. Do not infer a universal schedule from the best seed or treat censored 100k times as observed completion. More optimization changes representation and future data collection; benefits are not monotonic. No claim of statistical significance or broad reliability from one maze/three seeds.
+
+Artifacts: [full report](docs/frontier-efficiency.md), `docs/assets/frontier-efficiency-online.png`, `frontier-efficiency-diagnostics.png`, `frontier-efficiency.gif`, `frontier-efficiency-final.png`, and combined `frontier-efficiency-results.json`. Reports include all failures as well as gains. Roots: `runs/frontier-efficiency-audit-20261110`, `frontier-optimization-20261110`, `frontier-fitting-branches-20261110`, `frontier-zero-noise-oracle-20261110`. Scripts: `audit_frontier_efficiency.py`, `run_frontier_optimization.py`, `branch_frontier_fitting.py`, `report_frontier_efficiency.py`. Persistent runner gained optional extra-update placement arguments with zero default; original behavior unchanged by default. Audit JSON's original `wasted_actions` field denotes repeat actions without physical discovery, not absence of learning; updated code uses `repeat_actions` wording.
+
+Validation: **64 tests pass**. Paired input/initialization/noise/budget checks passed; fixed-archive membership reconstructed and checked against final saved archives. All 18 scientific runs completed without failures. A plotting font-size API error was fixed and rendering rerun; it did not affect experiment data. Figures and animation inspected, git diff --check clean. No background runs remain; prior uncommitted work preserved.
