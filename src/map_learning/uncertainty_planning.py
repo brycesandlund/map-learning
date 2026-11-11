@@ -30,13 +30,19 @@ class UncertaintyPlanner(LatentPlanner):
         self.generator = torch.Generator(device=trainer.device).manual_seed(seed+9000)
         self.last_metrics = {}
         self.mean_mode = trainer.config.train.prediction_objective == "mse"
+        self.point_mode = getattr(trainer.config.train, "loss", None) == "dynamics"
         self.reward_variance = 1.0
         self.uct_scale = 1.0
 
     def successor(self, params):
+        if self.point_mode:
+            return params.mean(0)
         return mixture_mean(params).mean(0) if self.mean_mode else ensemble_sample(params, self.generator)
 
     def distribution_reward(self, state, actions):
+        if self.point_mode:
+            predictions = self.trainer.dynamics(state, actions)
+            return predictions, predictions.var(0, unbiased=False).mean(-1)/self.reward_variance
         params = self.trainer.dynamics.distribution(state, actions)
         reward = (mixture_mean(params).var(0, unbiased=False).mean(-1)/self.reward_variance
                   if self.mean_mode else ensemble_js(params, self.config.disagreement_samples, self.generator))
@@ -67,7 +73,8 @@ class UncertaintyPlanner(LatentPlanner):
             limit = max(1, int(math.ceil(self.config.widening_coefficient*
                                          (node.counts[action]+1)**self.config.widening_exponent)))
             if len(outcomes) < (1 if self.mean_mode else limit):
-                params = tuple(p[:, action:action+1] for p in node.parameters)
+                params = (node.parameters[:, action:action+1] if self.point_mode else
+                          tuple(p[:, action:action+1] for p in node.parameters))
                 nxt = self.successor(params)
                 child = SearchNode(nxt, self.trainer.dynamics.actions)
                 outcomes.append(child)
@@ -137,6 +144,6 @@ class UncertaintyPlanner(LatentPlanner):
 
 
 def make_planner(trainer, config, seed):
-    if trainer.config.train.loss == "probabilistic":
+    if trainer.config.train.loss in {"probabilistic", "dynamics"}:
         return UncertaintyPlanner(trainer, config, seed)
     return LatentPlanner(trainer, config, seed)

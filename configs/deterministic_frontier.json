@@ -1,0 +1,10 @@
+{
+  "threads": 1, "training_schedule": "epoch", "collect_steps": 100000,
+  "maze": {"nuisance_dims": 8, "episode_steps": 1000000},
+  "model": {"latent_dim": 8, "hidden_dim": 256, "hidden_layers": 3,
+            "ensemble_size": 3, "latent_activation": "identity"},
+  "train": {"loss": "dynamics", "prediction_objective": "mse", "lr": 0.0003,
+            "encoder_lr_multiplier": 0.3, "repulsion_weight": 0.03,
+            "latent_l2": 0.03, "batch_size": 256, "ensemble_batches": "shared"},
+  "planner": {"behavior": "disagreement", "search": "mcts"}
+}

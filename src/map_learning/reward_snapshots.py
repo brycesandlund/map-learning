@@ -8,8 +8,9 @@ from .probabilistic import mixture_mean
 
 @torch.no_grad()
 def mean_reward(trainer, z, actions, scale):
-    means = mixture_mean(trainer.dynamics.distribution(z, actions))
-    return means.var(0, unbiased=False).mean(-1)/scale, means.mean(0)
+    predictions = (mixture_mean(trainer.dynamics.distribution(z, actions))
+                   if hasattr(trainer.dynamics, 'distribution') else trainer.dynamics(z, actions))
+    return predictions.var(0, unbiased=False).mean(-1)/scale, predictions.mean(0)
 
 
 @torch.no_grad()

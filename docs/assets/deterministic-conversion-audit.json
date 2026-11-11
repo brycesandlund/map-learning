@@ -1,0 +1,13 @@
+{
+  "source": "runs/l2-noise-confirm-20261110/l2-0.03-seed15/checkpoint.pt",
+  "destination": "runs/deterministic-conversion-20261110/l2-seed15.pt",
+  "encoder_max_abs": 0.0,
+  "prediction_max_abs": 0.0,
+  "legacy_encoder_parameters": 138512,
+  "encoder_parameters": 136456,
+  "legacy_dynamics_parameters": 418611,
+  "dynamics_parameters": 411672,
+  "next_update_loss_abs": 0.0,
+  "next_update_encoder_parameter_max_abs": 0.0,
+  "same_replay_rng_after_update": true
+}

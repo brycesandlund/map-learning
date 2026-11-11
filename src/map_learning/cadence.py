@@ -24,7 +24,7 @@ class TrainingSchedule:
                 orders = [orders[0]] * len(orders)
             for offset in range(0, len(replay)-start, cfg.train.batch_size):
                 batches = [order[offset:offset+cfg.train.batch_size] for order in orders]
-                metrics = self.trainer.update_probabilistic(replay, head_indices=batches)
+                metrics = self.trainer.update_batch(replay, head_indices=batches)
             explicit_samples = len(replay)-start
             self.trained_through = len(replay)
         if cfg.training_schedule != 'epoch':
@@ -70,6 +70,14 @@ class CadenceDiagnostics:
         result = {'probe_latent_variance': variance}
         for label, (obs, actions, nxt) in batches.items():
             z, target = trainer.model.encode(trainer.tensor(np.concatenate([obs, nxt]))).chunk(2)
+            if trainer.config.train.loss == "dynamics":
+                predictions = trainer.dynamics(z, torch.as_tensor(actions, device=trainer.device))
+                result[label] = {'n': len(actions),
+                    'disagreement': float(predictions.var(0, unbiased=False).mean())/max(variance, 1e-8),
+                    'mse': float((predictions.mean(0)-target).square().mean()),
+                    'normalized_mse': float((predictions.mean(0)-target).square().mean())/max(variance, 1e-8),
+                    'persistence_normalized_mse': float((z-target).square().mean())/max(variance, 1e-8)}
+                continue
             params = trainer.dynamics.distribution(z, torch.as_tensor(actions, device=trainer.device))
             generator = torch.Generator(device=trainer.device).manual_seed(trainer.config.seed+64000+step)
             error = float((mixture_mean(params).mean(0)-target).square().mean())

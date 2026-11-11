@@ -503,3 +503,7 @@ See [moment-fitted prior experiments](docs/moment-prior.md) for the analytical r
 See [KL mechanism ablations](docs/kl-mechanisms.md) for controlled noise × KL comparisons, shared-data queue tests, faster prior optimization, and fresh-seed confirmation. KL without sampled dynamics inputs retained the exploration gain; fixing prior lag alone did not improve it at the current coefficients. Includes all results and a full 100k-action animation.
 
 See [latent L2 and observation-noise experiments](docs/l2-noise.md) for the coefficient sweep, fresh-seed confirmation, and controlled queue diagnostics. L2 at λ=.03 completed all three fresh seeds faster than mean-input KL, despite a worse average noise/movement ratio. Includes shared-data ranking measurements, noise-redraw and clipping controls, an analytical collapse boundary, and a full 100k-action animation.
+
+See [shared-replay latent geometry](docs/l2-geometry.md) for side-by-side baseline/KL/L2 maps, a rotating view, directional noise measurements, and queue-ranking diagnostics. The baseline becomes nearly one-dimensional; L2 preserves two substantial spatial directions.
+
+The current [deterministic formulation](docs/deterministic-formulation.md) uses `z=f(o)`, residual dynamics MSE, repulsion, and optional latent L2. Use `configs/deterministic_frontier.json` with `scripts/persistent_frontier.py --config`; no posterior, prior, or predictive-variance outputs are built. Historical KL runs remain available separately. The document includes checkpoint conversion and exact-update validation.

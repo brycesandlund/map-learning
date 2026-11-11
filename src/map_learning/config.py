@@ -1,4 +1,5 @@
 from dataclasses import asdict, dataclass, field
+import math
 import json
 from pathlib import Path
 
@@ -33,7 +34,7 @@ class ModelConfig:
 
 @dataclass
 class TrainConfig:
-    loss: str = "qrl"  # qrl, time_myopic, or probabilistic
+    loss: str = "qrl"  # qrl, time_myopic, probabilistic, or deterministic dynamics
     updates: int = 3000
     batch_size: int = 256
     lr: float = 0.001
@@ -52,6 +53,7 @@ class TrainConfig:
     log_every: int = 100
     repulsion_weight: float = 10.0
     repulsion_margin: float = 1.0  # Euclidean margin, squared in the hinge
+    latent_l2: float = 0.0  # deterministic dynamics: E ||f(o)||², summed over coordinates
 
 
 @dataclass
@@ -104,20 +106,23 @@ class ExperimentConfig:
         assert self.train.loss != "qrl" or self.model.latent_dim % self.model.iqe_component_dim == 0
         assert self.model.ensemble_size >= 2 and self.model.codebook_size >= 0
         assert self.model.codebook_temperature > 0
-        assert self.train.loss in {"qrl", "time_myopic", "probabilistic"}
+        assert self.train.loss in {"qrl", "time_myopic", "probabilistic", "dynamics"}
         assert self.model.mixture_components > 0
         assert self.model.initial_variance > self.model.variance_floor > 0
         assert self.model.latent_bound > 0
         assert self.model.latent_activation in {"tanh", "identity"}
         assert self.train.repulsion_weight >= 0 and self.train.repulsion_margin > 0
-        if self.train.loss == "probabilistic":
-            assert self.model.codebook_size == 0, "Probabilistic mode uses continuous latents"
+        assert math.isfinite(self.train.latent_l2) and self.train.latent_l2 >= 0
+        assert self.train.latent_l2 == 0 or self.train.loss == "dynamics"
+        if self.train.loss in {"probabilistic", "dynamics"}:
+            assert self.model.codebook_size == 0, "Joint dynamics training uses continuous latents"
             assert self.planner.behavior in {"random", "disagreement"}
             assert self.planner.search in {"mcts", "shooting"}
         assert self.train.updates > 0 and self.train.batch_size > 1
         assert self.train.prediction_objective in {"nll", "mse"}
         assert self.train.encoder_lr_multiplier > 0
-        assert self.train.prediction_objective != "mse" or (self.train.loss == "probabilistic" and self.model.mixture_components == 1)
+        assert self.train.prediction_objective != "mse" or self.train.loss == "dynamics" or (self.train.loss == "probabilistic" and self.model.mixture_components == 1)
+        assert self.train.loss != "dynamics" or self.train.prediction_objective == "mse"
         assert self.train.lr > 0 and self.train.dual_lr > 0
         assert self.train.epsilon >= 0 and self.train.initial_multiplier >= 0
         assert self.train.push_scale >= 0 and self.train.horizon > 0
@@ -129,11 +134,11 @@ class ExperimentConfig:
         assert self.train.ensemble_batches in {"independent", "shared", "shared_replay"}
         assert self.reward_snapshot_every >= 0
         if self.reward_snapshot_every:
-            assert self.train.loss == "probabilistic" and self.train.prediction_objective == "mse"
+            assert self.train.loss in {"probabilistic", "dynamics"} and self.train.prediction_objective == "mse"
             assert self.maze.observation == "coordinates" and self.maze.nuisance_dims == 0
         assert self.training_schedule in {"replay", "epoch", "new_then_replay"}
-        assert self.training_schedule == "replay" or self.train.loss == "probabilistic"
-        assert not self.cadence_diagnostics or self.train.loss == "probabilistic"
+        assert self.training_schedule == "replay" or self.train.loss in {"probabilistic", "dynamics"}
+        assert not self.cadence_diagnostics or self.train.loss in {"probabilistic", "dynamics"}
         assert self.train_every > 0 and self.updates_per_train > 0
         assert self.planner.behavior in {"random", "distance", "disagreement", "hybrid"}
         assert self.planner.distance_reference in {"episode_start", "current"}

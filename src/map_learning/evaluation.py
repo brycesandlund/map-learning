@@ -61,6 +61,9 @@ def encode_batch(trainer, observations, batch=512):
 
 @torch.no_grad()
 def evaluate(trainer, replay, output, heldout=None):
+    if trainer.config.train.loss == "dynamics":
+        from .deterministic import evaluate_deterministic
+        return evaluate_deterministic(trainer, replay, output, heldout)
     if trainer.config.train.loss == "probabilistic":
         from .probabilistic_evaluation import evaluate_probabilistic
         return evaluate_probabilistic(trainer, replay, output, heldout)

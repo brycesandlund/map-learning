@@ -18,6 +18,7 @@ from noisy_frontier import diagnostics
 
 def main():
     p=argparse.ArgumentParser()
+    p.add_argument('--config',default='configs/noisy_frontier.json')
     p.add_argument('--arm',choices=['epoch1000','interleaved100'],required=True)
     p.add_argument('--seed',type=int,default=0)
     p.add_argument('--blocks',type=int,default=20)
@@ -33,15 +34,18 @@ def main():
     p.add_argument('--dynamics-input',choices=['posterior','mean','scheduled'],default='posterior')
     p.add_argument('--noise-schedule',type=Path)
     p.add_argument('--prior-steps',type=int,default=1)
-    p.add_argument('--latent-l2',type=float,default=0.)
+    p.add_argument('--latent-l2',type=float,default=None)
     p.add_argument('--extra-updates',type=int,default=0)
     p.add_argument('--extra-placement',choices=['early','distributed'],default='early')
     a=p.parse_args()
-    if not np.isfinite(a.latent_l2) or a.latent_l2<0:p.error('Latent L2 must be finite and nonnegative')
-    if a.latent_l2 and a.bottleneck_beta is None:p.error('Use --bottleneck-beta 0 with --latent-l2 (and --dynamics-input mean for deterministic training)')
+    if a.latent_l2 is not None and (not np.isfinite(a.latent_l2) or a.latent_l2<0):p.error('Latent L2 must be finite and nonnegative')
     if a.extra_updates<0: p.error('Extra updates must be nonnegative')
     if a.block_expansions%10 or a.block_expansions<500 or a.blocks<1: p.error('Block expansions must be >=500 and divisible by 10')
-    cfg=load_config('configs/noisy_frontier.json',[f'seed={a.seed}',f'collect_steps={a.blocks*a.block_expansions*5}'])
+    overrides=[f'seed={a.seed}',f'collect_steps={a.blocks*a.block_expansions*5}']
+    if a.latent_l2 is not None and a.bottleneck_beta is None:
+        overrides += ['train.loss=dynamics','train.prediction_objective=mse',f'train.latent_l2={a.latent_l2}']
+    cfg=load_config(a.config,overrides)
+    if a.bottleneck_beta is not None and cfg.train.loss=='dynamics':p.error('KL/posterior experiments require the legacy noisy_frontier.json config')
     if a.repulsion_weight is not None:
         if not np.isfinite(a.repulsion_weight) or a.repulsion_weight<0:p.error('Repulsion weight must be finite and nonnegative')
         cfg.train.repulsion_weight=a.repulsion_weight
@@ -53,7 +57,7 @@ def main():
         seed_all(cfg.seed,cfg.threads)
         noise_schedule=json.loads(a.noise_schedule.read_text()) if a.noise_schedule else None
         t=BottleneckTrainer(cfg,env.observation_shape,a.bottleneck_beta,a.prior_components,a.initial_std,a.prior_lr_multiplier,a.kl_warmup_updates,a.prior_mode,
-                            dynamics_input=a.dynamics_input,noise_schedule=noise_schedule,prior_steps=a.prior_steps,latent_l2=a.latent_l2)
+                            dynamics_input=a.dynamics_input,noise_schedule=noise_schedule,prior_steps=a.prior_steps,latent_l2=a.latent_l2 or 0.)
     replay=Replay(); schedule=TrainingSchedule(t)
     out=prepare_run(a.out,cfg,{'arm':a.arm,'blocks':a.blocks,'block_expansions':a.block_expansions,'extra_updates':a.extra_updates,'extra_placement':a.extra_placement,'bottleneck_spec':getattr(t,'spec',None),
         'protocol':'Persistent visited raw observations and frontier; no identity checks or merging. Re-encode both and recompute exact priorities after training. Same full-epoch sample exposure and gradient-step counts at block boundaries; frequent arm causally partitions epoch into 10 intervals (variable minibatch sizes). No search restart after initialization.'})
@@ -111,7 +115,7 @@ def main():
                         batches=epoch_slices(old_count,old_count+j*interval*5,len(replay),j,10,rng,old_order,
                             (block+1)*a.block_expansions*5,cfg.train.batch_size)
                         for batch in batches:
-                            metrics=t.update_probabilistic(replay,head_indices=[batch]*cfg.model.ensemble_size)
+                            metrics=t.update_batch(replay,head_indices=[batch]*cfg.model.ensemble_size)
                             samples_per_head+=len(batch);min_batch=min(min_batch,len(batch));max_batch=max(max_batch,len(batch))
                         schedule.trained_through=len(replay)
                     if offset+1==a.block_expansions:

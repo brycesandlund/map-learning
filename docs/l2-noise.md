@@ -2,6 +2,8 @@
 
 November 10, 2026. Completed sweep, fresh-seed confirmation, and shared-data diagnostics.
 
+Follow-up: [shared-replay geometry](l2-geometry.md) identifies near-one-dimensional baseline representations and directional noise sensitivity. The [clean deterministic formulation](deterministic-formulation.md) now expresses baseline/L2 directly as z=f(o); the results below retain their historical implementation and notation.
+
 **A simple latent L2 penalty improves this noisy-maze explorer.** The selected coefficient, λ=.03, completed all three fresh seeds in 36–51k actions, versus 52–56k for the KL comparator. None of the three unregularized controls completed within 100k. L2 required **14.3% fewer actions on average than KL** in confirmation, improving each paired seed, although most of that average advantage comes from seed 16.
 
 The mechanism is not established as nuisance-information removal. L2 reduces absolute noise displacement, but reduces adjacent-position separation even more. Nevertheless, its queue is substantially better at selecting positions that expose new territory. This is evidence that **relative geometry and queue ranking matter more than our average noise/movement ratio**.

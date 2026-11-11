@@ -40,6 +40,8 @@ class Trainer:
                 bottle.initialize(self.model.encoder(self.tensor(samples)))
 
     def update(self, replay):
+        if self.config.train.loss == "dynamics":
+            return self.update_dynamics(replay)
         if self.config.train.loss == "probabilistic":
             return self.update_probabilistic(replay)
         self.initialize(replay)
@@ -100,6 +102,55 @@ class Trainer:
         metrics.update(update=self.updates, map_loss=float(map_loss.detach()), dynamics_mse=float(dynamics_loss.detach()),
                        latent_std=float(z0.std(dim=0).mean()))
         return metrics
+
+    def update_batch(self, replay, head_indices):
+        """Joint training on explicit replay indices, for either dynamics formulation."""
+        if self.config.train.loss == "dynamics":
+            return self.update_dynamics(replay, head_indices)
+        return self.update_probabilistic(replay, head_indices)
+
+    def update_dynamics(self, replay, head_indices=None):
+        """Deterministic z=f(o): joint transition MSE + repulsion + optional L2."""
+        c = self.config.train
+        replay_sample = head_indices is None
+        if head_indices is None:
+            head_indices = [self.rng.integers(len(replay), size=c.batch_size)
+                            for _ in self.dynamics.heads]
+        shared = c.ensemble_batches == "shared" or (c.ensemble_batches == "shared_replay" and replay_sample)
+        if shared:
+            obs, actions, nxt = replay.transitions_at(head_indices[0])
+            z = self.model.encode(self.tensor(obs))
+            target = self.model.encode(self.tensor(nxt))
+            prediction = (self.dynamics(z, torch.as_tensor(actions, device=self.device))-target).square().mean()
+        else:
+            losses = []
+            for m, indices in enumerate(head_indices):
+                obs, actions, nxt = replay.transitions_at(indices)
+                z = self.model.encode(self.tensor(obs))
+                target = self.model.encode(self.tensor(nxt))
+                pred = self.dynamics.predict_head(m, z, torch.as_tensor(actions, device=self.device))
+                losses.append((pred-target).square().mean())
+            prediction = torch.stack(losses).mean()
+        states = self.model.encode(self.tensor(replay.sample_states(2*c.batch_size, self.rng)))
+        repulsion = repulsion_loss(*states.chunk(2), c.repulsion_margin)
+        latent_squared_norm = states.square().sum(-1).mean()
+        total = prediction + c.repulsion_weight*repulsion
+        if c.latent_l2:
+            total = total + c.latent_l2*latent_squared_norm
+        if not torch.isfinite(total):
+            raise FloatingPointError("Deterministic joint loss became nonfinite")
+        self.map_optimizer.zero_grad()
+        self.dynamics_optimizer.zero_grad()
+        total.backward()
+        torch.nn.utils.clip_grad_norm_(self.model.parameters(), 10.)
+        torch.nn.utils.clip_grad_norm_(self.dynamics.parameters(), 10.)
+        self.map_optimizer.step()
+        self.dynamics_optimizer.step()
+        self.updates += 1
+        return {'update': self.updates, 'joint_loss': float(total.detach()),
+                'prediction_loss': float(prediction.detach()), 'repulsion': float(repulsion.detach()),
+                'latent_squared_norm': float(latent_squared_norm.detach()),
+                'weighted_latent_l2': float((c.latent_l2*latent_squared_norm).detach())}
 
     def update_probabilistic(self, replay, head_indices=None):
         c = self.config.train

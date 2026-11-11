@@ -1,0 +1,1262 @@
+[
+  {
+    "kind": "baseline",
+    "seed": 9,
+    "prefix": 50000,
+    "source": "runs/moment-prior-confirm-controls-20261110/learned-rep0.01-beta0-seed6",
+    "checkpoint": "runs/kl-mechanisms-fixed-20261110/zero-mean_zero-seed9/checkpoint-10.pt",
+    "acquired_observations": 50001,
+    "observed_positions": 1028,
+    "pca_spectrum": [
+      0.9999244547516472,
+      5.0470122391973065e-05,
+      2.4889949404810653e-05,
+      1.3288332190232423e-07,
+      2.5674096348127404e-08,
+      1.228451758725293e-08,
+      8.209597810381977e-09,
+      6.125022436903698e-09
+    ],
+    "pca3_retained": 0.999999814823444,
+    "rms_centroid_scale": 4.884121023892675,
+    "participation_dimension": 1.0001511044519655,
+    "local_probe_positions": 565,
+    "local_anisotropy": [
+      122.20146992494986,
+      155.85488113898037,
+      193.80643469099095
+    ],
+    "local_weak_direction_noise_ratio": [
+      0.6281541010295341,
+      0.916283709224236,
+      1.451258946081397
+    ],
+    "adjacent_distance": [
+      0.1725828990036675,
+      0.23863683478928566,
+      0.3210884838976242
+    ],
+    "adjacent_p90_over_p10": 1.860488413112129,
+    "centroid_nearest_more_than_two_grid_steps": 0.9961089494163424,
+    "queue": {
+      "productive_entries": 163,
+      "productive_positions": 64,
+      "best_productive_score": 0.03635458337830787,
+      "best_productive_rank": 21,
+      "maximum_score": 0.08475732575085314,
+      "top100_repeat_fraction": 0.7,
+      "top100_productive_fraction": 0.06,
+      "top100_distinct_positions": 38,
+      "repeat_score_quantiles": [
+        0.0060839775597181026,
+        0.011301953806803083,
+        0.01822861529297293,
+        0.08475732575085314
+      ],
+      "productive_score_quantiles": [
+        0.00458306569135698,
+        0.013050119412002792,
+        0.03635458337830787
+      ],
+      "productive_vs_repeat_auc": 0.894212021528089,
+      "productive_median_over_repeat_median": 2.1449979530508756,
+      "repeated_wrong_nearest_fraction": 0.20399505038006005,
+      "repeated_nearest_more_than_two_grid_steps": 0.1701810651784136,
+      "wrong_repeat_physical_steps": [
+        1.4142135381698608,
+        2.2360680103302,
+        5.830951690673828
+      ]
+    }
+  },
+  {
+    "kind": "kl",
+    "seed": 9,
+    "prefix": 50000,
+    "source": "runs/moment-prior-confirm-controls-20261110/learned-rep0.01-beta0-seed6",
+    "checkpoint": "runs/kl-mechanisms-fixed-20261110/zero-mean_kl-seed9/checkpoint-10.pt",
+    "acquired_observations": 50001,
+    "observed_positions": 1028,
+    "pca_spectrum": [
+      0.688735229246563,
+      0.31091078470977435,
+      0.0003261197806775649,
+      1.949814087941909e-05,
+      8.068986321186254e-06,
+      1.3108340563310477e-07,
+      9.003762540374784e-08,
+      7.801475326850016e-08
+    ],
+    "pca3_retained": 0.999972133737015,
+    "rms_centroid_scale": 1.4105888744953305,
+    "participation_dimension": 1.7512465057512385,
+    "local_probe_positions": 565,
+    "local_anisotropy": [
+      1.2210616840514739,
+      1.5498668251825851,
+      2.2783500610068588
+    ],
+    "local_weak_direction_noise_ratio": [
+      0.09655904135457245,
+      0.15192885478627616,
+      0.22836144636771108
+    ],
+    "adjacent_distance": [
+      0.050309252765105644,
+      0.06271883616766474,
+      0.10591424784821181
+    ],
+    "adjacent_p90_over_p10": 2.1052637840344475,
+    "centroid_nearest_more_than_two_grid_steps": 0.0,
+    "queue": {
+      "productive_entries": 163,
+      "productive_positions": 64,
+      "best_productive_score": 0.12191260450136633,
+      "best_productive_rank": 1,
+      "maximum_score": 0.12191260450136633,
+      "top100_repeat_fraction": 0.02,
+      "top100_productive_fraction": 0.57,
+      "top100_distinct_positions": 56,
+      "repeat_score_quantiles": [
+        0.005739581427142685,
+        0.012882277464595545,
+        0.02766712162253798,
+        0.06592625996828527
+      ],
+      "productive_score_quantiles": [
+        0.014744034707614935,
+        0.053535037452039094,
+        0.12191260450136633
+      ],
+      "productive_vs_repeat_auc": 0.9966597656847318,
+      "productive_median_over_repeat_median": 9.327341746363246,
+      "repeated_wrong_nearest_fraction": 0.017096391323013216,
+      "repeated_nearest_more_than_two_grid_steps": 0.0,
+      "wrong_repeat_physical_steps": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "kind": "l2",
+    "seed": 9,
+    "prefix": 50000,
+    "source": "runs/moment-prior-confirm-controls-20261110/learned-rep0.01-beta0-seed6",
+    "checkpoint": "runs/l2-noise-fixed-20261110/seed9/checkpoint-10.pt",
+    "acquired_observations": 50001,
+    "observed_positions": 1028,
+    "pca_spectrum": [
+      0.6422352441436945,
+      0.3577151105534156,
+      4.378033472905923e-05,
+      3.4681129505375907e-06,
+      1.7808384627753485e-06,
+      2.3426645276480644e-07,
+      2.1970125584775077e-07,
+      1.6204903890999225e-07
+    ],
+    "pca3_retained": 0.9999941350318391,
+    "rms_centroid_scale": 0.5648885817884148,
+    "participation_dimension": 1.850391375390494,
+    "local_probe_positions": 565,
+    "local_anisotropy": [
+      1.169037995064792,
+      1.3622823036494747,
+      1.6645048041772876
+    ],
+    "local_weak_direction_noise_ratio": [
+      0.22225129176452665,
+      0.2815832166649234,
+      0.39693609807608843
+    ],
+    "adjacent_distance": [
+      0.021978836550571687,
+      0.02881695008959419,
+      0.03474613824569876
+    ],
+    "adjacent_p90_over_p10": 1.5808906975467265,
+    "centroid_nearest_more_than_two_grid_steps": 0.0,
+    "queue": {
+      "productive_entries": 163,
+      "productive_positions": 64,
+      "best_productive_score": 0.05081121006280891,
+      "best_productive_rank": 1,
+      "maximum_score": 0.05081121006280891,
+      "top100_repeat_fraction": 0.05,
+      "top100_productive_fraction": 0.58,
+      "top100_distinct_positions": 62,
+      "repeat_score_quantiles": [
+        0.00387740539039268,
+        0.007834959004909504,
+        0.01369400865350323,
+        0.029973306261579694
+      ],
+      "productive_score_quantiles": [
+        0.004713310357448583,
+        0.022586298461079696,
+        0.05081121006280891
+      ],
+      "productive_vs_repeat_auc": 0.9920474226513435,
+      "productive_median_over_repeat_median": 5.825106272623274,
+      "repeated_wrong_nearest_fraction": 0.12447284022323801,
+      "repeated_nearest_more_than_two_grid_steps": 0.001010126518346423,
+      "wrong_repeat_physical_steps": [
+        1.0,
+        1.0,
+        1.4142135381698608
+      ]
+    }
+  },
+  {
+    "kind": "baseline",
+    "seed": 10,
+    "prefix": 50000,
+    "source": "runs/moment-prior-confirm-controls-20261110/learned-rep0.01-beta0-seed7",
+    "checkpoint": "runs/kl-mechanisms-fixed-20261110/zero-mean_zero-seed10/checkpoint-10.pt",
+    "acquired_observations": 50001,
+    "observed_positions": 657,
+    "pca_spectrum": [
+      0.999888869688665,
+      0.0001089427943676182,
+      2.1098600038465114e-06,
+      3.488347318199665e-08,
+      1.6235585635350444e-08,
+      1.2354341936292871e-08,
+      8.567670085822394e-09,
+      5.615892731718314e-09
+    ],
+    "pca3_retained": 0.9999999223430364,
+    "rms_centroid_scale": 4.161818451390219,
+    "participation_dimension": 1.000222285799734,
+    "local_probe_positions": 384,
+    "local_anisotropy": [
+      231.7506977126301,
+      358.7804555485488,
+      510.6518081647246
+    ],
+    "local_weak_direction_noise_ratio": [
+      0.937033528399784,
+      1.4802680304208264,
+      2.3001265569365628
+    ],
+    "adjacent_distance": [
+      0.23027764619291213,
+      0.24906433979426118,
+      0.27056532879760464
+    ],
+    "adjacent_p90_over_p10": 1.1749526420421286,
+    "centroid_nearest_more_than_two_grid_steps": 0.665144596651446,
+    "queue": {
+      "productive_entries": 227,
+      "productive_positions": 70,
+      "best_productive_score": 0.019316725151957984,
+      "best_productive_rank": 9,
+      "maximum_score": 0.026137832750844733,
+      "top100_repeat_fraction": 0.84,
+      "top100_productive_fraction": 0.07,
+      "top100_distinct_positions": 58,
+      "repeat_score_quantiles": [
+        0.004542192383957229,
+        0.00726940235052292,
+        0.01116720400907659,
+        0.02318830470644569
+      ],
+      "productive_score_quantiles": [
+        0.0026660347602851507,
+        0.00705984499199775,
+        0.019316725151957984
+      ],
+      "productive_vs_repeat_auc": 0.7887813342180572,
+      "productive_median_over_repeat_median": 1.554281367943095,
+      "repeated_wrong_nearest_fraction": 0.47148107128473615,
+      "repeated_nearest_more_than_two_grid_steps": 0.11125654450261781,
+      "wrong_repeat_physical_steps": [
+        1.4142135381698608,
+        1.4142135381698608,
+        2.8284270763397217
+      ]
+    }
+  },
+  {
+    "kind": "kl",
+    "seed": 10,
+    "prefix": 50000,
+    "source": "runs/moment-prior-confirm-controls-20261110/learned-rep0.01-beta0-seed7",
+    "checkpoint": "runs/kl-mechanisms-fixed-20261110/zero-mean_kl-seed10/checkpoint-10.pt",
+    "acquired_observations": 50001,
+    "observed_positions": 657,
+    "pca_spectrum": [
+      0.99896057580552,
+      0.0009684267143323255,
+      7.041185205537347e-05,
+      3.896824475294711e-07,
+      7.816850693834298e-08,
+      4.579800441156878e-08,
+      3.859013800022962e-08,
+      3.338899545960223e-08
+    ],
+    "pca3_retained": 0.9999994143719076,
+    "rms_centroid_scale": 1.3804620047056875,
+    "participation_dimension": 1.002081147357242,
+    "local_probe_positions": 384,
+    "local_anisotropy": [
+      33.744587180931354,
+      40.777457068231655,
+      51.85897336007995
+    ],
+    "local_weak_direction_noise_ratio": [
+      0.453944316324274,
+      0.6195712963948884,
+      0.8228185250837036
+    ],
+    "adjacent_distance": [
+      0.06125264458621564,
+      0.07666973432872193,
+      0.10460115134198662
+    ],
+    "adjacent_p90_over_p10": 1.7077001662312907,
+    "centroid_nearest_more_than_two_grid_steps": 0.9254185692541856,
+    "queue": {
+      "productive_entries": 227,
+      "productive_positions": 70,
+      "best_productive_score": 0.022341104966273964,
+      "best_productive_rank": 1,
+      "maximum_score": 0.022341104966273964,
+      "top100_repeat_fraction": 0.53,
+      "top100_productive_fraction": 0.41,
+      "top100_distinct_positions": 55,
+      "repeat_score_quantiles": [
+        0.003748785589400951,
+        0.005757264022786897,
+        0.008770139005790675,
+        0.020564418633650897
+      ],
+      "productive_score_quantiles": [
+        0.0029789888622571703,
+        0.00872433891004666,
+        0.022341104966273964
+      ],
+      "productive_vs_repeat_auc": 0.9372108088304435,
+      "productive_median_over_repeat_median": 2.3272440372992347,
+      "repeated_wrong_nearest_fraction": 0.22933447442609745,
+      "repeated_nearest_more_than_two_grid_steps": 0.06385924285138944,
+      "wrong_repeat_physical_steps": [
+        1.4142135381698608,
+        1.4142135381698608,
+        2.2360680103302
+      ]
+    }
+  },
+  {
+    "kind": "l2",
+    "seed": 10,
+    "prefix": 50000,
+    "source": "runs/moment-prior-confirm-controls-20261110/learned-rep0.01-beta0-seed7",
+    "checkpoint": "runs/l2-noise-fixed-20261110/seed10/checkpoint-10.pt",
+    "acquired_observations": 50001,
+    "observed_positions": 657,
+    "pca_spectrum": [
+      0.6374580291437981,
+      0.36251480828135996,
+      1.9109969440093745e-05,
+      6.507949124086448e-06,
+      1.0807891630146832e-06,
+      2.0332764176804128e-07,
+      1.5214707549332798e-07,
+      1.0839239758063094e-07
+    ],
+    "pca3_retained": 0.9999919473945982,
+    "rms_centroid_scale": 0.5428926279607661,
+    "participation_dimension": 1.8595319752773765,
+    "local_probe_positions": 384,
+    "local_anisotropy": [
+      1.4823143831899717,
+      1.6256679002843848,
+      1.7899217019571718
+    ],
+    "local_weak_direction_noise_ratio": [
+      0.16774549953124618,
+      0.2089527264936349,
+      0.2456292941746297
+    ],
+    "adjacent_distance": [
+      0.03408085868836386,
+      0.03740352832032829,
+      0.041697535755006544
+    ],
+    "adjacent_p90_over_p10": 1.2234884143116742,
+    "centroid_nearest_more_than_two_grid_steps": 0.0,
+    "queue": {
+      "productive_entries": 227,
+      "productive_positions": 70,
+      "best_productive_score": 0.060872023232032925,
+      "best_productive_rank": 1,
+      "maximum_score": 0.060872023232032925,
+      "top100_repeat_fraction": 0.04,
+      "top100_productive_fraction": 0.87,
+      "top100_distinct_positions": 59,
+      "repeat_score_quantiles": [
+        0.0038281341948840364,
+        0.0070667694655217085,
+        0.012705499416155997,
+        0.03725005318786851
+      ],
+      "productive_score_quantiles": [
+        0.0031343800548617757,
+        0.026807892980015752,
+        0.060872023232032925
+      ],
+      "productive_vs_repeat_auc": 0.9909800741961639,
+      "productive_median_over_repeat_median": 7.002861345833209,
+      "repeated_wrong_nearest_fraction": 0.0659736206202175,
+      "repeated_nearest_more_than_two_grid_steps": 0.0,
+      "wrong_repeat_physical_steps": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "kind": "baseline",
+    "seed": 11,
+    "prefix": 50000,
+    "source": "runs/moment-prior-confirm-controls-20261110/learned-rep0.01-beta0-seed8",
+    "checkpoint": "runs/kl-mechanisms-fixed-20261110/zero-mean_zero-seed11/checkpoint-10.pt",
+    "acquired_observations": 50001,
+    "observed_positions": 1005,
+    "pca_spectrum": [
+      0.9999098509644823,
+      7.658135586618647e-05,
+      1.3319564919084755e-05,
+      1.7679076146398286e-07,
+      4.9216603575614136e-08,
+      8.375317293040955e-09,
+      8.136720763029186e-09,
+      5.5953295283205505e-09
+    ],
+    "pca3_retained": 0.9999997518852676,
+    "rms_centroid_scale": 4.932752625643813,
+    "participation_dimension": 1.0001803164101841,
+    "local_probe_positions": 569,
+    "local_anisotropy": [
+      154.01732344411224,
+      198.56133532863657,
+      251.86818750147313
+    ],
+    "local_weak_direction_noise_ratio": [
+      0.5823644099019245,
+      0.848846738320841,
+      1.3281303574570076
+    ],
+    "adjacent_distance": [
+      0.11767240305176706,
+      0.1702073572075237,
+      0.3425219468497921
+    ],
+    "adjacent_p90_over_p10": 2.910809484353847,
+    "centroid_nearest_more_than_two_grid_steps": 0.9960199004975124,
+    "queue": {
+      "productive_entries": 193,
+      "productive_positions": 82,
+      "best_productive_score": 0.0262646368056109,
+      "best_productive_rank": 32,
+      "maximum_score": 0.03464741206499317,
+      "top100_repeat_fraction": 0.88,
+      "top100_productive_fraction": 0.08,
+      "top100_distinct_positions": 41,
+      "repeat_score_quantiles": [
+        0.005887126019388449,
+        0.010202754388885849,
+        0.017080198151925872,
+        0.03464741206499317
+      ],
+      "productive_score_quantiles": [
+        0.004986547169781257,
+        0.011868224454647283,
+        0.0262646368056109
+      ],
+      "productive_vs_repeat_auc": 0.8867355758827605,
+      "productive_median_over_repeat_median": 2.0159623584684447,
+      "repeated_wrong_nearest_fraction": 0.2909729415628711,
+      "repeated_nearest_more_than_two_grid_steps": 0.25802784164119147,
+      "wrong_repeat_physical_steps": [
+        1.0,
+        2.2360680103302,
+        5.385164737701416
+      ]
+    }
+  },
+  {
+    "kind": "kl",
+    "seed": 11,
+    "prefix": 50000,
+    "source": "runs/moment-prior-confirm-controls-20261110/learned-rep0.01-beta0-seed8",
+    "checkpoint": "runs/kl-mechanisms-fixed-20261110/zero-mean_kl-seed11/checkpoint-10.pt",
+    "acquired_observations": 50001,
+    "observed_positions": 1005,
+    "pca_spectrum": [
+      0.5892164636237871,
+      0.4106776145404822,
+      5.306568543206885e-05,
+      3.918765165216416e-05,
+      1.3451099317722709e-05,
+      1.1366657040623949e-07,
+      5.573139343863867e-08,
+      4.800136484386492e-08
+    ],
+    "pca3_retained": 0.9999471438497014,
+    "rms_centroid_scale": 1.4316378451297402,
+    "participation_dimension": 1.93861511476224,
+    "local_probe_positions": 569,
+    "local_anisotropy": [
+      1.1609764425229354,
+      1.304329024628421,
+      1.5240445221288574
+    ],
+    "local_weak_direction_noise_ratio": [
+      0.13333240705284075,
+      0.1764616961253377,
+      0.23876480662603086
+    ],
+    "adjacent_distance": [
+      0.0644746485284901,
+      0.07865660032332682,
+      0.08620355751586313
+    ],
+    "adjacent_p90_over_p10": 1.3370147722134764,
+    "centroid_nearest_more_than_two_grid_steps": 0.0,
+    "queue": {
+      "productive_entries": 193,
+      "productive_positions": 82,
+      "best_productive_score": 0.11819051914699373,
+      "best_productive_rank": 1,
+      "maximum_score": 0.11819051914699373,
+      "top100_repeat_fraction": 0.01,
+      "top100_productive_fraction": 0.77,
+      "top100_distinct_positions": 68,
+      "repeat_score_quantiles": [
+        0.00640011368022762,
+        0.013487400868538287,
+        0.027000241725910194,
+        0.07527394833297038
+      ],
+      "productive_score_quantiles": [
+        0.017011358537129616,
+        0.066078077830115,
+        0.11819051914699373
+      ],
+      "productive_vs_repeat_auc": 0.998913358361479,
+      "productive_median_over_repeat_median": 10.324516271368001,
+      "repeated_wrong_nearest_fraction": 0.02950910790530814,
+      "repeated_nearest_more_than_two_grid_steps": 0.0,
+      "wrong_repeat_physical_steps": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "kind": "l2",
+    "seed": 11,
+    "prefix": 50000,
+    "source": "runs/moment-prior-confirm-controls-20261110/learned-rep0.01-beta0-seed8",
+    "checkpoint": "runs/l2-noise-fixed-20261110/seed11/checkpoint-10.pt",
+    "acquired_observations": 50001,
+    "observed_positions": 1005,
+    "pca_spectrum": [
+      0.6408881930661465,
+      0.35905040824152,
+      4.0377459218304486e-05,
+      1.4669638750039535e-05,
+      5.843069980170018e-06,
+      2.0920684459507587e-07,
+      1.6409162139827858e-07,
+      1.352259188789678e-07
+    ],
+    "pca3_retained": 0.9999789787668848,
+    "rms_centroid_scale": 0.549179456070471,
+    "participation_dimension": 1.8530361699916942,
+    "local_probe_positions": 569,
+    "local_anisotropy": [
+      1.3325681000400336,
+      1.5370085729807916,
+      1.9123297327157818
+    ],
+    "local_weak_direction_noise_ratio": [
+      0.17817398894332542,
+      0.23322673977045044,
+      0.3160636340844471
+    ],
+    "adjacent_distance": [
+      0.0244625532105912,
+      0.03017837127203502,
+      0.03563852613989819
+    ],
+    "adjacent_p90_over_p10": 1.4568604443328625,
+    "centroid_nearest_more_than_two_grid_steps": 0.0,
+    "queue": {
+      "productive_entries": 193,
+      "productive_positions": 82,
+      "best_productive_score": 0.04273086078992876,
+      "best_productive_rank": 1,
+      "maximum_score": 0.04273086078992876,
+      "top100_repeat_fraction": 0.03,
+      "top100_productive_fraction": 0.76,
+      "top100_distinct_positions": 65,
+      "repeat_score_quantiles": [
+        0.003784908228721179,
+        0.0072844575519981445,
+        0.013147425320603314,
+        0.02770958207997011
+      ],
+      "productive_score_quantiles": [
+        0.0066647089643395024,
+        0.022897666131532966,
+        0.04273086078992876
+      ],
+      "productive_vs_repeat_auc": 0.9943314247834145,
+      "productive_median_over_repeat_median": 6.049728222675952,
+      "repeated_wrong_nearest_fraction": 0.0891084106010459,
+      "repeated_nearest_more_than_two_grid_steps": 0.0002273818246128193,
+      "wrong_repeat_physical_steps": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "kind": "baseline",
+    "seed": 9,
+    "prefix": 75000,
+    "source": "runs/moment-prior-confirm-controls-20261110/learned-rep0.01-beta0-seed6",
+    "checkpoint": "runs/kl-mechanisms-fixed-20261110/zero-mean_zero-seed9/checkpoint-15.pt",
+    "acquired_observations": 75001,
+    "observed_positions": 1499,
+    "pca_spectrum": [
+      0.9976457258604305,
+      0.0023309502996150104,
+      2.2342631310546097e-05,
+      7.915347122973209e-07,
+      1.5825464494353829e-07,
+      2.2522939279503336e-08,
+      5.665193209984834e-09,
+      3.2311541170852865e-09
+    ],
+    "pca3_retained": 0.9999990187913561,
+    "rms_centroid_scale": 4.587010025250742,
+    "participation_dimension": 1.0047197431759207,
+    "local_probe_positions": 951,
+    "local_anisotropy": [
+      19.20460904232596,
+      21.596307205584786,
+      24.65132641750651
+    ],
+    "local_weak_direction_noise_ratio": [
+      0.33104799617488384,
+      0.4713635249219969,
+      0.6521230073638956
+    ],
+    "adjacent_distance": [
+      0.16885671830537613,
+      0.20672515200650504,
+      0.3049082138066021
+    ],
+    "adjacent_p90_over_p10": 1.805721542302971,
+    "centroid_nearest_more_than_two_grid_steps": 0.989993328885924,
+    "queue": {
+      "productive_entries": 132,
+      "productive_positions": 58,
+      "best_productive_score": 0.10897288476101796,
+      "best_productive_rank": 1,
+      "maximum_score": 0.10897288476101796,
+      "top100_repeat_fraction": 0.32,
+      "top100_productive_fraction": 0.41,
+      "top100_distinct_positions": 50,
+      "repeat_score_quantiles": [
+        0.007293248813693445,
+        0.016266516527105757,
+        0.031132136587372312,
+        0.07267097269177826
+      ],
+      "productive_score_quantiles": [
+        0.007216208928416507,
+        0.04686334155350541,
+        0.10897288476101796
+      ],
+      "productive_vs_repeat_auc": 0.9878497308737657,
+      "productive_median_over_repeat_median": 6.425578332870957,
+      "repeated_wrong_nearest_fraction": 0.04701448789883589,
+      "repeated_nearest_more_than_two_grid_steps": 0.023147140105518802,
+      "wrong_repeat_physical_steps": [
+        1.4142135381698608,
+        1.4142135381698608,
+        2.2360680103302
+      ]
+    }
+  },
+  {
+    "kind": "kl",
+    "seed": 9,
+    "prefix": 75000,
+    "source": "runs/moment-prior-confirm-controls-20261110/learned-rep0.01-beta0-seed6",
+    "checkpoint": "runs/kl-mechanisms-fixed-20261110/zero-mean_kl-seed9/checkpoint-15.pt",
+    "acquired_observations": 75001,
+    "observed_positions": 1499,
+    "pca_spectrum": [
+      0.6166371869050473,
+      0.3808824263569212,
+      0.0023826347419259922,
+      8.624169489464518e-05,
+      1.135389699166048e-05,
+      7.159631242317024e-08,
+      5.0992349187944964e-08,
+      3.3815557571831596e-08
+    ],
+    "pca3_retained": 0.9999022480038946,
+    "rms_centroid_scale": 1.79656539671526,
+    "participation_dimension": 1.9036069501784918,
+    "local_probe_positions": 951,
+    "local_anisotropy": [
+      1.1274206906598798,
+      1.3947058525807128,
+      1.8215158534864977
+    ],
+    "local_weak_direction_noise_ratio": [
+      0.08121702543674324,
+      0.11199797385708353,
+      0.16408165279413184
+    ],
+    "adjacent_distance": [
+      0.07087391589624861,
+      0.09005329009866878,
+      0.1226555414184879
+    ],
+    "adjacent_p90_over_p10": 1.7306161211416866,
+    "centroid_nearest_more_than_two_grid_steps": 0.0,
+    "queue": {
+      "productive_entries": 132,
+      "productive_positions": 58,
+      "best_productive_score": 0.12566981094041269,
+      "best_productive_rank": 1,
+      "maximum_score": 0.12566981094041269,
+      "top100_repeat_fraction": 0.01,
+      "top100_productive_fraction": 0.55,
+      "top100_distinct_positions": 61,
+      "repeat_score_quantiles": [
+        0.006223536809877295,
+        0.013140627904536087,
+        0.026780137844618555,
+        0.08592692411132385
+      ],
+      "productive_score_quantiles": [
+        0.04449764994890026,
+        0.0750583349789679,
+        0.12566981094041269
+      ],
+      "productive_vs_repeat_auc": 0.9999557166168003,
+      "productive_median_over_repeat_median": 12.06039865625022,
+      "repeated_wrong_nearest_fraction": 0.0034670463110292316,
+      "repeated_nearest_more_than_two_grid_steps": 0.0,
+      "wrong_repeat_physical_steps": [
+        1.0,
+        1.0,
+        1.4142135381698608
+      ]
+    }
+  },
+  {
+    "kind": "l2",
+    "seed": 9,
+    "prefix": 75000,
+    "source": "runs/moment-prior-confirm-controls-20261110/learned-rep0.01-beta0-seed6",
+    "checkpoint": "runs/l2-noise-fixed-20261110/seed9/checkpoint-15.pt",
+    "acquired_observations": 75001,
+    "observed_positions": 1499,
+    "pca_spectrum": [
+      0.5639772165380144,
+      0.4359218091818734,
+      8.066082194371767e-05,
+      1.7607081507587835e-05,
+      2.4223845091295506e-06,
+      1.1860030382475669e-07,
+      8.66834048474565e-08,
+      7.870844308071043e-08
+    ],
+    "pca3_retained": 0.9999796865418314,
+    "rms_centroid_scale": 0.5315084458532884,
+    "participation_dimension": 1.968123750837439,
+    "local_probe_positions": 951,
+    "local_anisotropy": [
+      1.0941368831263907,
+      1.3068389642930247,
+      1.6365156560395184
+    ],
+    "local_weak_direction_noise_ratio": [
+      0.19234167474803684,
+      0.25092995788526845,
+      0.36701313039499345
+    ],
+    "adjacent_distance": [
+      0.020599862747972646,
+      0.027374368537373787,
+      0.03709348743755758
+    ],
+    "adjacent_p90_over_p10": 1.8006667273163348,
+    "centroid_nearest_more_than_two_grid_steps": 0.0,
+    "queue": {
+      "productive_entries": 132,
+      "productive_positions": 58,
+      "best_productive_score": 0.048636847550783846,
+      "best_productive_rank": 1,
+      "maximum_score": 0.048636847550783846,
+      "top100_repeat_fraction": 0.08,
+      "top100_productive_fraction": 0.6,
+      "top100_distinct_positions": 64,
+      "repeat_score_quantiles": [
+        0.0037928250067819596,
+        0.007333431029895725,
+        0.012665852180458662,
+        0.03644851719440209
+      ],
+      "productive_score_quantiles": [
+        0.007245484168710815,
+        0.02182555356624602,
+        0.048636847550783846
+      ],
+      "productive_vs_repeat_auc": 0.9953780329042032,
+      "productive_median_over_repeat_median": 5.75443199388838,
+      "repeated_wrong_nearest_fraction": 0.1280294782681517,
+      "repeated_nearest_more_than_two_grid_steps": 0.0007202076877983419,
+      "wrong_repeat_physical_steps": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "kind": "baseline",
+    "seed": 10,
+    "prefix": 75000,
+    "source": "runs/moment-prior-confirm-controls-20261110/learned-rep0.01-beta0-seed7",
+    "checkpoint": "runs/kl-mechanisms-fixed-20261110/zero-mean_zero-seed10/checkpoint-15.pt",
+    "acquired_observations": 75001,
+    "observed_positions": 1075,
+    "pca_spectrum": [
+      0.9999048841047972,
+      9.229327893929283e-05,
+      2.7350615205752455e-06,
+      5.8387463426520784e-08,
+      1.651909045569676e-08,
+      5.8595041979563725e-09,
+      3.5070508368497896e-09,
+      3.281634046192303e-09
+    ],
+    "pca3_retained": 0.9999999124452571,
+    "rms_centroid_scale": 5.194481334874088,
+    "participation_dimension": 1.0001902504061706,
+    "local_probe_positions": 653,
+    "local_anisotropy": [
+      210.41483077469778,
+      308.9152031771428,
+      424.50949458846185
+    ],
+    "local_weak_direction_noise_ratio": [
+      0.6854707174230427,
+      1.0567896676788087,
+      1.6096366838538945
+    ],
+    "adjacent_distance": [
+      0.20912378332432455,
+      0.22953873140811376,
+      0.25627147697023417
+    ],
+    "adjacent_p90_over_p10": 1.2254535227721541,
+    "centroid_nearest_more_than_two_grid_steps": 0.8976744186046511,
+    "queue": {
+      "productive_entries": 290,
+      "productive_positions": 86,
+      "best_productive_score": 0.025825064439361996,
+      "best_productive_rank": 1,
+      "maximum_score": 0.025825064439361996,
+      "top100_repeat_fraction": 0.84,
+      "top100_productive_fraction": 0.1,
+      "top100_distinct_positions": 61,
+      "repeat_score_quantiles": [
+        0.0038295588657774474,
+        0.006541922077547269,
+        0.010380001476957449,
+        0.025462493633555062
+      ],
+      "productive_score_quantiles": [
+        0.0028572012460424913,
+        0.007265783696238385,
+        0.025825064439361996
+      ],
+      "productive_vs_repeat_auc": 0.8829487186908477,
+      "productive_median_over_repeat_median": 1.8972899884549346,
+      "repeated_wrong_nearest_fraction": 0.3110122544905154,
+      "repeated_nearest_more_than_two_grid_steps": 0.06770186335403727,
+      "wrong_repeat_physical_steps": [
+        1.4142135381698608,
+        1.4142135381698608,
+        7.8102498054504395
+      ]
+    }
+  },
+  {
+    "kind": "kl",
+    "seed": 10,
+    "prefix": 75000,
+    "source": "runs/moment-prior-confirm-controls-20261110/learned-rep0.01-beta0-seed7",
+    "checkpoint": "runs/kl-mechanisms-fixed-20261110/zero-mean_kl-seed10/checkpoint-15.pt",
+    "acquired_observations": 75001,
+    "observed_positions": 1075,
+    "pca_spectrum": [
+      0.59484115431027,
+      0.40479459865578826,
+      0.00031820966522136336,
+      4.2208209995214434e-05,
+      3.4297792813360674e-06,
+      3.281885063576261e-07,
+      4.777732538966023e-08,
+      2.3413612176946287e-08
+    ],
+    "pca3_retained": 0.9999539626312796,
+    "rms_centroid_scale": 1.9009591004658941,
+    "participation_dimension": 1.9316401475463503,
+    "local_probe_positions": 653,
+    "local_anisotropy": [
+      1.1268502865339618,
+      1.3399294487936175,
+      1.5252256679124863
+    ],
+    "local_weak_direction_noise_ratio": [
+      0.07107899604809725,
+      0.09403982782383344,
+      0.12545608940404426
+    ],
+    "adjacent_distance": [
+      0.09173211109643092,
+      0.10582146818440491,
+      0.11957222240164113
+    ],
+    "adjacent_p90_over_p10": 1.3034936291386996,
+    "centroid_nearest_more_than_two_grid_steps": 0.0,
+    "queue": {
+      "productive_entries": 290,
+      "productive_positions": 86,
+      "best_productive_score": 0.21153960831582247,
+      "best_productive_rank": 1,
+      "maximum_score": 0.21153960831582247,
+      "top100_repeat_fraction": 0.0,
+      "top100_productive_fraction": 0.78,
+      "top100_distinct_positions": 60,
+      "repeat_score_quantiles": [
+        0.005081888148798719,
+        0.01035484595198413,
+        0.02302599248073922,
+        0.07530463605955896
+      ],
+      "productive_score_quantiles": [
+        0.03695035148754114,
+        0.091815282500515,
+        0.21153960831582247
+      ],
+      "productive_vs_repeat_auc": 0.9999804344931781,
+      "productive_median_over_repeat_median": 18.067159255014055,
+      "repeated_wrong_nearest_fraction": 0.0012086620782273405,
+      "repeated_nearest_more_than_two_grid_steps": 0.0,
+      "wrong_repeat_physical_steps": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "kind": "l2",
+    "seed": 10,
+    "prefix": 75000,
+    "source": "runs/moment-prior-confirm-controls-20261110/learned-rep0.01-beta0-seed7",
+    "checkpoint": "runs/l2-noise-fixed-20261110/seed10/checkpoint-15.pt",
+    "acquired_observations": 75001,
+    "observed_positions": 1075,
+    "pca_spectrum": [
+      0.6000308972424595,
+      0.39022808854665814,
+      0.009712373335832946,
+      2.625119411658898e-05,
+      1.7853678951361072e-06,
+      3.114585667827851e-07,
+      1.5068291401285339e-07,
+      1.4217155699702738e-07
+    ],
+    "pca3_retained": 0.9999713591249506,
+    "rms_centroid_scale": 0.578000113651415,
+    "participation_dimension": 1.9515646264090478,
+    "local_probe_positions": 653,
+    "local_anisotropy": [
+      1.7297740057600808,
+      2.0220735109300705,
+      2.5080001053656864
+    ],
+    "local_weak_direction_noise_ratio": [
+      0.23891231490502107,
+      0.2787772811166246,
+      0.3314528087008588
+    ],
+    "adjacent_distance": [
+      0.021798270121243413,
+      0.034283498761217876,
+      0.04771625620696928
+    ],
+    "adjacent_p90_over_p10": 2.1889927935367495,
+    "centroid_nearest_more_than_two_grid_steps": 0.0,
+    "queue": {
+      "productive_entries": 290,
+      "productive_positions": 86,
+      "best_productive_score": 0.05271522017103588,
+      "best_productive_rank": 1,
+      "maximum_score": 0.05271522017103588,
+      "top100_repeat_fraction": 0.06,
+      "top100_productive_fraction": 0.79,
+      "top100_distinct_positions": 73,
+      "repeat_score_quantiles": [
+        0.00477126614576877,
+        0.008239713570938218,
+        0.013662986572396356,
+        0.031452716567376936
+      ],
+      "productive_score_quantiles": [
+        0.004133920799033518,
+        0.021148129921821086,
+        0.05271522017103588
+      ],
+      "productive_vs_repeat_auc": 0.9809244991403911,
+      "productive_median_over_repeat_median": 4.432393682455874,
+      "repeated_wrong_nearest_fraction": 0.09506462984723851,
+      "repeated_nearest_more_than_two_grid_steps": 0.00015108275977841195,
+      "wrong_repeat_physical_steps": [
+        1.0,
+        1.0,
+        1.4142135381698608
+      ]
+    }
+  },
+  {
+    "kind": "baseline",
+    "seed": 11,
+    "prefix": 75000,
+    "source": "runs/moment-prior-confirm-controls-20261110/learned-rep0.01-beta0-seed8",
+    "checkpoint": "runs/kl-mechanisms-fixed-20261110/zero-mean_zero-seed11/checkpoint-15.pt",
+    "acquired_observations": 75001,
+    "observed_positions": 1418,
+    "pca_spectrum": [
+      0.9997222270272685,
+      0.0002327739641242751,
+      4.464172299598934e-05,
+      2.8683489482569036e-07,
+      5.5334091058552665e-08,
+      6.945518863290634e-09,
+      5.240921441252088e-09,
+      2.930184969352512e-09
+    ],
+    "pca3_retained": 0.9999996427143888,
+    "rms_centroid_scale": 4.993413068268594,
+    "participation_dimension": 1.0005557212655505,
+    "local_probe_positions": 843,
+    "local_anisotropy": [
+      73.01528145700378,
+      85.26429214771359,
+      100.45655003449234
+    ],
+    "local_weak_direction_noise_ratio": [
+      0.414832238523596,
+      0.5390160532539531,
+      0.7203711105009387
+    ],
+    "adjacent_distance": [
+      0.1231570832714864,
+      0.29281294489642695,
+      0.3431172525322501
+    ],
+    "adjacent_p90_over_p10": 2.786013142060903,
+    "centroid_nearest_more_than_two_grid_steps": 0.997179125528914,
+    "queue": {
+      "productive_entries": 246,
+      "productive_positions": 79,
+      "best_productive_score": 0.061721491249710506,
+      "best_productive_rank": 1,
+      "maximum_score": 0.061721491249710506,
+      "top100_repeat_fraction": 0.54,
+      "top100_productive_fraction": 0.21,
+      "top100_distinct_positions": 39,
+      "repeat_score_quantiles": [
+        0.0053625056382158405,
+        0.011043272818100117,
+        0.02076133378503583,
+        0.046336160512562015
+      ],
+      "productive_score_quantiles": [
+        0.0060637912413172065,
+        0.018650053705119324,
+        0.061721491249710506
+      ],
+      "productive_vs_repeat_auc": 0.9614328608683865,
+      "productive_median_over_repeat_median": 3.477861836118159,
+      "repeated_wrong_nearest_fraction": 0.12396109041252934,
+      "repeated_nearest_more_than_two_grid_steps": 0.1007636933762665,
+      "wrong_repeat_physical_steps": [
+        1.0,
+        2.2360680103302,
+        3.1622776985168457
+      ]
+    }
+  },
+  {
+    "kind": "kl",
+    "seed": 11,
+    "prefix": 75000,
+    "source": "runs/moment-prior-confirm-controls-20261110/learned-rep0.01-beta0-seed8",
+    "checkpoint": "runs/kl-mechanisms-fixed-20261110/zero-mean_kl-seed11/checkpoint-15.pt",
+    "acquired_observations": 75001,
+    "observed_positions": 1418,
+    "pca_spectrum": [
+      0.5932265716392736,
+      0.40612743200444223,
+      0.000503919836653524,
+      9.97320329012085e-05,
+      4.2154412437382854e-05,
+      1.2361591498728143e-07,
+      4.609504779987906e-08,
+      2.036332933213443e-08
+    ],
+    "pca3_retained": 0.9998579234803694,
+    "rms_centroid_scale": 1.852722968162873,
+    "participation_dimension": 1.9347691722879863,
+    "local_probe_positions": 843,
+    "local_anisotropy": [
+      1.1214545552352468,
+      1.2939823288043721,
+      1.5385672860037054
+    ],
+    "local_weak_direction_noise_ratio": [
+      0.06974382041317567,
+      0.09324567377931434,
+      0.12278407030806247
+    ],
+    "adjacent_distance": [
+      0.08358328223246994,
+      0.09392517223768883,
+      0.11043945587166615
+    ],
+    "adjacent_p90_over_p10": 1.3213103496522332,
+    "centroid_nearest_more_than_two_grid_steps": 0.0,
+    "queue": {
+      "productive_entries": 246,
+      "productive_positions": 79,
+      "best_productive_score": 0.1373017825319745,
+      "best_productive_rank": 1,
+      "maximum_score": 0.1373017825319745,
+      "top100_repeat_fraction": 0.0,
+      "top100_productive_fraction": 0.59,
+      "top100_distinct_positions": 55,
+      "repeat_score_quantiles": [
+        0.0052966601920061765,
+        0.010766153747717831,
+        0.022273052562942142,
+        0.05397761178924427
+      ],
+      "productive_score_quantiles": [
+        0.048496176962121135,
+        0.08200236913458017,
+        0.1373017825319745
+      ],
+      "productive_vs_repeat_auc": 0.9999990405689919,
+      "productive_median_over_repeat_median": 15.481901077652623,
+      "repeated_wrong_nearest_fraction": 0.0009272215385134341,
+      "repeated_nearest_more_than_two_grid_steps": 0.0,
+      "wrong_repeat_physical_steps": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  },
+  {
+    "kind": "l2",
+    "seed": 11,
+    "prefix": 75000,
+    "source": "runs/moment-prior-confirm-controls-20261110/learned-rep0.01-beta0-seed8",
+    "checkpoint": "runs/l2-noise-fixed-20261110/seed11/checkpoint-15.pt",
+    "acquired_observations": 75001,
+    "observed_positions": 1418,
+    "pca_spectrum": [
+      0.6120105941170516,
+      0.3872484767017683,
+      0.0006978302540439464,
+      3.747495363532227e-05,
+      5.178694030900959e-06,
+      2.0196569761991682e-07,
+      1.3670089947882114e-07,
+      1.0661287271548213e-07
+    ],
+    "pca3_retained": 0.9999569010728638,
+    "rms_centroid_scale": 0.5626516749510175,
+    "participation_dimension": 1.9065092171269256,
+    "local_probe_positions": 843,
+    "local_anisotropy": [
+      1.259401382802774,
+      1.42777630093184,
+      1.718296743164348
+    ],
+    "local_weak_direction_noise_ratio": [
+      0.14636303276851817,
+      0.19408391956291146,
+      0.2792097711275931
+    ],
+    "adjacent_distance": [
+      0.02257001986692709,
+      0.0290710143933361,
+      0.03497519534307574
+    ],
+    "adjacent_p90_over_p10": 1.549630684832783,
+    "centroid_nearest_more_than_two_grid_steps": 0.0,
+    "queue": {
+      "productive_entries": 246,
+      "productive_positions": 79,
+      "best_productive_score": 0.04665301710630756,
+      "best_productive_rank": 1,
+      "maximum_score": 0.04665301710630756,
+      "top100_repeat_fraction": 0.03,
+      "top100_productive_fraction": 0.65,
+      "top100_distinct_positions": 61,
+      "repeat_score_quantiles": [
+        0.0037804038188806208,
+        0.007127063499686675,
+        0.01271346824453759,
+        0.027565650149530132
+      ],
+      "productive_score_quantiles": [
+        0.004076272320017283,
+        0.019515738432984472,
+        0.04665301710630756
+      ],
+      "productive_vs_repeat_auc": 0.9905979187748449,
+      "productive_median_over_repeat_median": 5.1623422702929895,
+      "repeated_wrong_nearest_fraction": 0.07196924996206822,
+      "repeated_nearest_more_than_two_grid_steps": 5.057572028254969e-05,
+      "wrong_repeat_physical_steps": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  }
+]

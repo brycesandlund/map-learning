@@ -113,7 +113,7 @@ class MapModel(nn.Module):
             self.encoder = mlp(observation_shape[0], c.hidden_dim, c.latent_dim, c.hidden_layers)
         self.bottleneck = (PrototypeBottleneck(c.codebook_size, c.latent_dim, c.codebook_temperature)
                            if c.codebook_size else None)
-        self.distance_head = (None if loss_kind == "probabilistic" else
+        self.distance_head = (None if loss_kind in {"probabilistic", "dynamics"} else
                               IntervalQuasimetric(c.latent_dim, c.iqe_component_dim)
                               if loss_kind == "qrl" else TemporalDistance(c.latent_dim, c.hidden_dim))
         self.loss_kind = loss_kind
@@ -123,7 +123,7 @@ class MapModel(nn.Module):
 
     def encode(self, obs, with_aux=False):
         z = self.encoder(obs)
-        if self.loss_kind == "probabilistic" and self.latent_activation == "tanh":
+        if self.loss_kind in {"probabilistic", "dynamics"} and self.latent_activation == "tanh":
             z = self.latent_bound * z.tanh()
         aux, ids = {}, None
         if self.bottleneck:
@@ -132,7 +132,7 @@ class MapModel(nn.Module):
 
     def distance(self, x, y):
         if self.distance_head is None:
-            raise ValueError("Probabilistic dynamics do not learn a navigation distance")
+            raise ValueError("This dynamics model has no learned navigation-distance head")
         value = self.distance_head(x, y)
         return value if self.loss_kind == "qrl" else value * self.horizon
 

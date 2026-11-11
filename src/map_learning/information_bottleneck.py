@@ -44,6 +44,7 @@ class LearnedPrior(nn.Module):
 
 class BottleneckTrainer(Trainer):
     def __init__(self,config,observation_shape,beta=0.,prior_components=1,initial_std=.01,prior_lr_multiplier=1.,kl_warmup_updates=0,prior_mode='learned',dynamics_input='posterior',noise_schedule=None,prior_steps=1,latent_l2=0.):
+        if config.train.loss != 'probabilistic':raise ValueError('Bottleneck experiments require the legacy probabilistic configuration')
         if len(observation_shape)!=1 or config.model.latent_activation!='identity':raise ValueError('Bottleneck experiment requires vector observations and identity mean encoder')
         if config.train.prediction_objective!='mse' or config.train.ensemble_batches!='shared':raise ValueError('Use mean-MSE and shared ensemble batches')
         if beta<0 or prior_components<1 or not 0<initial_std<1 or prior_lr_multiplier<=0:raise ValueError('Invalid bottleneck settings')

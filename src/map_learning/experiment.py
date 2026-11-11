@@ -205,13 +205,13 @@ def rollout(checkpoint, output, steps, overrides=(), goal=None, device="cpu"):
         planner_config[key] = getattr(config.planner, key)
     from .config import PlannerConfig
     trainer.config.planner = PlannerConfig(**planner_config)
-    if goal is None and not overrides and trainer.config.train.loss != "probabilistic":
+    if goal is None and not overrides and trainer.config.train.loss not in {"probabilistic", "dynamics"}:
         trainer.config.planner.behavior = "distance"
     config = trainer.config
     config.collect_steps = steps
     config.validate()
-    if config.train.loss == "probabilistic" and goal is not None:
-        raise ValueError("Probabilistic mode currently implements exploration, not goal matching")
+    if config.train.loss in {"probabilistic", "dynamics"} and goal is not None:
+        raise ValueError("Dynamics exploration has no goal-matching objective yet")
     seed_all(config.seed, config.threads)
     env, replay = Maze(config.maze, config.seed), Replay()
     if goal is not None and (np.any(np.asarray(goal) <= 0) or np.any(np.asarray(goal) >= config.maze.size)):
