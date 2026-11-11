@@ -21,11 +21,11 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);p.add_argument('--arm',choices=ARMS,required=True)
     p.add_argument('--family',choices=['winner','zero'],required=True);p.add_argument('--source-seed',type=int,required=True)
     p.add_argument('--seed',type=int,required=True);p.add_argument('--schedule',type=Path,required=True)
-    p.add_argument('--limit',type=int,default=100000);p.add_argument('--skip-queue',action='store_true');a=p.parse_args()
+    p.add_argument('--limit',type=int,default=100000);p.add_argument('--skip-queue',action='store_true');p.add_argument('--latent-l2',type=float,default=0.);a=p.parse_args()
     assert a.limit%5000==0
     a.out.mkdir(parents=True,exist_ok=False);source=data_source(a.family,a.source_seed)
     schedule=json.loads(a.schedule.read_text());cfg=load_config('configs/noisy_frontier.json',[f'seed={a.seed}','train.repulsion_weight=0.03'])
-    seed_all(a.seed,1);t=BottleneckTrainer(cfg,(10,),**spec(a.arm,schedule))
+    seed_all(a.seed,1);t=BottleneckTrainer(cfg,(10,),**spec(a.arm,schedule),latent_l2=a.latent_l2)
     initial_hash=digest_model(t);t.save(a.out/'checkpoint-0.pt')
     (a.out/'config.json').write_text(json.dumps(asdict(cfg),indent=2)+'\n')
     (a.out/'runner.py').write_text(Path(__file__).read_text())

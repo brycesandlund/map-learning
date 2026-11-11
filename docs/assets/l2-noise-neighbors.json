@@ -1,0 +1,128 @@
+[
+  {
+    "kind": "none",
+    "seed": 9,
+    "prefix": 50000,
+    "repeated_entries": 39599,
+    "same_physical_nearest_given_repeated": 0.79600494961994
+  },
+  {
+    "kind": "none",
+    "seed": 9,
+    "prefix": 75000,
+    "repeated_entries": 59705,
+    "same_physical_nearest_given_repeated": 0.9529855121011641
+  },
+  {
+    "kind": "none",
+    "seed": 10,
+    "prefix": 50000,
+    "repeated_entries": 39728,
+    "same_physical_nearest_given_repeated": 0.5285189287152638
+  },
+  {
+    "kind": "none",
+    "seed": 10,
+    "prefix": 75000,
+    "repeated_entries": 59570,
+    "same_physical_nearest_given_repeated": 0.6889877455094846
+  },
+  {
+    "kind": "none",
+    "seed": 11,
+    "prefix": 50000,
+    "repeated_entries": 39581,
+    "same_physical_nearest_given_repeated": 0.7090270584371289
+  },
+  {
+    "kind": "none",
+    "seed": 11,
+    "prefix": 75000,
+    "repeated_entries": 59317,
+    "same_physical_nearest_given_repeated": 0.8760389095874707
+  },
+  {
+    "kind": "kl",
+    "seed": 9,
+    "prefix": 50000,
+    "repeated_entries": 39599,
+    "same_physical_nearest_given_repeated": 0.9829036086769868
+  },
+  {
+    "kind": "kl",
+    "seed": 9,
+    "prefix": 75000,
+    "repeated_entries": 59705,
+    "same_physical_nearest_given_repeated": 0.9965329536889708
+  },
+  {
+    "kind": "kl",
+    "seed": 10,
+    "prefix": 50000,
+    "repeated_entries": 39728,
+    "same_physical_nearest_given_repeated": 0.7706655255739026
+  },
+  {
+    "kind": "kl",
+    "seed": 10,
+    "prefix": 75000,
+    "repeated_entries": 59570,
+    "same_physical_nearest_given_repeated": 0.9987913379217727
+  },
+  {
+    "kind": "kl",
+    "seed": 11,
+    "prefix": 50000,
+    "repeated_entries": 39581,
+    "same_physical_nearest_given_repeated": 0.9704908920946919
+  },
+  {
+    "kind": "kl",
+    "seed": 11,
+    "prefix": 75000,
+    "repeated_entries": 59317,
+    "same_physical_nearest_given_repeated": 0.9990727784614866
+  },
+  {
+    "kind": "l2",
+    "seed": 9,
+    "prefix": 50000,
+    "repeated_entries": 39599,
+    "same_physical_nearest_given_repeated": 0.875527159776762
+  },
+  {
+    "kind": "l2",
+    "seed": 9,
+    "prefix": 75000,
+    "repeated_entries": 59705,
+    "same_physical_nearest_given_repeated": 0.8719705217318483
+  },
+  {
+    "kind": "l2",
+    "seed": 10,
+    "prefix": 50000,
+    "repeated_entries": 39728,
+    "same_physical_nearest_given_repeated": 0.9340263793797825
+  },
+  {
+    "kind": "l2",
+    "seed": 10,
+    "prefix": 75000,
+    "repeated_entries": 59570,
+    "same_physical_nearest_given_repeated": 0.9049353701527615
+  },
+  {
+    "kind": "l2",
+    "seed": 11,
+    "prefix": 50000,
+    "repeated_entries": 39581,
+    "same_physical_nearest_given_repeated": 0.9108915893989541
+  },
+  {
+    "kind": "l2",
+    "seed": 11,
+    "prefix": 75000,
+    "repeated_entries": 59317,
+    "same_physical_nearest_given_repeated": 0.9280307500379318
+  }
+]

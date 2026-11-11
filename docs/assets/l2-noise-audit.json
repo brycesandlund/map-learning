@@ -1,0 +1,493 @@
+{
+  "online": [
+    {
+      "kind": "l2",
+      "latent_l2": 0.0,
+      "beta": 0.0,
+      "seed": 9,
+      "path": "runs/l2-noise-screen-20261110/zero-reproduction-seed9",
+      "reused": false,
+      "role": "reproduction",
+      "checks_passed": true,
+      "initial_hash": "6b5530fd43a6be6a9b400c2cb99592265ebdad9600422b4ec08ea70023af341e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.0,
+      "beta": 0.0,
+      "seed": 9,
+      "path": "runs/kl-mechanisms-online-20261110/online-mean_zero-seed9",
+      "reused": true,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "6b5530fd43a6be6a9b400c2cb99592265ebdad9600422b4ec08ea70023af341e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 1e-05,
+      "beta": 0.0,
+      "seed": 9,
+      "path": "runs/l2-noise-screen-20261110/l2-1e-05-seed9",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "6b5530fd43a6be6a9b400c2cb99592265ebdad9600422b4ec08ea70023af341e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 3e-05,
+      "beta": 0.0,
+      "seed": 9,
+      "path": "runs/l2-noise-screen-20261110/l2-3e-05-seed9",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "6b5530fd43a6be6a9b400c2cb99592265ebdad9600422b4ec08ea70023af341e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.0001,
+      "beta": 0.0,
+      "seed": 9,
+      "path": "runs/l2-noise-screen-20261110/l2-0.0001-seed9",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "6b5530fd43a6be6a9b400c2cb99592265ebdad9600422b4ec08ea70023af341e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.0003,
+      "beta": 0.0,
+      "seed": 9,
+      "path": "runs/l2-noise-screen-20261110/l2-0.0003-seed9",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "6b5530fd43a6be6a9b400c2cb99592265ebdad9600422b4ec08ea70023af341e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.001,
+      "beta": 0.0,
+      "seed": 9,
+      "path": "runs/l2-noise-screen-20261110/l2-0.001-seed9",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "6b5530fd43a6be6a9b400c2cb99592265ebdad9600422b4ec08ea70023af341e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.003,
+      "beta": 0.0,
+      "seed": 9,
+      "path": "runs/l2-noise-screen-20261110/l2-0.003-seed9",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "6b5530fd43a6be6a9b400c2cb99592265ebdad9600422b4ec08ea70023af341e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.01,
+      "beta": 0.0,
+      "seed": 9,
+      "path": "runs/l2-noise-screen-20261110/l2-0.01-seed9",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "6b5530fd43a6be6a9b400c2cb99592265ebdad9600422b4ec08ea70023af341e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.03,
+      "beta": 0.0,
+      "seed": 9,
+      "path": "runs/l2-noise-screen-20261110/l2-0.03-seed9",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "6b5530fd43a6be6a9b400c2cb99592265ebdad9600422b4ec08ea70023af341e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.1,
+      "beta": 0.0,
+      "seed": 9,
+      "path": "runs/l2-noise-screen-20261110/l2-0.1-seed9",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "6b5530fd43a6be6a9b400c2cb99592265ebdad9600422b4ec08ea70023af341e"
+    },
+    {
+      "kind": "kl",
+      "latent_l2": 0.0,
+      "beta": 1e-05,
+      "seed": 9,
+      "path": "runs/kl-mechanisms-online-20261110/online-mean_kl-seed9",
+      "reused": true,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "6b5530fd43a6be6a9b400c2cb99592265ebdad9600422b4ec08ea70023af341e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.0,
+      "beta": 0.0,
+      "seed": 10,
+      "path": "runs/kl-mechanisms-online-20261110/online-mean_zero-seed10",
+      "reused": true,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "52f0a6ee22bb3e6516acb65d479620d0ddb2750b1b737e51f9744651e714886e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 1e-05,
+      "beta": 0.0,
+      "seed": 10,
+      "path": "runs/l2-noise-screen-20261110/l2-1e-05-seed10",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "52f0a6ee22bb3e6516acb65d479620d0ddb2750b1b737e51f9744651e714886e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 3e-05,
+      "beta": 0.0,
+      "seed": 10,
+      "path": "runs/l2-noise-screen-20261110/l2-3e-05-seed10",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "52f0a6ee22bb3e6516acb65d479620d0ddb2750b1b737e51f9744651e714886e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.0001,
+      "beta": 0.0,
+      "seed": 10,
+      "path": "runs/l2-noise-screen-20261110/l2-0.0001-seed10",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "52f0a6ee22bb3e6516acb65d479620d0ddb2750b1b737e51f9744651e714886e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.0003,
+      "beta": 0.0,
+      "seed": 10,
+      "path": "runs/l2-noise-screen-20261110/l2-0.0003-seed10",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "52f0a6ee22bb3e6516acb65d479620d0ddb2750b1b737e51f9744651e714886e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.001,
+      "beta": 0.0,
+      "seed": 10,
+      "path": "runs/l2-noise-screen-20261110/l2-0.001-seed10",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "52f0a6ee22bb3e6516acb65d479620d0ddb2750b1b737e51f9744651e714886e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.003,
+      "beta": 0.0,
+      "seed": 10,
+      "path": "runs/l2-noise-screen-20261110/l2-0.003-seed10",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "52f0a6ee22bb3e6516acb65d479620d0ddb2750b1b737e51f9744651e714886e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.01,
+      "beta": 0.0,
+      "seed": 10,
+      "path": "runs/l2-noise-screen-20261110/l2-0.01-seed10",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "52f0a6ee22bb3e6516acb65d479620d0ddb2750b1b737e51f9744651e714886e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.03,
+      "beta": 0.0,
+      "seed": 10,
+      "path": "runs/l2-noise-screen-20261110/l2-0.03-seed10",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "52f0a6ee22bb3e6516acb65d479620d0ddb2750b1b737e51f9744651e714886e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.1,
+      "beta": 0.0,
+      "seed": 10,
+      "path": "runs/l2-noise-screen-20261110/l2-0.1-seed10",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "52f0a6ee22bb3e6516acb65d479620d0ddb2750b1b737e51f9744651e714886e"
+    },
+    {
+      "kind": "kl",
+      "latent_l2": 0.0,
+      "beta": 1e-05,
+      "seed": 10,
+      "path": "runs/kl-mechanisms-online-20261110/online-mean_kl-seed10",
+      "reused": true,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "52f0a6ee22bb3e6516acb65d479620d0ddb2750b1b737e51f9744651e714886e"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.0,
+      "beta": 0.0,
+      "seed": 11,
+      "path": "runs/kl-mechanisms-online-20261110/online-mean_zero-seed11",
+      "reused": true,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "267a4990a31047c26b03a9ed1026700d7b027b26c7f74d70203f52a8387e68fe"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 1e-05,
+      "beta": 0.0,
+      "seed": 11,
+      "path": "runs/l2-noise-screen-20261110/l2-1e-05-seed11",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "267a4990a31047c26b03a9ed1026700d7b027b26c7f74d70203f52a8387e68fe"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 3e-05,
+      "beta": 0.0,
+      "seed": 11,
+      "path": "runs/l2-noise-screen-20261110/l2-3e-05-seed11",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "267a4990a31047c26b03a9ed1026700d7b027b26c7f74d70203f52a8387e68fe"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.0001,
+      "beta": 0.0,
+      "seed": 11,
+      "path": "runs/l2-noise-screen-20261110/l2-0.0001-seed11",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "267a4990a31047c26b03a9ed1026700d7b027b26c7f74d70203f52a8387e68fe"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.0003,
+      "beta": 0.0,
+      "seed": 11,
+      "path": "runs/l2-noise-screen-20261110/l2-0.0003-seed11",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "267a4990a31047c26b03a9ed1026700d7b027b26c7f74d70203f52a8387e68fe"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.001,
+      "beta": 0.0,
+      "seed": 11,
+      "path": "runs/l2-noise-screen-20261110/l2-0.001-seed11",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "267a4990a31047c26b03a9ed1026700d7b027b26c7f74d70203f52a8387e68fe"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.003,
+      "beta": 0.0,
+      "seed": 11,
+      "path": "runs/l2-noise-screen-20261110/l2-0.003-seed11",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "267a4990a31047c26b03a9ed1026700d7b027b26c7f74d70203f52a8387e68fe"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.01,
+      "beta": 0.0,
+      "seed": 11,
+      "path": "runs/l2-noise-screen-20261110/l2-0.01-seed11",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "267a4990a31047c26b03a9ed1026700d7b027b26c7f74d70203f52a8387e68fe"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.03,
+      "beta": 0.0,
+      "seed": 11,
+      "path": "runs/l2-noise-screen-20261110/l2-0.03-seed11",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "267a4990a31047c26b03a9ed1026700d7b027b26c7f74d70203f52a8387e68fe"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.1,
+      "beta": 0.0,
+      "seed": 11,
+      "path": "runs/l2-noise-screen-20261110/l2-0.1-seed11",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "267a4990a31047c26b03a9ed1026700d7b027b26c7f74d70203f52a8387e68fe"
+    },
+    {
+      "kind": "kl",
+      "latent_l2": 0.0,
+      "beta": 1e-05,
+      "seed": 11,
+      "path": "runs/kl-mechanisms-online-20261110/online-mean_kl-seed11",
+      "reused": true,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "267a4990a31047c26b03a9ed1026700d7b027b26c7f74d70203f52a8387e68fe"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.0,
+      "beta": 0.0,
+      "seed": 15,
+      "path": "runs/l2-noise-confirm-20261110/l2-0-seed15",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "1d97088dbe3067110b22be96a71e3cc4526637134e1ebcede8a566955007bf8a"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.03,
+      "beta": 0.0,
+      "seed": 15,
+      "path": "runs/l2-noise-confirm-20261110/l2-0.03-seed15",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "1d97088dbe3067110b22be96a71e3cc4526637134e1ebcede8a566955007bf8a"
+    },
+    {
+      "kind": "kl",
+      "latent_l2": 0.0,
+      "beta": 1e-05,
+      "seed": 15,
+      "path": "runs/l2-noise-confirm-20261110/kl-0-seed15",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "1d97088dbe3067110b22be96a71e3cc4526637134e1ebcede8a566955007bf8a"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.0,
+      "beta": 0.0,
+      "seed": 16,
+      "path": "runs/l2-noise-confirm-20261110/l2-0-seed16",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "a9cc9d1a263ca9c30d3ab9b90c9843bebf9cd50cf13e541d2ec8ef39fce8d7f8"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.03,
+      "beta": 0.0,
+      "seed": 16,
+      "path": "runs/l2-noise-confirm-20261110/l2-0.03-seed16",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "a9cc9d1a263ca9c30d3ab9b90c9843bebf9cd50cf13e541d2ec8ef39fce8d7f8"
+    },
+    {
+      "kind": "kl",
+      "latent_l2": 0.0,
+      "beta": 1e-05,
+      "seed": 16,
+      "path": "runs/l2-noise-confirm-20261110/kl-0-seed16",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "a9cc9d1a263ca9c30d3ab9b90c9843bebf9cd50cf13e541d2ec8ef39fce8d7f8"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.0,
+      "beta": 0.0,
+      "seed": 17,
+      "path": "runs/l2-noise-confirm-20261110/l2-0-seed17",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "fc1416801f66180dd131024044dd328b920dfacc0343d4195fd4c63dfa5ae250"
+    },
+    {
+      "kind": "l2",
+      "latent_l2": 0.03,
+      "beta": 0.0,
+      "seed": 17,
+      "path": "runs/l2-noise-confirm-20261110/l2-0.03-seed17",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "fc1416801f66180dd131024044dd328b920dfacc0343d4195fd4c63dfa5ae250"
+    },
+    {
+      "kind": "kl",
+      "latent_l2": 0.0,
+      "beta": 1e-05,
+      "seed": 17,
+      "path": "runs/l2-noise-confirm-20261110/kl-0-seed17",
+      "reused": false,
+      "role": "experiment",
+      "checks_passed": true,
+      "initial_hash": "fc1416801f66180dd131024044dd328b920dfacc0343d4195fd4c63dfa5ae250"
+    }
+  ],
+  "noise_cases": 18,
+  "noise_checks_passed": true,
+  "shared_data": [
+    {
+      "seed": 9,
+      "checks_passed": true
+    },
+    {
+      "seed": 10,
+      "checks_passed": true
+    },
+    {
+      "seed": 11,
+      "checks_passed": true
+    }
+  ]
+}

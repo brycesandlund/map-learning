@@ -43,7 +43,7 @@ class LearnedPrior(nn.Module):
 
 
 class BottleneckTrainer(Trainer):
-    def __init__(self,config,observation_shape,beta=0.,prior_components=1,initial_std=.01,prior_lr_multiplier=1.,kl_warmup_updates=0,prior_mode='learned',dynamics_input='posterior',noise_schedule=None,prior_steps=1):
+    def __init__(self,config,observation_shape,beta=0.,prior_components=1,initial_std=.01,prior_lr_multiplier=1.,kl_warmup_updates=0,prior_mode='learned',dynamics_input='posterior',noise_schedule=None,prior_steps=1,latent_l2=0.):
         if len(observation_shape)!=1 or config.model.latent_activation!='identity':raise ValueError('Bottleneck experiment requires vector observations and identity mean encoder')
         if config.train.prediction_objective!='mse' or config.train.ensemble_batches!='shared':raise ValueError('Use mean-MSE and shared ensemble batches')
         if beta<0 or prior_components<1 or not 0<initial_std<1 or prior_lr_multiplier<=0:raise ValueError('Invalid bottleneck settings')
@@ -53,11 +53,12 @@ class BottleneckTrainer(Trainer):
         if dynamics_input not in {'posterior','mean','scheduled'}:raise ValueError('Unknown dynamics input')
         if prior_steps<1 or int(prior_steps)!=prior_steps or (prior_steps!=1 and prior_mode!='learned'):raise ValueError('Prior steps require a learned prior and positive integer count')
         if prior_steps!=1 and prior_components!=1:raise ValueError('Extra prior steps currently support one Gaussian')
+        if not np.isfinite(latent_l2) or latent_l2<0:raise ValueError('Latent L2 must be finite and nonnegative')
         if dynamics_input=='scheduled':
             if not noise_schedule or len(noise_schedule['updates'])!=len(noise_schedule['std']) or len(noise_schedule['std'])<2:raise ValueError('Scheduled noise needs update/std arrays')
             if not np.all(np.diff(noise_schedule['updates'])>0) or not np.all(np.isfinite(noise_schedule['std'])) or min(noise_schedule['std'])<0:raise ValueError('Invalid noise schedule')
         super().__init__(config,observation_shape)
-        self.spec={'beta':beta,'prior_components':prior_components,'initial_std':initial_std,'prior_lr_multiplier':prior_lr_multiplier,'kl_warmup_updates':kl_warmup_updates,'prior_mode':prior_mode,'dynamics_input':dynamics_input,'noise_schedule':noise_schedule,'prior_steps':prior_steps}
+        self.spec={'beta':beta,'prior_components':prior_components,'initial_std':initial_std,'prior_lr_multiplier':prior_lr_multiplier,'kl_warmup_updates':kl_warmup_updates,'prior_mode':prior_mode,'dynamics_input':dynamics_input,'noise_schedule':noise_schedule,'prior_steps':prior_steps,'latent_l2':latent_l2}
         # Preserve original mean encoder/dynamics initialization and global RNG.
         with torch.random.fork_rng():
             torch.manual_seed(config.seed+81000)
@@ -155,6 +156,8 @@ class BottleneckTrainer(Trainer):
                 self.prior.log_std[0].copy_(.5*variance.clamp_min(1e-12).log())
         kl=self.prior.kl(means,ls,self.kl_rng)
         total=prediction+c.repulsion_weight*repulsion+active_beta*kl
+        latent_norm=means.square().sum(-1).mean()
+        if self.spec['latent_l2']:total=total+self.spec['latent_l2']*latent_norm
         if not torch.isfinite(total):raise FloatingPointError('Nonfinite bottleneck loss')
         self.map_optimizer.zero_grad();self.dynamics_optimizer.zero_grad();self.prior_optimizer.zero_grad()
         total.backward()
@@ -176,7 +179,8 @@ class BottleneckTrainer(Trainer):
         metrics={'update':self.updates,'joint_loss':float(total.detach()),'prediction_loss':float(prediction.detach()),
             'repulsion':float(repulsion.detach()),'kl_nats':float(kl.detach()),'weighted_kl':float((active_beta*kl).detach()),'active_beta':active_beta,
             'posterior_std':float(ls.exp().mean().detach()),'mean_latent_std':float(means.std(0).mean().detach()),
-            'dynamics_input_std':float(input_std.mean().detach()),'prior_updates':self.prior_updates}
+            'dynamics_input_std':float(input_std.mean().detach()),'prior_updates':self.prior_updates,
+            'latent_squared_norm':float(latent_norm.detach()),'weighted_latent_l2':float(self.spec['latent_l2']*latent_norm.detach())}
         if self.spec['prior_components']==1:
             with torch.no_grad():
                 matched=(.5*(means.var(0,unbiased=False)+(2*ls).exp().mean(0)).log()-ls.mean(0)).sum()

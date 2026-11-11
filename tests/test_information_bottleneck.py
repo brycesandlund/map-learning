@@ -173,3 +173,14 @@ def test_mechanism_checkpoint_exact_continuation(tmp_path):
     assert t.update(replay)==other.update(replay)
     for p,q in zip(t.model.parameters(),other.model.parameters()):torch.testing.assert_close(p,q,rtol=0,atol=0)
     assert t.prior_updates==other.prior_updates==10
+
+
+def test_latent_l2_is_sum_over_coordinates_and_checkpointed(tmp_path):
+    cfg,replay=setup();seed_all(0);base=BottleneckTrainer(cfg,(10,),dynamics_input='mean')
+    seed_all(0);reg=BottleneckTrainer(cfg,(10,),dynamics_input='mean',latent_l2=.003)
+    b=base.update(replay);r=reg.update(replay)
+    assert abs(r['joint_loss']-b['joint_loss']-.003*r['latent_squared_norm'])<1e-7
+    assert r['prediction_loss']==b['prediction_loss'] and r['repulsion']==b['repulsion']
+    assert any(not torch.equal(p,q) for p,q in zip(base.model.parameters(),reg.model.parameters()))
+    reg.save(tmp_path/'l2.pt');restored=Trainer.load(tmp_path/'l2.pt')
+    assert restored.spec['latent_l2']==.003 and reg.update(replay)==restored.update(replay)
