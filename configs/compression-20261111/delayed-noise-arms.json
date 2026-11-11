@@ -1,0 +1,30 @@
+[
+  {
+    "name": "dynamics-late-noise0.0025",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/dynamics-late-noise0.0025.json"
+  },
+  {
+    "name": "dynamics-late-noise0.0075",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/dynamics-late-noise0.0075.json"
+  },
+  {
+    "name": "adjacency-late-noise0.0025",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/adjacency-late-noise0.0025.json"
+  },
+  {
+    "name": "adjacency-late-noise0.0075",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/adjacency-late-noise0.0075.json"
+  }
+]

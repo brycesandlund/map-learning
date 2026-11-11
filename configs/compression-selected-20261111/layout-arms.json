@@ -1,0 +1,50 @@
+[
+  {
+    "name": "dynamics-l1-layout13",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-selected-20261111/dynamics-l1.json",
+    "layout": 13
+  },
+  {
+    "name": "dynamics-l1-layout23",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-selected-20261111/dynamics-l1.json",
+    "layout": 23
+  },
+  {
+    "name": "adjacency-multistep-layout13",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-selected-20261111/adjacency-multistep.json",
+    "layout": 13
+  },
+  {
+    "name": "adjacency-multistep-layout23",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-selected-20261111/adjacency-multistep.json",
+    "layout": 23
+  },
+  {
+    "name": "adjacency-multistep-control-layout13",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-selected-20261111/adjacency-multistep-control.json",
+    "layout": 13
+  },
+  {
+    "name": "adjacency-multistep-control-layout23",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-selected-20261111/adjacency-multistep-control.json",
+    "layout": 23
+  }
+]

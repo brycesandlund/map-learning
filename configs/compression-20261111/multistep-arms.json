@@ -1,0 +1,100 @@
+[
+  {
+    "name": "dynamics-h1-w0.1",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/dynamics-h1-w0.1.json"
+  },
+  {
+    "name": "dynamics-h1-w1",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/dynamics-h1-w1.json"
+  },
+  {
+    "name": "dynamics-h4-w0.1",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/dynamics-h4-w0.1.json"
+  },
+  {
+    "name": "dynamics-h4-w1",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/dynamics-h4-w1.json"
+  },
+  {
+    "name": "dynamics-h16-w0.1",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/dynamics-h16-w0.1.json"
+  },
+  {
+    "name": "dynamics-h16-w1",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/dynamics-h16-w1.json"
+  },
+  {
+    "name": "dynamics-h32-w0.1",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/dynamics-h32-w0.1.json"
+  },
+  {
+    "name": "adjacency-h1-w0.1",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/adjacency-h1-w0.1.json"
+  },
+  {
+    "name": "adjacency-h1-w1",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/adjacency-h1-w1.json"
+  },
+  {
+    "name": "adjacency-h4-w0.1",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/adjacency-h4-w0.1.json"
+  },
+  {
+    "name": "adjacency-h4-w1",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/adjacency-h4-w1.json"
+  },
+  {
+    "name": "adjacency-h16-w0.1",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/adjacency-h16-w0.1.json"
+  },
+  {
+    "name": "adjacency-h16-w1",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/adjacency-h16-w1.json"
+  },
+  {
+    "name": "adjacency-h32-w0.1",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/adjacency-h32-w0.1.json"
+  }
+]

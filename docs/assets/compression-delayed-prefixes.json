@@ -1,0 +1,98 @@
+[
+  {
+    "run": "runs/compression-followup-20261111/dynamics-late-l1-0.0003-seed70",
+    "control": "runs/compression-regularizers-20261111/dynamics-base-seed70",
+    "exact_prefix_actions": 50000,
+    "encoder_and_dynamics_exact": true
+  },
+  {
+    "run": "runs/compression-followup-20261111/dynamics-late-l1-0.0003-seed71",
+    "control": "runs/compression-regularizers-20261111/dynamics-base-seed71",
+    "exact_prefix_actions": 50000,
+    "encoder_and_dynamics_exact": true
+  },
+  {
+    "run": "runs/compression-followup-20261111/dynamics-late-l1-0.001-seed70",
+    "control": "runs/compression-regularizers-20261111/dynamics-base-seed70",
+    "exact_prefix_actions": 50000,
+    "encoder_and_dynamics_exact": true
+  },
+  {
+    "run": "runs/compression-followup-20261111/dynamics-late-l1-0.001-seed71",
+    "control": "runs/compression-regularizers-20261111/dynamics-base-seed71",
+    "exact_prefix_actions": 50000,
+    "encoder_and_dynamics_exact": true
+  },
+  {
+    "run": "runs/compression-followup-20261111/adjacency-late-l1-0.0003-seed70",
+    "control": "runs/compression-regularizers-20261111/adjacency-base-seed70",
+    "exact_prefix_actions": 50000,
+    "encoder_and_dynamics_exact": true
+  },
+  {
+    "run": "runs/compression-followup-20261111/adjacency-late-l1-0.0003-seed71",
+    "control": "runs/compression-regularizers-20261111/adjacency-base-seed71",
+    "exact_prefix_actions": 50000,
+    "encoder_and_dynamics_exact": true
+  },
+  {
+    "run": "runs/compression-followup-20261111/adjacency-late-l1-0.001-seed70",
+    "control": "runs/compression-regularizers-20261111/adjacency-base-seed70",
+    "exact_prefix_actions": 50000,
+    "encoder_and_dynamics_exact": true
+  },
+  {
+    "run": "runs/compression-followup-20261111/adjacency-late-l1-0.001-seed71",
+    "control": "runs/compression-regularizers-20261111/adjacency-base-seed71",
+    "exact_prefix_actions": 50000,
+    "encoder_and_dynamics_exact": true
+  },
+  {
+    "run": "runs/compression-delayed-noise-20261111/dynamics-late-noise0.0025-seed70",
+    "control": "runs/compression-regularizers-20261111/dynamics-bound-seed70",
+    "exact_prefix_actions": 50000,
+    "encoder_and_dynamics_exact": true
+  },
+  {
+    "run": "runs/compression-delayed-noise-20261111/dynamics-late-noise0.0025-seed71",
+    "control": "runs/compression-regularizers-20261111/dynamics-bound-seed71",
+    "exact_prefix_actions": 50000,
+    "encoder_and_dynamics_exact": true
+  },
+  {
+    "run": "runs/compression-delayed-noise-20261111/dynamics-late-noise0.0075-seed70",
+    "control": "runs/compression-regularizers-20261111/dynamics-bound-seed70",
+    "exact_prefix_actions": 50000,
+    "encoder_and_dynamics_exact": true
+  },
+  {
+    "run": "runs/compression-delayed-noise-20261111/dynamics-late-noise0.0075-seed71",
+    "control": "runs/compression-regularizers-20261111/dynamics-bound-seed71",
+    "exact_prefix_actions": 50000,
+    "encoder_and_dynamics_exact": true
+  },
+  {
+    "run": "runs/compression-delayed-noise-20261111/adjacency-late-noise0.0025-seed70",
+    "control": "runs/compression-regularizers-20261111/adjacency-bound-seed70",
+    "exact_prefix_actions": 50000,
+    "encoder_and_dynamics_exact": true
+  },
+  {
+    "run": "runs/compression-delayed-noise-20261111/adjacency-late-noise0.0025-seed71",
+    "control": "runs/compression-regularizers-20261111/adjacency-bound-seed71",
+    "exact_prefix_actions": 50000,
+    "encoder_and_dynamics_exact": true
+  },
+  {
+    "run": "runs/compression-delayed-noise-20261111/adjacency-late-noise0.0075-seed70",
+    "control": "runs/compression-regularizers-20261111/adjacency-bound-seed70",
+    "exact_prefix_actions": 50000,
+    "encoder_and_dynamics_exact": true
+  },
+  {
+    "run": "runs/compression-delayed-noise-20261111/adjacency-late-noise0.0075-seed71",
+    "control": "runs/compression-regularizers-20261111/adjacency-bound-seed71",
+    "exact_prefix_actions": 50000,
+    "encoder_and_dynamics_exact": true
+  }
+]

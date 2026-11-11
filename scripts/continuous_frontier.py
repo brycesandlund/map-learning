@@ -34,6 +34,7 @@ def main():
     p.add_argument('--regularizer', type=float, default=.03)
     p.add_argument('--extra-updates', type=int, default=0)
     p.add_argument('--extra-placement', choices=['early','distributed'], default='early')
+    p.add_argument('--experiment-spec', type=Path)
     p.add_argument('--out', type=Path, required=True)
     a = p.parse_args()
     if a.blocks < 1 or a.extra_updates < 0 or not np.isfinite(a.adjacency_weight) or a.adjacency_weight <= 0:
@@ -46,12 +47,19 @@ def main():
     if a.repulsion_weight is not None:cfg.train.repulsion_weight=a.repulsion_weight
     if a.latent_l2 is not None:cfg.train.latent_l2=a.latent_l2
     cfg.train.repulsion_margin=a.repulsion_margin
+    spec=json.loads(a.experiment_spec.read_text()) if a.experiment_spec else None
+    if spec is not None:
+        from map_learning.compression_study import CompressionSpec, CompressionTrainer
+        spec=CompressionSpec(objective=a.objective,adjacency_weight=a.adjacency_weight,**spec)
+        if spec.bound:
+            cfg.model.latent_activation='tanh';cfg.model.latent_bound=spec.bound
     cfg.validate()
     if cfg.model.continuous_action_dim != 2 or cfg.maze.observation != 'coordinates':
         p.error('Use continuous-action coordinate config')
     seed_all(cfg.seed, cfg.threads)
     env = Maze(cfg.maze, cfg.seed+71000)
-    t = (DistanceTrainer(cfg, env.observation_shape, {'kind':'adjacency','weight':a.adjacency_weight})
+    t = (CompressionTrainer(cfg,env.observation_shape,spec) if spec is not None else
+         DistanceTrainer(cfg, env.observation_shape, {'kind':'adjacency','weight':a.adjacency_weight})
          if a.objective == 'adjacency' else Trainer(cfg, env.observation_shape))
     trainable = a.objective in {'dynamics','hybrid','adjacency'}
     if a.extra_updates and not trainable: p.error('Extra updates require a learned objective')
@@ -59,6 +67,9 @@ def main():
     out = prepare_run(a.out, cfg, {'objective':a.objective,'proposal':a.proposal,
         'extra_updates':a.extra_updates,'extra_placement':a.extra_placement,
         'adjacency_weight':a.adjacency_weight,'protocol':'Five sampled continuous controls per expansion; exact restores; persistent raw observations. No dedup. Coverage bins evaluation only. One causal epoch per 5000 actions, ten training events. Oracle and random queue are untrained diagnostic controls.'})
+    if spec is not None:
+        from dataclasses import asdict
+        (out/'compression-spec.json').write_text(json.dumps(asdict(spec),indent=2)+'\n')
     (out/'runner.py').write_text(Path(__file__).read_text())
     initial_hash = hashlib.sha256(b''.join(x.detach().numpy().tobytes() for x in
         list(t.model.parameters())+list(t.dynamics.parameters()))).hexdigest()
@@ -72,7 +83,7 @@ def main():
     rng = np.random.default_rng(cfg.seed+61000)
     controls_rng = np.random.default_rng(cfg.seed+91000)
     obs = env.reset(); position = env.position.copy(); z = encode(obs[None])[0]
-    if a.objective == 'adjacency': t.ancestry.root(obs)
+    if hasattr(t,'ancestry'): t.ancestry.root(obs)
     coverage = SpatialCoverage(cfg.maze.size); coverage.add(position, 0)
     frames = []; sample_count = 0; blocked = 0; move_attempts = 0
     training_seconds = refresh_seconds = search_seconds = 0.
@@ -102,7 +113,7 @@ def main():
                     if np.any(action):
                         move_attempts += 1
                         blocked += int(np.array_equal(position, nxt_position))
-                    if a.objective == 'adjacency':
+                    if hasattr(t,'ancestry'):
                         assert t.ancestry.add(node_id, nxt) == len(replay)
                     queue.add(nxt, encode(nxt[None])[0], nxt_position)
                     coverage.add(nxt_position, len(replay))
@@ -134,6 +145,8 @@ def main():
                     frames.append((len(replay),position.copy(),coverage.masks[4].copy(),coverage.masks[8].copy()))
             print(json.dumps(row),flush=True)
             if block+1 in {1,5,10,20,a.blocks}: t.save(out/f'checkpoint-{block+1}.pt')
+    if hasattr(t,'ancestry'):
+        np.savez_compressed(out/'ancestry.npz',**{k:v.numpy() for k,v in t.ancestry.state_dict().items()})
     t.save(out/'checkpoint.pt'); replay.save(out/'replay.npz',cfg.maze)
     data = replay.arrays(); all_positions = np.concatenate([env.start[None],data['next_positions']])
     np.savez_compressed(out/'frames.npz',interactions=[f[0] for f in frames],position=[f[1] for f in frames],
@@ -150,6 +163,7 @@ def main():
               'dynamics_weight':cfg.train.dynamics_weight if a.objective!='adjacency' else 0.,
               'repulsion_weight':cfg.train.repulsion_weight,'latent_l2':cfg.train.latent_l2,'repulsion_margin':cfg.train.repulsion_margin,
               'initial_parameters_sha256':initial_hash,'samples_per_head':sample_count,
+              'path_presentations':getattr(t,'path_presentations',0),'path_edges':getattr(t,'path_edges',0),
               'trained_through':len(replay) if trainable else 0,'milestones':coverage.milestones,
               'quarter_lattice_fraction':float(lattice.mean()),'moving_transitions':int(moving.sum()),
               'unique_endpoints':len(np.unique(all_positions,axis=0)),

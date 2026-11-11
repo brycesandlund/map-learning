@@ -1,0 +1,2778 @@
+[
+  {
+    "root": "runs/compression-multistep-20261111",
+    "manifest": {
+      "arms": [
+        {
+          "name": "dynamics-h1-w0.1",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-h1-w0.1.json"
+        },
+        {
+          "name": "dynamics-h1-w1",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-h1-w1.json"
+        },
+        {
+          "name": "dynamics-h4-w0.1",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-h4-w0.1.json"
+        },
+        {
+          "name": "dynamics-h4-w1",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-h4-w1.json"
+        },
+        {
+          "name": "dynamics-h16-w0.1",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-h16-w0.1.json"
+        },
+        {
+          "name": "dynamics-h16-w1",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-h16-w1.json"
+        },
+        {
+          "name": "dynamics-h32-w0.1",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-h32-w0.1.json"
+        },
+        {
+          "name": "adjacency-h1-w0.1",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-h1-w0.1.json"
+        },
+        {
+          "name": "adjacency-h1-w1",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-h1-w1.json"
+        },
+        {
+          "name": "adjacency-h4-w0.1",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-h4-w0.1.json"
+        },
+        {
+          "name": "adjacency-h4-w1",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-h4-w1.json"
+        },
+        {
+          "name": "adjacency-h16-w0.1",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-h16-w0.1.json"
+        },
+        {
+          "name": "adjacency-h16-w1",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-h16-w1.json"
+        },
+        {
+          "name": "adjacency-h32-w0.1",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-h32-w0.1.json"
+        }
+      ],
+      "seeds": [
+        70,
+        71
+      ],
+      "blocks": 20,
+      "created_unix": 1794428107.316687,
+      "workers": 3
+    },
+    "summary": [
+      {
+        "name": "dynamics-h1-w0.1",
+        "coverage_k1": {
+          "mean": 0.7569444444444444,
+          "values": [
+            0.7777777777777778,
+            0.7361111111111112
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7361111111111112,
+          "values": [
+            0.7725694444444444,
+            0.6996527777777778
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.7137586805555556,
+          "values": [
+            0.7647569444444444,
+            0.6627604166666666
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.6883138020833333,
+          "values": [
+            0.7437065972222222,
+            0.6329210069444444
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.2403534613715278,
+          "values": [
+            0.2919672309027778,
+            0.18873969184027778
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.70263671875,
+          "values": [
+            0.7559678819444444,
+            0.6493055555555556
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07502500000000001,
+          "values": [
+            0.077725,
+            0.072325
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-h1-w1",
+        "coverage_k1": {
+          "mean": 0.8090277777777777,
+          "values": [
+            0.8263888888888888,
+            0.7916666666666666
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7873263888888888,
+          "values": [
+            0.8072916666666666,
+            0.7673611111111112
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.7717013888888888,
+          "values": [
+            0.7947048611111112,
+            0.7486979166666666
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.7516276041666667,
+          "values": [
+            0.7724609375,
+            0.7307942708333334
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.25859266493055555,
+          "values": [
+            0.28658799913194444,
+            0.2305973307291667
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.7628580729166667,
+          "values": [
+            0.7859157986111112,
+            0.7398003472222222
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.06848125,
+          "values": [
+            0.07485,
+            0.0621125
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-h4-w0.1",
+        "coverage_k1": {
+          "mean": 0.7951388888888888,
+          "values": [
+            0.8055555555555556,
+            0.7847222222222222
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7803819444444444,
+          "values": [
+            0.7916666666666666,
+            0.7690972222222222
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.7621527777777777,
+          "values": [
+            0.7834201388888888,
+            0.7408854166666666
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.7352973090277777,
+          "values": [
+            0.7623697916666666,
+            0.7082248263888888
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.26289279513888886,
+          "values": [
+            0.28246039496527775,
+            0.2433251953125
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.7488606770833333,
+          "values": [
+            0.7736545138888888,
+            0.7240668402777778
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07026874999999999,
+          "values": [
+            0.0725,
+            0.0680375
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-h4-w1",
+        "coverage_k1": {
+          "mean": 0.7326388888888888,
+          "values": [
+            0.6805555555555556,
+            0.7847222222222222
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.6996527777777778,
+          "values": [
+            0.6302083333333334,
+            0.7690972222222222
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.67578125,
+          "values": [
+            0.5972222222222222,
+            0.7543402777777778
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.6508246527777777,
+          "values": [
+            0.5699869791666666,
+            0.7316623263888888
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.2134695095486111,
+          "values": [
+            0.190068359375,
+            0.23687065972222224
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.6640625,
+          "values": [
+            0.5837673611111112,
+            0.7443576388888888
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.0673,
+          "values": [
+            0.0677625,
+            0.0668375
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-h16-w0.1",
+        "coverage_k1": {
+          "mean": 0.7777777777777778,
+          "values": [
+            0.8194444444444444,
+            0.7361111111111112
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.734375,
+          "values": [
+            0.7951388888888888,
+            0.6736111111111112
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.7039930555555556,
+          "values": [
+            0.7751736111111112,
+            0.6328125
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.6628146701388888,
+          "values": [
+            0.7401258680555556,
+            0.5855034722222222
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.20715603298611113,
+          "values": [
+            0.2420583767361111,
+            0.17225368923611112
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.6819118923611112,
+          "values": [
+            0.7569444444444444,
+            0.6068793402777778
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07815625,
+          "values": [
+            0.0763875,
+            0.079925
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-h16-w1",
+        "coverage_k1": {
+          "mean": 0.78125,
+          "values": [
+            0.8125,
+            0.75
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7526041666666667,
+          "values": [
+            0.7829861111111112,
+            0.7222222222222222
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.7345920138888888,
+          "values": [
+            0.765625,
+            0.7035590277777778
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.7157660590277778,
+          "values": [
+            0.748046875,
+            0.6834852430555556
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.2228095160590278,
+          "values": [
+            0.23933485243055558,
+            0.2062841796875
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.72607421875,
+          "values": [
+            0.7582465277777778,
+            0.6939019097222222
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07003125,
+          "values": [
+            0.068875,
+            0.0711875
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-h32-w0.1",
+        "coverage_k1": {
+          "mean": 0.8229166666666667,
+          "values": [
+            0.8402777777777778,
+            0.8055555555555556
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.8029513888888888,
+          "values": [
+            0.8177083333333334,
+            0.7881944444444444
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.7918836805555556,
+          "values": [
+            0.8038194444444444,
+            0.7799479166666666
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.7652994791666667,
+          "values": [
+            0.7766927083333334,
+            0.75390625
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.2718861219618056,
+          "values": [
+            0.2786935763888889,
+            0.26507866753472226
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.7793511284722222,
+          "values": [
+            0.7904730902777778,
+            0.7682291666666666
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.070325,
+          "values": [
+            0.0788625,
+            0.0617875
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-h1-w0.1",
+        "coverage_k1": {
+          "mean": 0.7986111111111112,
+          "values": [
+            0.7986111111111112,
+            0.7986111111111112
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7638888888888888,
+          "values": [
+            0.7482638888888888,
+            0.7795138888888888
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.7421875,
+          "values": [
+            0.7191840277777778,
+            0.7651909722222222
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.7215711805555556,
+          "values": [
+            0.6939019097222222,
+            0.7492404513888888
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.25473632812499997,
+          "values": [
+            0.2762906901041666,
+            0.2331819661458333
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.73095703125,
+          "values": [
+            0.7043185763888888,
+            0.7575954861111112
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.06941875,
+          "values": [
+            0.067625,
+            0.0712125
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-h1-w1",
+        "coverage_k1": {
+          "mean": 0.7743055555555556,
+          "values": [
+            0.75,
+            0.7986111111111112
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7421875,
+          "values": [
+            0.7013888888888888,
+            0.7829861111111112
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.7224392361111112,
+          "values": [
+            0.6783854166666666,
+            0.7664930555555556
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.6993815104166667,
+          "values": [
+            0.6540798611111112,
+            0.7446831597222222
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.23622639973958331,
+          "values": [
+            0.21878743489583333,
+            0.2536653645833333
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.7101236979166666,
+          "values": [
+            0.6662326388888888,
+            0.7540147569444444
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07053124999999999,
+          "values": [
+            0.0718375,
+            0.069225
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-h4-w0.1",
+        "coverage_k1": {
+          "mean": 0.7638888888888888,
+          "values": [
+            0.7777777777777778,
+            0.75
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7083333333333334,
+          "values": [
+            0.7204861111111112,
+            0.6961805555555556
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.6759982638888888,
+          "values": [
+            0.6909722222222222,
+            0.6610243055555556
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.6463758680555556,
+          "values": [
+            0.6623263888888888,
+            0.6304253472222222
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.20664198133680556,
+          "values": [
+            0.24241861979166665,
+            0.17086534288194447
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.6602647569444444,
+          "values": [
+            0.6746961805555556,
+            0.6458333333333334
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07804375,
+          "values": [
+            0.076675,
+            0.0794125
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-h4-w1",
+        "coverage_k1": {
+          "mean": 0.7361111111111112,
+          "values": [
+            0.7222222222222222,
+            0.75
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7100694444444444,
+          "values": [
+            0.7013888888888888,
+            0.71875
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.6879340277777777,
+          "values": [
+            0.6818576388888888,
+            0.6940104166666666
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.6628146701388888,
+          "values": [
+            0.6567925347222222,
+            0.6688368055555556
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.21020887586805556,
+          "values": [
+            0.21794542100694445,
+            0.20247233072916668
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.6748589409722222,
+          "values": [
+            0.6676432291666666,
+            0.6820746527777778
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.072125,
+          "values": [
+            0.075525,
+            0.068725
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-h16-w0.1",
+        "coverage_k1": {
+          "mean": 0.8055555555555556,
+          "values": [
+            0.8402777777777778,
+            0.7708333333333334
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7743055555555556,
+          "values": [
+            0.8107638888888888,
+            0.7378472222222222
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.7506510416666667,
+          "values": [
+            0.80078125,
+            0.7005208333333334
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.7249891493055556,
+          "values": [
+            0.7815755208333334,
+            0.6684027777777778
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.24251112196180555,
+          "values": [
+            0.28617350260416663,
+            0.19884874131944447
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.7380642361111112,
+          "values": [
+            0.7925347222222222,
+            0.68359375
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07164375,
+          "values": [
+            0.0717875,
+            0.0715
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-h16-w1",
+        "coverage_k1": {
+          "mean": 0.8263888888888888,
+          "values": [
+            0.8263888888888888,
+            0.8263888888888888
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.8159722222222222,
+          "values": [
+            0.8107638888888888,
+            0.8211805555555556
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.806640625,
+          "values": [
+            0.7955729166666666,
+            0.8177083333333334
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.79248046875,
+          "values": [
+            0.7751736111111112,
+            0.8097873263888888
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.30742485894097227,
+          "values": [
+            0.30171929253472224,
+            0.31313042534722224
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.7996961805555556,
+          "values": [
+            0.7849392361111112,
+            0.814453125
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.0596125,
+          "values": [
+            0.0661625,
+            0.0530625
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-h32-w0.1",
+        "coverage_k1": {
+          "mean": 0.8194444444444444,
+          "values": [
+            0.8611111111111112,
+            0.7777777777777778
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7986111111111112,
+          "values": [
+            0.8385416666666666,
+            0.7586805555555556
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.7819010416666667,
+          "values": [
+            0.8177083333333334,
+            0.74609375
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.7562391493055556,
+          "values": [
+            0.7909071180555556,
+            0.7215711805555556
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.24983045789930552,
+          "values": [
+            0.28199001736111107,
+            0.2176708984375
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.7713216145833333,
+          "values": [
+            0.8053385416666666,
+            0.7373046875
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07038125,
+          "values": [
+            0.0713125,
+            0.06945
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      }
+    ],
+    "runs": [
+      {
+        "name": "dynamics-h1-w0.1",
+        "run": "runs/compression-multistep-20261111/dynamics-h1-w0.1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0042218620820909025,
+        "blocked_fraction": 0.077725,
+        "coverage_k1": 0.7777777777777778,
+        "coverage_k2": 0.7725694444444444,
+        "coverage_k4": 0.7647569444444444,
+        "coverage_k8": 0.7437065972222222,
+        "seconds": 96.24788954202086,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 131584,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 67364,
+          "k2_50": 70593,
+          "k4_50": 72332,
+          "k8_50": 74622
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73782,
+        "unique_endpoints": 73783,
+        "fill_radius_0.05": 0.7146267361111112,
+        "fill_radius_0.1": 0.7559678819444444,
+        "fill_radius_0.2": 0.7676866319444444,
+        "training_seconds": 45.64153196197003,
+        "refresh_seconds": 19.38049821415916,
+        "search_seconds": 29.8810552819632,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.35322916666666665,
+        "auc_k2": 0.31513671875,
+        "auc_k4": 0.2919672309027778,
+        "auc_k8": 0.27079888237847227
+      },
+      {
+        "name": "dynamics-h1-w1",
+        "run": "runs/compression-multistep-20261111/dynamics-h1-w1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.003921430230620004,
+        "blocked_fraction": 0.07485,
+        "coverage_k1": 0.8263888888888888,
+        "coverage_k2": 0.8072916666666666,
+        "coverage_k4": 0.7947048611111112,
+        "coverage_k8": 0.7724609375,
+        "seconds": 99.4837576248683,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 131584,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 64533,
+          "k2_50": 70528,
+          "k4_50": 73312,
+          "k8_50": 75226
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74012,
+        "unique_endpoints": 74013,
+        "fill_radius_0.05": 0.7389322916666666,
+        "fill_radius_0.1": 0.7859157986111112,
+        "fill_radius_0.2": 0.7995876736111112,
+        "training_seconds": 46.39237574953586,
+        "refresh_seconds": 21.880222159437835,
+        "search_seconds": 29.854976029135287,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.34301215277777775,
+        "auc_k2": 0.3082139756944445,
+        "auc_k4": 0.28658799913194444,
+        "auc_k8": 0.2675025770399305
+      },
+      {
+        "name": "dynamics-h4-w0.1",
+        "run": "runs/compression-multistep-20261111/dynamics-h4-w0.1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004369929347073638,
+        "blocked_fraction": 0.0725,
+        "coverage_k1": 0.8055555555555556,
+        "coverage_k2": 0.7916666666666666,
+        "coverage_k4": 0.7834201388888888,
+        "coverage_k8": 0.7623697916666666,
+        "seconds": 107.84750233311206,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 328735,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 67064,
+          "k2_50": 70816,
+          "k4_50": 72873,
+          "k8_50": 75521
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74200,
+        "unique_endpoints": 74201,
+        "fill_radius_0.05": 0.7282986111111112,
+        "fill_radius_0.1": 0.7736545138888888,
+        "fill_radius_0.2": 0.7872178819444444,
+        "training_seconds": 55.04586553853005,
+        "refresh_seconds": 21.44973300676793,
+        "search_seconds": 30.067759311757982,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.3462673611111111,
+        "auc_k2": 0.30700086805555554,
+        "auc_k4": 0.28246039496527775,
+        "auc_k8": 0.2608200412326389
+      },
+      {
+        "name": "dynamics-h4-w1",
+        "run": "runs/compression-multistep-20261111/dynamics-h4-w1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.005190487810589335,
+        "blocked_fraction": 0.0677625,
+        "coverage_k1": 0.6805555555555556,
+        "coverage_k2": 0.6302083333333334,
+        "coverage_k4": 0.5972222222222222,
+        "coverage_k8": 0.5699869791666666,
+        "seconds": 115.22252533398569,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 328723,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 80462,
+          "k2_50": 85413,
+          "k4_50": 88164,
+          "k8_50": 90892
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74579,
+        "unique_endpoints": 74580,
+        "fill_radius_0.05": 0.5435112847222222,
+        "fill_radius_0.1": 0.5837673611111112,
+        "fill_radius_0.2": 0.6079644097222222,
+        "training_seconds": 58.43880520388484,
+        "refresh_seconds": 24.092700657900423,
+        "search_seconds": 31.430616677738726,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.24491319444444443,
+        "auc_k2": 0.21073567708333332,
+        "auc_k4": 0.190068359375,
+        "auc_k8": 0.175115966796875
+      },
+      {
+        "name": "dynamics-h16-w0.1",
+        "run": "runs/compression-multistep-20261111/dynamics-h16-w0.1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004315805287072205,
+        "blocked_fraction": 0.0763875,
+        "coverage_k1": 0.8194444444444444,
+        "coverage_k2": 0.7951388888888888,
+        "coverage_k4": 0.7751736111111112,
+        "coverage_k8": 0.7401258680555556,
+        "seconds": 148.13427804084495,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 1095274,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 76712,
+          "k2_50": 78511,
+          "k4_50": 80259,
+          "k8_50": 82201
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73889,
+        "unique_endpoints": 73890,
+        "fill_radius_0.05": 0.701171875,
+        "fill_radius_0.1": 0.7569444444444444,
+        "fill_radius_0.2": 0.7814670138888888,
+        "training_seconds": 92.40169268101454,
+        "refresh_seconds": 22.96372824255377,
+        "search_seconds": 31.482588664628565,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.29604166666666665,
+        "auc_k2": 0.2643967013888889,
+        "auc_k4": 0.2420583767361111,
+        "auc_k8": 0.222950439453125
+      },
+      {
+        "name": "dynamics-h16-w1",
+        "run": "runs/compression-multistep-20261111/dynamics-h16-w1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0044858777101651,
+        "blocked_fraction": 0.068875,
+        "coverage_k1": 0.8125,
+        "coverage_k2": 0.7829861111111112,
+        "coverage_k4": 0.765625,
+        "coverage_k8": 0.748046875,
+        "seconds": 149.7116497498937,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 1094582,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 74352,
+          "k2_50": 78209,
+          "k4_50": 79966,
+          "k8_50": 81594
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74490,
+        "unique_endpoints": 74491,
+        "fill_radius_0.05": 0.7143012152777778,
+        "fill_radius_0.1": 0.7582465277777778,
+        "fill_radius_0.2": 0.7711588541666666,
+        "training_seconds": 92.87979458272457,
+        "refresh_seconds": 24.205660303123295,
+        "search_seconds": 31.347491331398487,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.29516493055555554,
+        "auc_k2": 0.2574457465277778,
+        "auc_k4": 0.23933485243055558,
+        "auc_k8": 0.2247894965277778
+      },
+      {
+        "name": "dynamics-h32-w0.1",
+        "run": "runs/compression-multistep-20261111/dynamics-h32-w0.1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004388785811307016,
+        "blocked_fraction": 0.0788625,
+        "coverage_k1": 0.8402777777777778,
+        "coverage_k2": 0.8177083333333334,
+        "coverage_k4": 0.8038194444444444,
+        "coverage_k8": 0.7766927083333334,
+        "seconds": 199.68812541663647,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 1922689,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 68863,
+          "k2_50": 72441,
+          "k4_50": 74417,
+          "k8_50": 76483
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73691,
+        "unique_endpoints": 73692,
+        "fill_radius_0.05": 0.7411024305555556,
+        "fill_radius_0.1": 0.7904730902777778,
+        "fill_radius_0.2": 0.8094618055555556,
+        "training_seconds": 142.80124186864123,
+        "refresh_seconds": 23.18651421321556,
+        "search_seconds": 32.12308027269319,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.33598090277777776,
+        "auc_k2": 0.30164279513888886,
+        "auc_k4": 0.2786935763888889,
+        "auc_k8": 0.25829589843750006
+      },
+      {
+        "name": "adjacency-h1-w0.1",
+        "run": "runs/compression-multistep-20261111/adjacency-h1-w0.1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.005059253550612434,
+        "blocked_fraction": 0.067625,
+        "coverage_k1": 0.7986111111111112,
+        "coverage_k2": 0.7482638888888888,
+        "coverage_k4": 0.7191840277777778,
+        "coverage_k8": 0.6939019097222222,
+        "seconds": 105.70458720903844,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 131584,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 68137,
+          "k2_50": 73396,
+          "k4_50": 76712,
+          "k8_50": 79061
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74590,
+        "unique_endpoints": 74591,
+        "fill_radius_0.05": 0.6688368055555556,
+        "fill_radius_0.1": 0.7043185763888888,
+        "fill_radius_0.2": 0.7265625,
+        "training_seconds": 49.81943966913968,
+        "refresh_seconds": 22.895748760085553,
+        "search_seconds": 31.70620340295136,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.33608506944444444,
+        "auc_k2": 0.2987131076388889,
+        "auc_k4": 0.2762906901041666,
+        "auc_k8": 0.258294677734375
+      },
+      {
+        "name": "adjacency-h1-w1",
+        "run": "runs/compression-multistep-20261111/adjacency-h1-w1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.003704032610634203,
+        "blocked_fraction": 0.0718375,
+        "coverage_k1": 0.75,
+        "coverage_k2": 0.7013888888888888,
+        "coverage_k4": 0.6783854166666666,
+        "coverage_k8": 0.6540798611111112,
+        "seconds": 109.24889754178002,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 131584,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 77602,
+          "k2_50": 82011,
+          "k4_50": 83816,
+          "k8_50": 85583
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74253,
+        "unique_endpoints": 74254,
+        "fill_radius_0.05": 0.6257595486111112,
+        "fill_radius_0.1": 0.6662326388888888,
+        "fill_radius_0.2": 0.6869574652777778,
+        "training_seconds": 50.04799896851182,
+        "refresh_seconds": 25.837919163051993,
+        "search_seconds": 32.07882395852357,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.27538194444444447,
+        "auc_k2": 0.23848090277777778,
+        "auc_k4": 0.21878743489583333,
+        "auc_k8": 0.20333468967013887
+      },
+      {
+        "name": "adjacency-h4-w0.1",
+        "run": "runs/compression-multistep-20261111/adjacency-h4-w0.1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0046338360026989085,
+        "blocked_fraction": 0.076675,
+        "coverage_k1": 0.7777777777777778,
+        "coverage_k2": 0.7204861111111112,
+        "coverage_k4": 0.6909722222222222,
+        "coverage_k8": 0.6623263888888888,
+        "seconds": 151.35876004071906,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 328730,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 75663,
+          "k2_50": 78527,
+          "k4_50": 81081,
+          "k8_50": 83906
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73866,
+        "unique_endpoints": 73867,
+        "fill_radius_0.05": 0.6375868055555556,
+        "fill_radius_0.1": 0.6746961805555556,
+        "fill_radius_0.2": 0.6993272569444444,
+        "training_seconds": 79.35489074140787,
+        "refresh_seconds": 30.670616581570357,
+        "search_seconds": 39.673698127735406,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.29887152777777776,
+        "auc_k2": 0.26382161458333336,
+        "auc_k4": 0.24241861979166665,
+        "auc_k8": 0.2259410264756945
+      },
+      {
+        "name": "adjacency-h4-w1",
+        "run": "runs/compression-multistep-20261111/adjacency-h4-w1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0053759867481786815,
+        "blocked_fraction": 0.075525,
+        "coverage_k1": 0.7222222222222222,
+        "coverage_k2": 0.7013888888888888,
+        "coverage_k4": 0.6818576388888888,
+        "coverage_k8": 0.6567925347222222,
+        "seconds": 156.80838066712022,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 328734,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 78588,
+          "k2_50": 83803,
+          "k4_50": 85728,
+          "k8_50": 87526
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73958,
+        "unique_endpoints": 73959,
+        "fill_radius_0.05": 0.6293402777777778,
+        "fill_radius_0.1": 0.6676432291666666,
+        "fill_radius_0.2": 0.6888020833333334,
+        "training_seconds": 82.76763091562316,
+        "refresh_seconds": 31.526439420878887,
+        "search_seconds": 40.80591861857101,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.27729166666666666,
+        "auc_k2": 0.23938802083333333,
+        "auc_k4": 0.21794542100694445,
+        "auc_k8": 0.2017793782552083
+      },
+      {
+        "name": "adjacency-h16-w0.1",
+        "run": "runs/compression-multistep-20261111/adjacency-h16-w0.1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0050591676378109775,
+        "blocked_fraction": 0.0717875,
+        "coverage_k1": 0.8402777777777778,
+        "coverage_k2": 0.8107638888888888,
+        "coverage_k4": 0.80078125,
+        "coverage_k8": 0.7815755208333334,
+        "seconds": 220.7242606249638,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 1099949,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 68632,
+          "k2_50": 72001,
+          "k4_50": 73936,
+          "k8_50": 75409
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74257,
+        "unique_endpoints": 74258,
+        "fill_radius_0.05": 0.75390625,
+        "fill_radius_0.1": 0.7925347222222222,
+        "fill_radius_0.2": 0.8042534722222222,
+        "training_seconds": 140.89250612910837,
+        "refresh_seconds": 33.06372572062537,
+        "search_seconds": 44.95149216847494,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.3376822916666667,
+        "auc_k2": 0.3056228298611111,
+        "auc_k4": 0.28617350260416663,
+        "auc_k8": 0.26937160915798614
+      },
+      {
+        "name": "adjacency-h16-w1",
+        "run": "runs/compression-multistep-20261111/adjacency-h16-w1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0037952352960668166,
+        "blocked_fraction": 0.0661625,
+        "coverage_k1": 0.8263888888888888,
+        "coverage_k2": 0.8107638888888888,
+        "coverage_k4": 0.7955729166666666,
+        "coverage_k8": 0.7751736111111112,
+        "seconds": 224.78416616702452,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 1099990,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 62701,
+          "k2_50": 66818,
+          "k4_50": 69907,
+          "k8_50": 72834
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74707,
+        "unique_endpoints": 74708,
+        "fill_radius_0.05": 0.7453342013888888,
+        "fill_radius_0.1": 0.7849392361111112,
+        "fill_radius_0.2": 0.7989366319444444,
+        "training_seconds": 143.40165187604725,
+        "refresh_seconds": 33.91597791481763,
+        "search_seconds": 45.54336638841778,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.3564843750000001,
+        "auc_k2": 0.3216471354166666,
+        "auc_k4": 0.30171929253472224,
+        "auc_k8": 0.2841826714409722
+      },
+      {
+        "name": "adjacency-h32-w0.1",
+        "run": "runs/compression-multistep-20261111/adjacency-h32-w0.1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004400245634257642,
+        "blocked_fraction": 0.0713125,
+        "coverage_k1": 0.8611111111111112,
+        "coverage_k2": 0.8385416666666666,
+        "coverage_k4": 0.8177083333333334,
+        "coverage_k8": 0.7909071180555556,
+        "seconds": 298.64598137466237,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 1981570,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 68191,
+          "k2_50": 72188,
+          "k4_50": 74552,
+          "k8_50": 77141
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74295,
+        "unique_endpoints": 74296,
+        "fill_radius_0.05": 0.7530381944444444,
+        "fill_radius_0.1": 0.8053385416666666,
+        "fill_radius_0.2": 0.8248697916666666,
+        "training_seconds": 215.49430508213118,
+        "refresh_seconds": 34.471707157325,
+        "search_seconds": 46.83656009612605,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.35480902777777773,
+        "auc_k2": 0.31358289930555555,
+        "auc_k4": 0.28199001736111107,
+        "auc_k8": 0.25913913302951386
+      },
+      {
+        "name": "dynamics-h1-w0.1",
+        "run": "runs/compression-multistep-20261111/dynamics-h1-w0.1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.011104891671646898,
+        "blocked_fraction": 0.072325,
+        "coverage_k1": 0.7361111111111112,
+        "coverage_k2": 0.6996527777777778,
+        "coverage_k4": 0.6627604166666666,
+        "coverage_k8": 0.6329210069444444,
+        "seconds": 163.5484998752363,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 131584,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 82298,
+          "k2_50": 85442,
+          "k4_50": 86817,
+          "k8_50": 89091
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74214,
+        "unique_endpoints": 74215,
+        "fill_radius_0.05": 0.6016710069444444,
+        "fill_radius_0.1": 0.6493055555555556,
+        "fill_radius_0.2": 0.6762152777777778,
+        "training_seconds": 76.88915537390858,
+        "refresh_seconds": 37.258425385691226,
+        "search_seconds": 47.57969808438793,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.2334201388888889,
+        "auc_k2": 0.20467230902777778,
+        "auc_k4": 0.18873969184027778,
+        "auc_k8": 0.17610772026909724
+      },
+      {
+        "name": "dynamics-h1-w1",
+        "run": "runs/compression-multistep-20261111/dynamics-h1-w1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004241362140608202,
+        "blocked_fraction": 0.0621125,
+        "coverage_k1": 0.7916666666666666,
+        "coverage_k2": 0.7673611111111112,
+        "coverage_k4": 0.7486979166666666,
+        "coverage_k8": 0.7307942708333334,
+        "seconds": 171.1940104579553,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 131584,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 75547,
+          "k2_50": 77416,
+          "k4_50": 79571,
+          "k8_50": 81429
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 75031,
+        "unique_endpoints": 75032,
+        "fill_radius_0.05": 0.7010633680555556,
+        "fill_radius_0.1": 0.7398003472222222,
+        "fill_radius_0.2": 0.7545572916666666,
+        "training_seconds": 81.29580779373646,
+        "refresh_seconds": 38.67408291622996,
+        "search_seconds": 49.18116234475747,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.2758333333333334,
+        "auc_k2": 0.2480772569444444,
+        "auc_k4": 0.2305973307291667,
+        "auc_k8": 0.21685180664062503
+      },
+      {
+        "name": "dynamics-h4-w0.1",
+        "run": "runs/compression-multistep-20261111/dynamics-h4-w0.1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004665122123821581,
+        "blocked_fraction": 0.0680375,
+        "coverage_k1": 0.7847222222222222,
+        "coverage_k2": 0.7690972222222222,
+        "coverage_k4": 0.7408854166666666,
+        "coverage_k8": 0.7082248263888888,
+        "seconds": 201.97765537491068,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 328975,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 72318,
+          "k2_50": 75936,
+          "k4_50": 77704,
+          "k8_50": 79832
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74557,
+        "unique_endpoints": 74558,
+        "fill_radius_0.05": 0.6761067708333334,
+        "fill_radius_0.1": 0.7240668402777778,
+        "fill_radius_0.2": 0.7495659722222222,
+        "training_seconds": 105.88466024538502,
+        "refresh_seconds": 41.169932291377336,
+        "search_seconds": 52.63105821702629,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.2906510416666666,
+        "auc_k2": 0.2621723090277777,
+        "auc_k4": 0.2433251953125,
+        "auc_k8": 0.2260244411892361
+      },
+      {
+        "name": "dynamics-h4-w1",
+        "run": "runs/compression-multistep-20261111/dynamics-h4-w1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004219840779575545,
+        "blocked_fraction": 0.0668375,
+        "coverage_k1": 0.7847222222222222,
+        "coverage_k2": 0.7690972222222222,
+        "coverage_k4": 0.7543402777777778,
+        "coverage_k8": 0.7316623263888888,
+        "seconds": 209.83884650003165,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 328981,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 72533,
+          "k2_50": 76079,
+          "k4_50": 78188,
+          "k8_50": 80092
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74653,
+        "unique_endpoints": 74654,
+        "fill_radius_0.05": 0.7001953125,
+        "fill_radius_0.1": 0.7443576388888888,
+        "fill_radius_0.2": 0.7585720486111112,
+        "training_seconds": 108.88260562997311,
+        "refresh_seconds": 44.42770921532065,
+        "search_seconds": 54.41420100303367,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.2838628472222222,
+        "auc_k2": 0.2547200520833333,
+        "auc_k4": 0.23687065972222224,
+        "auc_k8": 0.22266696506076392
+      },
+      {
+        "name": "dynamics-h16-w0.1",
+        "run": "runs/compression-multistep-20261111/dynamics-h16-w0.1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.006105128570305069,
+        "blocked_fraction": 0.079925,
+        "coverage_k1": 0.7361111111111112,
+        "coverage_k2": 0.6736111111111112,
+        "coverage_k4": 0.6328125,
+        "coverage_k8": 0.5855034722222222,
+        "seconds": 288.35496608307585,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 1089005,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 81012,
+          "k2_50": 84216,
+          "k4_50": 88342,
+          "k8_50": 92123
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73606,
+        "unique_endpoints": 73607,
+        "fill_radius_0.05": 0.5466579861111112,
+        "fill_radius_0.1": 0.6068793402777778,
+        "fill_radius_0.2": 0.6452907986111112,
+        "training_seconds": 183.20477396575734,
+        "refresh_seconds": 45.934847297146916,
+        "search_seconds": 56.92594844661653,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.23473958333333336,
+        "auc_k2": 0.1951909722222222,
+        "auc_k4": 0.17225368923611112,
+        "auc_k8": 0.15499186197916667
+      },
+      {
+        "name": "dynamics-h16-w1",
+        "run": "runs/compression-multistep-20261111/dynamics-h16-w1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004506322682615587,
+        "blocked_fraction": 0.0711875,
+        "coverage_k1": 0.75,
+        "coverage_k2": 0.7222222222222222,
+        "coverage_k4": 0.7035590277777778,
+        "coverage_k8": 0.6834852430555556,
+        "seconds": 286.67929487489164,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 1091916,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 79256,
+          "k2_50": 82042,
+          "k4_50": 83949,
+          "k8_50": 85472
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74305,
+        "unique_endpoints": 74306,
+        "fill_radius_0.05": 0.6546223958333334,
+        "fill_radius_0.1": 0.6939019097222222,
+        "fill_radius_0.2": 0.7098524305555556,
+        "training_seconds": 182.65040095802397,
+        "refresh_seconds": 44.92636908404529,
+        "search_seconds": 56.9940503933467,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.2530208333333333,
+        "auc_k2": 0.2215842013888889,
+        "auc_k4": 0.2062841796875,
+        "auc_k8": 0.19378241644965277
+      },
+      {
+        "name": "dynamics-h32-w0.1",
+        "run": "runs/compression-multistep-20261111/dynamics-h32-w0.1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004272911589528294,
+        "blocked_fraction": 0.0617875,
+        "coverage_k1": 0.8055555555555556,
+        "coverage_k2": 0.7881944444444444,
+        "coverage_k4": 0.7799479166666666,
+        "coverage_k8": 0.75390625,
+        "seconds": 356.37227074988186,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 1928817,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 69031,
+          "k2_50": 72402,
+          "k4_50": 74642,
+          "k8_50": 76989
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 75057,
+        "unique_endpoints": 75058,
+        "fill_radius_0.05": 0.7197265625,
+        "fill_radius_0.1": 0.7682291666666666,
+        "fill_radius_0.2": 0.7837456597222222,
+        "training_seconds": 257.9772714949213,
+        "refresh_seconds": 41.6124954209663,
+        "search_seconds": 54.93608839670196,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.30993055555555554,
+        "auc_k2": 0.2826519097222222,
+        "auc_k4": 0.26507866753472226,
+        "auc_k8": 0.24799072265625
+      },
+      {
+        "name": "adjacency-h1-w0.1",
+        "run": "runs/compression-multistep-20261111/adjacency-h1-w0.1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004203677051583507,
+        "blocked_fraction": 0.0712125,
+        "coverage_k1": 0.7986111111111112,
+        "coverage_k2": 0.7795138888888888,
+        "coverage_k4": 0.7651909722222222,
+        "coverage_k8": 0.7492404513888888,
+        "seconds": 183.75878375023603,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 131584,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 73028,
+          "k2_50": 75779,
+          "k4_50": 77702,
+          "k8_50": 79579
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74303,
+        "unique_endpoints": 74304,
+        "fill_radius_0.05": 0.7199435763888888,
+        "fill_radius_0.1": 0.7575954861111112,
+        "fill_radius_0.2": 0.7687717013888888,
+        "training_seconds": 85.35147370910272,
+        "refresh_seconds": 43.01040329225361,
+        "search_seconds": 53.63419448630884,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.2788107638888889,
+        "auc_k2": 0.2500802951388889,
+        "auc_k4": 0.2331819661458333,
+        "auc_k8": 0.21894517686631945
+      },
+      {
+        "name": "adjacency-h1-w1",
+        "run": "runs/compression-multistep-20261111/adjacency-h1-w1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004916733108056791,
+        "blocked_fraction": 0.069225,
+        "coverage_k1": 0.7986111111111112,
+        "coverage_k2": 0.7829861111111112,
+        "coverage_k4": 0.7664930555555556,
+        "coverage_k8": 0.7446831597222222,
+        "seconds": 155.29406158300117,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 131584,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 71038,
+          "k2_50": 75948,
+          "k4_50": 78302,
+          "k8_50": 80407
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74462,
+        "unique_endpoints": 74463,
+        "fill_radius_0.05": 0.7098524305555556,
+        "fill_radius_0.1": 0.7540147569444444,
+        "fill_radius_0.2": 0.7730034722222222,
+        "training_seconds": 71.6256221360527,
+        "refresh_seconds": 36.18995163589716,
+        "search_seconds": 45.89416840765625,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.31492187499999996,
+        "auc_k2": 0.2785091145833334,
+        "auc_k4": 0.2536653645833333,
+        "auc_k8": 0.23508558485243058
+      },
+      {
+        "name": "adjacency-h4-w0.1",
+        "run": "runs/compression-multistep-20261111/adjacency-h4-w0.1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004518671699118573,
+        "blocked_fraction": 0.0794125,
+        "coverage_k1": 0.75,
+        "coverage_k2": 0.6961805555555556,
+        "coverage_k4": 0.6610243055555556,
+        "coverage_k8": 0.6304253472222222,
+        "seconds": 148.3591254162602,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 328974,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 83459,
+          "k2_50": 87143,
+          "k4_50": 88916,
+          "k8_50": 91017
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73647,
+        "unique_endpoints": 73648,
+        "fill_radius_0.05": 0.5993923611111112,
+        "fill_radius_0.1": 0.6458333333333334,
+        "fill_radius_0.2": 0.6717664930555556,
+        "training_seconds": 74.74085329286754,
+        "refresh_seconds": 32.46724949358031,
+        "search_seconds": 39.6429836479947,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.22055555555555556,
+        "auc_k2": 0.18807074652777778,
+        "auc_k4": 0.17086534288194447,
+        "auc_k8": 0.15805257161458333
+      },
+      {
+        "name": "adjacency-h4-w1",
+        "run": "runs/compression-multistep-20261111/adjacency-h4-w1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.005176970999394169,
+        "blocked_fraction": 0.068725,
+        "coverage_k1": 0.75,
+        "coverage_k2": 0.71875,
+        "coverage_k4": 0.6940104166666666,
+        "coverage_k8": 0.6688368055555556,
+        "seconds": 146.64372887508944,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 328974,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 78983,
+          "k2_50": 81374,
+          "k4_50": 84041,
+          "k8_50": 86564
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74502,
+        "unique_endpoints": 74503,
+        "fill_radius_0.05": 0.6361762152777778,
+        "fill_radius_0.1": 0.6820746527777778,
+        "fill_radius_0.2": 0.7027994791666666,
+        "training_seconds": 73.67700967285782,
+        "refresh_seconds": 32.126563710626215,
+        "search_seconds": 39.429564762394875,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.2584375,
+        "auc_k2": 0.22188802083333337,
+        "auc_k4": 0.20247233072916668,
+        "auc_k8": 0.18721299913194445
+      },
+      {
+        "name": "adjacency-h16-w0.1",
+        "run": "runs/compression-multistep-20261111/adjacency-h16-w0.1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.007093819637251286,
+        "blocked_fraction": 0.0715,
+        "coverage_k1": 0.7708333333333334,
+        "coverage_k2": 0.7378472222222222,
+        "coverage_k4": 0.7005208333333334,
+        "coverage_k8": 0.6684027777777778,
+        "seconds": 178.13262466713786,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 1094752,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 81631,
+          "k2_50": 84406,
+          "k4_50": 86441,
+          "k8_50": 88549
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74280,
+        "unique_endpoints": 74281,
+        "fill_radius_0.05": 0.6329210069444444,
+        "fill_radius_0.1": 0.68359375,
+        "fill_radius_0.2": 0.7115885416666666,
+        "training_seconds": 110.11873541772366,
+        "refresh_seconds": 29.189397788606584,
+        "search_seconds": 37.406748204957694,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.243671875,
+        "auc_k2": 0.21604383680555556,
+        "auc_k4": 0.19884874131944447,
+        "auc_k8": 0.18464436848958332
+      },
+      {
+        "name": "adjacency-h16-w1",
+        "run": "runs/compression-multistep-20261111/adjacency-h16-w1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00351941267967711,
+        "blocked_fraction": 0.0530625,
+        "coverage_k1": 0.8263888888888888,
+        "coverage_k2": 0.8211805555555556,
+        "coverage_k4": 0.8177083333333334,
+        "coverage_k8": 0.8097873263888888,
+        "seconds": 158.77771616727114,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 1096884,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 66361,
+          "k2_50": 67769,
+          "k4_50": 70311,
+          "k8_50": 71814
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 75755,
+        "unique_endpoints": 75756,
+        "fill_radius_0.05": 0.787109375,
+        "fill_radius_0.1": 0.814453125,
+        "fill_radius_0.2": 0.8185763888888888,
+        "training_seconds": 99.02408396219835,
+        "refresh_seconds": 24.01841979799792,
+        "search_seconds": 34.409883881919086,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.35889756944444445,
+        "auc_k2": 0.33154296874999994,
+        "auc_k4": 0.31313042534722224,
+        "auc_k8": 0.29787719726562506
+      },
+      {
+        "name": "adjacency-h32-w0.1",
+        "run": "runs/compression-multistep-20261111/adjacency-h32-w0.1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00436104175363365,
+        "blocked_fraction": 0.06945,
+        "coverage_k1": 0.7777777777777778,
+        "coverage_k2": 0.7586805555555556,
+        "coverage_k4": 0.74609375,
+        "coverage_k8": 0.7215711805555556,
+        "seconds": 196.6952951247804,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 1909144,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 76514,
+          "k2_50": 80051,
+          "k4_50": 82213,
+          "k8_50": 83957
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74444,
+        "unique_endpoints": 74445,
+        "fill_radius_0.05": 0.6873914930555556,
+        "fill_radius_0.1": 0.7373046875,
+        "fill_radius_0.2": 0.7527126736111112,
+        "training_seconds": 137.82691041799262,
+        "refresh_seconds": 24.118317195679992,
+        "search_seconds": 33.38858722522855,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.26671874999999995,
+        "auc_k2": 0.23582248263888891,
+        "auc_k4": 0.2176708984375,
+        "auc_k8": 0.20295708550347222
+      }
+    ]
+  }
+]

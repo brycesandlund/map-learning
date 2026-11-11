@@ -1,0 +1,5 @@
+{
+  "bound": 0.25,
+  "noise_std": 0.025,
+  "noise_repulsion": false
+}

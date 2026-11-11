@@ -1,0 +1,1580 @@
+[
+  {
+    "root": "runs/compression-layout-selected-20261111",
+    "manifest": {
+      "arms": [
+        {
+          "name": "dynamics-l1-layout13",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-selected-20261111/dynamics-l1.json",
+          "layout": 13
+        },
+        {
+          "name": "dynamics-l1-layout23",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-selected-20261111/dynamics-l1.json",
+          "layout": 23
+        },
+        {
+          "name": "adjacency-multistep-layout13",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-selected-20261111/adjacency-multistep.json",
+          "layout": 13
+        },
+        {
+          "name": "adjacency-multistep-layout23",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-selected-20261111/adjacency-multistep.json",
+          "layout": 23
+        },
+        {
+          "name": "adjacency-multistep-control-layout13",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-selected-20261111/adjacency-multistep-control.json",
+          "layout": 13
+        },
+        {
+          "name": "adjacency-multistep-control-layout23",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-selected-20261111/adjacency-multistep-control.json",
+          "layout": 23
+        }
+      ],
+      "seeds": [
+        86,
+        87,
+        88
+      ],
+      "blocks": 20,
+      "created_unix": 1794430654.3707619,
+      "workers": 4
+    },
+    "summary": [
+      {
+        "name": "dynamics-l1-layout13",
+        "coverage_k1": {
+          "mean": 0.6412037037037037,
+          "values": [
+            0.75,
+            0.5694444444444444,
+            0.6041666666666666
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.6313657407407407,
+          "values": [
+            0.7361111111111112,
+            0.5572916666666666,
+            0.6006944444444444
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.6236979166666666,
+          "values": [
+            0.7287326388888888,
+            0.5473090277777778,
+            0.5950520833333334
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.6076388888888888,
+          "values": [
+            0.712890625,
+            0.5319010416666666,
+            0.578125
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.20907751012731482,
+          "values": [
+            0.27775661892361114,
+            0.1720187717013889,
+            0.17745713975694447
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.6158130787037037,
+          "values": [
+            0.7199435763888888,
+            0.5393880208333334,
+            0.5881076388888888
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.0790375,
+          "values": [
+            0.0805875,
+            0.084375,
+            0.07215
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-l1-layout23",
+        "coverage_k1": {
+          "mean": 0.8171296296296297,
+          "values": [
+            0.8125,
+            0.875,
+            0.7638888888888888
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7876157407407408,
+          "values": [
+            0.7916666666666666,
+            0.8298611111111112,
+            0.7413194444444444
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.762008101851852,
+          "values": [
+            0.7708333333333334,
+            0.7986111111111112,
+            0.7165798611111112
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.7287688078703703,
+          "values": [
+            0.7411024305555556,
+            0.7606336805555556,
+            0.6845703125
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.23695113570601856,
+          "values": [
+            0.275673828125,
+            0.23310655381944445,
+            0.2020730251736111
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.7452980324074074,
+          "values": [
+            0.7553168402777778,
+            0.7800564236111112,
+            0.7005208333333334
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07485,
+          "values": [
+            0.07425,
+            0.0764875,
+            0.0738125
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-multistep-layout13",
+        "coverage_k1": {
+          "mean": 0.4421296296296297,
+          "values": [
+            0.6111111111111112,
+            0.4722222222222222,
+            0.24305555555555555
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.42939814814814814,
+          "values": [
+            0.6059027777777778,
+            0.4479166666666667,
+            0.234375
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.41652199074074076,
+          "values": [
+            0.6006944444444444,
+            0.4296875,
+            0.2191840277777778
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.4015118634259259,
+          "values": [
+            0.5900607638888888,
+            0.4108072916666667,
+            0.2036675347222222
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.10173484519675925,
+          "values": [
+            0.16607313368055554,
+            0.09289713541666668,
+            0.04623426649305556
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.4088541666666667,
+          "values": [
+            0.5950520833333334,
+            0.4202473958333333,
+            0.21126302083333334
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.08888333333333333,
+          "values": [
+            0.0896,
+            0.0845375,
+            0.0925125
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-multistep-layout23",
+        "coverage_k1": {
+          "mean": 0.763888888888889,
+          "values": [
+            0.8263888888888888,
+            0.8333333333333334,
+            0.6319444444444444
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7256944444444443,
+          "values": [
+            0.7916666666666666,
+            0.8246527777777778,
+            0.5607638888888888
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.7016782407407408,
+          "values": [
+            0.7686631944444444,
+            0.8125,
+            0.5238715277777778
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.6782045717592592,
+          "values": [
+            0.7473958333333334,
+            0.7939453125,
+            0.4932725694444444
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.19017614293981477,
+          "values": [
+            0.21119954427083332,
+            0.24996093749999995,
+            0.10936794704861111
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.6901041666666666,
+          "values": [
+            0.7578125,
+            0.8045789930555556,
+            0.5079210069444444
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07746249999999999,
+          "values": [
+            0.0796875,
+            0.0776875,
+            0.0750125
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-multistep-control-layout13",
+        "coverage_k1": {
+          "mean": 0.6157407407407407,
+          "values": [
+            0.6458333333333334,
+            0.6944444444444444,
+            0.5069444444444444
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.5972222222222222,
+          "values": [
+            0.6267361111111112,
+            0.6701388888888888,
+            0.4947916666666667
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.5876736111111112,
+          "values": [
+            0.62109375,
+            0.6610243055555556,
+            0.4809027777777778
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.5739655671296297,
+          "values": [
+            0.6114366319444444,
+            0.6463758680555556,
+            0.4640842013888889
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.15967158564814812,
+          "values": [
+            0.17293565538194441,
+            0.19809516059027776,
+            0.1079839409722222
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.5810546875,
+          "values": [
+            0.6167534722222222,
+            0.6539713541666666,
+            0.4724392361111111
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07615833333333334,
+          "values": [
+            0.088675,
+            0.064,
+            0.0758
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-multistep-control-layout23",
+        "coverage_k1": {
+          "mean": 0.8310185185185185,
+          "values": [
+            0.9236111111111112,
+            0.8680555555555556,
+            0.7013888888888888
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.8026620370370371,
+          "values": [
+            0.890625,
+            0.8576388888888888,
+            0.6597222222222222
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.7808159722222223,
+          "values": [
+            0.8667534722222222,
+            0.8489583333333334,
+            0.6267361111111112
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.7569082754629631,
+          "values": [
+            0.8415798611111112,
+            0.8394097222222222,
+            0.5897352430555556
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.2347918475115741,
+          "values": [
+            0.2619775390625,
+            0.3151182725694444,
+            0.12727973090277778
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.7683015046296297,
+          "values": [
+            0.8549262152777778,
+            0.8450520833333334,
+            0.6049262152777778
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.0769,
+          "values": [
+            0.0761625,
+            0.06405,
+            0.0904875
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      }
+    ],
+    "runs": [
+      {
+        "name": "dynamics-l1-layout13",
+        "run": "runs/compression-layout-selected-20261111/dynamics-l1-layout13-seed86",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004387903880545421,
+        "blocked_fraction": 0.0805875,
+        "coverage_k1": 0.75,
+        "coverage_k2": 0.7361111111111112,
+        "coverage_k4": 0.7287326388888888,
+        "coverage_k8": 0.712890625,
+        "seconds": 99.59724437491968,
+        "objective": "dynamics",
+        "seed": 86,
+        "layout": 13,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "34d301c4844a64cab062bbd88e413d189f8157b35ea853619211e3b9652af947",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 66267,
+          "k2_50": 69578,
+          "k4_50": 71693,
+          "k8_50": 73344
+        },
+        "quarter_lattice_fraction": 4.999950000499995e-05,
+        "moving_transitions": 73553,
+        "unique_endpoints": 73554,
+        "fill_radius_0.05": 0.6911892361111112,
+        "fill_radius_0.1": 0.7199435763888888,
+        "fill_radius_0.2": 0.7302517361111112,
+        "training_seconds": 43.982917371205986,
+        "refresh_seconds": 23.861673280131072,
+        "search_seconds": 30.431232906877995,
+        "action_stream_sha256": "05521435a69319aef0e7f619c24029edc95b6baa43e371cb056f6a64cd391a70",
+        "auc_k1": 0.3063194444444444,
+        "auc_k2": 0.28921006944444444,
+        "auc_k4": 0.27775661892361114,
+        "auc_k8": 0.2662152777777778
+      },
+      {
+        "name": "dynamics-l1-layout23",
+        "run": "runs/compression-layout-selected-20261111/dynamics-l1-layout23-seed86",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.007021534740452565,
+        "blocked_fraction": 0.07425,
+        "coverage_k1": 0.8125,
+        "coverage_k2": 0.7916666666666666,
+        "coverage_k4": 0.7708333333333334,
+        "coverage_k8": 0.7411024305555556,
+        "seconds": 100.46818204177544,
+        "objective": "dynamics",
+        "seed": 86,
+        "layout": 23,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "34d301c4844a64cab062bbd88e413d189f8157b35ea853619211e3b9652af947",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 65341,
+          "k2_50": 68713,
+          "k4_50": 71106,
+          "k8_50": 73788
+        },
+        "quarter_lattice_fraction": 4.999950000499995e-05,
+        "moving_transitions": 74060,
+        "unique_endpoints": 74061,
+        "fill_radius_0.05": 0.7139756944444444,
+        "fill_radius_0.1": 0.7553168402777778,
+        "fill_radius_0.2": 0.7789713541666666,
+        "training_seconds": 43.86154141230509,
+        "refresh_seconds": 24.694706150330603,
+        "search_seconds": 30.440514903049916,
+        "action_stream_sha256": "05521435a69319aef0e7f619c24029edc95b6baa43e371cb056f6a64cd391a70",
+        "auc_k1": 0.3186545138888889,
+        "auc_k2": 0.29305555555555557,
+        "auc_k4": 0.275673828125,
+        "auc_k8": 0.2591270616319445
+      },
+      {
+        "name": "adjacency-multistep-layout13",
+        "run": "runs/compression-layout-selected-20261111/adjacency-multistep-layout13-seed86",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.005100287688971096,
+        "blocked_fraction": 0.0896,
+        "coverage_k1": 0.6111111111111112,
+        "coverage_k2": 0.6059027777777778,
+        "coverage_k4": 0.6006944444444444,
+        "coverage_k8": 0.5900607638888888,
+        "seconds": 151.93837074982002,
+        "objective": "adjacency",
+        "seed": 86,
+        "layout": 13,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "34d301c4844a64cab062bbd88e413d189f8157b35ea853619211e3b9652af947",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 1074850,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 87896,
+          "k2_50": 90067,
+          "k4_50": 91067,
+          "k8_50": 92018
+        },
+        "quarter_lattice_fraction": 4.999950000499995e-05,
+        "moving_transitions": 72832,
+        "unique_endpoints": 72833,
+        "fill_radius_0.05": 0.5696614583333334,
+        "fill_radius_0.1": 0.5950520833333334,
+        "fill_radius_0.2": 0.6015625,
+        "training_seconds": 91.68552258377895,
+        "refresh_seconds": 28.55665917834267,
+        "search_seconds": 30.473245087545365,
+        "action_stream_sha256": "05521435a69319aef0e7f619c24029edc95b6baa43e371cb056f6a64cd391a70",
+        "auc_k1": 0.19017361111111114,
+        "auc_k2": 0.1748415798611111,
+        "auc_k4": 0.16607313368055554,
+        "auc_k8": 0.1575241427951389
+      },
+      {
+        "name": "adjacency-multistep-layout23",
+        "run": "runs/compression-layout-selected-20261111/adjacency-multistep-layout23-seed86",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004729413994667716,
+        "blocked_fraction": 0.0796875,
+        "coverage_k1": 0.8263888888888888,
+        "coverage_k2": 0.7916666666666666,
+        "coverage_k4": 0.7686631944444444,
+        "coverage_k8": 0.7473958333333334,
+        "seconds": 154.4605920421891,
+        "objective": "adjacency",
+        "seed": 86,
+        "layout": 23,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "34d301c4844a64cab062bbd88e413d189f8157b35ea853619211e3b9652af947",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 1075308,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 76783,
+          "k2_50": 79143,
+          "k4_50": 81217,
+          "k8_50": 82768
+        },
+        "quarter_lattice_fraction": 4.999950000499995e-05,
+        "moving_transitions": 73625,
+        "unique_endpoints": 73626,
+        "fill_radius_0.05": 0.7115885416666666,
+        "fill_radius_0.1": 0.7578125,
+        "fill_radius_0.2": 0.7758246527777778,
+        "training_seconds": 91.60972595959902,
+        "refresh_seconds": 30.894128079526126,
+        "search_seconds": 30.617224290035665,
+        "action_stream_sha256": "05521435a69319aef0e7f619c24029edc95b6baa43e371cb056f6a64cd391a70",
+        "auc_k1": 0.2522482638888889,
+        "auc_k2": 0.22684027777777777,
+        "auc_k4": 0.21119954427083332,
+        "auc_k8": 0.1983704969618056
+      },
+      {
+        "name": "adjacency-multistep-control-layout13",
+        "run": "runs/compression-layout-selected-20261111/adjacency-multistep-control-layout13-seed86",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004750583411274938,
+        "blocked_fraction": 0.088675,
+        "coverage_k1": 0.6458333333333334,
+        "coverage_k2": 0.6267361111111112,
+        "coverage_k4": 0.62109375,
+        "coverage_k8": 0.6114366319444444,
+        "seconds": 113.53184195887297,
+        "objective": "adjacency",
+        "seed": 86,
+        "layout": 13,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "34d301c4844a64cab062bbd88e413d189f8157b35ea853619211e3b9652af947",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 131584,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 86911,
+          "k2_50": 88409,
+          "k4_50": 89089,
+          "k8_50": 90127
+        },
+        "quarter_lattice_fraction": 4.999950000499995e-05,
+        "moving_transitions": 72906,
+        "unique_endpoints": 72907,
+        "fill_radius_0.05": 0.5923394097222222,
+        "fill_radius_0.1": 0.6167534722222222,
+        "fill_radius_0.2": 0.6225043402777778,
+        "training_seconds": 50.90616088639945,
+        "refresh_seconds": 29.587691301479936,
+        "search_seconds": 31.716107164043933,
+        "action_stream_sha256": "05521435a69319aef0e7f619c24029edc95b6baa43e371cb056f6a64cd391a70",
+        "auc_k1": 0.1955295138888889,
+        "auc_k2": 0.18194227430555554,
+        "auc_k4": 0.17293565538194441,
+        "auc_k8": 0.16397148980034723
+      },
+      {
+        "name": "adjacency-multistep-control-layout23",
+        "run": "runs/compression-layout-selected-20261111/adjacency-multistep-control-layout23-seed86",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004613559552874631,
+        "blocked_fraction": 0.0761625,
+        "coverage_k1": 0.9236111111111112,
+        "coverage_k2": 0.890625,
+        "coverage_k4": 0.8667534722222222,
+        "coverage_k8": 0.8415798611111112,
+        "seconds": 113.65754549996927,
+        "objective": "adjacency",
+        "seed": 86,
+        "layout": 23,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "34d301c4844a64cab062bbd88e413d189f8157b35ea853619211e3b9652af947",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 131584,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 72029,
+          "k2_50": 74204,
+          "k4_50": 75271,
+          "k8_50": 76641,
+          "k1_90": 98047
+        },
+        "quarter_lattice_fraction": 4.999950000499995e-05,
+        "moving_transitions": 73907,
+        "unique_endpoints": 73908,
+        "fill_radius_0.05": 0.8028428819444444,
+        "fill_radius_0.1": 0.8549262152777778,
+        "fill_radius_0.2": 0.8758680555555556,
+        "training_seconds": 51.82270454708487,
+        "refresh_seconds": 28.528964619152248,
+        "search_seconds": 31.9765180000104,
+        "action_stream_sha256": "05521435a69319aef0e7f619c24029edc95b6baa43e371cb056f6a64cd391a70",
+        "auc_k1": 0.302734375,
+        "auc_k2": 0.2781792534722222,
+        "auc_k4": 0.2619775390625,
+        "auc_k8": 0.24718994140625
+      },
+      {
+        "name": "dynamics-l1-layout13",
+        "run": "runs/compression-layout-selected-20261111/dynamics-l1-layout13-seed87",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.005250757005838722,
+        "blocked_fraction": 0.084375,
+        "coverage_k1": 0.5694444444444444,
+        "coverage_k2": 0.5572916666666666,
+        "coverage_k4": 0.5473090277777778,
+        "coverage_k8": 0.5319010416666666,
+        "seconds": 106.48187566595152,
+        "objective": "dynamics",
+        "seed": 87,
+        "layout": 13,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "1163003104c6d34012cded1e8432254aca54abe5218fe8993002f32d949ec56a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 85023,
+          "k2_50": 86899,
+          "k4_50": 88602,
+          "k8_50": 92703
+        },
+        "quarter_lattice_fraction": 2.999970000299997e-05,
+        "moving_transitions": 73250,
+        "unique_endpoints": 73251,
+        "fill_radius_0.05": 0.5141059027777778,
+        "fill_radius_0.1": 0.5393880208333334,
+        "fill_radius_0.2": 0.5512152777777778,
+        "training_seconds": 47.16817596554756,
+        "refresh_seconds": 25.025272044353187,
+        "search_seconds": 33.00912122381851,
+        "action_stream_sha256": "96a838549a488b36d894441678285be6417ee39586564c784d5b5633dcfa1932",
+        "auc_k1": 0.2001388888888889,
+        "auc_k2": 0.18391710069444445,
+        "auc_k4": 0.1720187717013889,
+        "auc_k8": 0.16155680338541667
+      },
+      {
+        "name": "dynamics-l1-layout23",
+        "run": "runs/compression-layout-selected-20261111/dynamics-l1-layout23-seed87",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004866415750763702,
+        "blocked_fraction": 0.0764875,
+        "coverage_k1": 0.875,
+        "coverage_k2": 0.8298611111111112,
+        "coverage_k4": 0.7986111111111112,
+        "coverage_k8": 0.7606336805555556,
+        "seconds": 110.88835770776495,
+        "objective": "dynamics",
+        "seed": 87,
+        "layout": 23,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "1163003104c6d34012cded1e8432254aca54abe5218fe8993002f32d949ec56a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 74116,
+          "k2_50": 76576,
+          "k4_50": 78473,
+          "k8_50": 80727
+        },
+        "quarter_lattice_fraction": 2.999970000299997e-05,
+        "moving_transitions": 73881,
+        "unique_endpoints": 73882,
+        "fill_radius_0.05": 0.7220052083333334,
+        "fill_radius_0.1": 0.7800564236111112,
+        "fill_radius_0.2": 0.810546875,
+        "training_seconds": 47.08936751121655,
+        "refresh_seconds": 29.56188078969717,
+        "search_seconds": 32.94887591712177,
+        "action_stream_sha256": "96a838549a488b36d894441678285be6417ee39586564c784d5b5633dcfa1932",
+        "auc_k1": 0.2776736111111111,
+        "auc_k2": 0.25014322916666665,
+        "auc_k4": 0.23310655381944445,
+        "auc_k8": 0.2170361328125
+      },
+      {
+        "name": "adjacency-multistep-layout13",
+        "run": "runs/compression-layout-selected-20261111/adjacency-multistep-layout13-seed87",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004699735692961746,
+        "blocked_fraction": 0.0845375,
+        "coverage_k1": 0.4722222222222222,
+        "coverage_k2": 0.4479166666666667,
+        "coverage_k4": 0.4296875,
+        "coverage_k8": 0.4108072916666667,
+        "seconds": 164.58617191622034,
+        "objective": "adjacency",
+        "seed": 87,
+        "layout": 13,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "1163003104c6d34012cded1e8432254aca54abe5218fe8993002f32d949ec56a",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 1076615,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 2.999970000299997e-05,
+        "moving_transitions": 73237,
+        "unique_endpoints": 73238,
+        "fill_radius_0.05": 0.3917100694444444,
+        "fill_radius_0.1": 0.4202473958333333,
+        "fill_radius_0.2": 0.4344618055555556,
+        "training_seconds": 99.08441445976496,
+        "refresh_seconds": 31.670317410025746,
+        "search_seconds": 32.557642839383334,
+        "action_stream_sha256": "96a838549a488b36d894441678285be6417ee39586564c784d5b5633dcfa1932",
+        "auc_k1": 0.11946180555555555,
+        "auc_k2": 0.10220052083333334,
+        "auc_k4": 0.09289713541666668,
+        "auc_k8": 0.085859375
+      },
+      {
+        "name": "adjacency-multistep-layout23",
+        "run": "runs/compression-layout-selected-20261111/adjacency-multistep-layout23-seed87",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004350772507260795,
+        "blocked_fraction": 0.0776875,
+        "coverage_k1": 0.8333333333333334,
+        "coverage_k2": 0.8246527777777778,
+        "coverage_k4": 0.8125,
+        "coverage_k8": 0.7939453125,
+        "seconds": 162.9195000003092,
+        "objective": "adjacency",
+        "seed": 87,
+        "layout": 23,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "1163003104c6d34012cded1e8432254aca54abe5218fe8993002f32d949ec56a",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 1078132,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 71393,
+          "k2_50": 73881,
+          "k4_50": 75287,
+          "k8_50": 77254
+        },
+        "quarter_lattice_fraction": 2.999970000299997e-05,
+        "moving_transitions": 73785,
+        "unique_endpoints": 73786,
+        "fill_radius_0.05": 0.7622612847222222,
+        "fill_radius_0.1": 0.8045789930555556,
+        "fill_radius_0.2": 0.8160807291666666,
+        "training_seconds": 98.27322687767446,
+        "refresh_seconds": 30.704210999887437,
+        "search_seconds": 32.564241730608046,
+        "action_stream_sha256": "96a838549a488b36d894441678285be6417ee39586564c784d5b5633dcfa1932",
+        "auc_k1": 0.28923611111111114,
+        "auc_k2": 0.26479817708333336,
+        "auc_k4": 0.24996093749999995,
+        "auc_k8": 0.23655287000868058
+      },
+      {
+        "name": "adjacency-multistep-control-layout13",
+        "run": "runs/compression-layout-selected-20261111/adjacency-multistep-control-layout13-seed87",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004172724931629264,
+        "blocked_fraction": 0.064,
+        "coverage_k1": 0.6944444444444444,
+        "coverage_k2": 0.6701388888888888,
+        "coverage_k4": 0.6610243055555556,
+        "coverage_k8": 0.6463758680555556,
+        "seconds": 110.91514391684905,
+        "objective": "adjacency",
+        "seed": 87,
+        "layout": 13,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "1163003104c6d34012cded1e8432254aca54abe5218fe8993002f32d949ec56a",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 131584,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 84042,
+          "k2_50": 86519,
+          "k4_50": 87656,
+          "k8_50": 88274
+        },
+        "quarter_lattice_fraction": 2.999970000299997e-05,
+        "moving_transitions": 74880,
+        "unique_endpoints": 74881,
+        "fill_radius_0.05": 0.6281467013888888,
+        "fill_radius_0.1": 0.6539713541666666,
+        "fill_radius_0.2": 0.6648220486111112,
+        "training_seconds": 52.08707475522533,
+        "refresh_seconds": 25.513362172991037,
+        "search_seconds": 32.030552331358194,
+        "action_stream_sha256": "96a838549a488b36d894441678285be6417ee39586564c784d5b5633dcfa1932",
+        "auc_k1": 0.22203125000000004,
+        "auc_k2": 0.20814236111111112,
+        "auc_k4": 0.19809516059027776,
+        "auc_k8": 0.1890705023871528
+      },
+      {
+        "name": "adjacency-multistep-control-layout23",
+        "run": "runs/compression-layout-selected-20261111/adjacency-multistep-control-layout23-seed87",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0036443568520289626,
+        "blocked_fraction": 0.06405,
+        "coverage_k1": 0.8680555555555556,
+        "coverage_k2": 0.8576388888888888,
+        "coverage_k4": 0.8489583333333334,
+        "coverage_k8": 0.8394097222222222,
+        "seconds": 108.93428937532008,
+        "objective": "adjacency",
+        "seed": 87,
+        "layout": 23,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "1163003104c6d34012cded1e8432254aca54abe5218fe8993002f32d949ec56a",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 131584,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 65481,
+          "k2_50": 68278,
+          "k4_50": 69613,
+          "k8_50": 71063
+        },
+        "quarter_lattice_fraction": 2.999970000299997e-05,
+        "moving_transitions": 74876,
+        "unique_endpoints": 74877,
+        "fill_radius_0.05": 0.8160807291666666,
+        "fill_radius_0.1": 0.8450520833333334,
+        "fill_radius_0.2": 0.8526475694444444,
+        "training_seconds": 51.22378108231351,
+        "refresh_seconds": 24.367115748580545,
+        "search_seconds": 32.02926510106772,
+        "action_stream_sha256": "96a838549a488b36d894441678285be6417ee39586564c784d5b5633dcfa1932",
+        "auc_k1": 0.36169270833333333,
+        "auc_k2": 0.33334635416666664,
+        "auc_k4": 0.3151182725694444,
+        "auc_k8": 0.29968098958333333
+      },
+      {
+        "name": "dynamics-l1-layout13",
+        "run": "runs/compression-layout-selected-20261111/dynamics-l1-layout13-seed88",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.005442280548186554,
+        "blocked_fraction": 0.07215,
+        "coverage_k1": 0.6041666666666666,
+        "coverage_k2": 0.6006944444444444,
+        "coverage_k4": 0.5950520833333334,
+        "coverage_k8": 0.578125,
+        "seconds": 108.90688941674307,
+        "objective": "dynamics",
+        "seed": 88,
+        "layout": 13,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "9fd339634a812ff8fe2e3cf6f6a958bb819ed427110ad529f9a33375bebbb436",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 85473,
+          "k2_50": 88562,
+          "k4_50": 89509,
+          "k8_50": 91047
+        },
+        "quarter_lattice_fraction": 5.999940000599994e-05,
+        "moving_transitions": 74228,
+        "unique_endpoints": 74229,
+        "fill_radius_0.05": 0.5610894097222222,
+        "fill_radius_0.1": 0.5881076388888888,
+        "fill_radius_0.2": 0.59765625,
+        "training_seconds": 47.87239942420274,
+        "refresh_seconds": 26.27749387221411,
+        "search_seconds": 33.39197760540992,
+        "action_stream_sha256": "a8cdfa5d6762f98145dc4e9ca0ebf07f18a25344054cf647750c1f5fe02005ec",
+        "auc_k1": 0.20424479166666668,
+        "auc_k2": 0.18671875,
+        "auc_k4": 0.17745713975694447,
+        "auc_k8": 0.16786702473958331
+      },
+      {
+        "name": "dynamics-l1-layout23",
+        "run": "runs/compression-layout-selected-20261111/dynamics-l1-layout23-seed88",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00543690111711525,
+        "blocked_fraction": 0.0738125,
+        "coverage_k1": 0.7638888888888888,
+        "coverage_k2": 0.7413194444444444,
+        "coverage_k4": 0.7165798611111112,
+        "coverage_k8": 0.6845703125,
+        "seconds": 114.80797983286902,
+        "objective": "dynamics",
+        "seed": 88,
+        "layout": 23,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "9fd339634a812ff8fe2e3cf6f6a958bb819ed427110ad529f9a33375bebbb436",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 81533,
+          "k2_50": 83002,
+          "k4_50": 83991,
+          "k8_50": 85642
+        },
+        "quarter_lattice_fraction": 5.999940000599994e-05,
+        "moving_transitions": 74095,
+        "unique_endpoints": 74096,
+        "fill_radius_0.05": 0.6514756944444444,
+        "fill_radius_0.1": 0.7005208333333334,
+        "fill_radius_0.2": 0.7251519097222222,
+        "training_seconds": 49.10831891093403,
+        "refresh_seconds": 30.814169716089964,
+        "search_seconds": 33.470430387184024,
+        "action_stream_sha256": "a8cdfa5d6762f98145dc4e9ca0ebf07f18a25344054cf647750c1f5fe02005ec",
+        "auc_k1": 0.2490625,
+        "auc_k2": 0.21958984375,
+        "auc_k4": 0.2020730251736111,
+        "auc_k8": 0.187523193359375
+      },
+      {
+        "name": "adjacency-multistep-layout13",
+        "run": "runs/compression-layout-selected-20261111/adjacency-multistep-layout13-seed88",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.005718951935958042,
+        "blocked_fraction": 0.0925125,
+        "coverage_k1": 0.24305555555555555,
+        "coverage_k2": 0.234375,
+        "coverage_k4": 0.2191840277777778,
+        "coverage_k8": 0.2036675347222222,
+        "seconds": 172.25591241614893,
+        "objective": "adjacency",
+        "seed": 88,
+        "layout": 13,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "9fd339634a812ff8fe2e3cf6f6a958bb819ed427110ad529f9a33375bebbb436",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 1082552,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 5.999940000599994e-05,
+        "moving_transitions": 72599,
+        "unique_endpoints": 72600,
+        "fill_radius_0.05": 0.1908637152777778,
+        "fill_radius_0.1": 0.21126302083333334,
+        "fill_radius_0.2": 0.2234157986111111,
+        "training_seconds": 104.95057908864692,
+        "refresh_seconds": 31.42307387944311,
+        "search_seconds": 34.45666132308543,
+        "action_stream_sha256": "a8cdfa5d6762f98145dc4e9ca0ebf07f18a25344054cf647750c1f5fe02005ec",
+        "auc_k1": 0.06381076388888889,
+        "auc_k2": 0.05369140625,
+        "auc_k4": 0.04623426649305556,
+        "auc_k8": 0.04114054361979166
+      },
+      {
+        "name": "adjacency-multistep-layout23",
+        "run": "runs/compression-layout-selected-20261111/adjacency-multistep-layout23-seed88",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0053624426163315425,
+        "blocked_fraction": 0.0750125,
+        "coverage_k1": 0.6319444444444444,
+        "coverage_k2": 0.5607638888888888,
+        "coverage_k4": 0.5238715277777778,
+        "coverage_k8": 0.4932725694444444,
+        "seconds": 184.21100087510422,
+        "objective": "adjacency",
+        "seed": 88,
+        "layout": 23,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "9fd339634a812ff8fe2e3cf6f6a958bb819ed427110ad529f9a33375bebbb436",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 1078559,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 91503,
+          "k2_50": 96552,
+          "k4_50": 98526
+        },
+        "quarter_lattice_fraction": 5.999940000599994e-05,
+        "moving_transitions": 73999,
+        "unique_endpoints": 74000,
+        "fill_radius_0.05": 0.4609375,
+        "fill_radius_0.1": 0.5079210069444444,
+        "fill_radius_0.2": 0.5335286458333334,
+        "training_seconds": 106.05741504020989,
+        "refresh_seconds": 41.88950891653076,
+        "search_seconds": 34.96795071894303,
+        "action_stream_sha256": "a8cdfa5d6762f98145dc4e9ca0ebf07f18a25344054cf647750c1f5fe02005ec",
+        "auc_k1": 0.150703125,
+        "auc_k2": 0.12315321180555555,
+        "auc_k4": 0.10936794704861111,
+        "auc_k8": 0.0978564453125
+      },
+      {
+        "name": "adjacency-multistep-control-layout13",
+        "run": "runs/compression-layout-selected-20261111/adjacency-multistep-control-layout13-seed88",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.005028331911356995,
+        "blocked_fraction": 0.0758,
+        "coverage_k1": 0.5069444444444444,
+        "coverage_k2": 0.4947916666666667,
+        "coverage_k4": 0.4809027777777778,
+        "coverage_k8": 0.4640842013888889,
+        "seconds": 116.53796879202127,
+        "objective": "adjacency",
+        "seed": 88,
+        "layout": 13,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "9fd339634a812ff8fe2e3cf6f6a958bb819ed427110ad529f9a33375bebbb436",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 131584,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 98562
+        },
+        "quarter_lattice_fraction": 5.999940000599994e-05,
+        "moving_transitions": 73936,
+        "unique_endpoints": 73937,
+        "fill_radius_0.05": 0.4402126736111111,
+        "fill_radius_0.1": 0.4724392361111111,
+        "fill_radius_0.2": 0.4852430555555556,
+        "training_seconds": 53.112107555847615,
+        "refresh_seconds": 27.65480533707887,
+        "search_seconds": 34.496736739296466,
+        "action_stream_sha256": "a8cdfa5d6762f98145dc4e9ca0ebf07f18a25344054cf647750c1f5fe02005ec",
+        "auc_k1": 0.1323003472222222,
+        "auc_k2": 0.11828342013888889,
+        "auc_k4": 0.1079839409722222,
+        "auc_k8": 0.10013685438368054
+      },
+      {
+        "name": "adjacency-multistep-control-layout23",
+        "run": "runs/compression-layout-selected-20261111/adjacency-multistep-control-layout23-seed88",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.007894183970837614,
+        "blocked_fraction": 0.0904875,
+        "coverage_k1": 0.7013888888888888,
+        "coverage_k2": 0.6597222222222222,
+        "coverage_k4": 0.6267361111111112,
+        "coverage_k8": 0.5897352430555556,
+        "seconds": 132.31004091678187,
+        "objective": "adjacency",
+        "seed": 88,
+        "layout": 23,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "9fd339634a812ff8fe2e3cf6f6a958bb819ed427110ad529f9a33375bebbb436",
+        "samples_per_head": 1050000,
+        "path_presentations": 131584,
+        "path_edges": 131584,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 89504,
+          "k2_50": 91848,
+          "k4_50": 93446,
+          "k8_50": 95364
+        },
+        "quarter_lattice_fraction": 5.999940000599994e-05,
+        "moving_transitions": 72761,
+        "unique_endpoints": 72762,
+        "fill_radius_0.05": 0.5523003472222222,
+        "fill_radius_0.1": 0.6049262152777778,
+        "fill_radius_0.2": 0.6354166666666666,
+        "training_seconds": 50.53745616786182,
+        "refresh_seconds": 46.56260228808969,
+        "search_seconds": 34.01360486168414,
+        "action_stream_sha256": "a8cdfa5d6762f98145dc4e9ca0ebf07f18a25344054cf647750c1f5fe02005ec",
+        "auc_k1": 0.15486979166666667,
+        "auc_k2": 0.13840277777777776,
+        "auc_k4": 0.12727973090277778,
+        "auc_k8": 0.11717542860243056
+      }
+    ]
+  }
+]

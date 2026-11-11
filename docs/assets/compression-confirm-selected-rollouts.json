@@ -1,0 +1,1877 @@
+{
+  "note": "Identical recorded ancestry paths from adjacency baseline per seed. Models have different own replays; mixed seen/unseen forecast evaluation. Decoder fit uses privileged xy only for evaluation, not model/search. Target-decoding error is reported to expose representation/decoder limitations.",
+  "runs": [
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-l1-seed80",
+      "name": "dynamics-l1",
+      "seed": 80,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed80",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 7.872481546655763e-06,
+          "stay_latent_mse": 8.253929991042241e-06,
+          "relative_to_latent_stay": 0.9537858396181632,
+          "predicted_xy_rmse": 0.19287456564715297,
+          "decoded_start_xy_rmse": 0.2045228810323957,
+          "encoded_target_xy_rmse": 0.1491574838977484,
+          "physical_stay_rmse": 0.08071338385343552
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 1.4451683455263264e-05,
+          "stay_latent_mse": 1.1848240319523029e-05,
+          "relative_to_latent_stay": 1.2197324721250287,
+          "predicted_xy_rmse": 0.21515603020032037,
+          "decoded_start_xy_rmse": 0.2529587990395304,
+          "encoded_target_xy_rmse": 0.1491574838977484,
+          "physical_stay_rmse": 0.18018928170204163
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.74609375,
+          "prediction_mse": 0.00015792174963280559,
+          "stay_latent_mse": 6.919552834006026e-05,
+          "relative_to_latent_stay": 2.282253686346635,
+          "predicted_xy_rmse": 0.45203728004083804,
+          "decoded_start_xy_rmse": 0.6474155744773421,
+          "encoded_target_xy_rmse": 0.1491574838977484,
+          "physical_stay_rmse": 0.6198806762695312
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.5,
+          "prediction_mse": 0.0006196884205564857,
+          "stay_latent_mse": 0.00026511342730373144,
+          "relative_to_latent_stay": 2.3374463785515083,
+          "predicted_xy_rmse": 0.790532314605988,
+          "decoded_start_xy_rmse": 1.2285662063906237,
+          "encoded_target_xy_rmse": 0.1491574838977484,
+          "physical_stay_rmse": 1.211716890335083
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-l1-seed81",
+      "name": "dynamics-l1",
+      "seed": 81,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed81",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 4.540620466286782e-06,
+          "stay_latent_mse": 6.1336104408837855e-06,
+          "relative_to_latent_stay": 0.7402851077761843,
+          "predicted_xy_rmse": 0.12284074112267096,
+          "decoded_start_xy_rmse": 0.14957722897934922,
+          "encoded_target_xy_rmse": 0.10809972387302036,
+          "physical_stay_rmse": 0.08292681723833084
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 5.958539986750111e-06,
+          "stay_latent_mse": 1.4370489225257188e-05,
+          "relative_to_latent_stay": 0.414637239787045,
+          "predicted_xy_rmse": 0.14179922236878462,
+          "decoded_start_xy_rmse": 0.22924603747559255,
+          "encoded_target_xy_rmse": 0.10809972387302036,
+          "physical_stay_rmse": 0.18835841119289398
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.67578125,
+          "prediction_mse": 2.0469658920774236e-05,
+          "stay_latent_mse": 0.00011948918108828366,
+          "relative_to_latent_stay": 0.17130972640653036,
+          "predicted_xy_rmse": 0.21611599784294125,
+          "decoded_start_xy_rmse": 0.6277578113258672,
+          "encoded_target_xy_rmse": 0.10809972387302036,
+          "physical_stay_rmse": 0.6206839680671692
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 28.80078125,
+          "prediction_mse": 6.154274160508066e-05,
+          "stay_latent_mse": 0.0004024608351755887,
+          "relative_to_latent_stay": 0.15291610071382553,
+          "predicted_xy_rmse": 0.32442721529065033,
+          "decoded_start_xy_rmse": 1.157090294139599,
+          "encoded_target_xy_rmse": 0.10809972387302036,
+          "physical_stay_rmse": 1.1564359664916992
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-l1-seed82",
+      "name": "dynamics-l1",
+      "seed": 82,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed82",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 5.780852461612085e-06,
+          "stay_latent_mse": 6.9065249590494204e-06,
+          "relative_to_latent_stay": 0.83701318620989,
+          "predicted_xy_rmse": 0.25612040033657024,
+          "decoded_start_xy_rmse": 0.25744151562307654,
+          "encoded_target_xy_rmse": 0.19357288062353661,
+          "physical_stay_rmse": 0.07985223829746246
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 7.917975381133147e-06,
+          "stay_latent_mse": 1.3717411093239207e-05,
+          "relative_to_latent_stay": 0.5772208274078494,
+          "predicted_xy_rmse": 0.27934069421992247,
+          "decoded_start_xy_rmse": 0.29308802737438505,
+          "encoded_target_xy_rmse": 0.19357288062353661,
+          "physical_stay_rmse": 0.18347007036209106
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.765625,
+          "prediction_mse": 4.150373933953233e-05,
+          "stay_latent_mse": 9.982461051549762e-05,
+          "relative_to_latent_stay": 0.41576660429933693,
+          "predicted_xy_rmse": 0.5881002206306605,
+          "decoded_start_xy_rmse": 0.6876678695435648,
+          "encoded_target_xy_rmse": 0.19357288062353661,
+          "physical_stay_rmse": 0.6368725895881653
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.80859375,
+          "prediction_mse": 0.00011648345389403403,
+          "stay_latent_mse": 0.0003187985857948661,
+          "relative_to_latent_stay": 0.36538259291083053,
+          "predicted_xy_rmse": 0.9619701481717091,
+          "decoded_start_xy_rmse": 1.2143449250268759,
+          "encoded_target_xy_rmse": 0.19357288062353661,
+          "physical_stay_rmse": 1.1908327341079712
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-l1-seed83",
+      "name": "dynamics-l1",
+      "seed": 83,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed83",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 2.31856665777741e-06,
+          "stay_latent_mse": 2.9760433335468406e-06,
+          "relative_to_latent_stay": 0.7790769145199739,
+          "predicted_xy_rmse": 0.19418660483496,
+          "decoded_start_xy_rmse": 0.2072913778286825,
+          "encoded_target_xy_rmse": 0.1586072140926863,
+          "physical_stay_rmse": 0.08516880869865417
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 3.3667274692561477e-06,
+          "stay_latent_mse": 6.703428880427964e-06,
+          "relative_to_latent_stay": 0.5022396044337846,
+          "predicted_xy_rmse": 0.2394201773731144,
+          "decoded_start_xy_rmse": 0.2791801066449857,
+          "encoded_target_xy_rmse": 0.1586072140926863,
+          "physical_stay_rmse": 0.1980515867471695
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.6953125,
+          "prediction_mse": 1.7369231500197202e-05,
+          "stay_latent_mse": 6.112189294071868e-05,
+          "relative_to_latent_stay": 0.2841736514450459,
+          "predicted_xy_rmse": 0.5898788712278077,
+          "decoded_start_xy_rmse": 0.7387313961576029,
+          "encoded_target_xy_rmse": 0.1586072140926863,
+          "physical_stay_rmse": 0.7105042338371277
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.71484375,
+          "prediction_mse": 4.860977060161531e-05,
+          "stay_latent_mse": 0.00018921871378552169,
+          "relative_to_latent_stay": 0.2568972678712646,
+          "predicted_xy_rmse": 1.03352842787878,
+          "decoded_start_xy_rmse": 1.2833487726689878,
+          "encoded_target_xy_rmse": 0.1586072140926863,
+          "physical_stay_rmse": 1.2758232355117798
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-l1-seed84",
+      "name": "dynamics-l1",
+      "seed": 84,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed84",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 2.3193726974568563e-06,
+          "stay_latent_mse": 3.5867456062987912e-06,
+          "relative_to_latent_stay": 0.6466510179544757,
+          "predicted_xy_rmse": 0.26755619362229566,
+          "decoded_start_xy_rmse": 0.2819557366460076,
+          "encoded_target_xy_rmse": 0.22995106700917894,
+          "physical_stay_rmse": 0.0808117538690567
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 5.070580755273113e-06,
+          "stay_latent_mse": 1.0407624358776957e-05,
+          "relative_to_latent_stay": 0.487198670943287,
+          "predicted_xy_rmse": 0.2651343710071629,
+          "decoded_start_xy_rmse": 0.32887344758526,
+          "encoded_target_xy_rmse": 0.22995106700917894,
+          "physical_stay_rmse": 0.19337095320224762
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.578125,
+          "prediction_mse": 4.6324381401063874e-05,
+          "stay_latent_mse": 8.900456305127591e-05,
+          "relative_to_latent_stay": 0.5204719827047092,
+          "predicted_xy_rmse": 0.43292051447008545,
+          "decoded_start_xy_rmse": 0.7001800078083041,
+          "encoded_target_xy_rmse": 0.22995106700917894,
+          "physical_stay_rmse": 0.6724053025245667
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.20703125,
+          "prediction_mse": 0.0001631152117624879,
+          "stay_latent_mse": 0.00030633137794211507,
+          "relative_to_latent_stay": 0.5324796070786795,
+          "predicted_xy_rmse": 0.8395095578500681,
+          "decoded_start_xy_rmse": 1.2724280574609692,
+          "encoded_target_xy_rmse": 0.22995106700917894,
+          "physical_stay_rmse": 1.253782033920288
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-l1-seed85",
+      "name": "dynamics-l1",
+      "seed": 85,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed85",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 4.648619778890861e-06,
+          "stay_latent_mse": 5.531900569621939e-06,
+          "relative_to_latent_stay": 0.8403295974657327,
+          "predicted_xy_rmse": 0.3266864553235903,
+          "decoded_start_xy_rmse": 0.323451380284796,
+          "encoded_target_xy_rmse": 0.19582647373098275,
+          "physical_stay_rmse": 0.08043629676103592
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 4.9749601203075144e-06,
+          "stay_latent_mse": 8.07593733043177e-06,
+          "relative_to_latent_stay": 0.6160226258270796,
+          "predicted_xy_rmse": 0.4043603025753628,
+          "decoded_start_xy_rmse": 0.3196600585027857,
+          "encoded_target_xy_rmse": 0.19582647373098275,
+          "physical_stay_rmse": 0.16346924006938934
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.6875,
+          "prediction_mse": 9.96178641798906e-06,
+          "stay_latent_mse": 4.3830434151459485e-05,
+          "relative_to_latent_stay": 0.22728012192544866,
+          "predicted_xy_rmse": 1.1827131484157027,
+          "decoded_start_xy_rmse": 0.5877682951699063,
+          "encoded_target_xy_rmse": 0.19582647373098275,
+          "physical_stay_rmse": 0.5223784446716309
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.4140625,
+          "prediction_mse": 2.0417526684468612e-05,
+          "stay_latent_mse": 0.00013194404891692102,
+          "relative_to_latent_stay": 0.15474382400773962,
+          "predicted_xy_rmse": 2.104608907262877,
+          "decoded_start_xy_rmse": 0.9924317672117082,
+          "encoded_target_xy_rmse": 0.19582647373098275,
+          "physical_stay_rmse": 0.951653242111206
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-seed80",
+      "name": "dynamics-noise",
+      "seed": 80,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed80",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 5.275180683383951e-06,
+          "stay_latent_mse": 3.469128614597139e-06,
+          "relative_to_latent_stay": 1.5206068351537736,
+          "predicted_xy_rmse": 0.9683763946386719,
+          "decoded_start_xy_rmse": 0.6467197583251633,
+          "encoded_target_xy_rmse": 0.6560816374829779,
+          "physical_stay_rmse": 0.08071338385343552
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 1.950125260918867e-05,
+          "stay_latent_mse": 9.268137546314392e-06,
+          "relative_to_latent_stay": 2.1041177379746183,
+          "predicted_xy_rmse": 1.260403580349387,
+          "decoded_start_xy_rmse": 0.673885685059651,
+          "encoded_target_xy_rmse": 0.6560816374829779,
+          "physical_stay_rmse": 0.18018928170204163
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.74609375,
+          "prediction_mse": 5.081559720565565e-05,
+          "stay_latent_mse": 8.10786077636294e-05,
+          "relative_to_latent_stay": 0.6267448172494487,
+          "predicted_xy_rmse": 1.308415878892447,
+          "decoded_start_xy_rmse": 0.8298194194115475,
+          "encoded_target_xy_rmse": 0.6560816374829779,
+          "physical_stay_rmse": 0.6198806762695312
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.5,
+          "prediction_mse": 0.00010742118320195004,
+          "stay_latent_mse": 0.00028802111046388745,
+          "relative_to_latent_stay": 0.3729628811892894,
+          "predicted_xy_rmse": 1.2210150079748336,
+          "decoded_start_xy_rmse": 1.2676386246069196,
+          "encoded_target_xy_rmse": 0.6560816374829779,
+          "physical_stay_rmse": 1.211716890335083
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-seed81",
+      "name": "dynamics-noise",
+      "seed": 81,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed81",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 3.210292334188125e-06,
+          "stay_latent_mse": 4.840394467464648e-06,
+          "relative_to_latent_stay": 0.6632294858955257,
+          "predicted_xy_rmse": 0.7619980281569653,
+          "decoded_start_xy_rmse": 0.7715480910124725,
+          "encoded_target_xy_rmse": 0.7461200576308216,
+          "physical_stay_rmse": 0.08292681723833084
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 5.883682206331287e-06,
+          "stay_latent_mse": 1.2478087228373624e-05,
+          "relative_to_latent_stay": 0.47152116335206584,
+          "predicted_xy_rmse": 0.777265441599221,
+          "decoded_start_xy_rmse": 0.7818622968065132,
+          "encoded_target_xy_rmse": 0.7461200576308216,
+          "physical_stay_rmse": 0.18835841119289398
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.67578125,
+          "prediction_mse": 3.1488358217757195e-05,
+          "stay_latent_mse": 0.00010623868729453534,
+          "relative_to_latent_stay": 0.29639257618516224,
+          "predicted_xy_rmse": 0.7191394478001556,
+          "decoded_start_xy_rmse": 0.9064293383312652,
+          "encoded_target_xy_rmse": 0.7461200576308216,
+          "physical_stay_rmse": 0.6206839680671692
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 28.80078125,
+          "prediction_mse": 9.188186231767759e-05,
+          "stay_latent_mse": 0.0003582458011806011,
+          "relative_to_latent_stay": 0.25647715064595417,
+          "predicted_xy_rmse": 0.727667712314371,
+          "decoded_start_xy_rmse": 1.195256545444643,
+          "encoded_target_xy_rmse": 0.7461200576308216,
+          "physical_stay_rmse": 1.1564359664916992
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-seed82",
+      "name": "dynamics-noise",
+      "seed": 82,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed82",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 5.505914487002883e-06,
+          "stay_latent_mse": 5.664354375767289e-06,
+          "relative_to_latent_stay": 0.9720286058650871,
+          "predicted_xy_rmse": 0.6587583302464565,
+          "decoded_start_xy_rmse": 0.41769868014437933,
+          "encoded_target_xy_rmse": 0.40839695831590483,
+          "physical_stay_rmse": 0.07985223829746246
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 1.132343095378019e-05,
+          "stay_latent_mse": 1.8601502233650535e-05,
+          "relative_to_latent_stay": 0.6087374455862951,
+          "predicted_xy_rmse": 0.8363145928714443,
+          "decoded_start_xy_rmse": 0.4500463044426099,
+          "encoded_target_xy_rmse": 0.40839695831590483,
+          "physical_stay_rmse": 0.18347007036209106
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.765625,
+          "prediction_mse": 4.987657302990556e-05,
+          "stay_latent_mse": 0.00017785283853299916,
+          "relative_to_latent_stay": 0.2804373179607778,
+          "predicted_xy_rmse": 0.864255043890773,
+          "decoded_start_xy_rmse": 0.6992990942224058,
+          "encoded_target_xy_rmse": 0.40839695831590483,
+          "physical_stay_rmse": 0.6368725895881653
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.80859375,
+          "prediction_mse": 0.00014908361481502652,
+          "stay_latent_mse": 0.0006558560417033732,
+          "relative_to_latent_stay": 0.22731149114343785,
+          "predicted_xy_rmse": 0.8827589168624841,
+          "decoded_start_xy_rmse": 1.1610465981532896,
+          "encoded_target_xy_rmse": 0.40839695831590483,
+          "physical_stay_rmse": 1.1908327341079712
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-seed83",
+      "name": "dynamics-noise",
+      "seed": 83,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed83",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 3.67255529454269e-06,
+          "stay_latent_mse": 4.174784407950938e-06,
+          "relative_to_latent_stay": 0.8796993893979902,
+          "predicted_xy_rmse": 0.912641383994027,
+          "decoded_start_xy_rmse": 0.7057358234505425,
+          "encoded_target_xy_rmse": 0.6770745143740888,
+          "physical_stay_rmse": 0.08516880869865417
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 7.2981888479262125e-06,
+          "stay_latent_mse": 1.291028911509784e-05,
+          "relative_to_latent_stay": 0.5653001867627736,
+          "predicted_xy_rmse": 1.024917245306203,
+          "decoded_start_xy_rmse": 0.7248946396158691,
+          "encoded_target_xy_rmse": 0.6770745143740888,
+          "physical_stay_rmse": 0.1980515867471695
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.6953125,
+          "prediction_mse": 4.8234167479677126e-05,
+          "stay_latent_mse": 0.00011693524720612913,
+          "relative_to_latent_stay": 0.4124861291365102,
+          "predicted_xy_rmse": 1.1076399034319857,
+          "decoded_start_xy_rmse": 0.9748035654819548,
+          "encoded_target_xy_rmse": 0.6770745143740888,
+          "physical_stay_rmse": 0.7105042338371277
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.71484375,
+          "prediction_mse": 0.00015259775682352483,
+          "stay_latent_mse": 0.00037733998033218086,
+          "relative_to_latent_stay": 0.4044038924504888,
+          "predicted_xy_rmse": 1.2300991181449725,
+          "decoded_start_xy_rmse": 1.4481875235231374,
+          "encoded_target_xy_rmse": 0.6770745143740888,
+          "physical_stay_rmse": 1.2758232355117798
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-seed84",
+      "name": "dynamics-noise",
+      "seed": 84,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed84",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 5.848351975146215e-06,
+          "stay_latent_mse": 6.26201426712214e-06,
+          "relative_to_latent_stay": 0.933941017326038,
+          "predicted_xy_rmse": 0.8342756273240846,
+          "decoded_start_xy_rmse": 0.7815294082508042,
+          "encoded_target_xy_rmse": 0.7472590800087859,
+          "physical_stay_rmse": 0.0808117538690567
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 1.3246943126432598e-05,
+          "stay_latent_mse": 1.7052636394510046e-05,
+          "relative_to_latent_stay": 0.7768266923639644,
+          "predicted_xy_rmse": 0.8786904009932768,
+          "decoded_start_xy_rmse": 0.7812675857142403,
+          "encoded_target_xy_rmse": 0.7472590800087859,
+          "physical_stay_rmse": 0.19337095320224762
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.578125,
+          "prediction_mse": 6.917336577316746e-05,
+          "stay_latent_mse": 0.00014828424900770187,
+          "relative_to_latent_stay": 0.4664916620346818,
+          "predicted_xy_rmse": 0.9065667228989448,
+          "decoded_start_xy_rmse": 0.9683868611000115,
+          "encoded_target_xy_rmse": 0.7472590800087859,
+          "physical_stay_rmse": 0.6724053025245667
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.20703125,
+          "prediction_mse": 0.00018233740411233157,
+          "stay_latent_mse": 0.00045842904364690185,
+          "relative_to_latent_stay": 0.39774400561927364,
+          "predicted_xy_rmse": 0.935151348061328,
+          "decoded_start_xy_rmse": 1.3717706349667536,
+          "encoded_target_xy_rmse": 0.7472590800087859,
+          "physical_stay_rmse": 1.253782033920288
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-seed85",
+      "name": "dynamics-noise",
+      "seed": 85,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed85",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 2.712195737331058e-06,
+          "stay_latent_mse": 4.145948878431227e-06,
+          "relative_to_latent_stay": 0.6541797346901482,
+          "predicted_xy_rmse": 0.7476658907076198,
+          "decoded_start_xy_rmse": 0.8607292301447895,
+          "encoded_target_xy_rmse": 0.7532122689267065,
+          "physical_stay_rmse": 0.08043629676103592
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 5.633276032313006e-06,
+          "stay_latent_mse": 9.592199603503104e-06,
+          "relative_to_latent_stay": 0.587276773333169,
+          "predicted_xy_rmse": 0.7575226966016392,
+          "decoded_start_xy_rmse": 0.7864132662540549,
+          "encoded_target_xy_rmse": 0.7532122689267065,
+          "physical_stay_rmse": 0.16346924006938934
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.6875,
+          "prediction_mse": 4.036164318677038e-05,
+          "stay_latent_mse": 7.182048284448683e-05,
+          "relative_to_latent_stay": 0.5619795577560457,
+          "predicted_xy_rmse": 0.7668226707358503,
+          "decoded_start_xy_rmse": 0.8482008516386282,
+          "encoded_target_xy_rmse": 0.7532122689267065,
+          "physical_stay_rmse": 0.5223784446716309
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.4140625,
+          "prediction_mse": 0.00010933558223769069,
+          "stay_latent_mse": 0.00021233747247606516,
+          "relative_to_latent_stay": 0.5149142116213853,
+          "predicted_xy_rmse": 0.7978656085935826,
+          "decoded_start_xy_rmse": 1.0078104864354447,
+          "encoded_target_xy_rmse": 0.7532122689267065,
+          "physical_stay_rmse": 0.951653242111206
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-control-seed80",
+      "name": "dynamics-noise-control",
+      "seed": 80,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed80",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 4.242246632202296e-06,
+          "stay_latent_mse": 5.143657745065866e-06,
+          "relative_to_latent_stay": 0.8247528981242457,
+          "predicted_xy_rmse": 0.6249807313579836,
+          "decoded_start_xy_rmse": 0.6150784691005798,
+          "encoded_target_xy_rmse": 0.5635997471610603,
+          "physical_stay_rmse": 0.08071338385343552
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 7.058773007884156e-06,
+          "stay_latent_mse": 1.2239138413860928e-05,
+          "relative_to_latent_stay": 0.5767377383272367,
+          "predicted_xy_rmse": 0.6181456768824789,
+          "decoded_start_xy_rmse": 0.5997744725523951,
+          "encoded_target_xy_rmse": 0.5635997471610603,
+          "physical_stay_rmse": 0.18018928170204163
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.74609375,
+          "prediction_mse": 4.67627432954032e-05,
+          "stay_latent_mse": 8.445018465863541e-05,
+          "relative_to_latent_stay": 0.5537316879107794,
+          "predicted_xy_rmse": 0.9075905263294135,
+          "decoded_start_xy_rmse": 0.8006144185450395,
+          "encoded_target_xy_rmse": 0.5635997471610603,
+          "physical_stay_rmse": 0.6198806762695312
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.5,
+          "prediction_mse": 0.0001540495577501133,
+          "stay_latent_mse": 0.0002928433823399246,
+          "relative_to_latent_stay": 0.5260475975902259,
+          "predicted_xy_rmse": 1.3732882206156756,
+          "decoded_start_xy_rmse": 1.2503667171804356,
+          "encoded_target_xy_rmse": 0.5635997471610603,
+          "physical_stay_rmse": 1.211716890335083
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-control-seed81",
+      "name": "dynamics-noise-control",
+      "seed": 81,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed81",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 3.6291423839429626e-06,
+          "stay_latent_mse": 6.080321782064857e-06,
+          "relative_to_latent_stay": 0.596866829424695,
+          "predicted_xy_rmse": 0.8283543977214924,
+          "decoded_start_xy_rmse": 0.8300728865067035,
+          "encoded_target_xy_rmse": 0.7695249327530391,
+          "physical_stay_rmse": 0.08292681723833084
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 8.827896635921206e-06,
+          "stay_latent_mse": 1.6334368410753086e-05,
+          "relative_to_latent_stay": 0.540449218110552,
+          "predicted_xy_rmse": 0.8164532397791459,
+          "decoded_start_xy_rmse": 0.8262222752160221,
+          "encoded_target_xy_rmse": 0.7695249327530391,
+          "physical_stay_rmse": 0.18835841119289398
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.67578125,
+          "prediction_mse": 6.484929326688871e-05,
+          "stay_latent_mse": 0.00014220265438780189,
+          "relative_to_latent_stay": 0.4560343373762752,
+          "predicted_xy_rmse": 0.8456715132989175,
+          "decoded_start_xy_rmse": 0.9120569811400628,
+          "encoded_target_xy_rmse": 0.7695249327530391,
+          "physical_stay_rmse": 0.6206839680671692
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 28.80078125,
+          "prediction_mse": 0.0002015175559790805,
+          "stay_latent_mse": 0.00045248016249388456,
+          "relative_to_latent_stay": 0.4453621897331335,
+          "predicted_xy_rmse": 1.1645806296671646,
+          "decoded_start_xy_rmse": 1.2792065146797047,
+          "encoded_target_xy_rmse": 0.7695249327530391,
+          "physical_stay_rmse": 1.1564359664916992
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-control-seed82",
+      "name": "dynamics-noise-control",
+      "seed": 82,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed82",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 2.680591933312826e-06,
+          "stay_latent_mse": 3.929209924535826e-06,
+          "relative_to_latent_stay": 0.6822216131986115,
+          "predicted_xy_rmse": 0.6490085009585437,
+          "decoded_start_xy_rmse": 0.648988477476068,
+          "encoded_target_xy_rmse": 0.6152160819901062,
+          "physical_stay_rmse": 0.07985223829746246
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 6.004176611895673e-06,
+          "stay_latent_mse": 1.4525046935887076e-05,
+          "relative_to_latent_stay": 0.4133671056897679,
+          "predicted_xy_rmse": 0.702430285148348,
+          "decoded_start_xy_rmse": 0.6876492488149276,
+          "encoded_target_xy_rmse": 0.6152160819901062,
+          "physical_stay_rmse": 0.18347007036209106
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.765625,
+          "prediction_mse": 4.357426587375812e-05,
+          "stay_latent_mse": 0.0001388848468195647,
+          "relative_to_latent_stay": 0.31374384514653775,
+          "predicted_xy_rmse": 0.8657302243883865,
+          "decoded_start_xy_rmse": 0.8295868548227625,
+          "encoded_target_xy_rmse": 0.6152160819901062,
+          "physical_stay_rmse": 0.6368725895881653
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.80859375,
+          "prediction_mse": 0.0001385411887895316,
+          "stay_latent_mse": 0.0004951632581651211,
+          "relative_to_latent_stay": 0.2797889110409976,
+          "predicted_xy_rmse": 1.2118448469600225,
+          "decoded_start_xy_rmse": 1.237041395352116,
+          "encoded_target_xy_rmse": 0.6152160819901062,
+          "physical_stay_rmse": 1.1908327341079712
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-control-seed83",
+      "name": "dynamics-noise-control",
+      "seed": 83,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed83",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 2.1667146938852966e-06,
+          "stay_latent_mse": 3.4027802939817775e-06,
+          "relative_to_latent_stay": 0.6367483371516491,
+          "predicted_xy_rmse": 0.7232013360066651,
+          "decoded_start_xy_rmse": 0.7202494458688629,
+          "encoded_target_xy_rmse": 0.7049069374300112,
+          "physical_stay_rmse": 0.08516880869865417
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 4.042755790578667e-06,
+          "stay_latent_mse": 1.2097299077140633e-05,
+          "relative_to_latent_stay": 0.3341866448700076,
+          "predicted_xy_rmse": 0.7485079853976483,
+          "decoded_start_xy_rmse": 0.7453193581873327,
+          "encoded_target_xy_rmse": 0.7049069374300112,
+          "physical_stay_rmse": 0.1980515867471695
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.6953125,
+          "prediction_mse": 2.922830572060775e-05,
+          "stay_latent_mse": 0.00012161761696916074,
+          "relative_to_latent_stay": 0.240329538178826,
+          "predicted_xy_rmse": 0.9502365537318955,
+          "decoded_start_xy_rmse": 0.9925138100948828,
+          "encoded_target_xy_rmse": 0.7049069374300112,
+          "physical_stay_rmse": 0.7105042338371277
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.71484375,
+          "prediction_mse": 8.656604040879756e-05,
+          "stay_latent_mse": 0.00039012491470202804,
+          "relative_to_latent_stay": 0.22189313511267408,
+          "predicted_xy_rmse": 1.2833568041709082,
+          "decoded_start_xy_rmse": 1.4580785223935837,
+          "encoded_target_xy_rmse": 0.7049069374300112,
+          "physical_stay_rmse": 1.2758232355117798
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-control-seed84",
+      "name": "dynamics-noise-control",
+      "seed": 84,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed84",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 3.09784491037135e-06,
+          "stay_latent_mse": 5.130348654347472e-06,
+          "relative_to_latent_stay": 0.6038273651725848,
+          "predicted_xy_rmse": 0.514466157797135,
+          "decoded_start_xy_rmse": 0.5154790944378554,
+          "encoded_target_xy_rmse": 0.5003180604628625,
+          "physical_stay_rmse": 0.0808117538690567
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 5.889483873033896e-06,
+          "stay_latent_mse": 1.54012977873208e-05,
+          "relative_to_latent_stay": 0.3824017920023886,
+          "predicted_xy_rmse": 0.5197381004379913,
+          "decoded_start_xy_rmse": 0.5395029125177961,
+          "encoded_target_xy_rmse": 0.5003180604628625,
+          "physical_stay_rmse": 0.19337095320224762
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.578125,
+          "prediction_mse": 3.922128234989941e-05,
+          "stay_latent_mse": 0.0001444141671527177,
+          "relative_to_latent_stay": 0.27158888302435713,
+          "predicted_xy_rmse": 0.5673055375341907,
+          "decoded_start_xy_rmse": 0.78894406349199,
+          "encoded_target_xy_rmse": 0.5003180604628625,
+          "physical_stay_rmse": 0.6724053025245667
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.20703125,
+          "prediction_mse": 0.00011719137546606362,
+          "stay_latent_mse": 0.0004726618935819715,
+          "relative_to_latent_stay": 0.24793912320274591,
+          "predicted_xy_rmse": 0.7228525884162199,
+          "decoded_start_xy_rmse": 1.2638688875194277,
+          "encoded_target_xy_rmse": 0.5003180604628625,
+          "physical_stay_rmse": 1.253782033920288
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-control-seed85",
+      "name": "dynamics-noise-control",
+      "seed": 85,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed85",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 3.097022954534623e-06,
+          "stay_latent_mse": 4.369410817162134e-06,
+          "relative_to_latent_stay": 0.7087964680203938,
+          "predicted_xy_rmse": 0.8664932279112751,
+          "decoded_start_xy_rmse": 0.8695750266462695,
+          "encoded_target_xy_rmse": 0.8654024181869958,
+          "physical_stay_rmse": 0.08043629676103592
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 5.15258579980582e-06,
+          "stay_latent_mse": 9.869047062238678e-06,
+          "relative_to_latent_stay": 0.5220955749132902,
+          "predicted_xy_rmse": 0.8772528543276286,
+          "decoded_start_xy_rmse": 0.8791876025427113,
+          "encoded_target_xy_rmse": 0.8654024181869958,
+          "physical_stay_rmse": 0.16346924006938934
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.6875,
+          "prediction_mse": 3.2497860956937075e-05,
+          "stay_latent_mse": 7.794261910021305e-05,
+          "relative_to_latent_stay": 0.4169459704087394,
+          "predicted_xy_rmse": 0.9623347438751917,
+          "decoded_start_xy_rmse": 0.9442172544455834,
+          "encoded_target_xy_rmse": 0.8654024181869958,
+          "physical_stay_rmse": 0.5223784446716309
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.4140625,
+          "prediction_mse": 9.289193258155137e-05,
+          "stay_latent_mse": 0.00022767273185309023,
+          "relative_to_latent_stay": 0.40800640386522663,
+          "predicted_xy_rmse": 1.1179604534277598,
+          "decoded_start_xy_rmse": 1.0784977983849113,
+          "encoded_target_xy_rmse": 0.8654024181869958,
+          "physical_stay_rmse": 0.951653242111206
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-l1-seed80",
+      "name": "adjacency-l1",
+      "seed": 80,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed80",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 1.4376024637385854e-06,
+          "stay_latent_mse": 1.904641862893186e-06,
+          "relative_to_latent_stay": 0.75478886175212,
+          "predicted_xy_rmse": 2.816078118274618,
+          "decoded_start_xy_rmse": 2.8189282563187463,
+          "encoded_target_xy_rmse": 2.569350680067703,
+          "physical_stay_rmse": 0.08071338385343552
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 1.881900743683218e-06,
+          "stay_latent_mse": 3.533259132382227e-06,
+          "relative_to_latent_stay": 0.5326246032835936,
+          "predicted_xy_rmse": 3.042181322875074,
+          "decoded_start_xy_rmse": 3.0478865353944093,
+          "encoded_target_xy_rmse": 2.569350680067703,
+          "physical_stay_rmse": 0.18018928170204163
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.74609375,
+          "prediction_mse": 6.0612783272517845e-06,
+          "stay_latent_mse": 3.447756898822263e-05,
+          "relative_to_latent_stay": 0.1758035298057786,
+          "predicted_xy_rmse": 3.569666298517894,
+          "decoded_start_xy_rmse": 2.848345413085522,
+          "encoded_target_xy_rmse": 2.569350680067703,
+          "physical_stay_rmse": 0.6198806762695312
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.5,
+          "prediction_mse": 1.7324216969427653e-05,
+          "stay_latent_mse": 0.00014671171084046364,
+          "relative_to_latent_stay": 0.11808339545754631,
+          "predicted_xy_rmse": 5.195600276438265,
+          "decoded_start_xy_rmse": 2.8915908364446485,
+          "encoded_target_xy_rmse": 2.569350680067703,
+          "physical_stay_rmse": 1.211716890335083
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-l1-seed81",
+      "name": "adjacency-l1",
+      "seed": 81,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed81",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 1.483438950344862e-06,
+          "stay_latent_mse": 2.9248940336401574e-06,
+          "relative_to_latent_stay": 0.5071769894168295,
+          "predicted_xy_rmse": 0.3633763622895161,
+          "decoded_start_xy_rmse": 0.3793290397167276,
+          "encoded_target_xy_rmse": 0.3727004115033248,
+          "physical_stay_rmse": 0.08292681723833084
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 2.810396381391911e-06,
+          "stay_latent_mse": 9.91062552202493e-06,
+          "relative_to_latent_stay": 0.28357406655575995,
+          "predicted_xy_rmse": 0.3690684117203695,
+          "decoded_start_xy_rmse": 0.41472775709120946,
+          "encoded_target_xy_rmse": 0.3727004115033248,
+          "physical_stay_rmse": 0.18835841119289398
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.67578125,
+          "prediction_mse": 1.9820618035737425e-05,
+          "stay_latent_mse": 0.00010222126729786396,
+          "relative_to_latent_stay": 0.1938991616879671,
+          "predicted_xy_rmse": 0.40905091191897636,
+          "decoded_start_xy_rmse": 0.6916084248553023,
+          "encoded_target_xy_rmse": 0.3727004115033248,
+          "physical_stay_rmse": 0.6206839680671692
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 28.80078125,
+          "prediction_mse": 6.712033064104617e-05,
+          "stay_latent_mse": 0.0003457828424870968,
+          "relative_to_latent_stay": 0.1941112235594825,
+          "predicted_xy_rmse": 0.5838208891934202,
+          "decoded_start_xy_rmse": 1.2235415175700453,
+          "encoded_target_xy_rmse": 0.3727004115033248,
+          "physical_stay_rmse": 1.1564359664916992
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-l1-seed82",
+      "name": "adjacency-l1",
+      "seed": 82,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed82",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 1.3874075648345752e-06,
+          "stay_latent_mse": 2.3353313736151904e-06,
+          "relative_to_latent_stay": 0.594094517167733,
+          "predicted_xy_rmse": 0.6686533621132542,
+          "decoded_start_xy_rmse": 0.6717364145893653,
+          "encoded_target_xy_rmse": 0.6762306770028238,
+          "physical_stay_rmse": 0.07985223829746246
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 1.8083338773067226e-06,
+          "stay_latent_mse": 6.422800197469769e-06,
+          "relative_to_latent_stay": 0.2815491408278755,
+          "predicted_xy_rmse": 0.6689674510059997,
+          "decoded_start_xy_rmse": 0.6811580570206445,
+          "encoded_target_xy_rmse": 0.6762306770028238,
+          "physical_stay_rmse": 0.18347007036209106
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.765625,
+          "prediction_mse": 5.883704034204129e-06,
+          "stay_latent_mse": 6.0683923948090523e-05,
+          "relative_to_latent_stay": 0.09695655210492145,
+          "predicted_xy_rmse": 0.6535661291571784,
+          "decoded_start_xy_rmse": 0.8726271837435576,
+          "encoded_target_xy_rmse": 0.6762306770028238,
+          "physical_stay_rmse": 0.6368725895881653
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.80859375,
+          "prediction_mse": 1.5699220966780558e-05,
+          "stay_latent_mse": 0.00020809067063964903,
+          "relative_to_latent_stay": 0.07544413653203572,
+          "predicted_xy_rmse": 0.6533492176544985,
+          "decoded_start_xy_rmse": 1.2745052460322415,
+          "encoded_target_xy_rmse": 0.6762306770028238,
+          "physical_stay_rmse": 1.1908327341079712
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-l1-seed83",
+      "name": "adjacency-l1",
+      "seed": 83,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed83",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 1.5131932968870387e-06,
+          "stay_latent_mse": 2.4306866635015467e-06,
+          "relative_to_latent_stay": 0.6225373757994768,
+          "predicted_xy_rmse": 0.5387497897350736,
+          "decoded_start_xy_rmse": 0.5429820578875911,
+          "encoded_target_xy_rmse": 0.5141258566450103,
+          "physical_stay_rmse": 0.08516880869865417
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 2.4598673462605802e-06,
+          "stay_latent_mse": 6.6000575316138566e-06,
+          "relative_to_latent_stay": 0.37270392484883225,
+          "predicted_xy_rmse": 0.5613803804190669,
+          "decoded_start_xy_rmse": 0.5651845373427378,
+          "encoded_target_xy_rmse": 0.5141258566450103,
+          "physical_stay_rmse": 0.1980515867471695
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.6953125,
+          "prediction_mse": 1.5176909073488787e-05,
+          "stay_latent_mse": 6.765022408217192e-05,
+          "relative_to_latent_stay": 0.22434381082099633,
+          "predicted_xy_rmse": 0.820346384278198,
+          "decoded_start_xy_rmse": 0.8599195677540432,
+          "encoded_target_xy_rmse": 0.5141258566450103,
+          "physical_stay_rmse": 0.7105042338371277
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.71484375,
+          "prediction_mse": 4.814204658032395e-05,
+          "stay_latent_mse": 0.00021644801017828286,
+          "relative_to_latent_stay": 0.2224185223078306,
+          "predicted_xy_rmse": 1.2239441527526245,
+          "decoded_start_xy_rmse": 1.3866246484364138,
+          "encoded_target_xy_rmse": 0.5141258566450103,
+          "physical_stay_rmse": 1.2758232355117798
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-l1-seed84",
+      "name": "adjacency-l1",
+      "seed": 84,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed84",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 1.6375367977161659e-06,
+          "stay_latent_mse": 2.791358383547049e-06,
+          "relative_to_latent_stay": 0.586645128539642,
+          "predicted_xy_rmse": 0.35799687867285607,
+          "decoded_start_xy_rmse": 0.3552974405665672,
+          "encoded_target_xy_rmse": 0.31756382127069943,
+          "physical_stay_rmse": 0.0808117538690567
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 2.262132056785049e-06,
+          "stay_latent_mse": 8.110197995847557e-06,
+          "relative_to_latent_stay": 0.2789243934541754,
+          "predicted_xy_rmse": 0.3854573226621598,
+          "decoded_start_xy_rmse": 0.3694480721547172,
+          "encoded_target_xy_rmse": 0.31756382127069943,
+          "physical_stay_rmse": 0.19337095320224762
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.578125,
+          "prediction_mse": 7.885802915552631e-06,
+          "stay_latent_mse": 7.723248563706875e-05,
+          "relative_to_latent_stay": 0.10210474064773252,
+          "predicted_xy_rmse": 0.6084124145384755,
+          "decoded_start_xy_rmse": 0.732961060558864,
+          "encoded_target_xy_rmse": 0.31756382127069943,
+          "physical_stay_rmse": 0.6724053025245667
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.20703125,
+          "prediction_mse": 2.1404768631327897e-05,
+          "stay_latent_mse": 0.0002696643932722509,
+          "relative_to_latent_stay": 0.07937558374537726,
+          "predicted_xy_rmse": 0.8751713242131193,
+          "decoded_start_xy_rmse": 1.2921104002867863,
+          "encoded_target_xy_rmse": 0.31756382127069943,
+          "physical_stay_rmse": 1.253782033920288
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-l1-seed85",
+      "name": "adjacency-l1",
+      "seed": 85,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed85",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 1.0894927982008085e-06,
+          "stay_latent_mse": 2.0136415059823776e-06,
+          "relative_to_latent_stay": 0.5410559898393071,
+          "predicted_xy_rmse": 2.1171878256719494,
+          "decoded_start_xy_rmse": 2.262603465385844,
+          "encoded_target_xy_rmse": 2.0731619083297255,
+          "physical_stay_rmse": 0.08043629676103592
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 1.688852762526949e-06,
+          "stay_latent_mse": 5.1193756007705815e-06,
+          "relative_to_latent_stay": 0.3298942867705856,
+          "predicted_xy_rmse": 1.6691677197020325,
+          "decoded_start_xy_rmse": 2.0991541851728366,
+          "encoded_target_xy_rmse": 2.0731619083297255,
+          "physical_stay_rmse": 0.16346924006938934
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.6875,
+          "prediction_mse": 5.485278961714357e-06,
+          "stay_latent_mse": 4.808460653293878e-05,
+          "relative_to_latent_stay": 0.11407557131525756,
+          "predicted_xy_rmse": 2.8417814824570478,
+          "decoded_start_xy_rmse": 2.320526002578951,
+          "encoded_target_xy_rmse": 2.0731619083297255,
+          "physical_stay_rmse": 0.5223784446716309
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.4140625,
+          "prediction_mse": 1.1732380698958877e-05,
+          "stay_latent_mse": 0.00017908659356180578,
+          "relative_to_latent_stay": 0.06551233381358519,
+          "predicted_xy_rmse": 5.251315002332203,
+          "decoded_start_xy_rmse": 2.281886480544183,
+          "encoded_target_xy_rmse": 2.0731619083297255,
+          "physical_stay_rmse": 0.951653242111206
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-seed80",
+      "name": "adjacency-noise",
+      "seed": 80,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed80",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 6.356733592838282e-06,
+          "stay_latent_mse": 3.901328454958275e-06,
+          "relative_to_latent_stay": 1.629376676746964,
+          "predicted_xy_rmse": 0.4882180309248032,
+          "decoded_start_xy_rmse": 0.17781439903982368,
+          "encoded_target_xy_rmse": 0.1485016815683692,
+          "physical_stay_rmse": 0.08071338385343552
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 1.0610294339130633e-05,
+          "stay_latent_mse": 1.0184857273998205e-05,
+          "relative_to_latent_stay": 1.0417715294075414,
+          "predicted_xy_rmse": 0.5345312251283407,
+          "decoded_start_xy_rmse": 0.2412114474321396,
+          "encoded_target_xy_rmse": 0.1485016815683692,
+          "physical_stay_rmse": 0.18018928170204163
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.74609375,
+          "prediction_mse": 5.457675433717668e-05,
+          "stay_latent_mse": 0.00011560770508367568,
+          "relative_to_latent_stay": 0.47208578613055746,
+          "predicted_xy_rmse": 0.47811265424656646,
+          "decoded_start_xy_rmse": 0.6373386653148436,
+          "encoded_target_xy_rmse": 0.1485016815683692,
+          "physical_stay_rmse": 0.6198806762695312
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.5,
+          "prediction_mse": 0.0001818276650737971,
+          "stay_latent_mse": 0.00046330911573022604,
+          "relative_to_latent_stay": 0.3924543223960028,
+          "predicted_xy_rmse": 0.4406102438613248,
+          "decoded_start_xy_rmse": 1.2148533687306082,
+          "encoded_target_xy_rmse": 0.1485016815683692,
+          "physical_stay_rmse": 1.211716890335083
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-seed81",
+      "name": "adjacency-noise",
+      "seed": 81,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed81",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 4.574369995680172e-06,
+          "stay_latent_mse": 5.336259164323565e-06,
+          "relative_to_latent_stay": 0.8572241067793095,
+          "predicted_xy_rmse": 0.7402579028024078,
+          "decoded_start_xy_rmse": 0.7019457417087378,
+          "encoded_target_xy_rmse": 0.6903736804100504,
+          "physical_stay_rmse": 0.08292681723833084
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 1.0835416105692275e-05,
+          "stay_latent_mse": 1.736675767460838e-05,
+          "relative_to_latent_stay": 0.6239170436249329,
+          "predicted_xy_rmse": 0.7766951140202775,
+          "decoded_start_xy_rmse": 0.7114052794097075,
+          "encoded_target_xy_rmse": 0.6903736804100504,
+          "physical_stay_rmse": 0.18835841119289398
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.67578125,
+          "prediction_mse": 5.657921064994298e-05,
+          "stay_latent_mse": 0.00014095139340497553,
+          "relative_to_latent_stay": 0.4014093744173355,
+          "predicted_xy_rmse": 0.7190696570554053,
+          "decoded_start_xy_rmse": 0.8572515221227363,
+          "encoded_target_xy_rmse": 0.6903736804100504,
+          "physical_stay_rmse": 0.6206839680671692
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 28.80078125,
+          "prediction_mse": 0.0001567130966577679,
+          "stay_latent_mse": 0.00042510608909651637,
+          "relative_to_latent_stay": 0.3686446764167324,
+          "predicted_xy_rmse": 0.6812003237077915,
+          "decoded_start_xy_rmse": 1.2518238360744707,
+          "encoded_target_xy_rmse": 0.6903736804100504,
+          "physical_stay_rmse": 1.1564359664916992
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-seed82",
+      "name": "adjacency-noise",
+      "seed": 82,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed82",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 4.124416136619402e-06,
+          "stay_latent_mse": 2.744908670138102e-06,
+          "relative_to_latent_stay": 1.502569532272232,
+          "predicted_xy_rmse": 0.794822073999164,
+          "decoded_start_xy_rmse": 0.5042507672307203,
+          "encoded_target_xy_rmse": 0.454900658506583,
+          "physical_stay_rmse": 0.07985223829746246
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 2.1250751160550863e-05,
+          "stay_latent_mse": 8.525030352757312e-06,
+          "relative_to_latent_stay": 2.4927478590944347,
+          "predicted_xy_rmse": 0.9023224410530414,
+          "decoded_start_xy_rmse": 0.5558409593146109,
+          "encoded_target_xy_rmse": 0.454900658506583,
+          "physical_stay_rmse": 0.18347007036209106
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.765625,
+          "prediction_mse": 7.650477346032858e-05,
+          "stay_latent_mse": 9.554325515637174e-05,
+          "relative_to_latent_stay": 0.8007344247913297,
+          "predicted_xy_rmse": 1.117570530941483,
+          "decoded_start_xy_rmse": 0.7546270524187164,
+          "encoded_target_xy_rmse": 0.454900658506583,
+          "physical_stay_rmse": 0.6368725895881653
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.80859375,
+          "prediction_mse": 0.00014332460705190897,
+          "stay_latent_mse": 0.00033163136686198413,
+          "relative_to_latent_stay": 0.4321804912728799,
+          "predicted_xy_rmse": 1.2012863091131898,
+          "decoded_start_xy_rmse": 1.1954186811814336,
+          "encoded_target_xy_rmse": 0.454900658506583,
+          "physical_stay_rmse": 1.1908327341079712
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-seed83",
+      "name": "adjacency-noise",
+      "seed": 83,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed83",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 2.126784693246009e-06,
+          "stay_latent_mse": 2.7153216706210515e-06,
+          "relative_to_latent_stay": 0.7832533125843496,
+          "predicted_xy_rmse": 0.6553138181226946,
+          "decoded_start_xy_rmse": 0.6284741179169542,
+          "encoded_target_xy_rmse": 0.6007507209645203,
+          "physical_stay_rmse": 0.08516880869865417
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 5.189319381315727e-06,
+          "stay_latent_mse": 1.0058856787509285e-05,
+          "relative_to_latent_stay": 0.515895542698215,
+          "predicted_xy_rmse": 0.729390772600432,
+          "decoded_start_xy_rmse": 0.6674487120720755,
+          "encoded_target_xy_rmse": 0.6007507209645203,
+          "physical_stay_rmse": 0.1980515867471695
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.6953125,
+          "prediction_mse": 4.607934533851221e-05,
+          "stay_latent_mse": 0.00011011671449523419,
+          "relative_to_latent_stay": 0.41845913719580247,
+          "predicted_xy_rmse": 0.7441835891988318,
+          "decoded_start_xy_rmse": 0.8951645807493641,
+          "encoded_target_xy_rmse": 0.6007507209645203,
+          "physical_stay_rmse": 0.7105042338371277
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.71484375,
+          "prediction_mse": 0.00014712708070874214,
+          "stay_latent_mse": 0.00034158979542553425,
+          "relative_to_latent_stay": 0.4307127516074042,
+          "predicted_xy_rmse": 0.8153189422644445,
+          "decoded_start_xy_rmse": 1.3478652647705012,
+          "encoded_target_xy_rmse": 0.6007507209645203,
+          "physical_stay_rmse": 1.2758232355117798
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-seed84",
+      "name": "adjacency-noise",
+      "seed": 84,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed84",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 2.480654075043276e-06,
+          "stay_latent_mse": 3.3127244023489766e-06,
+          "relative_to_latent_stay": 0.7488259733542281,
+          "predicted_xy_rmse": 1.754837114165055,
+          "decoded_start_xy_rmse": 0.5092723711016983,
+          "encoded_target_xy_rmse": 0.357551347908232,
+          "physical_stay_rmse": 0.0808117538690567
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 9.756182407727465e-06,
+          "stay_latent_mse": 1.4769298104511108e-05,
+          "relative_to_latent_stay": 0.660571838870769,
+          "predicted_xy_rmse": 2.9999913243019,
+          "decoded_start_xy_rmse": 0.5037972111319162,
+          "encoded_target_xy_rmse": 0.357551347908232,
+          "physical_stay_rmse": 0.19337095320224762
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.578125,
+          "prediction_mse": 3.84588201995939e-05,
+          "stay_latent_mse": 0.00015246117254719138,
+          "relative_to_latent_stay": 0.2522532101587355,
+          "predicted_xy_rmse": 3.5442047915991255,
+          "decoded_start_xy_rmse": 0.7741455272988667,
+          "encoded_target_xy_rmse": 0.357551347908232,
+          "physical_stay_rmse": 0.6724053025245667
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.20703125,
+          "prediction_mse": 0.00010545593977440149,
+          "stay_latent_mse": 0.0004922793596051633,
+          "relative_to_latent_stay": 0.2142197061826506,
+          "predicted_xy_rmse": 3.5405535633051706,
+          "decoded_start_xy_rmse": 1.2521614449487466,
+          "encoded_target_xy_rmse": 0.357551347908232,
+          "physical_stay_rmse": 1.253782033920288
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-seed85",
+      "name": "adjacency-noise",
+      "seed": 85,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed85",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 3.512916919135023e-06,
+          "stay_latent_mse": 2.9790858206979465e-06,
+          "relative_to_latent_stay": 1.179192923791638,
+          "predicted_xy_rmse": 0.8203923398038402,
+          "decoded_start_xy_rmse": 0.5960389821017122,
+          "encoded_target_xy_rmse": 0.5701541880234671,
+          "physical_stay_rmse": 0.08043629676103592
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 1.0381669198977761e-05,
+          "stay_latent_mse": 9.238923666998744e-06,
+          "relative_to_latent_stay": 1.1236881668435992,
+          "predicted_xy_rmse": 1.2143045382816444,
+          "decoded_start_xy_rmse": 0.6010823849681068,
+          "encoded_target_xy_rmse": 0.5701541880234671,
+          "physical_stay_rmse": 0.16346924006938934
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.6875,
+          "prediction_mse": 3.320368705317378e-05,
+          "stay_latent_mse": 7.874135917518288e-05,
+          "relative_to_latent_stay": 0.4216803900895665,
+          "predicted_xy_rmse": 1.4212534174879854,
+          "decoded_start_xy_rmse": 0.7439610323982897,
+          "encoded_target_xy_rmse": 0.5701541880234671,
+          "physical_stay_rmse": 0.5223784446716309
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.4140625,
+          "prediction_mse": 8.728903048904613e-05,
+          "stay_latent_mse": 0.00023784062068443745,
+          "relative_to_latent_stay": 0.3670064021774464,
+          "predicted_xy_rmse": 1.5169321569643863,
+          "decoded_start_xy_rmse": 1.0628779464944864,
+          "encoded_target_xy_rmse": 0.5701541880234671,
+          "physical_stay_rmse": 0.951653242111206
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-control-seed80",
+      "name": "adjacency-noise-control",
+      "seed": 80,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed80",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 1.974702172446996e-06,
+          "stay_latent_mse": 3.691339543365757e-06,
+          "relative_to_latent_stay": 0.5349554407683845,
+          "predicted_xy_rmse": 0.2134834077240437,
+          "decoded_start_xy_rmse": 0.2318196185290393,
+          "encoded_target_xy_rmse": 0.19471252484730647,
+          "physical_stay_rmse": 0.08071338385343552
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 3.861875939037418e-06,
+          "stay_latent_mse": 1.044856799126137e-05,
+          "relative_to_latent_stay": 0.36960815513353473,
+          "predicted_xy_rmse": 0.2039425593729354,
+          "decoded_start_xy_rmse": 0.2649823923743026,
+          "encoded_target_xy_rmse": 0.19471252484730647,
+          "physical_stay_rmse": 0.18018928170204163
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.74609375,
+          "prediction_mse": 2.1753075998276472e-05,
+          "stay_latent_mse": 0.00011754681327147409,
+          "relative_to_latent_stay": 0.18505883224616046,
+          "predicted_xy_rmse": 0.3932863002956572,
+          "decoded_start_xy_rmse": 0.6466873794267212,
+          "encoded_target_xy_rmse": 0.19471252484730647,
+          "physical_stay_rmse": 0.6198806762695312
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.5,
+          "prediction_mse": 5.3031260904390365e-05,
+          "stay_latent_mse": 0.0004768349463120103,
+          "relative_to_latent_stay": 0.11121513075866318,
+          "predicted_xy_rmse": 0.6905881161745175,
+          "decoded_start_xy_rmse": 1.2120098591776736,
+          "encoded_target_xy_rmse": 0.19471252484730647,
+          "physical_stay_rmse": 1.211716890335083
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-control-seed81",
+      "name": "adjacency-noise-control",
+      "seed": 81,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed81",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 2.2977419575909153e-06,
+          "stay_latent_mse": 4.604613422998227e-06,
+          "relative_to_latent_stay": 0.49900865643022296,
+          "predicted_xy_rmse": 0.6127532647382943,
+          "decoded_start_xy_rmse": 0.6179805618525454,
+          "encoded_target_xy_rmse": 0.623166968369534,
+          "physical_stay_rmse": 0.08292681723833084
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 8.393202733714134e-06,
+          "stay_latent_mse": 1.6730777133489028e-05,
+          "relative_to_latent_stay": 0.5016624551715501,
+          "predicted_xy_rmse": 0.6345683591532726,
+          "decoded_start_xy_rmse": 0.660124334250353,
+          "encoded_target_xy_rmse": 0.623166968369534,
+          "physical_stay_rmse": 0.18835841119289398
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.67578125,
+          "prediction_mse": 7.016379095148295e-05,
+          "stay_latent_mse": 0.00012596623855642974,
+          "relative_to_latent_stay": 0.5570047320262828,
+          "predicted_xy_rmse": 0.8600760213126318,
+          "decoded_start_xy_rmse": 0.8196379990016046,
+          "encoded_target_xy_rmse": 0.623166968369534,
+          "physical_stay_rmse": 0.6206839680671692
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 28.80078125,
+          "prediction_mse": 0.0002119273558491841,
+          "stay_latent_mse": 0.0003906195343006402,
+          "relative_to_latent_stay": 0.5425416223195696,
+          "predicted_xy_rmse": 1.4170722241703197,
+          "decoded_start_xy_rmse": 1.2184985486083038,
+          "encoded_target_xy_rmse": 0.623166968369534,
+          "physical_stay_rmse": 1.1564359664916992
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-control-seed82",
+      "name": "adjacency-noise-control",
+      "seed": 82,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed82",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 1.9129988686472643e-06,
+          "stay_latent_mse": 2.72258239419898e-06,
+          "relative_to_latent_stay": 0.7026413131603658,
+          "predicted_xy_rmse": 0.7831657446667164,
+          "decoded_start_xy_rmse": 0.7900007452259649,
+          "encoded_target_xy_rmse": 0.6983961251347232,
+          "physical_stay_rmse": 0.07985223829746246
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 3.874835783790331e-06,
+          "stay_latent_mse": 8.260265531134792e-06,
+          "relative_to_latent_stay": 0.46909336863145706,
+          "predicted_xy_rmse": 0.7445009567787355,
+          "decoded_start_xy_rmse": 0.7559400442440378,
+          "encoded_target_xy_rmse": 0.6983961251347232,
+          "physical_stay_rmse": 0.18347007036209106
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.765625,
+          "prediction_mse": 2.8160817237221636e-05,
+          "stay_latent_mse": 9.335063805337995e-05,
+          "relative_to_latent_stay": 0.30166711041780625,
+          "predicted_xy_rmse": 0.8966777741367514,
+          "decoded_start_xy_rmse": 0.8899070079735503,
+          "encoded_target_xy_rmse": 0.6983961251347232,
+          "physical_stay_rmse": 0.6368725895881653
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.80859375,
+          "prediction_mse": 8.467141014989465e-05,
+          "stay_latent_mse": 0.00032405200181528926,
+          "relative_to_latent_stay": 0.26128957598033187,
+          "predicted_xy_rmse": 1.3342399288156017,
+          "decoded_start_xy_rmse": 1.3170684824103003,
+          "encoded_target_xy_rmse": 0.6983961251347232,
+          "physical_stay_rmse": 1.1908327341079712
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-control-seed83",
+      "name": "adjacency-noise-control",
+      "seed": 83,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed83",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 1.2178174984001089e-06,
+          "stay_latent_mse": 2.5177851057378575e-06,
+          "relative_to_latent_stay": 0.4836860364392447,
+          "predicted_xy_rmse": 0.3297874591019643,
+          "decoded_start_xy_rmse": 0.33459983525699993,
+          "encoded_target_xy_rmse": 0.3108412025069042,
+          "physical_stay_rmse": 0.08516880869865417
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 3.189531071257079e-06,
+          "stay_latent_mse": 1.0240841220365837e-05,
+          "relative_to_latent_stay": 0.3114520577581163,
+          "predicted_xy_rmse": 0.34550462839439616,
+          "decoded_start_xy_rmse": 0.36841769292516335,
+          "encoded_target_xy_rmse": 0.3108412025069042,
+          "physical_stay_rmse": 0.1980515867471695
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.6953125,
+          "prediction_mse": 2.914782817242667e-05,
+          "stay_latent_mse": 0.00011265164357610047,
+          "relative_to_latent_stay": 0.25874303514032804,
+          "predicted_xy_rmse": 0.6840382994223893,
+          "decoded_start_xy_rmse": 0.7276724620359305,
+          "encoded_target_xy_rmse": 0.3108412025069042,
+          "physical_stay_rmse": 0.7105042338371277
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.71484375,
+          "prediction_mse": 9.857347322395071e-05,
+          "stay_latent_mse": 0.00035138247767463326,
+          "relative_to_latent_stay": 0.2805304176699044,
+          "predicted_xy_rmse": 1.2547357037497484,
+          "decoded_start_xy_rmse": 1.2514403180246092,
+          "encoded_target_xy_rmse": 0.3108412025069042,
+          "physical_stay_rmse": 1.2758232355117798
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-control-seed84",
+      "name": "adjacency-noise-control",
+      "seed": 84,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed84",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 1.8241811403640895e-06,
+          "stay_latent_mse": 4.160605385550298e-06,
+          "relative_to_latent_stay": 0.4384412774879914,
+          "predicted_xy_rmse": 0.6487555576228836,
+          "decoded_start_xy_rmse": 0.6506667566000434,
+          "encoded_target_xy_rmse": 0.6353331580465851,
+          "physical_stay_rmse": 0.0808117538690567
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 7.70615861256374e-06,
+          "stay_latent_mse": 1.8551469111116603e-05,
+          "relative_to_latent_stay": 0.41539344223396174,
+          "predicted_xy_rmse": 0.6514659665738504,
+          "decoded_start_xy_rmse": 0.6660290258306727,
+          "encoded_target_xy_rmse": 0.6353331580465851,
+          "physical_stay_rmse": 0.19337095320224762
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.578125,
+          "prediction_mse": 6.310598109848797e-05,
+          "stay_latent_mse": 0.00019074037845712155,
+          "relative_to_latent_stay": 0.3308475195915279,
+          "predicted_xy_rmse": 0.7335988531748073,
+          "decoded_start_xy_rmse": 0.8366549744211538,
+          "encoded_target_xy_rmse": 0.6353331580465851,
+          "physical_stay_rmse": 0.6724053025245667
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.20703125,
+          "prediction_mse": 0.00019824638729915023,
+          "stay_latent_mse": 0.0006096124998293817,
+          "relative_to_latent_stay": 0.32520066001703607,
+          "predicted_xy_rmse": 0.9677703678868109,
+          "decoded_start_xy_rmse": 1.298272521272382,
+          "encoded_target_xy_rmse": 0.6353331580465851,
+          "physical_stay_rmse": 1.253782033920288
+        }
+      ]
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-control-seed85",
+      "name": "adjacency-noise-control",
+      "seed": 85,
+      "reference": "runs/compression-confirm-controls-20261111/adjacency-base-seed85",
+      "metrics": [
+        {
+          "horizon": 1,
+          "mean_actual_lag": 1.0,
+          "prediction_mse": 1.9043006886931835e-06,
+          "stay_latent_mse": 3.058738684558193e-06,
+          "relative_to_latent_stay": 0.6225771094166687,
+          "predicted_xy_rmse": 0.9934120566515909,
+          "decoded_start_xy_rmse": 0.9994851235387976,
+          "encoded_target_xy_rmse": 0.9019099831803131,
+          "physical_stay_rmse": 0.08043629676103592
+        },
+        {
+          "horizon": 4,
+          "mean_actual_lag": 4.0,
+          "prediction_mse": 3.912711235898314e-06,
+          "stay_latent_mse": 9.220760148309637e-06,
+          "relative_to_latent_stay": 0.42433716667227245,
+          "predicted_xy_rmse": 0.9056306524509246,
+          "decoded_start_xy_rmse": 0.923994916646182,
+          "encoded_target_xy_rmse": 0.9019099831803131,
+          "physical_stay_rmse": 0.16346924006938934
+        },
+        {
+          "horizon": 16,
+          "mean_actual_lag": 15.6875,
+          "prediction_mse": 2.0213357856846415e-05,
+          "stay_latent_mse": 8.128902118187398e-05,
+          "relative_to_latent_stay": 0.24866036720532733,
+          "predicted_xy_rmse": 0.9201644989072082,
+          "decoded_start_xy_rmse": 1.0047904779629113,
+          "encoded_target_xy_rmse": 0.9019099831803131,
+          "physical_stay_rmse": 0.5223784446716309
+        },
+        {
+          "horizon": 32,
+          "mean_actual_lag": 29.4140625,
+          "prediction_mse": 6.512494292110205e-05,
+          "stay_latent_mse": 0.0002426884020678699,
+          "relative_to_latent_stay": 0.2683479818820897,
+          "predicted_xy_rmse": 0.955186598118281,
+          "decoded_start_xy_rmse": 1.1518134993331979,
+          "encoded_target_xy_rmse": 0.9019099831803131,
+          "physical_stay_rmse": 0.951653242111206
+        }
+      ]
+    }
+  ]
+}

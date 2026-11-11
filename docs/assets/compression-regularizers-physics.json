@@ -1,0 +1,6079 @@
+[
+  {
+    "root": "runs/compression-regularizers-20261111",
+    "manifest": {
+      "arms": [
+        {
+          "name": "dynamics-base",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25
+        },
+        {
+          "name": "dynamics-margin1",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 1
+        },
+        {
+          "name": "dynamics-l1-0.0001",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-l1-0.0001.json"
+        },
+        {
+          "name": "dynamics-l1-0.0003",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-l1-0.0003.json"
+        },
+        {
+          "name": "dynamics-l1-0.001",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-l1-0.001.json"
+        },
+        {
+          "name": "dynamics-l1-0.003",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-l1-0.003.json"
+        },
+        {
+          "name": "dynamics-l1-0.01",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-l1-0.01.json"
+        },
+        {
+          "name": "dynamics-l1only-0.001",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "latent_l2": 0,
+          "experiment_spec": "configs/compression-20261111/dynamics-l1only-0.001.json"
+        },
+        {
+          "name": "dynamics-l1only-0.003",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "latent_l2": 0,
+          "experiment_spec": "configs/compression-20261111/dynamics-l1only-0.003.json"
+        },
+        {
+          "name": "dynamics-l1only-0.01",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "latent_l2": 0,
+          "experiment_spec": "configs/compression-20261111/dynamics-l1only-0.01.json"
+        },
+        {
+          "name": "dynamics-bound",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-bound.json"
+        },
+        {
+          "name": "dynamics-noise-0.01",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-noise-0.01.json"
+        },
+        {
+          "name": "dynamics-noise-0.03",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-noise-0.03.json"
+        },
+        {
+          "name": "dynamics-noise-0.1",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-noise-0.1.json"
+        },
+        {
+          "name": "dynamics-noise-0.3",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-noise-0.3.json"
+        },
+        {
+          "name": "dynamics-tasknoise-0.1",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-tasknoise-0.1.json"
+        },
+        {
+          "name": "adjacency-base",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25
+        },
+        {
+          "name": "adjacency-margin1",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 1
+        },
+        {
+          "name": "adjacency-l1-0.0001",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-l1-0.0001.json"
+        },
+        {
+          "name": "adjacency-l1-0.0003",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-l1-0.0003.json"
+        },
+        {
+          "name": "adjacency-l1-0.001",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-l1-0.001.json"
+        },
+        {
+          "name": "adjacency-l1-0.003",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-l1-0.003.json"
+        },
+        {
+          "name": "adjacency-l1-0.01",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-l1-0.01.json"
+        },
+        {
+          "name": "adjacency-l1only-0.001",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "latent_l2": 0,
+          "experiment_spec": "configs/compression-20261111/adjacency-l1only-0.001.json"
+        },
+        {
+          "name": "adjacency-l1only-0.003",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "latent_l2": 0,
+          "experiment_spec": "configs/compression-20261111/adjacency-l1only-0.003.json"
+        },
+        {
+          "name": "adjacency-l1only-0.01",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "latent_l2": 0,
+          "experiment_spec": "configs/compression-20261111/adjacency-l1only-0.01.json"
+        },
+        {
+          "name": "adjacency-bound",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-bound.json"
+        },
+        {
+          "name": "adjacency-noise-0.01",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-noise-0.01.json"
+        },
+        {
+          "name": "adjacency-noise-0.03",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-noise-0.03.json"
+        },
+        {
+          "name": "adjacency-noise-0.1",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-noise-0.1.json"
+        },
+        {
+          "name": "adjacency-noise-0.3",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-noise-0.3.json"
+        },
+        {
+          "name": "adjacency-tasknoise-0.1",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-tasknoise-0.1.json"
+        }
+      ],
+      "seeds": [
+        70,
+        71
+      ],
+      "blocks": 20,
+      "created_unix": 1794428106.157603,
+      "workers": 5
+    },
+    "summary": [
+      {
+        "name": "dynamics-base",
+        "coverage_k1": {
+          "mean": 0.8333333333333334,
+          "values": [
+            0.8680555555555556,
+            0.7986111111111112
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7873263888888888,
+          "values": [
+            0.828125,
+            0.7465277777777778
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.7604166666666667,
+          "values": [
+            0.8025173611111112,
+            0.7183159722222222
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.7216796875,
+          "values": [
+            0.7623697916666666,
+            0.6809895833333334
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.268955078125,
+          "values": [
+            0.2888037109375,
+            0.2491064453125
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.7405598958333334,
+          "values": [
+            0.7835286458333334,
+            0.6975911458333334
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07451250000000001,
+          "values": [
+            0.0732125,
+            0.0758125
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-margin1",
+        "coverage_k1": {
+          "mean": 0.6423611111111112,
+          "values": [
+            0.7013888888888888,
+            0.5833333333333334
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.5746527777777778,
+          "values": [
+            0.6371527777777778,
+            0.5121527777777778
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.5308159722222222,
+          "values": [
+            0.6011284722222222,
+            0.4605034722222222
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.49826388888888884,
+          "values": [
+            0.5762803819444444,
+            0.4202473958333333
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.16040310329861113,
+          "values": [
+            0.18850857204861113,
+            0.13229763454861113
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.5134006076388888,
+          "values": [
+            0.5875651041666666,
+            0.4392361111111111
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07848125,
+          "values": [
+            0.0708375,
+            0.086125
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-l1-0.0001",
+        "coverage_k1": {
+          "mean": 0.7256944444444444,
+          "values": [
+            0.6805555555555556,
+            0.7708333333333334
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7022569444444444,
+          "values": [
+            0.6684027777777778,
+            0.7361111111111112
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.689453125,
+          "values": [
+            0.6592881944444444,
+            0.7196180555555556
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.6714409722222222,
+          "values": [
+            0.6434461805555556,
+            0.6994357638888888
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.25439697265625,
+          "values": [
+            0.23300075954861113,
+            0.27579318576388884
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.6812065972222223,
+          "values": [
+            0.6511501736111112,
+            0.7112630208333334
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07851875,
+          "values": [
+            0.0848375,
+            0.0722
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-l1-0.0003",
+        "coverage_k1": {
+          "mean": 0.125,
+          "values": [
+            0.14583333333333334,
+            0.10416666666666667
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.09375,
+          "values": [
+            0.10069444444444445,
+            0.08680555555555555
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.07552083333333334,
+          "values": [
+            0.0802951388888889,
+            0.07074652777777778
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.06575520833333334,
+          "values": [
+            0.06944444444444445,
+            0.062065972222222224
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.05238498263888889,
+          "values": [
+            0.056315646701388895,
+            0.048454318576388884
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.06928168402777778,
+          "values": [
+            0.0732421875,
+            0.06532118055555555
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07115625,
+          "values": [
+            0.086725,
+            0.0555875
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-l1-0.001",
+        "coverage_k1": {
+          "mean": 0.1111111111111111,
+          "values": [
+            0.10416666666666667,
+            0.11805555555555555
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.08246527777777779,
+          "values": [
+            0.0763888888888889,
+            0.08854166666666667
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.07269965277777778,
+          "values": [
+            0.06597222222222222,
+            0.07942708333333333
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.06412760416666667,
+          "values": [
+            0.05740017361111111,
+            0.07085503472222222
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.04937527126736111,
+          "values": [
+            0.04130750868055555,
+            0.05744303385416667
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.06754557291666666,
+          "values": [
+            0.060980902777777776,
+            0.07411024305555555
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.05996875,
+          "values": [
+            0.0722875,
+            0.04765
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-l1-0.003",
+        "coverage_k1": {
+          "mean": 0.1388888888888889,
+          "values": [
+            0.1111111111111111,
+            0.16666666666666666
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.09809027777777779,
+          "values": [
+            0.0763888888888889,
+            0.11979166666666667
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.08116319444444445,
+          "values": [
+            0.06293402777777778,
+            0.0993923611111111
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.07118055555555555,
+          "values": [
+            0.05544704861111111,
+            0.0869140625
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.05424262152777778,
+          "values": [
+            0.04501030815972222,
+            0.06347493489583333
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.07476128472222222,
+          "values": [
+            0.05772569444444445,
+            0.091796875
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.06783125,
+          "values": [
+            0.07415,
+            0.0615125
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-l1-0.01",
+        "coverage_k1": {
+          "mean": 0.1076388888888889,
+          "values": [
+            0.10416666666666667,
+            0.1111111111111111
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.0842013888888889,
+          "values": [
+            0.078125,
+            0.09027777777777778
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.07183159722222222,
+          "values": [
+            0.06684027777777778,
+            0.07682291666666667
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.06380208333333333,
+          "values": [
+            0.06076388888888889,
+            0.06684027777777778
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.05014458550347222,
+          "values": [
+            0.04891818576388889,
+            0.05137098524305555
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.0661349826388889,
+          "values": [
+            0.06304253472222222,
+            0.06922743055555555
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07888125,
+          "values": [
+            0.0813,
+            0.0764625
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-l1only-0.001",
+        "coverage_k1": {
+          "mean": 0.10069444444444445,
+          "values": [
+            0.13194444444444445,
+            0.06944444444444445
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.07378472222222222,
+          "values": [
+            0.09375,
+            0.05381944444444445
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.06467013888888888,
+          "values": [
+            0.0837673611111111,
+            0.045572916666666664
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.05821397569444444,
+          "values": [
+            0.0749782986111111,
+            0.041449652777777776
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.04633409288194444,
+          "values": [
+            0.0581396484375,
+            0.034528537326388886
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.06065538194444445,
+          "values": [
+            0.07823350694444445,
+            0.04307725694444445
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.064325,
+          "values": [
+            0.06845,
+            0.0602
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-l1only-0.003",
+        "coverage_k1": {
+          "mean": 0.08333333333333334,
+          "values": [
+            0.09722222222222222,
+            0.06944444444444445
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.058159722222222224,
+          "values": [
+            0.07118055555555555,
+            0.04513888888888889
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.04969618055555555,
+          "values": [
+            0.05946180555555555,
+            0.03993055555555555
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.04475911458333333,
+          "values": [
+            0.05295138888888889,
+            0.036566840277777776
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.036575249565972225,
+          "values": [
+            0.042820638020833336,
+            0.030329861111111113
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.047526041666666664,
+          "values": [
+            0.056315104166666664,
+            0.038736979166666664
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.1147875,
+          "values": [
+            0.10615,
+            0.123425
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-l1only-0.01",
+        "coverage_k1": {
+          "mean": 0.08333333333333334,
+          "values": [
+            0.09027777777777778,
+            0.0763888888888889
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.06510416666666667,
+          "values": [
+            0.06944444444444445,
+            0.06076388888888889
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.05729166666666667,
+          "values": [
+            0.06076388888888889,
+            0.05381944444444445
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.05067274305555555,
+          "values": [
+            0.053276909722222224,
+            0.04806857638888889
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.04118109809027778,
+          "values": [
+            0.04339735243055556,
+            0.03896484375
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.05311414930555555,
+          "values": [
+            0.0556640625,
+            0.05056423611111111
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.05608125,
+          "values": [
+            0.061875,
+            0.0502875
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-bound",
+        "coverage_k1": {
+          "mean": 0.7430555555555556,
+          "values": [
+            0.7708333333333334,
+            0.7152777777777778
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7013888888888888,
+          "values": [
+            0.7395833333333334,
+            0.6631944444444444
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.6671006944444444,
+          "values": [
+            0.7165798611111112,
+            0.6176215277777778
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.63720703125,
+          "values": [
+            0.6886935763888888,
+            0.5857204861111112
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.21006130642361115,
+          "values": [
+            0.22882649739583336,
+            0.19129611545138892
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.6523980034722222,
+          "values": [
+            0.7030164930555556,
+            0.6017795138888888
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07160625000000001,
+          "values": [
+            0.0676125,
+            0.0756
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-noise-0.01",
+        "coverage_k1": {
+          "mean": 0.2326388888888889,
+          "values": [
+            0.3333333333333333,
+            0.13194444444444445
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.2065972222222222,
+          "values": [
+            0.296875,
+            0.11631944444444445
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.18511284722222224,
+          "values": [
+            0.2664930555555556,
+            0.1037326388888889
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.1689453125,
+          "values": [
+            0.2443576388888889,
+            0.0935329861111111
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.07751546223958333,
+          "values": [
+            0.09172960069444445,
+            0.06330132378472222
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.17523871527777776,
+          "values": [
+            0.2530381944444444,
+            0.0974392361111111
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.09158125,
+          "values": [
+            0.082425,
+            0.1007375
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-noise-0.03",
+        "coverage_k1": {
+          "mean": 0.06944444444444445,
+          "values": [
+            0.08333333333333333,
+            0.05555555555555555
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.046875,
+          "values": [
+            0.057291666666666664,
+            0.036458333333333336
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.03884548611111111,
+          "values": [
+            0.046875,
+            0.030815972222222224
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.0341796875,
+          "values": [
+            0.041015625,
+            0.02734375
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.027955457899305557,
+          "values": [
+            0.033497178819444445,
+            0.02241373697916667
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.035698784722222224,
+          "values": [
+            0.04296875,
+            0.028428819444444444
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.052587499999999995,
+          "values": [
+            0.0463125,
+            0.0588625
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-noise-0.1",
+        "coverage_k1": {
+          "mean": 0.04513888888888889,
+          "values": [
+            0.04861111111111111,
+            0.041666666666666664
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.030381944444444448,
+          "values": [
+            0.036458333333333336,
+            0.024305555555555556
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.024739583333333336,
+          "values": [
+            0.030381944444444444,
+            0.019097222222222224
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.021375868055555552,
+          "values": [
+            0.025716145833333332,
+            0.017035590277777776
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.01835015190972222,
+          "values": [
+            0.021635199652777774,
+            0.015065104166666668
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.022732204861111112,
+          "values": [
+            0.02734375,
+            0.018120659722222224
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.03724375,
+          "values": [
+            0.03505,
+            0.0394375
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-noise-0.3",
+        "coverage_k1": {
+          "mean": 0.041666666666666664,
+          "values": [
+            0.041666666666666664,
+            0.041666666666666664
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.03125,
+          "values": [
+            0.03298611111111111,
+            0.029513888888888888
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.024956597222222224,
+          "values": [
+            0.02734375,
+            0.022569444444444444
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.021864149305555556,
+          "values": [
+            0.024631076388888888,
+            0.019097222222222224
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.01804443359375,
+          "values": [
+            0.020012478298611112,
+            0.01607638888888889
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.023111979166666668,
+          "values": [
+            0.026150173611111112,
+            0.020073784722222224
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.03010625,
+          "values": [
+            0.024725,
+            0.0354875
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-tasknoise-0.1",
+        "coverage_k1": {
+          "mean": 0.09027777777777778,
+          "values": [
+            0.08333333333333333,
+            0.09722222222222222
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.0703125,
+          "values": [
+            0.06770833333333333,
+            0.07291666666666667
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.05967881944444445,
+          "values": [
+            0.05772569444444445,
+            0.06163194444444445
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.0537109375,
+          "values": [
+            0.051106770833333336,
+            0.056315104166666664
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.037377115885416666,
+          "values": [
+            0.03371473524305556,
+            0.041039496527777775
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.056206597222222224,
+          "values": [
+            0.05349392361111111,
+            0.058919270833333336
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.058637499999999995,
+          "values": [
+            0.0769125,
+            0.0403625
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-base",
+        "coverage_k1": {
+          "mean": 0.7777777777777778,
+          "values": [
+            0.75,
+            0.8055555555555556
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7508680555555556,
+          "values": [
+            0.7222222222222222,
+            0.7795138888888888
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.7350260416666667,
+          "values": [
+            0.7144097222222222,
+            0.7556423611111112
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.7155490451388888,
+          "values": [
+            0.7022569444444444,
+            0.7288411458333334
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.26907362196180556,
+          "values": [
+            0.2593782552083333,
+            0.27876898871527783
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.7261827256944444,
+          "values": [
+            0.7087673611111112,
+            0.7435980902777778
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.0684375,
+          "values": [
+            0.068575,
+            0.0683
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-margin1",
+        "coverage_k1": {
+          "mean": 0.75,
+          "values": [
+            0.6875,
+            0.8125
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7326388888888888,
+          "values": [
+            0.6666666666666666,
+            0.7986111111111112
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.7211371527777778,
+          "values": [
+            0.6558159722222222,
+            0.7864583333333334
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.7030164930555556,
+          "values": [
+            0.6433376736111112,
+            0.7626953125
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.23856580946180558,
+          "values": [
+            0.2091498480902778,
+            0.26798177083333335
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.7122395833333333,
+          "values": [
+            0.6509331597222222,
+            0.7735460069444444
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07264999999999999,
+          "values": [
+            0.0760625,
+            0.0692375
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-l1-0.0001",
+        "coverage_k1": {
+          "mean": 0.5659722222222222,
+          "values": [
+            0.6458333333333334,
+            0.4861111111111111
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.515625,
+          "values": [
+            0.5989583333333334,
+            0.4322916666666667
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.4815538194444444,
+          "values": [
+            0.5594618055555556,
+            0.4036458333333333
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.4482421875,
+          "values": [
+            0.5150824652777778,
+            0.3814019097222222
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.13234727647569444,
+          "values": [
+            0.1613406032986111,
+            0.10335394965277779
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.4642469618055556,
+          "values": [
+            0.5361328125,
+            0.3923611111111111
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.09888125,
+          "values": [
+            0.0895875,
+            0.108175
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-l1-0.0003",
+        "coverage_k1": {
+          "mean": 0.09722222222222221,
+          "values": [
+            0.1111111111111111,
+            0.08333333333333333
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.07291666666666666,
+          "values": [
+            0.08680555555555555,
+            0.059027777777777776
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.060980902777777776,
+          "values": [
+            0.07335069444444445,
+            0.04861111111111111
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.0556640625,
+          "values": [
+            0.06770833333333333,
+            0.043619791666666664
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.04533067491319444,
+          "values": [
+            0.0546142578125,
+            0.036047092013888886
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.05772569444444444,
+          "values": [
+            0.0700954861111111,
+            0.045355902777777776
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.09795625,
+          "values": [
+            0.08805,
+            0.1078625
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-l1-0.001",
+        "coverage_k1": {
+          "mean": 0.09375,
+          "values": [
+            0.10416666666666667,
+            0.08333333333333333
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.07378472222222222,
+          "values": [
+            0.08159722222222222,
+            0.06597222222222222
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.06032986111111111,
+          "values": [
+            0.06597222222222222,
+            0.0546875
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.054253472222222224,
+          "values": [
+            0.05870225694444445,
+            0.0498046875
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.0412451171875,
+          "values": [
+            0.043359375,
+            0.039130859375
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.05745442708333333,
+          "values": [
+            0.06239149305555555,
+            0.05251736111111111
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.083025,
+          "values": [
+            0.090725,
+            0.075325
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-l1-0.003",
+        "coverage_k1": {
+          "mean": 0.1076388888888889,
+          "values": [
+            0.10416666666666667,
+            0.1111111111111111
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.08506944444444445,
+          "values": [
+            0.08680555555555555,
+            0.08333333333333333
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.07183159722222222,
+          "values": [
+            0.0724826388888889,
+            0.07118055555555555
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.06353081597222222,
+          "values": [
+            0.06315104166666667,
+            0.06391059027777778
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.05300808376736112,
+          "values": [
+            0.053884006076388886,
+            0.05213216145833334
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.06678602430555555,
+          "values": [
+            0.0661892361111111,
+            0.0673828125
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.066725,
+          "values": [
+            0.0647875,
+            0.0686625
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-l1-0.01",
+        "coverage_k1": {
+          "mean": 0.09375,
+          "values": [
+            0.08333333333333333,
+            0.10416666666666667
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.0703125,
+          "values": [
+            0.06076388888888889,
+            0.0798611111111111
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.0625,
+          "values": [
+            0.052083333333333336,
+            0.07291666666666667
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.057074652777777776,
+          "values": [
+            0.048177083333333336,
+            0.06597222222222222
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.04491482204861111,
+          "values": [
+            0.03756293402777777,
+            0.05226671006944445
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.059353298611111105,
+          "values": [
+            0.05002170138888889,
+            0.06868489583333333
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.074975,
+          "values": [
+            0.0964,
+            0.05355
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-l1only-0.001",
+        "coverage_k1": {
+          "mean": 0.1076388888888889,
+          "values": [
+            0.1111111111111111,
+            0.10416666666666667
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.08333333333333334,
+          "values": [
+            0.09027777777777778,
+            0.0763888888888889
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.07118055555555555,
+          "values": [
+            0.07942708333333333,
+            0.06293402777777778
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.0642361111111111,
+          "values": [
+            0.07237413194444445,
+            0.056098090277777776
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.050859375000000005,
+          "values": [
+            0.05841200086805556,
+            0.043306749131944454
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.06651475694444445,
+          "values": [
+            0.07508680555555555,
+            0.057942708333333336
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.05660625,
+          "values": [
+            0.060625,
+            0.0525875
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-l1only-0.003",
+        "coverage_k1": {
+          "mean": 0.09375,
+          "values": [
+            0.08333333333333333,
+            0.10416666666666667
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.07465277777777778,
+          "values": [
+            0.06597222222222222,
+            0.08333333333333333
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.0646701388888889,
+          "values": [
+            0.058159722222222224,
+            0.07118055555555555
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.05843098958333333,
+          "values": [
+            0.05262586805555555,
+            0.0642361111111111
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.044326171875,
+          "values": [
+            0.041378038194444446,
+            0.047274305555555556
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.06076388888888889,
+          "values": [
+            0.055230034722222224,
+            0.06629774305555555
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07935624999999999,
+          "values": [
+            0.08915,
+            0.0695625
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-l1only-0.01",
+        "coverage_k1": {
+          "mean": 0.09722222222222222,
+          "values": [
+            0.125,
+            0.06944444444444445
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.07291666666666667,
+          "values": [
+            0.09722222222222222,
+            0.04861111111111111
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.062065972222222224,
+          "values": [
+            0.08116319444444445,
+            0.04296875
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.055718315972222224,
+          "values": [
+            0.07313368055555555,
+            0.03830295138888889
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.04300672743055556,
+          "values": [
+            0.05385145399305557,
+            0.032162000868055554
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.057834201388888895,
+          "values": [
+            0.0754123263888889,
+            0.04025607638888889
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.0834375,
+          "values": [
+            0.0638875,
+            0.1029875
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-bound",
+        "coverage_k1": {
+          "mean": 0.65625,
+          "values": [
+            0.6597222222222222,
+            0.6527777777777778
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.6354166666666667,
+          "values": [
+            0.6440972222222222,
+            0.6267361111111112
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.623046875,
+          "values": [
+            0.6280381944444444,
+            0.6180555555555556
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.6112196180555556,
+          "values": [
+            0.6162109375,
+            0.6062282986111112
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.19859510633680555,
+          "values": [
+            0.19781412760416664,
+            0.19937608506944446
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.6171332465277778,
+          "values": [
+            0.6226128472222222,
+            0.6116536458333334
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07435,
+          "values": [
+            0.0813,
+            0.0674
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-noise-0.01",
+        "coverage_k1": {
+          "mean": 0.29166666666666663,
+          "values": [
+            0.4444444444444444,
+            0.1388888888888889
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.265625,
+          "values": [
+            0.4114583333333333,
+            0.11979166666666667
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.24934895833333334,
+          "values": [
+            0.3875868055555556,
+            0.1111111111111111
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.2389865451388889,
+          "values": [
+            0.3739149305555556,
+            0.10405815972222222
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.08669677734375,
+          "values": [
+            0.11071451822916668,
+            0.06267903645833334
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.24354383680555555,
+          "values": [
+            0.3803168402777778,
+            0.10677083333333333
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07446875,
+          "values": [
+            0.06985,
+            0.0790875
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-noise-0.03",
+        "coverage_k1": {
+          "mean": 0.1840277777777778,
+          "values": [
+            0.1736111111111111,
+            0.19444444444444445
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.13975694444444445,
+          "values": [
+            0.13020833333333334,
+            0.14930555555555555
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.12282986111111112,
+          "values": [
+            0.1115451388888889,
+            0.13411458333333334
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.10991753472222222,
+          "values": [
+            0.10069444444444445,
+            0.119140625
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.048553059895833334,
+          "values": [
+            0.05206868489583333,
+            0.04503743489583333
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.11480034722222222,
+          "values": [
+            0.10503472222222222,
+            0.12456597222222222
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07779375,
+          "values": [
+            0.069825,
+            0.0857625
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-noise-0.1",
+        "coverage_k1": {
+          "mean": 0.059027777777777776,
+          "values": [
+            0.041666666666666664,
+            0.0763888888888889
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.043402777777777776,
+          "values": [
+            0.026041666666666668,
+            0.06076388888888889
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.036675347222222224,
+          "values": [
+            0.023003472222222224,
+            0.050347222222222224
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.03206380208333333,
+          "values": [
+            0.019748263888888888,
+            0.044379340277777776
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.02093939887152778,
+          "values": [
+            0.016816948784722223,
+            0.02506184895833333
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.033637152777777776,
+          "values": [
+            0.0205078125,
+            0.04676649305555555
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.025750000000000002,
+          "values": [
+            0.02335,
+            0.02815
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-noise-0.3",
+        "coverage_k1": {
+          "mean": 0.041666666666666664,
+          "values": [
+            0.041666666666666664,
+            0.041666666666666664
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.026909722222222224,
+          "values": [
+            0.026041666666666668,
+            0.027777777777777776
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.019748263888888888,
+          "values": [
+            0.01953125,
+            0.019965277777777776
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.01708984375,
+          "values": [
+            0.017035590277777776,
+            0.017144097222222224
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.015862358940972224,
+          "values": [
+            0.016208224826388888,
+            0.015516493055555556
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.017957899305555552,
+          "values": [
+            0.017903645833333332,
+            0.018012152777777776
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.025481249999999997,
+          "values": [
+            0.0186125,
+            0.03235
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-tasknoise-0.1",
+        "coverage_k1": {
+          "mean": 0.05208333333333333,
+          "values": [
+            0.041666666666666664,
+            0.0625
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.03993055555555555,
+          "values": [
+            0.03125,
+            0.04861111111111111
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.033854166666666664,
+          "values": [
+            0.026475694444444444,
+            0.04123263888888889
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.029676649305555556,
+          "values": [
+            0.022677951388888888,
+            0.036675347222222224
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.021521809895833334,
+          "values": [
+            0.018064778645833335,
+            0.02497884114583333
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.031032986111111112,
+          "values": [
+            0.024197048611111112,
+            0.03786892361111111
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.03479375,
+          "values": [
+            0.0321875,
+            0.0374
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      }
+    ],
+    "runs": [
+      {
+        "name": "dynamics-base",
+        "run": "runs/compression-regularizers-20261111/dynamics-base-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.006038321933034264,
+        "blocked_fraction": 0.0732125,
+        "coverage_k1": 0.8680555555555556,
+        "coverage_k2": 0.828125,
+        "coverage_k4": 0.8025173611111112,
+        "coverage_k8": 0.7623697916666666,
+        "seconds": 91.2297196672298,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 66509,
+          "k2_50": 69289,
+          "k4_50": 71986,
+          "k8_50": 74699
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74143,
+        "unique_endpoints": 74144,
+        "fill_radius_0.05": 0.7238498263888888,
+        "fill_radius_0.1": 0.7835286458333334,
+        "fill_radius_0.2": 0.8109809027777778,
+        "training_seconds": 39.60132108069956,
+        "refresh_seconds": 20.684300736524165,
+        "search_seconds": 29.845604067202657,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.34921006944444444,
+        "auc_k2": 0.31127821180555554,
+        "auc_k4": 0.2888037109375,
+        "auc_k8": 0.26886854383680553
+      },
+      {
+        "name": "dynamics-margin1",
+        "run": "runs/compression-regularizers-20261111/dynamics-margin1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.025482858140694953,
+        "blocked_fraction": 0.0708375,
+        "coverage_k1": 0.7013888888888888,
+        "coverage_k2": 0.6371527777777778,
+        "coverage_k4": 0.6011284722222222,
+        "coverage_k8": 0.5762803819444444,
+        "seconds": 91.59950275020674,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 1.0,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 81766,
+          "k2_50": 84581,
+          "k4_50": 86947,
+          "k8_50": 90354
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74333,
+        "unique_endpoints": 74334,
+        "fill_radius_0.05": 0.5532769097222222,
+        "fill_radius_0.1": 0.5875651041666666,
+        "fill_radius_0.2": 0.6111111111111112,
+        "training_seconds": 40.3894742554985,
+        "refresh_seconds": 19.897140208631754,
+        "search_seconds": 30.27926402259618,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.24165798611111108,
+        "auc_k2": 0.20761501736111113,
+        "auc_k4": 0.18850857204861113,
+        "auc_k8": 0.17441338433159723
+      },
+      {
+        "name": "dynamics-l1-0.0001",
+        "run": "runs/compression-regularizers-20261111/dynamics-l1-0.0001-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004066758458863579,
+        "blocked_fraction": 0.0848375,
+        "coverage_k1": 0.6805555555555556,
+        "coverage_k2": 0.6684027777777778,
+        "coverage_k4": 0.6592881944444444,
+        "coverage_k8": 0.6434461805555556,
+        "seconds": 93.27116095926613,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 74001,
+          "k2_50": 76509,
+          "k4_50": 79236,
+          "k8_50": 82009
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73213,
+        "unique_endpoints": 73214,
+        "fill_radius_0.05": 0.6222873263888888,
+        "fill_radius_0.1": 0.6511501736111112,
+        "fill_radius_0.2": 0.6626519097222222,
+        "training_seconds": 40.70232096128166,
+        "refresh_seconds": 21.09466020669788,
+        "search_seconds": 30.229640905279666,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.28130208333333334,
+        "auc_k2": 0.25282769097222224,
+        "auc_k4": 0.23300075954861113,
+        "auc_k8": 0.21598985460069445
+      },
+      {
+        "name": "dynamics-l1-0.0003",
+        "run": "runs/compression-regularizers-20261111/dynamics-l1-0.0003-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00018281793821082267,
+        "blocked_fraction": 0.086725,
+        "coverage_k1": 0.14583333333333334,
+        "coverage_k2": 0.10069444444444445,
+        "coverage_k4": 0.0802951388888889,
+        "coverage_k8": 0.06944444444444445,
+        "seconds": 172.64406341686845,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73062,
+        "unique_endpoints": 73063,
+        "fill_radius_0.05": 0.06553819444444445,
+        "fill_radius_0.1": 0.0732421875,
+        "fill_radius_0.2": 0.0857204861111111,
+        "training_seconds": 39.21137174824253,
+        "refresh_seconds": 100.89763312460855,
+        "search_seconds": 31.350835235789418,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.09997395833333332,
+        "auc_k2": 0.06832465277777777,
+        "auc_k4": 0.056315646701388895,
+        "auc_k8": 0.04788384331597222
+      },
+      {
+        "name": "dynamics-l1-0.001",
+        "run": "runs/compression-regularizers-20261111/dynamics-l1-0.001-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00018836411420303302,
+        "blocked_fraction": 0.0722875,
+        "coverage_k1": 0.10416666666666667,
+        "coverage_k2": 0.0763888888888889,
+        "coverage_k4": 0.06597222222222222,
+        "coverage_k8": 0.05740017361111111,
+        "seconds": 183.57949558272958,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74217,
+        "unique_endpoints": 74218,
+        "fill_radius_0.05": 0.05555555555555555,
+        "fill_radius_0.1": 0.060980902777777776,
+        "fill_radius_0.2": 0.07074652777777778,
+        "training_seconds": 42.22098767198622,
+        "refresh_seconds": 107.06841300101951,
+        "search_seconds": 32.99608695972711,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.07302951388888888,
+        "auc_k2": 0.05077256944444445,
+        "auc_k4": 0.04130750868055555,
+        "auc_k8": 0.035295545789930556
+      },
+      {
+        "name": "dynamics-l1-0.003",
+        "run": "runs/compression-regularizers-20261111/dynamics-l1-0.003-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0001699311568704611,
+        "blocked_fraction": 0.07415,
+        "coverage_k1": 0.1111111111111111,
+        "coverage_k2": 0.0763888888888889,
+        "coverage_k4": 0.06293402777777778,
+        "coverage_k8": 0.05544704861111111,
+        "seconds": 189.41121783293784,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74068,
+        "unique_endpoints": 74069,
+        "fill_radius_0.05": 0.053168402777777776,
+        "fill_radius_0.1": 0.05772569444444445,
+        "fill_radius_0.2": 0.06597222222222222,
+        "training_seconds": 44.632478800136596,
+        "refresh_seconds": 108.93714045453817,
+        "search_seconds": 34.60627105971798,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.07930555555555556,
+        "auc_k2": 0.05504340277777777,
+        "auc_k4": 0.04501030815972222,
+        "auc_k8": 0.039555528428819445
+      },
+      {
+        "name": "dynamics-l1-0.01",
+        "run": "runs/compression-regularizers-20261111/dynamics-l1-0.01-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0001721780036693974,
+        "blocked_fraction": 0.0813,
+        "coverage_k1": 0.10416666666666667,
+        "coverage_k2": 0.078125,
+        "coverage_k4": 0.06684027777777778,
+        "coverage_k8": 0.06076388888888889,
+        "seconds": 190.19457662524655,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73496,
+        "unique_endpoints": 73497,
+        "fill_radius_0.05": 0.05881076388888889,
+        "fill_radius_0.1": 0.06304253472222222,
+        "fill_radius_0.2": 0.07042100694444445,
+        "training_seconds": 43.87712661968544,
+        "refresh_seconds": 110.73663041554391,
+        "search_seconds": 34.30849127238616,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.07863715277777777,
+        "auc_k2": 0.05825303819444445,
+        "auc_k4": 0.04891818576388889,
+        "auc_k8": 0.04372884114583334
+      },
+      {
+        "name": "dynamics-l1only-0.001",
+        "run": "runs/compression-regularizers-20261111/dynamics-l1only-0.001-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00018012293258450263,
+        "blocked_fraction": 0.06845,
+        "coverage_k1": 0.13194444444444445,
+        "coverage_k2": 0.09375,
+        "coverage_k4": 0.0837673611111111,
+        "coverage_k8": 0.0749782986111111,
+        "seconds": 190.20633025001734,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.0,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74524,
+        "unique_endpoints": 74525,
+        "fill_radius_0.05": 0.07085503472222222,
+        "fill_radius_0.1": 0.07823350694444445,
+        "fill_radius_0.2": 0.08734809027777778,
+        "training_seconds": 44.26758708106354,
+        "refresh_seconds": 110.30221658665687,
+        "search_seconds": 34.26890852954239,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.10082465277777777,
+        "auc_k2": 0.06948350694444445,
+        "auc_k4": 0.0581396484375,
+        "auc_k8": 0.050933837890625
+      },
+      {
+        "name": "dynamics-l1only-0.003",
+        "run": "runs/compression-regularizers-20261111/dynamics-l1only-0.003-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00017810491275772522,
+        "blocked_fraction": 0.10615,
+        "coverage_k1": 0.09722222222222222,
+        "coverage_k2": 0.07118055555555555,
+        "coverage_k4": 0.05946180555555555,
+        "coverage_k8": 0.05295138888888889,
+        "seconds": 189.8668637080118,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.0,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 71508,
+        "unique_endpoints": 71509,
+        "fill_radius_0.05": 0.0498046875,
+        "fill_radius_0.1": 0.056315104166666664,
+        "fill_radius_0.2": 0.0642361111111111,
+        "training_seconds": 44.56259274156764,
+        "refresh_seconds": 109.49433099571615,
+        "search_seconds": 34.55616015428677,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.07569444444444445,
+        "auc_k2": 0.05369140625,
+        "auc_k4": 0.042820638020833336,
+        "auc_k8": 0.03780436197916666
+      },
+      {
+        "name": "dynamics-l1only-0.01",
+        "run": "runs/compression-regularizers-20261111/dynamics-l1only-0.01-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00019486489878819106,
+        "blocked_fraction": 0.061875,
+        "coverage_k1": 0.09027777777777778,
+        "coverage_k2": 0.06944444444444445,
+        "coverage_k4": 0.06076388888888889,
+        "coverage_k8": 0.053276909722222224,
+        "seconds": 191.34099491732195,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.0,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 75050,
+        "unique_endpoints": 75051,
+        "fill_radius_0.05": 0.04958767361111111,
+        "fill_radius_0.1": 0.0556640625,
+        "fill_radius_0.2": 0.06358506944444445,
+        "training_seconds": 44.79111296311021,
+        "refresh_seconds": 110.71024805027992,
+        "search_seconds": 34.534461728762835,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.0738107638888889,
+        "auc_k2": 0.051671006944444445,
+        "auc_k4": 0.04339735243055556,
+        "auc_k8": 0.03768676757812499
+      },
+      {
+        "name": "dynamics-bound",
+        "run": "runs/compression-regularizers-20261111/dynamics-bound-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0045080471521417335,
+        "blocked_fraction": 0.0676125,
+        "coverage_k1": 0.7708333333333334,
+        "coverage_k2": 0.7395833333333334,
+        "coverage_k4": 0.7165798611111112,
+        "coverage_k8": 0.6886935763888888,
+        "seconds": 103.1386273750104,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 73924,
+          "k2_50": 78352,
+          "k4_50": 81317,
+          "k8_50": 83522
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74591,
+        "unique_endpoints": 74592,
+        "fill_radius_0.05": 0.6614583333333334,
+        "fill_radius_0.1": 0.7030164930555556,
+        "fill_radius_0.2": 0.7231987847222222,
+        "training_seconds": 45.24138761963695,
+        "refresh_seconds": 24.16623595310375,
+        "search_seconds": 32.43007826246321,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.28421006944444444,
+        "auc_k2": 0.24958333333333332,
+        "auc_k4": 0.22882649739583336,
+        "auc_k8": 0.2111768934461805
+      },
+      {
+        "name": "dynamics-noise-0.01",
+        "run": "runs/compression-regularizers-20261111/dynamics-noise-0.01-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.002923615814089603,
+        "blocked_fraction": 0.082425,
+        "coverage_k1": 0.3333333333333333,
+        "coverage_k2": 0.296875,
+        "coverage_k4": 0.2664930555555556,
+        "coverage_k8": 0.2443576388888889,
+        "seconds": 107.49334770767018,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73406,
+        "unique_endpoints": 73407,
+        "fill_radius_0.05": 0.22819010416666666,
+        "fill_radius_0.1": 0.2530381944444444,
+        "fill_radius_0.2": 0.2769097222222222,
+        "training_seconds": 45.39808208309114,
+        "refresh_seconds": 28.20477683842182,
+        "search_seconds": 32.64644542336464,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.1365451388888889,
+        "auc_k2": 0.11100911458333332,
+        "auc_k4": 0.09172960069444445,
+        "auc_k8": 0.08153455946180554
+      },
+      {
+        "name": "dynamics-noise-0.03",
+        "run": "runs/compression-regularizers-20261111/dynamics-noise-0.03-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0004509200993110203,
+        "blocked_fraction": 0.0463125,
+        "coverage_k1": 0.08333333333333333,
+        "coverage_k2": 0.057291666666666664,
+        "coverage_k4": 0.046875,
+        "coverage_k8": 0.041015625,
+        "seconds": 174.0961879589595,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 76295,
+        "unique_endpoints": 76296,
+        "fill_radius_0.05": 0.038519965277777776,
+        "fill_radius_0.1": 0.04296875,
+        "fill_radius_0.2": 0.04893663194444445,
+        "training_seconds": 50.176386467181146,
+        "refresh_seconds": 85.20390436798334,
+        "search_seconds": 36.96881676558405,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.058663194444444455,
+        "auc_k2": 0.04153428819444444,
+        "auc_k4": 0.033497178819444445,
+        "auc_k8": 0.02915201822916667
+      },
+      {
+        "name": "dynamics-noise-0.1",
+        "run": "runs/compression-regularizers-20261111/dynamics-noise-0.1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0008253185782749957,
+        "blocked_fraction": 0.03505,
+        "coverage_k1": 0.04861111111111111,
+        "coverage_k2": 0.036458333333333336,
+        "coverage_k4": 0.030381944444444444,
+        "coverage_k8": 0.025716145833333332,
+        "seconds": 201.16854650015011,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 77196,
+        "unique_endpoints": 77197,
+        "fill_radius_0.05": 0.024088541666666668,
+        "fill_radius_0.1": 0.02734375,
+        "fill_radius_0.2": 0.031141493055555556,
+        "training_seconds": 61.46646288316697,
+        "refresh_seconds": 94.7902982966043,
+        "search_seconds": 43.27121896017343,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.039157986111111105,
+        "auc_k2": 0.02679904513888889,
+        "auc_k4": 0.021635199652777774,
+        "auc_k8": 0.018762071397569444
+      },
+      {
+        "name": "dynamics-noise-0.3",
+        "run": "runs/compression-regularizers-20261111/dynamics-noise-0.3-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0006301929139547357,
+        "blocked_fraction": 0.024725,
+        "coverage_k1": 0.041666666666666664,
+        "coverage_k2": 0.03298611111111111,
+        "coverage_k4": 0.02734375,
+        "coverage_k8": 0.024631076388888888,
+        "seconds": 207.74451316706836,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 78022,
+        "unique_endpoints": 78023,
+        "fill_radius_0.05": 0.023654513888888888,
+        "fill_radius_0.1": 0.026150173611111112,
+        "fill_radius_0.2": 0.029730902777777776,
+        "training_seconds": 62.22668683435768,
+        "refresh_seconds": 98.61130325915292,
+        "search_seconds": 45.16418175911531,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.03986111111111111,
+        "auc_k2": 0.025201822916666665,
+        "auc_k4": 0.020012478298611112,
+        "auc_k8": 0.01765068901909722
+      },
+      {
+        "name": "dynamics-tasknoise-0.1",
+        "run": "runs/compression-regularizers-20261111/dynamics-tasknoise-0.1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0002537205550723647,
+        "blocked_fraction": 0.0769125,
+        "coverage_k1": 0.08333333333333333,
+        "coverage_k2": 0.06770833333333333,
+        "coverage_k4": 0.05772569444444445,
+        "coverage_k8": 0.051106770833333336,
+        "seconds": 267.4190607923083,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73847,
+        "unique_endpoints": 73848,
+        "fill_radius_0.05": 0.04806857638888889,
+        "fill_radius_0.1": 0.05349392361111111,
+        "fill_radius_0.2": 0.060872395833333336,
+        "training_seconds": 65.26137484097853,
+        "refresh_seconds": 152.86988329747692,
+        "search_seconds": 47.52874249126762,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.054878472222222224,
+        "auc_k2": 0.041169704861111114,
+        "auc_k4": 0.03371473524305556,
+        "auc_k8": 0.029355604383680556
+      },
+      {
+        "name": "adjacency-base",
+        "run": "runs/compression-regularizers-20261111/adjacency-base-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.003611301679054454,
+        "blocked_fraction": 0.068575,
+        "coverage_k1": 0.75,
+        "coverage_k2": 0.7222222222222222,
+        "coverage_k4": 0.7144097222222222,
+        "coverage_k8": 0.7022569444444444,
+        "seconds": 141.46286195889115,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 71548,
+          "k2_50": 74414,
+          "k4_50": 75713,
+          "k8_50": 77543
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74514,
+        "unique_endpoints": 74515,
+        "fill_radius_0.05": 0.6842447916666666,
+        "fill_radius_0.1": 0.7087673611111112,
+        "fill_radius_0.2": 0.7173394097222222,
+        "training_seconds": 63.473095214925706,
+        "refresh_seconds": 32.775487581733614,
+        "search_seconds": 43.2613176475279,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.3069097222222222,
+        "auc_k2": 0.27724826388888885,
+        "auc_k4": 0.2593782552083333,
+        "auc_k8": 0.24524712456597222
+      },
+      {
+        "name": "adjacency-margin1",
+        "run": "runs/compression-regularizers-20261111/adjacency-margin1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.014558091917173771,
+        "blocked_fraction": 0.0760625,
+        "coverage_k1": 0.6875,
+        "coverage_k2": 0.6666666666666666,
+        "coverage_k4": 0.6558159722222222,
+        "coverage_k8": 0.6433376736111112,
+        "seconds": 145.02236637473106,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 1.0,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 78129,
+          "k2_50": 83138,
+          "k4_50": 85534,
+          "k8_50": 87392
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73915,
+        "unique_endpoints": 73916,
+        "fill_radius_0.05": 0.6195746527777778,
+        "fill_radius_0.1": 0.6509331597222222,
+        "fill_radius_0.2": 0.6608072916666666,
+        "training_seconds": 64.58521512243897,
+        "refresh_seconds": 32.99457383528352,
+        "search_seconds": 45.704227429348975,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.2714670138888889,
+        "auc_k2": 0.23216579861111108,
+        "auc_k4": 0.2091498480902778,
+        "auc_k8": 0.1915534125434028
+      },
+      {
+        "name": "adjacency-l1-0.0001",
+        "run": "runs/compression-regularizers-20261111/adjacency-l1-0.0001-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.003076747737878186,
+        "blocked_fraction": 0.0895875,
+        "coverage_k1": 0.6458333333333334,
+        "coverage_k2": 0.5989583333333334,
+        "coverage_k4": 0.5594618055555556,
+        "coverage_k8": 0.5150824652777778,
+        "seconds": 148.99499829113483,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 86317,
+          "k2_50": 90941,
+          "k4_50": 95359,
+          "k8_50": 98566
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 72833,
+        "unique_endpoints": 72834,
+        "fill_radius_0.05": 0.4860026041666667,
+        "fill_radius_0.1": 0.5361328125,
+        "fill_radius_0.2": 0.5732421875,
+        "training_seconds": 64.79175625462085,
+        "refresh_seconds": 36.91491804551333,
+        "search_seconds": 45.35478638065979,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.2188454861111111,
+        "auc_k2": 0.18177734375,
+        "auc_k4": 0.1613406032986111,
+        "auc_k8": 0.145970458984375
+      },
+      {
+        "name": "adjacency-l1-0.0003",
+        "run": "runs/compression-regularizers-20261111/adjacency-l1-0.0003-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0001868882600448114,
+        "blocked_fraction": 0.08805,
+        "coverage_k1": 0.1111111111111111,
+        "coverage_k2": 0.08680555555555555,
+        "coverage_k4": 0.07335069444444445,
+        "coverage_k8": 0.06770833333333333,
+        "seconds": 294.8305453751236,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 72956,
+        "unique_endpoints": 72957,
+        "fill_radius_0.05": 0.06456163194444445,
+        "fill_radius_0.1": 0.0700954861111111,
+        "fill_radius_0.2": 0.07758246527777778,
+        "training_seconds": 67.02182849776,
+        "refresh_seconds": 175.19262263178825,
+        "search_seconds": 50.72225413983688,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.08574652777777778,
+        "auc_k2": 0.06473958333333334,
+        "auc_k4": 0.0546142578125,
+        "auc_k8": 0.048264702690972223
+      },
+      {
+        "name": "adjacency-l1-0.001",
+        "run": "runs/compression-regularizers-20261111/adjacency-l1-0.001-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0001823501140968317,
+        "blocked_fraction": 0.090725,
+        "coverage_k1": 0.10416666666666667,
+        "coverage_k2": 0.08159722222222222,
+        "coverage_k4": 0.06597222222222222,
+        "coverage_k8": 0.05870225694444445,
+        "seconds": 295.4120943751186,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 72742,
+        "unique_endpoints": 72743,
+        "fill_radius_0.05": 0.0556640625,
+        "fill_radius_0.1": 0.06239149305555555,
+        "fill_radius_0.2": 0.0703125,
+        "training_seconds": 67.49996683746576,
+        "refresh_seconds": 174.32044499693438,
+        "search_seconds": 51.527585870586336,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.07547743055555557,
+        "auc_k2": 0.05392144097222223,
+        "auc_k4": 0.043359375,
+        "auc_k8": 0.03815633138020833
+      },
+      {
+        "name": "adjacency-l1-0.003",
+        "run": "runs/compression-regularizers-20261111/adjacency-l1-0.003-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0001710525159768438,
+        "blocked_fraction": 0.0647875,
+        "coverage_k1": 0.10416666666666667,
+        "coverage_k2": 0.08680555555555555,
+        "coverage_k4": 0.0724826388888889,
+        "coverage_k8": 0.06315104166666667,
+        "seconds": 295.21788012515754,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74817,
+        "unique_endpoints": 74818,
+        "fill_radius_0.05": 0.06043836805555555,
+        "fill_radius_0.1": 0.0661892361111111,
+        "fill_radius_0.2": 0.07508680555555555,
+        "training_seconds": 68.49394696671516,
+        "refresh_seconds": 171.91309108398855,
+        "search_seconds": 52.81336880195886,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.08290798611111114,
+        "auc_k2": 0.06465277777777777,
+        "auc_k4": 0.053884006076388886,
+        "auc_k8": 0.04709988064236111
+      },
+      {
+        "name": "adjacency-l1-0.01",
+        "run": "runs/compression-regularizers-20261111/adjacency-l1-0.01-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00018363201333142467,
+        "blocked_fraction": 0.0964,
+        "coverage_k1": 0.08333333333333333,
+        "coverage_k2": 0.06076388888888889,
+        "coverage_k4": 0.052083333333333336,
+        "coverage_k8": 0.048177083333333336,
+        "seconds": 300.77204125002027,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 72288,
+        "unique_endpoints": 72289,
+        "fill_radius_0.05": 0.04611545138888889,
+        "fill_radius_0.1": 0.05002170138888889,
+        "fill_radius_0.2": 0.05490451388888889,
+        "training_seconds": 70.09525698982179,
+        "refresh_seconds": 175.1472113695927,
+        "search_seconds": 53.52030225098133,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.05614583333333334,
+        "auc_k2": 0.04370442708333333,
+        "auc_k4": 0.03756293402777777,
+        "auc_k8": 0.03403618706597222
+      },
+      {
+        "name": "adjacency-l1only-0.001",
+        "run": "runs/compression-regularizers-20261111/adjacency-l1only-0.001-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00018047435162558593,
+        "blocked_fraction": 0.060625,
+        "coverage_k1": 0.1111111111111111,
+        "coverage_k2": 0.09027777777777778,
+        "coverage_k4": 0.07942708333333333,
+        "coverage_k8": 0.07237413194444445,
+        "seconds": 320.7414607498795,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.0,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 75150,
+        "unique_endpoints": 75151,
+        "fill_radius_0.05": 0.0675998263888889,
+        "fill_radius_0.1": 0.07508680555555555,
+        "fill_radius_0.2": 0.0832248263888889,
+        "training_seconds": 72.33680787263438,
+        "refresh_seconds": 191.56281258212402,
+        "search_seconds": 54.733085576444864,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.08677083333333332,
+        "auc_k2": 0.0691796875,
+        "auc_k4": 0.05841200086805556,
+        "auc_k8": 0.0514364963107639
+      },
+      {
+        "name": "adjacency-l1only-0.003",
+        "run": "runs/compression-regularizers-20261111/adjacency-l1only-0.003-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00017729827183589144,
+        "blocked_fraction": 0.08915,
+        "coverage_k1": 0.08333333333333333,
+        "coverage_k2": 0.06597222222222222,
+        "coverage_k4": 0.058159722222222224,
+        "coverage_k8": 0.05262586805555555,
+        "seconds": 354.891944791656,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.0,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 72868,
+        "unique_endpoints": 72869,
+        "fill_radius_0.05": 0.050238715277777776,
+        "fill_radius_0.1": 0.055230034722222224,
+        "fill_radius_0.2": 0.06065538194444445,
+        "training_seconds": 82.86269851028919,
+        "refresh_seconds": 208.30577111477032,
+        "search_seconds": 61.63593441713601,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.06376736111111111,
+        "auc_k2": 0.04897135416666666,
+        "auc_k4": 0.041378038194444446,
+        "auc_k8": 0.036658393012152776
+      },
+      {
+        "name": "adjacency-l1only-0.01",
+        "run": "runs/compression-regularizers-20261111/adjacency-l1only-0.01-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00017208738764862625,
+        "blocked_fraction": 0.0638875,
+        "coverage_k1": 0.125,
+        "coverage_k2": 0.09722222222222222,
+        "coverage_k4": 0.08116319444444445,
+        "coverage_k8": 0.07313368055555555,
+        "seconds": 348.0964087918401,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.0,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74889,
+        "unique_endpoints": 74890,
+        "fill_radius_0.05": 0.0693359375,
+        "fill_radius_0.1": 0.0754123263888889,
+        "fill_radius_0.2": 0.0859375,
+        "training_seconds": 81.98806291585788,
+        "refresh_seconds": 202.44794016471133,
+        "search_seconds": 61.59936756268144,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.08479166666666665,
+        "auc_k2": 0.06485677083333333,
+        "auc_k4": 0.05385145399305557,
+        "auc_k8": 0.04670247395833333
+      },
+      {
+        "name": "adjacency-bound",
+        "run": "runs/compression-regularizers-20261111/adjacency-bound-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004830735071815878,
+        "blocked_fraction": 0.0813,
+        "coverage_k1": 0.6597222222222222,
+        "coverage_k2": 0.6440972222222222,
+        "coverage_k4": 0.6280381944444444,
+        "coverage_k8": 0.6162109375,
+        "seconds": 187.02241104189306,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 78588,
+          "k2_50": 83019,
+          "k4_50": 85107,
+          "k8_50": 87334
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73496,
+        "unique_endpoints": 73497,
+        "fill_radius_0.05": 0.5964626736111112,
+        "fill_radius_0.1": 0.6226128472222222,
+        "fill_radius_0.2": 0.6329210069444444,
+        "training_seconds": 81.87859108345583,
+        "refresh_seconds": 45.2040739110671,
+        "search_seconds": 57.8770791455172,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.25328993055555554,
+        "auc_k2": 0.21776692708333337,
+        "auc_k4": 0.19781412760416664,
+        "auc_k8": 0.18320732964409722
+      },
+      {
+        "name": "adjacency-noise-0.01",
+        "run": "runs/compression-regularizers-20261111/adjacency-noise-0.01-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004249537466417714,
+        "blocked_fraction": 0.06985,
+        "coverage_k1": 0.4444444444444444,
+        "coverage_k2": 0.4114583333333333,
+        "coverage_k4": 0.3875868055555556,
+        "coverage_k8": 0.3739149305555556,
+        "seconds": 219.1772691248916,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74412,
+        "unique_endpoints": 74413,
+        "fill_radius_0.05": 0.3619791666666667,
+        "fill_radius_0.1": 0.3803168402777778,
+        "fill_radius_0.2": 0.3937717013888889,
+        "training_seconds": 83.6308565386571,
+        "refresh_seconds": 73.11110862810165,
+        "search_seconds": 59.95589836733416,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.14069444444444446,
+        "auc_k2": 0.1224587673611111,
+        "auc_k4": 0.11071451822916668,
+        "auc_k8": 0.10161159939236113
+      },
+      {
+        "name": "adjacency-noise-0.03",
+        "run": "runs/compression-regularizers-20261111/adjacency-noise-0.03-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0015173833174597,
+        "blocked_fraction": 0.069825,
+        "coverage_k1": 0.1736111111111111,
+        "coverage_k2": 0.13020833333333334,
+        "coverage_k4": 0.1115451388888889,
+        "coverage_k8": 0.10069444444444445,
+        "seconds": 225.80987462494522,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74414,
+        "unique_endpoints": 74415,
+        "fill_radius_0.05": 0.09635416666666667,
+        "fill_radius_0.1": 0.10503472222222222,
+        "fill_radius_0.2": 0.11848958333333333,
+        "training_seconds": 83.10352500202134,
+        "refresh_seconds": 79.48697620350868,
+        "search_seconds": 61.136357959825546,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.08671006944444445,
+        "auc_k2": 0.06214192708333334,
+        "auc_k4": 0.05206868489583333,
+        "auc_k8": 0.04659912109375
+      },
+      {
+        "name": "adjacency-noise-0.1",
+        "run": "runs/compression-regularizers-20261111/adjacency-noise-0.1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0006408057448847545,
+        "blocked_fraction": 0.02335,
+        "coverage_k1": 0.041666666666666664,
+        "coverage_k2": 0.026041666666666668,
+        "coverage_k4": 0.023003472222222224,
+        "coverage_k8": 0.019748263888888888,
+        "seconds": 262.40965012507513,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 78132,
+        "unique_endpoints": 78133,
+        "fill_radius_0.05": 0.018663194444444444,
+        "fill_radius_0.1": 0.0205078125,
+        "fill_radius_0.2": 0.023763020833333332,
+        "training_seconds": 81.93586058681831,
+        "refresh_seconds": 118.23365466482937,
+        "search_seconds": 60.393807913176715,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.03375,
+        "auc_k2": 0.02076171875,
+        "auc_k4": 0.016816948784722223,
+        "auc_k8": 0.014493815104166667
+      },
+      {
+        "name": "adjacency-noise-0.3",
+        "run": "runs/compression-regularizers-20261111/adjacency-noise-0.3-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0010508884825818372,
+        "blocked_fraction": 0.0186125,
+        "coverage_k1": 0.041666666666666664,
+        "coverage_k2": 0.026041666666666668,
+        "coverage_k4": 0.01953125,
+        "coverage_k8": 0.017035590277777776,
+        "seconds": 238.3309505409561,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 78511,
+        "unique_endpoints": 78512,
+        "fill_radius_0.05": 0.016384548611111112,
+        "fill_radius_0.1": 0.017903645833333332,
+        "fill_radius_0.2": 0.020833333333333332,
+        "training_seconds": 74.95425724796951,
+        "refresh_seconds": 105.28350312681869,
+        "search_seconds": 56.452082303818315,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.03899305555555556,
+        "auc_k2": 0.02187717013888889,
+        "auc_k4": 0.016208224826388888,
+        "auc_k8": 0.014023301866319443
+      },
+      {
+        "name": "adjacency-tasknoise-0.1",
+        "run": "runs/compression-regularizers-20261111/adjacency-tasknoise-0.1-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0006776901304770916,
+        "blocked_fraction": 0.0321875,
+        "coverage_k1": 0.041666666666666664,
+        "coverage_k2": 0.03125,
+        "coverage_k4": 0.026475694444444444,
+        "coverage_k8": 0.022677951388888888,
+        "seconds": 228.21754458313808,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 77425,
+        "unique_endpoints": 77426,
+        "fill_radius_0.05": 0.021158854166666668,
+        "fill_radius_0.1": 0.024197048611111112,
+        "fill_radius_0.2": 0.027886284722222224,
+        "training_seconds": 70.83984309155494,
+        "refresh_seconds": 102.73181341635063,
+        "search_seconds": 53.00392694352195,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.037274305555555554,
+        "auc_k2": 0.023428819444444443,
+        "auc_k4": 0.018064778645833335,
+        "auc_k8": 0.015592854817708333
+      },
+      {
+        "name": "dynamics-base",
+        "run": "runs/compression-regularizers-20261111/dynamics-base-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.006327268852413788,
+        "blocked_fraction": 0.0758125,
+        "coverage_k1": 0.7986111111111112,
+        "coverage_k2": 0.7465277777777778,
+        "coverage_k4": 0.7183159722222222,
+        "coverage_k8": 0.6809895833333334,
+        "seconds": 167.90551545796916,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 67888,
+          "k2_50": 72836,
+          "k4_50": 76718,
+          "k8_50": 80433
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73935,
+        "unique_endpoints": 73936,
+        "fill_radius_0.05": 0.6470269097222222,
+        "fill_radius_0.1": 0.6975911458333334,
+        "fill_radius_0.2": 0.728515625,
+        "training_seconds": 74.07391041656956,
+        "refresh_seconds": 41.24289504112676,
+        "search_seconds": 51.15264916047454,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.3159809027777778,
+        "auc_k2": 0.275078125,
+        "auc_k4": 0.2491064453125,
+        "auc_k8": 0.22840549045138886
+      },
+      {
+        "name": "dynamics-margin1",
+        "run": "runs/compression-regularizers-20261111/dynamics-margin1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.024348249025746352,
+        "blocked_fraction": 0.086125,
+        "coverage_k1": 0.5833333333333334,
+        "coverage_k2": 0.5121527777777778,
+        "coverage_k4": 0.4605034722222222,
+        "coverage_k8": 0.4202473958333333,
+        "seconds": 166.6200560000725,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 1.0,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 91129,
+          "k2_50": 98982
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73110,
+        "unique_endpoints": 73111,
+        "fill_radius_0.05": 0.3940972222222222,
+        "fill_radius_0.1": 0.4392361111111111,
+        "fill_radius_0.2": 0.4741753472222222,
+        "training_seconds": 73.37666804017499,
+        "refresh_seconds": 41.42630541557446,
+        "search_seconds": 50.47783969854936,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.1918923611111111,
+        "auc_k2": 0.15419921875,
+        "auc_k4": 0.13229763454861113,
+        "auc_k8": 0.11748955620659722
+      },
+      {
+        "name": "dynamics-l1-0.0001",
+        "run": "runs/compression-regularizers-20261111/dynamics-l1-0.0001-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0043655659821617305,
+        "blocked_fraction": 0.0722,
+        "coverage_k1": 0.7708333333333334,
+        "coverage_k2": 0.7361111111111112,
+        "coverage_k4": 0.7196180555555556,
+        "coverage_k8": 0.6994357638888888,
+        "seconds": 132.07145283324644,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 68016,
+          "k2_50": 70852,
+          "k4_50": 73534,
+          "k8_50": 75512
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74224,
+        "unique_endpoints": 74225,
+        "fill_radius_0.05": 0.677734375,
+        "fill_radius_0.1": 0.7112630208333334,
+        "fill_radius_0.2": 0.7252604166666666,
+        "training_seconds": 59.06397221330553,
+        "refresh_seconds": 30.080599597655237,
+        "search_seconds": 41.33140591951087,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.313671875,
+        "auc_k2": 0.28997829861111113,
+        "auc_k4": 0.27579318576388884,
+        "auc_k8": 0.26194471571180555
+      },
+      {
+        "name": "dynamics-l1-0.0003",
+        "run": "runs/compression-regularizers-20261111/dynamics-l1-0.0003-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00020531749100211662,
+        "blocked_fraction": 0.0555875,
+        "coverage_k1": 0.10416666666666667,
+        "coverage_k2": 0.08680555555555555,
+        "coverage_k4": 0.07074652777777778,
+        "coverage_k8": 0.062065972222222224,
+        "seconds": 234.62919116578996,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 75553,
+        "unique_endpoints": 75554,
+        "fill_radius_0.05": 0.05848524305555555,
+        "fill_radius_0.1": 0.06532118055555555,
+        "fill_radius_0.2": 0.0740017361111111,
+        "training_seconds": 53.87777678435668,
+        "refresh_seconds": 137.58678574766964,
+        "search_seconds": 41.86640875414014,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.0847829861111111,
+        "auc_k2": 0.06224392361111111,
+        "auc_k4": 0.048454318576388884,
+        "auc_k8": 0.04180772569444444
+      },
+      {
+        "name": "dynamics-l1-0.001",
+        "run": "runs/compression-regularizers-20261111/dynamics-l1-0.001-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00018951514705714344,
+        "blocked_fraction": 0.04765,
+        "coverage_k1": 0.11805555555555555,
+        "coverage_k2": 0.08854166666666667,
+        "coverage_k4": 0.07942708333333333,
+        "coverage_k8": 0.07085503472222222,
+        "seconds": 229.9367889999412,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 76188,
+        "unique_endpoints": 76189,
+        "fill_radius_0.05": 0.06846788194444445,
+        "fill_radius_0.1": 0.07411024305555555,
+        "fill_radius_0.2": 0.0832248263888889,
+        "training_seconds": 53.92520341929048,
+        "refresh_seconds": 133.10283145913854,
+        "search_seconds": 41.588402919471264,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.09276909722222222,
+        "auc_k2": 0.06561414930555556,
+        "auc_k4": 0.05744303385416667,
+        "auc_k8": 0.050498725043402776
+      },
+      {
+        "name": "dynamics-l1-0.003",
+        "run": "runs/compression-regularizers-20261111/dynamics-l1-0.003-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0001959273131440268,
+        "blocked_fraction": 0.0615125,
+        "coverage_k1": 0.16666666666666666,
+        "coverage_k2": 0.11979166666666667,
+        "coverage_k4": 0.0993923611111111,
+        "coverage_k8": 0.0869140625,
+        "seconds": 222.9777136668563,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 75079,
+        "unique_endpoints": 75080,
+        "fill_radius_0.05": 0.0818142361111111,
+        "fill_radius_0.1": 0.091796875,
+        "fill_radius_0.2": 0.10579427083333333,
+        "training_seconds": 53.17318043438718,
+        "refresh_seconds": 127.1466760779731,
+        "search_seconds": 41.34164995001629,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.10621527777777777,
+        "auc_k2": 0.07699001736111112,
+        "auc_k4": 0.06347493489583333,
+        "auc_k8": 0.054942626953125
+      },
+      {
+        "name": "dynamics-l1-0.01",
+        "run": "runs/compression-regularizers-20261111/dynamics-l1-0.01-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00020762398801759784,
+        "blocked_fraction": 0.0764625,
+        "coverage_k1": 0.1111111111111111,
+        "coverage_k2": 0.09027777777777778,
+        "coverage_k4": 0.07682291666666667,
+        "coverage_k8": 0.06684027777777778,
+        "seconds": 215.62281554192305,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73883,
+        "unique_endpoints": 73884,
+        "fill_radius_0.05": 0.06358506944444445,
+        "fill_radius_0.1": 0.06922743055555555,
+        "fill_radius_0.2": 0.07996961805555555,
+        "training_seconds": 51.46861179359257,
+        "refresh_seconds": 122.75200104806572,
+        "search_seconds": 40.05299324123189,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.08114583333333333,
+        "auc_k2": 0.062022569444444446,
+        "auc_k4": 0.05137098524305555,
+        "auc_k8": 0.04410698784722222
+      },
+      {
+        "name": "dynamics-l1only-0.001",
+        "run": "runs/compression-regularizers-20261111/dynamics-l1only-0.001-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00017000772101287464,
+        "blocked_fraction": 0.0602,
+        "coverage_k1": 0.06944444444444445,
+        "coverage_k2": 0.05381944444444445,
+        "coverage_k4": 0.045572916666666664,
+        "coverage_k8": 0.041449652777777776,
+        "seconds": 211.5815923330374,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.0,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 75184,
+        "unique_endpoints": 75185,
+        "fill_radius_0.05": 0.039388020833333336,
+        "fill_radius_0.1": 0.04307725694444445,
+        "fill_radius_0.2": 0.049153645833333336,
+        "training_seconds": 48.41640441957861,
+        "refresh_seconds": 123.08236929401755,
+        "search_seconds": 38.88584067625925,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.061111111111111116,
+        "auc_k2": 0.043578559027777776,
+        "auc_k4": 0.034528537326388886,
+        "auc_k8": 0.030233289930555556
+      },
+      {
+        "name": "dynamics-l1only-0.003",
+        "run": "runs/compression-regularizers-20261111/dynamics-l1only-0.003-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00018170405005791865,
+        "blocked_fraction": 0.123425,
+        "coverage_k1": 0.06944444444444445,
+        "coverage_k2": 0.04513888888888889,
+        "coverage_k4": 0.03993055555555555,
+        "coverage_k8": 0.036566840277777776,
+        "seconds": 193.07231245795265,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.0,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 70126,
+        "unique_endpoints": 70127,
+        "fill_radius_0.05": 0.03493923611111111,
+        "fill_radius_0.1": 0.038736979166666664,
+        "fill_radius_0.2": 0.04275173611111111,
+        "training_seconds": 44.175079494249076,
+        "refresh_seconds": 112.87855021236464,
+        "search_seconds": 34.63721620384604,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.056059027777777784,
+        "auc_k2": 0.03675781250000001,
+        "auc_k4": 0.030329861111111113,
+        "auc_k8": 0.026848822699652778
+      },
+      {
+        "name": "dynamics-l1only-0.01",
+        "run": "runs/compression-regularizers-20261111/dynamics-l1only-0.01-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00019139060850944208,
+        "blocked_fraction": 0.0502875,
+        "coverage_k1": 0.0763888888888889,
+        "coverage_k2": 0.06076388888888889,
+        "coverage_k4": 0.05381944444444445,
+        "coverage_k8": 0.04806857638888889,
+        "seconds": 190.89568962529302,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.0,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 75977,
+        "unique_endpoints": 75978,
+        "fill_radius_0.05": 0.046332465277777776,
+        "fill_radius_0.1": 0.05056423611111111,
+        "fill_radius_0.2": 0.0556640625,
+        "training_seconds": 43.656759502366185,
+        "refresh_seconds": 111.42925959313288,
+        "search_seconds": 34.42656267248094,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.06013020833333333,
+        "auc_k2": 0.046104600694444456,
+        "auc_k4": 0.03896484375,
+        "auc_k8": 0.03442152235243056
+      },
+      {
+        "name": "dynamics-bound",
+        "run": "runs/compression-regularizers-20261111/dynamics-bound-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.006747304557904994,
+        "blocked_fraction": 0.0756,
+        "coverage_k1": 0.7152777777777778,
+        "coverage_k2": 0.6631944444444444,
+        "coverage_k4": 0.6176215277777778,
+        "coverage_k8": 0.5857204861111112,
+        "seconds": 96.68403575010598,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 79363,
+          "k2_50": 84887,
+          "k4_50": 88591,
+          "k8_50": 91833
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73952,
+        "unique_endpoints": 73953,
+        "fill_radius_0.05": 0.5596788194444444,
+        "fill_radius_0.1": 0.6017795138888888,
+        "fill_radius_0.2": 0.6290147569444444,
+        "training_seconds": 41.931098458357155,
+        "refresh_seconds": 21.716184581629932,
+        "search_seconds": 31.88734484743327,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.24592881944444445,
+        "auc_k2": 0.2124045138888889,
+        "auc_k4": 0.19129611545138892,
+        "auc_k8": 0.17674506293402778
+      },
+      {
+        "name": "dynamics-noise-0.01",
+        "run": "runs/compression-regularizers-20261111/dynamics-noise-0.01-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.001514144040263389,
+        "blocked_fraction": 0.1007375,
+        "coverage_k1": 0.13194444444444445,
+        "coverage_k2": 0.11631944444444445,
+        "coverage_k4": 0.1037326388888889,
+        "coverage_k8": 0.0935329861111111,
+        "seconds": 94.9169751657173,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 71941,
+        "unique_endpoints": 71942,
+        "fill_radius_0.05": 0.09016927083333333,
+        "fill_radius_0.1": 0.0974392361111111,
+        "fill_radius_0.2": 0.1066623263888889,
+        "training_seconds": 39.517115918919444,
+        "refresh_seconds": 23.89276096690446,
+        "search_seconds": 30.41124883433804,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.09483506944444442,
+        "auc_k2": 0.07495876736111111,
+        "auc_k4": 0.06330132378472222,
+        "auc_k8": 0.05556315104166667
+      },
+      {
+        "name": "dynamics-noise-0.03",
+        "run": "runs/compression-regularizers-20261111/dynamics-noise-0.03-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0004772896865913412,
+        "blocked_fraction": 0.0588625,
+        "coverage_k1": 0.05555555555555555,
+        "coverage_k2": 0.036458333333333336,
+        "coverage_k4": 0.030815972222222224,
+        "coverage_k8": 0.02734375,
+        "seconds": 165.2226163330488,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 75291,
+        "unique_endpoints": 75292,
+        "fill_radius_0.05": 0.025933159722222224,
+        "fill_radius_0.1": 0.028428819444444444,
+        "fill_radius_0.2": 0.03298611111111111,
+        "training_seconds": 46.70399574143812,
+        "refresh_seconds": 82.22907740902156,
+        "search_seconds": 34.86929547926411,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.04696180555555555,
+        "auc_k2": 0.028830295138888885,
+        "auc_k4": 0.02241373697916667,
+        "auc_k8": 0.019476182725694444
+      },
+      {
+        "name": "dynamics-noise-0.1",
+        "run": "runs/compression-regularizers-20261111/dynamics-noise-0.1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0007949771344469054,
+        "blocked_fraction": 0.0394375,
+        "coverage_k1": 0.041666666666666664,
+        "coverage_k2": 0.024305555555555556,
+        "coverage_k4": 0.019097222222222224,
+        "coverage_k8": 0.017035590277777776,
+        "seconds": 148.70563358301297,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 76845,
+        "unique_endpoints": 76846,
+        "fill_radius_0.05": 0.016493055555555556,
+        "fill_radius_0.1": 0.018120659722222224,
+        "fill_radius_0.2": 0.021701388888888888,
+        "training_seconds": 43.09093620115891,
+        "refresh_seconds": 70.1695094560273,
+        "search_seconds": 34.14653079630807,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.03723958333333333,
+        "auc_k2": 0.020381944444444446,
+        "auc_k4": 0.015065104166666668,
+        "auc_k8": 0.013005777994791665
+      },
+      {
+        "name": "dynamics-noise-0.3",
+        "run": "runs/compression-regularizers-20261111/dynamics-noise-0.3-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0007660027354728519,
+        "blocked_fraction": 0.0354875,
+        "coverage_k1": 0.041666666666666664,
+        "coverage_k2": 0.029513888888888888,
+        "coverage_k4": 0.022569444444444444,
+        "coverage_k8": 0.019097222222222224,
+        "seconds": 179.60767312487587,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 77161,
+        "unique_endpoints": 77162,
+        "fill_radius_0.05": 0.018012152777777776,
+        "fill_radius_0.1": 0.020073784722222224,
+        "fill_radius_0.2": 0.024088541666666668,
+        "training_seconds": 53.89260928938165,
+        "refresh_seconds": 84.34613891644403,
+        "search_seconds": 39.56739380210638,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.037777777777777785,
+        "auc_k2": 0.021603732638888897,
+        "auc_k4": 0.01607638888888889,
+        "auc_k8": 0.013301595052083335
+      },
+      {
+        "name": "dynamics-tasknoise-0.1",
+        "run": "runs/compression-regularizers-20261111/dynamics-tasknoise-0.1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00023144069291991689,
+        "blocked_fraction": 0.0403625,
+        "coverage_k1": 0.09722222222222222,
+        "coverage_k2": 0.07291666666666667,
+        "coverage_k4": 0.06163194444444445,
+        "coverage_k8": 0.056315104166666664,
+        "seconds": 229.11379533307627,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 76771,
+        "unique_endpoints": 76772,
+        "fill_radius_0.05": 0.05349392361111111,
+        "fill_radius_0.1": 0.058919270833333336,
+        "fill_radius_0.2": 0.06640625,
+        "training_seconds": 54.022717849351466,
+        "refresh_seconds": 132.4914325028658,
+        "search_seconds": 41.155347503721714,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.06427083333333333,
+        "auc_k2": 0.04858940972222223,
+        "auc_k4": 0.041039496527777775,
+        "auc_k8": 0.036080593532986115
+      },
+      {
+        "name": "adjacency-base",
+        "run": "runs/compression-regularizers-20261111/adjacency-base-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.006125857133569318,
+        "blocked_fraction": 0.0683,
+        "coverage_k1": 0.8055555555555556,
+        "coverage_k2": 0.7795138888888888,
+        "coverage_k4": 0.7556423611111112,
+        "coverage_k8": 0.7288411458333334,
+        "seconds": 119.06961366720498,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 65362,
+          "k2_50": 70883,
+          "k4_50": 74002,
+          "k8_50": 77036
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74536,
+        "unique_endpoints": 74537,
+        "fill_radius_0.05": 0.7008463541666666,
+        "fill_radius_0.1": 0.7435980902777778,
+        "fill_radius_0.2": 0.7645399305555556,
+        "training_seconds": 52.08163862256333,
+        "refresh_seconds": 28.493494304362684,
+        "search_seconds": 36.97140356199816,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.33824652777777775,
+        "auc_k2": 0.30338758680555555,
+        "auc_k4": 0.27876898871527783,
+        "auc_k8": 0.25731675889756944
+      },
+      {
+        "name": "adjacency-margin1",
+        "run": "runs/compression-regularizers-20261111/adjacency-margin1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.01863477878909472,
+        "blocked_fraction": 0.0692375,
+        "coverage_k1": 0.8125,
+        "coverage_k2": 0.7986111111111112,
+        "coverage_k4": 0.7864583333333334,
+        "coverage_k8": 0.7626953125,
+        "seconds": 118.14234812464565,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 1.0,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 70023,
+          "k2_50": 73249,
+          "k4_50": 76503,
+          "k8_50": 78624
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74461,
+        "unique_endpoints": 74462,
+        "fill_radius_0.05": 0.7344835069444444,
+        "fill_radius_0.1": 0.7735460069444444,
+        "fill_radius_0.2": 0.7897135416666666,
+        "training_seconds": 52.16865212377161,
+        "refresh_seconds": 27.118413370102644,
+        "search_seconds": 37.38541343761608,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.32667534722222225,
+        "auc_k2": 0.2921701388888889,
+        "auc_k4": 0.26798177083333335,
+        "auc_k8": 0.2479900444878472
+      },
+      {
+        "name": "adjacency-l1-0.0001",
+        "run": "runs/compression-regularizers-20261111/adjacency-l1-0.0001-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0046541150085574285,
+        "blocked_fraction": 0.108175,
+        "coverage_k1": 0.4861111111111111,
+        "coverage_k2": 0.4322916666666667,
+        "coverage_k4": 0.4036458333333333,
+        "coverage_k8": 0.3814019097222222,
+        "seconds": 127.90078295813873,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 71346,
+        "unique_endpoints": 71347,
+        "fill_radius_0.05": 0.3603515625,
+        "fill_radius_0.1": 0.3923611111111111,
+        "fill_radius_0.2": 0.4144965277777778,
+        "training_seconds": 52.358229785226285,
+        "refresh_seconds": 36.720930671319366,
+        "search_seconds": 37.3784200376831,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.15211805555555558,
+        "auc_k2": 0.11985894097222223,
+        "auc_k4": 0.10335394965277779,
+        "auc_k8": 0.09260348849826389
+      },
+      {
+        "name": "adjacency-l1-0.0003",
+        "run": "runs/compression-regularizers-20261111/adjacency-l1-0.0003-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00019445647514880528,
+        "blocked_fraction": 0.1078625,
+        "coverage_k1": 0.08333333333333333,
+        "coverage_k2": 0.059027777777777776,
+        "coverage_k4": 0.04861111111111111,
+        "coverage_k8": 0.043619791666666664,
+        "seconds": 232.58571291575208,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 71371,
+        "unique_endpoints": 71372,
+        "fill_radius_0.05": 0.041449652777777776,
+        "fill_radius_0.1": 0.045355902777777776,
+        "fill_radius_0.2": 0.051323784722222224,
+        "training_seconds": 51.77645461400971,
+        "refresh_seconds": 139.1877168682404,
+        "search_seconds": 40.263963510748,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.06776041666666667,
+        "auc_k2": 0.04491753472222223,
+        "auc_k4": 0.036047092013888886,
+        "auc_k8": 0.03206108940972223
+      },
+      {
+        "name": "adjacency-l1-0.001",
+        "run": "runs/compression-regularizers-20261111/adjacency-l1-0.001-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00018525477624745416,
+        "blocked_fraction": 0.075325,
+        "coverage_k1": 0.08333333333333333,
+        "coverage_k2": 0.06597222222222222,
+        "coverage_k4": 0.0546875,
+        "coverage_k8": 0.0498046875,
+        "seconds": 229.23659924976528,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73974,
+        "unique_endpoints": 73975,
+        "fill_radius_0.05": 0.04709201388888889,
+        "fill_radius_0.1": 0.05251736111111111,
+        "fill_radius_0.2": 0.059136284722222224,
+        "training_seconds": 51.17349724750966,
+        "refresh_seconds": 136.61960882879794,
+        "search_seconds": 40.08385449601337,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.06524305555555557,
+        "auc_k2": 0.047873263888888885,
+        "auc_k4": 0.039130859375,
+        "auc_k8": 0.034252251519097214
+      },
+      {
+        "name": "adjacency-l1-0.003",
+        "run": "runs/compression-regularizers-20261111/adjacency-l1-0.003-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00018453614636440756,
+        "blocked_fraction": 0.0686625,
+        "coverage_k1": 0.1111111111111111,
+        "coverage_k2": 0.08333333333333333,
+        "coverage_k4": 0.07118055555555555,
+        "coverage_k8": 0.06391059027777778,
+        "seconds": 221.91837324993685,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74507,
+        "unique_endpoints": 74508,
+        "fill_radius_0.05": 0.06163194444444445,
+        "fill_radius_0.1": 0.0673828125,
+        "fill_radius_0.2": 0.076171875,
+        "training_seconds": 50.54911204613745,
+        "refresh_seconds": 129.9012012500316,
+        "search_seconds": 40.01847688341513,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.0906423611111111,
+        "auc_k2": 0.06514756944444446,
+        "auc_k4": 0.05213216145833334,
+        "auc_k8": 0.04567532009548611
+      },
+      {
+        "name": "adjacency-l1-0.01",
+        "run": "runs/compression-regularizers-20261111/adjacency-l1-0.01-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00018403911742267083,
+        "blocked_fraction": 0.05355,
+        "coverage_k1": 0.10416666666666667,
+        "coverage_k2": 0.0798611111111111,
+        "coverage_k4": 0.07291666666666667,
+        "coverage_k8": 0.06597222222222222,
+        "seconds": 219.62805062532425,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 75716,
+        "unique_endpoints": 75717,
+        "fill_radius_0.05": 0.06401909722222222,
+        "fill_radius_0.1": 0.06868489583333333,
+        "fill_radius_0.2": 0.0763888888888889,
+        "training_seconds": 50.5627293754369,
+        "refresh_seconds": 128.1042316337116,
+        "search_seconds": 39.61065654223785,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.08419270833333332,
+        "auc_k2": 0.05977864583333333,
+        "auc_k4": 0.05226671006944445,
+        "auc_k8": 0.046684027777777776
+      },
+      {
+        "name": "adjacency-l1only-0.001",
+        "run": "runs/compression-regularizers-20261111/adjacency-l1only-0.001-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0001691921976770151,
+        "blocked_fraction": 0.0525875,
+        "coverage_k1": 0.10416666666666667,
+        "coverage_k2": 0.0763888888888889,
+        "coverage_k4": 0.06293402777777778,
+        "coverage_k8": 0.056098090277777776,
+        "seconds": 227.75257379096,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.0,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 75793,
+        "unique_endpoints": 75794,
+        "fill_radius_0.05": 0.054036458333333336,
+        "fill_radius_0.1": 0.057942708333333336,
+        "fill_radius_0.2": 0.06532118055555555,
+        "training_seconds": 50.424167825840414,
+        "refresh_seconds": 136.56500287167728,
+        "search_seconds": 39.41204924182966,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.07254340277777778,
+        "auc_k2": 0.052400173611111114,
+        "auc_k4": 0.043306749131944454,
+        "auc_k8": 0.037866617838541665
+      },
+      {
+        "name": "adjacency-l1only-0.003",
+        "run": "runs/compression-regularizers-20261111/adjacency-l1only-0.003-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00019076929080061482,
+        "blocked_fraction": 0.0695625,
+        "coverage_k1": 0.10416666666666667,
+        "coverage_k2": 0.08333333333333333,
+        "coverage_k4": 0.07118055555555555,
+        "coverage_k8": 0.0642361111111111,
+        "seconds": 215.74845008319244,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.0,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74435,
+        "unique_endpoints": 74436,
+        "fill_radius_0.05": 0.06174045138888889,
+        "fill_radius_0.1": 0.06629774305555555,
+        "fill_radius_0.2": 0.07356770833333333,
+        "training_seconds": 49.53510753950104,
+        "refresh_seconds": 126.5950125399977,
+        "search_seconds": 38.4301777202636,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.0752170138888889,
+        "auc_k2": 0.05703125,
+        "auc_k4": 0.047274305555555556,
+        "auc_k8": 0.04185845269097223
+      },
+      {
+        "name": "adjacency-l1only-0.01",
+        "run": "runs/compression-regularizers-20261111/adjacency-l1only-0.01-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00017438559699408103,
+        "blocked_fraction": 0.1029875,
+        "coverage_k1": 0.06944444444444445,
+        "coverage_k2": 0.04861111111111111,
+        "coverage_k4": 0.04296875,
+        "coverage_k8": 0.03830295138888889,
+        "seconds": 213.59015575004742,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.0,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 71761,
+        "unique_endpoints": 71762,
+        "fill_radius_0.05": 0.036458333333333336,
+        "fill_radius_0.1": 0.04025607638888889,
+        "fill_radius_0.2": 0.045247395833333336,
+        "training_seconds": 49.64938883855939,
+        "refresh_seconds": 124.11861916212365,
+        "search_seconds": 38.54954880895093,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.05494791666666666,
+        "auc_k2": 0.03878038194444444,
+        "auc_k4": 0.032162000868055554,
+        "auc_k8": 0.028574625651041664
+      },
+      {
+        "name": "adjacency-bound",
+        "run": "runs/compression-regularizers-20261111/adjacency-bound-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00373217285542166,
+        "blocked_fraction": 0.0674,
+        "coverage_k1": 0.6527777777777778,
+        "coverage_k2": 0.6267361111111112,
+        "coverage_k4": 0.6180555555555556,
+        "coverage_k8": 0.6062282986111112,
+        "seconds": 115.17603812506422,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 79223,
+          "k2_50": 82096,
+          "k4_50": 84162,
+          "k8_50": 85968
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74608,
+        "unique_endpoints": 74609,
+        "fill_radius_0.05": 0.5902777777777778,
+        "fill_radius_0.1": 0.6116536458333334,
+        "fill_radius_0.2": 0.6221788194444444,
+        "training_seconds": 50.15825433423743,
+        "refresh_seconds": 26.95324416551739,
+        "search_seconds": 36.64806596469134,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.24385416666666668,
+        "auc_k2": 0.21575303819444444,
+        "auc_k4": 0.19937608506944446,
+        "auc_k8": 0.18687459309895835
+      },
+      {
+        "name": "adjacency-noise-0.01",
+        "run": "runs/compression-regularizers-20261111/adjacency-noise-0.01-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.001199079606005312,
+        "blocked_fraction": 0.0790875,
+        "coverage_k1": 0.1388888888888889,
+        "coverage_k2": 0.11979166666666667,
+        "coverage_k4": 0.1111111111111111,
+        "coverage_k8": 0.10405815972222222,
+        "seconds": 119.06676491722465,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73673,
+        "unique_endpoints": 73674,
+        "fill_radius_0.05": 0.1008029513888889,
+        "fill_radius_0.1": 0.10677083333333333,
+        "fill_radius_0.2": 0.11338975694444445,
+        "training_seconds": 51.17359367199242,
+        "refresh_seconds": 30.00417966209352,
+        "search_seconds": 36.46078245481476,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.09717013888888888,
+        "auc_k2": 0.07406032986111112,
+        "auc_k4": 0.06267903645833334,
+        "auc_k8": 0.056600070529513886
+      },
+      {
+        "name": "adjacency-noise-0.03",
+        "run": "runs/compression-regularizers-20261111/adjacency-noise-0.03-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.002353280592300712,
+        "blocked_fraction": 0.0857625,
+        "coverage_k1": 0.19444444444444445,
+        "coverage_k2": 0.14930555555555555,
+        "coverage_k4": 0.13411458333333334,
+        "coverage_k8": 0.119140625,
+        "seconds": 122.35268262494355,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73139,
+        "unique_endpoints": 73140,
+        "fill_radius_0.05": 0.11219618055555555,
+        "fill_radius_0.1": 0.12456597222222222,
+        "fill_radius_0.2": 0.14029947916666666,
+        "training_seconds": 45.78827992035076,
+        "refresh_seconds": 40.82334553077817,
+        "search_seconds": 34.56727800657973,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.07166666666666666,
+        "auc_k2": 0.053146701388888884,
+        "auc_k4": 0.04503743489583333,
+        "auc_k8": 0.03984971788194444
+      },
+      {
+        "name": "adjacency-noise-0.1",
+        "run": "runs/compression-regularizers-20261111/adjacency-noise-0.1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0007233369685267857,
+        "blocked_fraction": 0.02815,
+        "coverage_k1": 0.0763888888888889,
+        "coverage_k2": 0.06076388888888889,
+        "coverage_k4": 0.050347222222222224,
+        "coverage_k8": 0.044379340277777776,
+        "seconds": 131.65357516612858,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 77748,
+        "unique_endpoints": 77749,
+        "fill_radius_0.05": 0.042317708333333336,
+        "fill_radius_0.1": 0.04676649305555555,
+        "fill_radius_0.2": 0.05284288194444445,
+        "training_seconds": 39.09524478390813,
+        "refresh_seconds": 59.76252959063277,
+        "search_seconds": 31.715564360376447,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.04872395833333334,
+        "auc_k2": 0.03135633680555556,
+        "auc_k4": 0.02506184895833333,
+        "auc_k8": 0.021826578776041664
+      },
+      {
+        "name": "adjacency-noise-0.3",
+        "run": "runs/compression-regularizers-20261111/adjacency-noise-0.3-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.000982817908626582,
+        "blocked_fraction": 0.03235,
+        "coverage_k1": 0.041666666666666664,
+        "coverage_k2": 0.027777777777777776,
+        "coverage_k4": 0.019965277777777776,
+        "coverage_k8": 0.017144097222222224,
+        "seconds": 117.55459170928225,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 77412,
+        "unique_endpoints": 77413,
+        "fill_radius_0.05": 0.016167534722222224,
+        "fill_radius_0.1": 0.018012152777777776,
+        "fill_radius_0.2": 0.022135416666666668,
+        "training_seconds": 34.61963508464396,
+        "refresh_seconds": 53.18332770932466,
+        "search_seconds": 28.726508179679513,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.03746527777777778,
+        "auc_k2": 0.02113715277777778,
+        "auc_k4": 0.015516493055555556,
+        "auc_k8": 0.012988009982638887
+      },
+      {
+        "name": "adjacency-tasknoise-0.1",
+        "run": "runs/compression-regularizers-20261111/adjacency-tasknoise-0.1-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0006645886224979865,
+        "blocked_fraction": 0.0374,
+        "coverage_k1": 0.0625,
+        "coverage_k2": 0.04861111111111111,
+        "coverage_k4": 0.04123263888888889,
+        "coverage_k8": 0.036675347222222224,
+        "seconds": 109.11755241686478,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 77008,
+        "unique_endpoints": 77009,
+        "fill_radius_0.05": 0.03515625,
+        "fill_radius_0.1": 0.03786892361111111,
+        "fill_radius_0.2": 0.042426215277777776,
+        "training_seconds": 30.626992338337004,
+        "refresh_seconds": 51.71303167240694,
+        "search_seconds": 25.80668196082115,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.042543402777777774,
+        "auc_k2": 0.030538194444444444,
+        "auc_k4": 0.02497884114583333,
+        "auc_k8": 0.021566026475694444
+      }
+    ]
+  }
+]

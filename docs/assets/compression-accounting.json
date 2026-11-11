@@ -1,0 +1,1950 @@
+{
+  "jobs": 242,
+  "totals": {
+    "actions": 24200000,
+    "updates": 995104,
+    "one_step_presentations": 254100000,
+    "path_presentations": 8421376,
+    "path_edges": 46754120
+  },
+  "paired_initial_weights_actions_successor_noise": true,
+  "ancestry_occurrences_verified": true,
+  "runs": [
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-base-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-margin1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-l1-0.0001-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-l1-0.0003-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-l1-0.001-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-l1-0.003-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-l1-0.01-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-l1only-0.001-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-l1only-0.003-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-l1only-0.01-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-bound-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-noise-0.01-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-noise-0.03-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-noise-0.1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-noise-0.3-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-tasknoise-0.1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-base-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-margin1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-l1-0.0001-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-l1-0.0003-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-l1-0.001-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-l1-0.003-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-l1-0.01-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-l1only-0.001-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-l1only-0.003-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-l1only-0.01-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-bound-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-noise-0.01-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-noise-0.03-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-noise-0.1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-noise-0.3-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-tasknoise-0.1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-base-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-margin1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-l1-0.0001-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-l1-0.0003-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-l1-0.001-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-l1-0.003-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-l1-0.01-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-l1only-0.001-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-l1only-0.003-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-l1only-0.01-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-bound-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-noise-0.01-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-noise-0.03-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-noise-0.1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-noise-0.3-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/dynamics-tasknoise-0.1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-base-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-margin1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-l1-0.0001-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-l1-0.0003-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-l1-0.001-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-l1-0.003-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-l1-0.01-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-l1only-0.001-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-l1only-0.003-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-l1only-0.01-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-bound-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-noise-0.01-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-noise-0.03-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-noise-0.1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-noise-0.3-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-regularizers-20261111/adjacency-tasknoise-0.1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-multistep-20261111/dynamics-h1-w0.1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-multistep-20261111/dynamics-h1-w1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-multistep-20261111/dynamics-h4-w0.1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 328735
+    },
+    {
+      "run": "runs/compression-multistep-20261111/dynamics-h4-w1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 328723
+    },
+    {
+      "run": "runs/compression-multistep-20261111/dynamics-h16-w0.1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1095274
+    },
+    {
+      "run": "runs/compression-multistep-20261111/dynamics-h16-w1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1094582
+    },
+    {
+      "run": "runs/compression-multistep-20261111/dynamics-h32-w0.1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1922689
+    },
+    {
+      "run": "runs/compression-multistep-20261111/adjacency-h1-w0.1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-multistep-20261111/adjacency-h1-w1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-multistep-20261111/adjacency-h4-w0.1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 328730
+    },
+    {
+      "run": "runs/compression-multistep-20261111/adjacency-h4-w1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 328734
+    },
+    {
+      "run": "runs/compression-multistep-20261111/adjacency-h16-w0.1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1099949
+    },
+    {
+      "run": "runs/compression-multistep-20261111/adjacency-h16-w1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1099990
+    },
+    {
+      "run": "runs/compression-multistep-20261111/adjacency-h32-w0.1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1981570
+    },
+    {
+      "run": "runs/compression-multistep-20261111/dynamics-h1-w0.1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-multistep-20261111/dynamics-h1-w1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-multistep-20261111/dynamics-h4-w0.1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 328975
+    },
+    {
+      "run": "runs/compression-multistep-20261111/dynamics-h4-w1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 328981
+    },
+    {
+      "run": "runs/compression-multistep-20261111/dynamics-h16-w0.1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1089005
+    },
+    {
+      "run": "runs/compression-multistep-20261111/dynamics-h16-w1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1091916
+    },
+    {
+      "run": "runs/compression-multistep-20261111/dynamics-h32-w0.1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1928817
+    },
+    {
+      "run": "runs/compression-multistep-20261111/adjacency-h1-w0.1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-multistep-20261111/adjacency-h1-w1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-multistep-20261111/adjacency-h4-w0.1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 328974
+    },
+    {
+      "run": "runs/compression-multistep-20261111/adjacency-h4-w1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 328974
+    },
+    {
+      "run": "runs/compression-multistep-20261111/adjacency-h16-w0.1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1094752
+    },
+    {
+      "run": "runs/compression-multistep-20261111/adjacency-h16-w1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1096884
+    },
+    {
+      "run": "runs/compression-multistep-20261111/adjacency-h32-w0.1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1909144
+    },
+    {
+      "run": "runs/compression-followup-20261111/dynamics-l1-1e-5-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/dynamics-l1-3e-5-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/dynamics-l1-3e-4-r0.1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/dynamics-late-l1-0.0003-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/dynamics-late-l1-0.001-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/dynamics-bound1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/dynamics-bound1-noise0.025-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/dynamics-noise0.025-r0.1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/adjacency-l1-1e-5-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/adjacency-l1-3e-5-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/adjacency-l1-3e-4-r0.1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/adjacency-late-l1-0.0003-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/adjacency-late-l1-0.001-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/adjacency-bound1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/adjacency-bound1-noise0.025-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/adjacency-noise0.025-r0.1-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/dynamics-l1-1e-5-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/dynamics-l1-3e-5-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/dynamics-l1-3e-4-r0.1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/dynamics-late-l1-0.0003-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/dynamics-late-l1-0.001-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/dynamics-bound1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/dynamics-bound1-noise0.025-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/dynamics-noise0.025-r0.1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/adjacency-l1-1e-5-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/adjacency-l1-3e-5-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/adjacency-l1-3e-4-r0.1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/adjacency-late-l1-0.0003-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/adjacency-late-l1-0.001-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/adjacency-bound1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/adjacency-bound1-noise0.025-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-followup-20261111/adjacency-noise0.025-r0.1-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-delayed-noise-20261111/dynamics-late-noise0.0025-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-delayed-noise-20261111/dynamics-late-noise0.0075-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-delayed-noise-20261111/adjacency-late-noise0.0025-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-delayed-noise-20261111/adjacency-late-noise0.0075-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-delayed-noise-20261111/dynamics-late-noise0.0025-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-delayed-noise-20261111/dynamics-late-noise0.0075-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-delayed-noise-20261111/adjacency-late-noise0.0025-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-delayed-noise-20261111/adjacency-late-noise0.0075-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-weak-noise-20261111/dynamics-weak-noise0.00025-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-weak-noise-20261111/dynamics-weak-noise0.00075-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-weak-noise-20261111/adjacency-weak-noise0.00025-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-weak-noise-20261111/adjacency-weak-noise0.00075-seed70",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-weak-noise-20261111/dynamics-weak-noise0.00025-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-weak-noise-20261111/dynamics-weak-noise0.00075-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-weak-noise-20261111/adjacency-weak-noise0.00025-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-weak-noise-20261111/adjacency-weak-noise0.00075-seed71",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-controls-20261111/dynamics-base-seed80",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-controls-20261111/adjacency-base-seed80",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-controls-20261111/dynamics-base-seed81",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-controls-20261111/adjacency-base-seed81",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-controls-20261111/dynamics-base-seed82",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-controls-20261111/adjacency-base-seed82",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-controls-20261111/dynamics-base-seed83",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-controls-20261111/adjacency-base-seed83",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-controls-20261111/dynamics-base-seed84",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-controls-20261111/adjacency-base-seed84",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-controls-20261111/dynamics-base-seed85",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-controls-20261111/adjacency-base-seed85",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/dynamics-multistep-seed80",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1930021
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/dynamics-multistep-control-seed80",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/adjacency-multistep-seed80",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1085926
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/adjacency-multistep-control-seed80",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/dynamics-multistep-seed81",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1856862
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/dynamics-multistep-control-seed81",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/adjacency-multistep-seed81",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1085095
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/adjacency-multistep-control-seed81",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/dynamics-multistep-seed82",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1888707
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/dynamics-multistep-control-seed82",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/adjacency-multistep-seed82",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1084162
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/adjacency-multistep-control-seed82",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/dynamics-multistep-seed83",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1915425
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/dynamics-multistep-control-seed83",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/adjacency-multistep-seed83",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1095094
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/adjacency-multistep-control-seed83",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/dynamics-multistep-seed84",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1821946
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/dynamics-multistep-control-seed84",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/adjacency-multistep-seed84",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1075830
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/adjacency-multistep-control-seed84",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/dynamics-multistep-seed85",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1811939
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/dynamics-multistep-control-seed85",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/adjacency-multistep-seed85",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1080515
+    },
+    {
+      "run": "runs/compression-confirm-multi-20261111/adjacency-multistep-control-seed85",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-l1-seed80",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-seed80",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-control-seed80",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-l1-seed80",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-seed80",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-control-seed80",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-l1-seed81",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-seed81",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-control-seed81",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-l1-seed81",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-seed81",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-control-seed81",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-l1-seed82",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-seed82",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-control-seed82",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-l1-seed82",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-seed82",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-control-seed82",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-l1-seed83",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-seed83",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-control-seed83",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-l1-seed83",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-seed83",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-control-seed83",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-l1-seed84",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-seed84",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-control-seed84",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-l1-seed84",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-seed84",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-control-seed84",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-l1-seed85",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-seed85",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/dynamics-noise-control-seed85",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-l1-seed85",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-seed85",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-confirm-selected-20261111/adjacency-noise-control-seed85",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-layout-controls-20261111/dynamics-base-layout13-seed86",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-layout-controls-20261111/dynamics-base-layout23-seed86",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-layout-controls-20261111/adjacency-base-layout13-seed86",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-layout-controls-20261111/adjacency-base-layout23-seed86",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-layout-controls-20261111/dynamics-base-layout13-seed87",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-layout-controls-20261111/dynamics-base-layout23-seed87",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-layout-controls-20261111/adjacency-base-layout13-seed87",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-layout-controls-20261111/adjacency-base-layout23-seed87",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-layout-controls-20261111/dynamics-base-layout13-seed88",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-layout-controls-20261111/dynamics-base-layout23-seed88",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-layout-controls-20261111/adjacency-base-layout13-seed88",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-layout-controls-20261111/adjacency-base-layout23-seed88",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-layout-selected-20261111/dynamics-l1-layout13-seed86",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-layout-selected-20261111/dynamics-l1-layout23-seed86",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-layout-selected-20261111/adjacency-multistep-layout13-seed86",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1074850
+    },
+    {
+      "run": "runs/compression-layout-selected-20261111/adjacency-multistep-layout23-seed86",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1075308
+    },
+    {
+      "run": "runs/compression-layout-selected-20261111/adjacency-multistep-control-layout13-seed86",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-layout-selected-20261111/adjacency-multistep-control-layout23-seed86",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-layout-selected-20261111/dynamics-l1-layout13-seed87",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-layout-selected-20261111/dynamics-l1-layout23-seed87",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-layout-selected-20261111/adjacency-multistep-layout13-seed87",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1076615
+    },
+    {
+      "run": "runs/compression-layout-selected-20261111/adjacency-multistep-layout23-seed87",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1078132
+    },
+    {
+      "run": "runs/compression-layout-selected-20261111/adjacency-multistep-control-layout13-seed87",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-layout-selected-20261111/adjacency-multistep-control-layout23-seed87",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-layout-selected-20261111/dynamics-l1-layout13-seed88",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-layout-selected-20261111/dynamics-l1-layout23-seed88",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 0,
+      "path_edges": 0
+    },
+    {
+      "run": "runs/compression-layout-selected-20261111/adjacency-multistep-layout13-seed88",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1082552
+    },
+    {
+      "run": "runs/compression-layout-selected-20261111/adjacency-multistep-layout23-seed88",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 1078559
+    },
+    {
+      "run": "runs/compression-layout-selected-20261111/adjacency-multistep-control-layout13-seed88",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    },
+    {
+      "run": "runs/compression-layout-selected-20261111/adjacency-multistep-control-layout23-seed88",
+      "actions": 100000,
+      "updates": 4112,
+      "one_step_presentations": 1050000,
+      "path_presentations": 131584,
+      "path_edges": 131584
+    }
+  ]
+}

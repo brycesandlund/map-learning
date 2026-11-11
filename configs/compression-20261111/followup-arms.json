@@ -1,0 +1,118 @@
+[
+  {
+    "name": "dynamics-l1-1e-5",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/dynamics-l1-1e-5.json"
+  },
+  {
+    "name": "dynamics-l1-3e-5",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/dynamics-l1-3e-5.json"
+  },
+  {
+    "name": "dynamics-l1-3e-4-r0.1",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/dynamics-l1-3e-4-r0.1.json",
+    "repulsion_weight": 0.1
+  },
+  {
+    "name": "dynamics-late-l1-0.0003",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/dynamics-late-l1-0.0003.json"
+  },
+  {
+    "name": "dynamics-late-l1-0.001",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/dynamics-late-l1-0.001.json"
+  },
+  {
+    "name": "dynamics-bound1",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/dynamics-bound1.json"
+  },
+  {
+    "name": "dynamics-bound1-noise0.025",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/dynamics-bound1-noise0.025.json"
+  },
+  {
+    "name": "dynamics-noise0.025-r0.1",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/dynamics-noise0.025-r0.1.json",
+    "repulsion_weight": 0.1
+  },
+  {
+    "name": "adjacency-l1-1e-5",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/adjacency-l1-1e-5.json"
+  },
+  {
+    "name": "adjacency-l1-3e-5",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/adjacency-l1-3e-5.json"
+  },
+  {
+    "name": "adjacency-l1-3e-4-r0.1",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/adjacency-l1-3e-4-r0.1.json",
+    "repulsion_weight": 0.1
+  },
+  {
+    "name": "adjacency-late-l1-0.0003",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/adjacency-late-l1-0.0003.json"
+  },
+  {
+    "name": "adjacency-late-l1-0.001",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/adjacency-late-l1-0.001.json"
+  },
+  {
+    "name": "adjacency-bound1",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/adjacency-bound1.json"
+  },
+  {
+    "name": "adjacency-bound1-noise0.025",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/adjacency-bound1-noise0.025.json"
+  },
+  {
+    "name": "adjacency-noise0.025-r0.1",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/adjacency-noise0.025-r0.1.json",
+    "repulsion_weight": 0.1
+  }
+]

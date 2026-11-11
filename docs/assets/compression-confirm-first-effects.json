@@ -1,0 +1,117 @@
+{
+  "note": "Paired seed bootstrap conditional on layout, no multiple-comparison adjustment. Layouts share model seeds. All candidate/control comparisons retained.",
+  "comparisons": [
+    {
+      "candidate": "dynamics-multistep",
+      "control": "dynamics-base",
+      "layout": 7,
+      "seeds": [
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ],
+      "difference_pp": [
+        -0.78125,
+        13.975694444444443,
+        -1.736111111111116,
+        -1.345486111111105,
+        -4.557291666666674,
+        -3.90625
+      ],
+      "mean_difference_pp": 0.2748842592592579,
+      "wins": 1,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -3.349247685185189,
+        5.917245370370369
+      ]
+    },
+    {
+      "candidate": "dynamics-multistep",
+      "control": "dynamics-multistep-control",
+      "layout": 7,
+      "seeds": [
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ],
+      "difference_pp": [
+        5.164930555555558,
+        4.123263888888895,
+        9.461805555555546,
+        -4.6875,
+        -7.291666666666674,
+        0.347222222222221
+      ],
+      "mean_difference_pp": 1.186342592592591,
+      "wins": 4,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -3.4722222222222268,
+        5.671296296296293
+      ]
+    },
+    {
+      "candidate": "adjacency-multistep",
+      "control": "adjacency-base",
+      "layout": 7,
+      "seeds": [
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ],
+      "difference_pp": [
+        7.335069444444442,
+        -2.170138888888895,
+        -12.630208333333325,
+        10.026041666666663,
+        -7.335069444444442,
+        35.02604166666667
+      ],
+      "mean_difference_pp": 5.041956018518519,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -6.228298611111108,
+        18.301504629629633
+      ]
+    },
+    {
+      "candidate": "adjacency-multistep",
+      "control": "adjacency-multistep-control",
+      "layout": 7,
+      "seeds": [
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ],
+      "difference_pp": [
+        -3.298611111111116,
+        8.333333333333337,
+        -19.444444444444443,
+        17.361111111111104,
+        -6.684027777777779,
+        21.52777777777778
+      ],
+      "mean_difference_pp": 2.9658564814814805,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -8.246527777777779,
+        14.236111111111112
+      ]
+    }
+  ]
+}

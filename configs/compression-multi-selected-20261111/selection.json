@@ -1,0 +1,260 @@
+{
+  "selected": [
+    {
+      "family": "multistep",
+      "arm": {
+        "name": "dynamics-h32-w0.1",
+        "objective": "dynamics",
+        "step_size": 0.125,
+        "repulsion_margin": 0.25,
+        "experiment_spec": "configs/compression-20261111/dynamics-h32-w0.1.json"
+      },
+      "spec": {
+        "multistep_weight": 0.1,
+        "horizon": 32
+      },
+      "mean_final": 0.7918836805555556,
+      "mean_auc": 0.27287597656250007,
+      "final": [
+        0.8038194444444444,
+        0.7799479166666666
+      ],
+      "confirmation_name": "dynamics-multistep",
+      "matched_control": "dynamics-multistep-control"
+    },
+    {
+      "family": "multistep",
+      "arm": {
+        "name": "adjacency-h16-w1",
+        "objective": "adjacency",
+        "step_size": 0.125,
+        "repulsion_margin": 0.25,
+        "experiment_spec": "configs/compression-20261111/adjacency-h16-w1.json"
+      },
+      "spec": {
+        "multistep_weight": 1,
+        "horizon": 16
+      },
+      "mean_final": 0.806640625,
+      "mean_auc": 0.30843315972222224,
+      "final": [
+        0.7955729166666666,
+        0.8177083333333334
+      ],
+      "confirmation_name": "adjacency-multistep",
+      "matched_control": "adjacency-multistep-control"
+    }
+  ],
+  "ranking": [
+    {
+      "family": "multistep",
+      "arm": {
+        "name": "dynamics-h4-w0.1",
+        "objective": "dynamics",
+        "step_size": 0.125,
+        "repulsion_margin": 0.25,
+        "experiment_spec": "configs/compression-20261111/dynamics-h4-w0.1.json"
+      },
+      "spec": {
+        "multistep_weight": 0.1,
+        "horizon": 4
+      },
+      "mean_final": 0.7621527777777777,
+      "mean_auc": 0.2638454861111111,
+      "final": [
+        0.7834201388888888,
+        0.7408854166666666
+      ]
+    },
+    {
+      "family": "multistep",
+      "arm": {
+        "name": "dynamics-h4-w1",
+        "objective": "dynamics",
+        "step_size": 0.125,
+        "repulsion_margin": 0.25,
+        "experiment_spec": "configs/compression-20261111/dynamics-h4-w1.json"
+      },
+      "spec": {
+        "multistep_weight": 1,
+        "horizon": 4
+      },
+      "mean_final": 0.67578125,
+      "mean_auc": 0.2143142361111111,
+      "final": [
+        0.5972222222222222,
+        0.7543402777777778
+      ]
+    },
+    {
+      "family": "multistep",
+      "arm": {
+        "name": "dynamics-h16-w0.1",
+        "objective": "dynamics",
+        "step_size": 0.125,
+        "repulsion_margin": 0.25,
+        "experiment_spec": "configs/compression-20261111/dynamics-h16-w0.1.json"
+      },
+      "spec": {
+        "multistep_weight": 0.1,
+        "horizon": 16
+      },
+      "mean_final": 0.7039930555555556,
+      "mean_auc": 0.20803602430555557,
+      "final": [
+        0.7751736111111112,
+        0.6328125
+      ]
+    },
+    {
+      "family": "multistep",
+      "arm": {
+        "name": "dynamics-h16-w1",
+        "objective": "dynamics",
+        "step_size": 0.125,
+        "repulsion_margin": 0.25,
+        "experiment_spec": "configs/compression-20261111/dynamics-h16-w1.json"
+      },
+      "spec": {
+        "multistep_weight": 1,
+        "horizon": 16
+      },
+      "mean_final": 0.7345920138888888,
+      "mean_auc": 0.2237277560763889,
+      "final": [
+        0.765625,
+        0.7035590277777778
+      ]
+    },
+    {
+      "family": "multistep",
+      "arm": {
+        "name": "dynamics-h32-w0.1",
+        "objective": "dynamics",
+        "step_size": 0.125,
+        "repulsion_margin": 0.25,
+        "experiment_spec": "configs/compression-20261111/dynamics-h32-w0.1.json"
+      },
+      "spec": {
+        "multistep_weight": 0.1,
+        "horizon": 32
+      },
+      "mean_final": 0.7918836805555556,
+      "mean_auc": 0.27287597656250007,
+      "final": [
+        0.8038194444444444,
+        0.7799479166666666
+      ],
+      "confirmation_name": "dynamics-multistep",
+      "matched_control": "dynamics-multistep-control"
+    },
+    {
+      "family": "multistep",
+      "arm": {
+        "name": "adjacency-h4-w0.1",
+        "objective": "adjacency",
+        "step_size": 0.125,
+        "repulsion_margin": 0.25,
+        "experiment_spec": "configs/compression-20261111/adjacency-h4-w0.1.json"
+      },
+      "spec": {
+        "multistep_weight": 0.1,
+        "horizon": 4
+      },
+      "mean_final": 0.6759982638888888,
+      "mean_auc": 0.2074869791666667,
+      "final": [
+        0.6909722222222222,
+        0.6610243055555556
+      ]
+    },
+    {
+      "family": "multistep",
+      "arm": {
+        "name": "adjacency-h4-w1",
+        "objective": "adjacency",
+        "step_size": 0.125,
+        "repulsion_margin": 0.25,
+        "experiment_spec": "configs/compression-20261111/adjacency-h4-w1.json"
+      },
+      "spec": {
+        "multistep_weight": 1,
+        "horizon": 4
+      },
+      "mean_final": 0.6879340277777777,
+      "mean_auc": 0.2110687934027778,
+      "final": [
+        0.6818576388888888,
+        0.6940104166666666
+      ]
+    },
+    {
+      "family": "multistep",
+      "arm": {
+        "name": "adjacency-h16-w0.1",
+        "objective": "adjacency",
+        "step_size": 0.125,
+        "repulsion_margin": 0.25,
+        "experiment_spec": "configs/compression-20261111/adjacency-h16-w0.1.json"
+      },
+      "spec": {
+        "multistep_weight": 0.1,
+        "horizon": 16
+      },
+      "mean_final": 0.7506510416666667,
+      "mean_auc": 0.2434494357638889,
+      "final": [
+        0.80078125,
+        0.7005208333333334
+      ]
+    },
+    {
+      "family": "multistep",
+      "arm": {
+        "name": "adjacency-h16-w1",
+        "objective": "adjacency",
+        "step_size": 0.125,
+        "repulsion_margin": 0.25,
+        "experiment_spec": "configs/compression-20261111/adjacency-h16-w1.json"
+      },
+      "spec": {
+        "multistep_weight": 1,
+        "horizon": 16
+      },
+      "mean_final": 0.806640625,
+      "mean_auc": 0.30843315972222224,
+      "final": [
+        0.7955729166666666,
+        0.8177083333333334
+      ],
+      "confirmation_name": "adjacency-multistep",
+      "matched_control": "adjacency-multistep-control"
+    },
+    {
+      "family": "multistep",
+      "arm": {
+        "name": "adjacency-h32-w0.1",
+        "objective": "adjacency",
+        "step_size": 0.125,
+        "repulsion_margin": 0.25,
+        "experiment_spec": "configs/compression-20261111/adjacency-h32-w0.1.json"
+      },
+      "spec": {
+        "multistep_weight": 0.1,
+        "horizon": 32
+      },
+      "mean_final": 0.7819010416666667,
+      "mean_auc": 0.25080783420138886,
+      "final": [
+        0.8177083333333334,
+        0.74609375
+      ]
+    }
+  ],
+  "layout_names": [
+    "dynamics-multistep",
+    "dynamics-multistep-control",
+    "adjacency-multistep",
+    "adjacency-multistep-control"
+  ]
+}

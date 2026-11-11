@@ -1,0 +1,98 @@
+[
+  {
+    "method": "dynamics-base",
+    "n": 6,
+    "centered_coordinate_participation": 5.5382717450459795,
+    "pca_participation": 1.9431929150466558,
+    "centroid_pca_participation": 1.9426979415968197,
+    "noise_fraction": 0.0004530745354713872,
+    "relative_small_activation_fraction": 0.03382703993055556,
+    "relative_small_coordinate_fraction": 0.0,
+    "noise_to_open_transition_rms": 0.8257968425750732,
+    "centroid_distance_spearman_xy": 0.9573263047224277
+  },
+  {
+    "method": "dynamics-l1",
+    "n": 6,
+    "centered_coordinate_participation": 3.161042412122091,
+    "pca_participation": 1.9012030505168556,
+    "centroid_pca_participation": 1.900528244427247,
+    "noise_fraction": 0.00044904967944603413,
+    "relative_small_activation_fraction": 0.3154229058159722,
+    "relative_small_coordinate_fraction": 0.2708333333333333,
+    "noise_to_open_transition_rms": 0.8196539978186289,
+    "centroid_distance_spearman_xy": 0.9275979555484852
+  },
+  {
+    "method": "dynamics-noise",
+    "n": 6,
+    "centered_coordinate_participation": 2.759389797846476,
+    "pca_participation": 2.213170190220539,
+    "centroid_pca_participation": 2.2129161501936134,
+    "noise_fraction": 0.0002051927707119224,
+    "relative_small_activation_fraction": 0.18250415943287038,
+    "relative_small_coordinate_fraction": 0.08333333333333333,
+    "noise_to_open_transition_rms": 0.6771479249000549,
+    "centroid_distance_spearman_xy": 0.877741868828426
+  },
+  {
+    "method": "dynamics-multistep",
+    "n": 6,
+    "centered_coordinate_participation": 5.3324151039123535,
+    "pca_participation": 1.893462924272421,
+    "centroid_pca_participation": 1.8932668136346076,
+    "noise_fraction": 0.0003824526186993656,
+    "relative_small_activation_fraction": 0.048694751880787035,
+    "relative_small_coordinate_fraction": 0.0,
+    "noise_to_open_transition_rms": 0.822475423415502,
+    "centroid_distance_spearman_xy": 0.9570801659761022
+  },
+  {
+    "method": "adjacency-base",
+    "n": 6,
+    "centered_coordinate_participation": 5.497631708780925,
+    "pca_participation": 1.8147352477580878,
+    "centroid_pca_participation": 1.8146315704730782,
+    "noise_fraction": 0.00017261691148936129,
+    "relative_small_activation_fraction": 0.0320140697337963,
+    "relative_small_coordinate_fraction": 0.0,
+    "noise_to_open_transition_rms": 0.6848582625389099,
+    "centroid_distance_spearman_xy": 0.9410327584502185
+  },
+  {
+    "method": "adjacency-l1",
+    "n": 6,
+    "centered_coordinate_participation": 1.6366816957791646,
+    "pca_participation": 1.5569220656672005,
+    "centroid_pca_participation": 1.556859671642074,
+    "noise_fraction": 0.00017922556313957708,
+    "relative_small_activation_fraction": 0.7923064055266203,
+    "relative_small_coordinate_fraction": 0.7916666666666666,
+    "noise_to_open_transition_rms": 0.693681538105011,
+    "centroid_distance_spearman_xy": 0.8521907526145593
+  },
+  {
+    "method": "adjacency-noise",
+    "n": 6,
+    "centered_coordinate_participation": 2.5759291847546897,
+    "pca_participation": 1.9745807516288985,
+    "centroid_pca_participation": 1.9745116186426541,
+    "noise_fraction": 0.00010218632572408144,
+    "relative_small_activation_fraction": 0.23740415219907407,
+    "relative_small_coordinate_fraction": 0.08333333333333333,
+    "noise_to_open_transition_rms": 0.5550413380066553,
+    "centroid_distance_spearman_xy": 0.8367907907150137
+  },
+  {
+    "method": "adjacency-multistep",
+    "n": 6,
+    "centered_coordinate_participation": 5.162762602170308,
+    "pca_participation": 1.9160682210894804,
+    "centroid_pca_participation": 1.9159947788209815,
+    "noise_fraction": 0.0001097810187881502,
+    "relative_small_activation_fraction": 0.03658266420717592,
+    "relative_small_coordinate_fraction": 0.0,
+    "noise_to_open_transition_rms": 0.6230928897857666,
+    "centroid_distance_spearman_xy": 0.9779681601390794
+  }
+]

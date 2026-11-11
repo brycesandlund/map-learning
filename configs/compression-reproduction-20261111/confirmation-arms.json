@@ -1,0 +1,84 @@
+[
+  {
+    "name": "dynamics-base",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25
+  },
+  {
+    "name": "adjacency-base",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25
+  },
+  {
+    "name": "dynamics-multistep",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-multi-selected-20261111/dynamics-multistep.json"
+  },
+  {
+    "name": "dynamics-multistep-control",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-multi-selected-20261111/dynamics-multistep-control.json"
+  },
+  {
+    "name": "adjacency-multistep",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-multi-selected-20261111/adjacency-multistep.json"
+  },
+  {
+    "name": "adjacency-multistep-control",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-multi-selected-20261111/adjacency-multistep-control.json"
+  },
+  {
+    "name": "dynamics-l1",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-selected-20261111/dynamics-l1.json"
+  },
+  {
+    "name": "dynamics-noise",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-selected-20261111/dynamics-noise.json"
+  },
+  {
+    "name": "dynamics-noise-control",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-selected-20261111/dynamics-noise-control.json"
+  },
+  {
+    "name": "adjacency-l1",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-selected-20261111/adjacency-l1.json"
+  },
+  {
+    "name": "adjacency-noise",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-selected-20261111/adjacency-noise.json"
+  },
+  {
+    "name": "adjacency-noise-control",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-selected-20261111/adjacency-noise-control.json"
+  }
+]

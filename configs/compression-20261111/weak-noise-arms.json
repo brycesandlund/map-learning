@@ -1,0 +1,30 @@
+[
+  {
+    "name": "dynamics-weak-noise0.00025",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/dynamics-weak-noise0.00025.json"
+  },
+  {
+    "name": "dynamics-weak-noise0.00075",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/dynamics-weak-noise0.00075.json"
+  },
+  {
+    "name": "adjacency-weak-noise0.00025",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/adjacency-weak-noise0.00025.json"
+  },
+  {
+    "name": "adjacency-weak-noise0.00075",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-20261111/adjacency-weak-noise0.00075.json"
+  }
+]

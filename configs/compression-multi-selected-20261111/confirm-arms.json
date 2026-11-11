@@ -1,0 +1,30 @@
+[
+  {
+    "name": "dynamics-multistep",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-multi-selected-20261111/dynamics-multistep.json"
+  },
+  {
+    "name": "dynamics-multistep-control",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-multi-selected-20261111/dynamics-multistep-control.json"
+  },
+  {
+    "name": "adjacency-multistep",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-multi-selected-20261111/adjacency-multistep.json"
+  },
+  {
+    "name": "adjacency-multistep-control",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "experiment_spec": "configs/compression-multi-selected-20261111/adjacency-multistep-control.json"
+  }
+]

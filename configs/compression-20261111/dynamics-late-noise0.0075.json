@@ -1,0 +1,6 @@
+{
+  "bound": 0.25,
+  "noise_std": 0.0075,
+  "noise_after": 50000,
+  "noise_ramp": 10000
+}

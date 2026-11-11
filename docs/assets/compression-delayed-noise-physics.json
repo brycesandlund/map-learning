@@ -1,0 +1,798 @@
+[
+  {
+    "root": "runs/compression-delayed-noise-20261111",
+    "manifest": {
+      "arms": [
+        {
+          "name": "dynamics-late-noise0.0025",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-late-noise0.0025.json"
+        },
+        {
+          "name": "dynamics-late-noise0.0075",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/dynamics-late-noise0.0075.json"
+        },
+        {
+          "name": "adjacency-late-noise0.0025",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-late-noise0.0025.json"
+        },
+        {
+          "name": "adjacency-late-noise0.0075",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "experiment_spec": "configs/compression-20261111/adjacency-late-noise0.0075.json"
+        }
+      ],
+      "seeds": [
+        70,
+        71
+      ],
+      "blocks": 20,
+      "created_unix": 1794428727.105209,
+      "workers": 2
+    },
+    "summary": [
+      {
+        "name": "dynamics-late-noise0.0025",
+        "coverage_k1": {
+          "mean": 0.7118055555555556,
+          "values": [
+            0.75,
+            0.6736111111111112
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.6710069444444444,
+          "values": [
+            0.7291666666666666,
+            0.6128472222222222
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.6447482638888888,
+          "values": [
+            0.70703125,
+            0.5824652777777778
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.6207139756944444,
+          "values": [
+            0.6828342013888888,
+            0.55859375
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.20371988932291663,
+          "values": [
+            0.22658365885416665,
+            0.18085611979166663
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.6321072048611112,
+          "values": [
+            0.6936848958333334,
+            0.5705295138888888
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.0711,
+          "values": [
+            0.066525,
+            0.075675
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-late-noise0.0075",
+        "coverage_k1": {
+          "mean": 0.47916666666666663,
+          "values": [
+            0.3263888888888889,
+            0.6319444444444444
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.43576388888888895,
+          "values": [
+            0.2760416666666667,
+            0.5954861111111112
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.4125434027777778,
+          "values": [
+            0.2504340277777778,
+            0.5746527777777778
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.3907335069444444,
+          "values": [
+            0.2275390625,
+            0.5539279513888888
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.15468885633680557,
+          "values": [
+            0.1328195529513889,
+            0.17655815972222222
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.4012044270833333,
+          "values": [
+            0.23741319444444445,
+            0.5649956597222222
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07811875,
+          "values": [
+            0.0786375,
+            0.0776
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-late-noise0.0025",
+        "coverage_k1": {
+          "mean": 0.65625,
+          "values": [
+            0.6666666666666666,
+            0.6458333333333334
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.6206597222222222,
+          "values": [
+            0.6371527777777778,
+            0.6041666666666666
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.6076388888888888,
+          "values": [
+            0.6258680555555556,
+            0.5894097222222222
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.5938042534722222,
+          "values": [
+            0.6107855902777778,
+            0.5768229166666666
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.18585015190972223,
+          "values": [
+            0.19440863715277779,
+            0.17729166666666668
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.6005859375,
+          "values": [
+            0.6190321180555556,
+            0.5821397569444444
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.0736875,
+          "values": [
+            0.0794875,
+            0.0678875
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-late-noise0.0075",
+        "coverage_k1": {
+          "mean": 0.5069444444444444,
+          "values": [
+            0.3958333333333333,
+            0.6180555555555556
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.4652777777777778,
+          "values": [
+            0.3385416666666667,
+            0.5920138888888888
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.4301215277777778,
+          "values": [
+            0.2934027777777778,
+            0.5668402777777778
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.4028862847222222,
+          "values": [
+            0.2603081597222222,
+            0.5454644097222222
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.12621853298611113,
+          "values": [
+            0.10112196180555555,
+            0.1513151041666667
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.4159071180555556,
+          "values": [
+            0.275390625,
+            0.5564236111111112
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.0834875,
+          "values": [
+            0.0962125,
+            0.0707625
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      }
+    ],
+    "runs": [
+      {
+        "name": "dynamics-late-noise0.0025",
+        "run": "runs/compression-delayed-noise-20261111/dynamics-late-noise0.0025-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0056001367379636974,
+        "blocked_fraction": 0.066525,
+        "coverage_k1": 0.75,
+        "coverage_k2": 0.7291666666666666,
+        "coverage_k4": 0.70703125,
+        "coverage_k8": 0.6828342013888888,
+        "seconds": 154.9236240000464,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 73833,
+          "k2_50": 78003,
+          "k4_50": 81356,
+          "k8_50": 84032
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74678,
+        "unique_endpoints": 74679,
+        "fill_radius_0.05": 0.654296875,
+        "fill_radius_0.1": 0.6936848958333334,
+        "fill_radius_0.2": 0.7132161458333334,
+        "training_seconds": 68.12803686736152,
+        "refresh_seconds": 37.10121886897832,
+        "search_seconds": 47.82420041691512,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.28411458333333334,
+        "auc_k2": 0.2474392361111111,
+        "auc_k4": 0.22658365885416665,
+        "auc_k8": 0.20914862738715279
+      },
+      {
+        "name": "dynamics-late-noise0.0075",
+        "run": "runs/compression-delayed-noise-20261111/dynamics-late-noise0.0075-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0010155348655769853,
+        "blocked_fraction": 0.0786375,
+        "coverage_k1": 0.3263888888888889,
+        "coverage_k2": 0.2760416666666667,
+        "coverage_k4": 0.2504340277777778,
+        "coverage_k8": 0.2275390625,
+        "seconds": 159.39369370834902,
+        "objective": "dynamics",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73709,
+        "unique_endpoints": 73710,
+        "fill_radius_0.05": 0.21744791666666666,
+        "fill_radius_0.1": 0.23741319444444445,
+        "fill_radius_0.2": 0.2616102430555556,
+        "training_seconds": 67.95391212403774,
+        "refresh_seconds": 41.154778548981994,
+        "search_seconds": 48.32144135097042,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.18785590277777775,
+        "auc_k2": 0.15143012152777777,
+        "auc_k4": 0.1328195529513889,
+        "auc_k8": 0.11746785481770834
+      },
+      {
+        "name": "adjacency-late-noise0.0025",
+        "run": "runs/compression-delayed-noise-20261111/adjacency-late-noise0.0025-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.005191209167236596,
+        "blocked_fraction": 0.0794875,
+        "coverage_k1": 0.6666666666666666,
+        "coverage_k2": 0.6371527777777778,
+        "coverage_k4": 0.6258680555555556,
+        "coverage_k8": 0.6107855902777778,
+        "seconds": 167.1335109998472,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 80986,
+          "k2_50": 85136,
+          "k4_50": 87699,
+          "k8_50": 89594
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73641,
+        "unique_endpoints": 73642,
+        "fill_radius_0.05": 0.5900607638888888,
+        "fill_radius_0.1": 0.6190321180555556,
+        "fill_radius_0.2": 0.6304253472222222,
+        "training_seconds": 73.64686958352104,
+        "refresh_seconds": 40.271128335502,
+        "search_seconds": 51.18446729099378,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.24821180555555555,
+        "auc_k2": 0.21458984375,
+        "auc_k4": 0.19440863715277779,
+        "auc_k8": 0.179012451171875
+      },
+      {
+        "name": "adjacency-late-noise0.0075",
+        "run": "runs/compression-delayed-noise-20261111/adjacency-late-noise0.0075-seed70",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0032219698190568097,
+        "blocked_fraction": 0.0962125,
+        "coverage_k1": 0.3958333333333333,
+        "coverage_k2": 0.3385416666666667,
+        "coverage_k4": 0.2934027777777778,
+        "coverage_k8": 0.2603081597222222,
+        "seconds": 172.54394725011662,
+        "objective": "adjacency",
+        "seed": 70,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "5cff3aa11dd467eeac5109e41b26d83f505dad1823db6a82dd36f27b019c41a7",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 72303,
+        "unique_endpoints": 72304,
+        "fill_radius_0.05": 0.24110243055555555,
+        "fill_radius_0.1": 0.275390625,
+        "fill_radius_0.2": 0.3088107638888889,
+        "training_seconds": 74.02697059046477,
+        "refresh_seconds": 45.32753173774108,
+        "search_seconds": 51.073808699380606,
+        "action_stream_sha256": "e026dac990ff81c983665effbd72784297565911976263c0c9b8a020c8db455b",
+        "auc_k1": 0.16337673611111111,
+        "auc_k2": 0.12268446180555556,
+        "auc_k4": 0.10112196180555555,
+        "auc_k8": 0.08821763780381946
+      },
+      {
+        "name": "dynamics-late-noise0.0025",
+        "run": "runs/compression-delayed-noise-20261111/dynamics-late-noise0.0025-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00534123201316889,
+        "blocked_fraction": 0.075675,
+        "coverage_k1": 0.6736111111111112,
+        "coverage_k2": 0.6128472222222222,
+        "coverage_k4": 0.5824652777777778,
+        "coverage_k8": 0.55859375,
+        "seconds": 188.58215333288535,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 84434,
+          "k2_50": 89019,
+          "k4_50": 91469,
+          "k8_50": 94012
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73946,
+        "unique_endpoints": 73947,
+        "fill_radius_0.05": 0.5363498263888888,
+        "fill_radius_0.1": 0.5705295138888888,
+        "fill_radius_0.2": 0.5951605902777778,
+        "training_seconds": 84.16812682943419,
+        "refresh_seconds": 43.36364480340853,
+        "search_seconds": 58.9155226778239,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.228828125,
+        "auc_k2": 0.19739366319444449,
+        "auc_k4": 0.18085611979166663,
+        "auc_k8": 0.16846055772569446
+      },
+      {
+        "name": "dynamics-late-noise0.0075",
+        "run": "runs/compression-delayed-noise-20261111/dynamics-late-noise0.0075-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004229063675468965,
+        "blocked_fraction": 0.0776,
+        "coverage_k1": 0.6319444444444444,
+        "coverage_k2": 0.5954861111111112,
+        "coverage_k4": 0.5746527777777778,
+        "coverage_k8": 0.5539279513888888,
+        "seconds": 189.41970641724765,
+        "objective": "dynamics",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 82396,
+          "k2_50": 88002,
+          "k4_50": 90027,
+          "k8_50": 92069
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73792,
+        "unique_endpoints": 73793,
+        "fill_radius_0.05": 0.533203125,
+        "fill_radius_0.1": 0.5649956597222222,
+        "fill_radius_0.2": 0.5831163194444444,
+        "training_seconds": 84.70210490887985,
+        "refresh_seconds": 43.957604330498725,
+        "search_seconds": 58.52911965548992,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.22440104166666663,
+        "auc_k2": 0.19368706597222224,
+        "auc_k4": 0.17655815972222222,
+        "auc_k8": 0.16276896158854165
+      },
+      {
+        "name": "adjacency-late-noise0.0025",
+        "run": "runs/compression-delayed-noise-20261111/adjacency-late-noise0.0025-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00392109992574777,
+        "blocked_fraction": 0.0678875,
+        "coverage_k1": 0.6458333333333334,
+        "coverage_k2": 0.6041666666666666,
+        "coverage_k4": 0.5894097222222222,
+        "coverage_k8": 0.5768229166666666,
+        "seconds": 187.26323595782742,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 83363,
+          "k2_50": 87611,
+          "k4_50": 88999,
+          "k8_50": 90467
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74569,
+        "unique_endpoints": 74570,
+        "fill_radius_0.05": 0.5600043402777778,
+        "fill_radius_0.1": 0.5821397569444444,
+        "fill_radius_0.2": 0.5933159722222222,
+        "training_seconds": 82.68021909613162,
+        "refresh_seconds": 44.2683715429157,
+        "search_seconds": 58.24841444892809,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.21855034722222222,
+        "auc_k2": 0.191953125,
+        "auc_k4": 0.17729166666666668,
+        "auc_k8": 0.16566569010416665
+      },
+      {
+        "name": "adjacency-late-noise0.0075",
+        "run": "runs/compression-delayed-noise-20261111/adjacency-late-noise0.0075-seed71",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0043862905255152235,
+        "blocked_fraction": 0.0707625,
+        "coverage_k1": 0.6180555555555556,
+        "coverage_k2": 0.5920138888888888,
+        "coverage_k4": 0.5668402777777778,
+        "coverage_k8": 0.5454644097222222,
+        "seconds": 187.06845595827326,
+        "objective": "adjacency",
+        "seed": 71,
+        "layout": 7,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "901d462d10a07e0259661766ef7a12b898576da106947023ca0bc35d0b7f021a",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 89796,
+          "k2_50": 92468,
+          "k4_50": 93996,
+          "k8_50": 95833
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74339,
+        "unique_endpoints": 74340,
+        "fill_radius_0.05": 0.5233289930555556,
+        "fill_radius_0.1": 0.5564236111111112,
+        "fill_radius_0.2": 0.5762803819444444,
+        "training_seconds": 81.92577854078263,
+        "refresh_seconds": 45.31765387021005,
+        "search_seconds": 57.903064109385014,
+        "action_stream_sha256": "ba3cfdd0ed40a969fe1ec33b87602b1db6bdb31270306d727c5b014a309cf971",
+        "auc_k1": 0.19453993055555557,
+        "auc_k2": 0.1679665798611111,
+        "auc_k4": 0.1513151041666667,
+        "auc_k8": 0.1388602701822917
+      }
+    ]
+  }
+]

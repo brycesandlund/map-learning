@@ -1,0 +1,2618 @@
+{
+  "groups": [
+    {
+      "name": "dynamics-base",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7604166666666667,
+      "final": [
+        0.8025173611111112,
+        0.7183159722222222
+      ],
+      "mean_fine": 0.7216796875,
+      "mean_auc": 0.2699055989583333,
+      "spec": {},
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 129.56761756259948,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-margin1",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.5308159722222222,
+      "final": [
+        0.6011284722222222,
+        0.4605034722222222
+      ],
+      "mean_fine": 0.49826388888888884,
+      "mean_auc": 0.16106662326388888,
+      "spec": {},
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 1.0
+      },
+      "mean_seconds": 129.10977937513962,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-l1-0.0001",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.689453125,
+      "final": [
+        0.6592881944444444,
+        0.7196180555555556
+      ],
+      "mean_fine": 0.6714409722222222,
+      "mean_auc": 0.2552587890625,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0001,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 112.67130689625628,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-l1-0.0003",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.07552083333333334,
+      "final": [
+        0.0802951388888889,
+        0.07074652777777778
+      ],
+      "mean_fine": 0.06575520833333334,
+      "mean_auc": 0.05247938368055556,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0003,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 203.6366272913292,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-l1-0.001",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.07269965277777778,
+      "final": [
+        0.06597222222222222,
+        0.07942708333333333
+      ],
+      "mean_fine": 0.06412760416666667,
+      "mean_auc": 0.049466145833333336,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.001,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 206.7581422913354,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-l1-0.003",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.08116319444444445,
+      "final": [
+        0.06293402777777778,
+        0.0993923611111111
+      ],
+      "mean_fine": 0.07118055555555555,
+      "mean_auc": 0.05434407552083333,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.003,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 206.19446574989706,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-l1-0.01",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.07183159722222222,
+      "final": [
+        0.06684027777777778,
+        0.07682291666666667
+      ],
+      "mean_fine": 0.06380208333333333,
+      "mean_auc": 0.050234375,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.01,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 202.9086960835848,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-l1only-0.001",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.06467013888888888,
+      "final": [
+        0.0837673611111111,
+        0.045572916666666664
+      ],
+      "mean_fine": 0.05821397569444444,
+      "mean_auc": 0.04641493055555555,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.001,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.0,
+        "m": 0.25
+      },
+      "mean_seconds": 200.89396129152738,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-l1only-0.003",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.04969618055555555,
+      "final": [
+        0.05946180555555555,
+        0.03993055555555555
+      ],
+      "mean_fine": 0.04475911458333333,
+      "mean_auc": 0.03663736979166667,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.003,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.0,
+        "m": 0.25
+      },
+      "mean_seconds": 191.46958808298223,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-l1only-0.01",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.05729166666666667,
+      "final": [
+        0.06076388888888889,
+        0.05381944444444445
+      ],
+      "mean_fine": 0.05067274305555555,
+      "mean_auc": 0.04125271267361111,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.01,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.0,
+        "m": 0.25
+      },
+      "mean_seconds": 191.11834227130748,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-bound",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.6671006944444444,
+      "final": [
+        0.7165798611111112,
+        0.6176215277777778
+      ],
+      "mean_fine": 0.63720703125,
+      "mean_auc": 0.21089518229166665,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 99.91133156255819,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-noise-0.01",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.18511284722222224,
+      "final": [
+        0.2664930555555556,
+        0.1037326388888889
+      ],
+      "mean_fine": 0.1689453125,
+      "mean_auc": 0.07774685329861111,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "noise_std": 0.0025,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 101.20516143669374,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-noise-0.03",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.03884548611111111,
+      "final": [
+        0.046875,
+        0.030815972222222224
+      ],
+      "mean_fine": 0.0341796875,
+      "mean_auc": 0.028004014756944445,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "noise_std": 0.0075,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 169.65940214600414,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-noise-0.1",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.024739583333333336,
+      "final": [
+        0.030381944444444444,
+        0.019097222222222224
+      ],
+      "mean_fine": 0.021375868055555552,
+      "mean_auc": 0.018381076388888886,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "noise_std": 0.025,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 174.93709004158154,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-noise-0.3",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.024956597222222224,
+      "final": [
+        0.02734375,
+        0.022569444444444444
+      ],
+      "mean_fine": 0.021864149305555556,
+      "mean_auc": 0.018075629340277777,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.075,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 193.67609314597212,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-tasknoise-0.1",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.05967881944444445,
+      "final": [
+        0.05772569444444445,
+        0.06163194444444445
+      ],
+      "mean_fine": 0.0537109375,
+      "mean_auc": 0.037451714409722225,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.025,
+        "noise_repulsion": false,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 248.26642806269228,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-base",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7350260416666667,
+      "final": [
+        0.7144097222222222,
+        0.7556423611111112
+      ],
+      "mean_fine": 0.7155490451388888,
+      "mean_auc": 0.2699924045138889,
+      "spec": {},
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 130.26623781304806,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-margin1",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7211371527777778,
+      "final": [
+        0.6558159722222222,
+        0.7864583333333334
+      ],
+      "mean_fine": 0.7030164930555556,
+      "mean_auc": 0.2394672309027778,
+      "spec": {},
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 1.0
+      },
+      "mean_seconds": 131.58235724968836,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-l1-0.0001",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.4815538194444444,
+      "final": [
+        0.5594618055555556,
+        0.4036458333333333
+      ],
+      "mean_fine": 0.4482421875,
+      "mean_auc": 0.13294921875,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0001,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 138.44789062463678,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-l1-0.0003",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.060980902777777776,
+      "final": [
+        0.07335069444444445,
+        0.04861111111111111
+      ],
+      "mean_fine": 0.0556640625,
+      "mean_auc": 0.04540690104166667,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0003,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 263.70812914543785,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-l1-0.001",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.06032986111111111,
+      "final": [
+        0.06597222222222222,
+        0.0546875
+      ],
+      "mean_fine": 0.054253472222222224,
+      "mean_auc": 0.041320529513888885,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.001,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 262.32434681244195,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-l1-0.003",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.07183159722222222,
+      "final": [
+        0.0724826388888889,
+        0.07118055555555555
+      ],
+      "mean_fine": 0.06353081597222222,
+      "mean_auc": 0.05309787326388889,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.003,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_after": 0,
+        "noise_ramp": 0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 258.5681266875472,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-l1-0.01",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.0625,
+      "final": [
+        0.052083333333333336,
+        0.07291666666666667
+      ],
+      "mean_fine": 0.057074652777777776,
+      "mean_auc": 0.044992947048611114,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.01,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_after": 0,
+        "noise_ramp": 0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 260.20004593767226,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-l1only-0.001",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.07118055555555555,
+      "final": [
+        0.07942708333333333,
+        0.06293402777777778
+      ],
+      "mean_fine": 0.0642361111111111,
+      "mean_auc": 0.05094835069444444,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.001,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_after": 0,
+        "noise_ramp": 0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.0,
+        "m": 0.25
+      },
+      "mean_seconds": 274.24701727041975,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-l1only-0.003",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.0646701388888889,
+      "final": [
+        0.058159722222222224,
+        0.07118055555555555
+      ],
+      "mean_fine": 0.05843098958333333,
+      "mean_auc": 0.04440700954861111,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.003,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_after": 0,
+        "noise_ramp": 0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.0,
+        "m": 0.25
+      },
+      "mean_seconds": 285.3201974374242,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-l1only-0.01",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.062065972222222224,
+      "final": [
+        0.08116319444444445,
+        0.04296875
+      ],
+      "mean_fine": 0.055718315972222224,
+      "mean_auc": 0.04308430989583334,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.01,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_after": 0,
+        "noise_ramp": 0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.0,
+        "m": 0.25
+      },
+      "mean_seconds": 280.84328227094375,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-bound",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.623046875,
+      "final": [
+        0.6280381944444444,
+        0.6180555555555556
+      ],
+      "mean_fine": 0.6112196180555556,
+      "mean_auc": 0.19937391493055553,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_after": 0,
+        "noise_ramp": 0,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 151.09922458347864,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-noise-0.01",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.24934895833333334,
+      "final": [
+        0.3875868055555556,
+        0.1111111111111111
+      ],
+      "mean_fine": 0.2389865451388889,
+      "mean_auc": 0.08700846354166666,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0025,
+        "noise_after": 0,
+        "noise_ramp": 0,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 169.12201702105813,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-noise-0.03",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.12282986111111112,
+      "final": [
+        0.1115451388888889,
+        0.13411458333333334
+      ],
+      "mean_fine": 0.10991753472222222,
+      "mean_auc": 0.048706597222222224,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0075,
+        "noise_after": 0,
+        "noise_ramp": 0,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 174.0812786249444,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-noise-0.1",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.036675347222222224,
+      "final": [
+        0.023003472222222224,
+        0.050347222222222224
+      ],
+      "mean_fine": 0.03206380208333333,
+      "mean_auc": 0.020985243055555554,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.025,
+        "noise_after": 0,
+        "noise_ramp": 0,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 197.03161264560185,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-noise-0.3",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.019748263888888888,
+      "final": [
+        0.01953125,
+        0.019965277777777776
+      ],
+      "mean_fine": 0.01708984375,
+      "mean_auc": 0.015887044270833334,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.075,
+        "noise_after": 0,
+        "noise_ramp": 0,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 177.94277112511918,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-tasknoise-0.1",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.033854166666666664,
+      "final": [
+        0.026475694444444444,
+        0.04123263888888889
+      ],
+      "mean_fine": 0.029676649305555556,
+      "mean_auc": 0.021564127604166667,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.025,
+        "noise_after": 0,
+        "noise_ramp": 0,
+        "noise_repulsion": false,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 168.66754850000143,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-h1-w0.1",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7137586805555556,
+      "final": [
+        0.7647569444444444,
+        0.6627604166666666
+      ],
+      "mean_fine": 0.6883138020833333,
+      "mean_auc": 0.24124565972222217,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.1,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 129.89819470862858,
+      "mean_extra_edges": 131584.0
+    },
+    {
+      "name": "dynamics-h1-w1",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7717013888888888,
+      "final": [
+        0.7947048611111112,
+        0.7486979166666666
+      ],
+      "mean_fine": 0.7516276041666667,
+      "mean_auc": 0.2595572916666667,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 1,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 135.3388840414118,
+      "mean_extra_edges": 131584.0
+    },
+    {
+      "name": "dynamics-h4-w0.1",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7621527777777777,
+      "final": [
+        0.7834201388888888,
+        0.7408854166666666
+      ],
+      "mean_fine": 0.7352973090277777,
+      "mean_auc": 0.2638454861111111,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.1,
+        "horizon": 4,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 154.91257885401137,
+      "mean_extra_edges": 328855.0
+    },
+    {
+      "name": "dynamics-h4-w1",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.67578125,
+      "final": [
+        0.5972222222222222,
+        0.7543402777777778
+      ],
+      "mean_fine": 0.6508246527777777,
+      "mean_auc": 0.2143142361111111,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 1,
+        "horizon": 4,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 162.53068591700867,
+      "mean_extra_edges": 328852.0
+    },
+    {
+      "name": "dynamics-h16-w0.1",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7039930555555556,
+      "final": [
+        0.7751736111111112,
+        0.6328125
+      ],
+      "mean_fine": 0.6628146701388888,
+      "mean_auc": 0.20803602430555557,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.1,
+        "horizon": 16,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 218.2446220619604,
+      "mean_extra_edges": 1092139.5
+    },
+    {
+      "name": "dynamics-h16-w1",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7345920138888888,
+      "final": [
+        0.765625,
+        0.7035590277777778
+      ],
+      "mean_fine": 0.7157660590277778,
+      "mean_auc": 0.2237277560763889,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 1,
+        "horizon": 16,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 218.19547231239267,
+      "mean_extra_edges": 1093249.0
+    },
+    {
+      "name": "dynamics-h32-w0.1",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7918836805555556,
+      "final": [
+        0.8038194444444444,
+        0.7799479166666666
+      ],
+      "mean_fine": 0.7652994791666667,
+      "mean_auc": 0.27287597656250007,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.1,
+        "horizon": 32,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 278.03019808325917,
+      "mean_extra_edges": 1925753.0
+    },
+    {
+      "name": "adjacency-h1-w0.1",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7421875,
+      "final": [
+        0.7191840277777778,
+        0.7651909722222222
+      ],
+      "mean_fine": 0.7215711805555556,
+      "mean_auc": 0.2556640625,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.1,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 144.73168547963724,
+      "mean_extra_edges": 131584.0
+    },
+    {
+      "name": "adjacency-h1-w1",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7224392361111112,
+      "final": [
+        0.6783854166666666,
+        0.7664930555555556
+      ],
+      "mean_fine": 0.6993815104166667,
+      "mean_auc": 0.23712944878472222,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 1,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 132.2714795623906,
+      "mean_extra_edges": 131584.0
+    },
+    {
+      "name": "adjacency-h4-w0.1",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.6759982638888888,
+      "final": [
+        0.6909722222222222,
+        0.6610243055555556
+      ],
+      "mean_fine": 0.6463758680555556,
+      "mean_auc": 0.2074869791666667,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.1,
+        "horizon": 4,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 149.85894272848964,
+      "mean_extra_edges": 328852.0
+    },
+    {
+      "name": "adjacency-h4-w1",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.6879340277777777,
+      "final": [
+        0.6818576388888888,
+        0.6940104166666666
+      ],
+      "mean_fine": 0.6628146701388888,
+      "mean_auc": 0.2110687934027778,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 1,
+        "horizon": 4,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 151.72605477110483,
+      "mean_extra_edges": 328854.0
+    },
+    {
+      "name": "adjacency-h16-w0.1",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7506510416666667,
+      "final": [
+        0.80078125,
+        0.7005208333333334
+      ],
+      "mean_fine": 0.7249891493055556,
+      "mean_auc": 0.2434494357638889,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.1,
+        "horizon": 16,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 199.42844264605083,
+      "mean_extra_edges": 1097350.5
+    },
+    {
+      "name": "adjacency-h16-w1",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.806640625,
+      "final": [
+        0.7955729166666666,
+        0.8177083333333334
+      ],
+      "mean_fine": 0.79248046875,
+      "mean_auc": 0.30843315972222224,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 1,
+        "horizon": 16,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 191.78094116714783,
+      "mean_extra_edges": 1098437.0
+    },
+    {
+      "name": "adjacency-h32-w0.1",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7819010416666667,
+      "final": [
+        0.8177083333333334,
+        0.74609375
+      ],
+      "mean_fine": 0.7562391493055556,
+      "mean_auc": 0.25080783420138886,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.1,
+        "horizon": 32,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 247.67063824972138,
+      "mean_extra_edges": 1945357.0
+    },
+    {
+      "name": "dynamics-l1-1e-5",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7076822916666667,
+      "final": [
+        0.7191840277777778,
+        0.6961805555555556
+      ],
+      "mean_fine": 0.6713324652777777,
+      "mean_auc": 0.22224338107638889,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 1e-05,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 155.94226506259292,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-l1-3e-5",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7970920138888888,
+      "final": [
+        0.80859375,
+        0.7855902777777778
+      ],
+      "mean_fine": 0.75537109375,
+      "mean_auc": 0.26307291666666666,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 3e-05,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 161.3328160000965,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-l1-3e-4-r0.1",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.59375,
+      "final": [
+        0.453125,
+        0.734375
+      ],
+      "mean_fine": 0.5611436631944444,
+      "mean_auc": 0.17426106770833333,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0003,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.1,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 162.00705499993637,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-late-l1-0.0003",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7632378472222222,
+      "final": [
+        0.8159722222222222,
+        0.7105034722222222
+      ],
+      "mean_fine": 0.7297634548611112,
+      "mean_auc": 0.2670958116319444,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0003,
+        "l1_after": 50000,
+        "l1_ramp": 10000,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 163.31585404160433,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-late-l1-0.001",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.5390625,
+      "final": [
+        0.8090277777777778,
+        0.2690972222222222
+      ],
+      "mean_fine": 0.5110677083333334,
+      "mean_auc": 0.21352539062499998,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.001,
+        "l1_after": 50000,
+        "l1_ramp": 10000,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 167.93822483345866,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-bound1",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7628038194444444,
+      "final": [
+        0.7534722222222222,
+        0.7721354166666666
+      ],
+      "mean_fine": 0.7399088541666666,
+      "mean_auc": 0.281328125,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 1.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 165.61639135400765,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-bound1-noise0.025",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.041015625,
+      "final": [
+        0.04079861111111111,
+        0.04123263888888889
+      ],
+      "mean_fine": 0.03678385416666667,
+      "mean_auc": 0.02822916666666667,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.025,
+        "noise_repulsion": true,
+        "bound": 1.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 262.52744908304885,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-noise0.025-r0.1",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.019314236111111112,
+      "final": [
+        0.020399305555555556,
+        0.018229166666666668
+      ],
+      "mean_fine": 0.016493055555555556,
+      "mean_auc": 0.015780164930555556,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.025,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.1,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 318.29631110467017,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-l1-1e-5",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7230902777777777,
+      "final": [
+        0.6549479166666666,
+        0.7912326388888888
+      ],
+      "mean_fine": 0.6921657986111112,
+      "mean_auc": 0.25845594618055556,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 1e-05,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 167.34820766653866,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-l1-3e-5",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.5842013888888888,
+      "final": [
+        0.5946180555555556,
+        0.5737847222222222
+      ],
+      "mean_fine": 0.5602213541666666,
+      "mean_auc": 0.18449055989583332,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 3e-05,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 170.2995165202301,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-l1-3e-4-r0.1",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.474609375,
+      "final": [
+        0.13368055555555555,
+        0.8155381944444444
+      ],
+      "mean_fine": 0.4541558159722222,
+      "mean_auc": 0.16885904947916663,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0003,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.1,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 166.4983288119547,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-late-l1-0.0003",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7237413194444444,
+      "final": [
+        0.7113715277777778,
+        0.7361111111111112
+      ],
+      "mean_fine": 0.7070855034722223,
+      "mean_auc": 0.2675900607638889,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0003,
+        "l1_after": 50000,
+        "l1_ramp": 10000,
+        "noise_std": 0.0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 165.7551805623807,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-late-l1-0.001",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.5221354166666666,
+      "final": [
+        0.6983506944444444,
+        0.3459201388888889
+      ],
+      "mean_fine": 0.5,
+      "mean_auc": 0.2253266059027778,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.001,
+        "l1_after": 50000,
+        "l1_ramp": 10000,
+        "noise_std": 0.0,
+        "noise_after": 0,
+        "noise_ramp": 0,
+        "noise_repulsion": true,
+        "bound": 0.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 160.93419360392727,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-bound1",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.7664930555555556,
+      "final": [
+        0.7747395833333334,
+        0.7582465277777778
+      ],
+      "mean_fine": 0.7390950520833333,
+      "mean_auc": 0.26421495225694447,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0,
+        "noise_after": 0,
+        "noise_ramp": 0,
+        "noise_repulsion": true,
+        "bound": 1.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 160.84321802062914,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-bound1-noise0.025",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.0881076388888889,
+      "final": [
+        0.10026041666666667,
+        0.0759548611111111
+      ],
+      "mean_fine": 0.08067491319444445,
+      "mean_auc": 0.052336154513888886,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.025,
+        "noise_after": 0,
+        "noise_ramp": 0,
+        "noise_repulsion": true,
+        "bound": 1.0,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 184.37787679187022,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-noise0.025-r0.1",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.021701388888888888,
+      "final": [
+        0.01953125,
+        0.023871527777777776
+      ],
+      "mean_fine": 0.018934461805555556,
+      "mean_auc": 0.01648654513888889,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.025,
+        "noise_after": 0,
+        "noise_ramp": 0,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.1,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 221.51117781247012,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-late-noise0.0025",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.6447482638888888,
+      "final": [
+        0.70703125,
+        0.5824652777777778
+      ],
+      "mean_fine": 0.6207139756944444,
+      "mean_auc": 0.20452582465277777,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0025,
+        "noise_after": 50000,
+        "noise_ramp": 10000,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 171.75288866646588,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-late-noise0.0075",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.4125434027777778,
+      "final": [
+        0.2504340277777778,
+        0.5746527777777778
+      ],
+      "mean_fine": 0.3907335069444444,
+      "mean_auc": 0.15520453559027778,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0075,
+        "noise_after": 50000,
+        "noise_ramp": 10000,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 174.40670006279834,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-late-noise0.0025",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.6076388888888888,
+      "final": [
+        0.6258680555555556,
+        0.5894097222222222
+      ],
+      "mean_fine": 0.5938042534722222,
+      "mean_auc": 0.1866097005208333,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0025,
+        "noise_after": 50000,
+        "noise_ramp": 10000,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 177.1983734788373,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-late-noise0.0075",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.4301215277777778,
+      "final": [
+        0.2934027777777778,
+        0.5668402777777778
+      ],
+      "mean_fine": 0.4028862847222222,
+      "mean_auc": 0.12675618489583335,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.0075,
+        "noise_after": 50000,
+        "noise_ramp": 10000,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 179.80620160419494,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-weak-noise0.00025",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.6391059027777778,
+      "final": [
+        0.6957465277777778,
+        0.5824652777777778
+      ],
+      "mean_fine": 0.6146918402777778,
+      "mean_auc": 0.2006765407986111,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.00025,
+        "noise_after": 0,
+        "noise_ramp": 0,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 176.48798285447992,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "dynamics-weak-noise0.00075",
+      "objective": "dynamics",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.5993923611111112,
+      "final": [
+        0.6458333333333334,
+        0.5529513888888888
+      ],
+      "mean_fine": 0.5802408854166666,
+      "mean_auc": 0.18688313802083334,
+      "spec": {
+        "objective": "dynamics",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.00075,
+        "noise_after": 0,
+        "noise_ramp": 0,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 1.0,
+        "A": 0.0,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 176.46893683332019,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-weak-noise0.00025",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.6059027777777778,
+      "final": [
+        0.6189236111111112,
+        0.5928819444444444
+      ],
+      "mean_fine": 0.5842013888888888,
+      "mean_auc": 0.20389051649305556,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.00025,
+        "noise_after": 0,
+        "noise_ramp": 0,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 159.2262330413796,
+      "mean_extra_edges": 0.0
+    },
+    {
+      "name": "adjacency-weak-noise0.00075",
+      "objective": "adjacency",
+      "n": 2,
+      "seeds": [
+        70,
+        71
+      ],
+      "mean_final": 0.513671875,
+      "final": [
+        0.4739583333333333,
+        0.5533854166666666
+      ],
+      "mean_fine": 0.4906141493055556,
+      "mean_auc": 0.13893012152777778,
+      "spec": {
+        "objective": "adjacency",
+        "adjacency_weight": 0.3,
+        "latent_l1": 0.0,
+        "l1_after": 0,
+        "l1_ramp": 0,
+        "noise_std": 0.00075,
+        "noise_after": 0,
+        "noise_ramp": 0,
+        "noise_repulsion": true,
+        "bound": 0.25,
+        "multistep_weight": 0.0,
+        "horizon": 1,
+        "trajectory_batch": 32
+      },
+      "coefficients": {
+        "D": 0.0,
+        "A": 0.3,
+        "R": 0.03,
+        "L": 0.03,
+        "m": 0.25
+      },
+      "mean_seconds": 161.143327166792,
+      "mean_extra_edges": 0.0
+    }
+  ]
+}
