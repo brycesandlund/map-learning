@@ -1,0 +1,118 @@
+[
+  {
+    "name": "dynamics-base-s0.125-layout13",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "layout": 13
+  },
+  {
+    "name": "adjacency-base-s0.125-layout13",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "layout": 13
+  },
+  {
+    "name": "dynamics-base-s0.125-layout23",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "layout": 23
+  },
+  {
+    "name": "adjacency-base-s0.125-layout23",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25,
+    "layout": 23
+  },
+  {
+    "name": "walk-s0.125-p0.98-stay0-turn1-layout13",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1,
+    "layout": 13
+  },
+  {
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1,
+    "name": "dynamics-s0.125-warm20000-resets2-layout13",
+    "objective": "dynamics",
+    "repulsion_margin": 0.25,
+    "walk_steps": 20000,
+    "reset_every": 6667,
+    "layout": 13
+  },
+  {
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1,
+    "name": "adjacency-s0.125-warm20000-resets2-layout13",
+    "objective": "adjacency",
+    "repulsion_margin": 0.25,
+    "walk_steps": 20000,
+    "reset_every": 6667,
+    "layout": 13
+  },
+  {
+    "name": "walk-s0.125-p0.98-stay0-turn1-layout23",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1,
+    "layout": 23
+  },
+  {
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1,
+    "name": "dynamics-s0.125-warm20000-resets2-layout23",
+    "objective": "dynamics",
+    "repulsion_margin": 0.25,
+    "walk_steps": 20000,
+    "reset_every": 6667,
+    "layout": 23
+  },
+  {
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1,
+    "name": "adjacency-s0.125-warm20000-resets2-layout23",
+    "objective": "adjacency",
+    "repulsion_margin": 0.25,
+    "walk_steps": 20000,
+    "reset_every": 6667,
+    "layout": 23
+  },
+  {
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1,
+    "reset_every": 6667,
+    "name": "continue-s0.125-warm20000-r6667-layout13",
+    "objective": "walk",
+    "reset_until": 20000,
+    "layout": 13
+  },
+  {
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1,
+    "reset_every": 6667,
+    "name": "continue-s0.125-warm20000-r6667-layout23",
+    "objective": "walk",
+    "reset_until": 20000,
+    "layout": 23
+  }
+]

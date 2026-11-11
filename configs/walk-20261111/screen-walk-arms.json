@@ -1,0 +1,234 @@
+[
+  {
+    "name": "walk-s0.125-p0.0-r0",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.0,
+    "reset_every": 0
+  },
+  {
+    "name": "walk-s0.125-p0.0-r100",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.0,
+    "reset_every": 100
+  },
+  {
+    "name": "walk-s0.125-p0.0-r1000",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.0,
+    "reset_every": 1000
+  },
+  {
+    "name": "walk-s0.125-p0.0-r10000",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.0,
+    "reset_every": 10000
+  },
+  {
+    "name": "walk-s0.125-p0.9-r0",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.9,
+    "reset_every": 0
+  },
+  {
+    "name": "walk-s0.125-p0.9-r100",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.9,
+    "reset_every": 100
+  },
+  {
+    "name": "walk-s0.125-p0.9-r1000",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.9,
+    "reset_every": 1000
+  },
+  {
+    "name": "walk-s0.125-p0.9-r10000",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.9,
+    "reset_every": 10000
+  },
+  {
+    "name": "walk-s0.125-p0.98-r0",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "reset_every": 0
+  },
+  {
+    "name": "walk-s0.125-p0.98-r100",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "reset_every": 100
+  },
+  {
+    "name": "walk-s0.125-p0.98-r1000",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "reset_every": 1000
+  },
+  {
+    "name": "walk-s0.125-p0.98-r10000",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "reset_every": 10000
+  },
+  {
+    "name": "walk-s0.125-p0.9-stay0-turn1",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.9,
+    "stay_probability": 0,
+    "turn_on_block": 1
+  },
+  {
+    "name": "walk-s0.125-p0.98-stay0-turn1",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1
+  },
+  {
+    "name": "walk-s0.125-p0.9-stay0.2-turn0",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.9,
+    "stay_probability": 0.2,
+    "turn_on_block": 0
+  },
+  {
+    "name": "walk-s0.125-p0.98-stay0.2-turn0",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "stay_probability": 0.2,
+    "turn_on_block": 0
+  },
+  {
+    "name": "walk-s0.25-p0.0-r0",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.0,
+    "reset_every": 0
+  },
+  {
+    "name": "walk-s0.25-p0.0-r100",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.0,
+    "reset_every": 100
+  },
+  {
+    "name": "walk-s0.25-p0.0-r1000",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.0,
+    "reset_every": 1000
+  },
+  {
+    "name": "walk-s0.25-p0.0-r10000",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.0,
+    "reset_every": 10000
+  },
+  {
+    "name": "walk-s0.25-p0.9-r0",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.9,
+    "reset_every": 0
+  },
+  {
+    "name": "walk-s0.25-p0.9-r100",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.9,
+    "reset_every": 100
+  },
+  {
+    "name": "walk-s0.25-p0.9-r1000",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.9,
+    "reset_every": 1000
+  },
+  {
+    "name": "walk-s0.25-p0.9-r10000",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.9,
+    "reset_every": 10000
+  },
+  {
+    "name": "walk-s0.25-p0.98-r0",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.98,
+    "reset_every": 0
+  },
+  {
+    "name": "walk-s0.25-p0.98-r100",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.98,
+    "reset_every": 100
+  },
+  {
+    "name": "walk-s0.25-p0.98-r1000",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.98,
+    "reset_every": 1000
+  },
+  {
+    "name": "walk-s0.25-p0.98-r10000",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.98,
+    "reset_every": 10000
+  },
+  {
+    "name": "walk-s0.25-p0.9-stay0-turn1",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.9,
+    "stay_probability": 0,
+    "turn_on_block": 1
+  },
+  {
+    "name": "walk-s0.25-p0.98-stay0-turn1",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1
+  },
+  {
+    "name": "walk-s0.25-p0.9-stay0.2-turn0",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.9,
+    "stay_probability": 0.2,
+    "turn_on_block": 0
+  },
+  {
+    "name": "walk-s0.25-p0.98-stay0.2-turn0",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.98,
+    "stay_probability": 0.2,
+    "turn_on_block": 0
+  }
+]

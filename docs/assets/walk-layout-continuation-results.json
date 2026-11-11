@@ -1,0 +1,671 @@
+[
+  {
+    "root": "runs/walk-layout-continuation-20261111",
+    "manifest": {
+      "arms": [
+        {
+          "step_size": 0.125,
+          "persistence": 0.98,
+          "stay_probability": 0,
+          "turn_on_block": 1,
+          "reset_every": 6667,
+          "name": "continue-s0.125-warm20000-r6667-layout13",
+          "objective": "walk",
+          "reset_until": 20000,
+          "layout": 13
+        },
+        {
+          "step_size": 0.125,
+          "persistence": 0.98,
+          "stay_probability": 0,
+          "turn_on_block": 1,
+          "reset_every": 6667,
+          "name": "continue-s0.125-warm20000-r6667-layout23",
+          "objective": "walk",
+          "reset_until": 20000,
+          "layout": 23
+        }
+      ],
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "blocks": 20,
+      "created_unix": 1794434606.356233,
+      "workers": 3
+    },
+    "summary": [
+      {
+        "name": "continue-s0.125-warm20000-r6667-layout13",
+        "coverage_k1": {
+          "mean": 0.9884259259259259,
+          "values": [
+            0.9652777777777778,
+            1.0,
+            1.0
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.9855324074074074,
+          "values": [
+            0.9565972222222222,
+            1.0,
+            1.0
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.9759837962962963,
+          "values": [
+            0.9344618055555556,
+            0.9934895833333334,
+            1.0
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.9480251736111112,
+          "values": [
+            0.8880208333333334,
+            0.9700520833333334,
+            0.9860026041666666
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.7592223668981481,
+          "values": [
+            0.6630550130208333,
+            0.8112635633680556,
+            0.8033485243055556
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.9647352430555557,
+          "values": [
+            0.9134114583333334,
+            0.9847005208333334,
+            0.99609375
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.09578666666666667,
+          "values": [
+            0.0928,
+            0.09957,
+            0.09499
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            58581,
+            52656
+          ],
+          "successes": 2,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            99456,
+            45632,
+            39368
+          ],
+          "successes": 3,
+          "mean_if_all_reach": 61485.333333333336
+        },
+        "k4_95": {
+          "values": [
+            null,
+            50671,
+            52034
+          ],
+          "successes": 2,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            65017,
+            59432
+          ],
+          "successes": 2,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "continue-s0.125-warm20000-r6667-layout23",
+        "coverage_k1": {
+          "mean": 0.9907407407407408,
+          "values": [
+            1.0,
+            0.9722222222222222,
+            1.0
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.9907407407407408,
+          "values": [
+            1.0,
+            0.9722222222222222,
+            1.0
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.9868344907407408,
+          "values": [
+            0.9995659722222222,
+            0.9657118055555556,
+            0.9952256944444444
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.9739583333333334,
+          "values": [
+            0.994140625,
+            0.9476996527777778,
+            0.9800347222222222
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.845028030960648,
+          "values": [
+            0.8710291883680557,
+            0.7877067057291666,
+            0.8763481987847224
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.9820601851851852,
+          "values": [
+            0.9978298611111112,
+            0.9585503472222222,
+            0.9898003472222222
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.08884999999999998,
+          "values": [
+            0.08885,
+            0.08781,
+            0.08989
+          ]
+        },
+        "k1_100": {
+          "values": [
+            31378,
+            null,
+            30170
+          ],
+          "successes": 2,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            29414,
+            60623,
+            30191
+          ],
+          "successes": 3,
+          "mean_if_all_reach": 40076.0
+        },
+        "k4_95": {
+          "values": [
+            38220,
+            87367,
+            36679
+          ],
+          "successes": 3,
+          "mean_if_all_reach": 54088.666666666664
+        },
+        "k4_99": {
+          "values": [
+            49643,
+            null,
+            69901
+          ],
+          "successes": 2,
+          "mean_if_all_reach": null
+        }
+      }
+    ],
+    "runs": [
+      {
+        "name": "continue-s0.125-warm20000-r6667-layout13",
+        "run": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout13-seed98",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 0,
+        "frontier_entries": 0,
+        "selected_priority": 0.0,
+        "blocked_fraction": 0.0928,
+        "coverage_k1": 0.9652777777777778,
+        "coverage_k2": 0.9565972222222222,
+        "coverage_k4": 0.9344618055555556,
+        "coverage_k8": 0.8880208333333334,
+        "seconds": 7.749295374844223,
+        "walk_steps": 100000,
+        "reset_count": 2,
+        "reset_until": 20000,
+        "persistence": 0.98,
+        "reset_every": 6667,
+        "stay_probability": 0.0,
+        "turn_on_block": true,
+        "objective": "walk",
+        "seed": 98,
+        "layout": 13,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 1.0,
+        "initial_parameters_sha256": "d89dfc7b55e247a7f2230c5f9c4d66c89e75898fa18934ff14a14ded5e1eefb0",
+        "samples_per_head": 0,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 0,
+        "milestones": {
+          "k1_50": 9911,
+          "k2_50": 10051,
+          "k4_50": 11854,
+          "k8_50": 16014,
+          "k1_90": 99318,
+          "k2_90": 99356,
+          "k4_90": 99456,
+          "k1_95": 99665,
+          "k2_95": 99956
+        },
+        "quarter_lattice_fraction": 9.99990000099999e-06,
+        "moving_transitions": 90720,
+        "unique_endpoints": 90721,
+        "fill_radius_0.05": 0.837890625,
+        "fill_radius_0.1": 0.9134114583333334,
+        "fill_radius_0.2": 0.9418402777777778,
+        "training_seconds": 0.0,
+        "refresh_seconds": 0.0,
+        "search_seconds": 6.565903258975595,
+        "physical_restore_jumps": 2,
+        "successor_noise_sha256": "b93cc4f513f04fb2a04ed3a9b04a5a50332ccb50b98ae6adc799f05688c973f6",
+        "action_stream_sha256": "afb93ef6fea89856c31a0a452435a074d5a2484ae63f49f81c5a1915ba0fb185",
+        "auc_k1": 0.7582725694444445,
+        "auc_k2": 0.7147026909722222,
+        "auc_k4": 0.6630550130208333,
+        "auc_k8": 0.5882261827256945
+      },
+      {
+        "name": "continue-s0.125-warm20000-r6667-layout23",
+        "run": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout23-seed98",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 0,
+        "frontier_entries": 0,
+        "selected_priority": 0.0,
+        "blocked_fraction": 0.08885,
+        "coverage_k1": 1.0,
+        "coverage_k2": 1.0,
+        "coverage_k4": 0.9995659722222222,
+        "coverage_k8": 0.994140625,
+        "seconds": 7.701558416243643,
+        "walk_steps": 100000,
+        "reset_count": 2,
+        "reset_until": 20000,
+        "persistence": 0.98,
+        "reset_every": 6667,
+        "stay_probability": 0.0,
+        "turn_on_block": true,
+        "objective": "walk",
+        "seed": 98,
+        "layout": 23,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 1.0,
+        "initial_parameters_sha256": "d89dfc7b55e247a7f2230c5f9c4d66c89e75898fa18934ff14a14ded5e1eefb0",
+        "samples_per_head": 0,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 0,
+        "milestones": {
+          "k1_50": 4073,
+          "k2_50": 8453,
+          "k4_50": 9645,
+          "k8_50": 14361,
+          "k1_90": 16645,
+          "k1_95": 25276,
+          "k2_90": 25294,
+          "k1_99": 27574,
+          "k2_95": 27588,
+          "k4_90": 29414,
+          "k1_100": 31378,
+          "k4_95": 38220,
+          "k2_99": 39759,
+          "k8_90": 44529,
+          "k2_100": 44644,
+          "k4_99": 49643,
+          "k8_95": 62049,
+          "k8_99": 87954
+        },
+        "quarter_lattice_fraction": 9.99990000099999e-06,
+        "moving_transitions": 91115,
+        "unique_endpoints": 91116,
+        "fill_radius_0.05": 0.9696180555555556,
+        "fill_radius_0.1": 0.9978298611111112,
+        "fill_radius_0.2": 0.9997829861111112,
+        "training_seconds": 0.0,
+        "refresh_seconds": 0.0,
+        "search_seconds": 6.545368669554591,
+        "physical_restore_jumps": 2,
+        "successor_noise_sha256": "b93cc4f513f04fb2a04ed3a9b04a5a50332ccb50b98ae6adc799f05688c973f6",
+        "action_stream_sha256": "447d67d9a1368f860ae1be76970736a8881ee39b84e89c5cae08e897665a6c6a",
+        "auc_k1": 0.9253993055555556,
+        "auc_k2": 0.9051866319444444,
+        "auc_k4": 0.8710291883680557,
+        "auc_k8": 0.7985750325520834
+      },
+      {
+        "name": "continue-s0.125-warm20000-r6667-layout13",
+        "run": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout13-seed99",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 0,
+        "frontier_entries": 0,
+        "selected_priority": 0.0,
+        "blocked_fraction": 0.09957,
+        "coverage_k1": 1.0,
+        "coverage_k2": 1.0,
+        "coverage_k4": 0.9934895833333334,
+        "coverage_k8": 0.9700520833333334,
+        "seconds": 7.7048297501169145,
+        "walk_steps": 100000,
+        "reset_count": 2,
+        "reset_until": 20000,
+        "persistence": 0.98,
+        "reset_every": 6667,
+        "stay_probability": 0.0,
+        "turn_on_block": true,
+        "objective": "walk",
+        "seed": 99,
+        "layout": 13,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 1.0,
+        "initial_parameters_sha256": "30c5a6544c0302890ddba06a53b4273dd3fc768e14ed3d5a0ccd6a66a3c8b6e3",
+        "samples_per_head": 0,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 0,
+        "milestones": {
+          "k1_50": 5323,
+          "k2_50": 5600,
+          "k4_50": 6565,
+          "k8_50": 14172,
+          "k1_90": 42431,
+          "k2_90": 42550,
+          "k1_95": 45484,
+          "k4_90": 45632,
+          "k2_95": 45874,
+          "k1_99": 50670,
+          "k4_95": 50671,
+          "k8_90": 56147,
+          "k2_99": 56591,
+          "k1_100": 58581,
+          "k2_100": 59166,
+          "k4_99": 65017,
+          "k8_95": 65087
+        },
+        "quarter_lattice_fraction": 9.99990000099999e-06,
+        "moving_transitions": 90043,
+        "unique_endpoints": 90044,
+        "fill_radius_0.05": 0.9302300347222222,
+        "fill_radius_0.1": 0.9847005208333334,
+        "fill_radius_0.2": 0.9964192708333334,
+        "training_seconds": 0.0,
+        "refresh_seconds": 0.0,
+        "search_seconds": 6.538391740992665,
+        "physical_restore_jumps": 2,
+        "successor_noise_sha256": "2af9aa0d4184e8f6e90b6178c16a7351162cd3780f3c1df82383971771dcba1d",
+        "action_stream_sha256": "97329c0ea94c46b6a71f44a4933860d641c7778be92082c1495e6b9257fb6e30",
+        "auc_k1": 0.8790277777777779,
+        "auc_k2": 0.8530729166666665,
+        "auc_k4": 0.8112635633680556,
+        "auc_k8": 0.7405976019965278
+      },
+      {
+        "name": "continue-s0.125-warm20000-r6667-layout23",
+        "run": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout23-seed99",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 0,
+        "frontier_entries": 0,
+        "selected_priority": 0.0,
+        "blocked_fraction": 0.08781,
+        "coverage_k1": 0.9722222222222222,
+        "coverage_k2": 0.9722222222222222,
+        "coverage_k4": 0.9657118055555556,
+        "coverage_k8": 0.9476996527777778,
+        "seconds": 7.611428291071206,
+        "walk_steps": 100000,
+        "reset_count": 2,
+        "reset_until": 20000,
+        "persistence": 0.98,
+        "reset_every": 6667,
+        "stay_probability": 0.0,
+        "turn_on_block": true,
+        "objective": "walk",
+        "seed": 99,
+        "layout": 23,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 1.0,
+        "initial_parameters_sha256": "30c5a6544c0302890ddba06a53b4273dd3fc768e14ed3d5a0ccd6a66a3c8b6e3",
+        "samples_per_head": 0,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 0,
+        "milestones": {
+          "k1_50": 3739,
+          "k2_50": 5993,
+          "k4_50": 13282,
+          "k8_50": 23049,
+          "k1_90": 37680,
+          "k2_90": 60460,
+          "k4_90": 60623,
+          "k1_95": 61285,
+          "k2_95": 61390,
+          "k8_90": 65328,
+          "k4_95": 87367
+        },
+        "quarter_lattice_fraction": 9.99990000099999e-06,
+        "moving_transitions": 91219,
+        "unique_endpoints": 91220,
+        "fill_radius_0.05": 0.9231770833333334,
+        "fill_radius_0.1": 0.9585503472222222,
+        "fill_radius_0.2": 0.9684244791666666,
+        "training_seconds": 0.0,
+        "refresh_seconds": 0.0,
+        "search_seconds": 6.446775431279093,
+        "physical_restore_jumps": 2,
+        "successor_noise_sha256": "2af9aa0d4184e8f6e90b6178c16a7351162cd3780f3c1df82383971771dcba1d",
+        "action_stream_sha256": "f92b6fa0f854c215dcb3b6a1d109a98354fdcb3e188d71a22ada15bb17354d62",
+        "auc_k1": 0.8638020833333334,
+        "auc_k2": 0.8285460069444444,
+        "auc_k4": 0.7877067057291666,
+        "auc_k8": 0.7239675564236111
+      },
+      {
+        "name": "continue-s0.125-warm20000-r6667-layout13",
+        "run": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout13-seed100",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 0,
+        "frontier_entries": 0,
+        "selected_priority": 0.0,
+        "blocked_fraction": 0.09499,
+        "coverage_k1": 1.0,
+        "coverage_k2": 1.0,
+        "coverage_k4": 1.0,
+        "coverage_k8": 0.9860026041666666,
+        "seconds": 7.667009791359305,
+        "walk_steps": 100000,
+        "reset_count": 2,
+        "reset_until": 20000,
+        "persistence": 0.98,
+        "reset_every": 6667,
+        "stay_probability": 0.0,
+        "turn_on_block": true,
+        "objective": "walk",
+        "seed": 100,
+        "layout": 13,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 1.0,
+        "initial_parameters_sha256": "078e426d4a7f6654ced98c76f684b4905cca984e43396af0c06a73b40d54c779",
+        "samples_per_head": 0,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 0,
+        "milestones": {
+          "k1_50": 5549,
+          "k2_50": 7678,
+          "k4_50": 11265,
+          "k8_50": 23596,
+          "k1_90": 34419,
+          "k2_90": 34723,
+          "k1_95": 37557,
+          "k4_90": 39368,
+          "k2_95": 51250,
+          "k4_95": 52034,
+          "k1_99": 52612,
+          "k1_100": 52656,
+          "k8_90": 52716,
+          "k2_99": 52727,
+          "k2_100": 53337,
+          "k4_99": 59432,
+          "k8_95": 70897,
+          "k4_100": 82814
+        },
+        "quarter_lattice_fraction": 9.99990000099999e-06,
+        "moving_transitions": 90501,
+        "unique_endpoints": 90502,
+        "fill_radius_0.05": 0.9532335069444444,
+        "fill_radius_0.1": 0.99609375,
+        "fill_radius_0.2": 1.0,
+        "training_seconds": 0.0,
+        "refresh_seconds": 0.0,
+        "search_seconds": 6.518061017617583,
+        "physical_restore_jumps": 2,
+        "successor_noise_sha256": "42d1a0f62a7b948abadcf0bfac23fe8e1c77cca19f025dfed9542744a05190cf",
+        "action_stream_sha256": "12ddfbb65de8acb91a205a35011ce3335d8476affbb578dab89e25bdc54172af",
+        "auc_k1": 0.8349479166666667,
+        "auc_k2": 0.8249131944444443,
+        "auc_k4": 0.8033485243055556,
+        "auc_k8": 0.7468170844184028
+      },
+      {
+        "name": "continue-s0.125-warm20000-r6667-layout23",
+        "run": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout23-seed100",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 0,
+        "frontier_entries": 0,
+        "selected_priority": 0.0,
+        "blocked_fraction": 0.08989,
+        "coverage_k1": 1.0,
+        "coverage_k2": 1.0,
+        "coverage_k4": 0.9952256944444444,
+        "coverage_k8": 0.9800347222222222,
+        "seconds": 7.625965791754425,
+        "walk_steps": 100000,
+        "reset_count": 2,
+        "reset_until": 20000,
+        "persistence": 0.98,
+        "reset_every": 6667,
+        "stay_probability": 0.0,
+        "turn_on_block": true,
+        "objective": "walk",
+        "seed": 100,
+        "layout": 23,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 1.0,
+        "initial_parameters_sha256": "078e426d4a7f6654ced98c76f684b4905cca984e43396af0c06a73b40d54c779",
+        "samples_per_head": 0,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 0,
+        "milestones": {
+          "k1_50": 4656,
+          "k2_50": 5593,
+          "k4_50": 9190,
+          "k8_50": 12311,
+          "k1_90": 12481,
+          "k1_95": 15639,
+          "k2_90": 19060,
+          "k2_95": 30067,
+          "k1_99": 30135,
+          "k1_100": 30170,
+          "k4_90": 30191,
+          "k2_99": 34502,
+          "k4_95": 36679,
+          "k8_90": 49430,
+          "k2_100": 56892,
+          "k8_95": 66622,
+          "k4_99": 69901
+        },
+        "quarter_lattice_fraction": 9.99990000099999e-06,
+        "moving_transitions": 91011,
+        "unique_endpoints": 91012,
+        "fill_radius_0.05": 0.955078125,
+        "fill_radius_0.1": 0.9898003472222222,
+        "fill_radius_0.2": 0.9976128472222222,
+        "training_seconds": 0.0,
+        "refresh_seconds": 0.0,
+        "search_seconds": 6.435406072065234,
+        "physical_restore_jumps": 2,
+        "successor_noise_sha256": "42d1a0f62a7b948abadcf0bfac23fe8e1c77cca19f025dfed9542744a05190cf",
+        "action_stream_sha256": "a9467c96805de8053dce8bae3e3260b9190bb0cc013f2e8d36e92b699e39707a",
+        "auc_k1": 0.9342534722222222,
+        "auc_k2": 0.9167057291666666,
+        "auc_k4": 0.8763481987847224,
+        "auc_k8": 0.7963264973958334
+      }
+    ]
+  }
+]

@@ -1,0 +1,1160 @@
+[
+  {
+    "root": "runs/walk-layout-base-20261111",
+    "manifest": {
+      "arms": [
+        {
+          "name": "dynamics-base-s0.125-layout13",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "layout": 13
+        },
+        {
+          "name": "adjacency-base-s0.125-layout13",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "layout": 13
+        },
+        {
+          "name": "dynamics-base-s0.125-layout23",
+          "objective": "dynamics",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "layout": 23
+        },
+        {
+          "name": "adjacency-base-s0.125-layout23",
+          "objective": "adjacency",
+          "step_size": 0.125,
+          "repulsion_margin": 0.25,
+          "layout": 23
+        }
+      ],
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "blocks": 20,
+      "created_unix": 1794433827.090954,
+      "workers": 3
+    },
+    "summary": [
+      {
+        "name": "dynamics-base-s0.125-layout13",
+        "coverage_k1": {
+          "mean": 0.548611111111111,
+          "values": [
+            0.3958333333333333,
+            0.6736111111111112,
+            0.5763888888888888
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.5271990740740741,
+          "values": [
+            0.3576388888888889,
+            0.6510416666666666,
+            0.5729166666666666
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.5114293981481481,
+          "values": [
+            0.3307291666666667,
+            0.6371527777777778,
+            0.56640625
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.4919343171296296,
+          "values": [
+            0.3111979166666667,
+            0.6131727430555556,
+            0.5514322916666666
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.14831904658564812,
+          "values": [
+            0.07037434895833333,
+            0.19529947916666665,
+            0.17928331163194444
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.5020616319444445,
+          "values": [
+            0.3198784722222222,
+            0.6254340277777778,
+            0.5608723958333334
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.09662916666666665,
+          "values": [
+            0.1104375,
+            0.0891875,
+            0.0902625
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-base-s0.125-layout13",
+        "coverage_k1": {
+          "mean": 0.6273148148148148,
+          "values": [
+            0.5208333333333334,
+            0.6597222222222222,
+            0.7013888888888888
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.6145833333333334,
+          "values": [
+            0.5052083333333334,
+            0.640625,
+            0.6979166666666666
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.6022858796296297,
+          "values": [
+            0.4952256944444444,
+            0.6206597222222222,
+            0.6909722222222222
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.5887586805555555,
+          "values": [
+            0.4836154513888889,
+            0.6046006944444444,
+            0.6780598958333334
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.18153917100694447,
+          "values": [
+            0.12762098524305554,
+            0.18266059027777778,
+            0.2343359375
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.5952690972222222,
+          "values": [
+            0.4894748263888889,
+            0.6124131944444444,
+            0.6839192708333334
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07034583333333333,
+          "values": [
+            0.0684875,
+            0.0755875,
+            0.0669625
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "dynamics-base-s0.125-layout23",
+        "coverage_k1": {
+          "mean": 0.8356481481481483,
+          "values": [
+            0.875,
+            0.8125,
+            0.8194444444444444
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.8096064814814815,
+          "values": [
+            0.8385416666666666,
+            0.7847222222222222,
+            0.8055555555555556
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.7808159722222222,
+          "values": [
+            0.7964409722222222,
+            0.7569444444444444,
+            0.7890625
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.7386429398148149,
+          "values": [
+            0.744140625,
+            0.7156032986111112,
+            0.7561848958333334
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.21870894820601852,
+          "values": [
+            0.22626356336805556,
+            0.2041916232638889,
+            0.2256716579861111
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.7580656828703703,
+          "values": [
+            0.7679036458333334,
+            0.7339409722222222,
+            0.7723524305555556
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07827916666666666,
+          "values": [
+            0.0771375,
+            0.0734,
+            0.0843
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      },
+      {
+        "name": "adjacency-base-s0.125-layout23",
+        "coverage_k1": {
+          "mean": 0.8310185185185186,
+          "values": [
+            0.7152777777777778,
+            0.8819444444444444,
+            0.8958333333333334
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.7997685185185185,
+          "values": [
+            0.6649305555555556,
+            0.8628472222222222,
+            0.8715277777777778
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.7787905092592592,
+          "values": [
+            0.6302083333333334,
+            0.8459201388888888,
+            0.8602430555555556
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.7559317129629629,
+          "values": [
+            0.6023220486111112,
+            0.8232421875,
+            0.8422309027777778
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.23996111834490738,
+          "values": [
+            0.1508474392361111,
+            0.29882975260416667,
+            0.2702061631944444
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.7680844907407408,
+          "values": [
+            0.6164279513888888,
+            0.8350694444444444,
+            0.8527560763888888
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.07668333333333334,
+          "values": [
+            0.0850125,
+            0.0707,
+            0.0743375
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      }
+    ],
+    "runs": [
+      {
+        "name": "dynamics-base-s0.125-layout13",
+        "run": "runs/walk-layout-base-20261111/dynamics-base-s0.125-layout13-seed98",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.009663720808958836,
+        "blocked_fraction": 0.1104375,
+        "coverage_k1": 0.3958333333333333,
+        "coverage_k2": 0.3576388888888889,
+        "coverage_k4": 0.3307291666666667,
+        "coverage_k8": 0.3111979166666667,
+        "seconds": 146.2664513750933,
+        "walk_steps": 0,
+        "reset_count": 0,
+        "persistence": 0.0,
+        "reset_every": 0,
+        "stay_probability": 0.2,
+        "turn_on_block": true,
+        "objective": "dynamics",
+        "seed": 98,
+        "layout": 13,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "d89dfc7b55e247a7f2230c5f9c4d66c89e75898fa18934ff14a14ded5e1eefb0",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {},
+        "quarter_lattice_fraction": 2.999970000299997e-05,
+        "moving_transitions": 71165,
+        "unique_endpoints": 71166,
+        "fill_radius_0.05": 0.2951388888888889,
+        "fill_radius_0.1": 0.3198784722222222,
+        "fill_radius_0.2": 0.3389756944444444,
+        "training_seconds": 63.44678462855518,
+        "refresh_seconds": 37.260534261353314,
+        "search_seconds": 43.82368832966313,
+        "physical_restore_jumps": 89638,
+        "successor_noise_sha256": "b93cc4f513f04fb2a04ed3a9b04a5a50332ccb50b98ae6adc799f05688c973f6",
+        "action_stream_sha256": "0b2be3664c9696b418296f1599b49081f98060c99e19da84a08ae51c08e6785d",
+        "auc_k1": 0.08917534722222223,
+        "auc_k2": 0.07737413194444445,
+        "auc_k4": 0.07037434895833333,
+        "auc_k8": 0.06417724609375
+      },
+      {
+        "name": "adjacency-base-s0.125-layout13",
+        "run": "runs/walk-layout-base-20261111/adjacency-base-s0.125-layout13-seed98",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.005001858766393379,
+        "blocked_fraction": 0.0684875,
+        "coverage_k1": 0.5208333333333334,
+        "coverage_k2": 0.5052083333333334,
+        "coverage_k4": 0.4952256944444444,
+        "coverage_k8": 0.4836154513888889,
+        "seconds": 145.11123250005767,
+        "walk_steps": 0,
+        "reset_count": 0,
+        "persistence": 0.0,
+        "reset_every": 0,
+        "stay_probability": 0.2,
+        "turn_on_block": true,
+        "objective": "adjacency",
+        "seed": 98,
+        "layout": 13,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "d89dfc7b55e247a7f2230c5f9c4d66c89e75898fa18934ff14a14ded5e1eefb0",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 97662,
+          "k2_50": 98919
+        },
+        "quarter_lattice_fraction": 2.999970000299997e-05,
+        "moving_transitions": 74521,
+        "unique_endpoints": 74522,
+        "fill_radius_0.05": 0.4675564236111111,
+        "fill_radius_0.1": 0.4894748263888889,
+        "fill_radius_0.2": 0.4989149305555556,
+        "training_seconds": 62.31008553924039,
+        "refresh_seconds": 37.59074221085757,
+        "search_seconds": 43.318020107690245,
+        "physical_restore_jumps": 93364,
+        "successor_noise_sha256": "b93cc4f513f04fb2a04ed3a9b04a5a50332ccb50b98ae6adc799f05688c973f6",
+        "action_stream_sha256": "0b2be3664c9696b418296f1599b49081f98060c99e19da84a08ae51c08e6785d",
+        "auc_k1": 0.15754340277777776,
+        "auc_k2": 0.13943359375,
+        "auc_k4": 0.12762098524305554,
+        "auc_k8": 0.11970933702256946
+      },
+      {
+        "name": "dynamics-base-s0.125-layout23",
+        "run": "runs/walk-layout-base-20261111/dynamics-base-s0.125-layout23-seed98",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0072886901568948075,
+        "blocked_fraction": 0.0771375,
+        "coverage_k1": 0.875,
+        "coverage_k2": 0.8385416666666666,
+        "coverage_k4": 0.7964409722222222,
+        "coverage_k8": 0.744140625,
+        "seconds": 150.80706854118034,
+        "walk_steps": 0,
+        "reset_count": 0,
+        "persistence": 0.0,
+        "reset_every": 0,
+        "stay_probability": 0.2,
+        "turn_on_block": true,
+        "objective": "dynamics",
+        "seed": 98,
+        "layout": 23,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "d89dfc7b55e247a7f2230c5f9c4d66c89e75898fa18934ff14a14ded5e1eefb0",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 75021,
+          "k2_50": 77946,
+          "k4_50": 79914,
+          "k8_50": 82017
+        },
+        "quarter_lattice_fraction": 2.999970000299997e-05,
+        "moving_transitions": 73829,
+        "unique_endpoints": 73830,
+        "fill_radius_0.05": 0.6912977430555556,
+        "fill_radius_0.1": 0.7679036458333334,
+        "fill_radius_0.2": 0.8088107638888888,
+        "training_seconds": 63.391617831308395,
+        "refresh_seconds": 41.60106461495161,
+        "search_seconds": 43.9698082935065,
+        "physical_restore_jumps": 92642,
+        "successor_noise_sha256": "b93cc4f513f04fb2a04ed3a9b04a5a50332ccb50b98ae6adc799f05688c973f6",
+        "action_stream_sha256": "0b2be3664c9696b418296f1599b49081f98060c99e19da84a08ae51c08e6785d",
+        "auc_k1": 0.27621527777777777,
+        "auc_k2": 0.24545355902777777,
+        "auc_k4": 0.22626356336805556,
+        "auc_k8": 0.2082394748263889
+      },
+      {
+        "name": "adjacency-base-s0.125-layout23",
+        "run": "runs/walk-layout-base-20261111/adjacency-base-s0.125-layout23-seed98",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.005521864571266188,
+        "blocked_fraction": 0.0850125,
+        "coverage_k1": 0.7152777777777778,
+        "coverage_k2": 0.6649305555555556,
+        "coverage_k4": 0.6302083333333334,
+        "coverage_k8": 0.6023220486111112,
+        "seconds": 174.93099604174495,
+        "walk_steps": 0,
+        "reset_count": 0,
+        "persistence": 0.0,
+        "reset_every": 0,
+        "stay_probability": 0.2,
+        "turn_on_block": true,
+        "objective": "adjacency",
+        "seed": 98,
+        "layout": 23,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "d89dfc7b55e247a7f2230c5f9c4d66c89e75898fa18934ff14a14ded5e1eefb0",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 86092,
+          "k2_50": 88788,
+          "k4_50": 90467,
+          "k8_50": 92458
+        },
+        "quarter_lattice_fraction": 2.999970000299997e-05,
+        "moving_transitions": 73199,
+        "unique_endpoints": 73200,
+        "fill_radius_0.05": 0.5704210069444444,
+        "fill_radius_0.1": 0.6164279513888888,
+        "fill_radius_0.2": 0.6426866319444444,
+        "training_seconds": 69.21734987339005,
+        "refresh_seconds": 53.93385212821886,
+        "search_seconds": 49.676068033557385,
+        "physical_restore_jumps": 91775,
+        "successor_noise_sha256": "b93cc4f513f04fb2a04ed3a9b04a5a50332ccb50b98ae6adc799f05688c973f6",
+        "action_stream_sha256": "0b2be3664c9696b418296f1599b49081f98060c99e19da84a08ae51c08e6785d",
+        "auc_k1": 0.19110243055555554,
+        "auc_k2": 0.16713324652777778,
+        "auc_k4": 0.1508474392361111,
+        "auc_k8": 0.13863267686631944
+      },
+      {
+        "name": "dynamics-base-s0.125-layout13",
+        "run": "runs/walk-layout-base-20261111/dynamics-base-s0.125-layout13-seed99",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.005759002290861047,
+        "blocked_fraction": 0.0891875,
+        "coverage_k1": 0.6736111111111112,
+        "coverage_k2": 0.6510416666666666,
+        "coverage_k4": 0.6371527777777778,
+        "coverage_k8": 0.6131727430555556,
+        "seconds": 159.61919225007296,
+        "walk_steps": 0,
+        "reset_count": 0,
+        "persistence": 0.0,
+        "reset_every": 0,
+        "stay_probability": 0.2,
+        "turn_on_block": true,
+        "objective": "dynamics",
+        "seed": 99,
+        "layout": 13,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "30c5a6544c0302890ddba06a53b4273dd3fc768e14ed3d5a0ccd6a66a3c8b6e3",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 82833,
+          "k2_50": 84743,
+          "k4_50": 86107,
+          "k8_50": 88898
+        },
+        "quarter_lattice_fraction": 3.999960000399996e-05,
+        "moving_transitions": 72865,
+        "unique_endpoints": 72866,
+        "fill_radius_0.05": 0.5890842013888888,
+        "fill_radius_0.1": 0.6254340277777778,
+        "fill_radius_0.2": 0.6412760416666666,
+        "training_seconds": 70.23954128706828,
+        "refresh_seconds": 38.97531474940479,
+        "search_seconds": 48.66679587913677,
+        "physical_restore_jumps": 91609,
+        "successor_noise_sha256": "2af9aa0d4184e8f6e90b6178c16a7351162cd3780f3c1df82383971771dcba1d",
+        "action_stream_sha256": "d74879297b59b3205ba458ba5b1a4c24bc09f0cd2f6911d332b9f222aa9bd5b3",
+        "auc_k1": 0.22296006944444446,
+        "auc_k2": 0.20661241319444443,
+        "auc_k4": 0.19529947916666665,
+        "auc_k8": 0.18348103841145832
+      },
+      {
+        "name": "adjacency-base-s0.125-layout13",
+        "run": "runs/walk-layout-base-20261111/adjacency-base-s0.125-layout13-seed99",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004733527811038737,
+        "blocked_fraction": 0.0755875,
+        "coverage_k1": 0.6597222222222222,
+        "coverage_k2": 0.640625,
+        "coverage_k4": 0.6206597222222222,
+        "coverage_k8": 0.6046006944444444,
+        "seconds": 162.2640500422567,
+        "walk_steps": 0,
+        "reset_count": 0,
+        "persistence": 0.0,
+        "reset_every": 0,
+        "stay_probability": 0.2,
+        "turn_on_block": true,
+        "objective": "adjacency",
+        "seed": 99,
+        "layout": 13,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "30c5a6544c0302890ddba06a53b4273dd3fc768e14ed3d5a0ccd6a66a3c8b6e3",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 88121,
+          "k2_50": 90086,
+          "k4_50": 91127,
+          "k8_50": 92166
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73953,
+        "unique_endpoints": 73954,
+        "fill_radius_0.05": 0.5851779513888888,
+        "fill_radius_0.1": 0.6124131944444444,
+        "fill_radius_0.2": 0.6265190972222222,
+        "training_seconds": 68.99939767364413,
+        "refresh_seconds": 42.72010192088783,
+        "search_seconds": 48.71820383844897,
+        "physical_restore_jumps": 92753,
+        "successor_noise_sha256": "2af9aa0d4184e8f6e90b6178c16a7351162cd3780f3c1df82383971771dcba1d",
+        "action_stream_sha256": "d74879297b59b3205ba458ba5b1a4c24bc09f0cd2f6911d332b9f222aa9bd5b3",
+        "auc_k1": 0.210859375,
+        "auc_k2": 0.19341362847222224,
+        "auc_k4": 0.18266059027777778,
+        "auc_k8": 0.17261420355902776
+      },
+      {
+        "name": "dynamics-base-s0.125-layout23",
+        "run": "runs/walk-layout-base-20261111/dynamics-base-s0.125-layout23-seed99",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.005521922618408323,
+        "blocked_fraction": 0.0734,
+        "coverage_k1": 0.8125,
+        "coverage_k2": 0.7847222222222222,
+        "coverage_k4": 0.7569444444444444,
+        "coverage_k8": 0.7156032986111112,
+        "seconds": 155.6518631251529,
+        "walk_steps": 0,
+        "reset_count": 0,
+        "reset_until": 0,
+        "persistence": 0.0,
+        "reset_every": 0,
+        "stay_probability": 0.2,
+        "turn_on_block": true,
+        "objective": "dynamics",
+        "seed": 99,
+        "layout": 23,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "30c5a6544c0302890ddba06a53b4273dd3fc768e14ed3d5a0ccd6a66a3c8b6e3",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 78763,
+          "k2_50": 81671,
+          "k4_50": 83867,
+          "k8_50": 85689
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74128,
+        "unique_endpoints": 74129,
+        "fill_radius_0.05": 0.6770833333333334,
+        "fill_radius_0.1": 0.7339409722222222,
+        "fill_radius_0.2": 0.7662760416666666,
+        "training_seconds": 69.00901716109365,
+        "refresh_seconds": 37.21457928791642,
+        "search_seconds": 47.78880403796211,
+        "physical_restore_jumps": 93041,
+        "successor_noise_sha256": "2af9aa0d4184e8f6e90b6178c16a7351162cd3780f3c1df82383971771dcba1d",
+        "action_stream_sha256": "d74879297b59b3205ba458ba5b1a4c24bc09f0cd2f6911d332b9f222aa9bd5b3",
+        "auc_k1": 0.2467621527777778,
+        "auc_k2": 0.22022569444444445,
+        "auc_k4": 0.2041916232638889,
+        "auc_k8": 0.19040595160590282
+      },
+      {
+        "name": "adjacency-base-s0.125-layout23",
+        "run": "runs/walk-layout-base-20261111/adjacency-base-s0.125-layout23-seed99",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.003970618818024553,
+        "blocked_fraction": 0.0707,
+        "coverage_k1": 0.8819444444444444,
+        "coverage_k2": 0.8628472222222222,
+        "coverage_k4": 0.8459201388888888,
+        "coverage_k8": 0.8232421875,
+        "seconds": 155.215088208206,
+        "walk_steps": 0,
+        "reset_count": 0,
+        "reset_until": 0,
+        "persistence": 0.0,
+        "reset_every": 0,
+        "stay_probability": 0.2,
+        "turn_on_block": true,
+        "objective": "adjacency",
+        "seed": 99,
+        "layout": 23,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "30c5a6544c0302890ddba06a53b4273dd3fc768e14ed3d5a0ccd6a66a3c8b6e3",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 65451,
+          "k2_50": 68946,
+          "k4_50": 70509,
+          "k8_50": 72297
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74344,
+        "unique_endpoints": 74345,
+        "fill_radius_0.05": 0.7909071180555556,
+        "fill_radius_0.1": 0.8350694444444444,
+        "fill_radius_0.2": 0.8544921875,
+        "training_seconds": 68.02428384125233,
+        "refresh_seconds": 37.20176692213863,
+        "search_seconds": 48.240768471267074,
+        "physical_restore_jumps": 93328,
+        "successor_noise_sha256": "2af9aa0d4184e8f6e90b6178c16a7351162cd3780f3c1df82383971771dcba1d",
+        "action_stream_sha256": "d74879297b59b3205ba458ba5b1a4c24bc09f0cd2f6911d332b9f222aa9bd5b3",
+        "auc_k1": 0.347890625,
+        "auc_k2": 0.31652994791666667,
+        "auc_k4": 0.29882975260416667,
+        "auc_k8": 0.28391398111979166
+      },
+      {
+        "name": "dynamics-base-s0.125-layout13",
+        "run": "runs/walk-layout-base-20261111/dynamics-base-s0.125-layout13-seed100",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.006981769721589627,
+        "blocked_fraction": 0.0902625,
+        "coverage_k1": 0.5763888888888888,
+        "coverage_k2": 0.5729166666666666,
+        "coverage_k4": 0.56640625,
+        "coverage_k8": 0.5514322916666666,
+        "seconds": 156.31176645914093,
+        "walk_steps": 0,
+        "reset_count": 0,
+        "reset_until": 0,
+        "persistence": 0.0,
+        "reset_every": 0,
+        "stay_probability": 0.2,
+        "turn_on_block": true,
+        "objective": "dynamics",
+        "seed": 100,
+        "layout": 13,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "078e426d4a7f6654ced98c76f684b4905cca984e43396af0c06a73b40d54c779",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 85508,
+          "k2_50": 87486,
+          "k4_50": 89298,
+          "k8_50": 91113
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 72779,
+        "unique_endpoints": 72780,
+        "fill_radius_0.05": 0.5330946180555556,
+        "fill_radius_0.1": 0.5608723958333334,
+        "fill_radius_0.2": 0.5695529513888888,
+        "training_seconds": 68.7090841755271,
+        "refresh_seconds": 38.670676574576646,
+        "search_seconds": 47.34695916483179,
+        "physical_restore_jumps": 91539,
+        "successor_noise_sha256": "42d1a0f62a7b948abadcf0bfac23fe8e1c77cca19f025dfed9542744a05190cf",
+        "action_stream_sha256": "c9f9a4a9c3441344296da04238a702966cd1ae1747807b6baebae273adaaea4d",
+        "auc_k1": 0.20469618055555555,
+        "auc_k2": 0.1893359375,
+        "auc_k4": 0.17928331163194444,
+        "auc_k8": 0.16859646267361109
+      },
+      {
+        "name": "adjacency-base-s0.125-layout13",
+        "run": "runs/walk-layout-base-20261111/adjacency-base-s0.125-layout13-seed100",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004488834120613437,
+        "blocked_fraction": 0.0669625,
+        "coverage_k1": 0.7013888888888888,
+        "coverage_k2": 0.6979166666666666,
+        "coverage_k4": 0.6909722222222222,
+        "coverage_k8": 0.6780598958333334,
+        "seconds": 104.5543327499181,
+        "walk_steps": 0,
+        "reset_count": 0,
+        "reset_until": 0,
+        "persistence": 0.0,
+        "reset_every": 0,
+        "stay_probability": 0.2,
+        "turn_on_block": true,
+        "objective": "adjacency",
+        "seed": 100,
+        "layout": 13,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "078e426d4a7f6654ced98c76f684b4905cca984e43396af0c06a73b40d54c779",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 72567,
+          "k2_50": 76503,
+          "k4_50": 78508,
+          "k8_50": 80396
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74643,
+        "unique_endpoints": 74644,
+        "fill_radius_0.05": 0.6597222222222222,
+        "fill_radius_0.1": 0.6839192708333334,
+        "fill_radius_0.2": 0.6930338541666666,
+        "training_seconds": 44.27521029673517,
+        "refresh_seconds": 24.71305454103276,
+        "search_seconds": 34.40099990973249,
+        "physical_restore_jumps": 93556,
+        "successor_noise_sha256": "42d1a0f62a7b948abadcf0bfac23fe8e1c77cca19f025dfed9542744a05190cf",
+        "action_stream_sha256": "c9f9a4a9c3441344296da04238a702966cd1ae1747807b6baebae273adaaea4d",
+        "auc_k1": 0.2591059027777778,
+        "auc_k2": 0.24434895833333337,
+        "auc_k4": 0.2343359375,
+        "auc_k8": 0.2237818739149306
+      },
+      {
+        "name": "dynamics-base-s0.125-layout23",
+        "run": "runs/walk-layout-base-20261111/dynamics-base-s0.125-layout23-seed100",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.005330452513706877,
+        "blocked_fraction": 0.0843,
+        "coverage_k1": 0.8194444444444444,
+        "coverage_k2": 0.8055555555555556,
+        "coverage_k4": 0.7890625,
+        "coverage_k8": 0.7561848958333334,
+        "seconds": 108.57179087493569,
+        "walk_steps": 0,
+        "reset_count": 0,
+        "reset_until": 0,
+        "persistence": 0.0,
+        "reset_every": 0,
+        "stay_probability": 0.2,
+        "turn_on_block": true,
+        "objective": "dynamics",
+        "seed": 100,
+        "layout": 23,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.0,
+        "dynamics_weight": 1.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "078e426d4a7f6654ced98c76f684b4905cca984e43396af0c06a73b40d54c779",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 75067,
+          "k2_50": 78086,
+          "k4_50": 80292,
+          "k8_50": 81913
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 73256,
+        "unique_endpoints": 73257,
+        "fill_radius_0.05": 0.7115885416666666,
+        "fill_radius_0.1": 0.7723524305555556,
+        "fill_radius_0.2": 0.7936197916666666,
+        "training_seconds": 43.57045286986977,
+        "refresh_seconds": 30.39232708932832,
+        "search_seconds": 33.350270327646285,
+        "physical_restore_jumps": 91987,
+        "successor_noise_sha256": "42d1a0f62a7b948abadcf0bfac23fe8e1c77cca19f025dfed9542744a05190cf",
+        "action_stream_sha256": "c9f9a4a9c3441344296da04238a702966cd1ae1747807b6baebae273adaaea4d",
+        "auc_k1": 0.2706076388888889,
+        "auc_k2": 0.24299045138888886,
+        "auc_k4": 0.2256716579861111,
+        "auc_k8": 0.21007147894965278
+      },
+      {
+        "name": "adjacency-base-s0.125-layout23",
+        "run": "runs/walk-layout-base-20261111/adjacency-base-s0.125-layout23-seed100",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.004207276947987661,
+        "blocked_fraction": 0.0743375,
+        "coverage_k1": 0.8958333333333334,
+        "coverage_k2": 0.8715277777777778,
+        "coverage_k4": 0.8602430555555556,
+        "coverage_k8": 0.8422309027777778,
+        "seconds": 106.40246220771223,
+        "walk_steps": 0,
+        "reset_count": 0,
+        "reset_until": 0,
+        "persistence": 0.0,
+        "reset_every": 0,
+        "stay_probability": 0.2,
+        "turn_on_block": true,
+        "objective": "adjacency",
+        "seed": 100,
+        "layout": 23,
+        "proposal": "stratified",
+        "extra_updates": 0,
+        "extra_placement": "early",
+        "nuisance_dims": 8,
+        "step_size": 0.125,
+        "adjacency_weight": 0.3,
+        "dynamics_weight": 0.0,
+        "repulsion_weight": 0.03,
+        "latent_l2": 0.03,
+        "repulsion_margin": 0.25,
+        "initial_parameters_sha256": "078e426d4a7f6654ced98c76f684b4905cca984e43396af0c06a73b40d54c779",
+        "samples_per_head": 1050000,
+        "path_presentations": 0,
+        "path_edges": 0,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 69272,
+          "k2_50": 72887,
+          "k4_50": 74441,
+          "k8_50": 76254
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 74053,
+        "unique_endpoints": 74054,
+        "fill_radius_0.05": 0.8063151041666666,
+        "fill_radius_0.1": 0.8527560763888888,
+        "fill_radius_0.2": 0.8627387152777778,
+        "training_seconds": 41.96536932839081,
+        "refresh_seconds": 30.239923546090722,
+        "search_seconds": 32.86902426276356,
+        "physical_restore_jumps": 92894,
+        "successor_noise_sha256": "42d1a0f62a7b948abadcf0bfac23fe8e1c77cca19f025dfed9542744a05190cf",
+        "action_stream_sha256": "c9f9a4a9c3441344296da04238a702966cd1ae1747807b6baebae273adaaea4d",
+        "auc_k1": 0.3133940972222222,
+        "auc_k2": 0.28704427083333334,
+        "auc_k4": 0.2702061631944444,
+        "auc_k8": 0.25417317708333337
+      }
+    ]
+  }
+]

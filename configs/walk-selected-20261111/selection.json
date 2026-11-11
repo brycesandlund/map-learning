@@ -1,0 +1,188 @@
+[
+  {
+    "arm": {
+      "name": "walk-s0.125-p0.98-stay0-turn1",
+      "objective": "walk",
+      "step_size": 0.125,
+      "persistence": 0.98,
+      "stay_probability": 0,
+      "turn_on_block": 1
+    },
+    "auc": 0.8438457573784721,
+    "final": 0.9984809027777778,
+    "seeds": [
+      [
+        0.8310536024305556,
+        1.0
+      ],
+      [
+        0.8566379123263888,
+        0.9969618055555556
+      ]
+    ]
+  },
+  {
+    "arm": {
+      "name": "walk-s0.125-p0.98-r10000",
+      "objective": "walk",
+      "step_size": 0.125,
+      "persistence": 0.98,
+      "reset_every": 10000
+    },
+    "auc": 0.7829787868923611,
+    "final": 0.9724392361111112,
+    "seeds": [
+      [
+        0.7621202256944444,
+        0.9453125
+      ],
+      [
+        0.8038373480902778,
+        0.9995659722222222
+      ]
+    ]
+  },
+  {
+    "arm": {
+      "name": "walk-s0.25-p0.98-stay0-turn1",
+      "objective": "walk",
+      "step_size": 0.25,
+      "persistence": 0.98,
+      "stay_probability": 0,
+      "turn_on_block": 1
+    },
+    "auc": 0.9198795572916667,
+    "final": 0.9982638888888888,
+    "seeds": [
+      [
+        0.9249685329861113,
+        1.0
+      ],
+      [
+        0.9147905815972222,
+        0.9965277777777778
+      ]
+    ]
+  },
+  {
+    "arm": {
+      "name": "walk-s0.25-p0.98-r10000",
+      "objective": "walk",
+      "step_size": 0.25,
+      "persistence": 0.98,
+      "reset_every": 10000
+    },
+    "auc": 0.90353515625,
+    "final": 0.9986979166666667,
+    "seeds": [
+      [
+        0.8865266927083334,
+        0.9973958333333334
+      ],
+      [
+        0.9205436197916665,
+        1.0
+      ]
+    ]
+  },
+  {
+    "arm": {
+      "step_size": 0.125,
+      "persistence": 0.98,
+      "stay_probability": 0,
+      "turn_on_block": 1,
+      "name": "dynamics-s0.125-warm20000-resets2",
+      "objective": "dynamics",
+      "repulsion_margin": 0.25,
+      "walk_steps": 20000,
+      "reset_every": 6667
+    },
+    "auc": 0.7668728298611112,
+    "final": 0.9578993055555556,
+    "seeds": [
+      [
+        0.8001888020833334,
+        0.9748263888888888
+      ],
+      [
+        0.7335568576388889,
+        0.9409722222222222
+      ]
+    ]
+  },
+  {
+    "arm": {
+      "step_size": 0.125,
+      "persistence": 0.98,
+      "stay_probability": 0,
+      "turn_on_block": 1,
+      "name": "adjacency-s0.125-warm20000-resets2",
+      "objective": "adjacency",
+      "repulsion_margin": 0.25,
+      "walk_steps": 20000,
+      "reset_every": 6667
+    },
+    "auc": 0.7708157009548611,
+    "final": 0.9741753472222222,
+    "seeds": [
+      [
+        0.8040163845486112,
+        0.9917534722222222
+      ],
+      [
+        0.7376150173611109,
+        0.9565972222222222
+      ]
+    ]
+  },
+  {
+    "arm": {
+      "step_size": 0.25,
+      "persistence": 0.98,
+      "stay_probability": 0,
+      "turn_on_block": 1,
+      "name": "dynamics-s0.25-warm20000-resets0",
+      "objective": "dynamics",
+      "repulsion_margin": 0.25,
+      "walk_steps": 20000,
+      "reset_every": 0
+    },
+    "auc": 0.9258121744791667,
+    "final": 1.0,
+    "seeds": [
+      [
+        0.9259657118055556,
+        1.0
+      ],
+      [
+        0.9256586371527779,
+        1.0
+      ]
+    ]
+  },
+  {
+    "arm": {
+      "step_size": 0.25,
+      "persistence": 0.98,
+      "stay_probability": 0,
+      "turn_on_block": 1,
+      "name": "adjacency-s0.25-warm20000-resets0",
+      "objective": "adjacency",
+      "repulsion_margin": 0.25,
+      "walk_steps": 20000,
+      "reset_every": 0
+    },
+    "auc": 0.9262364366319445,
+    "final": 1.0,
+    "seeds": [
+      [
+        0.9260047743055556,
+        1.0
+      ],
+      [
+        0.9264680989583335,
+        1.0
+      ]
+    ]
+  }
+]

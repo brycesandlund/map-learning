@@ -1,0 +1,176 @@
+[
+  {
+    "name": "walk-s0.125-p0.98-stay0-turn1",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1
+  },
+  {
+    "name": "walk-s0.125-p0.98-r10000",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "reset_every": 10000
+  },
+  {
+    "name": "walk-s0.125-p0.0-r0",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.0,
+    "reset_every": 0
+  },
+  {
+    "name": "random-queue-s0.125",
+    "objective": "random_queue",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25
+  },
+  {
+    "name": "reset-policy-noreset-s0.125",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "reset_every": 0
+  },
+  {
+    "name": "noreset-policy-reset-s0.125",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1,
+    "reset_every": 10000
+  },
+  {
+    "name": "walk-s0.125-p0.9-stay0.2-turn0",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.9,
+    "stay_probability": 0.2,
+    "turn_on_block": 0
+  },
+  {
+    "name": "openloop-policy-blockturn-s0.125",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.9,
+    "stay_probability": 0.2,
+    "turn_on_block": 1
+  },
+  {
+    "name": "walk-s0.25-p0.98-stay0-turn1",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1
+  },
+  {
+    "name": "walk-s0.25-p0.98-r10000",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.98,
+    "reset_every": 10000
+  },
+  {
+    "name": "walk-s0.25-p0.0-r0",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.0,
+    "reset_every": 0
+  },
+  {
+    "name": "random-queue-s0.25",
+    "objective": "random_queue",
+    "step_size": 0.25,
+    "repulsion_margin": 0.25
+  },
+  {
+    "name": "reset-policy-noreset-s0.25",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.98,
+    "reset_every": 0
+  },
+  {
+    "name": "noreset-policy-reset-s0.25",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1,
+    "reset_every": 10000
+  },
+  {
+    "name": "walk-s0.25-p0.9-stay0.2-turn0",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.9,
+    "stay_probability": 0.2,
+    "turn_on_block": 0
+  },
+  {
+    "name": "openloop-policy-blockturn-s0.25",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.9,
+    "stay_probability": 0.2,
+    "turn_on_block": 1
+  },
+  {
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1,
+    "name": "dynamics-s0.125-warm20000-resets2",
+    "objective": "dynamics",
+    "repulsion_margin": 0.25,
+    "walk_steps": 20000,
+    "reset_every": 6667
+  },
+  {
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1,
+    "reset_every": 6667,
+    "name": "continue-s0.125-warm20000-r6667",
+    "objective": "walk",
+    "reset_until": 20000
+  },
+  {
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1,
+    "name": "adjacency-s0.125-warm20000-resets2",
+    "objective": "adjacency",
+    "repulsion_margin": 0.25,
+    "walk_steps": 20000,
+    "reset_every": 6667
+  },
+  {
+    "step_size": 0.25,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1,
+    "name": "dynamics-s0.25-warm20000-resets0",
+    "objective": "dynamics",
+    "repulsion_margin": 0.25,
+    "walk_steps": 20000,
+    "reset_every": 0
+  },
+  {
+    "step_size": 0.25,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1,
+    "name": "adjacency-s0.25-warm20000-resets0",
+    "objective": "adjacency",
+    "repulsion_margin": 0.25,
+    "walk_steps": 20000,
+    "reset_every": 0
+  }
+]

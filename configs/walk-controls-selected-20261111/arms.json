@@ -1,0 +1,122 @@
+[
+  {
+    "name": "walk-s0.125-p0.98-stay0-turn1",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1
+  },
+  {
+    "name": "walk-s0.125-p0.98-r10000",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "reset_every": 10000
+  },
+  {
+    "name": "walk-s0.125-p0.0-r0",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.0,
+    "reset_every": 0
+  },
+  {
+    "name": "random-queue-s0.125",
+    "objective": "random_queue",
+    "step_size": 0.125,
+    "repulsion_margin": 0.25
+  },
+  {
+    "name": "reset-policy-noreset-s0.125",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "reset_every": 0
+  },
+  {
+    "name": "noreset-policy-reset-s0.125",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1,
+    "reset_every": 10000
+  },
+  {
+    "name": "walk-s0.125-p0.9-stay0.2-turn0",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.9,
+    "stay_probability": 0.2,
+    "turn_on_block": 0
+  },
+  {
+    "name": "openloop-policy-blockturn-s0.125",
+    "objective": "walk",
+    "step_size": 0.125,
+    "persistence": 0.9,
+    "stay_probability": 0.2,
+    "turn_on_block": 1
+  },
+  {
+    "name": "walk-s0.25-p0.98-stay0-turn1",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1
+  },
+  {
+    "name": "walk-s0.25-p0.98-r10000",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.98,
+    "reset_every": 10000
+  },
+  {
+    "name": "walk-s0.25-p0.0-r0",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.0,
+    "reset_every": 0
+  },
+  {
+    "name": "random-queue-s0.25",
+    "objective": "random_queue",
+    "step_size": 0.25,
+    "repulsion_margin": 0.25
+  },
+  {
+    "name": "reset-policy-noreset-s0.25",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.98,
+    "reset_every": 0
+  },
+  {
+    "name": "noreset-policy-reset-s0.25",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1,
+    "reset_every": 10000
+  },
+  {
+    "name": "walk-s0.25-p0.9-stay0.2-turn0",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.9,
+    "stay_probability": 0.2,
+    "turn_on_block": 0
+  },
+  {
+    "name": "openloop-policy-blockturn-s0.25",
+    "objective": "walk",
+    "step_size": 0.25,
+    "persistence": 0.9,
+    "stay_probability": 0.2,
+    "turn_on_block": 1
+  }
+]

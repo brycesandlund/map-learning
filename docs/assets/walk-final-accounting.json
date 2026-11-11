@@ -1,0 +1,3069 @@
+{
+  "runs": 306,
+  "totals": {
+    "interactions": 30600000,
+    "updates": 526336,
+    "samples_per_head": 134400000,
+    "reset_count": 13620,
+    "physical_restore_jumps": 11805783
+  },
+  "initial_weights_and_successor_noise_matched": true,
+  "exact_walk_prefixes": [
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.125-warm1000-resets0-seed90",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-stay0-turn1-seed90",
+      "exact_actions": 1000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.125-warm5000-resets0-seed90",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-stay0-turn1-seed90",
+      "exact_actions": 5000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.125-warm20000-resets0-seed90",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-stay0-turn1-seed90",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.125-warm1000-resets0-seed90",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-stay0-turn1-seed90",
+      "exact_actions": 1000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.125-warm5000-resets0-seed90",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-stay0-turn1-seed90",
+      "exact_actions": 5000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.125-warm20000-resets0-seed90",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-stay0-turn1-seed90",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.25-warm1000-resets0-seed90",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-stay0-turn1-seed90",
+      "exact_actions": 1000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.25-warm5000-resets0-seed90",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-stay0-turn1-seed90",
+      "exact_actions": 5000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.25-warm20000-resets0-seed90",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-stay0-turn1-seed90",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.25-warm1000-resets0-seed90",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-stay0-turn1-seed90",
+      "exact_actions": 1000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.25-warm5000-resets0-seed90",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-stay0-turn1-seed90",
+      "exact_actions": 5000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.25-warm20000-resets0-seed90",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-stay0-turn1-seed90",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.125-warm1000-resets0-seed91",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-stay0-turn1-seed91",
+      "exact_actions": 1000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.125-warm5000-resets0-seed91",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-stay0-turn1-seed91",
+      "exact_actions": 5000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.125-warm20000-resets0-seed91",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-stay0-turn1-seed91",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.125-warm1000-resets0-seed91",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-stay0-turn1-seed91",
+      "exact_actions": 1000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.125-warm5000-resets0-seed91",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-stay0-turn1-seed91",
+      "exact_actions": 5000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.125-warm20000-resets0-seed91",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-stay0-turn1-seed91",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.25-warm1000-resets0-seed91",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-stay0-turn1-seed91",
+      "exact_actions": 1000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.25-warm5000-resets0-seed91",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-stay0-turn1-seed91",
+      "exact_actions": 5000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.25-warm20000-resets0-seed91",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-stay0-turn1-seed91",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.25-warm1000-resets0-seed91",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-stay0-turn1-seed91",
+      "exact_actions": 1000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.25-warm5000-resets0-seed91",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-stay0-turn1-seed91",
+      "exact_actions": 5000
+    },
+    {
+      "hybrid": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.25-warm20000-resets0-seed91",
+      "walk": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-stay0-turn1-seed91",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/dynamics-s0.125-warm20000-resets2-seed92",
+      "walk": "runs/walk-selected-confirm-20261111/continue-s0.125-warm20000-r6667-seed92",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/adjacency-s0.125-warm20000-resets2-seed92",
+      "walk": "runs/walk-selected-confirm-20261111/continue-s0.125-warm20000-r6667-seed92",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/dynamics-s0.25-warm20000-resets0-seed92",
+      "walk": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-stay0-turn1-seed92",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/adjacency-s0.25-warm20000-resets0-seed92",
+      "walk": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-stay0-turn1-seed92",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/dynamics-s0.125-warm20000-resets2-seed93",
+      "walk": "runs/walk-selected-confirm-20261111/continue-s0.125-warm20000-r6667-seed93",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/adjacency-s0.125-warm20000-resets2-seed93",
+      "walk": "runs/walk-selected-confirm-20261111/continue-s0.125-warm20000-r6667-seed93",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/dynamics-s0.25-warm20000-resets0-seed93",
+      "walk": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-stay0-turn1-seed93",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/adjacency-s0.25-warm20000-resets0-seed93",
+      "walk": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-stay0-turn1-seed93",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/dynamics-s0.125-warm20000-resets2-seed94",
+      "walk": "runs/walk-selected-confirm-20261111/continue-s0.125-warm20000-r6667-seed94",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/adjacency-s0.125-warm20000-resets2-seed94",
+      "walk": "runs/walk-selected-confirm-20261111/continue-s0.125-warm20000-r6667-seed94",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/dynamics-s0.25-warm20000-resets0-seed94",
+      "walk": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-stay0-turn1-seed94",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/adjacency-s0.25-warm20000-resets0-seed94",
+      "walk": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-stay0-turn1-seed94",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/dynamics-s0.125-warm20000-resets2-seed95",
+      "walk": "runs/walk-selected-confirm-20261111/continue-s0.125-warm20000-r6667-seed95",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/adjacency-s0.125-warm20000-resets2-seed95",
+      "walk": "runs/walk-selected-confirm-20261111/continue-s0.125-warm20000-r6667-seed95",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/dynamics-s0.25-warm20000-resets0-seed95",
+      "walk": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-stay0-turn1-seed95",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/adjacency-s0.25-warm20000-resets0-seed95",
+      "walk": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-stay0-turn1-seed95",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/dynamics-s0.125-warm20000-resets2-seed96",
+      "walk": "runs/walk-selected-confirm-20261111/continue-s0.125-warm20000-r6667-seed96",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/adjacency-s0.125-warm20000-resets2-seed96",
+      "walk": "runs/walk-selected-confirm-20261111/continue-s0.125-warm20000-r6667-seed96",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/dynamics-s0.25-warm20000-resets0-seed96",
+      "walk": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-stay0-turn1-seed96",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/adjacency-s0.25-warm20000-resets0-seed96",
+      "walk": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-stay0-turn1-seed96",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/dynamics-s0.125-warm20000-resets2-seed97",
+      "walk": "runs/walk-selected-confirm-20261111/continue-s0.125-warm20000-r6667-seed97",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/adjacency-s0.125-warm20000-resets2-seed97",
+      "walk": "runs/walk-selected-confirm-20261111/continue-s0.125-warm20000-r6667-seed97",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/dynamics-s0.25-warm20000-resets0-seed97",
+      "walk": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-stay0-turn1-seed97",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-confirm-20261111/adjacency-s0.25-warm20000-resets0-seed97",
+      "walk": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-stay0-turn1-seed97",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-layout-20261111/dynamics-s0.125-warm20000-resets2-layout13-seed98",
+      "walk": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout13-seed98",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-layout-20261111/adjacency-s0.125-warm20000-resets2-layout13-seed98",
+      "walk": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout13-seed98",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-layout-20261111/dynamics-s0.125-warm20000-resets2-layout23-seed98",
+      "walk": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout23-seed98",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-layout-20261111/adjacency-s0.125-warm20000-resets2-layout23-seed98",
+      "walk": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout23-seed98",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-layout-20261111/dynamics-s0.125-warm20000-resets2-layout13-seed99",
+      "walk": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout13-seed99",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-layout-20261111/adjacency-s0.125-warm20000-resets2-layout13-seed99",
+      "walk": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout13-seed99",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-layout-20261111/dynamics-s0.125-warm20000-resets2-layout23-seed99",
+      "walk": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout23-seed99",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-layout-20261111/adjacency-s0.125-warm20000-resets2-layout23-seed99",
+      "walk": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout23-seed99",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-layout-20261111/dynamics-s0.125-warm20000-resets2-layout13-seed100",
+      "walk": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout13-seed100",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-layout-20261111/adjacency-s0.125-warm20000-resets2-layout13-seed100",
+      "walk": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout13-seed100",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-layout-20261111/dynamics-s0.125-warm20000-resets2-layout23-seed100",
+      "walk": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout23-seed100",
+      "exact_actions": 20000
+    },
+    {
+      "hybrid": "runs/walk-selected-layout-20261111/adjacency-s0.125-warm20000-resets2-layout23-seed100",
+      "walk": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout23-seed100",
+      "exact_actions": 20000
+    }
+  ],
+  "per_run": [
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.0-r0-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.0-r100-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 999,
+      "physical_restore_jumps": 999
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.0-r1000-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 99,
+      "physical_restore_jumps": 99
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.0-r10000-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.9-r0-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.9-r100-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 999,
+      "physical_restore_jumps": 999
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.9-r1000-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 99,
+      "physical_restore_jumps": 99
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.9-r10000-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-r0-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-r100-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 999,
+      "physical_restore_jumps": 999
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-r1000-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 99,
+      "physical_restore_jumps": 99
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-r10000-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.9-stay0-turn1-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-stay0-turn1-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.9-stay0.2-turn0-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-stay0.2-turn0-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.0-r0-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.0-r100-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 999,
+      "physical_restore_jumps": 999
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.0-r1000-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 99,
+      "physical_restore_jumps": 99
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.0-r10000-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.9-r0-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.9-r100-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 999,
+      "physical_restore_jumps": 999
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.9-r1000-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 99,
+      "physical_restore_jumps": 99
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.9-r10000-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-r0-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-r100-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 999,
+      "physical_restore_jumps": 999
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-r1000-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 99,
+      "physical_restore_jumps": 99
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-r10000-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.9-stay0-turn1-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-stay0-turn1-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.9-stay0.2-turn0-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-stay0.2-turn0-seed90",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.0-r0-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.0-r100-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 999,
+      "physical_restore_jumps": 998
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.0-r1000-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 99,
+      "physical_restore_jumps": 99
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.0-r10000-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.9-r0-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.9-r100-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 999,
+      "physical_restore_jumps": 998
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.9-r1000-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 99,
+      "physical_restore_jumps": 99
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.9-r10000-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-r0-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-r100-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 999,
+      "physical_restore_jumps": 998
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-r1000-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 99,
+      "physical_restore_jumps": 99
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-r10000-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.9-stay0-turn1-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-stay0-turn1-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.9-stay0.2-turn0-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.125-p0.98-stay0.2-turn0-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.0-r0-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.0-r100-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 999,
+      "physical_restore_jumps": 998
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.0-r1000-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 99,
+      "physical_restore_jumps": 99
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.0-r10000-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.9-r0-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.9-r100-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 999,
+      "physical_restore_jumps": 998
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.9-r1000-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 99,
+      "physical_restore_jumps": 99
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.9-r10000-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-r0-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-r100-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 999,
+      "physical_restore_jumps": 998
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-r1000-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 99,
+      "physical_restore_jumps": 99
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-r10000-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.9-stay0-turn1-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-stay0-turn1-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.9-stay0.2-turn0-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-screen-v2-20261111/walk-s0.25-p0.98-stay0.2-turn0-seed91",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-base-tuning-20261111/dynamics-base-s0.125-seed90",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 91349
+    },
+    {
+      "run": "runs/walk-base-tuning-20261111/adjacency-base-s0.125-seed90",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 92163
+    },
+    {
+      "run": "runs/walk-base-tuning-20261111/dynamics-base-s0.25-seed90",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 87898
+    },
+    {
+      "run": "runs/walk-base-tuning-20261111/adjacency-base-s0.25-seed90",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 88554
+    },
+    {
+      "run": "runs/walk-base-tuning-20261111/dynamics-base-s0.125-seed91",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 92188
+    },
+    {
+      "run": "runs/walk-base-tuning-20261111/adjacency-base-s0.125-seed91",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 93013
+    },
+    {
+      "run": "runs/walk-base-tuning-20261111/dynamics-base-s0.25-seed91",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 88606
+    },
+    {
+      "run": "runs/walk-base-tuning-20261111/adjacency-base-s0.25-seed91",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 88920
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.125-warm1000-resets0-seed90",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 90607
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.125-warm1000-resets2-seed90",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 91565
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.125-warm5000-resets0-seed90",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 87403
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.125-warm5000-resets2-seed90",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 87509
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.125-warm20000-resets0-seed90",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 73954
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.125-warm20000-resets2-seed90",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 74046
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.125-warm1000-resets0-seed90",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 91320
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.125-warm1000-resets2-seed90",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 92315
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.125-warm5000-resets0-seed90",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 88590
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.125-warm5000-resets2-seed90",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 88523
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.125-warm20000-resets0-seed90",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 74872
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.125-warm20000-resets2-seed90",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 75145
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.25-warm1000-resets0-seed90",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 87520
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.25-warm1000-resets2-seed90",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 87769
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.25-warm5000-resets0-seed90",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 84308
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.25-warm5000-resets2-seed90",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 84329
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.25-warm20000-resets0-seed90",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 71123
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.25-warm20000-resets2-seed90",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 70701
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.25-warm1000-resets0-seed90",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 88210
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.25-warm1000-resets2-seed90",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 88500
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.25-warm5000-resets0-seed90",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 85137
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.25-warm5000-resets2-seed90",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 85084
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.25-warm20000-resets0-seed90",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 71978
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.25-warm20000-resets2-seed90",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 71684
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.125-warm1000-resets0-seed91",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 91792
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.125-warm1000-resets2-seed91",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 91813
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.125-warm5000-resets0-seed91",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 88112
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.125-warm5000-resets2-seed91",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 88002
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.125-warm20000-resets0-seed91",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 74224
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.125-warm20000-resets2-seed91",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 74073
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.125-warm1000-resets0-seed91",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 92493
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.125-warm1000-resets2-seed91",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 91996
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.125-warm5000-resets0-seed91",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 88774
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.125-warm5000-resets2-seed91",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 89144
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.125-warm20000-resets0-seed91",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 75245
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.125-warm20000-resets2-seed91",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 75064
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.25-warm1000-resets0-seed91",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 87211
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.25-warm1000-resets2-seed91",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 87706
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.25-warm5000-resets0-seed91",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 84153
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.25-warm5000-resets2-seed91",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 84169
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.25-warm20000-resets0-seed91",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 71173
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/dynamics-s0.25-warm20000-resets2-seed91",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 71256
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.25-warm1000-resets0-seed91",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 88090
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.25-warm1000-resets2-seed91",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 88336
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.25-warm5000-resets0-seed91",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 85028
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.25-warm5000-resets2-seed91",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 85094
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.25-warm20000-resets0-seed91",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 72039
+    },
+    {
+      "run": "runs/walk-hybrid-tuning-v2-20261111/adjacency-s0.25-warm20000-resets2-seed91",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 72106
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/dynamics-base-s0.125-seed92",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 92767
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/adjacency-base-s0.125-seed92",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 92859
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/dynamics-base-s0.25-seed92",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 88214
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/adjacency-base-s0.25-seed92",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 88982
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/dynamics-base-s0.125-seed93",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 92984
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/adjacency-base-s0.125-seed93",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 93885
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/dynamics-base-s0.25-seed93",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 88200
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/adjacency-base-s0.25-seed93",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 89472
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/dynamics-base-s0.125-seed94",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 93181
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/adjacency-base-s0.125-seed94",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 92757
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/dynamics-base-s0.25-seed94",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 88278
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/adjacency-base-s0.25-seed94",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 88592
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/dynamics-base-s0.125-seed95",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 92798
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/adjacency-base-s0.125-seed95",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 93656
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/dynamics-base-s0.25-seed95",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 87939
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/adjacency-base-s0.25-seed95",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 88674
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/dynamics-base-s0.125-seed96",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 92022
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/adjacency-base-s0.125-seed96",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 91802
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/dynamics-base-s0.25-seed96",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 88033
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/adjacency-base-s0.25-seed96",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 88249
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/dynamics-base-s0.125-seed97",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 92854
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/adjacency-base-s0.125-seed97",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 91977
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/dynamics-base-s0.25-seed97",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 87798
+    },
+    {
+      "run": "runs/walk-base-confirm-20261111/adjacency-base-s0.25-seed97",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 88699
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.98-stay0-turn1-seed92",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.98-r10000-seed92",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.0-r0-seed92",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/random-queue-s0.125-seed92",
+      "objective": "random_queue",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 98741
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/reset-policy-noreset-s0.125-seed92",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/noreset-policy-reset-s0.125-seed92",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.9-stay0.2-turn0-seed92",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/openloop-policy-blockturn-s0.125-seed92",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-stay0-turn1-seed92",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-r10000-seed92",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.0-r0-seed92",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/random-queue-s0.25-seed92",
+      "objective": "random_queue",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 92719
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/reset-policy-noreset-s0.25-seed92",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/noreset-policy-reset-s0.25-seed92",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.9-stay0.2-turn0-seed92",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/openloop-policy-blockturn-s0.25-seed92",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.98-stay0-turn1-seed93",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.98-r10000-seed93",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.0-r0-seed93",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/random-queue-s0.125-seed93",
+      "objective": "random_queue",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 99543
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/reset-policy-noreset-s0.125-seed93",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/noreset-policy-reset-s0.125-seed93",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.9-stay0.2-turn0-seed93",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/openloop-policy-blockturn-s0.125-seed93",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-stay0-turn1-seed93",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-r10000-seed93",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.0-r0-seed93",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/random-queue-s0.25-seed93",
+      "objective": "random_queue",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 93039
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/reset-policy-noreset-s0.25-seed93",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/noreset-policy-reset-s0.25-seed93",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.9-stay0.2-turn0-seed93",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/openloop-policy-blockturn-s0.25-seed93",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.98-stay0-turn1-seed94",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.98-r10000-seed94",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.0-r0-seed94",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/random-queue-s0.125-seed94",
+      "objective": "random_queue",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 98758
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/reset-policy-noreset-s0.125-seed94",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/noreset-policy-reset-s0.125-seed94",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.9-stay0.2-turn0-seed94",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/openloop-policy-blockturn-s0.125-seed94",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-stay0-turn1-seed94",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-r10000-seed94",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.0-r0-seed94",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/random-queue-s0.25-seed94",
+      "objective": "random_queue",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 91112
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/reset-policy-noreset-s0.25-seed94",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/noreset-policy-reset-s0.25-seed94",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.9-stay0.2-turn0-seed94",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/openloop-policy-blockturn-s0.25-seed94",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.98-stay0-turn1-seed95",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.98-r10000-seed95",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.0-r0-seed95",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/random-queue-s0.125-seed95",
+      "objective": "random_queue",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 98893
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/reset-policy-noreset-s0.125-seed95",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/noreset-policy-reset-s0.125-seed95",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.9-stay0.2-turn0-seed95",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/openloop-policy-blockturn-s0.125-seed95",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-stay0-turn1-seed95",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-r10000-seed95",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.0-r0-seed95",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/random-queue-s0.25-seed95",
+      "objective": "random_queue",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 91060
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/reset-policy-noreset-s0.25-seed95",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/noreset-policy-reset-s0.25-seed95",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.9-stay0.2-turn0-seed95",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/openloop-policy-blockturn-s0.25-seed95",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.98-stay0-turn1-seed96",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.98-r10000-seed96",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.0-r0-seed96",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/random-queue-s0.125-seed96",
+      "objective": "random_queue",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 98420
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/reset-policy-noreset-s0.125-seed96",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/noreset-policy-reset-s0.125-seed96",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.9-stay0.2-turn0-seed96",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/openloop-policy-blockturn-s0.125-seed96",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-stay0-turn1-seed96",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-r10000-seed96",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.0-r0-seed96",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/random-queue-s0.25-seed96",
+      "objective": "random_queue",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 90845
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/reset-policy-noreset-s0.25-seed96",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/noreset-policy-reset-s0.25-seed96",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.9-stay0.2-turn0-seed96",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/openloop-policy-blockturn-s0.25-seed96",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.98-stay0-turn1-seed97",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.98-r10000-seed97",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.0-r0-seed97",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/random-queue-s0.125-seed97",
+      "objective": "random_queue",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 99287
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/reset-policy-noreset-s0.125-seed97",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/noreset-policy-reset-s0.125-seed97",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.125-p0.9-stay0.2-turn0-seed97",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/openloop-policy-blockturn-s0.125-seed97",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-stay0-turn1-seed97",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.98-r10000-seed97",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.0-r0-seed97",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/random-queue-s0.25-seed97",
+      "objective": "random_queue",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 92778
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/reset-policy-noreset-s0.25-seed97",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/noreset-policy-reset-s0.25-seed97",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 9,
+      "physical_restore_jumps": 9
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/walk-s0.25-p0.9-stay0.2-turn0-seed97",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-controls-confirm-20261111/openloop-policy-blockturn-s0.25-seed97",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/dynamics-s0.125-warm20000-resets2-seed92",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 74215
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/continue-s0.125-warm20000-r6667-seed92",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 2,
+      "physical_restore_jumps": 2
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/adjacency-s0.125-warm20000-resets2-seed92",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 75166
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/dynamics-s0.25-warm20000-resets0-seed92",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 71023
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/adjacency-s0.25-warm20000-resets0-seed92",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 71902
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/dynamics-s0.125-warm20000-resets2-seed93",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 74129
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/continue-s0.125-warm20000-r6667-seed93",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 2,
+      "physical_restore_jumps": 2
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/adjacency-s0.125-warm20000-resets2-seed93",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 75112
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/dynamics-s0.25-warm20000-resets0-seed93",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 71144
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/adjacency-s0.25-warm20000-resets0-seed93",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 72054
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/dynamics-s0.125-warm20000-resets2-seed94",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 74232
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/continue-s0.125-warm20000-r6667-seed94",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 2,
+      "physical_restore_jumps": 2
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/adjacency-s0.125-warm20000-resets2-seed94",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 75209
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/dynamics-s0.25-warm20000-resets0-seed94",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 71205
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/adjacency-s0.25-warm20000-resets0-seed94",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 71910
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/dynamics-s0.125-warm20000-resets2-seed95",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 74317
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/continue-s0.125-warm20000-r6667-seed95",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 2,
+      "physical_restore_jumps": 2
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/adjacency-s0.125-warm20000-resets2-seed95",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 75185
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/dynamics-s0.25-warm20000-resets0-seed95",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 70939
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/adjacency-s0.25-warm20000-resets0-seed95",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 71872
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/dynamics-s0.125-warm20000-resets2-seed96",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 74221
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/continue-s0.125-warm20000-r6667-seed96",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 2,
+      "physical_restore_jumps": 2
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/adjacency-s0.125-warm20000-resets2-seed96",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 75075
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/dynamics-s0.25-warm20000-resets0-seed96",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 71036
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/adjacency-s0.25-warm20000-resets0-seed96",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 72066
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/dynamics-s0.125-warm20000-resets2-seed97",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 74337
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/continue-s0.125-warm20000-r6667-seed97",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 2,
+      "physical_restore_jumps": 2
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/adjacency-s0.125-warm20000-resets2-seed97",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 75358
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/dynamics-s0.25-warm20000-resets0-seed97",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 71103
+    },
+    {
+      "run": "runs/walk-selected-confirm-20261111/adjacency-s0.25-warm20000-resets0-seed97",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 71891
+    },
+    {
+      "run": "runs/walk-layout-base-20261111/dynamics-base-s0.125-layout13-seed98",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 89638
+    },
+    {
+      "run": "runs/walk-layout-base-20261111/adjacency-base-s0.125-layout13-seed98",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 93364
+    },
+    {
+      "run": "runs/walk-layout-base-20261111/dynamics-base-s0.125-layout23-seed98",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 92642
+    },
+    {
+      "run": "runs/walk-layout-base-20261111/adjacency-base-s0.125-layout23-seed98",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 91775
+    },
+    {
+      "run": "runs/walk-layout-base-20261111/dynamics-base-s0.125-layout13-seed99",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 91609
+    },
+    {
+      "run": "runs/walk-layout-base-20261111/adjacency-base-s0.125-layout13-seed99",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 92753
+    },
+    {
+      "run": "runs/walk-layout-base-20261111/dynamics-base-s0.125-layout23-seed99",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 93041
+    },
+    {
+      "run": "runs/walk-layout-base-20261111/adjacency-base-s0.125-layout23-seed99",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 93328
+    },
+    {
+      "run": "runs/walk-layout-base-20261111/dynamics-base-s0.125-layout13-seed100",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 91539
+    },
+    {
+      "run": "runs/walk-layout-base-20261111/adjacency-base-s0.125-layout13-seed100",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 93556
+    },
+    {
+      "run": "runs/walk-layout-base-20261111/dynamics-base-s0.125-layout23-seed100",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 91987
+    },
+    {
+      "run": "runs/walk-layout-base-20261111/adjacency-base-s0.125-layout23-seed100",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 0,
+      "physical_restore_jumps": 92894
+    },
+    {
+      "run": "runs/walk-selected-layout-20261111/walk-s0.125-p0.98-stay0-turn1-layout13-seed98",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-selected-layout-20261111/dynamics-s0.125-warm20000-resets2-layout13-seed98",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 74213
+    },
+    {
+      "run": "runs/walk-selected-layout-20261111/adjacency-s0.125-warm20000-resets2-layout13-seed98",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 75266
+    },
+    {
+      "run": "runs/walk-selected-layout-20261111/walk-s0.125-p0.98-stay0-turn1-layout23-seed98",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-selected-layout-20261111/dynamics-s0.125-warm20000-resets2-layout23-seed98",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 74267
+    },
+    {
+      "run": "runs/walk-selected-layout-20261111/adjacency-s0.125-warm20000-resets2-layout23-seed98",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 75399
+    },
+    {
+      "run": "runs/walk-selected-layout-20261111/walk-s0.125-p0.98-stay0-turn1-layout13-seed99",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-selected-layout-20261111/dynamics-s0.125-warm20000-resets2-layout13-seed99",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 74508
+    },
+    {
+      "run": "runs/walk-selected-layout-20261111/adjacency-s0.125-warm20000-resets2-layout13-seed99",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 75149
+    },
+    {
+      "run": "runs/walk-selected-layout-20261111/walk-s0.125-p0.98-stay0-turn1-layout23-seed99",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-selected-layout-20261111/dynamics-s0.125-warm20000-resets2-layout23-seed99",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 74583
+    },
+    {
+      "run": "runs/walk-selected-layout-20261111/adjacency-s0.125-warm20000-resets2-layout23-seed99",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 75486
+    },
+    {
+      "run": "runs/walk-selected-layout-20261111/walk-s0.125-p0.98-stay0-turn1-layout13-seed100",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-selected-layout-20261111/dynamics-s0.125-warm20000-resets2-layout13-seed100",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 73817
+    },
+    {
+      "run": "runs/walk-selected-layout-20261111/adjacency-s0.125-warm20000-resets2-layout13-seed100",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 74949
+    },
+    {
+      "run": "runs/walk-selected-layout-20261111/walk-s0.125-p0.98-stay0-turn1-layout23-seed100",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 0,
+      "physical_restore_jumps": 0
+    },
+    {
+      "run": "runs/walk-selected-layout-20261111/dynamics-s0.125-warm20000-resets2-layout23-seed100",
+      "objective": "dynamics",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 74521
+    },
+    {
+      "run": "runs/walk-selected-layout-20261111/adjacency-s0.125-warm20000-resets2-layout23-seed100",
+      "objective": "adjacency",
+      "interactions": 100000,
+      "updates": 4112,
+      "samples_per_head": 1050000,
+      "reset_count": 2,
+      "physical_restore_jumps": 75437
+    },
+    {
+      "run": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout13-seed98",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 2,
+      "physical_restore_jumps": 2
+    },
+    {
+      "run": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout23-seed98",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 2,
+      "physical_restore_jumps": 2
+    },
+    {
+      "run": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout13-seed99",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 2,
+      "physical_restore_jumps": 2
+    },
+    {
+      "run": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout23-seed99",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 2,
+      "physical_restore_jumps": 2
+    },
+    {
+      "run": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout13-seed100",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 2,
+      "physical_restore_jumps": 2
+    },
+    {
+      "run": "runs/walk-layout-continuation-20261111/continue-s0.125-warm20000-r6667-layout23-seed100",
+      "objective": "walk",
+      "interactions": 100000,
+      "updates": 0,
+      "samples_per_head": 0,
+      "reset_count": 2,
+      "physical_restore_jumps": 2
+    }
+  ]
+}

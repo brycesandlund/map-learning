@@ -1,0 +1,875 @@
+{
+  "note": "Paired seed bootstrap, conditional on layout. No multiplicity correction; repeated model seeds across layouts. Capped time-to95 treats failures as100k, not observed completion.",
+  "comparisons": [
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1",
+      "control": "dynamics-base-s0.125",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        29.817708333333314,
+        20.052083333333343,
+        30.381944444444443,
+        25.34722222222223,
+        31.03298611111113,
+        24.479166666666657
+      ],
+      "mean_difference": 26.85185185185185,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        23.444552951388893,
+        29.665798611111114
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1",
+      "control": "dynamics-base-s0.125",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        54.0393337673611,
+        49.67133246527779,
+        65.52191840277779,
+        60.06174045138887,
+        51.11637369791668,
+        58.31749131944444
+      ],
+      "mean_difference": 56.45469835069445,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        52.32203956886574,
+        61.0096752025463
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1",
+      "control": "dynamics-base-s0.125",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -25454,
+        -17720,
+        -67440,
+        -45918,
+        -25286,
+        -46801
+      ],
+      "mean_difference": -38103.166666666664,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -53239.166666666664,
+        -25116.833333333332
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1",
+      "control": "adjacency-base-s0.125",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        26.475694444444443,
+        17.1875,
+        44.921875,
+        21.35416666666667,
+        47.699652777777786,
+        28.385416666666657
+      ],
+      "mean_difference": 31.004050925925927,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        22.366898148148152,
+        40.16203703703704
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1",
+      "control": "adjacency-base-s0.125",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        52.32020399305555,
+        45.245442708333336,
+        73.83013237847223,
+        58.495442708333314,
+        59.42778862847223,
+        61.92719184027778
+      ],
+      "mean_difference": 58.54103370949073,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        51.985152633101855,
+        65.86093026620371
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1",
+      "control": "adjacency-base-s0.125",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -25454,
+        -17720,
+        -67440,
+        -45918,
+        -25286,
+        -46801
+      ],
+      "mean_difference": -38103.166666666664,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -53239.166666666664,
+        -25116.833333333332
+      ]
+    },
+    {
+      "candidate": "noreset-policy-reset-s0.125",
+      "control": "walk-s0.125-p0.98-stay0-turn1",
+      "reason": "Matched policy: resets versus none",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -1.7361111111111,
+        -0.1302083333333428,
+        -0.04340277777778567,
+        -0.34722222222222854,
+        -13.8888888888889,
+        -0.8680555555555571
+      ],
+      "mean_difference": -2.8356481481481524,
+      "wins": 0,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -7.3495370370370425,
+        -0.2604166666666738
+      ]
+    },
+    {
+      "candidate": "noreset-policy-reset-s0.125",
+      "control": "walk-s0.125-p0.98-stay0-turn1",
+      "reason": "Matched policy: resets versus none",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -8.337565104166671,
+        5.777940538194429,
+        -0.11691623263888573,
+        -5.663628472222214,
+        2.7964409722222143,
+        2.339952256944443
+      ],
+      "mean_difference": -0.5339626736111143,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -4.666133174189817,
+        3.2286331741898073
+      ]
+    },
+    {
+      "candidate": "noreset-policy-reset-s0.125",
+      "control": "walk-s0.125-p0.98-stay0-turn1",
+      "reason": "Matched policy: resets versus none",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        13807,
+        -44835,
+        -134,
+        2832,
+        25286,
+        51
+      ],
+      "mean_difference": -498.8333333333333,
+      "wins": 2,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -20099.333333333332,
+        13975.0
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-r10000",
+      "control": "reset-policy-noreset-s0.125",
+      "reason": "Matched policy: resets versus none",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        7.161458333333329,
+        1.0416666666666572,
+        -1.0416666666666572,
+        0.6510416666666572,
+        -5.425347222222214,
+        -0.17361111111110006
+      ],
+      "mean_difference": 0.3689236111111119,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -2.539062499999998,
+        3.551793981481481
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-r10000",
+      "control": "reset-policy-noreset-s0.125",
+      "reason": "Matched policy: resets versus none",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        4.973470052083343,
+        -0.4207899305555429,
+        -12.276367187499986,
+        3.3978407118055713,
+        -1.5788302951388857,
+        -1.5458984375000284
+      ],
+      "mean_difference": -1.2417625144675881,
+      "wins": 2,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -6.09266493055555,
+        2.537742332175924
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-r10000",
+      "control": "reset-policy-noreset-s0.125",
+      "reason": "Matched policy: resets versus none",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0,
+        -2032,
+        0,
+        -9455,
+        24437,
+        17545
+      ],
+      "mean_difference": 5082.5,
+      "wins": 2,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -3829.0,
+        15142.666666666666
+      ]
+    },
+    {
+      "candidate": "openloop-policy-blockturn-s0.125",
+      "control": "walk-s0.125-p0.9-stay0.2-turn0",
+      "reason": "Matched policy: collision response versus open loop",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -9.765625,
+        19.09722222222223,
+        3.602430555555557,
+        6.814236111111114,
+        -4.600694444444443,
+        8.506944444444443
+      ],
+      "mean_difference": 3.942418981481483,
+      "wins": 4,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -3.233506944444443,
+        11.3353587962963
+      ]
+    },
+    {
+      "candidate": "openloop-policy-blockturn-s0.125",
+      "control": "walk-s0.125-p0.9-stay0.2-turn0",
+      "reason": "Matched policy: collision response versus open loop",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        9.726942274305564,
+        26.793077256944443,
+        -14.308865017361114,
+        -5.783365885416664,
+        8.191406249999972,
+        6.768554687500014
+      ],
+      "mean_difference": 5.231291594328702,
+      "wins": 4,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -4.881919804325803,
+        15.181893807870374
+      ]
+    },
+    {
+      "candidate": "openloop-policy-blockturn-s0.125",
+      "control": "walk-s0.125-p0.9-stay0.2-turn0",
+      "reason": "Matched policy: collision response versus open loop",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0,
+        0,
+        0,
+        -17417,
+        3258,
+        -10799
+      ],
+      "mean_difference": -4159.666666666667,
+      "wins": 2,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -10508.333333333334,
+        1086.0
+      ]
+    },
+    {
+      "candidate": "walk-s0.25-p0.98-stay0-turn1",
+      "control": "dynamics-base-s0.25",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0.0,
+        0.0,
+        -0.17361111111111427,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": -0.028935185185185713,
+      "wins": 0,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -0.08680555555555713,
+        0.0
+      ]
+    },
+    {
+      "candidate": "walk-s0.25-p0.98-stay0-turn1",
+      "control": "dynamics-base-s0.25",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        31.227539062500014,
+        19.746202256944443,
+        20.914388020833336,
+        24.39453125,
+        30.061089409722207,
+        32.15928819444443
+      ],
+      "mean_difference": 26.417173032407405,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        22.43476924189814,
+        30.204879195601848
+      ]
+    },
+    {
+      "candidate": "walk-s0.25-p0.98-stay0-turn1",
+      "control": "dynamics-base-s0.25",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -30031,
+        -5387,
+        -928,
+        -27590,
+        -21527,
+        -37564
+      ],
+      "mean_difference": -20504.5,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -30717.833333333332,
+        -9548.0
+      ]
+    },
+    {
+      "candidate": "walk-s0.25-p0.98-stay0-turn1",
+      "control": "adjacency-base-s0.25",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0.0,
+        0.0,
+        -0.17361111111111427,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": -0.028935185185185713,
+      "wins": 0,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -0.08680555555555713,
+        0.0
+      ]
+    },
+    {
+      "candidate": "walk-s0.25-p0.98-stay0-turn1",
+      "control": "adjacency-base-s0.25",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        24.925455729166686,
+        16.60308159722223,
+        24.310112847222214,
+        26.4304470486111,
+        36.75086805555555,
+        29.600151909722214
+      ],
+      "mean_difference": 26.436686197916668,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        21.54338469328705,
+        31.412163628472214
+      ]
+    },
+    {
+      "candidate": "walk-s0.25-p0.98-stay0-turn1",
+      "control": "adjacency-base-s0.25",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -12935,
+        933,
+        -4366,
+        -27906,
+        -28814,
+        -34876
+      ],
+      "mean_difference": -17994.0,
+      "wins": 5,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -28188.166666666668,
+        -7219.333333333333
+      ]
+    },
+    {
+      "candidate": "noreset-policy-reset-s0.25",
+      "control": "walk-s0.25-p0.98-stay0-turn1",
+      "reason": "Matched policy: resets versus none",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0.0,
+        0.0,
+        0.17361111111111427,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.028935185185185713,
+      "wins": 1,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        0.0,
+        0.08680555555555713
+      ]
+    },
+    {
+      "candidate": "noreset-policy-reset-s0.25",
+      "control": "walk-s0.25-p0.98-stay0-turn1",
+      "reason": "Matched policy: resets versus none",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -0.8565538194444429,
+        4.957356770833329,
+        4.001085069444429,
+        -0.9175347222222001,
+        2.3495008680555713,
+        -1.9594184027777573
+      ],
+      "mean_difference": 1.2624059606481548,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -0.7203233506944239,
+        3.3841869212962976
+      ]
+    },
+    {
+      "candidate": "noreset-policy-reset-s0.25",
+      "control": "walk-s0.25-p0.98-stay0-turn1",
+      "reason": "Matched policy: resets versus none",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        5846,
+        -22283,
+        -18907,
+        1633,
+        -12443,
+        11378
+      ],
+      "mean_difference": -5796.0,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -15547.5,
+        3959.3333333333335
+      ]
+    },
+    {
+      "candidate": "walk-s0.25-p0.98-r10000",
+      "control": "reset-policy-noreset-s0.25",
+      "reason": "Matched policy: resets versus none",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0.08680555555555713,
+        -0.21701388888888573,
+        3.428819444444443,
+        0.0,
+        0.0,
+        -0.1302083333333286
+      ],
+      "mean_difference": 0.528067129629631,
+      "wins": 2,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -0.1157407407407381,
+        1.7071759259259263
+      ]
+    },
+    {
+      "candidate": "walk-s0.25-p0.98-r10000",
+      "control": "reset-policy-noreset-s0.25",
+      "reason": "Matched policy: resets versus none",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -2.413085937500014,
+        -1.9412434895833144,
+        5.506998697916686,
+        -6.891710069444457,
+        2.3185763888888857,
+        3.4307183159722143
+      ],
+      "mean_difference": 0.001708984375,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -3.5211498119212976,
+        3.2274848090277835
+      ]
+    },
+    {
+      "candidate": "walk-s0.25-p0.98-r10000",
+      "control": "reset-policy-noreset-s0.25",
+      "reason": "Matched policy: resets versus none",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        7812,
+        7919,
+        -52946,
+        29900,
+        -11958,
+        -26552
+      ],
+      "mean_difference": -7637.5,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -30340.333333333332,
+        13128.666666666666
+      ]
+    },
+    {
+      "candidate": "openloop-policy-blockturn-s0.25",
+      "control": "walk-s0.25-p0.9-stay0.2-turn0",
+      "reason": "Matched policy: collision response versus open loop",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0.17361111111111427,
+        3.90625,
+        3.90625,
+        23.003472222222214,
+        1.9097222222222143,
+        -0.9548611111111285
+      ],
+      "mean_difference": 5.324074074074069,
+      "wins": 5,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        0.5208333333333238,
+        12.789351851851846
+      ]
+    },
+    {
+      "candidate": "openloop-policy-blockturn-s0.25",
+      "control": "walk-s0.25-p0.9-stay0.2-turn0",
+      "reason": "Matched policy: collision response versus open loop",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        10.000976562499986,
+        11.7255859375,
+        14.477864583333343,
+        28.1452907986111,
+        18.84809027777777,
+        -6.555230034722214
+      ],
+      "mean_difference": 12.77376302083333,
+      "wins": 5,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        3.9435402199074097,
+        20.835087528935176
+      ]
+    },
+    {
+      "candidate": "openloop-policy-blockturn-s0.25",
+      "control": "walk-s0.25-p0.9-stay0.2-turn0",
+      "reason": "Matched policy: collision response versus open loop",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        69,
+        -37030,
+        -39673,
+        -73541,
+        -47889,
+        22277
+      ],
+      "mean_difference": -29297.833333333332,
+      "wins": 4,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -53260.5,
+        -3443.6666666666665
+      ]
+    }
+  ]
+}

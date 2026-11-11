@@ -1,0 +1,2936 @@
+{
+  "note": "Paired seed bootstrap, conditional on layout. No multiplicity correction; repeated model seeds across layouts. Capped time-to95 treats failures as100k, not observed completion.",
+  "comparisons": [
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1",
+      "control": "dynamics-base-s0.125",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        29.817708333333314,
+        20.052083333333343,
+        30.381944444444443,
+        25.34722222222223,
+        31.03298611111113,
+        24.479166666666657
+      ],
+      "mean_difference": 26.85185185185185,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        23.444552951388893,
+        29.665798611111114
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1",
+      "control": "dynamics-base-s0.125",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        54.0393337673611,
+        49.67133246527779,
+        65.52191840277779,
+        60.06174045138887,
+        51.11637369791668,
+        58.31749131944444
+      ],
+      "mean_difference": 56.45469835069445,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        52.32203956886574,
+        61.0096752025463
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1",
+      "control": "dynamics-base-s0.125",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -25454,
+        -17720,
+        -67440,
+        -45918,
+        -25286,
+        -46801
+      ],
+      "mean_difference": -38103.166666666664,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -53239.166666666664,
+        -25116.833333333332
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2",
+      "control": "dynamics-base-s0.125",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        29.210069444444443,
+        4.036458333333343,
+        15.755208333333329,
+        25.868055555555557,
+        21.09375,
+        24.522569444444443
+      ],
+      "mean_difference": 20.08101851851852,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        13.028067129629633,
+        25.96209490740741
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2",
+      "control": "dynamics-base-s0.125",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        54.670410156249986,
+        42.07123480902779,
+        49.612033420138886,
+        57.080078125000014,
+        52.77202690972222,
+        61.74886067708336
+      ],
+      "mean_difference": 52.99244068287038,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        47.86443865740742,
+        57.7032515914352
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2",
+      "control": "dynamics-base-s0.125",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -21363,
+        0,
+        0,
+        -35443,
+        0,
+        -47922
+      ],
+      "mean_difference": -17454.666666666668,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -33428.666666666664,
+        -3560.5
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2",
+      "control": "walk-s0.125-p0.98-stay0-turn1",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -0.6076388888888715,
+        -16.015625,
+        -14.626736111111114,
+        0.5208333333333286,
+        -9.939236111111128,
+        0.04340277777778567
+      ],
+      "mean_difference": -6.770833333333333,
+      "wins": 2,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -12.514467592592602,
+        -1.598668981481481
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2",
+      "control": "walk-s0.125-p0.98-stay0-turn1",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0.6310763888888857,
+        -7.60009765625,
+        -15.9098849826389,
+        -2.9816623263888573,
+        1.655653211805543,
+        3.431369357638914
+      ],
+      "mean_difference": -3.462257667824069,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -9.011266637731488,
+        1.303909866898157
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2",
+      "control": "walk-s0.125-p0.98-stay0-turn1",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        4091,
+        17720,
+        67440,
+        10475,
+        25286,
+        -1121
+      ],
+      "mean_difference": 20648.5,
+      "wins": 1,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        5689.166666666667,
+        40362.0
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2",
+      "control": "continue-s0.125-warm20000-r6667",
+      "reason": "Hybrid versus exact-prefix continuing walk",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -0.9114583333333286,
+        -15.928819444444443,
+        -13.715277777777771,
+        0.0,
+        -10.15625,
+        0.0
+      ],
+      "mean_difference": -6.785300925925924,
+      "wins": 0,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -12.094907407407405,
+        -1.8446180555555547
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2",
+      "control": "continue-s0.125-warm20000-r6667",
+      "reason": "Hybrid versus exact-prefix continuing walk",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -6.899034288194457,
+        -8.404242621527786,
+        -12.236653645833329,
+        -4.300347222222214,
+        -10.8132595486111,
+        -0.6455078124999574
+      ],
+      "mean_difference": -7.216507523148141,
+      "wins": 0,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -10.233850549768517,
+        -3.9915274160879406
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2",
+      "control": "continue-s0.125-warm20000-r6667",
+      "reason": "Hybrid versus exact-prefix continuing walk",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        43678,
+        45488,
+        55502,
+        34468,
+        51178,
+        14742
+      ],
+      "mean_difference": 40842.666666666664,
+      "wins": 0,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        29226.666666666668,
+        50421.0
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1-layout13",
+      "control": "dynamics-base-s0.125-layout13",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        27.517361111111107,
+        36.28472222222222,
+        25.303819444444443
+      ],
+      "mean_difference": 29.70196759259259,
+      "wins": 3,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        25.303819444444443,
+        36.28472222222222
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1-layout13",
+      "control": "dynamics-base-s0.125-layout13",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        48.2634548611111,
+        63.169379340277764,
+        48.66628689236113
+      ],
+      "mean_difference": 53.366373697916664,
+      "wins": 3,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        48.26345486111111,
+        63.169379340277764
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1-layout13",
+      "control": "dynamics-base-s0.125-layout13",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        0,
+        -8821,
+        0
+      ],
+      "mean_difference": -2940.3333333333335,
+      "wins": 1,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -8821.0,
+        0.0
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2-layout13",
+      "control": "dynamics-base-s0.125-layout13",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        51.82291666666667,
+        20.74652777777778,
+        12.196180555555557
+      ],
+      "mean_difference": 28.25520833333334,
+      "wins": 3,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        12.196180555555557,
+        51.822916666666664
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2-layout13",
+      "control": "dynamics-base-s0.125-layout13",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        63.84299045138888,
+        51.57031249999999,
+        37.57579210069445
+      ],
+      "mean_difference": 50.99636501736111,
+      "wins": 3,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        37.57579210069445,
+        63.84299045138888
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2-layout13",
+      "control": "dynamics-base-s0.125-layout13",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        0,
+        0,
+        0
+      ],
+      "mean_difference": 0.0,
+      "wins": 0,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2-layout13",
+      "control": "walk-s0.125-p0.98-stay0-turn1-layout13",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "coverage_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        24.305555555555564,
+        -15.538194444444443,
+        -13.107638888888886
+      ],
+      "mean_difference": -1.4467592592592549,
+      "wins": 1,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -15.538194444444443,
+        24.30555555555556
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2-layout13",
+      "control": "walk-s0.125-p0.98-stay0-turn1-layout13",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "auc_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        15.579535590277779,
+        -11.599066840277771,
+        -11.090494791666679
+      ],
+      "mean_difference": -2.370008680555557,
+      "wins": 1,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -11.599066840277771,
+        15.579535590277779
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2-layout13",
+      "control": "walk-s0.125-p0.98-stay0-turn1-layout13",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "capped95",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        0,
+        8821,
+        0
+      ],
+      "mean_difference": 2940.3333333333335,
+      "wins": 0,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        0.0,
+        8821.0
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2-layout13",
+      "control": "continue-s0.125-warm20000-r6667-layout13",
+      "reason": "Hybrid versus exact-prefix continuing walk",
+      "metric": "coverage_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        -8.550347222222214,
+        -14.887152777777786,
+        -31.163194444444443
+      ],
+      "mean_difference": -18.20023148148148,
+      "wins": 0,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -31.163194444444443,
+        -8.550347222222214
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2-layout13",
+      "control": "continue-s0.125-warm20000-r6667-layout13",
+      "reason": "Hybrid versus exact-prefix continuing walk",
+      "metric": "auc_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        4.574924045138886,
+        -10.0260959201389,
+        -24.830729166666664
+      ],
+      "mean_difference": -10.093967013888893,
+      "wins": 1,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -24.830729166666668,
+        4.574924045138886
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2-layout13",
+      "control": "continue-s0.125-warm20000-r6667-layout13",
+      "reason": "Hybrid versus exact-prefix continuing walk",
+      "metric": "capped95",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        0,
+        49329,
+        47966
+      ],
+      "mean_difference": 32431.666666666668,
+      "wins": 0,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        0.0,
+        49329.0
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1-layout23",
+      "control": "dynamics-base-s0.125-layout23",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        20.355902777777786,
+        24.305555555555557,
+        21.09375
+      ],
+      "mean_difference": 21.918402777777782,
+      "wins": 3,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        20.355902777777786,
+        24.305555555555557
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1-layout23",
+      "control": "dynamics-base-s0.125-layout23",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        61.98345269097223,
+        68.62076822916666,
+        64.83235677083333
+      ],
+      "mean_difference": 65.14552589699075,
+      "wins": 3,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        61.98345269097223,
+        68.62076822916666
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1-layout23",
+      "control": "dynamics-base-s0.125-layout23",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        -41744,
+        -62642,
+        -66365
+      ],
+      "mean_difference": -56917.0,
+      "wins": 3,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -66365.0,
+        -41744.0
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2-layout23",
+      "control": "dynamics-base-s0.125-layout23",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        20.18229166666667,
+        18.706597222222214,
+        21.050347222222214
+      ],
+      "mean_difference": 19.979745370370367,
+      "wins": 3,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        18.706597222222214,
+        21.050347222222214
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2-layout23",
+      "control": "dynamics-base-s0.125-layout23",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        60.209689670138886,
+        50.35259331597223,
+        63.389377170138886
+      ],
+      "mean_difference": 57.98388671875,
+      "wins": 3,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        50.35259331597223,
+        63.389377170138886
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2-layout23",
+      "control": "dynamics-base-s0.125-layout23",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        -33513,
+        0,
+        -39748
+      ],
+      "mean_difference": -24420.333333333332,
+      "wins": 2,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -39748.0,
+        0.0
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2-layout23",
+      "control": "walk-s0.125-p0.98-stay0-turn1-layout23",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "coverage_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        -0.17361111111111427,
+        -5.598958333333343,
+        -0.04340277777778567
+      ],
+      "mean_difference": -1.9386574074074143,
+      "wins": 0,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -5.598958333333343,
+        -0.04340277777778567
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2-layout23",
+      "control": "walk-s0.125-p0.98-stay0-turn1-layout23",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "auc_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        -1.7737630208333428,
+        -18.26817491319443,
+        -1.4429796006944429
+      ],
+      "mean_difference": -7.161639178240738,
+      "wins": 0,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -18.26817491319443,
+        -1.4429796006944429
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2-layout23",
+      "control": "walk-s0.125-p0.98-stay0-turn1-layout23",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "capped95",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        8231,
+        62642,
+        26617
+      ],
+      "mean_difference": 32496.666666666668,
+      "wins": 0,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        8231.0,
+        62642.0
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2-layout23",
+      "control": "continue-s0.125-warm20000-r6667-layout23",
+      "reason": "Hybrid versus exact-prefix continuing walk",
+      "metric": "coverage_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        -0.1302083333333286,
+        -2.1701388888889,
+        0.43402777777777146
+      ],
+      "mean_difference": -0.6221064814814857,
+      "wins": 1,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -2.1701388888889,
+        0.43402777777777146
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2-layout23",
+      "control": "continue-s0.125-warm20000-r6667-layout23",
+      "reason": "Hybrid versus exact-prefix continuing walk",
+      "metric": "auc_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        -4.2668728298611285,
+        -7.998914930555543,
+        -1.6782769097222427
+      ],
+      "mean_difference": -4.648021556712972,
+      "wins": 0,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -7.998914930555543,
+        -1.6782769097222427
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.125-warm20000-resets2-layout23",
+      "control": "continue-s0.125-warm20000-r6667-layout23",
+      "reason": "Hybrid versus exact-prefix continuing walk",
+      "metric": "capped95",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        28267,
+        12633,
+        23573
+      ],
+      "mean_difference": 21491.0,
+      "wins": 0,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        12633.0,
+        28267.0
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1",
+      "control": "adjacency-base-s0.125",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        26.475694444444443,
+        17.1875,
+        44.921875,
+        21.35416666666667,
+        47.699652777777786,
+        28.385416666666657
+      ],
+      "mean_difference": 31.004050925925927,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        22.365451388888893,
+        40.16203703703704
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1",
+      "control": "adjacency-base-s0.125",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        52.32020399305555,
+        45.245442708333336,
+        73.83013237847223,
+        58.495442708333314,
+        59.42778862847223,
+        61.92719184027778
+      ],
+      "mean_difference": 58.54103370949073,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        51.56858543113427,
+        65.70553927951389
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1",
+      "control": "adjacency-base-s0.125",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -25454,
+        -17720,
+        -67440,
+        -45918,
+        -25286,
+        -46801
+      ],
+      "mean_difference": -38103.166666666664,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -52294.12499999998,
+        -25116.833333333332
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2",
+      "control": "adjacency-base-s0.125",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        26.73611111111113,
+        2.083333333333343,
+        29.991319444444443,
+        21.918402777777786,
+        39.453125,
+        28.428819444444443
+      ],
+      "mean_difference": 24.768518518518523,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        14.691840277777787,
+        32.83420138888889
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2",
+      "control": "adjacency-base-s0.125",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        53.61729600694445,
+        37.854600694444436,
+        57.99864366319446,
+        55.30485026041667,
+        61.067871093750014,
+        65.48388671875
+      ],
+      "mean_difference": 55.22119140625,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        47.47765661168982,
+        61.2922996238426
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2",
+      "control": "adjacency-base-s0.125",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -25281,
+        0,
+        0,
+        -32941,
+        0,
+        -49222
+      ],
+      "mean_difference": -17907.333333333332,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -33261.333333333336,
+        -4213.5
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2",
+      "control": "walk-s0.125-p0.98-stay0-turn1",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0.2604166666666856,
+        -15.104166666666657,
+        -14.930555555555557,
+        0.5642361111111143,
+        -8.246527777777786,
+        0.04340277777778567
+      ],
+      "mean_difference": -6.235532407407402,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -11.617476851851855,
+        -1.0923032407407334
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2",
+      "control": "walk-s0.125-p0.98-stay0-turn1",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        1.2970920138889,
+        -7.3908420138889,
+        -15.831488715277771,
+        -3.190592447916643,
+        1.6400824652777857,
+        3.5566948784722143
+      ],
+      "mean_difference": -3.3198423032407356,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -9.086534288194441,
+        1.4166757089120428
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2",
+      "control": "walk-s0.125-p0.98-stay0-turn1",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        173,
+        17720,
+        67440,
+        12977,
+        25286,
+        -2421
+      ],
+      "mean_difference": 20195.833333333332,
+      "wins": 1,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        4366.833333333333,
+        40484.166666666664
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2",
+      "control": "continue-s0.125-warm20000-r6667",
+      "reason": "Hybrid versus exact-prefix continuing walk",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -0.04340277777777146,
+        -15.0173611111111,
+        -14.019097222222214,
+        0.04340277777778567,
+        -8.463541666666657,
+        0.0
+      ],
+      "mean_difference": -6.249999999999993,
+      "wins": 1,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -11.422164351851842,
+        -1.4033564814814763
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2",
+      "control": "continue-s0.125-warm20000-r6667",
+      "reason": "Hybrid versus exact-prefix continuing walk",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -6.233018663194443,
+        -8.194986979166686,
+        -12.1582573784722,
+        -4.50927734375,
+        -10.828830295138857,
+        -0.5201822916666572
+      ],
+      "mean_difference": -7.074092158564807,
+      "wins": 0,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -10.062861689814788,
+        -3.855278862847212
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2",
+      "control": "continue-s0.125-warm20000-r6667",
+      "reason": "Hybrid versus exact-prefix continuing walk",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        39760,
+        45488,
+        55502,
+        36970,
+        51178,
+        13442
+      ],
+      "mean_difference": 40390.0,
+      "wins": 0,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        28510.333333333332,
+        49789.666666666664
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1-layout13",
+      "control": "adjacency-base-s0.125-layout13",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        11.067708333333336,
+        37.93402777777778,
+        12.847222222222229
+      ],
+      "mean_difference": 20.616319444444446,
+      "wins": 3,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        11.067708333333336,
+        37.93402777777778
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1-layout13",
+      "control": "adjacency-base-s0.125-layout13",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        42.538791232638886,
+        64.43326822916666,
+        43.16102430555557
+      ],
+      "mean_difference": 50.04436125578704,
+      "wins": 3,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        42.538791232638886,
+        64.43326822916666
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1-layout13",
+      "control": "adjacency-base-s0.125-layout13",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        0,
+        -8821,
+        0
+      ],
+      "mean_difference": -2940.3333333333335,
+      "wins": 1,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -8821.0,
+        0.0
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2-layout13",
+      "control": "adjacency-base-s0.125-layout13",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        37.76041666666667,
+        22.960069444444436,
+        3.6024305555555713
+      ],
+      "mean_difference": 21.44097222222223,
+      "wins": 3,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        3.6024305555555713,
+        37.76041666666667
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2-layout13",
+      "control": "adjacency-base-s0.125-layout13",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        58.757595486111114,
+        53.72325303819445,
+        32.97195095486112
+      ],
+      "mean_difference": 48.484266493055564,
+      "wins": 3,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        32.97195095486112,
+        58.757595486111114
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2-layout13",
+      "control": "adjacency-base-s0.125-layout13",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        0,
+        0,
+        0
+      ],
+      "mean_difference": 0.0,
+      "wins": 0,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2-layout13",
+      "control": "walk-s0.125-p0.98-stay0-turn1-layout13",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "coverage_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        26.692708333333336,
+        -14.973958333333343,
+        -9.244791666666657
+      ],
+      "mean_difference": 0.8246527777777786,
+      "wins": 1,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -14.973958333333343,
+        26.692708333333332
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2-layout13",
+      "control": "walk-s0.125-p0.98-stay0-turn1-layout13",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "auc_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        16.218804253472236,
+        -10.7100151909722,
+        -10.18907335069445
+      ],
+      "mean_difference": -1.5600947627314714,
+      "wins": 1,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -10.7100151909722,
+        16.218804253472236
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2-layout13",
+      "control": "walk-s0.125-p0.98-stay0-turn1-layout13",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "capped95",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        0,
+        8821,
+        0
+      ],
+      "mean_difference": 2940.3333333333335,
+      "wins": 0,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        0.0,
+        8821.0
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2-layout13",
+      "control": "continue-s0.125-warm20000-r6667-layout13",
+      "reason": "Hybrid versus exact-prefix continuing walk",
+      "metric": "coverage_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        -6.163194444444443,
+        -14.322916666666686,
+        -27.300347222222214
+      ],
+      "mean_difference": -15.928819444444448,
+      "wins": 0,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -27.300347222222214,
+        -6.163194444444443
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2-layout13",
+      "control": "continue-s0.125-warm20000-r6667-layout13",
+      "reason": "Hybrid versus exact-prefix continuing walk",
+      "metric": "auc_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        5.214192708333343,
+        -9.137044270833329,
+        -23.929307725694436
+      ],
+      "mean_difference": -9.284053096064808,
+      "wins": 1,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -23.92930772569444,
+        5.214192708333343
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2-layout13",
+      "control": "continue-s0.125-warm20000-r6667-layout13",
+      "reason": "Hybrid versus exact-prefix continuing walk",
+      "metric": "capped95",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        0,
+        49329,
+        47966
+      ],
+      "mean_difference": 32431.666666666668,
+      "wins": 0,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        0.0,
+        49329.0
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1-layout23",
+      "control": "adjacency-base-s0.125-layout23",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        36.979166666666664,
+        15.407986111111114,
+        13.975694444444443
+      ],
+      "mean_difference": 22.120949074074076,
+      "wins": 3,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        13.975694444444443,
+        36.979166666666664
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1-layout23",
+      "control": "adjacency-base-s0.125-layout23",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        69.52506510416667,
+        59.15695529513887,
+        60.37890625
+      ],
+      "mean_difference": 63.02030888310185,
+      "wins": 3,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        59.15695529513888,
+        69.52506510416667
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-stay0-turn1-layout23",
+      "control": "adjacency-base-s0.125-layout23",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        -41744,
+        -62642,
+        -66365
+      ],
+      "mean_difference": -56917.0,
+      "wins": 3,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -66365.0,
+        -41744.0
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2-layout23",
+      "control": "adjacency-base-s0.125-layout23",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        36.979166666666664,
+        8.59375,
+        13.975694444444443
+      ],
+      "mean_difference": 19.849537037037035,
+      "wins": 3,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        8.59375,
+        36.979166666666664
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2-layout23",
+      "control": "adjacency-base-s0.125-layout23",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        68.16286892361111,
+        39.676323784722214,
+        58.83723958333334
+      ],
+      "mean_difference": 55.55881076388889,
+      "wins": 3,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        39.676323784722214,
+        68.16286892361111
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2-layout23",
+      "control": "adjacency-base-s0.125-layout23",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        -33962,
+        0,
+        -36866
+      ],
+      "mean_difference": -23609.333333333332,
+      "wins": 2,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -36866.0,
+        0.0
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2-layout23",
+      "control": "walk-s0.125-p0.98-stay0-turn1-layout23",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "coverage_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        0.0,
+        -6.814236111111114,
+        0.0
+      ],
+      "mean_difference": -2.271412037037038,
+      "wins": 0,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -6.814236111111114,
+        0.0
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2-layout23",
+      "control": "walk-s0.125-p0.98-stay0-turn1-layout23",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "auc_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        -1.3621961805555571,
+        -19.480631510416657,
+        -1.5416666666666572
+      ],
+      "mean_difference": -7.4614981192129575,
+      "wins": 0,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -19.480631510416657,
+        -1.3621961805555571
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2-layout23",
+      "control": "walk-s0.125-p0.98-stay0-turn1-layout23",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "capped95",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        7782,
+        62642,
+        29499
+      ],
+      "mean_difference": 33307.666666666664,
+      "wins": 0,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        7782.0,
+        62642.0
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2-layout23",
+      "control": "continue-s0.125-warm20000-r6667-layout23",
+      "reason": "Hybrid versus exact-prefix continuing walk",
+      "metric": "coverage_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        0.04340277777778567,
+        -3.3854166666666714,
+        0.47743055555555713
+      ],
+      "mean_difference": -0.9548611111111095,
+      "wins": 2,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -3.3854166666666714,
+        0.47743055555555713
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2-layout23",
+      "control": "continue-s0.125-warm20000-r6667-layout23",
+      "reason": "Hybrid versus exact-prefix continuing walk",
+      "metric": "auc_k4",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        -3.855305989583343,
+        -9.211371527777771,
+        -1.776963975694457
+      ],
+      "mean_difference": -4.9478804976851904,
+      "wins": 0,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        -9.211371527777771,
+        -1.776963975694457
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.125-warm20000-resets2-layout23",
+      "control": "continue-s0.125-warm20000-r6667-layout23",
+      "reason": "Hybrid versus exact-prefix continuing walk",
+      "metric": "capped95",
+      "seeds": [
+        98,
+        99,
+        100
+      ],
+      "differences": [
+        27818,
+        12633,
+        26455
+      ],
+      "mean_difference": 22302.0,
+      "wins": 0,
+      "n": 3,
+      "exploratory_bootstrap95": [
+        12633.0,
+        27818.0
+      ]
+    },
+    {
+      "candidate": "noreset-policy-reset-s0.125",
+      "control": "walk-s0.125-p0.98-stay0-turn1",
+      "reason": "Matched policy: resets versus none",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -1.7361111111111,
+        -0.1302083333333428,
+        -0.04340277777778567,
+        -0.34722222222222854,
+        -13.8888888888889,
+        -0.8680555555555571
+      ],
+      "mean_difference": -2.8356481481481524,
+      "wins": 0,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -7.313368055555562,
+        -0.2604166666666738
+      ]
+    },
+    {
+      "candidate": "noreset-policy-reset-s0.125",
+      "control": "walk-s0.125-p0.98-stay0-turn1",
+      "reason": "Matched policy: resets versus none",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -8.337565104166671,
+        5.777940538194429,
+        -0.11691623263888573,
+        -5.663628472222214,
+        2.7964409722222143,
+        2.339952256944443
+      ],
+      "mean_difference": -0.5339626736111143,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -4.666133174189817,
+        3.2286331741898073
+      ]
+    },
+    {
+      "candidate": "noreset-policy-reset-s0.125",
+      "control": "walk-s0.125-p0.98-stay0-turn1",
+      "reason": "Matched policy: resets versus none",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        13807,
+        -44835,
+        -134,
+        2832,
+        25286,
+        51
+      ],
+      "mean_difference": -498.8333333333333,
+      "wins": 2,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -19666.666666666668,
+        14899.5
+      ]
+    },
+    {
+      "candidate": "continue-s0.125-warm20000-r6667",
+      "control": "walk-s0.125-p0.98-stay0-turn1",
+      "reason": "Matched policy: resets versus none",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0.3038194444444571,
+        -0.08680555555555713,
+        -0.9114583333333428,
+        0.5208333333333286,
+        0.21701388888887152,
+        0.04340277777778567
+      ],
+      "mean_difference": 0.014467592592590487,
+      "wins": 4,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -0.3908058449074074,
+        0.3327546296296215
+      ]
+    },
+    {
+      "candidate": "continue-s0.125-warm20000-r6667",
+      "control": "walk-s0.125-p0.98-stay0-turn1",
+      "reason": "Matched policy: resets versus none",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        7.530110677083343,
+        0.8041449652777857,
+        -3.6732313368055713,
+        1.318684895833357,
+        12.468912760416643,
+        4.0768771701388715
+      ],
+      "mean_difference": 3.7542498553240713,
+      "wins": 5,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -0.22779224537037143,
+        8.055383752893517
+      ]
+    },
+    {
+      "candidate": "continue-s0.125-warm20000-r6667",
+      "control": "walk-s0.125-p0.98-stay0-turn1",
+      "reason": "Matched policy: resets versus none",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -39587,
+        -27768,
+        11938,
+        -23993,
+        -25892,
+        -15863
+      ],
+      "mean_difference": -20194.166666666668,
+      "wins": 5,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -31078.5,
+        -5930.833333333333
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-r10000",
+      "control": "reset-policy-noreset-s0.125",
+      "reason": "Matched policy: resets versus none",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        7.161458333333329,
+        1.0416666666666572,
+        -1.0416666666666572,
+        0.6510416666666572,
+        -5.425347222222214,
+        -0.17361111111110006
+      ],
+      "mean_difference": 0.3689236111111119,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -2.5245949074074048,
+        3.6241319444444406
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-r10000",
+      "control": "reset-policy-noreset-s0.125",
+      "reason": "Matched policy: resets versus none",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        4.973470052083343,
+        -0.4207899305555429,
+        -12.276367187499986,
+        3.3978407118055713,
+        -1.5788302951388857,
+        -1.5458984375000284
+      ],
+      "mean_difference": -1.2417625144675881,
+      "wins": 2,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -5.9051468460648024,
+        2.537742332175924
+      ]
+    },
+    {
+      "candidate": "walk-s0.125-p0.98-r10000",
+      "control": "reset-policy-noreset-s0.125",
+      "reason": "Matched policy: resets versus none",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0,
+        -2032,
+        0,
+        -9455,
+        24437,
+        17545
+      ],
+      "mean_difference": 5082.5,
+      "wins": 2,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -3829.0,
+        14804.0
+      ]
+    },
+    {
+      "candidate": "openloop-policy-blockturn-s0.125",
+      "control": "walk-s0.125-p0.9-stay0.2-turn0",
+      "reason": "Matched policy: collision response versus open loop",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -9.765625,
+        19.09722222222223,
+        3.602430555555557,
+        6.814236111111114,
+        -4.600694444444443,
+        8.506944444444443
+      ],
+      "mean_difference": 3.942418981481483,
+      "wins": 4,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -3.378182870370369,
+        11.3353587962963
+      ]
+    },
+    {
+      "candidate": "openloop-policy-blockturn-s0.125",
+      "control": "walk-s0.125-p0.9-stay0.2-turn0",
+      "reason": "Matched policy: collision response versus open loop",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        9.726942274305564,
+        26.793077256944443,
+        -14.308865017361114,
+        -5.783365885416664,
+        8.191406249999972,
+        6.768554687500014
+      ],
+      "mean_difference": 5.231291594328702,
+      "wins": 4,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -5.131935402199079,
+        15.181893807870374
+      ]
+    },
+    {
+      "candidate": "openloop-policy-blockturn-s0.125",
+      "control": "walk-s0.125-p0.9-stay0.2-turn0",
+      "reason": "Matched policy: collision response versus open loop",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0,
+        0,
+        0,
+        -17417,
+        3258,
+        -10799
+      ],
+      "mean_difference": -4159.666666666667,
+      "wins": 2,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -10508.333333333334,
+        1086.0
+      ]
+    },
+    {
+      "candidate": "walk-s0.25-p0.98-stay0-turn1",
+      "control": "dynamics-base-s0.25",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0.0,
+        0.0,
+        -0.17361111111111427,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": -0.028935185185185713,
+      "wins": 0,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -0.08680555555555713,
+        0.0
+      ]
+    },
+    {
+      "candidate": "walk-s0.25-p0.98-stay0-turn1",
+      "control": "dynamics-base-s0.25",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        31.227539062500014,
+        19.746202256944443,
+        20.914388020833336,
+        24.39453125,
+        30.061089409722207,
+        32.15928819444443
+      ],
+      "mean_difference": 26.417173032407405,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        22.43476924189814,
+        30.204879195601848
+      ]
+    },
+    {
+      "candidate": "walk-s0.25-p0.98-stay0-turn1",
+      "control": "dynamics-base-s0.25",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -30031,
+        -5387,
+        -928,
+        -27590,
+        -21527,
+        -37564
+      ],
+      "mean_difference": -20504.5,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -30717.833333333332,
+        -9548.0
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.25-warm20000-resets0",
+      "control": "dynamics-base-s0.25",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "wins": 0,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.25-warm20000-resets0",
+      "control": "dynamics-base-s0.25",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        31.599717881944443,
+        18.309244791666657,
+        22.19889322916668,
+        24.493489583333343,
+        27.132703993055536,
+        31.99739583333333
+      ],
+      "mean_difference": 25.955240885416668,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        22.061179832175913,
+        29.8034035011574
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.25-warm20000-resets0",
+      "control": "dynamics-base-s0.25",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -38524,
+        -1506,
+        -10,
+        -27773,
+        -8465,
+        -33491
+      ],
+      "mean_difference": -18294.833333333332,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -30427.333333333332,
+        -6295.666666666667
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.25-warm20000-resets0",
+      "control": "walk-s0.25-p0.98-stay0-turn1",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0.0,
+        0.0,
+        0.17361111111111427,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.028935185185185713,
+      "wins": 1,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        0.0,
+        0.08680555555555713
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.25-warm20000-resets0",
+      "control": "walk-s0.25-p0.98-stay0-turn1",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0.37217881944442865,
+        -1.4369574652777857,
+        1.2845052083333428,
+        0.09895833333334281,
+        -2.9283854166666714,
+        -0.16189236111110006
+      ],
+      "mean_difference": -0.4619321469907405,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -1.6325774016203785,
+        0.541739004629631
+      ]
+    },
+    {
+      "candidate": "dynamics-s0.25-warm20000-resets0",
+      "control": "walk-s0.25-p0.98-stay0-turn1",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -8493,
+        3881,
+        918,
+        -183,
+        13062,
+        4073
+      ],
+      "mean_difference": 2209.6666666666665,
+      "wins": 2,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -2951.3333333333335,
+        7332.333333333333
+      ]
+    },
+    {
+      "candidate": "walk-s0.25-p0.98-stay0-turn1",
+      "control": "adjacency-base-s0.25",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0.0,
+        0.0,
+        -0.17361111111111427,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": -0.028935185185185713,
+      "wins": 0,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -0.08680555555555713,
+        0.0
+      ]
+    },
+    {
+      "candidate": "walk-s0.25-p0.98-stay0-turn1",
+      "control": "adjacency-base-s0.25",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        24.925455729166686,
+        16.60308159722223,
+        24.310112847222214,
+        26.4304470486111,
+        36.75086805555555,
+        29.600151909722214
+      ],
+      "mean_difference": 26.436686197916668,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        21.69165943287037,
+        31.422001591435187
+      ]
+    },
+    {
+      "candidate": "walk-s0.25-p0.98-stay0-turn1",
+      "control": "adjacency-base-s0.25",
+      "reason": "Selected walk versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -12935,
+        933,
+        -4366,
+        -27906,
+        -28814,
+        -34876
+      ],
+      "mean_difference": -17994.0,
+      "wins": 5,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -28037.345833333333,
+        -7068.0
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.25-warm20000-resets0",
+      "control": "adjacency-base-s0.25",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.0,
+      "wins": 0,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.25-warm20000-resets0",
+      "control": "adjacency-base-s0.25",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        25.352430555555557,
+        16.55718315972223,
+        26.54796006944443,
+        26.5666232638889,
+        33.98296440972221,
+        29.49359809027777
+      ],
+      "mean_difference": 26.416793258101848,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        21.844256365740744,
+        30.299858940972214
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.25-warm20000-resets0",
+      "control": "adjacency-base-s0.25",
+      "reason": "Hybrid versus learned baseline",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -20426,
+        -2015,
+        -11002,
+        -27559,
+        -17954,
+        -32242
+      ],
+      "mean_difference": -18533.0,
+      "wins": 6,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -26330.333333333332,
+        -10426.666666666666
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.25-warm20000-resets0",
+      "control": "walk-s0.25-p0.98-stay0-turn1",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0.0,
+        0.0,
+        0.17361111111111427,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.028935185185185713,
+      "wins": 1,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        0.0,
+        0.08680555555555713
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.25-warm20000-resets0",
+      "control": "walk-s0.25-p0.98-stay0-turn1",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0.4269748263888715,
+        -0.0458984375,
+        2.2378472222222143,
+        0.13617621527779988,
+        -2.767903645833343,
+        -0.10655381944444287
+      ],
+      "mean_difference": -0.019892939814816657,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -1.3280888310185262,
+        1.1465567129629666
+      ]
+    },
+    {
+      "candidate": "adjacency-s0.25-warm20000-resets0",
+      "control": "walk-s0.25-p0.98-stay0-turn1",
+      "reason": "Hybrid versus selected no-reset walk",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -7491,
+        -2948,
+        -6636,
+        347,
+        10860,
+        2634
+      ],
+      "mean_difference": -539.0,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -5142.5,
+        4820.833333333333
+      ]
+    },
+    {
+      "candidate": "noreset-policy-reset-s0.25",
+      "control": "walk-s0.25-p0.98-stay0-turn1",
+      "reason": "Matched policy: resets versus none",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0.0,
+        0.0,
+        0.17361111111111427,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_difference": 0.028935185185185713,
+      "wins": 1,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        0.0,
+        0.08680555555555713
+      ]
+    },
+    {
+      "candidate": "noreset-policy-reset-s0.25",
+      "control": "walk-s0.25-p0.98-stay0-turn1",
+      "reason": "Matched policy: resets versus none",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -0.8565538194444429,
+        4.957356770833329,
+        4.001085069444429,
+        -0.9175347222222001,
+        2.3495008680555713,
+        -1.9594184027777573
+      ],
+      "mean_difference": 1.2624059606481548,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -0.710159866898131,
+        3.3841869212962976
+      ]
+    },
+    {
+      "candidate": "noreset-policy-reset-s0.25",
+      "control": "walk-s0.25-p0.98-stay0-turn1",
+      "reason": "Matched policy: resets versus none",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        5846,
+        -22283,
+        -18907,
+        1633,
+        -12443,
+        11378
+      ],
+      "mean_difference": -5796.0,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -15906.833333333334,
+        4143.666666666667
+      ]
+    },
+    {
+      "candidate": "walk-s0.25-p0.98-r10000",
+      "control": "reset-policy-noreset-s0.25",
+      "reason": "Matched policy: resets versus none",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0.08680555555555713,
+        -0.21701388888888573,
+        3.428819444444443,
+        0.0,
+        0.0,
+        -0.1302083333333286
+      ],
+      "mean_difference": 0.528067129629631,
+      "wins": 2,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -0.1157407407407381,
+        1.7071759259259263
+      ]
+    },
+    {
+      "candidate": "walk-s0.25-p0.98-r10000",
+      "control": "reset-policy-noreset-s0.25",
+      "reason": "Matched policy: resets versus none",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        -2.413085937500014,
+        -1.9412434895833144,
+        5.506998697916686,
+        -6.891710069444457,
+        2.3185763888888857,
+        3.4307183159722143
+      ],
+      "mean_difference": 0.001708984375,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -3.5211498119212976,
+        3.2206940827546284
+      ]
+    },
+    {
+      "candidate": "walk-s0.25-p0.98-r10000",
+      "control": "reset-policy-noreset-s0.25",
+      "reason": "Matched policy: resets versus none",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        7812,
+        7919,
+        -52946,
+        29900,
+        -11958,
+        -26552
+      ],
+      "mean_difference": -7637.5,
+      "wins": 3,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -29622.666666666668,
+        12283.833333333334
+      ]
+    },
+    {
+      "candidate": "openloop-policy-blockturn-s0.25",
+      "control": "walk-s0.25-p0.9-stay0.2-turn0",
+      "reason": "Matched policy: collision response versus open loop",
+      "metric": "coverage_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        0.17361111111111427,
+        3.90625,
+        3.90625,
+        23.003472222222214,
+        1.9097222222222143,
+        -0.9548611111111285
+      ],
+      "mean_difference": 5.324074074074069,
+      "wins": 5,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        0.5642361111111072,
+        12.644675925925918
+      ]
+    },
+    {
+      "candidate": "openloop-policy-blockturn-s0.25",
+      "control": "walk-s0.25-p0.9-stay0.2-turn0",
+      "reason": "Matched policy: collision response versus open loop",
+      "metric": "auc_k4",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        10.000976562499986,
+        11.7255859375,
+        14.477864583333343,
+        28.1452907986111,
+        18.84809027777777,
+        -6.555230034722214
+      ],
+      "mean_difference": 12.77376302083333,
+      "wins": 5,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        3.7722620081018547,
+        20.812905996817072
+      ]
+    },
+    {
+      "candidate": "openloop-policy-blockturn-s0.25",
+      "control": "walk-s0.25-p0.9-stay0.2-turn0",
+      "reason": "Matched policy: collision response versus open loop",
+      "metric": "capped95",
+      "seeds": [
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "differences": [
+        69,
+        -37030,
+        -39673,
+        -73541,
+        -47889,
+        22277
+      ],
+      "mean_difference": -29297.833333333332,
+      "wins": 4,
+      "n": 6,
+      "exploratory_bootstrap95": [
+        -53260.5,
+        -3003.1666666666665
+      ]
+    }
+  ]
+}

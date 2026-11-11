@@ -1,0 +1,24 @@
+[
+  {
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1,
+    "reset_every": 6667,
+    "name": "continue-s0.125-warm20000-r6667-layout13",
+    "objective": "walk",
+    "reset_until": 20000,
+    "layout": 13
+  },
+  {
+    "step_size": 0.125,
+    "persistence": 0.98,
+    "stay_probability": 0,
+    "turn_on_block": 1,
+    "reset_every": 6667,
+    "name": "continue-s0.125-warm20000-r6667-layout23",
+    "objective": "walk",
+    "reset_until": 20000,
+    "layout": 23
+  }
+]
