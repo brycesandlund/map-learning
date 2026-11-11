@@ -1,0 +1,35 @@
+[
+  {
+    "name": "dynamics-early",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "extra_updates": 1000,
+    "extra_placement": "early"
+  },
+  {
+    "name": "dynamics-distributed",
+    "objective": "dynamics",
+    "step_size": 0.125,
+    "extra_updates": 1000,
+    "extra_placement": "distributed"
+  },
+  {
+    "name": "adjacency-early",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "extra_updates": 1000,
+    "extra_placement": "early"
+  },
+  {
+    "name": "adjacency-distributed",
+    "objective": "adjacency",
+    "step_size": 0.125,
+    "extra_updates": 1000,
+    "extra_placement": "distributed"
+  },
+  {
+    "name": "oracle-smallstep",
+    "objective": "oracle_xy",
+    "step_size": 0.125
+  }
+]

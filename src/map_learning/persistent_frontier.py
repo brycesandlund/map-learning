@@ -45,6 +45,7 @@ class PersistentDistanceFrontier:
         best = self.priority[ids].max()
         i = int(self.rng.choice(ids[self.priority[ids] == best]))
         self.active[i] = False
+        self.last_popped_index = i
         return self.observations[i].copy(), self.entries[i], self.latents[i].copy(), float(best)
 
     def refresh(self, encode, batch_size=1024):

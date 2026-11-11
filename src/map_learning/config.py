@@ -18,6 +18,7 @@ class MazeConfig:
 
 @dataclass
 class ModelConfig:
+    continuous_action_dim: int = 0  # 0: discrete one-hot controls; 2: actual 2D controls
     latent_dim: int = 32
     hidden_dim: int = 128
     hidden_layers: int = 2  # coordinate encoder and dynamics MLPs
@@ -101,6 +102,8 @@ class ExperimentConfig:
         assert self.maze.nuisance_dims >= 0 and self.maze.image_size >= 16
         assert not (self.maze.observation == "pixels" and self.maze.nuisance_dims)
         assert self.model.hidden_layers >= 1
+        assert self.model.continuous_action_dim in {0, 2}
+        assert not self.model.continuous_action_dim or self.train.loss == "dynamics"
         assert self.model.latent_dim >= 2 and self.model.hidden_dim > 0
         assert self.model.iqe_component_dim > 0
         assert self.train.loss != "qrl" or self.model.latent_dim % self.model.iqe_component_dim == 0

@@ -1,0 +1,10 @@
+{
+  "kind": "adjacency",
+  "weight": 0.3,
+  "horizon": 16,
+  "edge_cost": 0.1,
+  "epsilon": 0.05,
+  "dual_lr": 0.1,
+  "push_scale": 20.0,
+  "bandwidth": 1.0
+}

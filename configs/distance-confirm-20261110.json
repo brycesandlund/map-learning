@@ -1,0 +1,44 @@
+[
+  {
+    "name": "dynamics-l2",
+    "spec": null,
+    "l2": 0.03,
+    "repulsion": 0.03
+  },
+  {
+    "name": "dynamics-reg-half",
+    "spec": null,
+    "l2": 0.015,
+    "repulsion": 0.015
+  },
+  {
+    "name": "adjacency-w0.3-l20.03",
+    "spec": {
+      "kind": "adjacency",
+      "weight": 0.3,
+      "horizon": 16,
+      "edge_cost": 0.1,
+      "epsilon": 0.05,
+      "dual_lr": 0.1,
+      "push_scale": 20.0,
+      "bandwidth": 1.0
+    },
+    "l2": 0.03,
+    "repulsion": 0.03
+  },
+  {
+    "name": "affinity-l20.03",
+    "spec": {
+      "kind": "affinity",
+      "weight": 0.03,
+      "horizon": 16,
+      "edge_cost": 0.1,
+      "epsilon": 0.05,
+      "dual_lr": 0.1,
+      "push_scale": 20.0,
+      "bandwidth": 1.0
+    },
+    "l2": 0.03,
+    "repulsion": 0.0
+  }
+]

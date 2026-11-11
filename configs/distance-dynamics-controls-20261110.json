@@ -1,0 +1,20 @@
+[
+  {
+    "name": "dynamics-l2-0.01",
+    "spec": null,
+    "l2": 0.01,
+    "repulsion": 0.03
+  },
+  {
+    "name": "dynamics-reg-half",
+    "spec": null,
+    "l2": 0.015,
+    "repulsion": 0.015
+  },
+  {
+    "name": "dynamics-reg-quarter",
+    "spec": null,
+    "l2": 0.0075,
+    "repulsion": 0.0075
+  }
+]

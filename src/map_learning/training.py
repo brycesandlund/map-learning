@@ -207,6 +207,9 @@ class Trainer:
     def load(cls, path, device="cpu"):
         from .config import config_from_dict
         data = torch.load(path, map_location=device, weights_only=True)
+        if "distance_spec" in data:
+            from .distance_learning import DistanceTrainer
+            return DistanceTrainer.from_checkpoint(data, device)
         if "bottleneck_spec" in data:
             from .information_bottleneck import BottleneckTrainer
             return BottleneckTrainer.from_checkpoint(data, device)

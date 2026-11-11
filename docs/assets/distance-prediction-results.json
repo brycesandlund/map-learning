@@ -1,0 +1,2414 @@
+[
+  {
+    "audit": "runs/distance-fixed-audits-20261110/adjacency-w0.1-seed18-at25000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.12353515625,
+          "member_accuracies": [
+            0.12646484375,
+            0.123291015625,
+            0.125244140625
+          ]
+        },
+        "blocked": {
+          "n": 1292,
+          "mean_prediction_accuracy": 0.12306501547987617,
+          "member_accuracies": [
+            0.12848297213622292,
+            0.1238390092879257,
+            0.12848297213622292
+          ]
+        },
+        "moving": {
+          "n": 2804,
+          "mean_prediction_accuracy": 0.12375178316690442,
+          "member_accuracies": [
+            0.12553495007132667,
+            0.12303851640513552,
+            0.12375178316690442
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.10107421875,
+          "member_accuracies": [
+            0.1015625,
+            0.10107421875,
+            0.103759765625
+          ]
+        },
+        "blocked": {
+          "n": 1280,
+          "mean_prediction_accuracy": 0.11015625,
+          "member_accuracies": [
+            0.11328125,
+            0.11484375,
+            0.11484375
+          ]
+        },
+        "moving": {
+          "n": 2816,
+          "mean_prediction_accuracy": 0.09694602272727272,
+          "member_accuracies": [
+            0.09623579545454546,
+            0.09481534090909091,
+            0.09872159090909091
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/adjacency-w0.1-seed18-at50000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.835693359375,
+          "member_accuracies": [
+            0.834716796875,
+            0.835205078125,
+            0.836669921875
+          ]
+        },
+        "blocked": {
+          "n": 1356,
+          "mean_prediction_accuracy": 0.7935103244837758,
+          "member_accuracies": [
+            0.7942477876106194,
+            0.7949852507374632,
+            0.7957227138643068
+          ]
+        },
+        "moving": {
+          "n": 2740,
+          "mean_prediction_accuracy": 0.8565693430656934,
+          "member_accuracies": [
+            0.8547445255474453,
+            0.8551094890510949,
+            0.8569343065693431
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 20,
+        "physical_edges": 5,
+        "all": {
+          "n": 20,
+          "mean_prediction_accuracy": 0.85,
+          "member_accuracies": [
+            0.85,
+            0.85,
+            0.8
+          ]
+        },
+        "blocked": {
+          "n": 8,
+          "mean_prediction_accuracy": 1.0,
+          "member_accuracies": [
+            1.0,
+            1.0,
+            0.875
+          ]
+        },
+        "moving": {
+          "n": 12,
+          "mean_prediction_accuracy": 0.75,
+          "member_accuracies": [
+            0.75,
+            0.75,
+            0.75
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/adjacency-w0.1-seed19-at25000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.05810546875,
+          "member_accuracies": [
+            0.0576171875,
+            0.060302734375,
+            0.057373046875
+          ]
+        },
+        "blocked": {
+          "n": 1268,
+          "mean_prediction_accuracy": 0.052050473186119876,
+          "member_accuracies": [
+            0.051261829652996846,
+            0.0583596214511041,
+            0.04968454258675079
+          ]
+        },
+        "moving": {
+          "n": 2828,
+          "mean_prediction_accuracy": 0.06082036775106082,
+          "member_accuracies": [
+            0.060466760961810466,
+            0.06117397454031118,
+            0.06082036775106082
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.068603515625,
+          "member_accuracies": [
+            0.0703125,
+            0.06787109375,
+            0.062744140625
+          ]
+        },
+        "blocked": {
+          "n": 1300,
+          "mean_prediction_accuracy": 0.07538461538461538,
+          "member_accuracies": [
+            0.07538461538461538,
+            0.07384615384615385,
+            0.06769230769230769
+          ]
+        },
+        "moving": {
+          "n": 2796,
+          "mean_prediction_accuracy": 0.06545064377682404,
+          "member_accuracies": [
+            0.06795422031473533,
+            0.06509298998569385,
+            0.06044349070100143
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/adjacency-w0.1-seed19-at50000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.736328125,
+          "member_accuracies": [
+            0.734619140625,
+            0.736328125,
+            0.734375
+          ]
+        },
+        "blocked": {
+          "n": 1324,
+          "mean_prediction_accuracy": 0.7333836858006042,
+          "member_accuracies": [
+            0.7333836858006042,
+            0.7341389728096677,
+            0.7326283987915407
+          ]
+        },
+        "moving": {
+          "n": 2772,
+          "mean_prediction_accuracy": 0.7377344877344877,
+          "member_accuracies": [
+            0.7352092352092352,
+            0.7373737373737373,
+            0.7352092352092352
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.759765625,
+          "member_accuracies": [
+            0.7568359375,
+            0.761962890625,
+            0.76123046875
+          ]
+        },
+        "blocked": {
+          "n": 1404,
+          "mean_prediction_accuracy": 0.7371794871794872,
+          "member_accuracies": [
+            0.7378917378917379,
+            0.7371794871794872,
+            0.7357549857549858
+          ]
+        },
+        "moving": {
+          "n": 2692,
+          "mean_prediction_accuracy": 0.7715453194650818,
+          "member_accuracies": [
+            0.7667161961367014,
+            0.774888558692422,
+            0.774517087667162
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/adjacency-w0.1-seed20-at25000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.078125,
+          "member_accuracies": [
+            0.078125,
+            0.0771484375,
+            0.078857421875
+          ]
+        },
+        "blocked": {
+          "n": 1248,
+          "mean_prediction_accuracy": 0.0889423076923077,
+          "member_accuracies": [
+            0.0889423076923077,
+            0.08733974358974358,
+            0.08974358974358974
+          ]
+        },
+        "moving": {
+          "n": 2848,
+          "mean_prediction_accuracy": 0.07338483146067416,
+          "member_accuracies": [
+            0.07338483146067416,
+            0.07268258426966293,
+            0.07408707865168539
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.0634765625,
+          "member_accuracies": [
+            0.06396484375,
+            0.062744140625,
+            0.062255859375
+          ]
+        },
+        "blocked": {
+          "n": 1344,
+          "mean_prediction_accuracy": 0.05505952380952381,
+          "member_accuracies": [
+            0.05580357142857143,
+            0.05357142857142857,
+            0.052083333333333336
+          ]
+        },
+        "moving": {
+          "n": 2752,
+          "mean_prediction_accuracy": 0.06758720930232558,
+          "member_accuracies": [
+            0.06795058139534883,
+            0.06722383720930232,
+            0.06722383720930232
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/adjacency-w0.1-seed20-at50000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.694091796875,
+          "member_accuracies": [
+            0.694580078125,
+            0.69189453125,
+            0.695068359375
+          ]
+        },
+        "blocked": {
+          "n": 1256,
+          "mean_prediction_accuracy": 0.7420382165605095,
+          "member_accuracies": [
+            0.7452229299363057,
+            0.7452229299363057,
+            0.731687898089172
+          ]
+        },
+        "moving": {
+          "n": 2840,
+          "mean_prediction_accuracy": 0.672887323943662,
+          "member_accuracies": [
+            0.6721830985915493,
+            0.6683098591549296,
+            0.6788732394366197
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.655029296875,
+          "member_accuracies": [
+            0.653564453125,
+            0.64990234375,
+            0.652099609375
+          ]
+        },
+        "blocked": {
+          "n": 1208,
+          "mean_prediction_accuracy": 0.7036423841059603,
+          "member_accuracies": [
+            0.7086092715231788,
+            0.6970198675496688,
+            0.6887417218543046
+          ]
+        },
+        "moving": {
+          "n": 2888,
+          "mean_prediction_accuracy": 0.6346952908587258,
+          "member_accuracies": [
+            0.6305401662049861,
+            0.6301939058171745,
+            0.6367728531855956
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/affinity-l20.03-seed18-at25000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.126953125,
+          "member_accuracies": [
+            0.126708984375,
+            0.124755859375,
+            0.127197265625
+          ]
+        },
+        "blocked": {
+          "n": 1292,
+          "mean_prediction_accuracy": 0.13854489164086686,
+          "member_accuracies": [
+            0.14009287925696595,
+            0.13544891640866874,
+            0.14241486068111456
+          ]
+        },
+        "moving": {
+          "n": 2804,
+          "mean_prediction_accuracy": 0.12161198288159772,
+          "member_accuracies": [
+            0.12054208273894436,
+            0.11982881597717546,
+            0.12018544935805991
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.100341796875,
+          "member_accuracies": [
+            0.1015625,
+            0.098876953125,
+            0.09814453125
+          ]
+        },
+        "blocked": {
+          "n": 1280,
+          "mean_prediction_accuracy": 0.1125,
+          "member_accuracies": [
+            0.11328125,
+            0.11171875,
+            0.1078125
+          ]
+        },
+        "moving": {
+          "n": 2816,
+          "mean_prediction_accuracy": 0.09481534090909091,
+          "member_accuracies": [
+            0.09623579545454546,
+            0.09303977272727272,
+            0.09375
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/affinity-l20.03-seed18-at50000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.60595703125,
+          "member_accuracies": [
+            0.606689453125,
+            0.6044921875,
+            0.60791015625
+          ]
+        },
+        "blocked": {
+          "n": 1356,
+          "mean_prediction_accuracy": 0.5848082595870207,
+          "member_accuracies": [
+            0.5862831858407079,
+            0.5848082595870207,
+            0.5862831858407079
+          ]
+        },
+        "moving": {
+          "n": 2740,
+          "mean_prediction_accuracy": 0.6164233576642336,
+          "member_accuracies": [
+            0.6167883211678832,
+            0.6142335766423358,
+            0.6186131386861314
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 20,
+        "physical_edges": 5,
+        "all": {
+          "n": 20,
+          "mean_prediction_accuracy": 0.8,
+          "member_accuracies": [
+            0.8,
+            0.8,
+            0.75
+          ]
+        },
+        "blocked": {
+          "n": 8,
+          "mean_prediction_accuracy": 0.75,
+          "member_accuracies": [
+            0.75,
+            0.75,
+            0.625
+          ]
+        },
+        "moving": {
+          "n": 12,
+          "mean_prediction_accuracy": 0.8333333333333334,
+          "member_accuracies": [
+            0.8333333333333334,
+            0.8333333333333334,
+            0.8333333333333334
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/affinity-l20.03-seed19-at25000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.065185546875,
+          "member_accuracies": [
+            0.061279296875,
+            0.065673828125,
+            0.063232421875
+          ]
+        },
+        "blocked": {
+          "n": 1268,
+          "mean_prediction_accuracy": 0.06782334384858044,
+          "member_accuracies": [
+            0.05993690851735016,
+            0.06861198738170347,
+            0.07018927444794952
+          ]
+        },
+        "moving": {
+          "n": 2828,
+          "mean_prediction_accuracy": 0.064002828854314,
+          "member_accuracies": [
+            0.06188118811881188,
+            0.06435643564356436,
+            0.060113154172560114
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.06494140625,
+          "member_accuracies": [
+            0.063720703125,
+            0.06640625,
+            0.063720703125
+          ]
+        },
+        "blocked": {
+          "n": 1300,
+          "mean_prediction_accuracy": 0.06384615384615384,
+          "member_accuracies": [
+            0.06230769230769231,
+            0.06307692307692307,
+            0.06230769230769231
+          ]
+        },
+        "moving": {
+          "n": 2796,
+          "mean_prediction_accuracy": 0.06545064377682404,
+          "member_accuracies": [
+            0.06437768240343347,
+            0.06795422031473533,
+            0.06437768240343347
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/affinity-l20.03-seed19-at50000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.59814453125,
+          "member_accuracies": [
+            0.59814453125,
+            0.60009765625,
+            0.600341796875
+          ]
+        },
+        "blocked": {
+          "n": 1324,
+          "mean_prediction_accuracy": 0.622356495468278,
+          "member_accuracies": [
+            0.622356495468278,
+            0.6246223564954683,
+            0.6253776435045317
+          ]
+        },
+        "moving": {
+          "n": 2772,
+          "mean_prediction_accuracy": 0.5865800865800865,
+          "member_accuracies": [
+            0.5865800865800865,
+            0.5883838383838383,
+            0.5883838383838383
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.612060546875,
+          "member_accuracies": [
+            0.611572265625,
+            0.6142578125,
+            0.611572265625
+          ]
+        },
+        "blocked": {
+          "n": 1404,
+          "mean_prediction_accuracy": 0.6517094017094017,
+          "member_accuracies": [
+            0.6509971509971509,
+            0.6531339031339032,
+            0.6531339031339032
+          ]
+        },
+        "moving": {
+          "n": 2692,
+          "mean_prediction_accuracy": 0.5913818722139673,
+          "member_accuracies": [
+            0.5910104011887073,
+            0.5939821693907875,
+            0.5898959881129272
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/affinity-l20.03-seed20-at25000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.042724609375,
+          "member_accuracies": [
+            0.04443359375,
+            0.044189453125,
+            0.04248046875
+          ]
+        },
+        "blocked": {
+          "n": 1248,
+          "mean_prediction_accuracy": 0.05128205128205128,
+          "member_accuracies": [
+            0.05128205128205128,
+            0.05128205128205128,
+            0.05048076923076923
+          ]
+        },
+        "moving": {
+          "n": 2848,
+          "mean_prediction_accuracy": 0.038974719101123594,
+          "member_accuracies": [
+            0.04143258426966292,
+            0.04108146067415731,
+            0.038974719101123594
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.040771484375,
+          "member_accuracies": [
+            0.04150390625,
+            0.03955078125,
+            0.03955078125
+          ]
+        },
+        "blocked": {
+          "n": 1344,
+          "mean_prediction_accuracy": 0.03869047619047619,
+          "member_accuracies": [
+            0.03943452380952381,
+            0.03943452380952381,
+            0.03720238095238095
+          ]
+        },
+        "moving": {
+          "n": 2752,
+          "mean_prediction_accuracy": 0.041787790697674417,
+          "member_accuracies": [
+            0.04251453488372093,
+            0.039607558139534885,
+            0.040697674418604654
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/affinity-l20.03-seed20-at50000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.419921875,
+          "member_accuracies": [
+            0.42138671875,
+            0.419921875,
+            0.417236328125
+          ]
+        },
+        "blocked": {
+          "n": 1256,
+          "mean_prediction_accuracy": 0.43789808917197454,
+          "member_accuracies": [
+            0.43789808917197454,
+            0.43789808917197454,
+            0.4394904458598726
+          ]
+        },
+        "moving": {
+          "n": 2840,
+          "mean_prediction_accuracy": 0.4119718309859155,
+          "member_accuracies": [
+            0.4140845070422535,
+            0.4119718309859155,
+            0.4073943661971831
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.386962890625,
+          "member_accuracies": [
+            0.388671875,
+            0.388671875,
+            0.386474609375
+          ]
+        },
+        "blocked": {
+          "n": 1208,
+          "mean_prediction_accuracy": 0.40728476821192056,
+          "member_accuracies": [
+            0.4064569536423841,
+            0.40728476821192056,
+            0.40894039735099336
+          ]
+        },
+        "moving": {
+          "n": 2888,
+          "mean_prediction_accuracy": 0.37846260387811637,
+          "member_accuracies": [
+            0.3812326869806094,
+            0.3808864265927978,
+            0.3770775623268698
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/dynamics-l2-seed18-at25000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.052734375,
+          "member_accuracies": [
+            0.056640625,
+            0.05322265625,
+            0.05126953125
+          ]
+        },
+        "blocked": {
+          "n": 1292,
+          "mean_prediction_accuracy": 0.05108359133126935,
+          "member_accuracies": [
+            0.0565015479876161,
+            0.05185758513931889,
+            0.05185758513931889
+          ]
+        },
+        "moving": {
+          "n": 2804,
+          "mean_prediction_accuracy": 0.05349500713266762,
+          "member_accuracies": [
+            0.056704707560627676,
+            0.05385164051355207,
+            0.05099857346647646
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.048095703125,
+          "member_accuracies": [
+            0.049560546875,
+            0.045166015625,
+            0.048095703125
+          ]
+        },
+        "blocked": {
+          "n": 1280,
+          "mean_prediction_accuracy": 0.053125,
+          "member_accuracies": [
+            0.05703125,
+            0.05234375,
+            0.053125
+          ]
+        },
+        "moving": {
+          "n": 2816,
+          "mean_prediction_accuracy": 0.04580965909090909,
+          "member_accuracies": [
+            0.04616477272727273,
+            0.04190340909090909,
+            0.04580965909090909
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/dynamics-l2-seed18-at50000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.891357421875,
+          "member_accuracies": [
+            0.890869140625,
+            0.89111328125,
+            0.89208984375
+          ]
+        },
+        "blocked": {
+          "n": 1356,
+          "mean_prediction_accuracy": 0.8502949852507374,
+          "member_accuracies": [
+            0.8488200589970502,
+            0.8495575221238938,
+            0.8532448377581121
+          ]
+        },
+        "moving": {
+          "n": 2740,
+          "mean_prediction_accuracy": 0.9116788321167884,
+          "member_accuracies": [
+            0.9116788321167884,
+            0.9116788321167884,
+            0.9113138686131387
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 20,
+        "physical_edges": 5,
+        "all": {
+          "n": 20,
+          "mean_prediction_accuracy": 0.9,
+          "member_accuracies": [
+            0.9,
+            0.9,
+            0.85
+          ]
+        },
+        "blocked": {
+          "n": 8,
+          "mean_prediction_accuracy": 1.0,
+          "member_accuracies": [
+            1.0,
+            1.0,
+            0.875
+          ]
+        },
+        "moving": {
+          "n": 12,
+          "mean_prediction_accuracy": 0.8333333333333334,
+          "member_accuracies": [
+            0.8333333333333334,
+            0.8333333333333334,
+            0.8333333333333334
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/dynamics-l2-seed19-at25000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.053955078125,
+          "member_accuracies": [
+            0.052734375,
+            0.055419921875,
+            0.05078125
+          ]
+        },
+        "blocked": {
+          "n": 1268,
+          "mean_prediction_accuracy": 0.04416403785488959,
+          "member_accuracies": [
+            0.04100946372239748,
+            0.04652996845425868,
+            0.04022082018927445
+          ]
+        },
+        "moving": {
+          "n": 2828,
+          "mean_prediction_accuracy": 0.05834512022630835,
+          "member_accuracies": [
+            0.05799151343705799,
+            0.0594059405940594,
+            0.05551626591230552
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.05517578125,
+          "member_accuracies": [
+            0.053955078125,
+            0.056396484375,
+            0.052978515625
+          ]
+        },
+        "blocked": {
+          "n": 1300,
+          "mean_prediction_accuracy": 0.047692307692307694,
+          "member_accuracies": [
+            0.04461538461538461,
+            0.04846153846153846,
+            0.04846153846153846
+          ]
+        },
+        "moving": {
+          "n": 2796,
+          "mean_prediction_accuracy": 0.058655221745350504,
+          "member_accuracies": [
+            0.058297567954220315,
+            0.060085836909871244,
+            0.05507868383404864
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/dynamics-l2-seed19-at50000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.77099609375,
+          "member_accuracies": [
+            0.771484375,
+            0.7705078125,
+            0.770263671875
+          ]
+        },
+        "blocked": {
+          "n": 1324,
+          "mean_prediction_accuracy": 0.7643504531722054,
+          "member_accuracies": [
+            0.7658610271903323,
+            0.763595166163142,
+            0.7628398791540786
+          ]
+        },
+        "moving": {
+          "n": 2772,
+          "mean_prediction_accuracy": 0.7741702741702742,
+          "member_accuracies": [
+            0.7741702741702742,
+            0.7738095238095238,
+            0.7738095238095238
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.7890625,
+          "member_accuracies": [
+            0.7880859375,
+            0.78662109375,
+            0.786865234375
+          ]
+        },
+        "blocked": {
+          "n": 1404,
+          "mean_prediction_accuracy": 0.7606837606837606,
+          "member_accuracies": [
+            0.7613960113960114,
+            0.7578347578347578,
+            0.75997150997151
+          ]
+        },
+        "moving": {
+          "n": 2692,
+          "mean_prediction_accuracy": 0.8038632986627043,
+          "member_accuracies": [
+            0.8020059435364042,
+            0.8016344725111442,
+            0.8008915304606241
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/dynamics-l2-seed20-at25000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.080322265625,
+          "member_accuracies": [
+            0.080078125,
+            0.076904296875,
+            0.08740234375
+          ]
+        },
+        "blocked": {
+          "n": 1248,
+          "mean_prediction_accuracy": 0.08814102564102565,
+          "member_accuracies": [
+            0.08493589743589744,
+            0.08012820512820513,
+            0.09134615384615384
+          ]
+        },
+        "moving": {
+          "n": 2848,
+          "mean_prediction_accuracy": 0.07689606741573034,
+          "member_accuracies": [
+            0.07794943820224719,
+            0.07549157303370786,
+            0.08567415730337079
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.06689453125,
+          "member_accuracies": [
+            0.065673828125,
+            0.06689453125,
+            0.0712890625
+          ]
+        },
+        "blocked": {
+          "n": 1344,
+          "mean_prediction_accuracy": 0.05654761904761905,
+          "member_accuracies": [
+            0.05357142857142857,
+            0.05580357142857143,
+            0.06101190476190476
+          ]
+        },
+        "moving": {
+          "n": 2752,
+          "mean_prediction_accuracy": 0.07194767441860465,
+          "member_accuracies": [
+            0.0715843023255814,
+            0.07231104651162791,
+            0.07630813953488372
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/dynamics-l2-seed20-at50000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.707275390625,
+          "member_accuracies": [
+            0.705810546875,
+            0.69921875,
+            0.69873046875
+          ]
+        },
+        "blocked": {
+          "n": 1256,
+          "mean_prediction_accuracy": 0.7539808917197452,
+          "member_accuracies": [
+            0.7555732484076433,
+            0.7595541401273885,
+            0.7388535031847133
+          ]
+        },
+        "moving": {
+          "n": 2840,
+          "mean_prediction_accuracy": 0.6866197183098591,
+          "member_accuracies": [
+            0.6838028169014084,
+            0.6725352112676056,
+            0.6809859154929577
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.675537109375,
+          "member_accuracies": [
+            0.67529296875,
+            0.6787109375,
+            0.664794921875
+          ]
+        },
+        "blocked": {
+          "n": 1208,
+          "mean_prediction_accuracy": 0.7119205298013245,
+          "member_accuracies": [
+            0.7144039735099338,
+            0.7201986754966887,
+            0.6895695364238411
+          ]
+        },
+        "moving": {
+          "n": 2888,
+          "mean_prediction_accuracy": 0.6603185595567868,
+          "member_accuracies": [
+            0.6589335180055401,
+            0.6613573407202216,
+            0.6544321329639889
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/qrl-upper-c0.05-seed18-at25000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.1376953125,
+          "member_accuracies": [
+            0.127197265625,
+            0.138671875,
+            0.1337890625
+          ]
+        },
+        "blocked": {
+          "n": 1292,
+          "mean_prediction_accuracy": 0.13544891640866874,
+          "member_accuracies": [
+            0.11764705882352941,
+            0.13777089783281735,
+            0.13622291021671826
+          ]
+        },
+        "moving": {
+          "n": 2804,
+          "mean_prediction_accuracy": 0.13873038516405137,
+          "member_accuracies": [
+            0.13159771754636235,
+            0.1390870185449358,
+            0.1326676176890157
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.1103515625,
+          "member_accuracies": [
+            0.088134765625,
+            0.118408203125,
+            0.123779296875
+          ]
+        },
+        "blocked": {
+          "n": 1280,
+          "mean_prediction_accuracy": 0.1203125,
+          "member_accuracies": [
+            0.09765625,
+            0.1265625,
+            0.13671875
+          ]
+        },
+        "moving": {
+          "n": 2816,
+          "mean_prediction_accuracy": 0.10582386363636363,
+          "member_accuracies": [
+            0.08380681818181818,
+            0.11470170454545454,
+            0.11789772727272728
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/qrl-upper-c0.05-seed18-at50000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.5380859375,
+          "member_accuracies": [
+            0.53564453125,
+            0.53759765625,
+            0.5390625
+          ]
+        },
+        "blocked": {
+          "n": 1356,
+          "mean_prediction_accuracy": 0.5715339233038348,
+          "member_accuracies": [
+            0.5700589970501475,
+            0.5737463126843658,
+            0.5707964601769911
+          ]
+        },
+        "moving": {
+          "n": 2740,
+          "mean_prediction_accuracy": 0.5215328467153285,
+          "member_accuracies": [
+            0.5186131386861313,
+            0.5197080291970803,
+            0.5233576642335767
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 20,
+        "physical_edges": 5,
+        "all": {
+          "n": 20,
+          "mean_prediction_accuracy": 0.55,
+          "member_accuracies": [
+            0.5,
+            0.6,
+            0.6
+          ]
+        },
+        "blocked": {
+          "n": 8,
+          "mean_prediction_accuracy": 0.5,
+          "member_accuracies": [
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        "moving": {
+          "n": 12,
+          "mean_prediction_accuracy": 0.5833333333333334,
+          "member_accuracies": [
+            0.5,
+            0.6666666666666666,
+            0.6666666666666666
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/qrl-upper-c0.05-seed19-at25000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.122314453125,
+          "member_accuracies": [
+            0.12109375,
+            0.121337890625,
+            0.12158203125
+          ]
+        },
+        "blocked": {
+          "n": 1268,
+          "mean_prediction_accuracy": 0.11041009463722397,
+          "member_accuracies": [
+            0.111198738170347,
+            0.10488958990536278,
+            0.11041009463722397
+          ]
+        },
+        "moving": {
+          "n": 2828,
+          "mean_prediction_accuracy": 0.12765205091937765,
+          "member_accuracies": [
+            0.12553041018387553,
+            0.12871287128712872,
+            0.1265912305516266
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.104248046875,
+          "member_accuracies": [
+            0.0986328125,
+            0.1044921875,
+            0.106201171875
+          ]
+        },
+        "blocked": {
+          "n": 1300,
+          "mean_prediction_accuracy": 0.10461538461538461,
+          "member_accuracies": [
+            0.10153846153846154,
+            0.10923076923076923,
+            0.10538461538461538
+          ]
+        },
+        "moving": {
+          "n": 2796,
+          "mean_prediction_accuracy": 0.10407725321888411,
+          "member_accuracies": [
+            0.09728183118741059,
+            0.10228898426323318,
+            0.10658082975679542
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/qrl-upper-c0.05-seed19-at50000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.22021484375,
+          "member_accuracies": [
+            0.221923828125,
+            0.213623046875,
+            0.221923828125
+          ]
+        },
+        "blocked": {
+          "n": 1324,
+          "mean_prediction_accuracy": 0.24773413897280966,
+          "member_accuracies": [
+            0.2537764350453172,
+            0.22885196374622357,
+            0.26057401812688824
+          ]
+        },
+        "moving": {
+          "n": 2772,
+          "mean_prediction_accuracy": 0.20707070707070707,
+          "member_accuracies": [
+            0.2067099567099567,
+            0.20634920634920634,
+            0.20346320346320346
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.2001953125,
+          "member_accuracies": [
+            0.201904296875,
+            0.19873046875,
+            0.206298828125
+          ]
+        },
+        "blocked": {
+          "n": 1404,
+          "mean_prediction_accuracy": 0.2378917378917379,
+          "member_accuracies": [
+            0.24572649572649571,
+            0.2222222222222222,
+            0.25925925925925924
+          ]
+        },
+        "moving": {
+          "n": 2692,
+          "mean_prediction_accuracy": 0.18053491827637444,
+          "member_accuracies": [
+            0.17904903417533433,
+            0.18647845468053492,
+            0.1786775631500743
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/qrl-upper-c0.05-seed20-at25000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.148681640625,
+          "member_accuracies": [
+            0.146728515625,
+            0.142822265625,
+            0.146484375
+          ]
+        },
+        "blocked": {
+          "n": 1248,
+          "mean_prediction_accuracy": 0.16506410256410256,
+          "member_accuracies": [
+            0.1642628205128205,
+            0.15384615384615385,
+            0.16506410256410256
+          ]
+        },
+        "moving": {
+          "n": 2848,
+          "mean_prediction_accuracy": 0.14150280898876405,
+          "member_accuracies": [
+            0.13904494382022473,
+            0.13799157303370788,
+            0.13834269662921347
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.102294921875,
+          "member_accuracies": [
+            0.100341796875,
+            0.1015625,
+            0.101806640625
+          ]
+        },
+        "blocked": {
+          "n": 1344,
+          "mean_prediction_accuracy": 0.10267857142857142,
+          "member_accuracies": [
+            0.10193452380952381,
+            0.10193452380952381,
+            0.1056547619047619
+          ]
+        },
+        "moving": {
+          "n": 2752,
+          "mean_prediction_accuracy": 0.10210755813953488,
+          "member_accuracies": [
+            0.09956395348837209,
+            0.10138081395348837,
+            0.09992732558139535
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/qrl-upper-c0.05-seed20-at50000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.1357421875,
+          "member_accuracies": [
+            0.13818359375,
+            0.13671875,
+            0.131591796875
+          ]
+        },
+        "blocked": {
+          "n": 1256,
+          "mean_prediction_accuracy": 0.1536624203821656,
+          "member_accuracies": [
+            0.14968152866242038,
+            0.15684713375796178,
+            0.14410828025477707
+          ]
+        },
+        "moving": {
+          "n": 2840,
+          "mean_prediction_accuracy": 0.1278169014084507,
+          "member_accuracies": [
+            0.13309859154929576,
+            0.1278169014084507,
+            0.126056338028169
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.133056640625,
+          "member_accuracies": [
+            0.1396484375,
+            0.129150390625,
+            0.136962890625
+          ]
+        },
+        "blocked": {
+          "n": 1208,
+          "mean_prediction_accuracy": 0.1291390728476821,
+          "member_accuracies": [
+            0.1316225165562914,
+            0.12334437086092716,
+            0.1357615894039735
+          ]
+        },
+        "moving": {
+          "n": 2888,
+          "mean_prediction_accuracy": 0.13469529085872575,
+          "member_accuracies": [
+            0.14300554016620498,
+            0.13157894736842105,
+            0.13746537396121883
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h16-seed18-at25000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.000732421875,
+          "member_accuracies": [
+            0.00146484375,
+            0.000732421875,
+            0.000244140625
+          ]
+        },
+        "blocked": {
+          "n": 1292,
+          "mean_prediction_accuracy": 0.0007739938080495357,
+          "member_accuracies": [
+            0.0030959752321981426,
+            0.0,
+            0.0
+          ]
+        },
+        "moving": {
+          "n": 2804,
+          "mean_prediction_accuracy": 0.0007132667617689016,
+          "member_accuracies": [
+            0.0007132667617689016,
+            0.0010699001426533524,
+            0.0003566333808844508
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.001220703125,
+          "member_accuracies": [
+            0.000244140625,
+            0.001220703125,
+            0.00048828125
+          ]
+        },
+        "blocked": {
+          "n": 1280,
+          "mean_prediction_accuracy": 0.0015625,
+          "member_accuracies": [
+            0.00078125,
+            0.00078125,
+            0.00078125
+          ]
+        },
+        "moving": {
+          "n": 2816,
+          "mean_prediction_accuracy": 0.001065340909090909,
+          "member_accuracies": [
+            0.0,
+            0.0014204545454545455,
+            0.0003551136363636364
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h16-seed18-at50000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.000732421875,
+          "member_accuracies": [
+            0.00146484375,
+            0.000244140625,
+            0.000732421875
+          ]
+        },
+        "blocked": {
+          "n": 1356,
+          "mean_prediction_accuracy": 0.0007374631268436578,
+          "member_accuracies": [
+            0.0014749262536873156,
+            0.0,
+            0.0007374631268436578
+          ]
+        },
+        "moving": {
+          "n": 2740,
+          "mean_prediction_accuracy": 0.00072992700729927,
+          "member_accuracies": [
+            0.00145985401459854,
+            0.000364963503649635,
+            0.00072992700729927
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 20,
+        "physical_edges": 5,
+        "all": {
+          "n": 20,
+          "mean_prediction_accuracy": 0.0,
+          "member_accuracies": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "blocked": {
+          "n": 8,
+          "mean_prediction_accuracy": 0.0,
+          "member_accuracies": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "moving": {
+          "n": 12,
+          "mean_prediction_accuracy": 0.0,
+          "member_accuracies": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h16-seed19-at25000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.001708984375,
+          "member_accuracies": [
+            0.00048828125,
+            0.0009765625,
+            0.001220703125
+          ]
+        },
+        "blocked": {
+          "n": 1268,
+          "mean_prediction_accuracy": 0.0015772870662460567,
+          "member_accuracies": [
+            0.0007886435331230284,
+            0.002365930599369085,
+            0.002365930599369085
+          ]
+        },
+        "moving": {
+          "n": 2828,
+          "mean_prediction_accuracy": 0.001768033946251768,
+          "member_accuracies": [
+            0.0003536067892503536,
+            0.0003536067892503536,
+            0.0007072135785007072
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.0009765625,
+          "member_accuracies": [
+            0.00048828125,
+            0.000244140625,
+            0.000244140625
+          ]
+        },
+        "blocked": {
+          "n": 1300,
+          "mean_prediction_accuracy": 0.0007692307692307692,
+          "member_accuracies": [
+            0.0015384615384615385,
+            0.0007692307692307692,
+            0.0
+          ]
+        },
+        "moving": {
+          "n": 2796,
+          "mean_prediction_accuracy": 0.001072961373390558,
+          "member_accuracies": [
+            0.0,
+            0.0,
+            0.000357653791130186
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h16-seed19-at50000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.0009765625,
+          "member_accuracies": [
+            0.0009765625,
+            0.0009765625,
+            0.00048828125
+          ]
+        },
+        "blocked": {
+          "n": 1324,
+          "mean_prediction_accuracy": 0.0,
+          "member_accuracies": [
+            0.0007552870090634441,
+            0.0,
+            0.0
+          ]
+        },
+        "moving": {
+          "n": 2772,
+          "mean_prediction_accuracy": 0.001443001443001443,
+          "member_accuracies": [
+            0.0010822510822510823,
+            0.001443001443001443,
+            0.0007215007215007215
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.000244140625,
+          "member_accuracies": [
+            0.0009765625,
+            0.000732421875,
+            0.000244140625
+          ]
+        },
+        "blocked": {
+          "n": 1404,
+          "mean_prediction_accuracy": 0.0,
+          "member_accuracies": [
+            0.0007122507122507123,
+            0.002136752136752137,
+            0.0
+          ]
+        },
+        "moving": {
+          "n": 2692,
+          "mean_prediction_accuracy": 0.0003714710252600297,
+          "member_accuracies": [
+            0.001114413075780089,
+            0.0,
+            0.0003714710252600297
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h16-seed20-at25000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.0,
+          "member_accuracies": [
+            0.000244140625,
+            0.00048828125,
+            0.0
+          ]
+        },
+        "blocked": {
+          "n": 1248,
+          "mean_prediction_accuracy": 0.0,
+          "member_accuracies": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "moving": {
+          "n": 2848,
+          "mean_prediction_accuracy": 0.0,
+          "member_accuracies": [
+            0.00035112359550561797,
+            0.0007022471910112359,
+            0.0
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.000244140625,
+          "member_accuracies": [
+            0.000732421875,
+            0.00048828125,
+            0.0
+          ]
+        },
+        "blocked": {
+          "n": 1344,
+          "mean_prediction_accuracy": 0.0,
+          "member_accuracies": [
+            0.000744047619047619,
+            0.000744047619047619,
+            0.0
+          ]
+        },
+        "moving": {
+          "n": 2752,
+          "mean_prediction_accuracy": 0.0003633720930232558,
+          "member_accuracies": [
+            0.0007267441860465116,
+            0.0003633720930232558,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h16-seed20-at50000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.0,
+          "member_accuracies": [
+            0.001708984375,
+            0.00048828125,
+            0.00048828125
+          ]
+        },
+        "blocked": {
+          "n": 1256,
+          "mean_prediction_accuracy": 0.0,
+          "member_accuracies": [
+            0.0007961783439490446,
+            0.0007961783439490446,
+            0.0
+          ]
+        },
+        "moving": {
+          "n": 2840,
+          "mean_prediction_accuracy": 0.0,
+          "member_accuracies": [
+            0.002112676056338028,
+            0.00035211267605633805,
+            0.0007042253521126761
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.00146484375,
+          "member_accuracies": [
+            0.0009765625,
+            0.0009765625,
+            0.0009765625
+          ]
+        },
+        "blocked": {
+          "n": 1208,
+          "mean_prediction_accuracy": 0.0024834437086092716,
+          "member_accuracies": [
+            0.0016556291390728477,
+            0.0016556291390728477,
+            0.0016556291390728477
+          ]
+        },
+        "moving": {
+          "n": 2888,
+          "mean_prediction_accuracy": 0.001038781163434903,
+          "member_accuracies": [
+            0.0006925207756232687,
+            0.0006925207756232687,
+            0.0006925207756232687
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h64-seed18-at25000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.003173828125,
+          "member_accuracies": [
+            0.00341796875,
+            0.001708984375,
+            0.004150390625
+          ]
+        },
+        "blocked": {
+          "n": 1292,
+          "mean_prediction_accuracy": 0.0,
+          "member_accuracies": [
+            0.0,
+            0.0,
+            0.0046439628482972135
+          ]
+        },
+        "moving": {
+          "n": 2804,
+          "mean_prediction_accuracy": 0.0046362339514978606,
+          "member_accuracies": [
+            0.004992867332382311,
+            0.0024964336661911554,
+            0.0039229671897289585
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.00048828125,
+          "member_accuracies": [
+            0.00048828125,
+            0.00048828125,
+            0.000244140625
+          ]
+        },
+        "blocked": {
+          "n": 1280,
+          "mean_prediction_accuracy": 0.00078125,
+          "member_accuracies": [
+            0.00078125,
+            0.00078125,
+            0.0
+          ]
+        },
+        "moving": {
+          "n": 2816,
+          "mean_prediction_accuracy": 0.0003551136363636364,
+          "member_accuracies": [
+            0.0003551136363636364,
+            0.0003551136363636364,
+            0.0003551136363636364
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h64-seed18-at50000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.324951171875,
+          "member_accuracies": [
+            0.32421875,
+            0.324462890625,
+            0.32470703125
+          ]
+        },
+        "blocked": {
+          "n": 1356,
+          "mean_prediction_accuracy": 0.3163716814159292,
+          "member_accuracies": [
+            0.3185840707964602,
+            0.3134218289085546,
+            0.3134218289085546
+          ]
+        },
+        "moving": {
+          "n": 2740,
+          "mean_prediction_accuracy": 0.3291970802919708,
+          "member_accuracies": [
+            0.327007299270073,
+            0.32992700729927005,
+            0.3302919708029197
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 20,
+        "physical_edges": 5,
+        "all": {
+          "n": 20,
+          "mean_prediction_accuracy": 0.3,
+          "member_accuracies": [
+            0.3,
+            0.3,
+            0.3
+          ]
+        },
+        "blocked": {
+          "n": 8,
+          "mean_prediction_accuracy": 0.25,
+          "member_accuracies": [
+            0.25,
+            0.25,
+            0.25
+          ]
+        },
+        "moving": {
+          "n": 12,
+          "mean_prediction_accuracy": 0.3333333333333333,
+          "member_accuracies": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h64-seed19-at25000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.01025390625,
+          "member_accuracies": [
+            0.010986328125,
+            0.009521484375,
+            0.0087890625
+          ]
+        },
+        "blocked": {
+          "n": 1268,
+          "mean_prediction_accuracy": 0.015772870662460567,
+          "member_accuracies": [
+            0.015772870662460567,
+            0.014195583596214511,
+            0.01498422712933754
+          ]
+        },
+        "moving": {
+          "n": 2828,
+          "mean_prediction_accuracy": 0.007779349363507779,
+          "member_accuracies": [
+            0.00884016973125884,
+            0.007425742574257425,
+            0.006011315417256012
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.00634765625,
+          "member_accuracies": [
+            0.006591796875,
+            0.006591796875,
+            0.00537109375
+          ]
+        },
+        "blocked": {
+          "n": 1300,
+          "mean_prediction_accuracy": 0.004615384615384616,
+          "member_accuracies": [
+            0.004615384615384616,
+            0.005384615384615384,
+            0.006153846153846154
+          ]
+        },
+        "moving": {
+          "n": 2796,
+          "mean_prediction_accuracy": 0.00715307582260372,
+          "member_accuracies": [
+            0.0075107296137339056,
+            0.00715307582260372,
+            0.005007153075822604
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h64-seed19-at50000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.248291015625,
+          "member_accuracies": [
+            0.246826171875,
+            0.246337890625,
+            0.249755859375
+          ]
+        },
+        "blocked": {
+          "n": 1324,
+          "mean_prediction_accuracy": 0.25604229607250756,
+          "member_accuracies": [
+            0.2552870090634441,
+            0.2545317220543807,
+            0.256797583081571
+          ]
+        },
+        "moving": {
+          "n": 2772,
+          "mean_prediction_accuracy": 0.24458874458874458,
+          "member_accuracies": [
+            0.2427849927849928,
+            0.24242424242424243,
+            0.24639249639249639
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.25244140625,
+          "member_accuracies": [
+            0.253173828125,
+            0.25146484375,
+            0.251708984375
+          ]
+        },
+        "blocked": {
+          "n": 1404,
+          "mean_prediction_accuracy": 0.27849002849002846,
+          "member_accuracies": [
+            0.27706552706552706,
+            0.27706552706552706,
+            0.27492877492877493
+          ]
+        },
+        "moving": {
+          "n": 2692,
+          "mean_prediction_accuracy": 0.23885586924219912,
+          "member_accuracies": [
+            0.24071322436849926,
+            0.23811292719167904,
+            0.23959881129271918
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h64-seed20-at25000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.01611328125,
+          "member_accuracies": [
+            0.01416015625,
+            0.01611328125,
+            0.01806640625
+          ]
+        },
+        "blocked": {
+          "n": 1248,
+          "mean_prediction_accuracy": 0.020032051282051284,
+          "member_accuracies": [
+            0.01842948717948718,
+            0.020032051282051284,
+            0.020833333333333332
+          ]
+        },
+        "moving": {
+          "n": 2848,
+          "mean_prediction_accuracy": 0.014396067415730338,
+          "member_accuracies": [
+            0.01228932584269663,
+            0.014396067415730338,
+            0.016853932584269662
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.008544921875,
+          "member_accuracies": [
+            0.00830078125,
+            0.006591796875,
+            0.00732421875
+          ]
+        },
+        "blocked": {
+          "n": 1344,
+          "mean_prediction_accuracy": 0.00818452380952381,
+          "member_accuracies": [
+            0.00744047619047619,
+            0.00744047619047619,
+            0.00744047619047619
+          ]
+        },
+        "moving": {
+          "n": 2752,
+          "mean_prediction_accuracy": 0.00872093023255814,
+          "member_accuracies": [
+            0.00872093023255814,
+            0.0061773255813953485,
+            0.007267441860465116
+          ]
+        }
+      }
+    }
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h64-seed20-at50000.json",
+    "groups": {
+      "seen_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.196044921875,
+          "member_accuracies": [
+            0.197265625,
+            0.19873046875,
+            0.194580078125
+          ]
+        },
+        "blocked": {
+          "n": 1256,
+          "mean_prediction_accuracy": 0.21894904458598727,
+          "member_accuracies": [
+            0.2197452229299363,
+            0.22054140127388536,
+            0.21735668789808918
+          ]
+        },
+        "moving": {
+          "n": 2840,
+          "mean_prediction_accuracy": 0.18591549295774648,
+          "member_accuracies": [
+            0.18732394366197183,
+            0.18908450704225352,
+            0.18450704225352113
+          ]
+        }
+      },
+      "untried_edges": {
+        "probes": 4096,
+        "physical_edges": 1024,
+        "all": {
+          "n": 4096,
+          "mean_prediction_accuracy": 0.20458984375,
+          "member_accuracies": [
+            0.20947265625,
+            0.202880859375,
+            0.203125
+          ]
+        },
+        "blocked": {
+          "n": 1208,
+          "mean_prediction_accuracy": 0.2052980132450331,
+          "member_accuracies": [
+            0.21274834437086093,
+            0.20695364238410596,
+            0.201158940397351
+          ]
+        },
+        "moving": {
+          "n": 2888,
+          "mean_prediction_accuracy": 0.20429362880886426,
+          "member_accuracies": [
+            0.20810249307479226,
+            0.20117728531855955,
+            0.20394736842105263
+          ]
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "name": "dynamics-clean",
+    "objective": "dynamics",
+    "nuisance_dims": 0
+  },
+  {
+    "name": "adjacency-clean",
+    "objective": "adjacency",
+    "nuisance_dims": 0
+  },
+  {
+    "name": "dynamics-iid",
+    "objective": "dynamics",
+    "proposal": "iid"
+  },
+  {
+    "name": "adjacency-iid",
+    "objective": "adjacency",
+    "proposal": "iid"
+  },
+  {
+    "name": "dynamics-smallstep",
+    "objective": "dynamics",
+    "step_size": 0.125
+  },
+  {
+    "name": "adjacency-smallstep",
+    "objective": "adjacency",
+    "step_size": 0.125
+  },
+  {
+    "name": "frozen-noisy",
+    "objective": "frozen"
+  },
+  {
+    "name": "frozen-clean",
+    "objective": "frozen",
+    "nuisance_dims": 0
+  }
+]

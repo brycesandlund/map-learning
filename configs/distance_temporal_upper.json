@@ -1,0 +1,10 @@
+{
+  "kind": "temporal_upper",
+  "weight": 1.0,
+  "horizon": 64,
+  "edge_cost": 0.1,
+  "epsilon": 0.05,
+  "dual_lr": 0.1,
+  "push_scale": 20.0,
+  "bandwidth": 1.0
+}

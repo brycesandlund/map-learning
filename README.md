@@ -23,6 +23,28 @@ Python 3.11+; CPU is the default and is sufficient for these mazes. PyTorch, Num
 and Matplotlib are the only runtime dependencies. `uv.lock` pins the resolved environment.
 Alternatively: `python -m pip install -e '.[dev]'` in a virtual environment.
 
+## Distance-centric noisy-frontier experiments
+
+The persistent frontier can now train its deterministic encoder with adjacent
+attraction, QRL-inspired upper-bound expansion, temporal stress, or Student-t
+neighbor affinities. These use actual recorded transitions/ancestry and the same
+Euclidean nearest-visited queue; auxiliary dynamics are detached from the encoder.
+See the [results and animations](docs/distance-study.md) and
+[loss definitions and controlled protocol](docs/distance-objectives.md).
+
+```bash
+python scripts/persistent_frontier.py --config configs/deterministic_frontier.json \
+  --arm interleaved100 --seed 100 --distance-spec configs/distance_adjacency.json \
+  --out runs/adjacency-frontier-new
+```
+
+This example uses adjacent attraction weight .3, repulsion .03 and latent L2 .03.
+Other objective specs are `configs/distance_{affinity,qrl_upper,temporal,temporal_upper}.json`;
+affinity and QRL specs require `--repulsion-weight 0` for the documented settings.
+The other example specs retain repulsion .03; all these example specs use L2 .03.
+Temporal labels follow actual parent links across simulator restores, never queue-pop
+order. No physical-state merging, shortest-path labels, or noise resampling enters training.
+
 ## Joint probabilistic dynamics and exploration
 
 ```bash
@@ -507,3 +529,16 @@ See [latent L2 and observation-noise experiments](docs/l2-noise.md) for the coef
 See [shared-replay latent geometry](docs/l2-geometry.md) for side-by-side baseline/KL/L2 maps, a rotating view, directional noise measurements, and queue-ranking diagnostics. The baseline becomes nearly one-dimensional; L2 preserves two substantial spatial directions.
 
 The current [deterministic formulation](docs/deterministic-formulation.md) uses `z=f(o)`, residual dynamics MSE, repulsion, and optional latent L2. Use `configs/deterministic_frontier.json` with `scripts/persistent_frontier.py --config`; no posterior, prior, or predictive-variance outputs are built. Historical KL runs remain available separately. The document includes checkpoint conversion and exact-update validation.
+
+### Continuous-coordinate frontier experiments
+
+The [continuous maze study](docs/continuous-study.md) replaces the five lattice-producing actions with real-valued 2D controls, while retaining observation noise and the persistent latent-distance frontier. It compares joint dynamics and adjacency encoders, fresh seeds/layouts, action-proposal and noise controls, and smaller movements. Coverage is reported at several spatial resolutions; evaluation bins never enter the agent.
+
+```
+.venv/bin/python scripts/continuous_frontier.py --objective dynamics \
+  --seed 100 --out runs/new-continuous-dynamics
+.venv/bin/python scripts/continuous_frontier.py --objective adjacency \
+  --seed 100 --out runs/new-continuous-adjacency
+```
+
+Use `configs/continuous_frontier.json` (the runner's default). Dynamics takes the actual action vector via `model.continuous_action_dim=2`; zero retains legacy discrete actions. The continuous runner supplies these vectors and uses simulator restores, not an imagined planner or actor. `--proposal iid`, `--step-size .125`, and `--nuisance-dims 0` reproduce the principal ablations. See [protocol and manifests](docs/continuous-study-protocol.md) for budgets and all staged decisions.

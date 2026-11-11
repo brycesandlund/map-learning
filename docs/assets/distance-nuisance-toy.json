@@ -1,0 +1,26 @@
+{
+  "assumptions": "Small centered independent nuisance, equal endpoint distributions, every repulsion hinge active; not an estimate from adaptive online replay.",
+  "samples": 1000000,
+  "rows": [
+    {
+      "weight": 0.01,
+      "analytic_coefficient": -0.009999999999999995,
+      "monte_carlo_coefficient": -0.010096694695889388
+    },
+    {
+      "weight": 0.03,
+      "analytic_coefficient": 0.03,
+      "monte_carlo_coefficient": 0.02992597475543612
+    },
+    {
+      "weight": 0.1,
+      "analytic_coefficient": 0.17,
+      "monte_carlo_coefficient": 0.17000531783507541
+    },
+    {
+      "weight": 0.3,
+      "analytic_coefficient": 0.5700000000000001,
+      "monte_carlo_coefficient": 0.5702320123483305
+    }
+  ]
+}

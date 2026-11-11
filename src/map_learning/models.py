@@ -142,15 +142,22 @@ class DynamicsEnsemble(nn.Module):
     def __init__(self, config, actions=5):
         super().__init__()
         self.actions = actions
-        self.heads = nn.ModuleList([mlp(config.latent_dim+actions, config.hidden_dim, config.latent_dim, config.hidden_layers)
+        self.continuous_action_dim = config.continuous_action_dim
+        action_features = self.continuous_action_dim or actions
+        self.heads = nn.ModuleList([mlp(config.latent_dim+action_features, config.hidden_dim, config.latent_dim, config.hidden_layers)
                                     for _ in range(config.ensemble_size)])
         for head in self.heads:
             nn.init.normal_(head[-1].weight, std=.01)
             nn.init.zeros_(head[-1].bias)
 
     def predict_head(self, index, z, action):
-        one_hot = F.one_hot(action.long(), self.actions).to(z.dtype)
-        return z + self.heads[index](torch.cat([z, one_hot], -1))
+        if self.continuous_action_dim:
+            if action.shape != (*z.shape[:-1], self.continuous_action_dim):
+                raise ValueError("Continuous actions must match the latent batch and action dimension")
+            features = action.to(z.dtype)
+        else:
+            features = F.one_hot(action.long(), self.actions).to(z.dtype)
+        return z + self.heads[index](torch.cat([z, features], -1))
 
     def forward(self, z, action):
         return torch.stack([self.predict_head(i, z, action) for i in range(len(self.heads))])

@@ -1,0 +1,6 @@
+[
+  {"name":"dynamics","objective":"dynamics"},
+  {"name":"adjacency","objective":"adjacency"},
+  {"name":"oracle-xy","objective":"oracle_xy"},
+  {"name":"random-queue","objective":"random_queue"}
+]

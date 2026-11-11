@@ -35,6 +35,7 @@ def main():
     p.add_argument('--noise-schedule',type=Path)
     p.add_argument('--prior-steps',type=int,default=1)
     p.add_argument('--latent-l2',type=float,default=None)
+    p.add_argument('--distance-spec',type=Path,help='JSON DistanceSpec; auxiliary dynamics detached from encoder')
     p.add_argument('--extra-updates',type=int,default=0)
     p.add_argument('--extra-placement',choices=['early','distributed'],default='early')
     a=p.parse_args()
@@ -58,8 +59,14 @@ def main():
         noise_schedule=json.loads(a.noise_schedule.read_text()) if a.noise_schedule else None
         t=BottleneckTrainer(cfg,env.observation_shape,a.bottleneck_beta,a.prior_components,a.initial_std,a.prior_lr_multiplier,a.kl_warmup_updates,a.prior_mode,
                             dynamics_input=a.dynamics_input,noise_schedule=noise_schedule,prior_steps=a.prior_steps,latent_l2=a.latent_l2 or 0.)
+    if a.distance_spec:
+        if a.bottleneck_beta is not None:p.error('Distance experiments use native deterministic encoder')
+        from map_learning.distance_learning import DistanceTrainer
+        seed_all(cfg.seed,cfg.threads)
+        t=DistanceTrainer(cfg,env.observation_shape,json.loads(a.distance_spec.read_text()))
+    distance_spec = vars(t.distance_spec) if hasattr(t,'distance_spec') else None
     replay=Replay(); schedule=TrainingSchedule(t)
-    out=prepare_run(a.out,cfg,{'arm':a.arm,'blocks':a.blocks,'block_expansions':a.block_expansions,'extra_updates':a.extra_updates,'extra_placement':a.extra_placement,'bottleneck_spec':getattr(t,'spec',None),
+    out=prepare_run(a.out,cfg,{'arm':a.arm,'blocks':a.blocks,'block_expansions':a.block_expansions,'extra_updates':a.extra_updates,'extra_placement':a.extra_placement,'bottleneck_spec':getattr(t,'spec',None),'distance_spec':distance_spec,
         'protocol':'Persistent visited raw observations and frontier; no identity checks or merging. Re-encode both and recompute exact priorities after training. Same full-epoch sample exposure and gradient-step counts at block boundaries; frequent arm causally partitions epoch into 10 intervals (variable minibatch sizes). No search restart after initialization.'})
     (out/'runner.py').write_text(Path(__file__).read_text())
     (out/'diagnostics_source.py').write_text(Path(__file__).with_name('noisy_frontier.py').read_text())
@@ -68,6 +75,7 @@ def main():
     @torch.no_grad()
     def encode(obs): return t.model.encode(t.tensor(obs)).numpy()
     obs=env.reset(); position=env.position.copy(); z=encode(obs[None])[0]
+    if distance_spec:t.ancestry.root(obs)
     queue=PersistentDistanceFrontier(cfg.collect_steps,cfg.model.latent_dim,env.observation_shape,np.random.default_rng(cfg.seed+72000))
     # Evaluation-only physical graph and accounting, never inputs to priority/learning.
     points,_,index=reachable_graph(Maze(cfg.maze)); visited={tuple(position)}; expanded=set()
@@ -85,6 +93,7 @@ def main():
                 tic=time.monotonic()
                 if block or offset: obs,position,z,score=queue.pop()
                 else: score=0.
+                node_id=queue.last_popped_index+1 if block or offset else 0
                 key=tuple(position)
                 cumulative_repeats+=key in expanded; block_repeats+=key in block_expanded
                 expanded.add(key); block_expanded.add(key)
@@ -93,6 +102,9 @@ def main():
                     env.position=position.copy()
                     nxt,_=env.step(action); nxt_pos=env.position.copy()
                     replay.add(obs,action,nxt,len(replay),position,nxt_pos)
+                    if distance_spec:
+                        child=t.ancestry.add(node_id,nxt)
+                        assert child==len(replay)
                     nz=encode(nxt[None])[0]
                     queue.add(nxt,nz,nxt_pos)
                     visited.add(tuple(nxt_pos))
@@ -145,7 +157,7 @@ def main():
                 **diagnostics(t,replay,points))
             if hasattr(t,'bottleneck_diagnostics'):row['bottleneck']=t.bottleneck_diagnostics(replay)
             rows.append(dict(row)); log_metrics(blocks,row);print(json.dumps(row),flush=True)
-            if block+1 in {1,5,10,a.blocks}:t.save(out/f'checkpoint-{block+1}.pt')
+            if block+1 in {1,5,10,15,a.blocks}:t.save(out/f'checkpoint-{block+1}.pt')
     t.save(out/'checkpoint.pt');replay.save(out/'replay.npz',cfg.maze)
     mask=np.zeros((len(frames),len(points)),dtype=bool)
     for i,f in enumerate(frames):mask[i,[index[tuple(np.round(x,5))] for x in f[2]]]=True
@@ -153,7 +165,7 @@ def main():
     ids=np.flatnonzero(queue.active)
     np.savez_compressed(out/'frontier.npz',observations=queue.observations[ids],positions=np.array(queue.entries)[ids],
         priorities=queue.priority[ids],latents=queue.latents[ids],visited_observations=queue.visited_observations[:queue.n_visited])
-    result={'arm':a.arm,'seed':a.seed,'extra_updates':a.extra_updates,'extra_placement':a.extra_placement,'bottleneck_spec':getattr(t,'spec',None),'initial_parameters_sha256':initial_hash,'reachable_states':len(points),
+    result={'arm':a.arm,'seed':a.seed,'extra_updates':a.extra_updates,'extra_placement':a.extra_placement,'bottleneck_spec':getattr(t,'spec',None),'distance_spec':distance_spec,'initial_parameters_sha256':initial_hash,'reachable_states':len(points),
         'interactions':len(replay),'updates':t.updates,'samples_per_head':samples_per_head,'batch_size_range':[min_batch,max_batch],
         'visited':len(visited),'coverage':len(visited)/len(points),'first_full':first_full,'milestones':milestones,
         'trained_through':schedule.trained_through,'frontier_entries':int(queue.active.sum()),'visited_entries':queue.n_visited,

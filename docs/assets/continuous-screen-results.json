@@ -1,0 +1,1075 @@
+[
+  {
+    "root": "runs/continuous-screen-20261111",
+    "manifest": {
+      "arms": [
+        {
+          "name": "dynamics",
+          "objective": "dynamics"
+        },
+        {
+          "name": "adjacency",
+          "objective": "adjacency"
+        },
+        {
+          "name": "oracle-xy",
+          "objective": "oracle_xy"
+        },
+        {
+          "name": "random-queue",
+          "objective": "random_queue"
+        }
+      ],
+      "seeds": [
+        30,
+        31,
+        32
+      ],
+      "blocks": 20,
+      "created_unix": 1794414718.243009,
+      "workers": 4
+    },
+    "summary": [
+      {
+        "name": "dynamics",
+        "coverage_k1": {
+          "mean": 1.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "coverage_k2": {
+          "mean": 1.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "coverage_k4": {
+          "mean": 1.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.9911747685185185,
+          "values": [
+            0.9932725694444444,
+            0.98828125,
+            0.9919704861111112
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.6132490596064816,
+          "values": [
+            0.627626953125,
+            0.5630544704861111,
+            0.6490657552083333
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.9989510995370371,
+          "values": [
+            0.9991319444444444,
+            0.9986979166666666,
+            0.9990234375
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.1389875,
+          "values": [
+            0.138075,
+            0.142125,
+            0.1367625
+          ]
+        },
+        "k1_100": {
+          "values": [
+            55576,
+            61597,
+            53032
+          ],
+          "successes": 3,
+          "mean_if_all_reach": 56735.0
+        },
+        "k4_90": {
+          "values": [
+            50082,
+            58123,
+            47889
+          ],
+          "successes": 3,
+          "mean_if_all_reach": 52031.333333333336
+        },
+        "k4_95": {
+          "values": [
+            51847,
+            60542,
+            49529
+          ],
+          "successes": 3,
+          "mean_if_all_reach": 53972.666666666664
+        },
+        "k4_99": {
+          "values": [
+            56242,
+            64187,
+            53053
+          ],
+          "successes": 3,
+          "mean_if_all_reach": 57827.333333333336
+        }
+      },
+      {
+        "name": "adjacency",
+        "coverage_k1": {
+          "mean": 1.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "coverage_k2": {
+          "mean": 1.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "coverage_k4": {
+          "mean": 1.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.9926576967592592,
+          "values": [
+            0.9931640625,
+            0.9899088541666666,
+            0.9949001736111112
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.6244585503472222,
+          "values": [
+            0.6523697916666666,
+            0.6188411458333333,
+            0.6021647135416667
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.9994936342592592,
+          "values": [
+            0.9995659722222222,
+            0.9994574652777778,
+            0.9994574652777778
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.1304625,
+          "values": [
+            0.1288625,
+            0.130175,
+            0.13235
+          ]
+        },
+        "k1_100": {
+          "values": [
+            59367,
+            55616,
+            78001
+          ],
+          "successes": 3,
+          "mean_if_all_reach": 64328.0
+        },
+        "k4_90": {
+          "values": [
+            48512,
+            51926,
+            57958
+          ],
+          "successes": 3,
+          "mean_if_all_reach": 52798.666666666664
+        },
+        "k4_95": {
+          "values": [
+            50136,
+            54277,
+            72537
+          ],
+          "successes": 3,
+          "mean_if_all_reach": 58983.333333333336
+        },
+        "k4_99": {
+          "values": [
+            59378,
+            63663,
+            77578
+          ],
+          "successes": 3,
+          "mean_if_all_reach": 66873.0
+        }
+      },
+      {
+        "name": "oracle-xy",
+        "coverage_k1": {
+          "mean": 1.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "coverage_k2": {
+          "mean": 1.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "coverage_k4": {
+          "mean": 1.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.9991319444444445,
+          "values": [
+            0.9984809027777778,
+            0.9993489583333334,
+            0.9995659722222222
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.9311982783564815,
+          "values": [
+            0.9325390625,
+            0.929172092013889,
+            0.9318836805555556
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.9999638310185185,
+          "values": [
+            1.0,
+            1.0,
+            0.9998914930555556
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.09302916666666666,
+          "values": [
+            0.0929875,
+            0.0927625,
+            0.0933375
+          ]
+        },
+        "k1_100": {
+          "values": [
+            14209,
+            15267,
+            14718
+          ],
+          "successes": 3,
+          "mean_if_all_reach": 14731.333333333334
+        },
+        "k4_90": {
+          "values": [
+            13068,
+            13367,
+            12944
+          ],
+          "successes": 3,
+          "mean_if_all_reach": 13126.333333333334
+        },
+        "k4_95": {
+          "values": [
+            13867,
+            14204,
+            13767
+          ],
+          "successes": 3,
+          "mean_if_all_reach": 13946.0
+        },
+        "k4_99": {
+          "values": [
+            14647,
+            15336,
+            16172
+          ],
+          "successes": 3,
+          "mean_if_all_reach": 15385.0
+        }
+      },
+      {
+        "name": "random-queue",
+        "coverage_k1": {
+          "mean": 0.05555555555555555,
+          "values": [
+            0.05555555555555555,
+            0.0625,
+            0.04861111111111111
+          ]
+        },
+        "coverage_k2": {
+          "mean": 0.04456018518518518,
+          "values": [
+            0.043402777777777776,
+            0.046875,
+            0.043402777777777776
+          ]
+        },
+        "coverage_k4": {
+          "mean": 0.03660300925925926,
+          "values": [
+            0.033854166666666664,
+            0.040364583333333336,
+            0.035590277777777776
+          ]
+        },
+        "coverage_k8": {
+          "mean": 0.03179253472222223,
+          "values": [
+            0.0302734375,
+            0.033528645833333336,
+            0.031575520833333336
+          ]
+        },
+        "auc_k4": {
+          "mean": 0.029777741608796298,
+          "values": [
+            0.028597005208333335,
+            0.03152289496527778,
+            0.02921332465277778
+          ]
+        },
+        "fill_radius_0.1": {
+          "mean": 0.03414351851851852,
+          "values": [
+            0.03211805555555555,
+            0.036783854166666664,
+            0.033528645833333336
+          ]
+        },
+        "blocked_fraction": {
+          "mean": 0.0904875,
+          "values": [
+            0.090675,
+            0.1023375,
+            0.07845
+          ]
+        },
+        "k1_100": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_90": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_95": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        },
+        "k4_99": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "successes": 0,
+          "mean_if_all_reach": null
+        }
+      }
+    ],
+    "runs": [
+      {
+        "name": "dynamics",
+        "run": "runs/continuous-screen-20261111/dynamics-seed30",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.018780017181365873,
+        "blocked_fraction": 0.138075,
+        "coverage_k1": 1.0,
+        "coverage_k2": 1.0,
+        "coverage_k4": 1.0,
+        "coverage_k8": 0.9932725694444444,
+        "seconds": 64.59723083255813,
+        "objective": "dynamics",
+        "seed": 30,
+        "layout": 7,
+        "proposal": "stratified",
+        "nuisance_dims": 8,
+        "step_size": 0.25,
+        "adjacency_weight": 0.3,
+        "initial_parameters_sha256": "284a9c8dd2132921b1caba0e5ebe3433bf66b0c185fc23cca19cefbdffe08969",
+        "samples_per_head": 1050000,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 37328,
+          "k2_50": 38477,
+          "k4_50": 39711,
+          "k8_50": 42136,
+          "k1_90": 47319,
+          "k2_90": 48384,
+          "k4_90": 50082,
+          "k1_95": 50332,
+          "k2_95": 50901,
+          "k4_95": 51847,
+          "k1_99": 54601,
+          "k2_99": 55281,
+          "k1_100": 55576,
+          "k4_99": 56242,
+          "k2_100": 57037,
+          "k8_90": 57446,
+          "k4_100": 65112,
+          "k8_95": 66846,
+          "k8_99": 95139
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 68954,
+        "unique_endpoints": 68955,
+        "fill_radius_0.05": 0.9344618055555556,
+        "fill_radius_0.1": 0.9991319444444444,
+        "fill_radius_0.2": 1.0,
+        "training_seconds": 27.937725780997425,
+        "refresh_seconds": 13.03285309439525,
+        "search_seconds": 22.744152462109923,
+        "action_stream_sha256": "e0b41019ad73b0928de851278ccff971d5d82202b4835c3af406e0910067ef35",
+        "auc_k1": 0.6613194444444443,
+        "auc_k2": 0.6407248263888888,
+        "auc_k4": 0.627626953125,
+        "auc_k8": 0.5826247829861111
+      },
+      {
+        "name": "adjacency",
+        "run": "runs/continuous-screen-20261111/adjacency-seed30",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.015301784663912858,
+        "blocked_fraction": 0.1288625,
+        "coverage_k1": 1.0,
+        "coverage_k2": 1.0,
+        "coverage_k4": 1.0,
+        "coverage_k8": 0.9931640625,
+        "seconds": 65.00476320786402,
+        "objective": "adjacency",
+        "seed": 30,
+        "layout": 7,
+        "proposal": "stratified",
+        "nuisance_dims": 8,
+        "step_size": 0.25,
+        "adjacency_weight": 0.3,
+        "initial_parameters_sha256": "284a9c8dd2132921b1caba0e5ebe3433bf66b0c185fc23cca19cefbdffe08969",
+        "samples_per_head": 1050000,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 33478,
+          "k2_50": 34994,
+          "k4_50": 36736,
+          "k8_50": 39501,
+          "k1_90": 45762,
+          "k2_90": 47696,
+          "k4_90": 48512,
+          "k1_95": 48517,
+          "k2_95": 49134,
+          "k4_95": 50136,
+          "k1_99": 54007,
+          "k2_99": 55876,
+          "k8_90": 56224,
+          "k1_100": 59367,
+          "k4_99": 59378,
+          "k2_100": 62007,
+          "k8_95": 69966,
+          "k4_100": 83948,
+          "k8_99": 91559
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 69691,
+        "unique_endpoints": 69692,
+        "fill_radius_0.05": 0.9380425347222222,
+        "fill_radius_0.1": 0.9995659722222222,
+        "fill_radius_0.2": 1.0,
+        "training_seconds": 27.482295792084187,
+        "refresh_seconds": 13.598876624368131,
+        "search_seconds": 22.919192165602,
+        "action_stream_sha256": "e0b41019ad73b0928de851278ccff971d5d82202b4835c3af406e0910067ef35",
+        "auc_k1": 0.6861805555555556,
+        "auc_k2": 0.6670659722222222,
+        "auc_k4": 0.6523697916666666,
+        "auc_k8": 0.6066819932725693
+      },
+      {
+        "name": "oracle-xy",
+        "run": "runs/continuous-screen-20261111/oracle-xy-seed30",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 0,
+        "frontier_entries": 80001,
+        "selected_priority": 0.009818166569951142,
+        "blocked_fraction": 0.0929875,
+        "coverage_k1": 1.0,
+        "coverage_k2": 1.0,
+        "coverage_k4": 1.0,
+        "coverage_k8": 0.9984809027777778,
+        "seconds": 21.490817207843065,
+        "objective": "oracle_xy",
+        "seed": 30,
+        "layout": 7,
+        "proposal": "stratified",
+        "nuisance_dims": 8,
+        "step_size": 0.25,
+        "adjacency_weight": 0.3,
+        "initial_parameters_sha256": "284a9c8dd2132921b1caba0e5ebe3433bf66b0c185fc23cca19cefbdffe08969",
+        "samples_per_head": 0,
+        "trained_through": 0,
+        "milestones": {
+          "k1_50": 5532,
+          "k2_50": 5837,
+          "k4_50": 6317,
+          "k8_50": 9518,
+          "k1_90": 12763,
+          "k2_90": 12908,
+          "k4_90": 13068,
+          "k1_95": 13543,
+          "k2_95": 13594,
+          "k4_95": 13867,
+          "k1_99": 14176,
+          "k1_100": 14209,
+          "k2_99": 14231,
+          "k4_99": 14647,
+          "k2_100": 16507,
+          "k4_100": 21983,
+          "k8_90": 26783,
+          "k8_95": 36537,
+          "k8_99": 60149
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 72561,
+        "unique_endpoints": 72562,
+        "fill_radius_0.05": 0.9753689236111112,
+        "fill_radius_0.1": 1.0,
+        "fill_radius_0.2": 1.0,
+        "training_seconds": 0.0,
+        "refresh_seconds": 2.5505421976558864,
+        "search_seconds": 18.182968938723207,
+        "action_stream_sha256": "e0b41019ad73b0928de851278ccff971d5d82202b4835c3af406e0910067ef35",
+        "auc_k1": 0.9394097222222222,
+        "auc_k2": 0.9357855902777779,
+        "auc_k4": 0.9325390625,
+        "auc_k8": 0.874619140625
+      },
+      {
+        "name": "random-queue",
+        "run": "runs/continuous-screen-20261111/random-queue-seed30",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 0,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00022760287844809,
+        "blocked_fraction": 0.090675,
+        "coverage_k1": 0.05555555555555555,
+        "coverage_k2": 0.043402777777777776,
+        "coverage_k4": 0.033854166666666664,
+        "coverage_k8": 0.0302734375,
+        "seconds": 20.789104625117034,
+        "objective": "random_queue",
+        "seed": 30,
+        "layout": 7,
+        "proposal": "stratified",
+        "nuisance_dims": 8,
+        "step_size": 0.25,
+        "adjacency_weight": 0.3,
+        "initial_parameters_sha256": "284a9c8dd2132921b1caba0e5ebe3433bf66b0c185fc23cca19cefbdffe08969",
+        "samples_per_head": 0,
+        "trained_through": 0,
+        "milestones": {},
+        "quarter_lattice_fraction": 3.999960000399996e-05,
+        "moving_transitions": 72746,
+        "unique_endpoints": 72747,
+        "fill_radius_0.05": 0.027452256944444444,
+        "fill_radius_0.1": 0.03211805555555555,
+        "fill_radius_0.2": 0.03624131944444445,
+        "training_seconds": 0.0,
+        "refresh_seconds": 2.9183071171864867,
+        "search_seconds": 17.156923408154398,
+        "action_stream_sha256": "e0b41019ad73b0928de851278ccff971d5d82202b4835c3af406e0910067ef35",
+        "auc_k1": 0.047430555555555545,
+        "auc_k2": 0.035358072916666664,
+        "auc_k4": 0.028597005208333335,
+        "auc_k8": 0.024415825737847226
+      },
+      {
+        "name": "dynamics",
+        "run": "runs/continuous-screen-20261111/dynamics-seed31",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.024816078226928693,
+        "blocked_fraction": 0.142125,
+        "coverage_k1": 1.0,
+        "coverage_k2": 1.0,
+        "coverage_k4": 1.0,
+        "coverage_k8": 0.98828125,
+        "seconds": 65.2688328330405,
+        "objective": "dynamics",
+        "seed": 31,
+        "layout": 7,
+        "proposal": "stratified",
+        "nuisance_dims": 8,
+        "step_size": 0.25,
+        "adjacency_weight": 0.3,
+        "initial_parameters_sha256": "4604042885759a3271ba22039732a2fcd0d2a36dac1577bc376c9c5c52465222",
+        "samples_per_head": 1050000,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 44476,
+          "k2_50": 47739,
+          "k4_50": 49252,
+          "k8_50": 51662,
+          "k1_90": 56131,
+          "k1_95": 57151,
+          "k2_90": 57156,
+          "k4_90": 58123,
+          "k2_95": 58859,
+          "k4_95": 60542,
+          "k1_99": 60737,
+          "k1_100": 61597,
+          "k2_99": 61604,
+          "k2_100": 64187,
+          "k4_99": 64187,
+          "k8_90": 66102,
+          "k4_100": 73176,
+          "k8_95": 74167
+        },
+        "quarter_lattice_fraction": 4.999950000499995e-05,
+        "moving_transitions": 68630,
+        "unique_endpoints": 68631,
+        "fill_radius_0.05": 0.9217664930555556,
+        "fill_radius_0.1": 0.9986979166666666,
+        "fill_radius_0.2": 1.0,
+        "training_seconds": 28.20121653750539,
+        "refresh_seconds": 13.229611593298614,
+        "search_seconds": 22.973730229306966,
+        "action_stream_sha256": "e7b7763e369ac5d0fb6519476e74004a811c400895592263c0524433cb5572e5",
+        "auc_k1": 0.6067534722222222,
+        "auc_k2": 0.5803428819444445,
+        "auc_k4": 0.5630544704861111,
+        "auc_k8": 0.5196758355034723
+      },
+      {
+        "name": "adjacency",
+        "run": "runs/continuous-screen-20261111/adjacency-seed31",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.016486397153560685,
+        "blocked_fraction": 0.130175,
+        "coverage_k1": 1.0,
+        "coverage_k2": 1.0,
+        "coverage_k4": 1.0,
+        "coverage_k8": 0.9899088541666666,
+        "seconds": 64.72855975013226,
+        "objective": "adjacency",
+        "seed": 31,
+        "layout": 7,
+        "proposal": "stratified",
+        "nuisance_dims": 8,
+        "step_size": 0.25,
+        "adjacency_weight": 0.3,
+        "initial_parameters_sha256": "4604042885759a3271ba22039732a2fcd0d2a36dac1577bc376c9c5c52465222",
+        "samples_per_head": 1050000,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 38734,
+          "k2_50": 40929,
+          "k4_50": 42024,
+          "k8_50": 44362,
+          "k1_90": 50884,
+          "k2_90": 51302,
+          "k1_95": 51382,
+          "k4_90": 51926,
+          "k2_95": 52782,
+          "k4_95": 54277,
+          "k1_99": 55361,
+          "k1_100": 55616,
+          "k2_99": 57562,
+          "k8_90": 61487,
+          "k4_99": 63663,
+          "k2_100": 65261,
+          "k8_95": 73566,
+          "k4_100": 75504
+        },
+        "quarter_lattice_fraction": 3.999960000399996e-05,
+        "moving_transitions": 69586,
+        "unique_endpoints": 69587,
+        "fill_radius_0.05": 0.9337022569444444,
+        "fill_radius_0.1": 0.9994574652777778,
+        "fill_radius_0.2": 1.0,
+        "training_seconds": 27.996621751692146,
+        "refresh_seconds": 13.025463704019785,
+        "search_seconds": 22.774874957744032,
+        "action_stream_sha256": "e7b7763e369ac5d0fb6519476e74004a811c400895592263c0524433cb5572e5",
+        "auc_k1": 0.6554340277777778,
+        "auc_k2": 0.6336111111111111,
+        "auc_k4": 0.6188411458333333,
+        "auc_k8": 0.5755386013454861
+      },
+      {
+        "name": "oracle-xy",
+        "run": "runs/continuous-screen-20261111/oracle-xy-seed31",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 0,
+        "frontier_entries": 80001,
+        "selected_priority": 0.00927527551251284,
+        "blocked_fraction": 0.0927625,
+        "coverage_k1": 1.0,
+        "coverage_k2": 1.0,
+        "coverage_k4": 1.0,
+        "coverage_k8": 0.9993489583333334,
+        "seconds": 21.58472750009969,
+        "objective": "oracle_xy",
+        "seed": 31,
+        "layout": 7,
+        "proposal": "stratified",
+        "nuisance_dims": 8,
+        "step_size": 0.25,
+        "adjacency_weight": 0.3,
+        "initial_parameters_sha256": "4604042885759a3271ba22039732a2fcd0d2a36dac1577bc376c9c5c52465222",
+        "samples_per_head": 0,
+        "trained_through": 0,
+        "milestones": {
+          "k1_50": 5904,
+          "k2_50": 6336,
+          "k4_50": 6649,
+          "k8_50": 10127,
+          "k1_90": 12888,
+          "k2_90": 13216,
+          "k4_90": 13367,
+          "k1_95": 13581,
+          "k2_95": 13823,
+          "k4_95": 14204,
+          "k1_99": 14489,
+          "k2_99": 14688,
+          "k1_100": 15267,
+          "k2_100": 15282,
+          "k4_99": 15336,
+          "k4_100": 18823,
+          "k8_90": 27326,
+          "k8_95": 36244,
+          "k8_99": 59038
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 72579,
+        "unique_endpoints": 72580,
+        "fill_radius_0.05": 0.9756944444444444,
+        "fill_radius_0.1": 1.0,
+        "fill_radius_0.2": 1.0,
+        "training_seconds": 0.0,
+        "refresh_seconds": 2.597000746522099,
+        "search_seconds": 18.208323335740715,
+        "action_stream_sha256": "e7b7763e369ac5d0fb6519476e74004a811c400895592263c0524433cb5572e5",
+        "auc_k1": 0.9353125,
+        "auc_k2": 0.9322960069444444,
+        "auc_k4": 0.929172092013889,
+        "auc_k8": 0.8737226019965278
+      },
+      {
+        "name": "random-queue",
+        "run": "runs/continuous-screen-20261111/random-queue-seed31",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 0,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0,
+        "blocked_fraction": 0.1023375,
+        "coverage_k1": 0.0625,
+        "coverage_k2": 0.046875,
+        "coverage_k4": 0.040364583333333336,
+        "coverage_k8": 0.033528645833333336,
+        "seconds": 20.697805957868695,
+        "objective": "random_queue",
+        "seed": 31,
+        "layout": 7,
+        "proposal": "stratified",
+        "nuisance_dims": 8,
+        "step_size": 0.25,
+        "adjacency_weight": 0.3,
+        "initial_parameters_sha256": "4604042885759a3271ba22039732a2fcd0d2a36dac1577bc376c9c5c52465222",
+        "samples_per_head": 0,
+        "trained_through": 0,
+        "milestones": {},
+        "quarter_lattice_fraction": 3.999960000399996e-05,
+        "moving_transitions": 71813,
+        "unique_endpoints": 71814,
+        "fill_radius_0.05": 0.030381944444444444,
+        "fill_radius_0.1": 0.036783854166666664,
+        "fill_radius_0.2": 0.04220920138888889,
+        "training_seconds": 0.0,
+        "refresh_seconds": 2.8423317028209567,
+        "search_seconds": 17.205900548491627,
+        "action_stream_sha256": "e7b7763e369ac5d0fb6519476e74004a811c400895592263c0524433cb5572e5",
+        "auc_k1": 0.04855034722222222,
+        "auc_k2": 0.03818359375,
+        "auc_k4": 0.03152289496527778,
+        "auc_k8": 0.026850992838541664
+      },
+      {
+        "name": "dynamics",
+        "run": "runs/continuous-screen-20261111/dynamics-seed32",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.01854536292787336,
+        "blocked_fraction": 0.1367625,
+        "coverage_k1": 1.0,
+        "coverage_k2": 1.0,
+        "coverage_k4": 1.0,
+        "coverage_k8": 0.9919704861111112,
+        "seconds": 60.93877187464386,
+        "objective": "dynamics",
+        "seed": 32,
+        "layout": 7,
+        "proposal": "stratified",
+        "nuisance_dims": 8,
+        "step_size": 0.25,
+        "adjacency_weight": 0.3,
+        "initial_parameters_sha256": "eaba4d0632463f0aae32969da47e4688690f17fdbfb6056faa4228b1f58b0581",
+        "samples_per_head": 1050000,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 34347,
+          "k2_50": 36239,
+          "k4_50": 37073,
+          "k8_50": 39467,
+          "k1_90": 45297,
+          "k2_90": 46719,
+          "k4_90": 47889,
+          "k1_95": 47906,
+          "k2_95": 48312,
+          "k4_95": 49529,
+          "k1_99": 52018,
+          "k2_99": 52578,
+          "k1_100": 53032,
+          "k4_99": 53053,
+          "k2_100": 53557,
+          "k8_90": 54192,
+          "k4_100": 62384,
+          "k8_95": 62984,
+          "k8_99": 96276
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 69059,
+        "unique_endpoints": 69060,
+        "fill_radius_0.05": 0.927734375,
+        "fill_radius_0.1": 0.9990234375,
+        "fill_radius_0.2": 1.0,
+        "training_seconds": 25.63235078472644,
+        "refresh_seconds": 12.576752163469791,
+        "search_seconds": 21.863917087670416,
+        "action_stream_sha256": "fb47389960a002f505432d679b04cb7e74941d034cd647be62a6c947e66a66d5",
+        "auc_k1": 0.6747048611111113,
+        "auc_k2": 0.6593663194444443,
+        "auc_k4": 0.6490657552083333,
+        "auc_k8": 0.6077924262152777
+      },
+      {
+        "name": "adjacency",
+        "run": "runs/continuous-screen-20261111/adjacency-seed32",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 4112,
+        "frontier_entries": 80001,
+        "selected_priority": 0.015306212884627256,
+        "blocked_fraction": 0.13235,
+        "coverage_k1": 1.0,
+        "coverage_k2": 1.0,
+        "coverage_k4": 1.0,
+        "coverage_k8": 0.9949001736111112,
+        "seconds": 60.51005329191685,
+        "objective": "adjacency",
+        "seed": 32,
+        "layout": 7,
+        "proposal": "stratified",
+        "nuisance_dims": 8,
+        "step_size": 0.25,
+        "adjacency_weight": 0.3,
+        "initial_parameters_sha256": "eaba4d0632463f0aae32969da47e4688690f17fdbfb6056faa4228b1f58b0581",
+        "samples_per_head": 1050000,
+        "trained_through": 100000,
+        "milestones": {
+          "k1_50": 37853,
+          "k2_50": 39912,
+          "k4_50": 41038,
+          "k8_50": 43316,
+          "k1_90": 56983,
+          "k2_90": 57448,
+          "k4_90": 57958,
+          "k1_95": 60616,
+          "k2_95": 67273,
+          "k4_95": 72537,
+          "k8_90": 74042,
+          "k1_99": 77536,
+          "k2_99": 77557,
+          "k4_99": 77578,
+          "k1_100": 78001,
+          "k8_95": 78194,
+          "k2_100": 78234,
+          "k4_100": 78427,
+          "k8_99": 91086
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 69412,
+        "unique_endpoints": 69413,
+        "fill_radius_0.05": 0.9329427083333334,
+        "fill_radius_0.1": 0.9994574652777778,
+        "fill_radius_0.2": 1.0,
+        "training_seconds": 25.195901160128415,
+        "refresh_seconds": 12.518563429359347,
+        "search_seconds": 21.89141472708434,
+        "action_stream_sha256": "fb47389960a002f505432d679b04cb7e74941d034cd647be62a6c947e66a66d5",
+        "auc_k1": 0.6361458333333333,
+        "auc_k2": 0.6167491319444444,
+        "auc_k4": 0.6021647135416667,
+        "auc_k8": 0.5617058648003472
+      },
+      {
+        "name": "oracle-xy",
+        "run": "runs/continuous-screen-20261111/oracle-xy-seed32",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 0,
+        "frontier_entries": 80001,
+        "selected_priority": 0.009350186749001751,
+        "blocked_fraction": 0.0933375,
+        "coverage_k1": 1.0,
+        "coverage_k2": 1.0,
+        "coverage_k4": 1.0,
+        "coverage_k8": 0.9995659722222222,
+        "seconds": 21.475058208219707,
+        "objective": "oracle_xy",
+        "seed": 32,
+        "layout": 7,
+        "proposal": "stratified",
+        "nuisance_dims": 8,
+        "step_size": 0.25,
+        "adjacency_weight": 0.3,
+        "initial_parameters_sha256": "eaba4d0632463f0aae32969da47e4688690f17fdbfb6056faa4228b1f58b0581",
+        "samples_per_head": 0,
+        "trained_through": 0,
+        "milestones": {
+          "k1_50": 5361,
+          "k2_50": 5994,
+          "k4_50": 6552,
+          "k8_50": 9483,
+          "k1_90": 12352,
+          "k2_90": 12668,
+          "k1_95": 12852,
+          "k4_90": 12944,
+          "k2_95": 13408,
+          "k4_95": 13767,
+          "k1_99": 14011,
+          "k1_100": 14718,
+          "k2_99": 14748,
+          "k4_99": 16172,
+          "k2_100": 17386,
+          "k4_100": 21363,
+          "k8_90": 26246,
+          "k8_95": 35211,
+          "k8_99": 57443
+        },
+        "quarter_lattice_fraction": 1.999980000199998e-05,
+        "moving_transitions": 72533,
+        "unique_endpoints": 72534,
+        "fill_radius_0.05": 0.9812282986111112,
+        "fill_radius_0.1": 0.9998914930555556,
+        "fill_radius_0.2": 1.0,
+        "training_seconds": 0.0,
+        "refresh_seconds": 2.559371041599661,
+        "search_seconds": 18.212427780032158,
+        "action_stream_sha256": "fb47389960a002f505432d679b04cb7e74941d034cd647be62a6c947e66a66d5",
+        "auc_k1": 0.9388194444444444,
+        "auc_k2": 0.9352647569444443,
+        "auc_k4": 0.9318836805555556,
+        "auc_k8": 0.8765494791666666
+      },
+      {
+        "name": "random-queue",
+        "run": "runs/continuous-screen-20261111/random-queue-seed32",
+        "interactions": 100000,
+        "expansions": 20000,
+        "updates": 0,
+        "frontier_entries": 80001,
+        "selected_priority": 0.0042574622064818005,
+        "blocked_fraction": 0.07845,
+        "coverage_k1": 0.04861111111111111,
+        "coverage_k2": 0.043402777777777776,
+        "coverage_k4": 0.035590277777777776,
+        "coverage_k8": 0.031575520833333336,
+        "seconds": 20.8447294998914,
+        "objective": "random_queue",
+        "seed": 32,
+        "layout": 7,
+        "proposal": "stratified",
+        "nuisance_dims": 8,
+        "step_size": 0.25,
+        "adjacency_weight": 0.3,
+        "initial_parameters_sha256": "eaba4d0632463f0aae32969da47e4688690f17fdbfb6056faa4228b1f58b0581",
+        "samples_per_head": 0,
+        "trained_through": 0,
+        "milestones": {},
+        "quarter_lattice_fraction": 3.999960000399996e-05,
+        "moving_transitions": 73724,
+        "unique_endpoints": 73725,
+        "fill_radius_0.05": 0.029730902777777776,
+        "fill_radius_0.1": 0.033528645833333336,
+        "fill_radius_0.2": 0.037760416666666664,
+        "training_seconds": 0.0,
+        "refresh_seconds": 3.0320917014032602,
+        "search_seconds": 17.193467479664832,
+        "action_stream_sha256": "fb47389960a002f505432d679b04cb7e74941d034cd647be62a6c947e66a66d5",
+        "auc_k1": 0.046102430555555546,
+        "auc_k2": 0.03418185763888889,
+        "auc_k4": 0.02921332465277778,
+        "auc_k8": 0.025520426432291667
+      }
+    ]
+  }
+]

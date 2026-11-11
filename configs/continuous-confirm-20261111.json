@@ -1,0 +1,10 @@
+[
+  {
+    "name": "dynamics",
+    "objective": "dynamics"
+  },
+  {
+    "name": "adjacency",
+    "objective": "adjacency"
+  }
+]

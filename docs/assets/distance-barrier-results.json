@@ -1,0 +1,1622 @@
+[
+  {
+    "audit": "runs/distance-fixed-audits-20261110/adjacency-w0.1-seed18-at25000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 1.0036973632381556,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.013805898927226251,
+        "median_detour_distance": 0.01385694435038947
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 342,
+        "detour_pairs": 8,
+        "median_latent_detour_over_direct": 0.9755956212457484,
+        "median_true_detour_over_direct": 5.0,
+        "median_direct_distance": 0.01364648572422954,
+        "median_detour_distance": 0.013313451717950956
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.9988219178231535,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.08787123466146766,
+        "median_detour_distance": 0.0877677151260555
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 349,
+        "detour_pairs": 3,
+        "median_latent_detour_over_direct": 0.992889751969538,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.08877448264344952,
+        "median_detour_distance": 0.08814327405307865
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/adjacency-w0.1-seed18-at50000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9945275280425055,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.06489947206135535,
+        "median_detour_distance": 0.06454431152044339
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9945275280425055,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.06489947206135535,
+        "median_detour_distance": 0.06454431152044339
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.995322390276546,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.06170075333192438,
+        "median_detour_distance": 0.061412141288194534
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.995322390276546,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.06170075333192438,
+        "median_detour_distance": 0.061412141288194534
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/adjacency-w0.1-seed19-at25000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 1.0007520367370526,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.0518194053038607,
+        "median_detour_distance": 0.051858375400341425
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 203,
+        "detour_pairs": 3,
+        "median_latent_detour_over_direct": 1.0386325328149315,
+        "median_true_detour_over_direct": 5.0,
+        "median_direct_distance": 0.05185561330723355,
+        "median_detour_distance": 0.053858926989963654
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.98957198603791,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.05840511525339413,
+        "median_detour_distance": 0.057796065896074264
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 209,
+        "detour_pairs": 1,
+        "median_latent_detour_over_direct": 0.987365722062948,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.05864854403854113,
+        "median_detour_distance": 0.057907562032554774
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/adjacency-w0.1-seed19-at50000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 1.0064438578450408,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.06365872341139658,
+        "median_detour_distance": 0.06406893117565639
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 1183,
+        "detour_pairs": 127,
+        "median_latent_detour_over_direct": 1.0135965709075767,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.06365731788301429,
+        "median_detour_distance": 0.06452283911939685
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.0047225244885352,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.058130293613535625,
+        "median_detour_distance": 0.05840481534865128
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 1234,
+        "detour_pairs": 116,
+        "median_latent_detour_over_direct": 1.0061465411863728,
+        "median_true_detour_over_direct": 9.0,
+        "median_direct_distance": 0.058113034649014,
+        "median_detour_distance": 0.05847022880994927
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/adjacency-w0.1-seed20-at25000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9913442898557574,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.04567151563067554,
+        "median_detour_distance": 0.04527619622952817
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 244,
+        "detour_pairs": 5,
+        "median_latent_detour_over_direct": 0.8785968780681601,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.04567151563067554,
+        "median_detour_distance": 0.04012685104975271
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.0270274796950787,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.037232790571531324,
+        "median_detour_distance": 0.0382390990626945
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 257,
+        "detour_pairs": 3,
+        "median_latent_detour_over_direct": 1.0163341761625257,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.037430739732906365,
+        "median_detour_distance": 0.03804214002959731
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/adjacency-w0.1-seed20-at50000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 1.0005458557333688,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.05481792718969018,
+        "median_detour_distance": 0.05484784986953807
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 998,
+        "detour_pairs": 98,
+        "median_latent_detour_over_direct": 0.9740178553031522,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.053766188163254604,
+        "median_detour_distance": 0.052369227282598976
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.095840328406997,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.05580747950260376,
+        "median_detour_distance": 0.061156086665700056
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 1063,
+        "detour_pairs": 90,
+        "median_latent_detour_over_direct": 1.2340089269695425,
+        "median_true_detour_over_direct": 8.5,
+        "median_direct_distance": 0.059193139939405434,
+        "median_detour_distance": 0.07304486310058367
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/affinity-l20.03-seed18-at25000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 1.0132384418906923,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.0029076246479145494,
+        "median_detour_distance": 0.002946117067855911
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 342,
+        "detour_pairs": 8,
+        "median_latent_detour_over_direct": 0.9966263213630633,
+        "median_true_detour_over_direct": 5.0,
+        "median_direct_distance": 0.0028783612671891157,
+        "median_detour_distance": 0.0028686506012726137
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.9958675229457941,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.0669443782605233,
+        "median_detour_distance": 0.0666677321534536
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 349,
+        "detour_pairs": 3,
+        "median_latent_detour_over_direct": 0.9850600835386003,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.06860051279670265,
+        "median_detour_distance": 0.06757562686631073
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/affinity-l20.03-seed18-at50000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 1.0066607255210436,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.05529200107723557,
+        "median_detour_distance": 0.05566028591992029
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 1.0066607255210436,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.05529200107723557,
+        "median_detour_distance": 0.05566028591992029
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.0187108764056296,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.052618476234221036,
+        "median_detour_distance": 0.0536030140396921
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.0187108764056296,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.052618476234221036,
+        "median_detour_distance": 0.0536030140396921
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/affinity-l20.03-seed19-at25000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9997304386742942,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.03746500218740248,
+        "median_detour_distance": 0.037454903071745274
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 203,
+        "detour_pairs": 3,
+        "median_latent_detour_over_direct": 0.9954657147138086,
+        "median_true_detour_over_direct": 5.0,
+        "median_direct_distance": 0.03732362674126648,
+        "median_detour_distance": 0.03715439076970625
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.0010346300853388,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.05813148694239767,
+        "median_detour_distance": 0.05819163152769375
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 209,
+        "detour_pairs": 1,
+        "median_latent_detour_over_direct": 1.007577672272808,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.05734823786363259,
+        "median_detour_distance": 0.05778280401558624
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/affinity-l20.03-seed19-at50000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9869882189523776,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.05322379651247294,
+        "median_detour_distance": 0.05253126012572944
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 1183,
+        "detour_pairs": 127,
+        "median_latent_detour_over_direct": 0.9717633928750135,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.05320729384762412,
+        "median_detour_distance": 0.05170490039506504
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.0385857705674435,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.05139597330038879,
+        "median_detour_distance": 0.05337912653424804
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 1234,
+        "detour_pairs": 116,
+        "median_latent_detour_over_direct": 1.0500665567842689,
+        "median_true_detour_over_direct": 9.0,
+        "median_direct_distance": 0.05117811485087062,
+        "median_detour_distance": 0.053740426844163566
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/affinity-l20.03-seed20-at25000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9963889485957913,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.0284822317892432,
+        "median_detour_distance": 0.028379380986145654
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 244,
+        "detour_pairs": 5,
+        "median_latent_detour_over_direct": 1.0640800087585522,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.028761676094131612,
+        "median_detour_distance": 0.030604724550154207
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.9782918743757697,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.022026324089783698,
+        "median_detour_distance": 0.021548173879402662
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 257,
+        "detour_pairs": 3,
+        "median_latent_detour_over_direct": 0.9869870567743254,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.02194562463870544,
+        "median_detour_distance": 0.02166004747123
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/affinity-l20.03-seed20-at50000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9990158064976693,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.04929107913358688,
+        "median_detour_distance": 0.049242567173780734
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 998,
+        "detour_pairs": 98,
+        "median_latent_detour_over_direct": 0.9993299659117924,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.04921103155239101,
+        "median_detour_distance": 0.04917805848373505
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.04195722358659,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.049402181259036726,
+        "median_detour_distance": 0.05147495962378737
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 1063,
+        "detour_pairs": 90,
+        "median_latent_detour_over_direct": 1.0652342406425956,
+        "median_true_detour_over_direct": 8.5,
+        "median_direct_distance": 0.05027771083464278,
+        "median_detour_distance": 0.053557539122188705
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/dynamics-l2-seed18-at25000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 1.0125151284652743,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.008133515580262984,
+        "median_detour_distance": 0.008235307572624286
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 342,
+        "detour_pairs": 8,
+        "median_latent_detour_over_direct": 0.9896149396972697,
+        "median_true_detour_over_direct": 5.0,
+        "median_direct_distance": 0.007970591641483851,
+        "median_detour_distance": 0.007887816566638603
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.9980581468449491,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.0813134071160014,
+        "median_detour_distance": 0.08115550841984524
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 349,
+        "detour_pairs": 3,
+        "median_latent_detour_over_direct": 0.9911663258652081,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.08243424784507812,
+        "median_detour_distance": 0.08170605056206803
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/dynamics-l2-seed18-at50000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9941129430172306,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.06475448806992651,
+        "median_detour_distance": 0.06437327470876879
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9941129430172306,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.06475448806992651,
+        "median_detour_distance": 0.06437327470876879
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.9966377125472853,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.061512246139517696,
+        "median_detour_distance": 0.061305424286134495
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.9966377125472853,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.061512246139517696,
+        "median_detour_distance": 0.061305424286134495
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/dynamics-l2-seed19-at25000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9984301330460928,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.052814425625897804,
+        "median_detour_distance": 0.05273151400441812
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 203,
+        "detour_pairs": 3,
+        "median_latent_detour_over_direct": 1.036998942074916,
+        "median_true_detour_over_direct": 5.0,
+        "median_direct_distance": 0.05282300759051224,
+        "median_detour_distance": 0.05477740298857645
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.9894268749543118,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.06194837600924746,
+        "median_detour_distance": 0.06129338808332438
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 209,
+        "detour_pairs": 1,
+        "median_latent_detour_over_direct": 0.9861699569612217,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.06223664252835836,
+        "median_detour_distance": 0.0613759070836021
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/dynamics-l2-seed19-at50000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 1.005839922295072,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.06342903266637018,
+        "median_detour_distance": 0.06379945328839337
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 1183,
+        "detour_pairs": 127,
+        "median_latent_detour_over_direct": 1.0072840121875277,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.06343760075479768,
+        "median_detour_distance": 0.06389968101184314
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.0048671477916293,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.05818056739205235,
+        "median_detour_distance": 0.058463740812150326
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 1234,
+        "detour_pairs": 116,
+        "median_latent_detour_over_direct": 1.005636417492347,
+        "median_true_detour_over_direct": 9.0,
+        "median_direct_distance": 0.05815796207708509,
+        "median_detour_distance": 0.05848576463185562
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/dynamics-l2-seed20-at25000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9916907299561117,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.045279987483444105,
+        "median_detour_distance": 0.04490374383986029
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 244,
+        "detour_pairs": 5,
+        "median_latent_detour_over_direct": 0.8856001104787466,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.04528574136929363,
+        "median_detour_distance": 0.040105057559758385
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.0246140619111244,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.03753986798045994,
+        "median_detour_distance": 0.038463876615066415
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 257,
+        "detour_pairs": 3,
+        "median_latent_detour_over_direct": 1.0150358478140358,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.03771428887940677,
+        "median_detour_distance": 0.03828135518741211
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/dynamics-l2-seed20-at50000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9998408853455163,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.054749044497348645,
+        "median_detour_distance": 0.054740333122050136
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 998,
+        "detour_pairs": 98,
+        "median_latent_detour_over_direct": 0.9784071789815658,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.053868132177989976,
+        "median_detour_distance": 0.052704967241273284
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.0887413724477613,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.05547409662610779,
+        "median_detour_distance": 0.06039694409600831
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 1063,
+        "detour_pairs": 90,
+        "median_latent_detour_over_direct": 1.2246193382214658,
+        "median_true_detour_over_direct": 8.5,
+        "median_direct_distance": 0.058807625435414304,
+        "median_detour_distance": 0.07201695534309291
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/qrl-upper-c0.05-seed18-at25000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 1.0004038818683347,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.043550946228344795,
+        "median_detour_distance": 0.04356853566587524
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 342,
+        "detour_pairs": 8,
+        "median_latent_detour_over_direct": 0.9932212551365909,
+        "median_true_detour_over_direct": 5.0,
+        "median_direct_distance": 0.043346278177710515,
+        "median_detour_distance": 0.043052444817165456
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.9986416386100202,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.15652371465584392,
+        "median_detour_distance": 0.1563110988852392
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 349,
+        "detour_pairs": 3,
+        "median_latent_detour_over_direct": 0.992800085038474,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.1582335183859861,
+        "median_detour_distance": 0.15709425050954393
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/qrl-upper-c0.05-seed18-at50000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 1.0037427496114728,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.025224103914820863,
+        "median_detour_distance": 0.025318511419947808
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 1.0037427496114728,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.025224103914820863,
+        "median_detour_distance": 0.025318511419947808
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.9988498698414023,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.12777623033222263,
+        "median_detour_distance": 0.12762927103616561
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.9988498698414023,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.12777623033222263,
+        "median_detour_distance": 0.12762927103616561
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/qrl-upper-c0.05-seed19-at25000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9981984721502153,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.11071149959863391,
+        "median_detour_distance": 0.11051204974881554
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 203,
+        "detour_pairs": 3,
+        "median_latent_detour_over_direct": 1.0422136145024488,
+        "median_true_detour_over_direct": 5.0,
+        "median_direct_distance": 0.11073480029550826,
+        "median_detour_distance": 0.11540931646718851
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.9862305953028199,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.12293094475315913,
+        "median_detour_distance": 0.12123825882504619
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 209,
+        "detour_pairs": 1,
+        "median_latent_detour_over_direct": 0.9833266815042682,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.12385938675510041,
+        "median_detour_distance": 0.1217942397510466
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/qrl-upper-c0.05-seed19-at50000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9999902862857757,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.10476421985965495,
+        "median_detour_distance": 0.1047632022099623
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 1183,
+        "detour_pairs": 127,
+        "median_latent_detour_over_direct": 1.000055671561197,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.10476540449487882,
+        "median_detour_distance": 0.10477123694850649
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.000103694705276,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.11383800485584145,
+        "median_detour_distance": 0.11384980925420417
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 1234,
+        "detour_pairs": 116,
+        "median_latent_detour_over_direct": 0.9994893691558142,
+        "median_true_detour_over_direct": 9.0,
+        "median_direct_distance": 0.11382679143515631,
+        "median_detour_distance": 0.11376866796455481
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/qrl-upper-c0.05-seed20-at25000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9941353915453457,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.10638773563990372,
+        "median_detour_distance": 0.10576381322599841
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 244,
+        "detour_pairs": 5,
+        "median_latent_detour_over_direct": 0.9313899629701129,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.10650159574750356,
+        "median_detour_distance": 0.09919451731952528
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.0134205494532096,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.08720344357544854,
+        "median_detour_distance": 0.08837376170244302
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 257,
+        "detour_pairs": 3,
+        "median_latent_detour_over_direct": 1.0081777600881068,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.0874294111179516,
+        "median_detour_distance": 0.08814438786671867
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/qrl-upper-c0.05-seed20-at50000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.997273431604522,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.10305899034508242,
+        "median_detour_distance": 0.10277799295913764
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 998,
+        "detour_pairs": 98,
+        "median_latent_detour_over_direct": 1.02820372826373,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.10477345219779939,
+        "median_detour_distance": 0.10772845417283904
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.0248599858464769,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.09656550279740447,
+        "median_detour_distance": 0.09896611983020587
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 1063,
+        "detour_pairs": 90,
+        "median_latent_detour_over_direct": 1.048063236097632,
+        "median_true_detour_over_direct": 8.5,
+        "median_direct_distance": 0.09794512294676953,
+        "median_detour_distance": 0.10265268251557172
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h16-seed18-at25000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.987365993217363,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.004059821755550303,
+        "median_detour_distance": 0.004008529939954383
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 342,
+        "detour_pairs": 8,
+        "median_latent_detour_over_direct": 1.0072697866859583,
+        "median_true_detour_over_direct": 5.0,
+        "median_direct_distance": 0.004158984116587546,
+        "median_detour_distance": 0.004189219043945426
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.003038850792878,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.0046825249192003395,
+        "median_detour_distance": 0.004696754413763723
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 349,
+        "detour_pairs": 3,
+        "median_latent_detour_over_direct": 0.9969418921045885,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.004694982456366863,
+        "median_detour_distance": 0.004680624693448229
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h16-seed18-at50000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.995774938678698,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.00745279018733166,
+        "median_detour_distance": 0.007421301691775386
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.995774938678698,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.00745279018733166,
+        "median_detour_distance": 0.007421301691775386
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.9969562840212994,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.013591042281759209,
+        "median_detour_distance": 0.013549675009199024
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.9969562840212994,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.013591042281759209,
+        "median_detour_distance": 0.013549675009199024
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h16-seed19-at25000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 1.0818503245144493,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.0028086114277655113,
+        "median_detour_distance": 0.0030384971845631094
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 203,
+        "detour_pairs": 3,
+        "median_latent_detour_over_direct": 1.1293143468776576,
+        "median_true_detour_over_direct": 5.0,
+        "median_direct_distance": 0.0028707097480931637,
+        "median_detour_distance": 0.003241933704243156
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.9944317048574681,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.004802274695085887,
+        "median_detour_distance": 0.004775534212228137
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 209,
+        "detour_pairs": 1,
+        "median_latent_detour_over_direct": 0.9786809636107224,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.004978497399120481,
+        "median_detour_distance": 0.0048723606319047074
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h16-seed19-at50000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 1.0028137047058563,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.015000968951019872,
+        "median_detour_distance": 0.01504317724794976
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 1183,
+        "detour_pairs": 127,
+        "median_latent_detour_over_direct": 1.0152538046914283,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.015027983139624765,
+        "median_detour_distance": 0.01525721705934268
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.9709803228765388,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.020163390642882334,
+        "median_detour_distance": 0.01957825555671167
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 1234,
+        "detour_pairs": 116,
+        "median_latent_detour_over_direct": 0.9628184228277755,
+        "median_true_detour_over_direct": 9.0,
+        "median_direct_distance": 0.020251309080718365,
+        "median_detour_distance": 0.019498333469295064
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h16-seed20-at25000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9985006738897335,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.0030099337299523497,
+        "median_detour_distance": 0.0030054208577208604
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 244,
+        "detour_pairs": 5,
+        "median_latent_detour_over_direct": 1.0011775410107366,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.0029886327641474057,
+        "median_detour_distance": 0.0029921520017932206
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.9951998477599305,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.005092792727397613,
+        "median_detour_distance": 0.005068346546978986
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 257,
+        "detour_pairs": 3,
+        "median_latent_detour_over_direct": 0.9987344766182098,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.005117104445124873,
+        "median_detour_distance": 0.005110628629802504
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h16-seed20-at50000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.973912836346433,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.005863214711738821,
+        "median_detour_distance": 0.005710260070017689
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 998,
+        "detour_pairs": 98,
+        "median_latent_detour_over_direct": 1.0031777255970942,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.0059263840204612055,
+        "median_detour_distance": 0.0059452164426612355
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.9995321995853156,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.00732124860638847,
+        "median_detour_distance": 0.007317823723254393
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 1063,
+        "detour_pairs": 90,
+        "median_latent_detour_over_direct": 0.9902853118425522,
+        "median_true_detour_over_direct": 8.5,
+        "median_direct_distance": 0.00730525927565188,
+        "median_detour_distance": 0.007234290959879619
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h64-seed18-at25000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9971521143455985,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.008575525202332242,
+        "median_detour_distance": 0.008551103087129561
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 342,
+        "detour_pairs": 8,
+        "median_latent_detour_over_direct": 1.0414348665052937,
+        "median_true_detour_over_direct": 5.0,
+        "median_direct_distance": 0.008537254646195694,
+        "median_detour_distance": 0.008890994652782511
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.007595098656889,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.026749549385924058,
+        "median_detour_distance": 0.026952714852537474
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 349,
+        "detour_pairs": 3,
+        "median_latent_detour_over_direct": 1.0054135003602396,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.026808443542793835,
+        "median_detour_distance": 0.02695357106157021
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h64-seed18-at50000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9787628606807414,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.13025936926402343,
+        "median_detour_distance": 0.1274930328913246
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9787628606807414,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.13025936926402343,
+        "median_detour_distance": 0.1274930328913246
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.0199973080741218,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.11715272480022162,
+        "median_detour_distance": 0.11949546392977446
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.0199973080741218,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.11715272480022162,
+        "median_detour_distance": 0.11949546392977446
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h64-seed19-at25000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9949379177563042,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.05614506140681935,
+        "median_detour_distance": 0.055860850488400685
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 203,
+        "detour_pairs": 3,
+        "median_latent_detour_over_direct": 1.0916363606154502,
+        "median_true_detour_over_direct": 5.0,
+        "median_direct_distance": 0.05624281382193679,
+        "median_detour_distance": 0.061396700591351425
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.9707542650220089,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.06331336730366882,
+        "median_detour_distance": 0.06146172134294152
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 209,
+        "detour_pairs": 1,
+        "median_latent_detour_over_direct": 0.9652896864210881,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.06415893828355779,
+        "median_detour_distance": 0.06193196141684544
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h64-seed19-at50000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 1.0015738287331046,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.10768651585673773,
+        "median_detour_distance": 0.107855995989561
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 1183,
+        "detour_pairs": 127,
+        "median_latent_detour_over_direct": 1.0047627921530833,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.10770523152396143,
+        "median_detour_distance": 0.10821820915550977
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 0.9886330722891322,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.11752482667205787,
+        "median_detour_distance": 0.11618893046304432
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 1234,
+        "detour_pairs": 116,
+        "median_latent_detour_over_direct": 0.9879902872062889,
+        "median_true_detour_over_direct": 9.0,
+        "median_direct_distance": 0.11756437389964017,
+        "median_detour_distance": 0.11615245953433302
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h64-seed20-at25000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 0.9957216644340695,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.07851353622727854,
+        "median_detour_distance": 0.0781776289728304
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 244,
+        "detour_pairs": 5,
+        "median_latent_detour_over_direct": 0.9272926895291459,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.07849671327808672,
+        "median_detour_distance": 0.07278942837483525
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.0173295305447632,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.06377718456654588,
+        "median_detour_distance": 0.06488241323455084
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 257,
+        "detour_pairs": 3,
+        "median_latent_detour_over_direct": 1.0090097775300362,
+        "median_true_detour_over_direct": 4.0,
+        "median_direct_distance": 0.06420848657060893,
+        "median_detour_distance": 0.06478699075015043
+      }
+    ]
+  },
+  {
+    "audit": "runs/distance-fixed-audits-20261110/temporal-h64-seed20-at50000.npz",
+    "axes": [
+      {
+        "axis": 0,
+        "seen_only": false,
+        "direct_pairs": 1224,
+        "detour_pairs": 155,
+        "median_latent_detour_over_direct": 1.009695895261806,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.11985967581580347,
+        "median_detour_distance": 0.12102182267862752
+      },
+      {
+        "axis": 0,
+        "seen_only": true,
+        "direct_pairs": 998,
+        "detour_pairs": 98,
+        "median_latent_detour_over_direct": 1.0073235849352078,
+        "median_true_detour_over_direct": 8.0,
+        "median_direct_distance": 0.11818135293936322,
+        "median_detour_distance": 0.11904686411537241
+      },
+      {
+        "axis": 1,
+        "seen_only": false,
+        "direct_pairs": 1280,
+        "detour_pairs": 139,
+        "median_latent_detour_over_direct": 1.0753417064654662,
+        "median_true_detour_over_direct": 11.0,
+        "median_direct_distance": 0.10531112590106029,
+        "median_detour_distance": 0.11324544583624574
+      },
+      {
+        "axis": 1,
+        "seen_only": true,
+        "direct_pairs": 1063,
+        "detour_pairs": 90,
+        "median_latent_detour_over_direct": 1.1441637117362817,
+        "median_true_detour_over_direct": 8.5,
+        "median_direct_distance": 0.10748823318101002,
+        "median_detour_distance": 0.12298413584435938
+      }
+    ]
+  }
+]

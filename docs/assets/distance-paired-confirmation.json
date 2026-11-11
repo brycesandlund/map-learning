@@ -1,0 +1,38 @@
+[
+  {
+    "comparison": "adjacency minus dynamics-l2",
+    "paired_differences": [
+      -10860,
+      -9031,
+      2391,
+      -7260,
+      -391,
+      -4293
+    ],
+    "mean_difference": -4907.333333333333,
+    "faster_seeds": 5,
+    "seeds": 6,
+    "bootstrap_percentile_interval": [
+      -8555.833333333334,
+      -1090.3333333333333
+    ]
+  },
+  {
+    "comparison": "adjacency minus dynamics-reg-half",
+    "paired_differences": [
+      -3750,
+      463,
+      4702,
+      -5882,
+      2920,
+      -6088
+    ],
+    "mean_difference": -1272.5,
+    "faster_seeds": 3,
+    "seeds": 6,
+    "bootstrap_percentile_interval": [
+      -4537.833333333333,
+      2047.0
+    ]
+  }
+]
