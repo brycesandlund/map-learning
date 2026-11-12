@@ -1,0 +1,66 @@
+{
+  "runs": 12,
+  "interactions": 1200000,
+  "results": [
+    {
+      "run": "runs/pixel-hard-confirm-20261111/comb-learned-seed120",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/comb-learned-seed121",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/comb-learned-seed122",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/open-learned-seed120",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/open-learned-seed121",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/open-learned-seed122",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/rooms-learned-seed120",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/rooms-learned-seed121",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/rooms-learned-seed122",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/snake-learned-seed120",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/snake-learned-seed121",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/snake-learned-seed122",
+      "interactions": 100000,
+      "policy": "learned"
+    }
+  ]
+}

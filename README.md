@@ -548,3 +548,19 @@ The [combined dynamics/adjacency and loss-scale study](docs/joint-loss-study.md)
 The [compression and ancestry-prediction study](docs/compression-study.md) tests L1, bounded fixed-noise training channels, and multi-step prediction on real parent-pointer paths for both base objectives. Use `--experiment-spec <json>` with `scripts/continuous_frontier.py`; example specs and sweep manifests are in `configs/compression-20261111`. Search encodings remain deterministic. The report distinguishes noisy squared adjacency from a learned predictor after a noisy channel, and includes matched noiseless/H1 controls.
 
 The [random-walk and hybrid study](docs/walk-study.md) compares independent and persistent walks, encountered-state resets, and walk prefixes followed by learned frontier search. `scripts/walk_frontier.py` keeps the existing frontier runner unchanged and accepts `--walk-steps`, `--persistence`, `--reset-every`, `--reset-until`, `--stay-probability`, and `--turn-on-block`. Unlearned controls use `--objective walk`. Protocol and immutable sweep manifests are linked from the report.
+
+### Noisy pixel exploration
+
+The completed [pixel study](docs/pixel-study.md) contains 372 runs of image-only representation learning and nonreactive walking controls. Spatial attention learns a noise-robust map and reaches 99.9% mean coverage in winding corridors; persistent walking remains stronger on the original maze and branching dead ends. [All fresh results](docs/assets/pixel-confirmation-details.md), [animation](docs/assets/pixel-snake-seed120.gif), [protocol and accounting history](docs/pixel-study-state.md).
+
+The new `PixelMaze` uses one composited RGB image with noise across the whole frame; it is separate from the legacy two-channel pixel renderer above. The spatial encoder learns its own feature heatmaps, followed by a 2D latent and joint residual-dynamics training. No simulator coordinates or masks enter the learner. The working baseline uses a 5k observation-blind walk prefix, then persistent nearest-latent frontier expansion with exact simulator restores.
+
+Run one 100k-action experiment (MPS on a compatible Mac):
+
+```sh
+.venv/bin/python scripts/run_pixel_study.py \
+  --arms configs/pixel-study-20261111/working-baseline.json \
+  --out runs/pixel-new-experiment --seeds 200 --workers 1
+```
+
+Use a new output directory. To use CPU, copy the arm JSON and change `device` to `cpu`; adaptive trajectories need not be bitwise identical across backends. `scripts/pixel_frontier.py --help` exposes maze families, image noise, architecture/loss settings and nonreactive walking controls. `scripts/animate_pixel_study.py` renders saved trajectories alongside the actual noisy input images.

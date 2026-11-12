@@ -1,0 +1,194 @@
+[
+  {
+    "name": "cardinal-p0-r0",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0,
+    "reset_probability": 0,
+    "steps": 20000
+  },
+  {
+    "name": "cardinal-p0-r0.001",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0,
+    "reset_probability": 0.001,
+    "steps": 20000
+  },
+  {
+    "name": "cardinal-p0-r0.01",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0,
+    "reset_probability": 0.01,
+    "steps": 20000
+  },
+  {
+    "name": "cardinal-p0.8-r0",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0,
+    "steps": 20000
+  },
+  {
+    "name": "cardinal-p0.8-r0.001",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0.001,
+    "steps": 20000
+  },
+  {
+    "name": "cardinal-p0.8-r0.01",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0.01,
+    "steps": 20000
+  },
+  {
+    "name": "cardinal-p0.95-r0",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.95,
+    "reset_probability": 0,
+    "steps": 20000
+  },
+  {
+    "name": "cardinal-p0.95-r0.001",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.95,
+    "reset_probability": 0.001,
+    "steps": 20000
+  },
+  {
+    "name": "cardinal-p0.95-r0.01",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.95,
+    "reset_probability": 0.01,
+    "steps": 20000
+  },
+  {
+    "name": "cardinal-p0.99-r0",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.99,
+    "reset_probability": 0,
+    "steps": 20000
+  },
+  {
+    "name": "cardinal-p0.99-r0.001",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.99,
+    "reset_probability": 0.001,
+    "steps": 20000
+  },
+  {
+    "name": "cardinal-p0.99-r0.01",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.99,
+    "reset_probability": 0.01,
+    "steps": 20000
+  },
+  {
+    "name": "continuous-p0-r0",
+    "policy": "walk",
+    "controls": "continuous",
+    "persistence": 0,
+    "reset_probability": 0,
+    "steps": 20000
+  },
+  {
+    "name": "continuous-p0-r0.001",
+    "policy": "walk",
+    "controls": "continuous",
+    "persistence": 0,
+    "reset_probability": 0.001,
+    "steps": 20000
+  },
+  {
+    "name": "continuous-p0-r0.01",
+    "policy": "walk",
+    "controls": "continuous",
+    "persistence": 0,
+    "reset_probability": 0.01,
+    "steps": 20000
+  },
+  {
+    "name": "continuous-p0.8-r0",
+    "policy": "walk",
+    "controls": "continuous",
+    "persistence": 0.8,
+    "reset_probability": 0,
+    "steps": 20000
+  },
+  {
+    "name": "continuous-p0.8-r0.001",
+    "policy": "walk",
+    "controls": "continuous",
+    "persistence": 0.8,
+    "reset_probability": 0.001,
+    "steps": 20000
+  },
+  {
+    "name": "continuous-p0.8-r0.01",
+    "policy": "walk",
+    "controls": "continuous",
+    "persistence": 0.8,
+    "reset_probability": 0.01,
+    "steps": 20000
+  },
+  {
+    "name": "continuous-p0.95-r0",
+    "policy": "walk",
+    "controls": "continuous",
+    "persistence": 0.95,
+    "reset_probability": 0,
+    "steps": 20000
+  },
+  {
+    "name": "continuous-p0.95-r0.001",
+    "policy": "walk",
+    "controls": "continuous",
+    "persistence": 0.95,
+    "reset_probability": 0.001,
+    "steps": 20000
+  },
+  {
+    "name": "continuous-p0.95-r0.01",
+    "policy": "walk",
+    "controls": "continuous",
+    "persistence": 0.95,
+    "reset_probability": 0.01,
+    "steps": 20000
+  },
+  {
+    "name": "continuous-p0.99-r0",
+    "policy": "walk",
+    "controls": "continuous",
+    "persistence": 0.99,
+    "reset_probability": 0,
+    "steps": 20000
+  },
+  {
+    "name": "continuous-p0.99-r0.001",
+    "policy": "walk",
+    "controls": "continuous",
+    "persistence": 0.99,
+    "reset_probability": 0.001,
+    "steps": 20000
+  },
+  {
+    "name": "continuous-p0.99-r0.01",
+    "policy": "walk",
+    "controls": "continuous",
+    "persistence": 0.99,
+    "reset_probability": 0.01,
+    "steps": 20000
+  }
+]

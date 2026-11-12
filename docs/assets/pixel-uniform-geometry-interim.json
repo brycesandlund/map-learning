@@ -1,0 +1,46 @@
+[
+  {
+    "run": "runs/pixel-learned-confirm-20261111/learned-warm-seed120",
+    "positions": "uniform",
+    "latent_std": 0.20638391375541687,
+    "noise_distance": 0.0042515466921031475,
+    "motion_distance": 0.015993643552064896,
+    "noise_motion_ratio": 0.2658272683620453,
+    "chance_within_half_cell": 0.009765625,
+    "retrieval_median_physical_error": 0.0,
+    "retrieval_within_half_cell": 0.99609375
+  },
+  {
+    "run": "runs/pixel-learned-confirm-20261111/learned-warm-seed121",
+    "positions": "uniform",
+    "latent_std": 0.2026573270559311,
+    "noise_distance": 0.003779307007789612,
+    "motion_distance": 0.015952063724398613,
+    "noise_motion_ratio": 0.23691649734973907,
+    "chance_within_half_cell": 0.009765625,
+    "retrieval_median_physical_error": 0.0,
+    "retrieval_within_half_cell": 0.982421875
+  },
+  {
+    "run": "runs/pixel-learned-confirm-20261111/learned-warm-seed122",
+    "positions": "uniform",
+    "latent_std": 0.20792363584041595,
+    "noise_distance": 0.004138249438256025,
+    "motion_distance": 0.015730373561382294,
+    "noise_motion_ratio": 0.2630738317966461,
+    "chance_within_half_cell": 0.009765625,
+    "retrieval_median_physical_error": 0.0,
+    "retrieval_within_half_cell": 0.99609375
+  },
+  {
+    "run": "runs/pixel-cnn-confirm-20261111/cnn-warm-seed120",
+    "positions": "uniform",
+    "latent_std": 0.1318882703781128,
+    "noise_distance": 0.02426462434232235,
+    "motion_distance": 0.04439983889460564,
+    "noise_motion_ratio": 0.5465025305747986,
+    "chance_within_half_cell": 0.009765625,
+    "retrieval_median_physical_error": 2.2946014404296875,
+    "retrieval_within_half_cell": 0.302734375
+  }
+]

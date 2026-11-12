@@ -1,0 +1,74 @@
+[
+  {
+    "name": "cnn-bg-r0.3",
+    "architecture": "cnn",
+    "background": 1,
+    "center": 1,
+    "repulsion": 0.3,
+    "extra_updates": 100,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "cnn-bg-r3",
+    "architecture": "cnn",
+    "background": 1,
+    "center": 1,
+    "repulsion": 3,
+    "extra_updates": 100,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "mlp-bg-r0.3",
+    "architecture": "mlp",
+    "background": 1,
+    "center": 1,
+    "repulsion": 0.3,
+    "extra_updates": 100,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "mlp-bg-r3",
+    "architecture": "mlp",
+    "background": 1,
+    "center": 1,
+    "repulsion": 3,
+    "extra_updates": 100,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "spatial-bg-r0.3",
+    "architecture": "spatial",
+    "background": 1,
+    "center": 1,
+    "repulsion": 0.3,
+    "extra_updates": 100,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "spatial-bg-r3",
+    "architecture": "spatial",
+    "background": 1,
+    "center": 1,
+    "repulsion": 3,
+    "extra_updates": 100,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  }
+]

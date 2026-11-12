@@ -1,0 +1,122 @@
+[
+  {
+    "name": "cnn-clean",
+    "architecture": "cnn",
+    "noise": 0,
+    "repulsion": 0.03,
+    "adjacency": 0,
+    "dynamics": 1,
+    "extra_updates": 20,
+    "steps": 20000
+  },
+  {
+    "name": "cnn-low",
+    "architecture": "cnn",
+    "noise": 0.03,
+    "repulsion": 0.03,
+    "adjacency": 0,
+    "dynamics": 1,
+    "extra_updates": 20,
+    "steps": 20000
+  },
+  {
+    "name": "cnn-strong",
+    "architecture": "cnn",
+    "noise": 0.12,
+    "repulsion": 1,
+    "adjacency": 0,
+    "dynamics": 1,
+    "extra_updates": 20,
+    "steps": 20000
+  },
+  {
+    "name": "cnn-adjpush",
+    "architecture": "cnn",
+    "noise": 0.12,
+    "repulsion": 0.3,
+    "adjacency": 0.3,
+    "dynamics": 0,
+    "extra_updates": 20,
+    "steps": 20000
+  },
+  {
+    "name": "mlp-clean",
+    "architecture": "mlp",
+    "noise": 0,
+    "repulsion": 0.03,
+    "adjacency": 0,
+    "dynamics": 1,
+    "extra_updates": 20,
+    "steps": 20000
+  },
+  {
+    "name": "mlp-low",
+    "architecture": "mlp",
+    "noise": 0.03,
+    "repulsion": 0.03,
+    "adjacency": 0,
+    "dynamics": 1,
+    "extra_updates": 20,
+    "steps": 20000
+  },
+  {
+    "name": "mlp-strong",
+    "architecture": "mlp",
+    "noise": 0.12,
+    "repulsion": 1,
+    "adjacency": 0,
+    "dynamics": 1,
+    "extra_updates": 20,
+    "steps": 20000
+  },
+  {
+    "name": "mlp-adjpush",
+    "architecture": "mlp",
+    "noise": 0.12,
+    "repulsion": 0.3,
+    "adjacency": 0.3,
+    "dynamics": 0,
+    "extra_updates": 20,
+    "steps": 20000
+  },
+  {
+    "name": "spatial-clean",
+    "architecture": "spatial",
+    "noise": 0,
+    "repulsion": 0.03,
+    "adjacency": 0,
+    "dynamics": 1,
+    "extra_updates": 20,
+    "steps": 20000
+  },
+  {
+    "name": "spatial-low",
+    "architecture": "spatial",
+    "noise": 0.03,
+    "repulsion": 0.03,
+    "adjacency": 0,
+    "dynamics": 1,
+    "extra_updates": 20,
+    "steps": 20000
+  },
+  {
+    "name": "spatial-strong",
+    "architecture": "spatial",
+    "noise": 0.12,
+    "repulsion": 1,
+    "adjacency": 0,
+    "dynamics": 1,
+    "extra_updates": 20,
+    "steps": 20000
+  },
+  {
+    "name": "spatial-adjpush",
+    "architecture": "spatial",
+    "noise": 0.12,
+    "repulsion": 0.3,
+    "adjacency": 0.3,
+    "dynamics": 0,
+    "extra_updates": 20,
+    "steps": 20000
+  }
+]

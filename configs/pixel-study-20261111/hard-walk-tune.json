@@ -1,0 +1,290 @@
+[
+  {
+    "name": "snake-p0-r0",
+    "family": "snake",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0,
+    "reset_probability": 0,
+    "steps": 30000
+  },
+  {
+    "name": "snake-p0-r0.001",
+    "family": "snake",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0,
+    "reset_probability": 0.001,
+    "steps": 30000
+  },
+  {
+    "name": "snake-p0.5-r0",
+    "family": "snake",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.5,
+    "reset_probability": 0,
+    "steps": 30000
+  },
+  {
+    "name": "snake-p0.5-r0.001",
+    "family": "snake",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.5,
+    "reset_probability": 0.001,
+    "steps": 30000
+  },
+  {
+    "name": "snake-p0.8-r0",
+    "family": "snake",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0,
+    "steps": 30000
+  },
+  {
+    "name": "snake-p0.8-r0.001",
+    "family": "snake",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0.001,
+    "steps": 30000
+  },
+  {
+    "name": "snake-p0.95-r0",
+    "family": "snake",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.95,
+    "reset_probability": 0,
+    "steps": 30000
+  },
+  {
+    "name": "snake-p0.95-r0.001",
+    "family": "snake",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.95,
+    "reset_probability": 0.001,
+    "steps": 30000
+  },
+  {
+    "name": "comb-p0-r0",
+    "family": "comb",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0,
+    "reset_probability": 0,
+    "steps": 30000
+  },
+  {
+    "name": "comb-p0-r0.001",
+    "family": "comb",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0,
+    "reset_probability": 0.001,
+    "steps": 30000
+  },
+  {
+    "name": "comb-p0.5-r0",
+    "family": "comb",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.5,
+    "reset_probability": 0,
+    "steps": 30000
+  },
+  {
+    "name": "comb-p0.5-r0.001",
+    "family": "comb",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.5,
+    "reset_probability": 0.001,
+    "steps": 30000
+  },
+  {
+    "name": "comb-p0.8-r0",
+    "family": "comb",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0,
+    "steps": 30000
+  },
+  {
+    "name": "comb-p0.8-r0.001",
+    "family": "comb",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0.001,
+    "steps": 30000
+  },
+  {
+    "name": "comb-p0.95-r0",
+    "family": "comb",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.95,
+    "reset_probability": 0,
+    "steps": 30000
+  },
+  {
+    "name": "comb-p0.95-r0.001",
+    "family": "comb",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.95,
+    "reset_probability": 0.001,
+    "steps": 30000
+  },
+  {
+    "name": "open-p0-r0",
+    "family": "open",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0,
+    "reset_probability": 0,
+    "steps": 30000
+  },
+  {
+    "name": "open-p0-r0.001",
+    "family": "open",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0,
+    "reset_probability": 0.001,
+    "steps": 30000
+  },
+  {
+    "name": "open-p0.5-r0",
+    "family": "open",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.5,
+    "reset_probability": 0,
+    "steps": 30000
+  },
+  {
+    "name": "open-p0.5-r0.001",
+    "family": "open",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.5,
+    "reset_probability": 0.001,
+    "steps": 30000
+  },
+  {
+    "name": "open-p0.8-r0",
+    "family": "open",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0,
+    "steps": 30000
+  },
+  {
+    "name": "open-p0.8-r0.001",
+    "family": "open",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0.001,
+    "steps": 30000
+  },
+  {
+    "name": "open-p0.95-r0",
+    "family": "open",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.95,
+    "reset_probability": 0,
+    "steps": 30000
+  },
+  {
+    "name": "open-p0.95-r0.001",
+    "family": "open",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.95,
+    "reset_probability": 0.001,
+    "steps": 30000
+  },
+  {
+    "name": "rooms-p0-r0",
+    "family": "rooms",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0,
+    "reset_probability": 0,
+    "steps": 30000
+  },
+  {
+    "name": "rooms-p0-r0.001",
+    "family": "rooms",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0,
+    "reset_probability": 0.001,
+    "steps": 30000
+  },
+  {
+    "name": "rooms-p0.5-r0",
+    "family": "rooms",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.5,
+    "reset_probability": 0,
+    "steps": 30000
+  },
+  {
+    "name": "rooms-p0.5-r0.001",
+    "family": "rooms",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.5,
+    "reset_probability": 0.001,
+    "steps": 30000
+  },
+  {
+    "name": "rooms-p0.8-r0",
+    "family": "rooms",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0,
+    "steps": 30000
+  },
+  {
+    "name": "rooms-p0.8-r0.001",
+    "family": "rooms",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0.001,
+    "steps": 30000
+  },
+  {
+    "name": "rooms-p0.95-r0",
+    "family": "rooms",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.95,
+    "reset_probability": 0,
+    "steps": 30000
+  },
+  {
+    "name": "rooms-p0.95-r0.001",
+    "family": "rooms",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.95,
+    "reset_probability": 0.001,
+    "steps": 30000
+  }
+]

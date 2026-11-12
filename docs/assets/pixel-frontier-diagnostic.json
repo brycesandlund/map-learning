@@ -1,0 +1,24 @@
+[
+  {
+    "run": "runs/pixel-hard-confirm-20261111/comb-learned-seed120",
+    "active": 81000,
+    "probed": 3965,
+    "productive_found": 7,
+    "best_productive_rank": 7,
+    "top10_productive_fraction": 0.1,
+    "top100_productive_fraction": 0.03,
+    "top1000_productive_fraction": 0.005,
+    "random_productive_fraction": 0.0006666666666666666
+  },
+  {
+    "run": "runs/pixel-learned-confirm-20261111/learned-warm-seed121",
+    "active": 81000,
+    "probed": 3965,
+    "productive_found": 4,
+    "best_productive_rank": 1,
+    "top10_productive_fraction": 0.1,
+    "top100_productive_fraction": 0.01,
+    "top1000_productive_fraction": 0.004,
+    "random_productive_fraction": 0.0
+  }
+]

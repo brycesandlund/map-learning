@@ -1,0 +1,20 @@
+[
+  {
+    "run": "runs/pixel-nce-20261111/mlp-rgb0-nce-seed110",
+    "latent_std": 0.02706180326640606,
+    "noise_distance": 0.05308454483747482,
+    "motion_distance": 0.055001817643642426,
+    "noise_motion_ratio": 0.9651416540145874,
+    "retrieval_median_physical_error": 0.3712772727012634,
+    "retrieval_within_half_cell": 0.623046875
+  },
+  {
+    "run": "runs/pixel-rgb-20261111/cnn-rgb-r0.3-seed110",
+    "latent_std": 0.0832333192229271,
+    "noise_distance": 0.05705171823501587,
+    "motion_distance": 0.07441043853759766,
+    "noise_motion_ratio": 0.7667165994644165,
+    "retrieval_median_physical_error": 0.03713849559426308,
+    "retrieval_within_half_cell": 0.931640625
+  }
+]

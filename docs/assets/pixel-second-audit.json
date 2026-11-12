@@ -1,0 +1,536 @@
+{
+  "runs": 106,
+  "interactions": 2940000,
+  "results": [
+    {
+      "run": "runs/pixel-followup-20261111/cnn-adjpush-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/cnn-adjpush-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/cnn-clean-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/cnn-clean-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/cnn-low-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/cnn-low-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/cnn-strong-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/cnn-strong-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/mlp-adjpush-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/mlp-adjpush-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/mlp-clean-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/mlp-clean-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/mlp-low-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/mlp-low-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/mlp-strong-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/mlp-strong-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/spatial-adjpush-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/spatial-adjpush-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/spatial-clean-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/spatial-clean-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/spatial-low-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/spatial-low-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/spatial-strong-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/spatial-strong-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-dim-20261111/mlp-rgb0-dim2-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-dim-20261111/mlp-rgb0-dim2-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-dim-20261111/mlp-rgb0-dim4-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-dim-20261111/mlp-rgb0-dim4-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-dim-20261111/mlp-rgb1-dim2-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-dim-20261111/mlp-rgb1-dim2-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-dim-20261111/mlp-rgb1-dim4-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-dim-20261111/mlp-rgb1-dim4-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/cnn-center-r0.03-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/cnn-center-r0.03-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/cnn-center-r0.3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/cnn-center-r3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/mlp-center-r0.03-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/mlp-center-r0.03-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/mlp-center-r0.3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/mlp-center-r0.3-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/mlp-center-r3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/mlp-center-r3-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.5-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.5-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.5-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.5-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.8-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.8-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.8-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.8-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.95-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.95-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.95-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.95-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.5-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.5-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.5-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.5-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.8-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.8-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.8-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.8-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.95-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.95-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.95-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.95-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.5-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.5-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.5-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.5-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.8-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.8-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.8-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.8-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.95-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.95-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.95-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.95-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.5-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.5-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.5-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.5-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.8-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.8-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.8-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.8-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.95-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.95-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.95-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.95-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    }
+  ]
+}

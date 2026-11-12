@@ -1,0 +1,46 @@
+[
+  {
+    "run": "runs/pixel-accelerated-long-20261111/rgb-attention-seed110",
+    "positions": "uniform",
+    "latent_std": 0.19073760509490967,
+    "noise_distance": 0.0041374932043254375,
+    "motion_distance": 0.016060281544923782,
+    "noise_motion_ratio": 0.25762271881103516,
+    "chance_within_half_cell": 0.009765625,
+    "retrieval_median_physical_error": 0.0,
+    "retrieval_within_half_cell": 0.986328125
+  },
+  {
+    "run": "runs/pixel-attention-augmentation-20261111/attention-aug0.3-seed110",
+    "positions": "uniform",
+    "latent_std": 0.18889400362968445,
+    "noise_distance": 0.003990299999713898,
+    "motion_distance": 0.01637154258787632,
+    "noise_motion_ratio": 0.24373389780521393,
+    "chance_within_half_cell": 0.009765625,
+    "retrieval_median_physical_error": 0.0,
+    "retrieval_within_half_cell": 0.953125
+  },
+  {
+    "run": "runs/pixel-attention-augmentation-20261111/attention-aug3.0-seed110",
+    "positions": "uniform",
+    "latent_std": 0.19438321888446808,
+    "noise_distance": 0.0036618728190660477,
+    "motion_distance": 0.015817712992429733,
+    "noise_motion_ratio": 0.23150457441806793,
+    "chance_within_half_cell": 0.009765625,
+    "retrieval_median_physical_error": 0.0,
+    "retrieval_within_half_cell": 0.994140625
+  },
+  {
+    "run": "runs/pixel-attention-augmentation-20261111/attention-aug30.0-seed110",
+    "positions": "uniform",
+    "latent_std": 9.372599265589088e-07,
+    "noise_distance": 1.5877217265369836e-06,
+    "motion_distance": 1.5262278338923352e-06,
+    "noise_motion_ratio": 1.040291428565979,
+    "chance_within_half_cell": 0.009765625,
+    "retrieval_median_physical_error": 5.73554801940918,
+    "retrieval_within_half_cell": 0.01171875
+  }
+]

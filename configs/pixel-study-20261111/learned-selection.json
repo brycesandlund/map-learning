@@ -1,0 +1,34 @@
+{
+  "frozen_unix": 1794438786.70635,
+  "arm": {
+    "name": "rgb-attention",
+    "architecture": "spatial",
+    "temperature": 200,
+    "dim": 2,
+    "rgb": 1,
+    "marker_size": 1.3,
+    "center": 1,
+    "repulsion": 0.3,
+    "device": "mps",
+    "extra_updates": 100,
+    "train_every": 5000,
+    "refresh_every": 5000,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 100000
+  },
+  "main_seeds": [
+    120,
+    121,
+    122,
+    123,
+    124
+  ],
+  "hard_seeds": [
+    120,
+    121,
+    122
+  ],
+  "reason": "Freeze before viewing any held-out results. RGB attention reaches97.7% at~70k tuning seed110; strong spatial invariance. Remaining tuning seed111 is replication, not selection. Explicit deviation from initial two-seed-selection plan to overlap confirmation with slow exploratory CPU runs."
+}

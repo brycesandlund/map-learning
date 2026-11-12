@@ -1,0 +1,29 @@
+[
+  {
+    "name": "spatial-gray-long",
+    "architecture": "spatial",
+    "temperature": 200,
+    "dim": 2,
+    "marker_size": 1.3,
+    "center": 1,
+    "repulsion": 0.3,
+    "extra_updates": 100,
+    "train_every": 5000,
+    "refresh_every": 5000,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 100000
+  },
+  {
+    "name": "cnn-panel-long",
+    "architecture": "cnn",
+    "noise_mode": "panel",
+    "image_size": 56,
+    "repulsion": 0.03,
+    "extra_updates": 100,
+    "train_every": 5000,
+    "refresh_every": 5000,
+    "steps": 100000
+  }
+]

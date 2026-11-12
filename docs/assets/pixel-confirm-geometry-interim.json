@@ -1,0 +1,42 @@
+[
+  {
+    "run": "runs/pixel-hard-confirm-20261111/comb-learned-seed120",
+    "latent_std": 0.20108109712600708,
+    "noise_distance": 0.007364494726061821,
+    "motion_distance": 0.024485541507601738,
+    "noise_motion_ratio": 0.3007691204547882,
+    "chance_within_half_cell": 0.01171875,
+    "retrieval_median_physical_error": 0.0,
+    "retrieval_within_half_cell": 0.990234375
+  },
+  {
+    "run": "runs/pixel-hard-confirm-20261111/snake-learned-seed120",
+    "latent_std": 0.20181556046009064,
+    "noise_distance": 0.005261390935629606,
+    "motion_distance": 0.017864957451820374,
+    "noise_motion_ratio": 0.29450902342796326,
+    "chance_within_half_cell": 0.001953125,
+    "retrieval_median_physical_error": 0.0,
+    "retrieval_within_half_cell": 0.998046875
+  },
+  {
+    "run": "runs/pixel-learned-confirm-20261111/learned-warm-seed120",
+    "latent_std": 0.20256468653678894,
+    "noise_distance": 0.004866753704845905,
+    "motion_distance": 0.019246455281972885,
+    "noise_motion_ratio": 0.25286492705345154,
+    "chance_within_half_cell": 0.00390625,
+    "retrieval_median_physical_error": 0.0,
+    "retrieval_within_half_cell": 1.0
+  },
+  {
+    "run": "runs/pixel-learned-confirm-20261111/learned-warm-seed121",
+    "latent_std": 0.1931997835636139,
+    "noise_distance": 0.0052721453830599785,
+    "motion_distance": 0.02021840028464794,
+    "noise_motion_ratio": 0.26075977087020874,
+    "chance_within_half_cell": 0.009765625,
+    "retrieval_median_physical_error": 0.0,
+    "retrieval_within_half_cell": 0.998046875
+  }
+]

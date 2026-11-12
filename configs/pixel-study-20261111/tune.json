@@ -1,0 +1,74 @@
+[
+  {
+    "name": "cnn-base",
+    "architecture": "cnn",
+    "dynamics": 1,
+    "adjacency": 0,
+    "repulsion": 0.03,
+    "l2": 0.03,
+    "steps": 20000
+  },
+  {
+    "name": "cnn-dyn10",
+    "architecture": "cnn",
+    "dynamics": 10,
+    "adjacency": 0,
+    "repulsion": 0.03,
+    "l2": 0.03,
+    "steps": 20000
+  },
+  {
+    "name": "cnn-adj",
+    "architecture": "cnn",
+    "dynamics": 0,
+    "adjacency": 0.3,
+    "repulsion": 0.03,
+    "l2": 0.03,
+    "steps": 20000
+  },
+  {
+    "name": "cnn-push",
+    "architecture": "cnn",
+    "dynamics": 1,
+    "adjacency": 0,
+    "repulsion": 0.3,
+    "l2": 0.03,
+    "steps": 20000
+  },
+  {
+    "name": "mlp-base",
+    "architecture": "mlp",
+    "dynamics": 1,
+    "adjacency": 0,
+    "repulsion": 0.03,
+    "l2": 0.03,
+    "steps": 20000
+  },
+  {
+    "name": "mlp-dyn10",
+    "architecture": "mlp",
+    "dynamics": 10,
+    "adjacency": 0,
+    "repulsion": 0.03,
+    "l2": 0.03,
+    "steps": 20000
+  },
+  {
+    "name": "mlp-adj",
+    "architecture": "mlp",
+    "dynamics": 0,
+    "adjacency": 0.3,
+    "repulsion": 0.03,
+    "l2": 0.03,
+    "steps": 20000
+  },
+  {
+    "name": "mlp-push",
+    "architecture": "mlp",
+    "dynamics": 1,
+    "adjacency": 0,
+    "repulsion": 0.3,
+    "l2": 0.03,
+    "steps": 20000
+  }
+]

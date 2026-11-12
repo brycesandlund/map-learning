@@ -1,0 +1,20 @@
+[
+  {
+    "run": "runs/pixel-warm-20261111/cnn-r0.3-warm-seed110",
+    "latent_std": 0.0677606463432312,
+    "noise_distance": 0.1900804191827774,
+    "motion_distance": 0.202358216047287,
+    "noise_motion_ratio": 0.9393264055252075,
+    "retrieval_median_physical_error": 2.4293086528778076,
+    "retrieval_within_half_cell": 0.255859375
+  },
+  {
+    "run": "runs/pixel-warm-20261111/mlp-r0.3-warm-seed110",
+    "latent_std": 0.060781415551900864,
+    "noise_distance": 0.22157058119773865,
+    "motion_distance": 0.23727929592132568,
+    "noise_motion_ratio": 0.9337965250015259,
+    "retrieval_median_physical_error": 5.624320983886719,
+    "retrieval_within_half_cell": 0.01171875
+  }
+]

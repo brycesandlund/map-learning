@@ -1,0 +1,62 @@
+[
+  {
+    "name": "keypoint-rgb0-inv0",
+    "architecture": "keypoint",
+    "temperature": 200,
+    "rgb": 0,
+    "dim": 2,
+    "marker_size": 1.3,
+    "repulsion": 0.3,
+    "inverse": 0,
+    "extra_updates": 20,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "keypoint-rgb0-inv1",
+    "architecture": "keypoint",
+    "temperature": 200,
+    "rgb": 0,
+    "dim": 2,
+    "marker_size": 1.3,
+    "repulsion": 0.3,
+    "inverse": 1,
+    "extra_updates": 20,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "keypoint-rgb1-inv0",
+    "architecture": "keypoint",
+    "temperature": 200,
+    "rgb": 1,
+    "dim": 2,
+    "marker_size": 1.3,
+    "repulsion": 0.3,
+    "inverse": 0,
+    "extra_updates": 20,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "keypoint-rgb1-inv1",
+    "architecture": "keypoint",
+    "temperature": 200,
+    "rgb": 1,
+    "dim": 2,
+    "marker_size": 1.3,
+    "repulsion": 0.3,
+    "inverse": 1,
+    "extra_updates": 20,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  }
+]

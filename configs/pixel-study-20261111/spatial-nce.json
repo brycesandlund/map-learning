@@ -1,0 +1,34 @@
+[
+  {
+    "name": "spatial-rgb0-nce",
+    "architecture": "spatial",
+    "temperature": 200,
+    "rgb": 0,
+    "dim": 8,
+    "marker_size": 1.3,
+    "center": 1,
+    "repulsion": 0,
+    "infonce": 1,
+    "extra_updates": 20,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "spatial-rgb1-nce",
+    "architecture": "spatial",
+    "temperature": 200,
+    "rgb": 1,
+    "dim": 8,
+    "marker_size": 1.3,
+    "center": 1,
+    "repulsion": 0,
+    "infonce": 1,
+    "extra_updates": 20,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  }
+]

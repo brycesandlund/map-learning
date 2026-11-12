@@ -1,0 +1,26 @@
+{
+  "frozen_unix": 1794443453.3791628,
+  "baseline_auc": 0.7493853081597222,
+  "baseline_final": 0.9333767361111112,
+  "candidates": [
+    {
+      "weight": 0.3,
+      "auc": 0.7092469618055555,
+      "final": 0.8810763888888888,
+      "passes": false
+    },
+    {
+      "weight": 3.0,
+      "auc": 0.633439670138889,
+      "final": 0.73046875,
+      "passes": false
+    },
+    {
+      "weight": 30.0,
+      "auc": 0.4487646484375,
+      "final": 0.4954427083333333,
+      "passes": false
+    }
+  ],
+  "selected": null
+}

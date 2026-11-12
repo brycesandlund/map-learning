@@ -1,0 +1,326 @@
+{
+  "runs": 64,
+  "interactions": 1280000,
+  "results": [
+    {
+      "run": "runs/pixel-tune-20261111/cnn-adj-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/cnn-adj-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/cnn-base-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/cnn-base-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/cnn-dyn10-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/cnn-dyn10-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/cnn-push-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/cnn-push-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/mlp-adj-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/mlp-adj-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/mlp-base-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/mlp-base-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/mlp-dyn10-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/mlp-dyn10-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/mlp-push-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/mlp-push-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0-r0-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0-r0-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0-r0.001-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0-r0.001-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0-r0.01-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0-r0.01-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.8-r0-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.8-r0-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.8-r0.001-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.8-r0.001-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.8-r0.01-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.8-r0.01-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.95-r0-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.95-r0-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.95-r0.001-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.95-r0.001-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.95-r0.01-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.95-r0.01-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.99-r0-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.99-r0-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.99-r0.001-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.99-r0.001-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.99-r0.01-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.99-r0.01-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0-r0-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0-r0-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0-r0.001-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0-r0.001-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0-r0.01-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0-r0.01-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.8-r0-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.8-r0-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.8-r0.001-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.8-r0.001-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.8-r0.01-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.8-r0.01-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.95-r0-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.95-r0-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.95-r0.001-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.95-r0.001-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.95-r0.01-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.95-r0.01-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.99-r0-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.99-r0-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.99-r0.001-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.99-r0.001-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.99-r0.01-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.99-r0.01-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    }
+  ]
+}

@@ -1,0 +1,381 @@
+{
+  "runs": 75,
+  "interactions": 7500000,
+  "results": [
+    {
+      "run": "runs/pixel-learned-confirm-20261111/frozen-warm-seed120",
+      "interactions": 100000,
+      "policy": "frozen"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/frozen-warm-seed121",
+      "interactions": 100000,
+      "policy": "frozen"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/frozen-warm-seed122",
+      "interactions": 100000,
+      "policy": "frozen"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/frozen-warm-seed123",
+      "interactions": 100000,
+      "policy": "frozen"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/frozen-warm-seed124",
+      "interactions": 100000,
+      "policy": "frozen"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-cold-seed120",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-cold-seed121",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-cold-seed122",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-cold-seed123",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-cold-seed124",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-warm-seed120",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-warm-seed121",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-warm-seed122",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-warm-seed123",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-warm-seed124",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-cnn-confirm-20261111/cnn-warm-seed120",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-cnn-confirm-20261111/cnn-warm-seed121",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-cnn-confirm-20261111/cnn-warm-seed122",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/comb-iid-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/comb-iid-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/comb-iid-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/comb-persistent-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/comb-persistent-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/comb-persistent-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/comb-reset-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/comb-reset-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/comb-reset-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/maze-iid-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/maze-iid-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/maze-iid-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/maze-persistent-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/maze-persistent-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/maze-persistent-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/maze-reset-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/maze-reset-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/maze-reset-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/open-iid-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/open-iid-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/open-iid-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/open-persistent-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/open-persistent-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/open-persistent-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/open-reset-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/open-reset-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/open-reset-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/rooms-iid-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/rooms-iid-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/rooms-iid-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/rooms-persistent-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/rooms-persistent-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/rooms-persistent-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/rooms-reset-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/rooms-reset-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/rooms-reset-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/snake-iid-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/snake-iid-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/snake-iid-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/snake-persistent-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/snake-persistent-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/snake-persistent-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/snake-reset-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/snake-reset-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/snake-reset-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-extra-20261111/maze-iid-seed123",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-extra-20261111/maze-iid-seed124",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-extra-20261111/maze-persistent-seed123",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-extra-20261111/maze-persistent-seed124",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-extra-20261111/maze-reset-seed123",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-extra-20261111/maze-reset-seed124",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-matched-confirm-20261111/comb-matched-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-matched-confirm-20261111/comb-matched-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-matched-confirm-20261111/comb-matched-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-matched-confirm-20261111/snake-matched-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-matched-confirm-20261111/snake-matched-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-matched-confirm-20261111/snake-matched-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    }
+  ]
+}

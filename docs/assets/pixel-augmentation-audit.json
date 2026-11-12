@@ -1,0 +1,36 @@
+{
+  "runs": 6,
+  "interactions": 600000,
+  "results": [
+    {
+      "run": "runs/pixel-attention-augmentation-20261111/attention-aug0.3-seed110",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-attention-augmentation-20261111/attention-aug0.3-seed111",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-attention-augmentation-20261111/attention-aug3.0-seed110",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-attention-augmentation-20261111/attention-aug3.0-seed111",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-attention-augmentation-20261111/attention-aug30.0-seed110",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-attention-augmentation-20261111/attention-aug30.0-seed111",
+      "interactions": 100000,
+      "policy": "learned"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "name": "mlp-panel-long",
+    "architecture": "mlp",
+    "noise_mode": "panel",
+    "image_size": 56,
+    "repulsion": 0.03,
+    "extra_updates": 100,
+    "train_every": 5000,
+    "refresh_every": 5000,
+    "steps": 100000
+  }
+]

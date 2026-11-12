@@ -1,0 +1,167 @@
+[
+  {
+    "name": "maze-persistent",
+    "family": "maze",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0.0,
+    "steps": 100000,
+    "rgb": 1,
+    "marker_size": 1.3
+  },
+  {
+    "name": "maze-reset",
+    "family": "maze",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0.001,
+    "steps": 100000,
+    "rgb": 1,
+    "marker_size": 1.3
+  },
+  {
+    "name": "maze-iid",
+    "family": "maze",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0,
+    "reset_probability": 0,
+    "steps": 100000,
+    "rgb": 1,
+    "marker_size": 1.3
+  },
+  {
+    "name": "snake-persistent",
+    "family": "snake",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.95,
+    "reset_probability": 0.0,
+    "steps": 100000,
+    "rgb": 1,
+    "marker_size": 1.3
+  },
+  {
+    "name": "snake-reset",
+    "family": "snake",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0.001,
+    "steps": 100000,
+    "rgb": 1,
+    "marker_size": 1.3
+  },
+  {
+    "name": "snake-iid",
+    "family": "snake",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0,
+    "reset_probability": 0,
+    "steps": 100000,
+    "rgb": 1,
+    "marker_size": 1.3
+  },
+  {
+    "name": "comb-persistent",
+    "family": "comb",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.95,
+    "reset_probability": 0.0,
+    "steps": 100000,
+    "rgb": 1,
+    "marker_size": 1.3
+  },
+  {
+    "name": "comb-reset",
+    "family": "comb",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0.001,
+    "steps": 100000,
+    "rgb": 1,
+    "marker_size": 1.3
+  },
+  {
+    "name": "comb-iid",
+    "family": "comb",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0,
+    "reset_probability": 0,
+    "steps": 100000,
+    "rgb": 1,
+    "marker_size": 1.3
+  },
+  {
+    "name": "open-persistent",
+    "family": "open",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0.0,
+    "steps": 100000,
+    "rgb": 1,
+    "marker_size": 1.3
+  },
+  {
+    "name": "open-reset",
+    "family": "open",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0.001,
+    "steps": 100000,
+    "rgb": 1,
+    "marker_size": 1.3
+  },
+  {
+    "name": "open-iid",
+    "family": "open",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0,
+    "reset_probability": 0,
+    "steps": 100000,
+    "rgb": 1,
+    "marker_size": 1.3
+  },
+  {
+    "name": "rooms-persistent",
+    "family": "rooms",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0.0,
+    "steps": 100000,
+    "rgb": 1,
+    "marker_size": 1.3
+  },
+  {
+    "name": "rooms-reset",
+    "family": "rooms",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0.001,
+    "steps": 100000,
+    "rgb": 1,
+    "marker_size": 1.3
+  },
+  {
+    "name": "rooms-iid",
+    "family": "rooms",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0,
+    "reset_probability": 0,
+    "steps": 100000,
+    "rgb": 1,
+    "marker_size": 1.3
+  }
+]

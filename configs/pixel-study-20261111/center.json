@@ -1,0 +1,68 @@
+[
+  {
+    "name": "cnn-center-r0.03",
+    "architecture": "cnn",
+    "center": 1,
+    "repulsion": 0.03,
+    "extra_updates": 100,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "cnn-center-r0.3",
+    "architecture": "cnn",
+    "center": 1,
+    "repulsion": 0.3,
+    "extra_updates": 100,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "cnn-center-r3",
+    "architecture": "cnn",
+    "center": 1,
+    "repulsion": 3,
+    "extra_updates": 100,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "mlp-center-r0.03",
+    "architecture": "mlp",
+    "center": 1,
+    "repulsion": 0.03,
+    "extra_updates": 100,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "mlp-center-r0.3",
+    "architecture": "mlp",
+    "center": 1,
+    "repulsion": 0.3,
+    "extra_updates": 100,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "mlp-center-r3",
+    "architecture": "mlp",
+    "center": 1,
+    "repulsion": 3,
+    "extra_updates": 100,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  }
+]

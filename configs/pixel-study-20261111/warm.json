@@ -1,0 +1,92 @@
+[
+  {
+    "name": "cnn-r0.03-warm",
+    "architecture": "cnn",
+    "repulsion": 0.03,
+    "extra_updates": 50,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "cnn-r0.3-warm",
+    "architecture": "cnn",
+    "repulsion": 0.3,
+    "extra_updates": 50,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "cnn-r3-warm",
+    "architecture": "cnn",
+    "repulsion": 3,
+    "extra_updates": 50,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "mlp-r0.03-warm",
+    "architecture": "mlp",
+    "repulsion": 0.03,
+    "extra_updates": 50,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "mlp-r0.3-warm",
+    "architecture": "mlp",
+    "repulsion": 0.3,
+    "extra_updates": 50,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "mlp-r3-warm",
+    "architecture": "mlp",
+    "repulsion": 3,
+    "extra_updates": 50,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "spatial-r0.03-warm",
+    "architecture": "spatial",
+    "repulsion": 0.03,
+    "extra_updates": 50,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "spatial-r0.3-warm",
+    "architecture": "spatial",
+    "repulsion": 0.3,
+    "extra_updates": 50,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "spatial-r3-warm",
+    "architecture": "spatial",
+    "repulsion": 3,
+    "extra_updates": 50,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  }
+]

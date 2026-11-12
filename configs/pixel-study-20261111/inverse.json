@@ -1,0 +1,58 @@
+[
+  {
+    "name": "cnn-rgb0-inverse0.1",
+    "architecture": "cnn",
+    "rgb": 0,
+    "marker_size": 1.3,
+    "center": 1,
+    "repulsion": 0.3,
+    "inverse": 0.1,
+    "extra_updates": 50,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "cnn-rgb0-inverse1",
+    "architecture": "cnn",
+    "rgb": 0,
+    "marker_size": 1.3,
+    "center": 1,
+    "repulsion": 0.3,
+    "inverse": 1,
+    "extra_updates": 50,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "cnn-rgb1-inverse0.1",
+    "architecture": "cnn",
+    "rgb": 1,
+    "marker_size": 1.3,
+    "center": 1,
+    "repulsion": 0.3,
+    "inverse": 0.1,
+    "extra_updates": 50,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "cnn-rgb1-inverse1",
+    "architecture": "cnn",
+    "rgb": 1,
+    "marker_size": 1.3,
+    "center": 1,
+    "repulsion": 0.3,
+    "inverse": 1,
+    "extra_updates": 50,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "run": "runs/pixel-accelerated-long-20261111/rgb-attention-seed110",
+    "latent_std": 0.20321719348430634,
+    "noise_distance": 0.005154668353497982,
+    "motion_distance": 0.019503794610500336,
+    "noise_motion_ratio": 0.26429054141044617,
+    "chance_within_half_cell": 0.009765625,
+    "retrieval_median_physical_error": 0.0,
+    "retrieval_within_half_cell": 0.998046875
+  },
+  {
+    "run": "runs/pixel-accelerated-long-20261111/gray-attention-seed110",
+    "latent_std": 0.19566300511360168,
+    "noise_distance": 0.008274579420685768,
+    "motion_distance": 0.02052793651819229,
+    "noise_motion_ratio": 0.4030887186527252,
+    "chance_within_half_cell": 0.00390625,
+    "retrieval_median_physical_error": 0.0,
+    "retrieval_within_half_cell": 0.990234375
+  }
+]

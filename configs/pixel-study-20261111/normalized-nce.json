@@ -1,0 +1,34 @@
+[
+  {
+    "name": "cnn-rgb1-nce-normalized",
+    "architecture": "cnn",
+    "temperature": 10,
+    "rgb": 1,
+    "marker_size": 1.3,
+    "center": 1,
+    "repulsion": 0,
+    "infonce": 1,
+    "normalize": 1,
+    "extra_updates": 50,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  },
+  {
+    "name": "spatial-rgb1-nce-normalized",
+    "architecture": "spatial",
+    "temperature": 200,
+    "rgb": 1,
+    "marker_size": 1.3,
+    "center": 1,
+    "repulsion": 0,
+    "infonce": 1,
+    "normalize": 1,
+    "extra_updates": 20,
+    "warm_steps": 5000,
+    "persistence": 0.8,
+    "controls": "cardinal",
+    "steps": 30000
+  }
+]

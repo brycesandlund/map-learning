@@ -1,0 +1,24 @@
+[
+  {
+    "name": "snake-matched",
+    "family": "snake",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0,
+    "steps": 100000,
+    "rgb": 1,
+    "marker_size": 1.3
+  },
+  {
+    "name": "comb-matched",
+    "family": "comb",
+    "policy": "walk",
+    "controls": "cardinal",
+    "persistence": 0.8,
+    "reset_probability": 0,
+    "steps": 100000,
+    "rgb": 1,
+    "marker_size": 1.3
+  }
+]

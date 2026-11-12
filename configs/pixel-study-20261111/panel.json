@@ -1,0 +1,38 @@
+[
+  {
+    "name": "mlp-panel-r0.03",
+    "architecture": "mlp",
+    "noise_mode": "panel",
+    "image_size": 56,
+    "repulsion": 0.03,
+    "extra_updates": 20,
+    "steps": 30000
+  },
+  {
+    "name": "mlp-panel-r0.3",
+    "architecture": "mlp",
+    "noise_mode": "panel",
+    "image_size": 56,
+    "repulsion": 0.3,
+    "extra_updates": 20,
+    "steps": 30000
+  },
+  {
+    "name": "cnn-panel-r0.03",
+    "architecture": "cnn",
+    "noise_mode": "panel",
+    "image_size": 56,
+    "repulsion": 0.03,
+    "extra_updates": 20,
+    "steps": 30000
+  },
+  {
+    "name": "cnn-panel-r0.3",
+    "architecture": "cnn",
+    "noise_mode": "panel",
+    "image_size": 56,
+    "repulsion": 0.3,
+    "extra_updates": 20,
+    "steps": 30000
+  }
+]

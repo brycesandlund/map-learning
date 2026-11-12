@@ -1,0 +1,42 @@
+[
+  {
+    "temperature": 25,
+    "noise_median": 0.012560276314616203,
+    "noise_p99": 0.03694221377372742,
+    "latent_std": 0.0189567469060421,
+    "retrieval_half_room": 0.0673828125,
+    "retrieval_median": 2.1155309582209587
+  },
+  {
+    "temperature": 50,
+    "noise_median": 0.034146327525377274,
+    "noise_p99": 0.19738169014453888,
+    "latent_std": 0.10122278332710266,
+    "retrieval_half_room": 0.2412109375,
+    "retrieval_median": 1.0393460804696182
+  },
+  {
+    "temperature": 100,
+    "noise_median": 0.009442392736673355,
+    "noise_p99": 0.12851688265800476,
+    "latent_std": 0.2080545425415039,
+    "retrieval_half_room": 0.869140625,
+    "retrieval_median": 0.08278534465571305
+  },
+  {
+    "temperature": 200,
+    "noise_median": 0.005981325637549162,
+    "noise_p99": 0.03197749704122543,
+    "latent_std": 0.21271932125091553,
+    "retrieval_half_room": 0.9697265625,
+    "retrieval_median": 0.0
+  },
+  {
+    "temperature": 400,
+    "noise_median": 0.008769243024289608,
+    "noise_p99": 0.03471952676773071,
+    "latent_std": 0.2150348722934723,
+    "retrieval_half_room": 0.927734375,
+    "retrieval_median": 0.08979488976683078
+  }
+]

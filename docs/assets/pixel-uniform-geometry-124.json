@@ -1,0 +1,13 @@
+[
+  {
+    "run": "runs/pixel-learned-confirm-20261111/learned-warm-seed124",
+    "positions": "uniform",
+    "latent_std": 0.18811491131782532,
+    "noise_distance": 0.0038707186467945576,
+    "motion_distance": 0.015766886994242668,
+    "noise_motion_ratio": 0.2454966902732849,
+    "chance_within_half_cell": 0.009765625,
+    "retrieval_median_physical_error": 0.0,
+    "retrieval_within_half_cell": 0.97265625
+  }
+]

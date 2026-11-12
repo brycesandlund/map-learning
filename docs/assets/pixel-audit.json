@@ -1,0 +1,1872 @@
+{
+  "runs": 372,
+  "interactions": 17630000,
+  "sources": [
+    "pixel-tuning-audit",
+    "pixel-main-and-random-audit",
+    "pixel-augmentation-audit",
+    "pixel-hard-audit"
+  ],
+  "results": [
+    {
+      "run": "runs/pixel-accelerated-long-20261111/gray-attention-seed110",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-accelerated-long-20261111/gray-attention-seed111",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-accelerated-long-20261111/rgb-attention-seed110",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-accelerated-long-20261111/rgb-attention-seed111",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-accelerated-long-20261111/rgb-nce-seed110",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-accelerated-long-20261111/rgb-nce-seed111",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-anneal-20261111/cnn-rgb-anneal10-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-anneal-20261111/cnn-rgb-anneal10-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-anneal-20261111/cnn-rgb-anneal3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-anneal-20261111/cnn-rgb-anneal3-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-attention-20261111/spatial-rgb0-temp200-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-attention-20261111/spatial-rgb0-temp200-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-attention-20261111/spatial-rgb0-temp50-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-attention-20261111/spatial-rgb0-temp50-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-attention-20261111/spatial-rgb1-temp200-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-attention-20261111/spatial-rgb1-temp200-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-attention-20261111/spatial-rgb1-temp50-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-attention-20261111/spatial-rgb1-temp50-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-augmentation-20261111/mlp-rgb0-aug0.3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-augmentation-20261111/mlp-rgb0-aug0.3-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-augmentation-20261111/mlp-rgb0-aug3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-augmentation-20261111/mlp-rgb0-aug3-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-augmentation-20261111/mlp-rgb1-aug0.3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-augmentation-20261111/mlp-rgb1-aug0.3-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-augmentation-20261111/mlp-rgb1-aug3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-augmentation-20261111/mlp-rgb1-aug3-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-background-20261111/cnn-bg-r0.3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-background-20261111/cnn-bg-r3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-background-20261111/mlp-bg-r0.3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-background-20261111/mlp-bg-r3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/cnn-center-r0.03-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/cnn-center-r0.03-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/cnn-center-r0.3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/cnn-center-r0.3-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/cnn-center-r3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/cnn-center-r3-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/mlp-center-r0.03-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/mlp-center-r0.03-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/mlp-center-r0.3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/mlp-center-r0.3-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/mlp-center-r3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-center-20261111/mlp-center-r3-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-dim-20261111/mlp-rgb0-dim2-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-dim-20261111/mlp-rgb0-dim2-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-dim-20261111/mlp-rgb0-dim4-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-dim-20261111/mlp-rgb0-dim4-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-dim-20261111/mlp-rgb1-dim2-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-dim-20261111/mlp-rgb1-dim2-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-dim-20261111/mlp-rgb1-dim4-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-dim-20261111/mlp-rgb1-dim4-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/cnn-adjpush-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/cnn-adjpush-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/cnn-clean-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/cnn-clean-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/cnn-low-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/cnn-low-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/cnn-strong-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/cnn-strong-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/mlp-adjpush-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/mlp-adjpush-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/mlp-clean-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/mlp-clean-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/mlp-low-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/mlp-low-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/mlp-strong-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/mlp-strong-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/spatial-adjpush-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/spatial-adjpush-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/spatial-clean-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/spatial-clean-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/spatial-low-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/spatial-low-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/spatial-strong-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-followup-20261111/spatial-strong-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.5-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.5-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.5-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.5-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.8-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.8-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.8-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.8-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.95-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.95-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.95-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/comb-p0.95-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.5-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.5-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.5-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.5-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.8-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.8-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.8-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.8-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.95-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.95-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.95-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/open-p0.95-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.5-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.5-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.5-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.5-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.8-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.8-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.8-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.8-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.95-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.95-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.95-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/rooms-p0.95-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.5-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.5-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.5-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.5-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.8-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.8-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.8-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.8-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.95-r0-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.95-r0-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.95-r0.001-seed110",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-hard-walk-20261111/snake-p0.95-r0.001-seed111",
+      "interactions": 30000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-inverse-20261111/cnn-rgb0-inverse0.1-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-inverse-20261111/cnn-rgb0-inverse0.1-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-inverse-20261111/cnn-rgb0-inverse1-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-inverse-20261111/cnn-rgb0-inverse1-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-inverse-20261111/cnn-rgb1-inverse0.1-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-inverse-20261111/cnn-rgb1-inverse0.1-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-inverse-20261111/cnn-rgb1-inverse1-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-inverse-20261111/cnn-rgb1-inverse1-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-keypoint-20261111/keypoint-rgb0-inv0-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-keypoint-20261111/keypoint-rgb0-inv0-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-keypoint-20261111/keypoint-rgb0-inv1-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-keypoint-20261111/keypoint-rgb0-inv1-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-keypoint-20261111/keypoint-rgb1-inv0-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-keypoint-20261111/keypoint-rgb1-inv0-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-keypoint-20261111/keypoint-rgb1-inv1-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-keypoint-20261111/keypoint-rgb1-inv1-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-long-tune-20261111/cnn-panel-long-seed110",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-long-tune-20261111/cnn-panel-long-seed111",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-long-tune-20261111/spatial-gray-long-seed110",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-long-tune-20261111/spatial-gray-long-seed111",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-nce-20261111/cnn-rgb0-nce-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-nce-20261111/cnn-rgb0-nce-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-nce-20261111/cnn-rgb1-nce-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-nce-20261111/cnn-rgb1-nce-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-nce-20261111/mlp-rgb0-nce-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-nce-20261111/mlp-rgb0-nce-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-nce-20261111/mlp-rgb1-nce-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-nce-20261111/mlp-rgb1-nce-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-normalized-nce-20261111/cnn-rgb1-nce-normalized-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-normalized-nce-20261111/cnn-rgb1-nce-normalized-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-normalized-nce-20261111/spatial-rgb1-nce-normalized-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-normalized-nce-20261111/spatial-rgb1-nce-normalized-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-panel-20261111/cnn-panel-r0.03-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-panel-20261111/cnn-panel-r0.03-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-panel-20261111/cnn-panel-r0.3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-panel-20261111/cnn-panel-r0.3-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-panel-20261111/mlp-panel-r0.03-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-panel-20261111/mlp-panel-r0.03-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-panel-20261111/mlp-panel-r0.3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-panel-20261111/mlp-panel-r0.3-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-panel-mlp-long-20261111/mlp-panel-long-seed110",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-panel-mlp-long-20261111/mlp-panel-long-seed111",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-rgb-20261111/cnn-rgb-r0.03-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-rgb-20261111/cnn-rgb-r0.3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-rgb-20261111/mlp-rgb-r0.03-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-rgb-20261111/mlp-rgb-r0.3-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-spatial-nce-20261111/spatial-rgb0-nce-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-spatial-nce-20261111/spatial-rgb0-nce-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-spatial-nce-20261111/spatial-rgb1-nce-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-spatial-nce-20261111/spatial-rgb1-nce-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/cnn-adj-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/cnn-adj-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/cnn-base-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/cnn-base-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/cnn-dyn10-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/cnn-dyn10-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/cnn-push-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/cnn-push-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/mlp-adj-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/mlp-adj-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/mlp-base-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/mlp-base-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/mlp-dyn10-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/mlp-dyn10-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/mlp-push-seed110",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-tune-20261111/mlp-push-seed111",
+      "interactions": 20000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-variance-20261111/cnn-warm0-d0-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-variance-20261111/cnn-warm0-d0-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-variance-20261111/cnn-warm0-d10-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-variance-20261111/cnn-warm0-d10-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-variance-20261111/cnn-warm5000-d0-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-variance-20261111/cnn-warm5000-d0-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-variance-20261111/cnn-warm5000-d10-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-variance-20261111/cnn-warm5000-d10-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-variance-20261111/spatial-warm0-d0-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-variance-20261111/spatial-warm0-d10-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-variance-20261111/spatial-warm5000-d0-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-variance-20261111/spatial-warm5000-d10-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0-r0-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0-r0-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0-r0.001-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0-r0.001-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0-r0.01-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0-r0.01-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.8-r0-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.8-r0-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.8-r0.001-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.8-r0.001-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.8-r0.01-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.8-r0.01-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.95-r0-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.95-r0-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.95-r0.001-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.95-r0.001-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.95-r0.01-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.95-r0.01-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.99-r0-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.99-r0-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.99-r0.001-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.99-r0.001-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.99-r0.01-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/cardinal-p0.99-r0.01-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0-r0-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0-r0-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0-r0.001-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0-r0.001-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0-r0.01-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0-r0.01-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.8-r0-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.8-r0-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.8-r0.001-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.8-r0.001-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.8-r0.01-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.8-r0.01-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.95-r0-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.95-r0-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.95-r0.001-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.95-r0.001-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.95-r0.01-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.95-r0.01-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.99-r0-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.99-r0-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.99-r0.001-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.99-r0.001-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.99-r0.01-seed110",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-walk-tune-20261111/continuous-p0.99-r0.01-seed111",
+      "interactions": 20000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-warm-20261111/cnn-r0.03-warm-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-warm-20261111/cnn-r0.03-warm-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-warm-20261111/cnn-r0.3-warm-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-warm-20261111/cnn-r0.3-warm-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-warm-20261111/cnn-r3-warm-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-warm-20261111/cnn-r3-warm-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-warm-20261111/mlp-r0.03-warm-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-warm-20261111/mlp-r0.03-warm-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-warm-20261111/mlp-r0.3-warm-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-warm-20261111/mlp-r0.3-warm-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-warm-20261111/mlp-r3-warm-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-warm-20261111/mlp-r3-warm-seed111",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-warm-20261111/spatial-r0.03-warm-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-warm-20261111/spatial-r0.3-warm-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-warm-20261111/spatial-r3-warm-seed110",
+      "interactions": 30000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/frozen-warm-seed120",
+      "interactions": 100000,
+      "policy": "frozen"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/frozen-warm-seed121",
+      "interactions": 100000,
+      "policy": "frozen"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/frozen-warm-seed122",
+      "interactions": 100000,
+      "policy": "frozen"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/frozen-warm-seed123",
+      "interactions": 100000,
+      "policy": "frozen"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/frozen-warm-seed124",
+      "interactions": 100000,
+      "policy": "frozen"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-cold-seed120",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-cold-seed121",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-cold-seed122",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-cold-seed123",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-cold-seed124",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-warm-seed120",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-warm-seed121",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-warm-seed122",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-warm-seed123",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-learned-confirm-20261111/learned-warm-seed124",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-cnn-confirm-20261111/cnn-warm-seed120",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-cnn-confirm-20261111/cnn-warm-seed121",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-cnn-confirm-20261111/cnn-warm-seed122",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/comb-iid-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/comb-iid-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/comb-iid-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/comb-persistent-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/comb-persistent-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/comb-persistent-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/comb-reset-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/comb-reset-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/comb-reset-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/maze-iid-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/maze-iid-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/maze-iid-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/maze-persistent-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/maze-persistent-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/maze-persistent-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/maze-reset-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/maze-reset-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/maze-reset-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/open-iid-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/open-iid-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/open-iid-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/open-persistent-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/open-persistent-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/open-persistent-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/open-reset-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/open-reset-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/open-reset-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/rooms-iid-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/rooms-iid-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/rooms-iid-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/rooms-persistent-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/rooms-persistent-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/rooms-persistent-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/rooms-reset-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/rooms-reset-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/rooms-reset-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/snake-iid-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/snake-iid-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/snake-iid-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/snake-persistent-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/snake-persistent-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/snake-persistent-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/snake-reset-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/snake-reset-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-20261111/snake-reset-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-extra-20261111/maze-iid-seed123",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-extra-20261111/maze-iid-seed124",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-extra-20261111/maze-persistent-seed123",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-extra-20261111/maze-persistent-seed124",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-extra-20261111/maze-reset-seed123",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-random-confirm-extra-20261111/maze-reset-seed124",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-matched-confirm-20261111/comb-matched-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-matched-confirm-20261111/comb-matched-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-matched-confirm-20261111/comb-matched-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-matched-confirm-20261111/snake-matched-seed120",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-matched-confirm-20261111/snake-matched-seed121",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-matched-confirm-20261111/snake-matched-seed122",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/pixel-attention-augmentation-20261111/attention-aug0.3-seed110",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-attention-augmentation-20261111/attention-aug0.3-seed111",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-attention-augmentation-20261111/attention-aug3.0-seed110",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-attention-augmentation-20261111/attention-aug3.0-seed111",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-attention-augmentation-20261111/attention-aug30.0-seed110",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-attention-augmentation-20261111/attention-aug30.0-seed111",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/comb-learned-seed120",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/comb-learned-seed121",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/comb-learned-seed122",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/open-learned-seed120",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/open-learned-seed121",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/open-learned-seed122",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/rooms-learned-seed120",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/rooms-learned-seed121",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/rooms-learned-seed122",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/snake-learned-seed120",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/snake-learned-seed121",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/pixel-hard-confirm-20261111/snake-learned-seed122",
+      "interactions": 100000,
+      "policy": "learned"
+    }
+  ]
+}
