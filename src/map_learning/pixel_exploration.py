@@ -12,12 +12,16 @@ from .models import mlp
 
 
 class PixelMaze(Maze):
-    def __init__(self, config, seed=0, family='maze', noise=.12, rgb=False, marker_size=.85, noise_mode="full"):
+    def __init__(self, config, seed=0, family='maze', noise=.12, rgb=False, marker_size=.85, noise_mode="full", gate_width=1.):
+        self.gate_width = gate_width
         self.family = family
         self.rgb=rgb;self.marker_size=marker_size
         self.noise_mode=noise_mode;self.viewport=config.image_size-(8 if noise_mode=="panel" else 0)
         self.noise = noise
         super().__init__(config, seed)
+        if family == "gates":
+            self.start = np.array([config.size/8, config.size/2+.5],np.float32)
+            self.position = self.start.copy()
         r = config.image_size
         self.yy, self.xx = np.mgrid[:r, :r].astype(np.float32)
 
@@ -26,7 +30,12 @@ class PixelMaze(Maze):
             return super()._generate_walls()
         n = self.config.size
         walls = [(0,0,n,0),(0,n,n,n),(0,0,0,n),(n,0,n,n)]
-        if self.family == 'snake':
+        if self.family == 'gates':
+            if not 0 < self.gate_width < n/4:raise ValueError('Invalid gate width')
+            for i in range(1,4):
+                x=n*i/4; y=n*(1.73/12 if i%2 else 1-1.73/12)
+                walls += [(x,0,x,y-self.gate_width/2),(x,y+self.gate_width/2,x,n)]
+        elif self.family == 'snake':
             # Alternating doors connect n long horizontal corridors in a chain.
             for y in range(1,n):
                 walls.append((0,y,n-1,y) if y%2 else (1,y,n,y))
@@ -43,6 +52,19 @@ class PixelMaze(Maze):
         return np.array(walls,dtype=np.float32).reshape(-1,2,2)
 
     def _raster_background(self):
+        if self.family=='gates':
+            # Exact pixel-area integration of thin wall rectangles. Subpixel gaps
+            # affect intensity continuously instead of rounding closed or open.
+            n=self.config.size;r=self.config.image_size;pitch=n/(r-1)
+            centers=np.linspace(0,n,r);lo=centers-pitch/2;hi=centers+pitch/2
+            alpha=np.zeros((r,r),np.float64)
+            for segment in self.walls:
+                a,b=segment; axis=0 if a[0]==b[0] else 1
+                fixed=a[axis];u,v=sorted([a[1-axis],b[1-axis]])
+                across=np.maximum(0,np.minimum(hi,fixed+pitch/2)-np.maximum(lo,fixed-pitch/2))/pitch
+                along=np.maximum(0,np.minimum(hi,v)-np.maximum(lo,u))/pitch
+                alpha += np.outer(along,across) if axis==0 else np.outer(across,along)
+            return (1-np.clip(alpha,0,1)).astype(np.float32)
         if self.noise_mode!='panel':return super()._raster_background()
         canvas=np.full((self.config.image_size,self.config.image_size),.5,np.float32)
         canvas[:self.viewport,:self.viewport]=1

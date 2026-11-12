@@ -18,6 +18,8 @@ for i,path in enumerate(a.runs):
  raw=images[0].transpose(1,2,0) if images.shape[1]==3 else images[0,0]
  frame=axes[i,1].imshow(raw,cmap='gray',vmin=0,vmax=255,origin='lower');axes[i,1].axis('off')
  label=('Frozen encoder + warmup' if s['policy']=='frozen' else ('Learned + warmup' if s['warm_steps'] else 'Learned, cold start')) if s['policy']!='walk' else f"Walk: persistence {s['persistence']:g}, reset probability {s['reset_probability']:g}"
+ if s['policy']=='coordinate_oracle':label='Coordinate oracle frontier (privileged diagnostic)'
+ if s['policy']=='learned':label+=f" · {s['dim']}D latent"
  items.append((s,d,images,cover,trace,frame,ax,label))
 def draw(j):
  for s,d,images,cover,trace,frame,ax,name in items:
@@ -27,7 +29,8 @@ def draw(j):
     frame.set_data(images[n].transpose(1,2,0) if images.shape[1]==3 else images[n,0])
     ax.set_title(f'{name}\n{n:,} actions • {100*d["frames"][k].mean():.1f}% • {int(d["frames"][k].sum()):,} bins',fontsize=10,pad=9)
 draw(0)
-fig.suptitle(f"{items[0][0]['family'].capitalize()} maze · seed {items[0][0]['seed']} · actual noisy observations at right",fontsize=12,y=.985)
+extra=f" · doorway {items[0][0].get('gate_width',1):g}" if items[0][0]['family']=='gates' else ''
+fig.suptitle(f"{items[0][0]['family'].capitalize()}{extra} maze · seed {items[0][0]['seed']} · actual noisy observations at right",fontsize=12,y=.985)
 fig.subplots_adjust(left=.07,right=.98,bottom=.04,top=.93,hspace=.30,wspace=.14)
 ani=FuncAnimation(fig,draw,frames=100,interval=100)
 ani.save(a.out,writer=PillowWriter(fps=10));draw(99);fig.savefig(a.out.with_suffix('.png'),dpi=130)

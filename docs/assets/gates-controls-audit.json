@@ -1,0 +1,276 @@
+{
+  "runs": 54,
+  "interactions": 5400000,
+  "results": [
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.0-r0.0-seed160",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.0-r0.0-seed161",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.0-r0.0-seed162",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.0-seed160",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.0-seed161",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.0-seed162",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.001-seed160",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.001-seed161",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.001-seed162",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.95-r0.0-seed160",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.95-r0.0-seed161",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.95-r0.0-seed162",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.99-r0.0-seed160",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.99-r0.0-seed161",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.99-r0.0-seed162",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.0-r0.0-seed160",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.0-r0.0-seed161",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.0-r0.0-seed162",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.0-seed160",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.0-seed161",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.0-seed162",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.001-seed160",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.001-seed161",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.001-seed162",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.95-r0.0-seed160",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.95-r0.0-seed161",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.95-r0.0-seed162",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.99-r0.0-seed160",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.99-r0.0-seed161",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.99-r0.0-seed162",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.0-r0.0-seed160",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.0-r0.0-seed161",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.0-r0.0-seed162",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.0-seed160",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.0-seed161",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.0-seed162",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.001-seed160",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.001-seed161",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.001-seed162",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.95-r0.0-seed160",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.95-r0.0-seed161",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.95-r0.0-seed162",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.99-r0.0-seed160",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.99-r0.0-seed161",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.99-r0.0-seed162",
+      "interactions": 100000,
+      "policy": "walk"
+    },
+    {
+      "run": "runs/gates-oracle-20261111/w0.0625-oracle-seed160",
+      "interactions": 100000,
+      "policy": "coordinate_oracle"
+    },
+    {
+      "run": "runs/gates-oracle-20261111/w0.0625-oracle-seed161",
+      "interactions": 100000,
+      "policy": "coordinate_oracle"
+    },
+    {
+      "run": "runs/gates-oracle-20261111/w0.0625-oracle-seed162",
+      "interactions": 100000,
+      "policy": "coordinate_oracle"
+    },
+    {
+      "run": "runs/gates-oracle-20261111/w0.25-oracle-seed160",
+      "interactions": 100000,
+      "policy": "coordinate_oracle"
+    },
+    {
+      "run": "runs/gates-oracle-20261111/w0.25-oracle-seed161",
+      "interactions": 100000,
+      "policy": "coordinate_oracle"
+    },
+    {
+      "run": "runs/gates-oracle-20261111/w0.25-oracle-seed162",
+      "interactions": 100000,
+      "policy": "coordinate_oracle"
+    },
+    {
+      "run": "runs/gates-oracle-20261111/w1.0-oracle-seed160",
+      "interactions": 100000,
+      "policy": "coordinate_oracle"
+    },
+    {
+      "run": "runs/gates-oracle-20261111/w1.0-oracle-seed161",
+      "interactions": 100000,
+      "policy": "coordinate_oracle"
+    },
+    {
+      "run": "runs/gates-oracle-20261111/w1.0-oracle-seed162",
+      "interactions": 100000,
+      "policy": "coordinate_oracle"
+    }
+  ]
+}

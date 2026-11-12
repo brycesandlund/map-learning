@@ -1,0 +1,101 @@
+[
+  {
+    "run": "runs/gates-learned-20261111/w0.0625-learned2-seed160",
+    "dim": 2,
+    "width": 0.0625,
+    "pair_noise_rms_mean": 0.0067381300032138824,
+    "gate_displacement_mean": 0.00316447950899601,
+    "ratio_of_means": 2.1293013095855713,
+    "median_local_ratio": 2.080221652984619,
+    "fraction_noise_exceeds_gate_displacement": 0.921875,
+    "centroid_noise_floor_mean": 0.0016845325008034706
+  },
+  {
+    "run": "runs/gates-learned-20261111/w0.0625-learned2-seed161",
+    "dim": 2,
+    "width": 0.0625,
+    "pair_noise_rms_mean": 0.013827783986926079,
+    "gate_displacement_mean": 0.005230216309428215,
+    "ratio_of_means": 2.643826484680176,
+    "median_local_ratio": 2.566587448120117,
+    "fraction_noise_exceeds_gate_displacement": 0.984375,
+    "centroid_noise_floor_mean": 0.0034569459967315197
+  },
+  {
+    "run": "runs/gates-learned-20261111/w0.0625-learned2-seed162",
+    "dim": 2,
+    "width": 0.0625,
+    "pair_noise_rms_mean": 0.006511135026812553,
+    "gate_displacement_mean": 0.002814945764839649,
+    "ratio_of_means": 2.313058853149414,
+    "median_local_ratio": 2.4559082984924316,
+    "fraction_noise_exceeds_gate_displacement": 0.95703125,
+    "centroid_noise_floor_mean": 0.0016277837567031384
+  },
+  {
+    "run": "runs/gates-learned-20261111/w0.0625-learned8-seed160",
+    "dim": 8,
+    "width": 0.0625,
+    "pair_noise_rms_mean": 0.038433242589235306,
+    "gate_displacement_mean": 0.013249359093606472,
+    "ratio_of_means": 2.9007623195648193,
+    "median_local_ratio": 3.079758644104004,
+    "fraction_noise_exceeds_gate_displacement": 1.0,
+    "centroid_noise_floor_mean": 0.009608310647308826
+  },
+  {
+    "run": "runs/gates-learned-20261111/w0.0625-learned8-seed161",
+    "dim": 8,
+    "width": 0.0625,
+    "pair_noise_rms_mean": 0.03472967445850372,
+    "gate_displacement_mean": 0.014445729553699493,
+    "ratio_of_means": 2.4041481018066406,
+    "median_local_ratio": 2.581608533859253,
+    "fraction_noise_exceeds_gate_displacement": 0.98046875,
+    "centroid_noise_floor_mean": 0.00868241861462593
+  },
+  {
+    "run": "runs/gates-learned-20261111/w0.0625-learned8-seed162",
+    "dim": 8,
+    "width": 0.0625,
+    "pair_noise_rms_mean": 0.027243953198194504,
+    "gate_displacement_mean": 0.014011096209287643,
+    "ratio_of_means": 1.9444555044174194,
+    "median_local_ratio": 2.2737791538238525,
+    "fraction_noise_exceeds_gate_displacement": 0.94140625,
+    "centroid_noise_floor_mean": 0.006810988299548626
+  },
+  {
+    "run": "runs/gates-clean-20261111/w0.0625-clean-diagnostic-seed160",
+    "dim": 2,
+    "width": 0.0625,
+    "pair_noise_rms_mean": 0.0,
+    "gate_displacement_mean": 0.0037422250024974346,
+    "ratio_of_means": 0.0,
+    "median_local_ratio": 0.0,
+    "fraction_noise_exceeds_gate_displacement": 0.0,
+    "centroid_noise_floor_mean": 0.0
+  },
+  {
+    "run": "runs/gates-clean-20261111/w0.0625-clean-diagnostic-seed161",
+    "dim": 2,
+    "width": 0.0625,
+    "pair_noise_rms_mean": 0.0,
+    "gate_displacement_mean": 0.0030082883313298225,
+    "ratio_of_means": 0.0,
+    "median_local_ratio": 0.0,
+    "fraction_noise_exceeds_gate_displacement": 0.0,
+    "centroid_noise_floor_mean": 0.0
+  },
+  {
+    "run": "runs/gates-clean-20261111/w0.0625-clean-diagnostic-seed162",
+    "dim": 2,
+    "width": 0.0625,
+    "pair_noise_rms_mean": 0.0,
+    "gate_displacement_mean": 0.003243028884753585,
+    "ratio_of_means": 0.0,
+    "median_local_ratio": 0.0,
+    "fraction_noise_exceeds_gate_displacement": 0.0,
+    "centroid_noise_floor_mean": 0.0
+  }
+]

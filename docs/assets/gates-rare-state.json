@@ -1,0 +1,54 @@
+[
+  {
+    "run": "runs/gates-learned-20261111/w0.0625-learned2-seed160",
+    "all_chambers_reached": false,
+    "next_gate": 3,
+    "eligible_occurrences": 0,
+    "active": 81000,
+    "distinct_eligible_positions": 0,
+    "latent": {
+      "best_eligible_rank": null,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "coordinate": {
+      "best_eligible_rank": null,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "discovered_regions": [
+      {
+        "chamber": 2,
+        "first_observation": 28096,
+        "observations": 23252,
+        "source_actions": 23255,
+        "pending": 18601,
+        "latent_best_pending_rank": 9,
+        "coordinate_best_pending_rank": 1
+      },
+      {
+        "chamber": 3,
+        "first_observation": 88471,
+        "observations": 1,
+        "source_actions": 0,
+        "pending": 1,
+        "latent_best_pending_rank": 9614,
+        "coordinate_best_pending_rank": 16,
+        "rare_pending": [
+          {
+            "id": 88471,
+            "position": [
+              6.032973289489746,
+              10.254619598388672
+            ],
+            "nearest_latent_archive_position": [
+              5.87734317779541,
+              10.254619598388672
+            ],
+            "nearest_latent_physical_distance": 0.15563011169433594
+          }
+        ]
+      }
+    ]
+  }
+]

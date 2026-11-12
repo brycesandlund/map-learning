@@ -1,0 +1,3744 @@
+{
+  "rows": [
+    {
+      "observations_by_chamber": [
+        79409,
+        20592,
+        0,
+        0
+      ],
+      "source_actions_by_chamber": [
+        79409,
+        20591,
+        0,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w0.0625-walk-p0.0-r0.0-seed160",
+      "method": "Walk p0",
+      "width": 0.0625,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        5758,
+        null,
+        null
+      ],
+      "crossings": [
+        11,
+        0,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 10.012772917281836,
+      "coverage_k1": 0.5,
+      "coverage_k2": 0.5,
+      "coverage_k4": 0.4978298611111111,
+      "coverage_k8": 0.4867621527777778,
+      "milestones": {
+        "k1_50": 84768,
+        "k2_50": 85022
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.40015625000000005
+    },
+    {
+      "observations_by_chamber": [
+        97028,
+        2973,
+        0,
+        0
+      ],
+      "source_actions_by_chamber": [
+        97028,
+        2972,
+        0,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w0.0625-walk-p0.0-r0.0-seed161",
+      "method": "Walk p0",
+      "width": 0.0625,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        74786,
+        null,
+        null
+      ],
+      "crossings": [
+        3,
+        0,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 10.226432458963245,
+      "coverage_k1": 0.375,
+      "coverage_k2": 0.3628472222222222,
+      "coverage_k4": 0.3528645833333333,
+      "coverage_k8": 0.3305121527777778,
+      "milestones": {},
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.23991102430555555
+    },
+    {
+      "observations_by_chamber": [
+        36250,
+        60639,
+        3112,
+        0
+      ],
+      "source_actions_by_chamber": [
+        36250,
+        60638,
+        3112,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w0.0625-walk-p0.0-r0.0-seed162",
+      "method": "Walk p0",
+      "width": 0.0625,
+      "seed": 162,
+      "noise": 0.12,
+      "first": [
+        19191,
+        37892,
+        null
+      ],
+      "crossings": [
+        3,
+        6,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.81943487469107,
+      "coverage_k1": 0.6111111111111112,
+      "coverage_k2": 0.5954861111111112,
+      "coverage_k4": 0.5863715277777778,
+      "coverage_k8": 0.5748697916666666,
+      "milestones": {
+        "k1_50": 38000,
+        "k2_50": 38069,
+        "k4_50": 38472,
+        "k8_50": 39528
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.4757660590277778
+    },
+    {
+      "observations_by_chamber": [
+        31370,
+        68631,
+        0,
+        0
+      ],
+      "source_actions_by_chamber": [
+        31370,
+        68630,
+        0,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.0-seed160",
+      "method": "Walk p0.8",
+      "width": 0.0625,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        6367,
+        null,
+        null
+      ],
+      "crossings": [
+        7,
+        0,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.798458667006344,
+      "coverage_k1": 0.5,
+      "coverage_k2": 0.5,
+      "coverage_k4": 0.5,
+      "coverage_k8": 0.5,
+      "milestones": {
+        "k1_50": 8631,
+        "k2_50": 11260,
+        "k4_50": 42740,
+        "k8_50": 73789
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.47456488715277784
+    },
+    {
+      "observations_by_chamber": [
+        16518,
+        15318,
+        40460,
+        27705
+      ],
+      "source_actions_by_chamber": [
+        16518,
+        15318,
+        40460,
+        27704
+      ],
+      "path": "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.0-seed161",
+      "method": "Walk p0.8",
+      "width": 0.0625,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        16509,
+        31830,
+        72296
+      ],
+      "crossings": [
+        3,
+        5,
+        1
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 10.048214874695987,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 1.0,
+      "coverage_k8": 0.9856770833333334,
+      "milestones": {
+        "k1_50": 19997,
+        "k2_50": 21466,
+        "k4_50": 25057,
+        "k8_50": 32106,
+        "k1_90": 72546,
+        "k1_95": 72943,
+        "k2_90": 72943,
+        "k1_99": 73138,
+        "k1_100": 73280,
+        "k2_95": 73383,
+        "k4_90": 73526,
+        "k4_95": 74800,
+        "k2_99": 74917,
+        "k2_100": 75343,
+        "k8_90": 76454,
+        "k4_99": 77338,
+        "k8_95": 80510,
+        "k4_100": 83533
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.6828960503472222
+    },
+    {
+      "observations_by_chamber": [
+        65459,
+        27231,
+        7311,
+        0
+      ],
+      "source_actions_by_chamber": [
+        65458,
+        27231,
+        7311,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.0-seed162",
+      "method": "Walk p0.8",
+      "width": 0.0625,
+      "seed": 162,
+      "noise": 0.12,
+      "first": [
+        11240,
+        55141,
+        null
+      ],
+      "crossings": [
+        8,
+        6,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.597229958046228,
+      "coverage_k1": 0.75,
+      "coverage_k2": 0.75,
+      "coverage_k4": 0.7491319444444444,
+      "coverage_k8": 0.7071397569444444,
+      "milestones": {
+        "k1_50": 15210,
+        "k2_50": 15644,
+        "k4_50": 17322,
+        "k8_50": 55160
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.5710340711805556
+    },
+    {
+      "observations_by_chamber": [
+        92367,
+        7399,
+        235,
+        0
+      ],
+      "source_actions_by_chamber": [
+        92371,
+        7395,
+        234,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.001-seed160",
+      "method": "Walk p0.8 + resets",
+      "width": 0.0625,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        6367,
+        55950,
+        null
+      ],
+      "crossings": [
+        7,
+        1,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 10.05830108281225,
+      "coverage_k1": 0.6388888888888888,
+      "coverage_k2": 0.5798611111111112,
+      "coverage_k4": 0.5390625,
+      "coverage_k8": 0.4643012152777778,
+      "milestones": {
+        "k1_50": 55906,
+        "k2_50": 56011,
+        "k4_50": 57955
+      },
+      "resets": 113,
+      "parameters": 314360,
+      "auc": 0.4209884982638889
+    },
+    {
+      "observations_by_chamber": [
+        87819,
+        5359,
+        6818,
+        5
+      ],
+      "source_actions_by_chamber": [
+        87820,
+        5358,
+        6817,
+        5
+      ],
+      "path": "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.001-seed161",
+      "method": "Walk p0.8 + resets",
+      "width": 0.0625,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        16508,
+        52813,
+        60139
+      ],
+      "crossings": [
+        4,
+        1,
+        2
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.740149124991149,
+      "coverage_k1": 0.7569444444444444,
+      "coverage_k2": 0.7517361111111112,
+      "coverage_k4": 0.7339409722222222,
+      "coverage_k8": 0.6320529513888888,
+      "milestones": {
+        "k1_50": 52621,
+        "k2_50": 52846,
+        "k4_50": 53116,
+        "k8_50": 56606
+      },
+      "resets": 87,
+      "parameters": 314360,
+      "auc": 0.49908203125
+    },
+    {
+      "observations_by_chamber": [
+        92502,
+        7499,
+        0,
+        0
+      ],
+      "source_actions_by_chamber": [
+        92503,
+        7497,
+        0,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.001-seed162",
+      "method": "Walk p0.8 + resets",
+      "width": 0.0625,
+      "seed": 162,
+      "noise": 0.12,
+      "first": [
+        16290,
+        null,
+        null
+      ],
+      "crossings": [
+        4,
+        0,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 8.077006333041936,
+      "coverage_k1": 0.5,
+      "coverage_k2": 0.5,
+      "coverage_k4": 0.4965277777777778,
+      "coverage_k8": 0.4547526041666667,
+      "milestones": {
+        "k1_50": 42502,
+        "k2_50": 44554
+      },
+      "resets": 95,
+      "parameters": 314360,
+      "auc": 0.4070214843749999
+    },
+    {
+      "observations_by_chamber": [
+        100001,
+        0,
+        0,
+        0
+      ],
+      "source_actions_by_chamber": [
+        100000,
+        0,
+        0,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w0.0625-walk-p0.95-r0.0-seed160",
+      "method": "Walk p0.95",
+      "width": 0.0625,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        null,
+        null,
+        null
+      ],
+      "crossings": [
+        0,
+        0,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.558126041200012,
+      "coverage_k1": 0.25,
+      "coverage_k2": 0.25,
+      "coverage_k4": 0.25,
+      "coverage_k8": 0.2497829861111111,
+      "milestones": {},
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.2400423177083333
+    },
+    {
+      "observations_by_chamber": [
+        62667,
+        3289,
+        34045,
+        0
+      ],
+      "source_actions_by_chamber": [
+        62667,
+        3289,
+        34044,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w0.0625-walk-p0.95-r0.0-seed161",
+      "method": "Walk p0.95",
+      "width": 0.0625,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        62667,
+        65952,
+        null
+      ],
+      "crossings": [
+        1,
+        3,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.540532750077546,
+      "coverage_k1": 0.75,
+      "coverage_k2": 0.7065972222222222,
+      "coverage_k4": 0.6436631944444444,
+      "coverage_k8": 0.5464409722222222,
+      "milestones": {
+        "k1_50": 64989,
+        "k2_50": 66450,
+        "k4_50": 69390,
+        "k8_50": 83656
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.3646744791666666
+    },
+    {
+      "observations_by_chamber": [
+        49604,
+        50397,
+        0,
+        0
+      ],
+      "source_actions_by_chamber": [
+        49604,
+        50396,
+        0,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w0.0625-walk-p0.95-r0.0-seed162",
+      "method": "Walk p0.95",
+      "width": 0.0625,
+      "seed": 162,
+      "noise": 0.12,
+      "first": [
+        11239,
+        null,
+        null
+      ],
+      "crossings": [
+        5,
+        0,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.277978125028312,
+      "coverage_k1": 0.5,
+      "coverage_k2": 0.5,
+      "coverage_k4": 0.5,
+      "coverage_k8": 0.4873046875,
+      "milestones": {
+        "k1_50": 52366,
+        "k2_50": 59056,
+        "k4_50": 74493
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.3580631510416667
+    },
+    {
+      "observations_by_chamber": [
+        100001,
+        0,
+        0,
+        0
+      ],
+      "source_actions_by_chamber": [
+        100000,
+        0,
+        0,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w0.0625-walk-p0.99-r0.0-seed160",
+      "method": "Walk p0.99",
+      "width": 0.0625,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        null,
+        null,
+        null
+      ],
+      "crossings": [
+        0,
+        0,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.136956541799009,
+      "coverage_k1": 0.25,
+      "coverage_k2": 0.2482638888888889,
+      "coverage_k4": 0.20399305555555555,
+      "coverage_k8": 0.12510850694444445,
+      "milestones": {},
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.14042426215277778
+    },
+    {
+      "observations_by_chamber": [
+        100001,
+        0,
+        0,
+        0
+      ],
+      "source_actions_by_chamber": [
+        100000,
+        0,
+        0,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w0.0625-walk-p0.99-r0.0-seed161",
+      "method": "Walk p0.99",
+      "width": 0.0625,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        null,
+        null,
+        null
+      ],
+      "crossings": [
+        0,
+        0,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 8.820180458016694,
+      "coverage_k1": 0.25,
+      "coverage_k2": 0.25,
+      "coverage_k4": 0.22005208333333334,
+      "coverage_k8": 0.15169270833333334,
+      "milestones": {},
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.16994140625
+    },
+    {
+      "observations_by_chamber": [
+        100001,
+        0,
+        0,
+        0
+      ],
+      "source_actions_by_chamber": [
+        100000,
+        0,
+        0,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w0.0625-walk-p0.99-r0.0-seed162",
+      "method": "Walk p0.99",
+      "width": 0.0625,
+      "seed": 162,
+      "noise": 0.12,
+      "first": [
+        null,
+        null,
+        null
+      ],
+      "crossings": [
+        0,
+        0,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 8.62594174966216,
+      "coverage_k1": 0.25,
+      "coverage_k2": 0.22569444444444445,
+      "coverage_k4": 0.19661458333333334,
+      "coverage_k8": 0.138671875,
+      "milestones": {},
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.15157335069444444
+    },
+    {
+      "observations_by_chamber": [
+        14007,
+        43508,
+        33388,
+        9098
+      ],
+      "source_actions_by_chamber": [
+        14007,
+        43508,
+        33388,
+        9097
+      ],
+      "path": "runs/gates-walk-20261111/w0.25-walk-p0.0-r0.0-seed160",
+      "method": "Walk p0",
+      "width": 0.25,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        5616,
+        20835,
+        51831
+      ],
+      "crossings": [
+        13,
+        25,
+        41
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 10.025706000160426,
+      "coverage_k1": 0.9375,
+      "coverage_k2": 0.9201388888888888,
+      "coverage_k4": 0.90625,
+      "coverage_k8": 0.8619791666666666,
+      "milestones": {
+        "k1_50": 49783,
+        "k2_50": 50503,
+        "k4_50": 50693,
+        "k8_50": 51212,
+        "k1_90": 84432,
+        "k2_90": 84815,
+        "k4_90": 86660
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.5650075954861111
+    },
+    {
+      "observations_by_chamber": [
+        19793,
+        33152,
+        22102,
+        24954
+      ],
+      "source_actions_by_chamber": [
+        19793,
+        33152,
+        22102,
+        24953
+      ],
+      "path": "runs/gates-walk-20261111/w0.25-walk-p0.0-r0.0-seed161",
+      "method": "Walk p0",
+      "width": 0.25,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        19791,
+        28396,
+        34252
+      ],
+      "crossings": [
+        5,
+        3,
+        21
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.992560500279069,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 1.0,
+      "coverage_k8": 0.9906684027777778,
+      "milestones": {
+        "k1_50": 28073,
+        "k2_50": 28404,
+        "k4_50": 28528,
+        "k8_50": 29542,
+        "k1_90": 38076,
+        "k2_90": 40683,
+        "k1_95": 41174,
+        "k4_90": 41675,
+        "k2_95": 41835,
+        "k1_99": 51527,
+        "k4_95": 52191,
+        "k8_90": 61102,
+        "k1_100": 68617,
+        "k2_99": 69066,
+        "k8_95": 70935,
+        "k4_99": 71009,
+        "k2_100": 71023,
+        "k4_100": 84683,
+        "k8_99": 96361
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.7357367621527778
+    },
+    {
+      "observations_by_chamber": [
+        19186,
+        23134,
+        13123,
+        44558
+      ],
+      "source_actions_by_chamber": [
+        19186,
+        23134,
+        13123,
+        44557
+      ],
+      "path": "runs/gates-walk-20261111/w0.25-walk-p0.0-r0.0-seed162",
+      "method": "Walk p0",
+      "width": 0.25,
+      "seed": 162,
+      "noise": 0.12,
+      "first": [
+        19186,
+        27221,
+        49894
+      ],
+      "crossings": [
+        1,
+        27,
+        23
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.69011929212138,
+      "coverage_k1": 0.9722222222222222,
+      "coverage_k2": 0.9600694444444444,
+      "coverage_k4": 0.9483506944444444,
+      "coverage_k8": 0.9164496527777778,
+      "milestones": {
+        "k1_50": 27292,
+        "k2_50": 37992,
+        "k4_50": 38285,
+        "k8_50": 39253,
+        "k1_90": 54855,
+        "k2_90": 62518,
+        "k1_95": 62630,
+        "k4_90": 62857,
+        "k2_95": 63526,
+        "k8_90": 72133
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.649689670138889
+    },
+    {
+      "observations_by_chamber": [
+        12950,
+        17415,
+        19032,
+        50604
+      ],
+      "source_actions_by_chamber": [
+        12950,
+        17415,
+        19032,
+        50603
+      ],
+      "path": "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.0-seed160",
+      "method": "Walk p0.8",
+      "width": 0.25,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        4298,
+        9352,
+        10385
+      ],
+      "crossings": [
+        9,
+        7,
+        15
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.546392499934882,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 1.0,
+      "coverage_k8": 0.9788411458333334,
+      "milestones": {
+        "k1_50": 8631,
+        "k2_50": 9352,
+        "k4_50": 9469,
+        "k1_90": 10934,
+        "k1_95": 12118,
+        "k8_50": 12554,
+        "k2_90": 14354,
+        "k2_95": 18129,
+        "k4_90": 18246,
+        "k1_99": 18302,
+        "k1_100": 18361,
+        "k2_99": 18678,
+        "k4_95": 20929,
+        "k4_99": 34648,
+        "k2_100": 35869,
+        "k8_90": 42402,
+        "k8_95": 59559,
+        "k4_100": 65955
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.9061469184027776
+    },
+    {
+      "observations_by_chamber": [
+        18158,
+        27653,
+        29527,
+        24663
+      ],
+      "source_actions_by_chamber": [
+        18158,
+        27653,
+        29527,
+        24662
+      ],
+      "path": "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.0-seed161",
+      "method": "Walk p0.8",
+      "width": 0.25,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        6530,
+        7155,
+        14632
+      ],
+      "crossings": [
+        11,
+        15,
+        21
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.736196417361498,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 1.0,
+      "coverage_k8": 0.9937065972222222,
+      "milestones": {
+        "k1_50": 7283,
+        "k2_50": 7633,
+        "k4_50": 8759,
+        "k1_90": 15019,
+        "k1_95": 15198,
+        "k8_50": 15468,
+        "k2_90": 16903,
+        "k2_95": 19083,
+        "k1_99": 19954,
+        "k1_100": 19960,
+        "k4_90": 20041,
+        "k2_99": 20585,
+        "k4_95": 22028,
+        "k8_90": 63212,
+        "k4_99": 63660,
+        "k2_100": 63663,
+        "k8_95": 66580,
+        "k4_100": 83724,
+        "k8_99": 87181
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.8826877170138889
+    },
+    {
+      "observations_by_chamber": [
+        56298,
+        21156,
+        16735,
+        5812
+      ],
+      "source_actions_by_chamber": [
+        56297,
+        21156,
+        16735,
+        5812
+      ],
+      "path": "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.0-seed162",
+      "method": "Walk p0.8",
+      "width": 0.25,
+      "seed": 162,
+      "noise": 0.12,
+      "first": [
+        8529,
+        28829,
+        29706
+      ],
+      "crossings": [
+        16,
+        14,
+        6
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.98015254130587,
+      "coverage_k1": 1.0,
+      "coverage_k2": 0.9982638888888888,
+      "coverage_k4": 0.9887152777777778,
+      "coverage_k8": 0.9288194444444444,
+      "milestones": {
+        "k1_50": 27998,
+        "k2_50": 28837,
+        "k4_50": 28958,
+        "k8_50": 31041,
+        "k1_90": 60289,
+        "k2_90": 60368,
+        "k1_95": 60556,
+        "k4_90": 61374,
+        "k2_95": 62487,
+        "k1_99": 62774,
+        "k4_95": 62900,
+        "k1_100": 63179,
+        "k2_99": 63280,
+        "k8_90": 65913
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.6944064670138888
+    },
+    {
+      "observations_by_chamber": [
+        62206,
+        33603,
+        4192,
+        0
+      ],
+      "source_actions_by_chamber": [
+        62209,
+        33601,
+        4190,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.001-seed160",
+      "method": "Walk p0.8 + resets",
+      "width": 0.25,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        5024,
+        19676,
+        null
+      ],
+      "crossings": [
+        22,
+        4,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.813350375276059,
+      "coverage_k1": 0.75,
+      "coverage_k2": 0.75,
+      "coverage_k4": 0.7291666666666666,
+      "coverage_k8": 0.6549479166666666,
+      "milestones": {
+        "k1_50": 12657,
+        "k2_50": 19660,
+        "k4_50": 19690,
+        "k8_50": 20805
+      },
+      "resets": 113,
+      "parameters": 314360,
+      "auc": 0.6502788628472222
+    },
+    {
+      "observations_by_chamber": [
+        74700,
+        17834,
+        6254,
+        1213
+      ],
+      "source_actions_by_chamber": [
+        74710,
+        17825,
+        6254,
+        1211
+      ],
+      "path": "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.001-seed161",
+      "method": "Walk p0.8 + resets",
+      "width": 0.25,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        6530,
+        15086,
+        56379
+      ],
+      "crossings": [
+        21,
+        8,
+        4
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.907527291215956,
+      "coverage_k1": 0.9791666666666666,
+      "coverage_k2": 0.9340277777777778,
+      "coverage_k4": 0.8819444444444444,
+      "coverage_k8": 0.7586805555555556,
+      "milestones": {
+        "k1_50": 15086,
+        "k2_50": 25333,
+        "k4_50": 38368,
+        "k8_50": 53645,
+        "k1_90": 72484,
+        "k1_95": 72552,
+        "k2_90": 72572
+      },
+      "resets": 87,
+      "parameters": 314360,
+      "auc": 0.6046799045138889
+    },
+    {
+      "observations_by_chamber": [
+        89212,
+        10789,
+        0,
+        0
+      ],
+      "source_actions_by_chamber": [
+        89219,
+        10781,
+        0,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.001-seed162",
+      "method": "Walk p0.8 + resets",
+      "width": 0.25,
+      "seed": 162,
+      "noise": 0.12,
+      "first": [
+        11240,
+        null,
+        null
+      ],
+      "crossings": [
+        22,
+        0,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.871121374890208,
+      "coverage_k1": 0.5,
+      "coverage_k2": 0.5,
+      "coverage_k4": 0.4991319444444444,
+      "coverage_k8": 0.4766710069444444,
+      "milestones": {
+        "k1_50": 42497,
+        "k2_50": 45350
+      },
+      "resets": 95,
+      "parameters": 314360,
+      "auc": 0.4190245225694444
+    },
+    {
+      "observations_by_chamber": [
+        62302,
+        23715,
+        13583,
+        401
+      ],
+      "source_actions_by_chamber": [
+        62301,
+        23715,
+        13583,
+        401
+      ],
+      "path": "runs/gates-walk-20261111/w0.25-walk-p0.95-r0.0-seed160",
+      "method": "Walk p0.95",
+      "width": 0.25,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        32311,
+        35417,
+        53668
+      ],
+      "crossings": [
+        6,
+        8,
+        4
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.168260958977044,
+      "coverage_k1": 0.8541666666666666,
+      "coverage_k2": 0.8107638888888888,
+      "coverage_k4": 0.7725694444444444,
+      "coverage_k8": 0.6398654513888888,
+      "milestones": {
+        "k1_50": 35415,
+        "k2_50": 35961,
+        "k4_50": 46545,
+        "k8_50": 52906
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.5292914496527779
+    },
+    {
+      "observations_by_chamber": [
+        62667,
+        3285,
+        7279,
+        26770
+      ],
+      "source_actions_by_chamber": [
+        62667,
+        3285,
+        7278,
+        26770
+      ],
+      "path": "runs/gates-walk-20261111/w0.25-walk-p0.95-r0.0-seed161",
+      "method": "Walk p0.95",
+      "width": 0.25,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        62667,
+        65952,
+        71512
+      ],
+      "crossings": [
+        1,
+        1,
+        2
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.22004362475127,
+      "coverage_k1": 1.0,
+      "coverage_k2": 0.9409722222222222,
+      "coverage_k4": 0.8311631944444444,
+      "coverage_k8": 0.6476779513888888,
+      "milestones": {
+        "k1_50": 64989,
+        "k2_50": 66450,
+        "k4_50": 69390,
+        "k1_90": 72163,
+        "k1_95": 72718,
+        "k1_99": 73287,
+        "k8_50": 75118,
+        "k2_90": 76494,
+        "k1_100": 77664
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.4085633680555555
+    },
+    {
+      "observations_by_chamber": [
+        26952,
+        8923,
+        26625,
+        37501
+      ],
+      "source_actions_by_chamber": [
+        26952,
+        8923,
+        26624,
+        37501
+      ],
+      "path": "runs/gates-walk-20261111/w0.25-walk-p0.95-r0.0-seed162",
+      "method": "Walk p0.95",
+      "width": 0.25,
+      "seed": 162,
+      "noise": 0.12,
+      "first": [
+        11239,
+        35875,
+        49536
+      ],
+      "crossings": [
+        3,
+        1,
+        4
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.548098457977176,
+      "coverage_k1": 1.0,
+      "coverage_k2": 0.9930555555555556,
+      "coverage_k4": 0.9574652777777778,
+      "coverage_k8": 0.78125,
+      "milestones": {
+        "k1_50": 29889,
+        "k2_50": 35883,
+        "k4_50": 36248,
+        "k8_50": 49603,
+        "k1_90": 49862,
+        "k1_95": 50148,
+        "k2_90": 50704,
+        "k1_99": 52249,
+        "k1_100": 52366,
+        "k2_95": 52841,
+        "k4_90": 56420,
+        "k2_99": 56743,
+        "k4_95": 88372
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.6513270399305555
+    },
+    {
+      "observations_by_chamber": [
+        100001,
+        0,
+        0,
+        0
+      ],
+      "source_actions_by_chamber": [
+        100000,
+        0,
+        0,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w0.25-walk-p0.99-r0.0-seed160",
+      "method": "Walk p0.99",
+      "width": 0.25,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        null,
+        null,
+        null
+      ],
+      "crossings": [
+        0,
+        0,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 8.899474500212818,
+      "coverage_k1": 0.25,
+      "coverage_k2": 0.2482638888888889,
+      "coverage_k4": 0.20399305555555555,
+      "coverage_k8": 0.12510850694444445,
+      "milestones": {},
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.14042426215277778
+    },
+    {
+      "observations_by_chamber": [
+        14890,
+        85111,
+        0,
+        0
+      ],
+      "source_actions_by_chamber": [
+        14890,
+        85110,
+        0,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w0.25-walk-p0.99-r0.0-seed161",
+      "method": "Walk p0.99",
+      "width": 0.25,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        14890,
+        null,
+        null
+      ],
+      "crossings": [
+        1,
+        0,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 8.896772541105747,
+      "coverage_k1": 0.4791666666666667,
+      "coverage_k2": 0.4184027777777778,
+      "coverage_k4": 0.3224826388888889,
+      "coverage_k8": 0.1970486111111111,
+      "milestones": {},
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.24532118055555555
+    },
+    {
+      "observations_by_chamber": [
+        100001,
+        0,
+        0,
+        0
+      ],
+      "source_actions_by_chamber": [
+        100000,
+        0,
+        0,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w0.25-walk-p0.99-r0.0-seed162",
+      "method": "Walk p0.99",
+      "width": 0.25,
+      "seed": 162,
+      "noise": 0.12,
+      "first": [
+        null,
+        null,
+        null
+      ],
+      "crossings": [
+        0,
+        0,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 8.932422500103712,
+      "coverage_k1": 0.25,
+      "coverage_k2": 0.22569444444444445,
+      "coverage_k4": 0.19661458333333334,
+      "coverage_k8": 0.138671875,
+      "milestones": {},
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.15157335069444444
+    },
+    {
+      "observations_by_chamber": [
+        19747,
+        38122,
+        20750,
+        21382
+      ],
+      "source_actions_by_chamber": [
+        19747,
+        38121,
+        20750,
+        21382
+      ],
+      "path": "runs/gates-walk-20261111/w1.0-walk-p0.0-r0.0-seed160",
+      "method": "Walk p0",
+      "width": 1.0,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        4043,
+        19348,
+        22703
+      ],
+      "crossings": [
+        107,
+        50,
+        144
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 10.254284750204533,
+      "coverage_k1": 0.9652777777777778,
+      "coverage_k2": 0.9635416666666666,
+      "coverage_k4": 0.9587673611111112,
+      "coverage_k8": 0.9401041666666666,
+      "milestones": {
+        "k1_50": 20037,
+        "k2_50": 20922,
+        "k4_50": 22039,
+        "k8_50": 23625,
+        "k1_90": 69259,
+        "k2_90": 69753,
+        "k4_90": 74334,
+        "k8_90": 78062,
+        "k1_95": 97566,
+        "k2_95": 97579,
+        "k4_95": 97723
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.6821744791666665
+    },
+    {
+      "observations_by_chamber": [
+        18948,
+        4402,
+        9543,
+        67108
+      ],
+      "source_actions_by_chamber": [
+        18948,
+        4402,
+        9542,
+        67108
+      ],
+      "path": "runs/gates-walk-20261111/w1.0-walk-p0.0-r0.0-seed161",
+      "method": "Walk p0",
+      "width": 1.0,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        17887,
+        23324,
+        24431
+      ],
+      "crossings": [
+        33,
+        7,
+        100
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 10.355025834403932,
+      "coverage_k1": 0.9305555555555556,
+      "coverage_k2": 0.8958333333333334,
+      "coverage_k4": 0.8515625,
+      "coverage_k8": 0.7794053819444444,
+      "milestones": {
+        "k1_50": 23583,
+        "k2_50": 23851,
+        "k4_50": 24168,
+        "k8_50": 27500,
+        "k1_90": 33250
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.6747645399305556
+    },
+    {
+      "observations_by_chamber": [
+        9328,
+        6098,
+        11875,
+        72700
+      ],
+      "source_actions_by_chamber": [
+        9328,
+        6098,
+        11875,
+        72699
+      ],
+      "path": "runs/gates-walk-20261111/w1.0-walk-p0.0-r0.0-seed162",
+      "method": "Walk p0",
+      "width": 1.0,
+      "seed": 162,
+      "noise": 0.12,
+      "first": [
+        9304,
+        14819,
+        16537
+      ],
+      "crossings": [
+        3,
+        5,
+        99
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 10.112743207719177,
+      "coverage_k1": 0.9583333333333334,
+      "coverage_k2": 0.9357638888888888,
+      "coverage_k4": 0.8923611111111112,
+      "coverage_k8": 0.7999131944444444,
+      "milestones": {
+        "k1_50": 15470,
+        "k2_50": 15593,
+        "k4_50": 16165,
+        "k8_50": 18019,
+        "k1_90": 19929,
+        "k2_90": 22926,
+        "k1_95": 22942
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.7647428385416666
+    },
+    {
+      "observations_by_chamber": [
+        12315,
+        32423,
+        22599,
+        32664
+      ],
+      "source_actions_by_chamber": [
+        12315,
+        32423,
+        22599,
+        32663
+      ],
+      "path": "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.0-seed160",
+      "method": "Walk p0.8",
+      "width": 1.0,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        1748,
+        1946,
+        4298
+      ],
+      "crossings": [
+        29,
+        65,
+        63
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 10.024230625014752,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 0.9986979166666666,
+      "coverage_k8": 0.97265625,
+      "milestones": {
+        "k1_50": 3697,
+        "k2_50": 3964,
+        "k4_50": 4871,
+        "k1_90": 5858,
+        "k1_95": 6179,
+        "k1_99": 10416,
+        "k2_90": 10416,
+        "k1_100": 12037,
+        "k8_50": 12226,
+        "k2_95": 21142,
+        "k4_90": 22231,
+        "k2_99": 23930,
+        "k4_95": 26554,
+        "k2_100": 36144,
+        "k4_99": 38733,
+        "k8_90": 45891,
+        "k8_95": 72919
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.9133485243055554
+    },
+    {
+      "observations_by_chamber": [
+        22444,
+        21506,
+        25470,
+        30581
+      ],
+      "source_actions_by_chamber": [
+        22444,
+        21505,
+        25470,
+        30581
+      ],
+      "path": "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.0-seed161",
+      "method": "Walk p0.8",
+      "width": 1.0,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        4094,
+        13679,
+        16509
+      ],
+      "crossings": [
+        33,
+        42,
+        52
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 10.012944499962032,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 1.0,
+      "coverage_k8": 0.9943576388888888,
+      "milestones": {
+        "k1_50": 13734,
+        "k2_50": 14042,
+        "k4_50": 15215,
+        "k8_50": 18066,
+        "k1_90": 24018,
+        "k2_90": 24122,
+        "k1_95": 24150,
+        "k2_95": 24419,
+        "k1_99": 24445,
+        "k1_100": 24461,
+        "k4_90": 24564,
+        "k2_99": 25420,
+        "k4_95": 25946,
+        "k2_100": 31246,
+        "k4_99": 33386,
+        "k8_90": 43659,
+        "k8_95": 53150,
+        "k4_100": 59485,
+        "k8_99": 87524
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.858818359375
+    },
+    {
+      "observations_by_chamber": [
+        22736,
+        29832,
+        28436,
+        18997
+      ],
+      "source_actions_by_chamber": [
+        22736,
+        29831,
+        28436,
+        18997
+      ],
+      "path": "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.0-seed162",
+      "method": "Walk p0.8",
+      "width": 1.0,
+      "seed": 162,
+      "noise": 0.12,
+      "first": [
+        2044,
+        2421,
+        8405
+      ],
+      "crossings": [
+        35,
+        70,
+        40
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.790537500288337,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 1.0,
+      "coverage_k8": 0.9937065972222222,
+      "milestones": {
+        "k1_50": 5249,
+        "k2_50": 5672,
+        "k4_50": 8412,
+        "k1_90": 9026,
+        "k8_50": 14047,
+        "k1_95": 29738,
+        "k2_90": 29758,
+        "k2_95": 30191,
+        "k1_99": 30240,
+        "k1_100": 30287,
+        "k4_90": 30370,
+        "k2_99": 31390,
+        "k4_95": 31912,
+        "k2_100": 41037,
+        "k4_99": 41140,
+        "k8_90": 43176,
+        "k8_95": 56217,
+        "k4_100": 56497,
+        "k8_99": 87085
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.880244140625
+    },
+    {
+      "observations_by_chamber": [
+        40977,
+        40636,
+        12939,
+        5449
+      ],
+      "source_actions_by_chamber": [
+        40978,
+        40644,
+        12931,
+        5447
+      ],
+      "path": "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.001-seed160",
+      "method": "Walk p0.8 + resets",
+      "width": 1.0,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        1748,
+        1946,
+        14122
+      ],
+      "crossings": [
+        110,
+        66,
+        14
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.61482641659677,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 0.9947916666666666,
+      "coverage_k8": 0.9281684027777778,
+      "milestones": {
+        "k1_50": 3694,
+        "k2_50": 3934,
+        "k4_50": 7833,
+        "k8_50": 17008,
+        "k1_90": 26148,
+        "k2_90": 76656,
+        "k1_95": 83920,
+        "k4_90": 84036,
+        "k1_99": 84049,
+        "k2_95": 84121,
+        "k1_100": 84156,
+        "k4_95": 84952,
+        "k2_99": 85401,
+        "k8_90": 97933,
+        "k4_99": 98696,
+        "k2_100": 99279
+      },
+      "resets": 113,
+      "parameters": 314360,
+      "auc": 0.7805436197916668
+    },
+    {
+      "observations_by_chamber": [
+        58760,
+        18538,
+        9748,
+        12955
+      ],
+      "source_actions_by_chamber": [
+        58773,
+        18527,
+        9744,
+        12956
+      ],
+      "path": "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.001-seed161",
+      "method": "Walk p0.8 + resets",
+      "width": 1.0,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        4094,
+        14982,
+        27814
+      ],
+      "crossings": [
+        70,
+        21,
+        19
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 10.099420540966094,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 0.9991319444444444,
+      "coverage_k8": 0.9559461805555556,
+      "milestones": {
+        "k1_50": 15154,
+        "k2_50": 24248,
+        "k4_50": 26453,
+        "k8_50": 30107,
+        "k1_90": 47308,
+        "k1_95": 47450,
+        "k2_90": 47640,
+        "k1_99": 48458,
+        "k1_100": 48464,
+        "k2_95": 48464,
+        "k4_90": 48860,
+        "k2_99": 51291,
+        "k4_95": 51430,
+        "k2_100": 64548,
+        "k4_99": 67217,
+        "k8_90": 74261,
+        "k8_95": 95502
+      },
+      "resets": 87,
+      "parameters": 314360,
+      "auc": 0.7458648003472221
+    },
+    {
+      "observations_by_chamber": [
+        68620,
+        22954,
+        5594,
+        2833
+      ],
+      "source_actions_by_chamber": [
+        68633,
+        22946,
+        5589,
+        2832
+      ],
+      "path": "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.001-seed162",
+      "method": "Walk p0.8 + resets",
+      "width": 1.0,
+      "seed": 162,
+      "noise": 0.12,
+      "first": [
+        4200,
+        7879,
+        8406
+      ],
+      "crossings": [
+        72,
+        22,
+        3
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.509872624650598,
+      "coverage_k1": 1.0,
+      "coverage_k2": 0.9965277777777778,
+      "coverage_k4": 0.9435763888888888,
+      "coverage_k8": 0.8005642361111112,
+      "milestones": {
+        "k1_50": 7884,
+        "k2_50": 7989,
+        "k4_50": 8907,
+        "k1_90": 9376,
+        "k8_50": 27966,
+        "k1_95": 36713,
+        "k2_90": 37141,
+        "k1_99": 37401,
+        "k1_100": 37406,
+        "k2_95": 55583,
+        "k4_90": 68122,
+        "k2_99": 72825
+      },
+      "resets": 95,
+      "parameters": 314360,
+      "auc": 0.7564073350694444
+    },
+    {
+      "observations_by_chamber": [
+        51346,
+        25359,
+        14464,
+        8832
+      ],
+      "source_actions_by_chamber": [
+        51346,
+        25359,
+        14464,
+        8831
+      ],
+      "path": "runs/gates-walk-20261111/w1.0-walk-p0.95-r0.0-seed160",
+      "method": "Walk p0.95",
+      "width": 1.0,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        18209,
+        19709,
+        53668
+      ],
+      "crossings": [
+        25,
+        17,
+        7
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.563899166882038,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 0.9609375,
+      "coverage_k8": 0.7733289930555556,
+      "milestones": {
+        "k1_50": 19709,
+        "k2_50": 20054,
+        "k4_50": 29353,
+        "k8_50": 54374,
+        "k1_90": 57019,
+        "k1_95": 57437,
+        "k2_90": 57931,
+        "k1_99": 58850,
+        "k1_100": 59375,
+        "k2_95": 94516,
+        "k4_90": 94816,
+        "k2_99": 96754,
+        "k4_95": 98957,
+        "k2_100": 99057
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.6134950086805556
+    },
+    {
+      "observations_by_chamber": [
+        28766,
+        27450,
+        27746,
+        16039
+      ],
+      "source_actions_by_chamber": [
+        28765,
+        27450,
+        27746,
+        16039
+      ],
+      "path": "runs/gates-walk-20261111/w1.0-walk-p0.95-r0.0-seed161",
+      "method": "Walk p0.95",
+      "width": 1.0,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        5549,
+        14181,
+        51488
+      ],
+      "crossings": [
+        18,
+        24,
+        16
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.610974584240466,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 0.9887152777777778,
+      "coverage_k8": 0.8400607638888888,
+      "milestones": {
+        "k1_50": 13744,
+        "k2_50": 14256,
+        "k4_50": 15757,
+        "k8_50": 38289,
+        "k1_90": 51895,
+        "k1_95": 62242,
+        "k2_90": 62379,
+        "k2_95": 64395,
+        "k1_99": 64970,
+        "k1_100": 64984,
+        "k4_90": 65165,
+        "k2_99": 72995,
+        "k4_95": 73223,
+        "k2_100": 75118
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.7255132378472222
+    },
+    {
+      "observations_by_chamber": [
+        16260,
+        16243,
+        43436,
+        24062
+      ],
+      "source_actions_by_chamber": [
+        16260,
+        16243,
+        43435,
+        24062
+      ],
+      "path": "runs/gates-walk-20261111/w1.0-walk-p0.95-r0.0-seed162",
+      "method": "Walk p0.95",
+      "width": 1.0,
+      "seed": 162,
+      "noise": 0.12,
+      "first": [
+        735,
+        14135,
+        25018
+      ],
+      "crossings": [
+        11,
+        23,
+        30
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.191071500070393,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 0.9826388888888888,
+      "coverage_k8": 0.8106553819444444,
+      "milestones": {
+        "k1_50": 4393,
+        "k2_50": 14317,
+        "k4_50": 15155,
+        "k1_90": 26039,
+        "k2_90": 28166,
+        "k1_95": 28190,
+        "k1_99": 29887,
+        "k1_100": 29889,
+        "k2_95": 30492,
+        "k8_50": 34281,
+        "k4_90": 56409,
+        "k2_99": 62845,
+        "k4_95": 81042,
+        "k2_100": 89771
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.7704893663194444
+    },
+    {
+      "observations_by_chamber": [
+        45129,
+        41144,
+        13728,
+        0
+      ],
+      "source_actions_by_chamber": [
+        45128,
+        41144,
+        13728,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w1.0-walk-p0.99-r0.0-seed160",
+      "method": "Walk p0.99",
+      "width": 1.0,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        9638,
+        12859,
+        null
+      ],
+      "crossings": [
+        4,
+        4,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.059226375073195,
+      "coverage_k1": 0.75,
+      "coverage_k2": 0.6024305555555556,
+      "coverage_k4": 0.3971354166666667,
+      "coverage_k8": 0.2046440972222222,
+      "milestones": {
+        "k1_50": 13665,
+        "k2_50": 53012
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.27167317708333333
+    },
+    {
+      "observations_by_chamber": [
+        33496,
+        66382,
+        123,
+        0
+      ],
+      "source_actions_by_chamber": [
+        33496,
+        66381,
+        123,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w1.0-walk-p0.99-r0.0-seed161",
+      "method": "Walk p0.99",
+      "width": 1.0,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        14890,
+        26260,
+        null
+      ],
+      "crossings": [
+        3,
+        2,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 9.23708179173991,
+      "coverage_k1": 0.5208333333333334,
+      "coverage_k2": 0.4704861111111111,
+      "coverage_k4": 0.3467881944444444,
+      "coverage_k8": 0.20572916666666666,
+      "milestones": {
+        "k1_50": 26271
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.2537717013888889
+    },
+    {
+      "observations_by_chamber": [
+        65239,
+        17951,
+        16811,
+        0
+      ],
+      "source_actions_by_chamber": [
+        65239,
+        17951,
+        16810,
+        0
+      ],
+      "path": "runs/gates-walk-20261111/w1.0-walk-p0.99-r0.0-seed162",
+      "method": "Walk p0.99",
+      "width": 1.0,
+      "seed": 162,
+      "noise": 0.12,
+      "first": [
+        65239,
+        82945,
+        null
+      ],
+      "crossings": [
+        1,
+        3,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 8.613297333009541,
+      "coverage_k1": 0.7152777777777778,
+      "coverage_k2": 0.5260416666666666,
+      "coverage_k4": 0.3776041666666667,
+      "coverage_k8": 0.21864149305555555,
+      "milestones": {
+        "k1_50": 68260,
+        "k2_50": 86800
+      },
+      "resets": 0,
+      "parameters": 314360,
+      "auc": 0.19325846354166668
+    },
+    {
+      "observations_by_chamber": [
+        29790,
+        23411,
+        23546,
+        23254
+      ],
+      "source_actions_by_chamber": [
+        29790,
+        23410,
+        23545,
+        23255
+      ],
+      "path": "runs/gates-oracle-20261111/w0.0625-oracle-seed160",
+      "method": "Coordinate oracle",
+      "width": 0.0625,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        11401,
+        29686,
+        33436
+      ],
+      "crossings": [
+        5,
+        2,
+        3
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 29.18238908285275,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 1.0,
+      "coverage_k8": 1.0,
+      "milestones": {
+        "k1_50": 13646,
+        "k2_50": 14729,
+        "k4_50": 15208,
+        "k8_50": 29723,
+        "k1_90": 35063,
+        "k2_90": 35167,
+        "k4_90": 35258,
+        "k1_95": 35297,
+        "k2_95": 35572,
+        "k4_95": 35818,
+        "k1_99": 35873,
+        "k1_100": 35967,
+        "k2_99": 36084,
+        "k4_99": 36357,
+        "k2_100": 36553,
+        "k4_100": 37689,
+        "k8_90": 39944,
+        "k8_95": 43209,
+        "k8_99": 50788,
+        "k8_100": 77052
+      },
+      "resets": 0,
+      "parameters": 20210,
+      "auc": 0.7985904947916667
+    },
+    {
+      "observations_by_chamber": [
+        31782,
+        22559,
+        22741,
+        22919
+      ],
+      "source_actions_by_chamber": [
+        31780,
+        22560,
+        22740,
+        22920
+      ],
+      "path": "runs/gates-oracle-20261111/w0.0625-oracle-seed161",
+      "method": "Coordinate oracle",
+      "width": 0.0625,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        31776,
+        47886,
+        59671
+      ],
+      "crossings": [
+        3,
+        2,
+        3
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 27.936322457622737,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 1.0,
+      "coverage_k8": 0.9998914930555556,
+      "milestones": {
+        "k1_50": 34421,
+        "k2_50": 35028,
+        "k4_50": 35438,
+        "k8_50": 47886,
+        "k1_90": 60973,
+        "k2_90": 61101,
+        "k4_90": 61309,
+        "k1_95": 61542,
+        "k2_95": 61722,
+        "k4_95": 61863,
+        "k1_99": 61946,
+        "k2_99": 62506,
+        "k8_90": 62739,
+        "k4_99": 62864,
+        "k1_100": 63089,
+        "k2_100": 63199,
+        "k4_100": 63263,
+        "k8_95": 64776,
+        "k8_99": 68628
+      },
+      "resets": 0,
+      "parameters": 20210,
+      "auc": 0.6367914496527778
+    },
+    {
+      "observations_by_chamber": [
+        29714,
+        23527,
+        23356,
+        23404
+      ],
+      "source_actions_by_chamber": [
+        29715,
+        23525,
+        23355,
+        23405
+      ],
+      "path": "runs/gates-oracle-20261111/w0.0625-oracle-seed162",
+      "method": "Coordinate oracle",
+      "width": 0.0625,
+      "seed": 162,
+      "noise": 0.12,
+      "first": [
+        8181,
+        19851,
+        30826
+      ],
+      "crossings": [
+        4,
+        2,
+        5
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 23.32135529164225,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 1.0,
+      "coverage_k8": 0.9998914930555556,
+      "milestones": {
+        "k1_50": 11167,
+        "k2_50": 11887,
+        "k4_50": 12852,
+        "k8_50": 20372,
+        "k1_90": 32294,
+        "k2_90": 32427,
+        "k4_90": 32594,
+        "k1_95": 32858,
+        "k2_95": 32949,
+        "k4_95": 33153,
+        "k1_99": 33672,
+        "k2_99": 33806,
+        "k1_100": 33816,
+        "k4_99": 34042,
+        "k2_100": 34311,
+        "k4_100": 34692,
+        "k8_90": 34804,
+        "k8_95": 37533,
+        "k8_99": 50303
+      },
+      "resets": 0,
+      "parameters": 20210,
+      "auc": 0.836452907986111
+    },
+    {
+      "observations_by_chamber": [
+        28535,
+        24331,
+        23284,
+        23851
+      ],
+      "source_actions_by_chamber": [
+        28538,
+        24327,
+        23285,
+        23850
+      ],
+      "path": "runs/gates-oracle-20261111/w0.25-oracle-seed160",
+      "method": "Coordinate oracle",
+      "width": 0.25,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        4298,
+        11631,
+        14421
+      ],
+      "crossings": [
+        16,
+        16,
+        13
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 28.24132466688752,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 1.0,
+      "coverage_k8": 0.9997829861111112,
+      "milestones": {
+        "k1_50": 11036,
+        "k2_50": 11631,
+        "k4_50": 11649,
+        "k8_50": 13697,
+        "k1_90": 15538,
+        "k2_90": 15951,
+        "k1_95": 15973,
+        "k4_90": 16409,
+        "k1_99": 16532,
+        "k2_95": 16554,
+        "k4_95": 17179,
+        "k1_100": 17801,
+        "k2_99": 17816,
+        "k4_99": 18849,
+        "k2_100": 19677,
+        "k4_100": 20639,
+        "k8_90": 29818,
+        "k8_95": 34924,
+        "k8_99": 47566
+      },
+      "resets": 0,
+      "parameters": 20210,
+      "auc": 0.9048231336805557
+    },
+    {
+      "observations_by_chamber": [
+        29395,
+        23546,
+        23347,
+        23713
+      ],
+      "source_actions_by_chamber": [
+        29395,
+        23545,
+        23345,
+        23715
+      ],
+      "path": "runs/gates-oracle-20261111/w0.25-oracle-seed161",
+      "method": "Coordinate oracle",
+      "width": 0.25,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        6121,
+        11646,
+        14971
+      ],
+      "crossings": [
+        15,
+        10,
+        16
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 28.157542459201068,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 1.0,
+      "coverage_k8": 1.0,
+      "milestones": {
+        "k1_50": 11693,
+        "k2_50": 11726,
+        "k4_50": 11798,
+        "k8_50": 14234,
+        "k1_90": 19903,
+        "k2_90": 20076,
+        "k4_90": 20184,
+        "k1_95": 20266,
+        "k2_95": 20457,
+        "k1_99": 20508,
+        "k4_95": 20712,
+        "k1_100": 20926,
+        "k2_99": 21353,
+        "k4_99": 21523,
+        "k2_100": 21647,
+        "k4_100": 22148,
+        "k8_90": 30674,
+        "k8_95": 36372,
+        "k8_99": 50064,
+        "k8_100": 92654
+      },
+      "resets": 0,
+      "parameters": 20210,
+      "auc": 0.889015842013889
+    },
+    {
+      "observations_by_chamber": [
+        29661,
+        23479,
+        23493,
+        23368
+      ],
+      "source_actions_by_chamber": [
+        29660,
+        23480,
+        23495,
+        23365
+      ],
+      "path": "runs/gates-oracle-20261111/w0.25-oracle-seed162",
+      "method": "Coordinate oracle",
+      "width": 0.25,
+      "seed": 162,
+      "noise": 0.12,
+      "first": [
+        8181,
+        11716,
+        17146
+      ],
+      "crossings": [
+        14,
+        11,
+        13
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 27.718622457701713,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 1.0,
+      "coverage_k8": 1.0,
+      "milestones": {
+        "k1_50": 11167,
+        "k2_50": 11716,
+        "k4_50": 12396,
+        "k8_50": 14521,
+        "k1_90": 18561,
+        "k2_90": 18716,
+        "k4_90": 18903,
+        "k1_95": 19253,
+        "k2_95": 19401,
+        "k4_95": 19501,
+        "k1_99": 20071,
+        "k1_100": 20141,
+        "k2_99": 20141,
+        "k4_99": 20203,
+        "k2_100": 20262,
+        "k4_100": 21037,
+        "k8_90": 30826,
+        "k8_95": 36207,
+        "k8_99": 49237,
+        "k8_100": 98551
+      },
+      "resets": 0,
+      "parameters": 20210,
+      "auc": 0.8894889322916666
+    },
+    {
+      "observations_by_chamber": [
+        25935,
+        25518,
+        24133,
+        24415
+      ],
+      "source_actions_by_chamber": [
+        25938,
+        25515,
+        24130,
+        24417
+      ],
+      "path": "runs/gates-oracle-20261111/w1.0-oracle-seed160",
+      "method": "Coordinate oracle",
+      "width": 1.0,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        1748,
+        1946,
+        4298
+      ],
+      "crossings": [
+        50,
+        57,
+        52
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 28.238035792019218,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 1.0,
+      "coverage_k8": 0.9997829861111112,
+      "milestones": {
+        "k1_50": 3697,
+        "k2_50": 3964,
+        "k4_50": 4871,
+        "k1_90": 5219,
+        "k8_50": 11307,
+        "k2_90": 12446,
+        "k1_95": 13479,
+        "k4_90": 13611,
+        "k2_95": 13774,
+        "k1_99": 14014,
+        "k4_95": 15393,
+        "k1_100": 16074,
+        "k2_99": 16144,
+        "k2_100": 17119,
+        "k4_99": 17287,
+        "k4_100": 19404,
+        "k8_90": 28662,
+        "k8_95": 34711,
+        "k8_99": 47473
+      },
+      "resets": 0,
+      "parameters": 20210,
+      "auc": 0.9364246961805556
+    },
+    {
+      "observations_by_chamber": [
+        29497,
+        23285,
+        23657,
+        23562
+      ],
+      "source_actions_by_chamber": [
+        29502,
+        23288,
+        23645,
+        23565
+      ],
+      "path": "runs/gates-oracle-20261111/w1.0-oracle-seed161",
+      "method": "Coordinate oracle",
+      "width": 1.0,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        4094,
+        11026,
+        13261
+      ],
+      "crossings": [
+        60,
+        43,
+        47
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 28.959116625133902,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 1.0,
+      "coverage_k8": 0.9998914930555556,
+      "milestones": {
+        "k1_50": 10859,
+        "k2_50": 11033,
+        "k4_50": 11188,
+        "k8_50": 13648,
+        "k1_90": 15588,
+        "k2_90": 15836,
+        "k1_95": 16183,
+        "k4_90": 16244,
+        "k2_95": 16512,
+        "k1_99": 16746,
+        "k1_100": 16808,
+        "k4_95": 16851,
+        "k2_99": 17207,
+        "k4_99": 18702,
+        "k2_100": 18704,
+        "k4_100": 21153,
+        "k8_90": 30457,
+        "k8_95": 36131,
+        "k8_99": 49547
+      },
+      "resets": 0,
+      "parameters": 20210,
+      "auc": 0.9014246961805557
+    },
+    {
+      "observations_by_chamber": [
+        25957,
+        27083,
+        23435,
+        23526
+      ],
+      "source_actions_by_chamber": [
+        25959,
+        27086,
+        23430,
+        23525
+      ],
+      "path": "runs/gates-oracle-20261111/w1.0-oracle-seed162",
+      "method": "Coordinate oracle",
+      "width": 1.0,
+      "seed": 162,
+      "noise": 0.12,
+      "first": [
+        2044,
+        2421,
+        13466
+      ],
+      "crossings": [
+        53,
+        48,
+        53
+      ],
+      "interactions": 100000,
+      "updates": 0,
+      "samples": 0,
+      "seconds": 27.68323841597885,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 1.0,
+      "coverage_k8": 1.0,
+      "milestones": {
+        "k1_50": 7433,
+        "k2_50": 9571,
+        "k4_50": 10486,
+        "k8_50": 13356,
+        "k1_90": 17422,
+        "k2_90": 17512,
+        "k4_90": 17644,
+        "k1_95": 17793,
+        "k2_95": 18097,
+        "k4_95": 18217,
+        "k1_99": 18331,
+        "k2_99": 18717,
+        "k1_100": 19214,
+        "k4_99": 19214,
+        "k2_100": 19227,
+        "k4_100": 23082,
+        "k8_90": 30098,
+        "k8_95": 35639,
+        "k8_99": 48669,
+        "k8_100": 95579
+      },
+      "resets": 0,
+      "parameters": 20210,
+      "auc": 0.9068435329861111
+    },
+    {
+      "observations_by_chamber": [
+        76748,
+        23252,
+        1,
+        0
+      ],
+      "source_actions_by_chamber": [
+        76745,
+        23255,
+        0,
+        0
+      ],
+      "path": "runs/gates-learned-20261111/w0.0625-learned2-seed160",
+      "method": "Learned 2D",
+      "width": 0.0625,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        28096,
+        88471,
+        null
+      ],
+      "crossings": [
+        12,
+        1,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 10214,
+      "samples": 1306000,
+      "seconds": 514.7947114999406,
+      "coverage_k1": 0.5069444444444444,
+      "coverage_k2": 0.5017361111111112,
+      "coverage_k4": 0.5004340277777778,
+      "coverage_k8": 0.4983723958333333,
+      "loss": 0.007110479287803173,
+      "dynamics": 7.050531712593511e-05,
+      "adjacency": 0.0005853333277627826,
+      "repulsion": 0.014993743970990181,
+      "norm": 0.08472836762666702,
+      "variance": 0.0,
+      "milestones": {
+        "k1_50": 40093,
+        "k2_50": 41837,
+        "k4_50": 62266
+      },
+      "resets": 0,
+      "parameters": 20210,
+      "auc": 0.4078298611111111
+    },
+    {
+      "observations_by_chamber": [
+        79492,
+        20509,
+        0,
+        0
+      ],
+      "source_actions_by_chamber": [
+        79495,
+        20505,
+        0,
+        0
+      ],
+      "path": "runs/gates-learned-20261111/w0.0625-learned8-seed160",
+      "method": "Learned 8D",
+      "width": 0.0625,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        12641,
+        null,
+        null
+      ],
+      "crossings": [
+        14,
+        0,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 10214,
+      "samples": 1306000,
+      "seconds": 574.7860467499122,
+      "coverage_k1": 0.3819444444444444,
+      "coverage_k2": 0.3732638888888889,
+      "coverage_k4": 0.3680555555555556,
+      "coverage_k8": 0.3583984375,
+      "loss": 0.003165117697790265,
+      "dynamics": 0.0003312135813757777,
+      "adjacency": 0.004816905595362186,
+      "repulsion": 0.004572529345750809,
+      "norm": 0.04873817414045334,
+      "variance": 0.022267766296863556,
+      "milestones": {},
+      "resets": 0,
+      "parameters": 20984,
+      "auc": 0.32097113715277775
+    },
+    {
+      "observations_by_chamber": [
+        63413,
+        27187,
+        9401,
+        0
+      ],
+      "source_actions_by_chamber": [
+        63418,
+        27182,
+        9400,
+        0
+      ],
+      "path": "runs/gates-learned-20261111/w0.25-learned2-seed160",
+      "method": "Learned 2D",
+      "width": 0.25,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        4298,
+        8371,
+        null
+      ],
+      "crossings": [
+        30,
+        15,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 10214,
+      "samples": 1306000,
+      "seconds": 507.040603667032,
+      "coverage_k1": 0.75,
+      "coverage_k2": 0.7465277777777778,
+      "coverage_k4": 0.7421875,
+      "coverage_k8": 0.7086588541666666,
+      "loss": 0.005486518610268831,
+      "dynamics": 4.0652183088241145e-05,
+      "adjacency": 0.00031782907899469137,
+      "repulsion": 0.010160580277442932,
+      "norm": 0.07992307096719742,
+      "variance": 0.0,
+      "milestones": {
+        "k1_50": 14091,
+        "k2_50": 15107,
+        "k4_50": 18476,
+        "k8_50": 24108
+      },
+      "resets": 0,
+      "parameters": 20210,
+      "auc": 0.629250217013889
+    },
+    {
+      "observations_by_chamber": [
+        72369,
+        24497,
+        3135,
+        0
+      ],
+      "source_actions_by_chamber": [
+        72365,
+        24500,
+        3135,
+        0
+      ],
+      "path": "runs/gates-learned-20261111/w0.25-learned2-seed161",
+      "method": "Learned 2D",
+      "width": 0.25,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        6046,
+        19566,
+        null
+      ],
+      "crossings": [
+        25,
+        8,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 10214,
+      "samples": 1306000,
+      "seconds": 580.9550693752244,
+      "coverage_k1": 0.6944444444444444,
+      "coverage_k2": 0.6840277777777778,
+      "coverage_k4": 0.6692708333333334,
+      "coverage_k8": 0.6141493055555556,
+      "loss": 0.005398602690547705,
+      "dynamics": 4.908645132672973e-05,
+      "adjacency": 0.00046884448966011405,
+      "repulsion": 0.009365445002913475,
+      "norm": 0.08466275781393051,
+      "variance": 0.0,
+      "milestones": {
+        "k1_50": 21672,
+        "k2_50": 23103,
+        "k4_50": 35009,
+        "k8_50": 44189
+      },
+      "resets": 0,
+      "parameters": 20210,
+      "auc": 0.5103461371527778
+    },
+    {
+      "observations_by_chamber": [
+        44662,
+        25962,
+        17310,
+        12067
+      ],
+      "source_actions_by_chamber": [
+        44658,
+        25965,
+        17305,
+        12072
+      ],
+      "path": "runs/gates-learned-20261111/w1.0-learned2-seed160",
+      "method": "Learned 2D",
+      "width": 1.0,
+      "seed": 160,
+      "noise": 0.12,
+      "first": [
+        1748,
+        1946,
+        4298
+      ],
+      "crossings": [
+        95,
+        36,
+        39
+      ],
+      "interactions": 100000,
+      "updates": 10214,
+      "samples": 1306000,
+      "seconds": 529.0532655832358,
+      "coverage_k1": 1.0,
+      "coverage_k2": 1.0,
+      "coverage_k4": 1.0,
+      "coverage_k8": 0.9796006944444444,
+      "loss": 0.005281404592096806,
+      "dynamics": 5.1044979045400396e-05,
+      "adjacency": 0.0002793502644635737,
+      "repulsion": 0.009314710274338722,
+      "norm": 0.08119820803403854,
+      "variance": 0.0,
+      "milestones": {
+        "k1_50": 3697,
+        "k2_50": 3964,
+        "k4_50": 4871,
+        "k1_90": 5729,
+        "k8_50": 12547,
+        "k2_90": 14056,
+        "k1_95": 14131,
+        "k2_95": 16942,
+        "k1_99": 17411,
+        "k4_90": 17481,
+        "k1_100": 18594,
+        "k2_99": 20841,
+        "k4_95": 22606,
+        "k2_100": 27326,
+        "k4_99": 31518,
+        "k8_90": 41372,
+        "k8_95": 60684,
+        "k4_100": 67591
+      },
+      "resets": 0,
+      "parameters": 20210,
+      "auc": 0.923173828125
+    },
+    {
+      "observations_by_chamber": [
+        74545,
+        24092,
+        1364,
+        0
+      ],
+      "source_actions_by_chamber": [
+        74567,
+        24063,
+        1370,
+        0
+      ],
+      "path": "runs/gates-learned-20261111/w1.0-learned2-seed161",
+      "method": "Learned 2D",
+      "width": 1.0,
+      "seed": 161,
+      "noise": 0.12,
+      "first": [
+        4094,
+        23831,
+        null
+      ],
+      "crossings": [
+        133,
+        22,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 10214,
+      "samples": 1306000,
+      "seconds": 567.8019459587522,
+      "coverage_k1": 0.5833333333333334,
+      "coverage_k2": 0.5746527777777778,
+      "coverage_k4": 0.56640625,
+      "coverage_k8": 0.5427517361111112,
+      "loss": 0.0050616017542779446,
+      "dynamics": 5.52019446331542e-05,
+      "adjacency": 0.0004996274947188795,
+      "repulsion": 0.008177738636732101,
+      "norm": 0.08510260283946991,
+      "variance": 0.0,
+      "milestones": {
+        "k1_50": 23923,
+        "k2_50": 24209,
+        "k4_50": 24976,
+        "k8_50": 46289
+      },
+      "resets": 0,
+      "parameters": 20210,
+      "auc": 0.48254123263888893
+    },
+    {
+      "observations_by_chamber": [
+        91080,
+        8919,
+        2,
+        0
+      ],
+      "source_actions_by_chamber": [
+        91080,
+        8920,
+        0,
+        0
+      ],
+      "path": "runs/gates-clean-20261111/w0.0625-clean-diagnostic-seed160",
+      "method": "Learned 2D clean",
+      "width": 0.0625,
+      "seed": 160,
+      "noise": 0.0,
+      "first": [
+        23361,
+        97856,
+        null
+      ],
+      "crossings": [
+        5,
+        2,
+        0
+      ],
+      "interactions": 100000,
+      "updates": 10214,
+      "samples": 1306000,
+      "seconds": 580.2932291249745,
+      "coverage_k1": 0.5069444444444444,
+      "coverage_k2": 0.4982638888888889,
+      "coverage_k4": 0.4730902777777778,
+      "coverage_k8": 0.4376085069444444,
+      "loss": 0.006092855241149664,
+      "dynamics": 4.116441050427966e-05,
+      "adjacency": 0.0007131996680982411,
+      "repulsion": 0.012480594217777252,
+      "norm": 0.07691708207130432,
+      "variance": 0.0,
+      "milestones": {
+        "k1_50": 97928
+      },
+      "resets": 0,
+      "parameters": 20210,
+      "auc": 0.2672536892361111
+    }
+  ],
+  "summary": [
+    {
+      "width": 0.0625,
+      "method": "Coordinate oracle",
+      "n": 3,
+      "entered": [
+        3,
+        3,
+        3
+      ],
+      "first_deep": [
+        33436,
+        59671,
+        30826
+      ],
+      "seeds": [
+        160,
+        161,
+        162
+      ],
+      "final_mean": 1.0,
+      "auc_mean": 0.7572782841435185
+    },
+    {
+      "width": 0.0625,
+      "method": "Learned 2D",
+      "n": 1,
+      "entered": [
+        1,
+        1,
+        0
+      ],
+      "first_deep": [
+        null
+      ],
+      "seeds": [
+        160
+      ],
+      "final_mean": 0.5004340277777778,
+      "auc_mean": 0.4078298611111111
+    },
+    {
+      "width": 0.0625,
+      "method": "Learned 2D clean",
+      "n": 1,
+      "entered": [
+        1,
+        1,
+        0
+      ],
+      "first_deep": [
+        null
+      ],
+      "seeds": [
+        160
+      ],
+      "final_mean": 0.4730902777777778,
+      "auc_mean": 0.2672536892361111
+    },
+    {
+      "width": 0.0625,
+      "method": "Learned 8D",
+      "n": 1,
+      "entered": [
+        1,
+        0,
+        0
+      ],
+      "first_deep": [
+        null
+      ],
+      "seeds": [
+        160
+      ],
+      "final_mean": 0.3680555555555556,
+      "auc_mean": 0.32097113715277775
+    },
+    {
+      "width": 0.0625,
+      "method": "Walk p0",
+      "n": 3,
+      "entered": [
+        3,
+        1,
+        0
+      ],
+      "first_deep": [
+        null,
+        null,
+        null
+      ],
+      "seeds": [
+        160,
+        161,
+        162
+      ],
+      "final_mean": 0.47902199074074076,
+      "auc_mean": 0.3719444444444444
+    },
+    {
+      "width": 0.0625,
+      "method": "Walk p0.8",
+      "n": 3,
+      "entered": [
+        3,
+        2,
+        1
+      ],
+      "first_deep": [
+        null,
+        72296,
+        null
+      ],
+      "seeds": [
+        160,
+        161,
+        162
+      ],
+      "final_mean": 0.7497106481481483,
+      "auc_mean": 0.5761650028935185
+    },
+    {
+      "width": 0.0625,
+      "method": "Walk p0.8 + resets",
+      "n": 3,
+      "entered": [
+        3,
+        2,
+        1
+      ],
+      "first_deep": [
+        null,
+        60139,
+        null
+      ],
+      "seeds": [
+        160,
+        161,
+        162
+      ],
+      "final_mean": 0.58984375,
+      "auc_mean": 0.4423640046296296
+    },
+    {
+      "width": 0.0625,
+      "method": "Walk p0.95",
+      "n": 3,
+      "entered": [
+        2,
+        1,
+        0
+      ],
+      "first_deep": [
+        null,
+        null,
+        null
+      ],
+      "seeds": [
+        160,
+        161,
+        162
+      ],
+      "final_mean": 0.46455439814814814,
+      "auc_mean": 0.32092664930555553
+    },
+    {
+      "width": 0.0625,
+      "method": "Walk p0.99",
+      "n": 3,
+      "entered": [
+        0,
+        0,
+        0
+      ],
+      "first_deep": [
+        null,
+        null,
+        null
+      ],
+      "seeds": [
+        160,
+        161,
+        162
+      ],
+      "final_mean": 0.20688657407407407,
+      "auc_mean": 0.15397967303240742
+    },
+    {
+      "width": 0.25,
+      "method": "Coordinate oracle",
+      "n": 3,
+      "entered": [
+        3,
+        3,
+        3
+      ],
+      "first_deep": [
+        14421,
+        14971,
+        17146
+      ],
+      "seeds": [
+        160,
+        161,
+        162
+      ],
+      "final_mean": 1.0,
+      "auc_mean": 0.8944426359953704
+    },
+    {
+      "width": 0.25,
+      "method": "Learned 2D",
+      "n": 2,
+      "entered": [
+        2,
+        2,
+        0
+      ],
+      "first_deep": [
+        null,
+        null
+      ],
+      "seeds": [
+        160,
+        161
+      ],
+      "final_mean": 0.7057291666666667,
+      "auc_mean": 0.5697981770833334
+    },
+    {
+      "width": 0.25,
+      "method": "Walk p0",
+      "n": 3,
+      "entered": [
+        3,
+        3,
+        3
+      ],
+      "first_deep": [
+        51831,
+        34252,
+        49894
+      ],
+      "seeds": [
+        160,
+        161,
+        162
+      ],
+      "final_mean": 0.9515335648148149,
+      "auc_mean": 0.6501446759259261
+    },
+    {
+      "width": 0.25,
+      "method": "Walk p0.8",
+      "n": 3,
+      "entered": [
+        3,
+        3,
+        3
+      ],
+      "first_deep": [
+        10385,
+        14632,
+        29706
+      ],
+      "seeds": [
+        160,
+        161,
+        162
+      ],
+      "final_mean": 0.9962384259259259,
+      "auc_mean": 0.8277470341435184
+    },
+    {
+      "width": 0.25,
+      "method": "Walk p0.8 + resets",
+      "n": 3,
+      "entered": [
+        3,
+        2,
+        1
+      ],
+      "first_deep": [
+        null,
+        56379,
+        null
+      ],
+      "seeds": [
+        160,
+        161,
+        162
+      ],
+      "final_mean": 0.7034143518518517,
+      "auc_mean": 0.5579944299768519
+    },
+    {
+      "width": 0.25,
+      "method": "Walk p0.95",
+      "n": 3,
+      "entered": [
+        3,
+        3,
+        3
+      ],
+      "first_deep": [
+        53668,
+        71512,
+        49536
+      ],
+      "seeds": [
+        160,
+        161,
+        162
+      ],
+      "final_mean": 0.8537326388888888,
+      "auc_mean": 0.5297272858796296
+    },
+    {
+      "width": 0.25,
+      "method": "Walk p0.99",
+      "n": 3,
+      "entered": [
+        1,
+        0,
+        0
+      ],
+      "first_deep": [
+        null,
+        null,
+        null
+      ],
+      "seeds": [
+        160,
+        161,
+        162
+      ],
+      "final_mean": 0.2410300925925926,
+      "auc_mean": 0.1791062644675926
+    },
+    {
+      "width": 1.0,
+      "method": "Coordinate oracle",
+      "n": 3,
+      "entered": [
+        3,
+        3,
+        3
+      ],
+      "first_deep": [
+        4298,
+        13261,
+        13466
+      ],
+      "seeds": [
+        160,
+        161,
+        162
+      ],
+      "final_mean": 1.0,
+      "auc_mean": 0.9148976417824075
+    },
+    {
+      "width": 1.0,
+      "method": "Learned 2D",
+      "n": 2,
+      "entered": [
+        2,
+        2,
+        1
+      ],
+      "first_deep": [
+        4298,
+        null
+      ],
+      "seeds": [
+        160,
+        161
+      ],
+      "final_mean": 0.783203125,
+      "auc_mean": 0.7028575303819444
+    },
+    {
+      "width": 1.0,
+      "method": "Walk p0",
+      "n": 3,
+      "entered": [
+        3,
+        3,
+        3
+      ],
+      "first_deep": [
+        22703,
+        24431,
+        16537
+      ],
+      "seeds": [
+        160,
+        161,
+        162
+      ],
+      "final_mean": 0.9008969907407408,
+      "auc_mean": 0.7072272858796295
+    },
+    {
+      "width": 1.0,
+      "method": "Walk p0.8",
+      "n": 3,
+      "entered": [
+        3,
+        3,
+        3
+      ],
+      "first_deep": [
+        4298,
+        16509,
+        8405
+      ],
+      "seeds": [
+        160,
+        161,
+        162
+      ],
+      "final_mean": 0.9995659722222222,
+      "auc_mean": 0.8841370081018517
+    },
+    {
+      "width": 1.0,
+      "method": "Walk p0.8 + resets",
+      "n": 3,
+      "entered": [
+        3,
+        3,
+        3
+      ],
+      "first_deep": [
+        14122,
+        27814,
+        8406
+      ],
+      "seeds": [
+        160,
+        161,
+        162
+      ],
+      "final_mean": 0.9791666666666666,
+      "auc_mean": 0.7609385850694445
+    },
+    {
+      "width": 1.0,
+      "method": "Walk p0.95",
+      "n": 3,
+      "entered": [
+        3,
+        3,
+        3
+      ],
+      "first_deep": [
+        53668,
+        51488,
+        25018
+      ],
+      "seeds": [
+        160,
+        161,
+        162
+      ],
+      "final_mean": 0.9774305555555555,
+      "auc_mean": 0.7031658709490741
+    },
+    {
+      "width": 1.0,
+      "method": "Walk p0.99",
+      "n": 3,
+      "entered": [
+        3,
+        3,
+        0
+      ],
+      "first_deep": [
+        null,
+        null,
+        null
+      ],
+      "seeds": [
+        160,
+        161,
+        162
+      ],
+      "final_mean": 0.3738425925925926,
+      "auc_mean": 0.23956778067129628
+    }
+  ],
+  "prefix_checks": [
+    {
+      "pair": [
+        "runs/gates-learned-20261111/w0.0625-learned2-seed160",
+        "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.0-seed160"
+      ],
+      "identical_images": true
+    },
+    {
+      "pair": [
+        "runs/gates-learned-20261111/w0.0625-learned2-seed160",
+        "runs/gates-oracle-20261111/w0.0625-oracle-seed160"
+      ],
+      "identical_images": true
+    },
+    {
+      "pair": [
+        "runs/gates-learned-20261111/w0.0625-learned8-seed160",
+        "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.0-seed160"
+      ],
+      "identical_images": true
+    },
+    {
+      "pair": [
+        "runs/gates-learned-20261111/w0.0625-learned8-seed160",
+        "runs/gates-oracle-20261111/w0.0625-oracle-seed160"
+      ],
+      "identical_images": true
+    },
+    {
+      "pair": [
+        "runs/gates-learned-20261111/w0.25-learned2-seed160",
+        "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.0-seed160"
+      ],
+      "identical_images": true
+    },
+    {
+      "pair": [
+        "runs/gates-learned-20261111/w0.25-learned2-seed160",
+        "runs/gates-oracle-20261111/w0.25-oracle-seed160"
+      ],
+      "identical_images": true
+    },
+    {
+      "pair": [
+        "runs/gates-learned-20261111/w0.25-learned2-seed161",
+        "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.0-seed161"
+      ],
+      "identical_images": true
+    },
+    {
+      "pair": [
+        "runs/gates-learned-20261111/w0.25-learned2-seed161",
+        "runs/gates-oracle-20261111/w0.25-oracle-seed161"
+      ],
+      "identical_images": true
+    },
+    {
+      "pair": [
+        "runs/gates-learned-20261111/w1.0-learned2-seed160",
+        "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.0-seed160"
+      ],
+      "identical_images": true
+    },
+    {
+      "pair": [
+        "runs/gates-learned-20261111/w1.0-learned2-seed160",
+        "runs/gates-oracle-20261111/w1.0-oracle-seed160"
+      ],
+      "identical_images": true
+    },
+    {
+      "pair": [
+        "runs/gates-learned-20261111/w1.0-learned2-seed161",
+        "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.0-seed161"
+      ],
+      "identical_images": true
+    },
+    {
+      "pair": [
+        "runs/gates-learned-20261111/w1.0-learned2-seed161",
+        "runs/gates-oracle-20261111/w1.0-oracle-seed161"
+      ],
+      "identical_images": true
+    },
+    {
+      "pair": [
+        "runs/gates-clean-20261111/w0.0625-clean-diagnostic-seed160",
+        "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.0-seed160"
+      ],
+      "identical_images": false
+    },
+    {
+      "pair": [
+        "runs/gates-clean-20261111/w0.0625-clean-diagnostic-seed160",
+        "runs/gates-oracle-20261111/w0.0625-oracle-seed160"
+      ],
+      "identical_images": false
+    }
+  ]
+}

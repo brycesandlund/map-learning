@@ -12,7 +12,7 @@ torch.set_num_threads(1);rows=[]
 for path in a.runs:
  spec=json.loads((path/'spec.json').read_text());cfg=SimpleNamespace(**spec);m=PixelLearner(cfg)
  ck=torch.load(path/'checkpoint.pt',weights_only=True);m.encoder.load_state_dict(ck['encoder'],strict=False);m.heads.load_state_dict(ck['heads'])
- e=PixelMaze(MazeConfig(size=cfg.size,seed=cfg.layout,step_size=cfg.step_size,image_size=cfg.image_size),98221,cfg.family,cfg.noise,getattr(cfg,'rgb',0),getattr(cfg,'marker_size',.85),getattr(cfg,'noise_mode','full'))
+ e=PixelMaze(MazeConfig(size=cfg.size,seed=cfg.layout,step_size=cfg.step_size,image_size=cfg.image_size),98221,cfg.family,cfg.noise,getattr(cfg,'rgb',0),getattr(cfg,'marker_size',.85),getattr(cfg,'noise_mode','full'),getattr(cfg,'gate_width',1.))
  traj=np.load(path/'trajectory.npz');rng=np.random.default_rng(0)
  pts=rng.uniform(.02,cfg.size-.02,(512,2)).astype(np.float32) if a.positions=='uniform' else traj['positions'][rng.choice(len(traj['positions']),512,replace=False)]
  def encode(points):

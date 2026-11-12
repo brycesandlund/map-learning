@@ -1,0 +1,426 @@
+{
+  "runs": 69,
+  "actions": 6900000,
+  "updates": 153210,
+  "presentations_per_head": 19590000,
+  "audited": 69,
+  "rows": [
+    {
+      "run": "runs/gates-learned-20261111/w0.0625-learned2-seed160",
+      "steps": 100000,
+      "updates": 10214,
+      "samples": 1306000
+    },
+    {
+      "run": "runs/gates-learned-20261111/w0.0625-learned2-seed161",
+      "steps": 100000,
+      "updates": 10214,
+      "samples": 1306000
+    },
+    {
+      "run": "runs/gates-learned-20261111/w0.0625-learned2-seed162",
+      "steps": 100000,
+      "updates": 10214,
+      "samples": 1306000
+    },
+    {
+      "run": "runs/gates-learned-20261111/w0.0625-learned8-seed160",
+      "steps": 100000,
+      "updates": 10214,
+      "samples": 1306000
+    },
+    {
+      "run": "runs/gates-learned-20261111/w0.0625-learned8-seed161",
+      "steps": 100000,
+      "updates": 10214,
+      "samples": 1306000
+    },
+    {
+      "run": "runs/gates-learned-20261111/w0.0625-learned8-seed162",
+      "steps": 100000,
+      "updates": 10214,
+      "samples": 1306000
+    },
+    {
+      "run": "runs/gates-learned-20261111/w0.25-learned2-seed160",
+      "steps": 100000,
+      "updates": 10214,
+      "samples": 1306000
+    },
+    {
+      "run": "runs/gates-learned-20261111/w0.25-learned2-seed161",
+      "steps": 100000,
+      "updates": 10214,
+      "samples": 1306000
+    },
+    {
+      "run": "runs/gates-learned-20261111/w0.25-learned2-seed162",
+      "steps": 100000,
+      "updates": 10214,
+      "samples": 1306000
+    },
+    {
+      "run": "runs/gates-learned-20261111/w1.0-learned2-seed160",
+      "steps": 100000,
+      "updates": 10214,
+      "samples": 1306000
+    },
+    {
+      "run": "runs/gates-learned-20261111/w1.0-learned2-seed161",
+      "steps": 100000,
+      "updates": 10214,
+      "samples": 1306000
+    },
+    {
+      "run": "runs/gates-learned-20261111/w1.0-learned2-seed162",
+      "steps": 100000,
+      "updates": 10214,
+      "samples": 1306000
+    },
+    {
+      "run": "runs/gates-clean-20261111/w0.0625-clean-diagnostic-seed160",
+      "steps": 100000,
+      "updates": 10214,
+      "samples": 1306000
+    },
+    {
+      "run": "runs/gates-clean-20261111/w0.0625-clean-diagnostic-seed161",
+      "steps": 100000,
+      "updates": 10214,
+      "samples": 1306000
+    },
+    {
+      "run": "runs/gates-clean-20261111/w0.0625-clean-diagnostic-seed162",
+      "steps": 100000,
+      "updates": 10214,
+      "samples": 1306000
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.0-r0.0-seed160",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.0-r0.0-seed161",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.0-r0.0-seed162",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.0-seed160",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.0-seed161",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.0-seed162",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.001-seed160",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.001-seed161",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.8-r0.001-seed162",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.95-r0.0-seed160",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.95-r0.0-seed161",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.95-r0.0-seed162",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.99-r0.0-seed160",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.99-r0.0-seed161",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.0625-walk-p0.99-r0.0-seed162",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.0-r0.0-seed160",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.0-r0.0-seed161",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.0-r0.0-seed162",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.0-seed160",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.0-seed161",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.0-seed162",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.001-seed160",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.001-seed161",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.8-r0.001-seed162",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.95-r0.0-seed160",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.95-r0.0-seed161",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.95-r0.0-seed162",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.99-r0.0-seed160",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.99-r0.0-seed161",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w0.25-walk-p0.99-r0.0-seed162",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.0-r0.0-seed160",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.0-r0.0-seed161",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.0-r0.0-seed162",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.0-seed160",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.0-seed161",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.0-seed162",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.001-seed160",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.001-seed161",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.8-r0.001-seed162",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.95-r0.0-seed160",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.95-r0.0-seed161",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.95-r0.0-seed162",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.99-r0.0-seed160",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.99-r0.0-seed161",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-walk-20261111/w1.0-walk-p0.99-r0.0-seed162",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-oracle-20261111/w0.0625-oracle-seed160",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-oracle-20261111/w0.0625-oracle-seed161",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-oracle-20261111/w0.0625-oracle-seed162",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-oracle-20261111/w0.25-oracle-seed160",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-oracle-20261111/w0.25-oracle-seed161",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-oracle-20261111/w0.25-oracle-seed162",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-oracle-20261111/w1.0-oracle-seed160",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-oracle-20261111/w1.0-oracle-seed161",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    },
+    {
+      "run": "runs/gates-oracle-20261111/w1.0-oracle-seed162",
+      "steps": 100000,
+      "updates": 0,
+      "samples": 0
+    }
+  ],
+  "counterfactual_extra_actions": 3000,
+  "smoke_actions": 2000,
+  "failed_counterfactual_attempt_actions": 0
+}

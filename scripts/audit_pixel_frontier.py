@@ -20,7 +20,7 @@ for path in a.runs:
  def enc(ids):return np.concatenate([m.encode(images[ids[i:i+512]]) for i in range(0,len(ids),512)])
  score=cKDTree(enc(visited)).query(enc(active))[0];order=np.argsort(-score)
  rng=np.random.default_rng(59391);random=rng.choice(len(active),min(3000,len(active)),replace=False);sample=np.unique(np.r_[order[:1000],random])
- e=PixelMaze(MazeConfig(size=s.size,seed=s.layout,step_size=s.step_size,image_size=s.image_size),2,s.family,s.noise,s.rgb,s.marker_size,s.noise_mode)
+ e=PixelMaze(MazeConfig(size=s.size,seed=s.layout,step_size=s.step_size,image_size=s.image_size),2,s.family,s.noise,s.rgb,s.marker_size,s.noise_mode,getattr(s,'gate_width',1.))
  covered=d['frames'][-1];productive=np.zeros(len(active),bool)
  for i in sample:
   pos=d['positions'][active[i]]

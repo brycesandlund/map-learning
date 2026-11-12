@@ -12,7 +12,7 @@ for root in a.roots:
     d=dict(np.load(path.parent/'trajectory.npz')); images=np.load(path.parent/'images.npy',mmap_mode='r');n=spec['steps']
     assert len(d['positions'])==len(images)==n+1
     assert np.all((d['parents'][1:]>=0)&(d['parents'][1:]<np.arange(1,n+1)))
-    e=PixelMaze(MazeConfig(size=spec['size'],seed=spec['layout'],step_size=spec['step_size'],image_size=spec['image_size']),spec['seed']+71000,spec['family'],spec['noise'],spec.get('rgb',0),spec.get('marker_size',.85),spec.get('noise_mode','full'))
+    e=PixelMaze(MazeConfig(size=spec['size'],seed=spec['layout'],step_size=spec['step_size'],image_size=spec['image_size']),spec['seed']+71000,spec['family'],spec['noise'],spec.get('rgb',0),spec.get('marker_size',.85),spec.get('noise_mode','full'),spec.get('gate_width',1.))
     e.reset()
     # Observation RNG advances once per actual action and never on restores.
     for i in range(1,min(n,25)+1):

@@ -14,7 +14,7 @@ from map_learning.pixel_exploration import PixelMaze,PixelLearner
 p=argparse.ArgumentParser();p.add_argument('run',type=Path);p.add_argument('--out',type=Path,required=True);a=p.parse_args()
 s=SimpleNamespace(**json.loads((a.run/'spec.json').read_text()));torch.set_num_threads(1)
 m=PixelLearner(s);ck=torch.load(a.run/'checkpoint.pt',weights_only=True);m.encoder.load_state_dict(ck['encoder'],strict=False)
-e=PixelMaze(MazeConfig(size=s.size,seed=s.layout,step_size=s.step_size,image_size=s.image_size),98271,s.family,s.noise,getattr(s,'rgb',0),getattr(s,'marker_size',.85),getattr(s,'noise_mode','full'))
+e=PixelMaze(MazeConfig(size=s.size,seed=s.layout,step_size=s.step_size,image_size=s.image_size),98271,s.family,s.noise,getattr(s,'rgb',0),getattr(s,'marker_size',.85),getattr(s,'noise_mode','full'),getattr(s,'gate_width',1.))
 t=dict(np.load(a.run/'trajectory.npz'));images=np.load(a.run/'images.npy',mmap_mode='r')
 o=(np.arange(s.size*4)+.5)/4;xx,yy=np.meshgrid(o,o);pts=np.stack([xx.ravel(),yy.ravel()],1)
 def encode_images(ims):return np.concatenate([m.encode(ims[i:i+256]) for i in range(0,len(ims),256)])

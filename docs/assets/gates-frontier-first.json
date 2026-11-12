@@ -1,0 +1,78 @@
+[
+  {
+    "run": "runs/gates-learned-20261111/w0.0625-learned2-seed160",
+    "all_chambers_reached": false,
+    "next_gate": 3,
+    "eligible_occurrences": 0,
+    "active": 81000,
+    "distinct_eligible_positions": 0,
+    "latent": {
+      "best_eligible_rank": null,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "coordinate": {
+      "best_eligible_rank": null,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "discovered_regions": [
+      {
+        "chamber": 2,
+        "first_observation": 28096,
+        "observations": 23252,
+        "source_actions": 23255,
+        "pending": 18601,
+        "latent_best_pending_rank": 9,
+        "coordinate_best_pending_rank": 1
+      },
+      {
+        "chamber": 3,
+        "first_observation": 88471,
+        "observations": 1,
+        "source_actions": 0,
+        "pending": 1,
+        "latent_best_pending_rank": 9614,
+        "coordinate_best_pending_rank": 16
+      }
+    ]
+  },
+  {
+    "run": "runs/gates-learned-20261111/w0.25-learned2-seed160",
+    "all_chambers_reached": false,
+    "next_gate": 3,
+    "eligible_occurrences": 0,
+    "active": 81000,
+    "distinct_eligible_positions": 0,
+    "latent": {
+      "best_eligible_rank": null,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "coordinate": {
+      "best_eligible_rank": null,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "discovered_regions": [
+      {
+        "chamber": 2,
+        "first_observation": 4298,
+        "observations": 27187,
+        "source_actions": 27182,
+        "pending": 21891,
+        "latent_best_pending_rank": 1,
+        "coordinate_best_pending_rank": 2
+      },
+      {
+        "chamber": 3,
+        "first_observation": 8371,
+        "observations": 9401,
+        "source_actions": 9400,
+        "pending": 7521,
+        "latent_best_pending_rank": 11,
+        "coordinate_best_pending_rank": 1
+      }
+    ]
+  }
+]

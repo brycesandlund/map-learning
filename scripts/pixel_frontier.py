@@ -15,14 +15,14 @@ def parser():
     defaults=dict(checkpoint_every=25000,dynamics_switch=0,normalize=0,rgb=0,background=0,center=0,seed=110,layout=7,size=12,image_size=48,steps=20000,dim=8,width=128,
         warm_steps=0,train_every=1000,epoch_every=5000,batch=128,extra_updates=0,refresh_every=1000)
     for k,v in defaults.items():p.add_argument('--'+k.replace('_','-'),type=int,default=v)
-    floats=dict(dynamics_after=1.,infonce=0.,augmentation=0.,temperature=10.,inverse=0.,marker_size=.85,variance=0.,covariance=0.,noise=.12,step_size=.25,lr=.0003,dynamics=1.,adjacency=0.,repulsion=.03,l2=.03,margin=.25,persistence=0.,reset_probability=0.)
+    floats=dict(gate_width=1.,dynamics_after=1.,infonce=0.,augmentation=0.,temperature=10.,inverse=0.,marker_size=.85,variance=0.,covariance=0.,noise=.12,step_size=.25,lr=.0003,dynamics=1.,adjacency=0.,repulsion=.03,l2=.03,margin=.25,persistence=0.,reset_probability=0.)
     for k,v in floats.items():
         p.add_argument('--'+k.replace('_','-'),type=float,default=v,help='Spatial attention logit multiplier (inverse temperature).' if k=='temperature' else None)
     p.add_argument('--device',choices=['cpu','mps'],default='cpu')
     p.add_argument('--noise-mode',choices=['full','panel'],default='full')
-    p.add_argument('--family',choices=['maze','snake','comb','open','rooms'],default='maze')
+    p.add_argument('--family',choices=['maze','snake','comb','open','rooms','gates'],default='maze')
     p.add_argument('--architecture',choices=['cnn','mlp','spatial','keypoint'],default='cnn')
-    p.add_argument('--policy',choices=['learned','frozen','random_queue','walk'],default='learned')
+    p.add_argument('--policy',choices=['learned','frozen','random_queue','walk','coordinate_oracle'],default='learned')
     p.add_argument('--controls',choices=['continuous','cardinal'],default='continuous')
     p.add_argument('--out',type=Path,required=True)
     return p
@@ -39,7 +39,7 @@ def main():
     import map_learning.pixel_exploration as pixel_module
     (a.out/'pixel_exploration.py').write_text(Path(pixel_module.__file__).read_text())
     seed_all(a.seed,1);start=time.monotonic()
-    env=PixelMaze(MazeConfig(size=a.size,seed=a.layout,step_size=a.step_size,image_size=a.image_size),a.seed+71000,a.family,a.noise,a.rgb,a.marker_size,a.noise_mode)
+    env=PixelMaze(MazeConfig(size=a.size,seed=a.layout,step_size=a.step_size,image_size=a.image_size),a.seed+71000,a.family,a.noise,a.rgb,a.marker_size,a.noise_mode,a.gate_width)
     learner=PixelLearner(a)
     rng=np.random.default_rng(a.seed+101);crng=np.random.default_rng(a.seed+91000);qrng=np.random.default_rng(a.seed+72000)
     wrng=np.random.default_rng(a.seed+93000);rrng=np.random.default_rng(a.seed+94000)
@@ -47,13 +47,18 @@ def main():
     positions=np.empty((a.steps+1,2),np.float32);parents=np.full(a.steps+1,-1,np.int32);actions=np.zeros((a.steps+1,2),np.float32)
     z=np.zeros((a.steps+1,a.dim),np.float32);active=np.zeros(a.steps+1,bool);visited=[]
     priority=np.full(a.steps+1,-np.inf);images[0]=env.reset();positions[0]=env.position
-    z[0]=learner.encode(images[:1])[0];current=0;heading=None;resets=[]
+    def encode_nodes(ids):
+        if a.policy=='coordinate_oracle':
+            assert a.dim==2
+            return positions[ids]*np.float32(2/a.size)-1
+        return learner.encode(images[ids])
+    z[0]=encode_nodes(np.array([0]))[0];current=0;heading=None;resets=[]
     coverage=SpatialCoverage(a.size);coverage.add(positions[0],0);rows=[];frames=[];stats={};samples=0
     old_order=np.empty(0,int);old_count=0;tree=None;tree_count=0
     def refresh(n):
         nonlocal tree,tree_count
         ids=np.concatenate([np.array(visited,int),np.flatnonzero(active[:n+1])])
-        for j in range(0,len(ids),512):z[ids[j:j+512]]=learner.encode(images[ids[j:j+512]])
+        for j in range(0,len(ids),512):z[ids[j:j+512]]=encode_nodes(ids[j:j+512])
         tree=cKDTree(z[visited]);tree_count=len(visited)
         pending=np.flatnonzero(active[:n+1]);priority[pending]=tree.query(z[pending])[0]
     with (a.out/'progress.jsonl').open('w') as log:
@@ -85,7 +90,7 @@ def main():
                 if walking:current=n
             if a.policy!='walk':
                 if not visited:visited.append(0)
-                ids=np.arange(base+1,base+6);z[ids]=learner.encode(images[ids]);active[ids]=True
+                ids=np.arange(base+1,base+6);z[ids]=encode_nodes(ids);active[ids]=True
                 d=tree.query(z[ids])[0] if tree is not None else np.full(5,np.inf)
                 recent=visited[tree_count:]
                 if recent:d=np.minimum(d,np.linalg.norm(z[ids,None]-z[recent],axis=-1).min(-1))

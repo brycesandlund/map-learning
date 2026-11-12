@@ -1,0 +1,19 @@
+{
+  "created": 1794445830.344262,
+  "seeds": [
+    160,
+    161,
+    162
+  ],
+  "widths": [
+    1.0,
+    0.25,
+    0.0625
+  ],
+  "steps": 100000,
+  "primary": "deepest chamber reached and first entry time; coverage/AUC secondary",
+  "selection": "No parameter selection on these outcomes. Frozen prior model, fixed walk persistence controls; 8D is untuned dimension ablation.",
+  "geometry": "4 chambers, walls x3/6/9, gaps y1.73/10.27/1.73, start1.5/6.5",
+  "renderer": "Pixel-area wall antialiasing only for gates; noise and sprite unchanged. Gaps may be subpixel, but not rounded shut.",
+  "oracle": "Privileged coordinates for queue ranking only; same expansion controls and warmup. Not a pixel agent."
+}

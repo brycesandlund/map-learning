@@ -1,0 +1,81 @@
+{
+  "runs": 15,
+  "interactions": 1500000,
+  "results": [
+    {
+      "run": "runs/gates-learned-20261111/w0.0625-learned2-seed160",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/gates-learned-20261111/w0.0625-learned2-seed161",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/gates-learned-20261111/w0.0625-learned2-seed162",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/gates-learned-20261111/w0.0625-learned8-seed160",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/gates-learned-20261111/w0.0625-learned8-seed161",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/gates-learned-20261111/w0.0625-learned8-seed162",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/gates-learned-20261111/w0.25-learned2-seed160",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/gates-learned-20261111/w0.25-learned2-seed161",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/gates-learned-20261111/w0.25-learned2-seed162",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/gates-learned-20261111/w1.0-learned2-seed160",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/gates-learned-20261111/w1.0-learned2-seed161",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/gates-learned-20261111/w1.0-learned2-seed162",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/gates-clean-20261111/w0.0625-clean-diagnostic-seed160",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/gates-clean-20261111/w0.0625-clean-diagnostic-seed161",
+      "interactions": 100000,
+      "policy": "learned"
+    },
+    {
+      "run": "runs/gates-clean-20261111/w0.0625-clean-diagnostic-seed162",
+      "interactions": 100000,
+      "policy": "learned"
+    }
+  ]
+}

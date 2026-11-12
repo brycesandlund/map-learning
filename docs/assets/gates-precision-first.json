@@ -1,0 +1,13 @@
+[
+  {
+    "run": "runs/gates-learned-20261111/w0.0625-learned2-seed160",
+    "dim": 2,
+    "width": 0.0625,
+    "pair_noise_rms_mean": 0.0067381300032138824,
+    "gate_displacement_mean": 0.00316447950899601,
+    "ratio_of_means": 2.1293013095855713,
+    "median_local_ratio": 2.080221652984619,
+    "fraction_noise_exceeds_gate_displacement": 0.921875,
+    "centroid_noise_floor_mean": 0.0016845325008034706
+  }
+]

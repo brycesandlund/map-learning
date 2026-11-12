@@ -564,3 +564,5 @@ Run one 100k-action experiment (MPS on a compatible Mac):
 ```
 
 Use a new output directory. To use CPU, copy the arm JSON and change `device` to `cpu`; adaptive trajectories need not be bitwise identical across backends. `scripts/pixel_frontier.py --help` exposes maze families, image noise, architecture/loss settings and nonreactive walking controls. `scripts/animate_pixel_study.py` renders saved trajectories alongside the actual noisy input images.
+
+The [narrow-entrance study](docs/gates-study.md) adds four chambers connected by tiny alternating doors (`--family gates --gate-width .0625`). In 69 runs, small doors hurt persistent walking, but the learned pixel frontier performs worse; a privileged coordinate-distance frontier solves all three widths. A matched queue continuation isolates a failure to expand a rare saved discovery. Includes [all controls](docs/assets/gates-results.md), an untuned 8D ablation, clean-image diagnostics, and a [100k-action animation](docs/assets/gates-narrow-seed160.gif). Reproduction manifests are in `configs/gates-study-20261111`.

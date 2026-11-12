@@ -1,0 +1,331 @@
+[
+  {
+    "run": "runs/gates-learned-20261111/w0.0625-learned2-seed160",
+    "all_chambers_reached": false,
+    "next_gate": 3,
+    "eligible_occurrences": 0,
+    "active": 81000,
+    "distinct_eligible_positions": 0,
+    "latent": {
+      "best_eligible_rank": null,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "coordinate": {
+      "best_eligible_rank": null,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "discovered_regions": [
+      {
+        "chamber": 2,
+        "first_observation": 28096,
+        "observations": 23252,
+        "source_actions": 23255,
+        "pending": 18601,
+        "latent_best_pending_rank": 9,
+        "coordinate_best_pending_rank": 1
+      },
+      {
+        "chamber": 3,
+        "first_observation": 88471,
+        "observations": 1,
+        "source_actions": 0,
+        "pending": 1,
+        "latent_best_pending_rank": 9614,
+        "coordinate_best_pending_rank": 16,
+        "rare_pending": [
+          {
+            "id": 88471,
+            "position": [
+              6.032973289489746,
+              10.254619598388672
+            ],
+            "nearest_latent_archive_position": [
+              5.87734317779541,
+              10.254619598388672
+            ],
+            "nearest_latent_physical_distance": 0.15563011169433594
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run": "runs/gates-learned-20261111/w0.0625-learned2-seed161",
+    "all_chambers_reached": false,
+    "next_gate": 2,
+    "eligible_occurrences": 0,
+    "active": 81000,
+    "distinct_eligible_positions": 0,
+    "latent": {
+      "best_eligible_rank": null,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "coordinate": {
+      "best_eligible_rank": null,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "discovered_regions": [
+      {
+        "chamber": 2,
+        "first_observation": 76951,
+        "observations": 2,
+        "source_actions": 0,
+        "pending": 2,
+        "latent_best_pending_rank": 15110,
+        "coordinate_best_pending_rank": 155,
+        "rare_pending": [
+          {
+            "id": 76951,
+            "position": [
+              3.0204834938049316,
+              1.7030301094055176
+            ],
+            "nearest_latent_archive_position": [
+              2.940089225769043,
+              1.6449187994003296
+            ],
+            "nearest_latent_physical_distance": 0.09919759631156921
+          },
+          {
+            "id": 99506,
+            "position": [
+              3.0007636547088623,
+              1.7255775928497314
+            ],
+            "nearest_latent_archive_position": [
+              2.934898853302002,
+              1.682739496231079
+            ],
+            "nearest_latent_physical_distance": 0.07857019454240799
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run": "runs/gates-learned-20261111/w0.0625-learned2-seed162",
+    "all_chambers_reached": false,
+    "next_gate": 2,
+    "eligible_occurrences": 5,
+    "active": 81000,
+    "distinct_eligible_positions": 5,
+    "latent": {
+      "best_eligible_rank": 10341,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "coordinate": {
+      "best_eligible_rank": 7373,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "discovered_regions": [
+      {
+        "chamber": 2,
+        "first_observation": 8031,
+        "observations": 26048,
+        "source_actions": 26045,
+        "pending": 20839,
+        "latent_best_pending_rank": 5,
+        "coordinate_best_pending_rank": 1
+      }
+    ]
+  },
+  {
+    "run": "runs/gates-learned-20261111/w0.0625-learned8-seed160",
+    "all_chambers_reached": false,
+    "next_gate": 2,
+    "eligible_occurrences": 0,
+    "active": 81000,
+    "distinct_eligible_positions": 0,
+    "latent": {
+      "best_eligible_rank": null,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "coordinate": {
+      "best_eligible_rank": null,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "discovered_regions": [
+      {
+        "chamber": 2,
+        "first_observation": 12641,
+        "observations": 20509,
+        "source_actions": 20505,
+        "pending": 16408,
+        "latent_best_pending_rank": 4,
+        "coordinate_best_pending_rank": 1
+      }
+    ]
+  },
+  {
+    "run": "runs/gates-learned-20261111/w0.0625-learned8-seed161",
+    "all_chambers_reached": false,
+    "next_gate": 2,
+    "eligible_occurrences": 1,
+    "active": 81000,
+    "distinct_eligible_positions": 1,
+    "latent": {
+      "best_eligible_rank": 285,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.5436782836914062
+    },
+    "coordinate": {
+      "best_eligible_rank": 8,
+      "top100_cross_probability_sum": 0.5436782836914062,
+      "top1000_cross_probability_sum": 0.5436782836914062
+    },
+    "discovered_regions": [
+      {
+        "chamber": 2,
+        "first_observation": 53536,
+        "observations": 12675,
+        "source_actions": 12675,
+        "pending": 10140,
+        "latent_best_pending_rank": 1,
+        "coordinate_best_pending_rank": 1
+      }
+    ]
+  },
+  {
+    "run": "runs/gates-learned-20261111/w0.0625-learned8-seed162",
+    "all_chambers_reached": false,
+    "next_gate": 2,
+    "eligible_occurrences": 0,
+    "active": 81000,
+    "distinct_eligible_positions": 0,
+    "latent": {
+      "best_eligible_rank": null,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "coordinate": {
+      "best_eligible_rank": null,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "discovered_regions": [
+      {
+        "chamber": 2,
+        "first_observation": 12471,
+        "observations": 9712,
+        "source_actions": 9710,
+        "pending": 7770,
+        "latent_best_pending_rank": 5,
+        "coordinate_best_pending_rank": 1
+      }
+    ]
+  },
+  {
+    "run": "runs/gates-clean-20261111/w0.0625-clean-diagnostic-seed160",
+    "all_chambers_reached": false,
+    "next_gate": 3,
+    "eligible_occurrences": 0,
+    "active": 81000,
+    "distinct_eligible_positions": 0,
+    "latent": {
+      "best_eligible_rank": null,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "coordinate": {
+      "best_eligible_rank": null,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "discovered_regions": [
+      {
+        "chamber": 2,
+        "first_observation": 23361,
+        "observations": 8919,
+        "source_actions": 8920,
+        "pending": 7135,
+        "latent_best_pending_rank": 1,
+        "coordinate_best_pending_rank": 1
+      },
+      {
+        "chamber": 3,
+        "first_observation": 97856,
+        "observations": 2,
+        "source_actions": 0,
+        "pending": 2,
+        "latent_best_pending_rank": 28,
+        "coordinate_best_pending_rank": 72,
+        "rare_pending": [
+          {
+            "id": 97856,
+            "position": [
+              6.157389163970947,
+              10.271618843078613
+            ],
+            "nearest_latent_archive_position": [
+              5.973419666290283,
+              10.271618843078613
+            ],
+            "nearest_latent_physical_distance": 0.18396949768066406
+          },
+          {
+            "id": 97861,
+            "position": [
+              6.01626443862915,
+              10.297613143920898
+            ],
+            "nearest_latent_archive_position": [
+              5.851992607116699,
+              10.409375190734863
+            ],
+            "nearest_latent_physical_distance": 0.1986856609582901
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "run": "runs/gates-clean-20261111/w0.0625-clean-diagnostic-seed161",
+    "all_chambers_reached": true
+  },
+  {
+    "run": "runs/gates-clean-20261111/w0.0625-clean-diagnostic-seed162",
+    "all_chambers_reached": false,
+    "next_gate": 3,
+    "eligible_occurrences": 0,
+    "active": 81000,
+    "distinct_eligible_positions": 0,
+    "latent": {
+      "best_eligible_rank": null,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "coordinate": {
+      "best_eligible_rank": null,
+      "top100_cross_probability_sum": 0.0,
+      "top1000_cross_probability_sum": 0.0
+    },
+    "discovered_regions": [
+      {
+        "chamber": 2,
+        "first_observation": 23941,
+        "observations": 28378,
+        "source_actions": 28380,
+        "pending": 22702,
+        "latent_best_pending_rank": 3,
+        "coordinate_best_pending_rank": 104
+      },
+      {
+        "chamber": 3,
+        "first_observation": 36911,
+        "observations": 7165,
+        "source_actions": 7165,
+        "pending": 5732,
+        "latent_best_pending_rank": 1,
+        "coordinate_best_pending_rank": 1
+      }
+    ]
+  }
+]

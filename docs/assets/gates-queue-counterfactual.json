@@ -1,0 +1,32 @@
+{
+  "source": "runs/gates-learned-20261111/w0.0625-learned2-seed160",
+  "protocol": "Same stored queue/archive, final encoder frozen, same future controls and fresh iid noise stream, only priority representation changes. Coordinates privileged. Additional actions counted separately.",
+  "results": [
+    {
+      "mode": "latent",
+      "additional_actions": 1500,
+      "new_bins": 0,
+      "final_coverage": 0.5004340277777778,
+      "rare_state_88471_expanded_at": null,
+      "source_actions_by_chamber": [
+        1095,
+        405,
+        0,
+        0
+      ]
+    },
+    {
+      "mode": "coordinate",
+      "additional_actions": 1500,
+      "new_bins": 298,
+      "final_coverage": 0.6297743055555556,
+      "rare_state_88471_expanded_at": 61,
+      "source_actions_by_chamber": [
+        5,
+        55,
+        1440,
+        0
+      ]
+    }
+  ]
+}
